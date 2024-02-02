@@ -4,9 +4,11 @@
 .hide {
     display: none
 }
+
 .menu-side-wrapper li a {
     color: #fff;
 }
+
 /*================(640)================*/
 @media screen and (max-width: 40em) {
     p.flagimg {
@@ -17,6 +19,13 @@
     }
 }
 
+.navBar {
+    background-color: white;
+}
+.nav-tel{
+    background-color: #004C79;
+    color: white !important;
+}
 </style>
 
 <head>
@@ -30,7 +39,7 @@
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
 </head>
 
-<body >
+<body>
     <header class="limits-header-wrapper d-md-block d-none">
         <div class="sub-header">
             <div class="container pa-50">
@@ -42,10 +51,10 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="container pa-50">
-                <a class="navbar-brand" href="<?php echo base_url()?>"><img
-                        src="<?php echo base_url('assets/images/logo.png')?>" alt=""></a>
+        <nav class="navbar navbar-expand-md navBar">
+            <div class="container-fluid pa-50">
+                <a class="navbar-brand" href="<?php echo base_url()?>">
+                <img   src="<?php echo base_url('assets/images/travel24.svg')?>" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -54,28 +63,31 @@
                 <div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="<?php echo base_url()?>">Home</a>
-                        </li>
-                        <!-- <li class="nav-item">
+                            <li class="nav-item active">
+                                <a class="nav-link text-black" href="<?php echo base_url()?>">Home</a>
+                            </li>
+                            <!-- <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url()?>aboutus">About Us</a>
                         </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url()?>faq">Faq </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url()?>customerReviews">reviews</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url()?>contactUs">contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="<?php echo base_url()?>faq">Faq </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="<?php echo base_url()?>customerReviews">reviews</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link nav-tel " href="<?php echo base_url()?>customerReviews"><img src="<?php echo base_url('assets/images/call.svg')?>" alt=""> 02039822911</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                         <div class="container  text-right new-number"
+                        style="padding-top:60px;padding-right: 0px !important;">
+                        <a href="tel:02039822911"><img src="<?php echo base_url('assets/images/call.svg')?>" alt="">
+                            02039822911</a>
+                    </div>
                         </li> -->
                         </ul>
                     </div>
-                    <div class="container  text-right new-number"
-                        style="padding-top:60px;padding-right: 0px !important;">
-                        <a href="tel:02039822911"><img src="<?php echo base_url('assets/images/call.png')?>" alt="">
-                            02039822911</a>
-                    </div>
+                 
                 </div>
 
             </div>
@@ -89,7 +101,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="<?php echo base_url('assets/images/logo.png')?>" class="img-fluid" alt="Logo">
+                    <img src="<?php echo base_url('assets/images/travel24.svg')?>" class="img-fluid" alt="Logo">
                     <ul class="sub-header-res-new">
                         <!-- <li>
                             <a href="mailto:info@nolimitcars.co.uk"><img src="<?php echo base_url('assets/images/mail.png')?>" alt=""></a>
@@ -116,6 +128,7 @@
 
 
     <div class="menu-side-wrapper d-md-none d-block">
+
         <ul>
             <li>
                 <a href="<?php echo base_url()?>">Home</a>
