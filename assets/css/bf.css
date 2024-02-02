@@ -1,0 +1,117 @@
+/* booking */
+
+.booking-setnew {
+    padding: 70px 0;
+}
+
+.booking-setnew .book-form-box {
+    background-color: #00517c;
+    margin: 0 auto;
+}
+
+.booking-setnew .book-form-box .head {
+    padding: 15px 10px;
+}
+
+.booking-setnew .book-form-box .head h1 {
+    color: #f38422;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.booking-setnew .book-form-box .content {
+    padding: 0 10px 10px 10px;
+}
+
+.booking-setnew .book-form-box .content .form-inner {
+    background-color: #00517c;
+}
+
+.booking-setnew .book-form-box .content .form-inner .form-group label {
+    color: #fff;
+    font-size: 12px;
+}
+
+.booking-setnew .book-form-box .content .form-inner .form-group .form-control {
+    border-radius: 0;
+    border: 0;
+    padding: 6px 10px;
+    margin-top: 10px;
+}
+
+.booking-setnew .book-form-box .content .form-inner .form-group button {
+    color: #f38422;
+    border: 0;
+    background: 0;
+    height: 0;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    padding: 5px 8px;
+}
+
+.booking-setnew .book-form-box .content .form-inner .form-group button:hover {
+    background-color: #f38422;
+    color: #fff;
+    height: 100%;
+    padding: 5px 8px;
+}
+
+.booking-setnew .book-form-box .content .form-inner .form-group button i {
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.booking-setnew .book-form-box .content .form-inner .submit-btn {
+    width: 100%;
+    background-color: #f38422;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 4px 12px;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking-setnew .book-form-box .content .form-inner .submit-btn i {
+    font-size: 36px;
+}
+
+.booking-setnew .banner-details {
+    margin-top: 95px;
+    background-color: rgba(0, 0, 0, 0.78);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.booking-setnew .banner-details h1 {
+    color: #f38422;
+    font-size: 20px;
+}
+
+.booking-setnew .banner-details p {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.booking-setnew .banner-details p span {
+    color: #f38422;
+    font-weight: 500;
+}
+
+.booking-setnew .banner-details p a {
+    color: #f38422;
+}
+
+@media only screen and (min-width: 768px) {
+    .booking-setnew .book-form-box {
+        max-width: 420px;
+    }
+}

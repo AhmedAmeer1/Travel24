@@ -1,0 +1,7 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/ya7mgn7md950/public_html/NolimitProduction  # Add /<app_folder> if required
+        - /bin cp * $DEPLOYPATH                           #copy all from root S
+        
+        
