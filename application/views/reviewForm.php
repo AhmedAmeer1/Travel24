@@ -14,10 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="<?php echo base_url('assets/css/reviewForm.css')?>" rel="stylesheet" />
+
 </head>
 
     <body>
