@@ -84,22 +84,8 @@ input[type=number] {
 .text_amt{
    font-size:12px;
 }
-	.paymentalert{
-		position:relative;
-		color:#f38422;
-		font-size:20px;
-		padding:0 0 30px;
-	}
-	.paymentalert a{
-		text-decoration:underline;
-	}
-	/*================(640)================*/
-	@media screen and (max-width: 40em) {
-		.paymentalert{
-			font-size:16px;
-			padding:0 0 30px;
-		}
-	}
+
+
 
 .promotion-btn{
    background-color: #f38422;
@@ -129,7 +115,7 @@ input[type=number] {
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                    <!-- <div class="paymentalert">Our payment system is under maintenance, please call us on <a href="tel:02039822911">02039822911</a> or email on <a href="mailto:info@nolimitcars.co.uk">info@nolimitcars.co.uk</a> for booking</div> -->
+                 
                      <h1>Please check journey details and select date and time</h1>
                      <div class="details-box">
                         <h2>JOURNEY DETAILS</h2>

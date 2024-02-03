@@ -23,22 +23,7 @@
     .hide{
         display:none;
     }
-	.paymentalert{
-		position:relative;
-		color:#f38422;
-		font-size:20px;
-		padding:0 0 30px;
-	}
-	.paymentalert a{
-		text-decoration:underline;
-	}
-	/*================(640)================*/
-	@media screen and (max-width: 40em) {
-		.paymentalert{
-			font-size:16px;
-			padding:0 0 30px;
-		}
-	}
+
     </style>
 </head>
 
@@ -97,7 +82,7 @@
                     <div class="col-lg-9 col-sm-12">
                         <div class="list-wrapper">
                         <div class="choose-heading">Choose an option. (All card charges included)</div>
-                        <!-- <div class="paymentalert">Our payment system is under maintenance, please call us on <a href="tel:02039822911">02039822911</a> or email on <a href="mailto:info@nolimitcars.co.uk">info@nolimitcars.co.uk</a> for booking</div> -->
+                     
                             <div class="filter-wrapper">
                             <input type="hidden" id="special_location" value="<?php echo $special_location;?>">
                                 <h3>PASSENGERS AND LUGGAGE</h3>

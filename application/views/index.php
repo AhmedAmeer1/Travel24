@@ -1,88 +1,7 @@
 <!doctype html>
 <html>
 <style>
-.image-width {
-    /* width:57%; */
-}
 
-.hide {
-    display: none
-}
-
-.paymentalert {
-    position: relative;
-    color: #f38422;
-    font-size: 20px;
-    text-align: center;
-    padding: 50px 20px 0;
-}
-
-.paymentalert a {
-    text-decoration: underline;
-}
-
-.menu-side-wrapper li a {
-    color: #fff;
-}
-
-p.flagimg {
-    font-size: 33px !important;
-    line-height: 40px !important;
-    margin-top: 35px !important;
-    font-weight: bold;
-    padding-left: 45px;
-    background-image: url(../assets/images/union-flag.jpg);
-    background-position: left center;
-    background-size: 40px;
-    background-repeat: no-repeat;
-}
-
-.coupen-header {
-    font-size: 60px;
-}
-
-.coupen-text {
-    font-size: 20px;
-}
-
-.coupen-code {
-    font-size: 32px;
-    color: #155a94;
-    font-weight: 900
-}
-
-.coupen-section {
-    /* background-color: #FF700A; */
-}
-
-/*================(640)================*/
-@media screen and (max-width: 40em) {
-    .paymentalert {
-        font-size: 16px;
-        padding: 50px 5px 0;
-    }
-
-    p.flagimg {
-        font-size: 26px !important;
-        padding-left: 40px;
-        background-size: 35px;
-        margin-top: 15px !important;
-
-    }
-
-    .coupen-header {
-        font-size: 30px;
-    }
-
-    .coupen-text {
-        font-size: 15px;
-    }
-
-    .coupen-code {
-        font-size: 25px;
-
-    }
-}
 </style>
 
 <head>
@@ -107,6 +26,8 @@ p.flagimg {
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css')?>" rel="stylesheet" />
+
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -124,6 +45,7 @@ p.flagimg {
 
     gtag('config', 'UA-230246454-1');
     </script>
+
 
 </head>
 
@@ -355,7 +277,7 @@ p.flagimg {
                         </div>
                     </div>
                 </div>
-                <!-- <div class="paymentalert">Our payment system is under maintenance, please call us on <a href="tel:02039822911">02039822911</a> or email on <a href="mailto:info@nolimitcars.co.uk">info@nolimitcars.co.uk</a> for booking</div> -->
+              
             </div>
         </section>
 
