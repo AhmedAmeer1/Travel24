@@ -1,6 +1,4 @@
-
 /*  ----------------------------------- COMMON CODE  START -------------------------------- */
-
 
 .hide {
 	display: none;
@@ -12,195 +10,270 @@
 
 /*  ============================= COMMON CODE  END  ================================= */
 
-
-
 /*  ----------------------------------- BANNER COMPONENT   START -------------------------------- */
 
 .limits-banner {
-    /* background-image: url("../images/homebanner.jpg"); */
-    /* background-size: cover;
+	/* background-image: url("../images/homebanner.jpg"); */
+	/* background-size: cover;
     background-repeat: no-repeat; */
-    background-color: #00517c;
-    height: 100%;
-    width: 100%;
-    padding: 100px 0;
-    position: relative;
+	background-color: #00517c;
+	height: 100%;
+	width: 100%;
+	padding: 100px 0;
+	position: relative;
 }
 
 .limits-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(9, 74, 108, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		to bottom,
+		rgba(9, 74, 108, 0.7) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
 }
 
 .limits-banner .book-form-box {
-    margin-top: 95px;
-    background-color: rgba(0, 0, 0, 0.78);
-    border-radius: 10px;
+	margin-top: 95px;
+	background-color: rgba(0, 0, 0, 0.78);
+	border-radius: 10px;
 }
 
 .limits-banner .book-form-box .head {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .limits-banner .book-form-box .head h1 {
-    color: #fff;
-    font-size: 32px;
-    font-family: 'allerdisplay';
+	color: #fff;
+	font-size: 32px;
+	font-family: "allerdisplay";
 }
 
 .limits-banner .book-form-box .content {
-    padding: 0 15px 15px 15px;
+	padding: 0 15px 15px 15px;
 }
 
 .limits-banner .book-form-box .content .form-inner {
-    background-color: #00517c;
-    padding: 10px;
+	background-color: #00517c;
+	padding: 10px;
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group label {
-    color: #fff;
-    font-size: 10px;
-    margin: 8px 0 0px 0;
+	color: #fff;
+	font-size: 10px;
+	margin: 8px 0 0px 0;
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group .form-control {
-    border-radius: 0;
-    border: 0;
-    padding: 8px 10px;
-    margin-top: 10px;
+	border-radius: 0;
+	border: 0;
+	padding: 8px 10px;
+	margin-top: 10px;
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group button {
-    color: #f38422;
-    border: 0;
-    background: 0;
-    height: 0;
-    font-size: 12px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+	color: #f38422;
+	border: 0;
+	background: 0;
+	height: 0;
+	font-size: 12px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group button i {
-    font-size: 12px;
-    padding-right: 5px;
+	font-size: 12px;
+	padding-right: 5px;
 }
 
 .limits-banner .book-form-box .content .form-inner .submit-btn {
-    width: 100%;
-    background-color: #FF700A;
-    color: #fff;
-    border: 0;
-    border-radius: 25px;
-    padding: 10px;
-    text-transform: uppercase;
+	width: 100%;
+	background-color: #ff700a;
+	color: #fff;
+	border: 0;
+	border-radius: 25px;
+	padding: 10px;
+	text-transform: uppercase;
 }
 
 .limits-banner .banner-details {
-    margin-top: 95px;
-    background-color: rgba(0, 0, 0, 0.78);
-    border-radius: 10px;
-    padding: 20px;
+	margin-top: 95px;
+	background-color: rgba(0, 0, 0, 0.78);
+	border-radius: 10px;
+	padding: 20px;
 }
 
 .limits-banner .banner-details h1 {
-    font-size: 26px;
-    color: #f38422;
-    margin: 0 0 10px;
-    font-family: 'helvet';
+	font-size: 26px;
+	color: #f38422;
+	margin: 0 0 10px;
+	font-family: "helvet";
 }
 
 .limits-banner .banner-details p {
-    color: #fff;
-    margin-top: 15px;
-    font-family: 'helvetnormal';
-    font-size: 16px;
-    line-height: 20px;
+	color: #fff;
+	margin-top: 15px;
+	font-family: "helvetnormal";
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .limits-banner .banner-details p span {
-    color: #f38422;
-    font-weight: 500;
+	color: #f38422;
+	font-weight: 500;
 }
 
 .limits-banner .banner-details p .block-span {
-    display: block;
+	display: block;
 }
 
 .limits-banner .banner-details p a {
-    color: #f38422;
+	color: #f38422;
 }
-
 
 @media only screen and (max-width: 768px) {
-
-    .limits-banner {
-        height: auto !important;
-        background-image: none;
-        background-color: #000;
-        padding: 0;
-    }
-    .limits-banner .book-form-box {
-        margin-top: 5px;
-    }
-    .limits-banner .book-form-box .head h1 {
-        font-size: 20px;
-    }
-    .limits-banner .book-form-box .content {
-        padding: 0;
-    }
-    .limits-banner .banner-details h1 {
-        font-size: 18px;
-        text-align: center;
-    }
-    .limits-banner .banner-details {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 0;
-        margin-left: 12px;
-        margin-right: 12px;
-    }
-    .limits-banner .banner-details p {
-        font-size: 15px;
-        text-align: center;
-    }
-    .limits-banner::before {
-        display: none;
-    }
-    .h-md-100 {
-        height: auto !important;
-    }
-    .limits-banner .book-form-box .head {
-        display: block;
-        text-align: center;
-    }
-    .limits-banner .banner-details p .block-span {
-        display: inline-block;
-    }
+	.limits-banner {
+		height: auto !important;
+		background-image: none;
+		background-color: #000;
+		padding: 0;
+	}
+	.limits-banner .book-form-box {
+		margin-top: 5px;
+	}
+	.limits-banner .book-form-box .head h1 {
+		font-size: 20px;
+	}
+	.limits-banner .book-form-box .content {
+		padding: 0;
+	}
+	.limits-banner .banner-details h1 {
+		font-size: 18px;
+		text-align: center;
+	}
+	.limits-banner .banner-details {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 0;
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+	.limits-banner .banner-details p {
+		font-size: 15px;
+		text-align: center;
+	}
+	.limits-banner::before {
+		display: none;
+	}
+	.h-md-100 {
+		height: auto !important;
+	}
+	.limits-banner .book-form-box .head {
+		display: block;
+		text-align: center;
+	}
+	.limits-banner .banner-details p .block-span {
+		display: inline-block;
+	}
 }
-
-
-
-
 
 /*  =============================BANNER COMPONENT  END  ================================= */
 
-
-
-
-
-
-
 /*  ----------------------------------- OUR FLEET COMPONENT START -------------------------------- */
+
+.carlist-wrapper {
+	/* background-image: url("../images/homebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; */
+	width: 100%;
+	padding: 50px 0;
+}
+.carlist-wrapper h1 {
+	color: #155a94;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	font-family: "helvet";
+	text-transform: uppercase;
+}
+
+.carlist-wrapper .car-box {
+	background-color: rgb(0 81 124);
+	padding: 10px;
+	margin-top: 28px;
+	opacity: 1;
+	min-height: 320px;
+}
+
+.carlist-wrapper .car-box h2 {
+	color: #fff;
+	font-size: 20px;
+	font-family: "helvet";
+}
+
+.carlist-wrapper .car-box h3 {
+	color: #f38422;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.carlist-wrapper .car-box h3 span {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.carlist-wrapper .car-box img {
+	margin-top: 8px;
+	margin-bottom: 16px;
+}
+
+.carlist-wrapper .car-box p {
+	color: #fff;
+	margin-top: 15px;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.carlist-wrapper .list-details-box {
+	margin-top: 24px;
+}
+
+.carlist-wrapper .list-details-box .disability img {
+	width: 15px;
+	margin-right: 6px;
+}
+
+.carlist-wrapper .list-details-box .disability {
+	padding-left: 25px;
+	background-image: url("../images/disability.png");
+	background-position: left top;
+	background-size: 22px;
+	background-repeat: no-repeat;
+}
+
+.carlist-wrapper .list-details-box h4 {
+	color: #155a94;
+	font-size: 30px;
+	font-family: "helvet";
+}
+
+.carlist-wrapper .list-details-box p {
+	color: #155a94;
+	margin-top: 15px;
+	font-size: 13px;
+	line-height: 18px;
+}
 
 p.flagimg {
 	font-size: 33px !important;
@@ -224,17 +297,16 @@ p.flagimg {
 	}
 }
 
+@media only screen and (max-width: 480px) {
+	.carlist-wrapper .car-box {
+		min-height: unset !important;
+	}
+}
 
-@media only screen and (min-width:480px) and (max-width:768px) {
-  
-  
-    .limits-banner .banner-details h1 {
-        font-size: 26px !important;
-    }
-    .carlist-wrapper .car-box {
-        min-height: 374px;
-    }
-  
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.limits-banner .banner-details h1 {
+		font-size: 26px !important;
+	}
 }
 
 /*  ============================= OUR FLEET COMPONENT END  ================================= */
