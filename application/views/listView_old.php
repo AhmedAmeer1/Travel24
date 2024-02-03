@@ -22,62 +22,7 @@
 
 <body>
 
-    <header class="limits-header-wrapper">
 
-        <div class="sub-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-right">
-                        <ul>
-                            <li>
-                                <a href="#"><img src="assets/images/call.png" alt=""> 02039822911</a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="assets/images/mail.png" alt=""></a>
-                            </li>
-                            <li>
-                                <button>Book Online</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
-                        </li>
-                    </ul>
-                    <ul class="sub-header-responsive">
-                        <li>
-                            <a href="#"><img src="assets/images/call.png" alt=""> 02039822911</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="assets/images/mail.png" alt=""></a>
-                        </li>
-                        <li>
-                            <button>Book Online</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-    </header>
 
     <main class="home">
 

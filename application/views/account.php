@@ -27,52 +27,6 @@
 </head>
 
 <body>
-    <header class="limits-header-wrapper d-md-block d-none">
-
-        <div class="sub-header">
-            <div class="container pa-50">
-                <div class="row">
-                    <div class="col-md-12 text-right no-gutter">
-                        <ul>
-                     
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="container pa-50">
-                <a class="navbar-brand" href="<?php echo base_url()?>"><img src="<?php echo base_url('assets/images/logo.png')?>" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-            <div>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="<?php echo base_url()?>">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Faq</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
-                        </li>
-                    </ul>
-                   
-                </div>
-                <div class="container  text-right new-number" style="padding-top:60px;padding-right: 0px !important;">
-                    <a href="tel:02039822911"><img src="<?php echo base_url('assets/images/call.png')?>" alt=""> 02039822911</a>
-                </div>
-            </div>
-                 
-            </div>
-        </nav>
-    </header>
 
 
 

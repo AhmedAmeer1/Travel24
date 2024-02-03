@@ -1,21 +1,7 @@
 <!doctype html>
 <html>
 <style>
-.hide {
-    display: none
-}
-.menu-side-wrapper li a {
-    color: #fff;
-}
-/*================(640)================*/
-@media screen and (max-width: 40em) {
-    p.flagimg {
-        font-size: 26px !important;
-        padding-left: 40px;
-        background-size: 35px;
-        margin-top: 15px !important;
-    }
-}
+
 
 </style>
 
@@ -28,6 +14,8 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
+
+    <link href="<?php echo base_url('assets/css/header.css')?>" rel="stylesheet" />
 </head>
 
 <body >

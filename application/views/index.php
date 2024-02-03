@@ -100,7 +100,7 @@ p.flagimg {
 
 
 
-    <title>NOLIMIT CARS </title>
+    <title>TRAVEL 24   </title>
 
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
