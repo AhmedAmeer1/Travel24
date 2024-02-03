@@ -40,8 +40,12 @@
                 <div class="clear"></div>
                 <div>
                     <textarea rows="3" id="comment" placeholder="Write your comment"></textarea>
-                    <input type="hidden" name="trip_id" id="trip_id" value="<?= $trip_id; ?>">
-                    <input type="hidden" name="type" id="type" value="<?= $type; ?>">
+                    <input type="hidden" name="trip_id" id="trip_id" >
+                    <input type="hidden" name="type" id="type" >
+
+                    <!-- <input type="hidden" name="trip_id" id="trip_id" value="<?= $trip_id; ?>">
+                    <input type="hidden" name="type" id="type" value="<?= $type; ?>"> -->
+
                 </div><br>
                 <button id="reviewSubmit">Submit</button>
             </div>
