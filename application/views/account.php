@@ -215,58 +215,6 @@
 
     </main>
 
-    <footer class="limits-footer-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center order-md-0 order-1">
-                    <h1>Book a Taxi</h1>
-                    <h2>Tel: <a href="tel:02039822911" class="footer-contact">02039822911</a></h2>
-                </div>
-                <div class="col-md-4 no-gutter text-center order-md-1 order-0">
-                    <img src="<?php echo base_url('assets/images/logo.png')?>" class="img-fluid footr-logo" alt="Logo">
-                    
-                </div>
-                <div class="col-md-4 text-center order-md-2 order-2">
-                    <h1>Email us</h1>
-                    <h2><a href="mailto:info@nolimitcars.co.uk" class="footer-contact">info@nolimitcars.co.uk</a></h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3>All major credit cards accepted</h3>
-                    <ul class="social-media">
-                        <li>
-                            <a href="https://twitter.com/nolimit_cars" target="_blank"><img src="<?php echo base_url('assets/images/twitter.png')?>" alt="icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/nolimitcars/" target="_blank"><img src="<?php echo base_url('assets/images/linkedin.png')?>" alt="icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/nolimitcars8/" target="_blank"><img src="<?php echo base_url('assets/images/insta.png')?>" alt="icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/nolimitcarsltd/" target="_blank"><img src="<?php echo base_url('assets/images/facebook.png')?>" alt="icon"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-md-4 mt-3">
-                <div class="col-md-6">
-                    <ul class="side-menu">
-                        <li><a href="">© NOLIMIT Cars 2017</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Terms</a></li>
-                        <li><a href="">Drivers</a></li>
-                        <li><a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Areas</a>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                   <h6 class="credit"> Crafted by <a href="https://www.solutions2xl.com/" target="_blank" >2XL</a></h6>
-                </div>
-            </div>
-            
-        </div>
-    </footer>
 
     <div class="collapse areas-main" id="collapseExample">
         <div class="container">

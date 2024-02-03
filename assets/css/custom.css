@@ -455,86 +455,7 @@ select {
 
 /* footer */
 
-.limits-footer-wrapper {
-    padding: 25px 0;
-    background-color: #000;
-}
 
-.limits-footer-wrapper h1 {
-    color: #f38422;
-    font-size: 22px;
-    margin-top: 50px;
-    font-family: 'allerbold';
-}
-
-.limits-footer-wrapper .footer-contact {
-    color: #fff;
-    font-size: 22px;
-    width: fit-content;
-    margin: 0 auto;
-    line-height: .9;
-    font-family: 'allerbold';
-}
-
-.limits-footer-wrapper h2 {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 500;
-    padding-top: 15px;
-    width: fit-content;
-    margin: 0 auto;
-    line-height: .9;
-    display: flex;
-    font-family: 'allerbold';
-}
-
-.limits-footer-wrapper .footer-contact:hover {
-    border-bottom: 2px solid #fff;
-}
-
-.limits-footer-wrapper h3 {
-    color: #f38422;
-    font-size: 20px;
-    margin-top: 40px;
-}
-
-.limits-footer-wrapper .social-media {
-    margin-top: 15px;
-}
-
-.limits-footer-wrapper .social-media li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.limits-footer-wrapper .side-menu li {
-    display: inline-block;
-    border-right: 1px solid #8e8e8e;
-    padding: 0 12px;
-    color: #8e8e8e;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.limits-footer-wrapper .side-menu li a {
-    color: #8e8e8e;
-}
-
-.limits-footer-wrapper .credit {
-    color: #8e8e8e;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: right;
-    display: block;
-}
-
-.limits-footer-wrapper .credit a {
-    color: #8e8e8e;
-}
-
-.limits-footer-wrapper .side-menu li:last-child {
-    border: 0;
-}
 
 .areas-wrapper {
     background-color: #131313;
@@ -1711,16 +1632,7 @@ padding: 15px;
 
 @media only screen and (max-width: 480px) {
 
-    .limits-footer-wrapper .credit {
-        text-align: center;
-        margin-top: 10px;
-    }
-    .limits-footer-wrapper .side-menu li {
-        display: block;
-        border-right: 0;
-        text-align: center;
-        margin-top: 10px;
-    }
+
     .areas-wrapper ul li {
         display: block;
         border-right: 0;
@@ -1737,24 +1649,7 @@ padding: 15px;
     .carlist-wrapper .car-box {
         min-height: unset !important;
     }
-    .limits-footer-wrapper h1 {
-        margin-top: 8px !important;
-        font-size: 16px;
-    }
-    .limits-footer-wrapper .footr-logo {
-        max-width: 200px;
-    }
-    .limits-footer-wrapper h2 {
-        font-size: 16px;
-        padding-top: 8px;
-    }
-    .limits-footer-wrapper .footer-contact {
-        font-size: 16px;
-    }
-    .limits-footer-wrapper h3 {
-        font-size: 16px;
-        margin-top: 20px;
-    }
+
     .myaccount-wrapper table {
         width: 100%;
         overflow-x: scroll;
