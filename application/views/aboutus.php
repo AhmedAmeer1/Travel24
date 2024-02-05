@@ -3,34 +3,60 @@
 
 <head>
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
-  
+
     <meta name="title" content="About Nolimit Cars: Trusted Airport Transfer Service" />
-    <meta name="description" content="Learn more about Nolimit Cars, your trusted partner for airport transfers. Our story, values, and commitment to providing top-quality, reliable, and affordable transportation solutions across the UK." />
- 
+    <meta name="description"
+        content="Learn more about Nolimit Cars, your trusted partner for airport transfers. Our story, values, and commitment to providing top-quality, reliable, and affordable transportation solutions across the UK." />
+
     <title>About Us</title>
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-230246454-1');
-    </script> 
+    </script>
+    <style>
+    /* Custom styles for the banner */
+    /* -------------AHMED CSS START------------------  */
+
+    .banner-section {
+        background-color: #004C78;
+        text-align: center;
+
+    }
+
+    .banner-image {
+        max-width: 100%;
+        height: auto;
+
+    }
+    </style>
+
 </head>
 
 <body>
 
 
-    <?php $this->load->view('common_components/header'); ?>
     <section id="content">
-        <section class="commonbanner">
-            <div class="sub_banner_overlay"></div>
-            <img src="<?php echo base_url('assets/images/nolimit-banner.jpg')?>">
-        </section>
+
+
+
+        <div class="container-fluid banner-section">
+            <img src="<?php echo base_url('assets/images/travel24/about_us.svg')?>" alt="Banner Image"
+                class="banner-image">
+        </div>
+
+
+
         <section class="subpagecontent">
             <img src="<?php echo base_url('assets/images/nolimit-body.jpg')?>">
             <div class="wrapper">
