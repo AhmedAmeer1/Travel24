@@ -1,6 +1,43 @@
+
+
+
+/* ----- Ahmed css start  --------- */
+
+.footer-container{
+    /* background-color: red; */
+    padding: 100px 100px 30px 100px;
+}
+
+
+.footer-p1{
+    font-size: 16px;
+    font-family: 'allerbold';
+    font-weight: 400;
+}
+
+.footer-p2{
+    color: #2E2E2E;
+    font-size: 14px;
+    font-family: 'allerbold';
+    font-weight: 400;
+    padding: 0 12px;
+    margin-top: 31px !important;
+}
+
+.footer-h3{
+    color: #2E2E2E !important;
+    font-size: 18px;
+    font-family: 'allerbold';
+    font-weight: 600;
+    margin-top: 10px !important;
+}
+
+
+/* ----- Ahmed css end  --------- */
+
 .limits-footer-wrapper {
     padding: 25px 0;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .limits-footer-wrapper h1 {
@@ -11,9 +48,9 @@
 }
 
 .limits-footer-wrapper .footer-contact {
-    color: #fff;
+    color: #004C78;
     font-size: 22px;
-    width: fit-content;
+
     margin: 0 auto;
     line-height: .9;
     font-family: 'allerbold';
@@ -42,6 +79,7 @@
 }
 
 .limits-footer-wrapper .social-media {
+   
     margin-top: 15px;
 }
 
@@ -82,6 +120,15 @@
 
 
 @media only screen and (max-width: 480px) {
+
+
+
+    .footer-container{
+        /* background-color: red; */
+        padding: 30px 40px 30px 40px;
+    }
+
+
     .limits-footer-wrapper .credit {
         text-align: center;
         margin-top: 10px;
