@@ -1,173 +1,63 @@
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-weight: normal;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-body {
-    background: #000;
-    font-family: 'Helvetica 55 Roman';
-    font-size: 100%;
-    color: #fff;
-    margin: 0;
-    text-align: left;
-}
-
-section {
-    display: block;
-}
-
-#footer, #content {
-    position: relative;
-    width: 100%;
-}
-
-.commonbanner {
-    position: relative;
-    width: 100%;
-    max-height: 800px;
-    overflow: hidden;
-    background: -moz-linear-gradient(top, rgba(9,74,108,0.4) 0%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(top, rgba(9,74,108,0.4) 0%,rgba(0,0,0,0) 100%);
-    background: linear-gradient(to bottom, rgba(9,74,108,0.4) 0%,rgba(0,0,0,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66094a6c', endColorstr='#00000000',GradientType=0 );
-}
-
-.sub_banner_overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: -moz-linear-gradient(top, rgba(9,74,108,1) 0%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(top, rgba(9,74,108,1) 0%,rgba(0,0,0,0) 100%);
-    background: linear-gradient(to bottom, rgba(9,74,108,1) 0%,rgba(0,0,0,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3094a6c', endColorstr='#00000000',GradientType=0 );
-}
-
-.commonbanner > img {
-    width: 100%;
-    object-fit: cover;
-}
-
-/* comment this code because of header phone image issue */
-/* img {
-    display: block;
-    border: 0 none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: bottom;
-} */
-
-
-img, object, embed {
+img,
+object,
+embed {
     max-width: 100%;
 }
 
-/* ----------------- */
-
-.subpagecontent {
-    position: relative;
-    padding: 10px 10px;
-}
-
-.subpagecontent > img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-img, object, embed {
-    max-width: 100%;
-}
-
-.wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-.subcontent_wrapper {
-    position: relative;
-    margin: 6.8359375% 12.6953125%;
-}
-
-.subcontent_wrapper h1 {
-    color: white;
-    position: relative;
-    font-family: 'Helvetica Neue Condensed Bold';
-    font-size: 24px;
-    line-height: 28px;
-    /* text-transform: uppercase; */
+.banner-section {
+    background-color: #004C78;
     text-align: center;
-    font-weight: 900;
+
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+
+}
+.aboutus_content_div {
+    padding: 77px 100px 100px 100px;
+}
+
+
+.aboutus_wrapper {
+    margin: 3.8359375% 4.6953125%;
+    background-color: #F9FAFB;
+
+}
+
+.aboutus_wrapper h1 {
+    color: black;
+    font-family: 'Helvetica Neue Condensed Bold';
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 
-.subcontent_wrapper p {
-    color: white;
+.aboutus_wrapper p {
+    color: #818181;
     font-family: 'Helvetica 55 Roman';
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 20px;
 }
 
+
+
+
 .subbottom_text {
-    position: relative;
     font-family: 'Helvetica Neue Medium';
-    font-size: 24px;
-    color: #f38422;
-    margin-top: 30px;
+    font-size: 23px;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 80px;
 }
+
 
 .subbottom_text a {
-    color: #fff;
-}
-
-a {
+    margin-left: 10px;
     color: #000000;
-    text-decoration: none;
-    outline: none;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    text-decoration: underline;
+
 }
-
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
-
-.subbottom_text {
-    
-    position: relative;
-    font-family: 'Helvetica Neue Medium';
-    font-size: 24px;
-    color: #f38422;
-    margin-top: 30px;
-}
-
-article, aside, figure, footer, header, nav, section, details, summary {
-    display: block;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-
-
