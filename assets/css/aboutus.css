@@ -61,3 +61,20 @@ embed {
     text-decoration: underline;
 
 }
+
+
+/* ------------------------ RESPONSIVE START ------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+    .aboutus_content_div {
+        padding: 30px 0px 0px 0px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .aboutus_content_div {
+        padding: 30px 0px 0px 0px;
+    }
+
+}

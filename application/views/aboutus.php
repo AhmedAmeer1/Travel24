@@ -35,6 +35,8 @@
 
 <body>
 
+<?php $this->load->view('common_components/header'); ?>
+
 
     <section >
 
