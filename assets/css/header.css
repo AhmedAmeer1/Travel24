@@ -20,11 +20,11 @@
 
 /* header */
 
+
+
 .limits-header-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    /* position: absolute; */
+    height: 100px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     z-index: 9;
@@ -75,7 +75,7 @@
 }
 
 .limits-header-wrapper .navbar {
-    margin-top: -50px;
+    /* margin-top: -50px; */
 }
 
 .limits-header-wrapper .navbar .navbar-brand img {
@@ -89,7 +89,7 @@
 }
 
 .limits-header-wrapper .navbar .navbar-nav .nav-item .nav-link {
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     font-family: 'allerbold';
     font-size: 14px;
