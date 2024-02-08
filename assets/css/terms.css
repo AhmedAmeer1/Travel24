@@ -15,18 +15,18 @@ embed {
     height: auto;
 
 }
-.aboutus_content_div {
+.terms_content_div {
     padding: 77px 100px 100px 100px;
 }
 
 
-.aboutus_wrapper {
+.terms_wrapper {
     margin: 3.8359375% 4.6953125%;
     background-color: #F9FAFB;
 
 }
 
-.aboutus_wrapper h1 {
+.terms_wrapper h1 {
     color: black;
     font-family: 'Helvetica Neue Condensed Bold';
     font-size: 30px;
@@ -35,7 +35,7 @@ embed {
     margin-bottom: 30px;
 }
 
-.aboutus_wrapper p {
+.terms_wrapper p {
     color: #818181;
     font-family: 'Helvetica 55 Roman';
     font-size: 20px;
@@ -71,14 +71,14 @@ embed {
 /* ------------------------ RESPONSIVE START ------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
-    .aboutus_content_div {
+    .terms_content_div {
         padding: 30px 0px 0px 0px;
     }
 }
 
 
 @media only screen and (max-width: 767px) {
-    .aboutus_content_div {
+    .terms_content_div {
         padding: 30px 0px 0px 0px;
     }
 

@@ -30,8 +30,8 @@
             <img src="<?php echo base_url('assets/images/travel24/terms_conditions.svg')?>" alt="about_us_banner"
                 class="banner-image">
         </div>
-        <div class=" aboutus_wrapper">
-            <div class="aboutus_content_div">
+        <div class=" terms_wrapper">
+            <div class="terms_content_div">
                 <h1>Terms & Conditions</h1>
 
                 <div class="d-flex ">

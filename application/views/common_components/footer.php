@@ -34,15 +34,14 @@
                     <li><a href="<?php echo base_url()?>terms" class="footer-p1">Terms</a></li>
                     <li><a href="<?php echo base_url()?>drivers" class="footer-p1">Drivers</a></li>
                     <li><a href="<?php echo base_url()?>aboutus" class="footer-p1">About Us</a></li>
-                    <li><a href="<?php echo base_url()?>contactUs" class="footer-p1">contact</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs" class="footer-p1">Contact</a></li>
                 </ul>
             </div>
             <div class="col-md-6 ">
                 <div class="text-right">
                     <ul class="side-menu  ">
-                        <li><a href="<?php echo base_url()?>terms" class="footer-p1">Tel: 02039822911 </a></li>
-                        <li><a href="<?php echo base_url()?>drivers" class="footer-p1">Email Us :
-                                info@nolimitcars.co.uk</a></li>
+                        <li>Tel :<a href="tel:02039822911" class="">02039822911 </a></li>
+                        <li>Email Us :<a href="mailto:info@nolimitcars.co.uk" class="">info@nolimitcars.co.uk</a></li>
                     </ul>
                 </div>
             </div>
