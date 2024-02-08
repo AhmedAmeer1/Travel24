@@ -77,10 +77,10 @@ embed {
 }
 
 .docs {
-	/* background-color: red; */
+
 	padding: 50px 130px 50px 130px;
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 40px;
 	box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1);
 }
 
