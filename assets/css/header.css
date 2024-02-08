@@ -138,7 +138,7 @@
 }
 
 .sub-header-res-new li a {
-    color: #fff;
+    color: black;
     font-weight: 500;
     vertical-align: middle;
     font-family: 'allerbold';
@@ -148,7 +148,7 @@
 
 
 .res-side-menu {
-    background-color: #00517c;
+    background-color: white;
     padding: 10px 0 25px 0;
     text-align: center;
 }
@@ -171,10 +171,11 @@
 }
 
 .res-side-menu .brgn-btn {
+    background-color: red;
     position: absolute;
     right: 20px;
     top: 12px;
-    color: #fff;
+    color: #00517c;
     z-index: 10;
 }
 

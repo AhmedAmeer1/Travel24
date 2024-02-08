@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="<?php echo base_url('assets/images/logo.png')?>" class="img-fluid" alt="Logo">
+                    <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid" alt="Logo">
                     <ul class="sub-header-res-new">
                         <!-- <li>
                             <a href="mailto:info@nolimitcars.co.uk"><img src="<?php echo base_url('assets/images/mail.png')?>" alt=""></a>

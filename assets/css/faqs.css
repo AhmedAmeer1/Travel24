@@ -60,7 +60,8 @@ embed {
     font-size: 23px;
     color: #000000;
     font-weight: 700;
-    margin-top: 80px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 
@@ -93,6 +94,37 @@ embed {
     font-weight: 400;
    
 }
+
+.get_in_touch {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.get_in_touch h1{
+ 
+    color: #101828;
+    font-family: 'Helvetica 55 Roman';
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.get_in_touch button{
+ background-color: #004C78;
+    color: white;
+    font-family: 'Helvetica 55 Roman';
+    font-size: 16px;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px ;
+}
+
+
+
+
+
+
 
 
 /* ------------------------ RESPONSIVE START ------------------------------------- */

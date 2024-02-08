@@ -77,7 +77,12 @@
 
 
                 </div>
-
+                <div class="get_in_touch">
+                <img src="<?php echo base_url('assets/images/get_in_touch.svg')?>" class="img-fluid" alt="get_in_touch">
+                    <h1 >Still have questions? </h1>
+                    <p class="">Everything you need to know about the taxi ride and bookings </p>
+                    <button>Get in touch</button>
+                </div>
 
             </div>
 
