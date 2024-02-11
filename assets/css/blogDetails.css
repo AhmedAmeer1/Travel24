@@ -1,0 +1,192 @@
+img,
+object,
+embed {
+    max-width: 100%;
+}
+
+.banner-section {
+    background-color: #004C78;
+    text-align: center;
+
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+/*  ----------------------------------- BLOGS GRID  COMPONENT START -------------------------------- */
+
+
+
+.carlist-wrapper {
+	width: 100%;
+	padding: 50px 0;
+}
+.carlist-wrapper .blog_heading h1 {
+	color: #101828;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: "helvet";
+	
+}
+.carlist-wrapper .blog_heading  p{
+    text-align: center;
+	color: #475467;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: "helvet";   
+     margin-top: 17px;
+	
+}
+
+
+
+
+.carlist-wrapper .blog_details h1 {
+	color: #101828;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: "helvet";
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+.carlist-wrapper .blog_details p{
+    text-align: left;
+	color: #818181;
+	font-size: 18px;
+   margin-top: 17px;
+	
+}
+.carlist-wrapper .related_posts h1{
+    text-align: center;
+	color: #101828;
+	font-size: 35px;
+	font-weight: 600;
+   margin-top: 107px;
+	
+}
+
+
+
+
+
+.home_container {
+	padding: 77px 230px 100px 230px;
+}
+
+.car-box {
+	margin-top: 28px;
+	opacity: 1;
+	min-height: 320px;
+}
+
+.blogs_image_card {
+
+	background-color: white;
+	border-radius: 16px;
+	/* border-top-right-radius: 16px; */
+	/* padding: 20px 50px 10px 50px; */
+}
+
+.text_card {
+	
+	background-color: white;
+    padding: 20px 56px 10px 4px;
+
+}
+
+.text_card h2 {
+	color: #101828;
+	font-size: 24px;
+	font-family: "helvet";
+    font-weight: 600;
+}
+
+.text_card p {
+    text-align: left;
+	color: #475467;
+	margin-top: 15px;
+	font-size: 16px;
+    font-weight: 200 !important;
+	line-height: 24px;
+}
+
+.text_card h3 {
+	color: #004c78;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+.carlist-wrapper .list-details-box {
+	margin-top: 24px;
+	box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1);
+	padding: 20px 46px 20px 78px;
+}
+
+.carlist-wrapper .list-details-box h4 {
+	color: #004c78;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: "helvet";
+	margin-right: 25px;
+}
+
+.carlist-wrapper .list-details-box p {
+	color: #000000;
+	margin-top: 15px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.flag-div {
+	width: fit-content;
+}
+
+/*  ============================= OUR FLEET COMPONENT END  ================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ RESPONSIVE START ------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+ 
+    .home_container {
+    padding: 77px 60px 100px 60px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	.carlist-wrapper .car-box {
+		min-height: unset !important;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.limits-banner .banner-details h1 {
+		font-size: 26px !important;
+	}
+}
