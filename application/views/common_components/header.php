@@ -1,7 +1,12 @@
 <!doctype html>
 <html>
 <style>
-
+.nav-item .call-div {
+    background-color: #00517c;
+    padding: 12px 16px 18px 17px;
+    color:white;
+    border-radius:5px;
+}
 
 </style>
 
@@ -25,14 +30,14 @@
             <div class=" row container-fluid pa-50">
 
 
-            <div class="col-md-6">
+                <div class="col-md-4">
                     <a class="" href="<?php echo base_url()?>"><img
                             src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" alt=""></a>
 
                 </div>
 
 
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
@@ -45,9 +50,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="<?php echo base_url()?>customerReviews">reviews</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="tel:02039822911"><img src="<?php echo base_url('assets/images/call.png')?>"
-                                        alt="">
+                            <li class="nav-item mt-1">
+                                <a href="tel:02039822911 " class=" call-div">
+                                    <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="">
                                     02039822911</a>
                             </li>
 

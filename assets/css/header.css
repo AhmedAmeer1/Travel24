@@ -93,6 +93,10 @@
     text-transform: uppercase;
     font-family: 'allerbold';
     font-size: 14px;
+} 
+
+.nav-item .call-div{
+   background-color: #00517c;
 }
 
 
