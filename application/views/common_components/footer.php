@@ -31,7 +31,7 @@
         <div class="row mt-md-4 mt-3">
             <div class="col-md-6">
                 <ul class="side-menu ">
-                    <li><a href="<?php echo base_url()?>terms" class="footer-p1">Terms</a></li>
+                    <li><a href="<?php echo base_url()?>blogs" class="footer-p1">Blogs</a></li>
                     <li><a href="<?php echo base_url()?>drivers" class="footer-p1">Drivers</a></li>
                     <li><a href="<?php echo base_url()?>aboutus" class="footer-p1">About Us</a></li>
                     <li><a href="<?php echo base_url()?>contactUs" class="footer-p1">Contact</a></li>
@@ -50,14 +50,14 @@
             <div class="col-md-6">
                 <div class=" text-center text-md-left">
                     <span class="footer-p2 mt-3">
-                        © NOLIMIT Cars 2017
+                        © NolimitCars 2017
                     </span>
                 </div>
             </div>
             <div class="col-md-6 ">
                 <div class="text-center text-md-right">
                     <span class="footer-p2 mt-3">
-                        Terms & Conditions
+                        <a href="<?php echo base_url()?>terms" class="terms">Terms & Conditions </a>
                     </span>
                 </div>
             </div>
