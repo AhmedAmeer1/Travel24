@@ -2,6 +2,7 @@
 <html>
 <style>
 
+
 </style>
 
 <head>
@@ -136,16 +137,7 @@
 
 
 
-        <section class="coupen-section">
-            <br><br>
-            <center>
-                <h1 class="coupen-header"><b>GET 10% OFF</b></h1>
-                <p class="coupen-text">Here's your coupon code </p>
-                <h3 class="coupen-code">LUTH23</h3>
-            </center>
-            <br><br>
-
-        </section>
+        
 
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
@@ -322,7 +314,7 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="assets/images/fleet-9.png" class="img-fluid w-100" alt="car">
+                                <img src="assets/images/fleet-9.png" class="img-fluid w-100 mt-4" alt="car">
                             </div>
                             <div class="text_card">
                                 <h2>VIP</h2>
@@ -400,9 +392,9 @@
                     <div class="col-md-8">
                         <div class="list-details-box">
                             <div class="d-flex justify-content-between flag-div">
-                            <h4>Your destination is our goal</h4>
+                                <h4>Your destination is our goal</h4>
                                 <img src="assets/images/travel24/england.svg" class="img-fluid " alt="car">
-                              
+
                             </div>
 
                             <p>
@@ -442,6 +434,24 @@
 
             </div>
         </section>
+
+
+
+
+
+        <div class="image-container">
+            <img src="assets/images/travel24/offer_image.svg" class="img-fluid offer-banner-img" alt="offer">
+            <div class="text-overlay">
+                <h1> GET 10% OFF</h1>
+                <p>
+                    Here's your coupon code
+                </p>
+                <h3>LUTH23</h3>
+            </div>
+        </div>
+
+
+
 
 
 
