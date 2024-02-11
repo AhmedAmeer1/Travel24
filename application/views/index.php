@@ -19,7 +19,7 @@
 
 
 
-    <title>TRAVEL 24   </title>
+    <title>TRAVEL 24 </title>
 
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -27,11 +27,6 @@
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css')?>" rel="stylesheet" />
-
-    <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
@@ -153,131 +148,298 @@
         </section>
 
         <section class="carlist-wrapper">
-            <div class="container no-gutter-responsive">
+            <div class="home_container no-gutter-responsive">
                 <h1>OUR FLEET</h1>
                 <div class="row mt-2 no-gutter-responsive">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="car-box">
-                            <h2>SALOON CAR</h2>
-                            <img src="assets/images/fleet-1.png" class="img-fluid" alt="car">
-                            <h3><span>3</span> Passengers</h3>
-                            <h3><span>3</span> Suitcases</h3>
-                            <p>Up to 3 passengers plus 3 suitcases (20kg max) or 4 passengers plus hand luggage.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="car-box">
-                            <h2>ESTATE CAR</h2>
-                            <img src="assets/images/fleet-2.png" class="img-fluid" alt="car">
-                            <h3><span>4</span> Passengers</h3>
-                            <h3><span>4</span> Suitcases</h3>
-                            <p>Up to 4 passengers plus 4 suitcases (20kg max).</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="car-box">
-                            <h2>PEOPLE CARRIER</h2>
-                            <img src="assets/images/fleet-3.png" class="img-fluid" alt="car">
-                            <h3><span>5</span> Passengers</h3>
-                            <h3><span>5</span> Suitcases</h3>
-                            <p>Up to 5 passengers plus 5 suitcases (20kg max) or 6 passengers plus hand luggage.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="car-box">
-                            <h2>EXECUTIVE CAR</h2>
-                            <img src="assets/images/fleet-4.png" class="img-fluid" alt="car">
-                            <h3><span>3</span> Passengers</h3>
-                            <h3><span>3</span> Suitcases</h3>
-                            <p>Up to 3 passengers plus 3 suitcases (20kg max) or 4 passengers plus hand luggage</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="car-box">
-                            <h2>8 SEATER MINIBUS</h2>
-                            <img src="assets/images/fleet-6.png" class="img-fluid" alt="car">
-                            <h3><span>8</span> Passengers</h3>
-                            <h3><span>8</span> Suitcases</h3>
-                            <p>8 passengers plus up to 8 suitcases (20kg max)</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="car-box">
-                            <h2>EXECUTIVE PEOPLE CARRIER</h2>
-                            <img src="assets/images/fleet-5.png" class="img-fluid" alt="car">
-                            <h3><span>5</span> Passengers</h3>
-                            <h3><span>5</span> Suitcases</h3>
-                            <p>Up to 5 passengers plus 5 suitcases (20kg max) or 6 passengers plus hand luggage.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="car-box">
-                            <h2>MOBILITY VEHICLE</h2>
-                            <img src="assets/images/fleet-8.png" class="img-fluid" alt="car">
-                            <h3><span>4</span> Passengers</h3>
-                            <h3><span>1</span> Suitcases</h3>
-                            <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
-                                wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages (20kg
-                                max).</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="car-box">
-                            <h2>VIP</h2>
-                            <img src="assets/images/fleet-9.png" class="img-fluid" alt="car">
-                            <h3><span>2</span> Passengers</h3>
-                            <h3><span>2</span> Suitcases</h3>
-                            <p>Up to 2 passengers plus 2 suitcases (20kg max) or 3 passengers plus hand luggage.</p>
-                        </div>
-                    </div>
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-1.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>SALOON CAR</h2>
+                                <p>Up to 3 passengers plus 3 suitcases (20kg max) or 4 passengers plus hand luggage.</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;3&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;3&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
 
-
-                    <div class="col-md-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
                         <div class="car-box">
-                            <h2>SUV</h2>
-                            <img src="assets/images/fleet-10.png" class="img-fluid" alt="car">
-                            <h3><span>3</span> Passengers</h3>
-                            <h3><span>3</span> Suitcases</h3>
-                            <p>Up to 3 passengers plus 3 suitcases (20kg max) or 4 passengers plus hand luggage.</p>
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-2.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>ESTATE CAR</h2>
+                                <p>Up to 4 passengers plus 4 suitcases (20kg max).</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;4&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;4&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="car-box">
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-3.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>PEOPLE CARRIER</h2>
+                                <p>Up to 5 passengers plus 5 suitcases (20kg max) or 6 passengers plus hand luggage.</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;5&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;5&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
 
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="car-box">
-                            <h2>16 SEATER MINIBUS</h2>
-                            <img src="assets/images/fleet-7.png" class="img-fluid" alt="car">
-                            <h3><span>12</span> Passengers</h3>
-                            <h3><span>12</span> Suitcases</h3>
-                            <p>12 passengers plus up to 12 suitcases (20kg max) or 16 passengers with hand luggage.</p>
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-4.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>EXECUTIVE CAR</h2>
+                                <p>Up to 3 passengers plus 3 suitcases (20kg max) or 4 passengers plus hand luggage</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;3&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;3&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
 
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
+                        <div class="car-box">
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-6.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>8 SEATER MINIBUS</h2>
+                                <p>8 passengers plus up to 8 suitcases (20kg max)</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;8&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;8&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="car-box">
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-5.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>EXECUTIVE PEOPLE CARRIER</h2>
+                                <p>Up to 5 passengers plus 5 suitcases (20kg max) or 6 passengers plus hand luggage.</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;5&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;5&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="car-box">
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-8.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>MOBILITY VEHICLE</h2>
+                                <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
+                                    wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages
+                                    (20kg
+                                    max).</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;4&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;1&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="car-box">
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-9.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>VIP</h2>
+                                <p>Up to 2 passengers plus 2 suitcases (20kg max) or 3 passengers plus hand luggage.</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;2&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;2&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="car-box">
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-10.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>SUV</h2>
+                                <p>Up to 3 passengers plus 3 suitcases (20kg max) or 4 passengers plus hand luggage.</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;3&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;3&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="car-box">
+                            <div class="w-100 image_card">
+                                <img src="assets/images/fleet-7.png" class="img-fluid w-100" alt="car">
+                            </div>
+                            <div class="text_card">
+                                <h2>16 SEATER MINIBUS</h2>
+                                <p>12 passengers plus up to 12 suitcases (20kg max) or 16 passengers with hand luggage.
+                                </p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;12&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
+                                        <h3>&nbsp;12&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="col-md-8">
                         <div class="list-details-box">
+                            <div class="d-flex justify-content-between flag-div">
                             <h4>Your destination is our goal</h4>
+                                <img src="assets/images/travel24/england.svg" class="img-fluid " alt="car">
+                              
+                            </div>
+
                             <p>
                                 When you choose us for your travel needs, we're committed to delivering a seamless
-                                experience from start to finish. Our diverse fleet, ranging from professional minicabs
-                                to executive chauffeurs and minibuses, is tailored to fit your specific passenger and
-                                luggage needs. Our drivers are hand-picked for their exceptional customer service and
-                                in-depth local knowledge, ensuring a smooth and pleasant journey. Plus, we're inclusive
-                                to all travelers with specially designed wheelchair-accessible vehicles. Come take a
-                                look at our extensive fleet and find the perfect ride for you.
+                                experience from start to finish.
+                            </p>
+                            <p>
+                                Our diverse fleet, ranging from professional minicabs to executive chauffeurs and
+                                minibuses, is tailored to fit your specific passenger and luggage needs.
                             </p>
 
-                            <p class="disability">We offer a selection of wheelchair-accessible vehicles, ensuring
+
+                            <p>
+                                Our drivers are hand-picked for their exceptional customer service and in-depth local
+                                knowledge, ensuring a smooth and pleasant journey.
+                            </p>
+
+                            <p>
+                                Plus, we're inclusive to all travelers with specially designed wheelchair-accessible
+                                vehicles. Come take a look at our extensive fleet and find the perfect ride for you.
+                            </p>
+
+                            <p>
+                                We offer a selection of wheelchair-accessible vehicles, ensuring comfortable travel for
+                                passengers with disabilities. Take a glimpse at our extensive fleet tailored to meet
+                                diverse needs.
+                            </p>
+
+                            <p class="">We offer a selection of wheelchair-accessible vehicles, ensuring
                                 comfortable travel for passengers with disabilities. Take a glimpse at our extensive
                                 fleet tailored to meet diverse needs. </p>
-                            <p class="flagimg">SERVICES NATIONWIDE</p>
+
 
                         </div>
                     </div>
                 </div>
-              
+
             </div>
         </section>
 

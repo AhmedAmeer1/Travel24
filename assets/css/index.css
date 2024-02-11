@@ -207,95 +207,20 @@
 	text-transform: uppercase;
 }
 
-.carlist-wrapper .car-box {
-	background-color: rgb(0 81 124);
-	padding: 10px;
-	margin-top: 28px;
-	opacity: 1;
-	min-height: 320px;
-}
 
-.carlist-wrapper .car-box h2 {
-	color: #fff;
-	font-size: 20px;
-	font-family: "helvet";
-}
 
-.carlist-wrapper .car-box h3 {
-	color: #f38422;
-	font-size: 20px;
-	font-weight: 400;
-}
 
-.carlist-wrapper .car-box h3 span {
-	color: #fff;
-	font-size: 20px;
-	font-weight: 400;
-}
+
+
+
 
 .carlist-wrapper .car-box img {
 	margin-top: 8px;
 	margin-bottom: 16px;
 }
 
-.carlist-wrapper .car-box p {
-	color: #fff;
-	margin-top: 15px;
-	font-size: 13px;
-	line-height: 18px;
-}
 
-.carlist-wrapper .list-details-box {
-	margin-top: 24px;
-}
 
-.carlist-wrapper .list-details-box .disability img {
-	width: 15px;
-	margin-right: 6px;
-}
-
-.carlist-wrapper .list-details-box .disability {
-	padding-left: 25px;
-	background-image: url("../images/disability.png");
-	background-position: left top;
-	background-size: 22px;
-	background-repeat: no-repeat;
-}
-
-.carlist-wrapper .list-details-box h4 {
-	color: #155a94;
-	font-size: 30px;
-	font-family: "helvet";
-}
-
-.carlist-wrapper .list-details-box p {
-	color: #155a94;
-	margin-top: 15px;
-	font-size: 13px;
-	line-height: 18px;
-}
-
-p.flagimg {
-	font-size: 33px !important;
-	line-height: 40px !important;
-	margin-top: 35px !important;
-	font-weight: bold;
-	padding-left: 45px;
-	background-image: url(../assets/images/union-flag.jpg);
-	background-position: left center;
-	background-size: 40px;
-	background-repeat: no-repeat;
-}
-
-/*================(640)================*/
-@media screen and (max-width: 40em) {
-	p.flagimg {
-		font-size: 26px !important;
-		padding-left: 40px;
-		background-size: 35px;
-		margin-top: 15px !important;
-	}
-}
 
 @media only screen and (max-width: 480px) {
 	.carlist-wrapper .car-box {
@@ -309,7 +234,134 @@ p.flagimg {
 	}
 }
 
+
+
+
+
+
+
+/* ------------Ahmed css ----------------- */
+
+
+.home_container {
+	background-color: #F9FAFB;
+    padding: 77px 230px 100px 230px;
+}
+
+ .car-box {
+
+	/* background-color: rgb(0 81 124); */
+
+	margin-top: 28px;
+	opacity: 1;
+	min-height: 320px;
+}
+
+.image_card{
+	box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1);
+	background-color: black;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+
+    padding: 20px 50px 10px 50px;
+}
+
+
+.text_card{
+	
+	box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	padding: 20px 50px 10px 20px;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+
+
+.text_card p {
+	color: #475467;
+	margin-top: 15px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.text_card h2 {
+    color: #101828;
+    font-size: 22px;
+    font-family: "helvet";
+}
+
+.text_card   h3 {
+    color: #004C78;
+    font-size: 16px;
+    font-weight: 500;
+	margin-top: 15px;
+}
+
+
+
+.carlist-wrapper .list-details-box {
+	margin-top: 24px;
+	box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1);
+	/* background-color: red; */
+	padding: 20px 46px 20px 78px;
+}
+
+
+
+
+
+.carlist-wrapper .list-details-box h4 {
+	color: #004C78;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: "helvet";
+	margin-right: 25px;
+}
+
+.carlist-wrapper .list-details-box p {
+	color: #000000;
+	margin-top: 15px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+
+ .flag-div{
+	width: fit-content;
+ }
+
+
+
+
+
 /*  ============================= OUR FLEET COMPONENT END  ================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ----------------------------- COUPON COMPONENT START ------------------------------------- */
 
@@ -343,3 +395,19 @@ p.flagimg {
 }
 
 /*  ================================= COUPON COMPONENT END  ======================================= */
+
+
+@media only screen and (max-width: 1366px) {
+	.home_container {
+	
+		padding: 77px 60px 100px 60px;
+	}
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.home_container {
+	
+		padding: 77px 30px 100px 30px;
+	}
+}
