@@ -13,13 +13,7 @@
 /*  ----------------------------------- BANNER COMPONENT   START -------------------------------- */
 
 .limits-banner {
-	/* background-image: url("../images/homebanner.jpg"); */
-	/* background-size: cover;
-    background-repeat: no-repeat; */
 	background-color: #00517c;
-	height: 100%;
-	width: 100%;
-	padding: 100px 0;
 	position: relative;
 }
 
@@ -39,13 +33,12 @@
 }
 
 .limits-banner .book-form-box {
-	margin-top: 95px;
 	background-color: rgba(0, 0, 0, 0.78);
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 .limits-banner .book-form-box .head {
-	padding: 15px;
+	padding: 20px 23px 20px 23px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -53,8 +46,9 @@
 
 .limits-banner .book-form-box .head h1 {
 	color: #fff;
-	font-size: 32px;
-	font-family: "allerdisplay";
+	font-size: 22px;
+	font-weight: 600;
+	/* font-family: "allerdisplay"; */
 }
 
 .limits-banner .book-form-box .content {
@@ -64,11 +58,13 @@
 .limits-banner .book-form-box .content .form-inner {
 	background-color: #00517c;
 	padding: 10px;
+	border-radius: 12px;
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group label {
 	color: #fff;
-	font-size: 10px;
+	font-size: 14px;
+	font-weight: 500;
 	margin: 8px 0 0px 0;
 }
 
@@ -76,7 +72,10 @@
 	border-radius: 0;
 	border: 0;
 	padding: 8px 10px;
+	border-radius: 6px;
 	margin-top: 10px;
+	margin-bottom: 40px;
+	height: 45px;
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group button {
@@ -97,54 +96,81 @@
 
 .limits-banner .book-form-box .content .form-inner .submit-btn {
 	width: 100%;
+	font-size: 14px;
+	font-weight: 600;
 	background-color: #ff700a;
 	color: #fff;
 	border: 0;
-	border-radius: 25px;
+	border-radius: 4px;
 	padding: 10px;
 	text-transform: uppercase;
+	margin-bottom: 30px;
+	height: 45px;
+}
+
+/* ---------------ahmed css ------------------------  */
+
+.banner_container {
+	padding: 77px 170px 100px 170px;
 }
 
 .limits-banner .banner-details {
 	margin-top: 95px;
-	background-color: rgba(0, 0, 0, 0.78);
+	/* background-color: red; */
 	border-radius: 10px;
-	padding: 20px;
+	padding: 20px 80px 20px 20px;
 }
 
 .limits-banner .banner-details h1 {
-	font-size: 26px;
+	font-size: 65px;
+	font-weight: 500;
+	line-height: 60px;
 	color: #f38422;
 	margin: 0 0 10px;
 	font-family: "helvet";
 }
 
 .limits-banner .banner-details p {
-	color: #fff;
-	margin-top: 15px;
+	color: #e4e4e4;
+	margin-top: 30px;
 	font-family: "helvetnormal";
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 30px;
+	line-height: 40px;
 }
 
-.limits-banner .banner-details p span {
-	color: #f38422;
-	font-weight: 500;
+.box-padding {
+	padding-left: 150px !important;
 }
 
-.limits-banner .banner-details p .block-span {
-	display: block;
+@media only screen and (max-width: 1366px) {
+	.limits-banner .banner-details h1 {
+		font-size: 52px;
+		line-height: 50px;
+	}
+	.limits-banner .banner-details p {
+		font-size: 24px;
+		line-height: 33px;
+	}
+	.box-padding {
+		padding-left: 14px !important;
+	}
+	
+}
+@media only screen and (max-width: 1024px) {
+
+	.banner_container {
+		padding: 75px 35px 100px 41px;
+	}
 }
 
-.limits-banner .banner-details p a {
-	color: #f38422;
-}
+
+
 
 @media only screen and (max-width: 768px) {
 	.limits-banner {
 		height: auto !important;
 		background-image: none;
-		background-color: #000;
+		background-color: #004c78;
 		padding: 0;
 	}
 	.limits-banner .book-form-box {
@@ -154,22 +180,27 @@
 		font-size: 20px;
 	}
 	.limits-banner .book-form-box .content {
-		padding: 0;
+		padding: 6px;
 	}
 	.limits-banner .banner-details h1 {
-		font-size: 18px;
+		font-size: 30px;
 		text-align: center;
 	}
+	.banner_container {
+		padding: 22px 0px 48px 0px;
+	}
 	.limits-banner .banner-details {
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-bottom: 20px;
 		padding: 0;
 		margin-left: 12px;
 		margin-right: 12px;
 	}
 	.limits-banner .banner-details p {
-		font-size: 15px;
+		font-size: 16px;
 		text-align: center;
+		margin-top: 0px;
+		line-height: 25px;
 	}
 	.limits-banner::before {
 		display: none;
@@ -183,6 +214,10 @@
 	}
 	.limits-banner .banner-details p .block-span {
 		display: inline-block;
+	}
+	.box-padding {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
 	}
 }
 
@@ -351,12 +386,10 @@
 	}
 }
 @media only screen and (max-width: 767px) {
-	
 	.carlist-wrapper .list-details-box {
 		padding: 20px 15px 20px 12px;
 	}
-	
-	
+
 	.text-overlay h1 {
 		font-size: 17px;
 	}
