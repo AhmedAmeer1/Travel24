@@ -1,0 +1,54 @@
+img,
+object,
+embed {
+    max-width: 100%;
+}
+
+.banner-section {
+    background-color: #004C78;
+    text-align: center;
+
+}
+
+.banner-image {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.booking-form h1{
+    font-size: 48px;
+    font-weight: 600;
+    color: #101828;
+    margin-top: 40px;
+}
+
+.booking-form p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #475467;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+
+
+/* ------------------------ RESPONSIVE START ------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    .booking-form h1 {
+        font-size: 29px;
+        margin-top: 0px;
+       
+    }
+    .booking-form p {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+}

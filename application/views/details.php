@@ -13,6 +13,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
       <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
       <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
+      <link href="<?php echo base_url('assets/css/details.css')?>" rel="stylesheet" />
       <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -104,16 +105,27 @@ input[type=number] {
       <!-- responsive menu -->
     
       <main class="home">
-         <div class="inner-header-wrapper text-center">
+      <div class="container-fluid banner-section">
+            <img src="<?php echo base_url('assets/images/travel24/listView/banner.svg')?>" alt="about_us_banner"
+                class="banner-image">
+        </div>
+
+         <!-- <div class="inner-header-wrapper text-center">
            
             <div class="container text-center">
        
                 <h1>Booking Details</h1>
             </div>
-         </div>
+         </div> -->
          <section class="details-main-wrapper">
             <div class="container">
                <div class="row">
+
+               <div class="col-12 text-center  booking-form">
+                        <h1 >Booking Details </h1>
+                        <p>Please check journey details and select date and time</p>
+                    </div>
+
                   <div class="col-md-12">
                  
                      <h1>Please check journey details and select date and time</h1>
