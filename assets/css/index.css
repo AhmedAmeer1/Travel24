@@ -142,6 +142,23 @@
 	padding-left: 150px !important;
 }
 
+.text-container {
+	margin-top: 50px;
+	padding: 78px 310px 100px 229px;
+}
+.text-container p {
+	font-size: 18px;
+	font-weight: 400;
+	color: black;
+	line-height: 30px;
+}
+.text-container p a {
+	font-size: 18px;
+	font-weight: 400;
+	color: black;
+	line-height: 30px;
+}
+
 @media only screen and (max-width: 1366px) {
 	.limits-banner .banner-details h1 {
 		font-size: 52px;
@@ -154,19 +171,19 @@
 	.box-padding {
 		padding-left: 14px !important;
 	}
-	
+	.text-container {
+		padding: 17px 90px 0px 90px;
+	}
 }
 @media only screen and (max-width: 1024px) {
-
 	.banner_container {
 		padding: 75px 35px 100px 41px;
 	}
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
+
+
 	.limits-banner {
 		height: auto !important;
 		background-image: none;
@@ -219,6 +236,12 @@
 		padding-left: 10px !important;
 		padding-right: 10px !important;
 	}
+
+	.text-container {
+		padding: 27px 39px 49px 22px;
+	}
+
+
 }
 
 /*  =============================BANNER COMPONENT  END  ================================= */

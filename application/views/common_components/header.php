@@ -4,10 +4,9 @@
 .nav-item .call-div {
     background-color: #00517c;
     padding: 12px 16px 18px 17px;
-    color:white;
-    border-radius:5px;
+    color: white;
+    border-radius: 5px;
 }
-
 </style>
 
 <head>
@@ -17,7 +16,7 @@
     <meta name="language" content="ES">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
+
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
 
     <link href="<?php echo base_url('assets/css/header.css')?>" rel="stylesheet" />
@@ -74,15 +73,14 @@
                 <div class="col-md-12">
                     <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid" alt="Logo">
                     <ul class="sub-header-res-new">
-                        <!-- <li>
-                            <a href="mailto:info@nolimitcars.co.uk"><img src="<?php echo base_url('assets/images/mail.png')?>" alt=""></a>
-                        </li> -->
+
                         <li>
-                            <a href="tel:02039822911"><img src="<?php echo base_url('assets/images/call.png')?>" alt="">
+                            <a href="tel:02039822911">
+                                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="call-icon">
                                 02039822911</a>
                         </li>
                     </ul>
-                    <!-- <a href="<?php echo base_url('BookingForm')?>" class="res-head-btn">Book Online</a> -->
+
                 </div>
             </div>
             <!-- <button id="menu-btn" class="brgn-btn">X</button> -->
@@ -112,6 +110,11 @@
             <li>
                 <a href="<?php echo base_url()?>customerReviews">reviews</a>
             </li>
+            <li class=" mt-1">
+                <a href="tel:02039822911 " class=" call-div">
+                    <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="">
+                    02039822911</a>
+            </li>
             <!-- <li>
                 <a  href="<?php echo base_url()?>contactUs">contact</a>
             </li> -->
@@ -124,6 +127,7 @@
     <script src="<?php echo base_url('assets/js/jquery.touchSwipe.min.js')?>"></script>
     <script src="https://use.fontawesome.com/1e36072efd.js"></script>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
+
 </body>
 
 

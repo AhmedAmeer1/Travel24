@@ -56,12 +56,10 @@
     <main class="home">
 
 
-        <div class="responsive-header-image"></div>
+        <div class="responsive-header-image mt-2"></div>
         <section class="limits-banner">
             <div class="banner_container ">
                 <div class="row ">
-
-
                     <div class="col-md-6 banner-details">
                         <div class="mx-auto">
                             <h1>Your Destination is our goal</h1>
@@ -135,7 +133,16 @@
 
 
 
-
+        <div class="text-container ">
+            <p>
+                For reliable and professional airport transfers, NoLimitCars has you covered. We offer 24/7 minicab
+                services to all UK airports for individuals and groups, with clear, upfront pricing.
+            </p>
+            <p class="mt-4">
+                For a hassle-free quote, fill out our online form or call us at <a href="tel:02039822911"> 02039 822 911.</a> Travel comfortably from
+                Brighton to Heathrow, Gatwick, and beyond with us.
+            </p>
+        </div>
 
 
         <section class="carlist-wrapper">

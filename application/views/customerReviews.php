@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<script>
+let currentIndex = 0;
+
+// Start from the second slide (Slide 2)
+const items = document.querySelectorAll('.carousel-item');
+
+const totalItems = window.innerWidth >= 768 ? items.length - 7 : items.length - 2;
+// const totalItems = items.length -3 ;  // if data  count is  even number divide by 3 and odd means divide 2
+const leftArrow = document.getElementById('leftArrow');
+const rightArrow = document.getElementById('rightArrow');
+leftArrow.classList.add('disabled');
+
+function moveCarousel(direction) {
+    console.log(totalItems);
+    console.log(currentIndex);
+
+    currentIndex = (currentIndex + direction + totalItems) % totalItems;
+    const offset = -currentIndex * 100;
+    document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+
+    // Disable or enable arrows based on currentIndex
+    if (currentIndex === 0) {
+        leftArrow.classList.add('disabled');
+        rightArrow.classList.remove('disabled');
+    } else if (currentIndex === totalItems - 1) {
+        rightArrow.classList.add('disabled');
+        leftArrow.classList.remove('disabled');
+    } else {
+        leftArrow.classList.remove('disabled');
+        rightArrow.classList.remove('disabled');
+    }
+}
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +45,7 @@
 
     <title>Reviews</title>
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="<?= base_url('assets/css/reviews.css') ?>">
     <style>
     .carousel-container {
@@ -126,10 +161,14 @@
         }
     }
     </style>
+
+
+
+
 </head>
 
 <body>
-
+    <?php $this->load->view('common_components/header'); ?>
 
     <div class="container-fluid banner-section">
         <img src="<?php echo base_url('assets/images/travel24/review_banner.svg')?>" alt="about_us_banner"
@@ -229,39 +268,7 @@
         <div class="carousel-arrow right" onclick="moveCarousel(1)" id="rightArrow">&#10095;</div>
     </div>
 
-    <script>
-    let currentIndex = 0;
 
-    // Start from the second slide (Slide 2)
-    const items = document.querySelectorAll('.carousel-item');
-
-    const totalItems = window.innerWidth >= 768 ? items.length - 7 : items.length - 1;
-    // const totalItems = items.length -3 ;  // if data  count is  even number divide by 3 and odd means divide 2
-    const leftArrow = document.getElementById('leftArrow');
-    const rightArrow = document.getElementById('rightArrow');
-    leftArrow.classList.add('disabled');
-
-    function moveCarousel(direction) {
-        console.log(totalItems);
-        console.log(currentIndex);
-
-        currentIndex = (currentIndex + direction + totalItems) % totalItems;
-        const offset = -currentIndex * 100;
-        document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
-
-        // Disable or enable arrows based on currentIndex
-        if (currentIndex === 0) {
-            leftArrow.classList.add('disabled');
-            rightArrow.classList.remove('disabled');
-        } else if (currentIndex === totalItems - 1) {
-            rightArrow.classList.add('disabled');
-            leftArrow.classList.remove('disabled');
-        } else {
-            leftArrow.classList.remove('disabled');
-            rightArrow.classList.remove('disabled');
-        }
-    }
-    </script>
 
 </body>
 

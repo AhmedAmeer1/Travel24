@@ -132,17 +132,22 @@
 
 .sub-header-res-new {
     margin-top: 10px;
+   
+  
     /* padding-bottom: 15px; */
 }
 
 .sub-header-res-new li {
+    background-color: #00517c;
+    border-radius: 7px;
+    padding: 10px 15px 10px 15px;
     list-style: none;
     display: inline-block;
     margin-left: 5px;
 }
 
 .sub-header-res-new li a {
-    color: black;
+    color: white !important;
     font-weight: 500;
     vertical-align: middle;
     font-family: 'allerbold';
@@ -152,7 +157,7 @@
 
 
 .res-side-menu {
-    background-color: black;
+    background-color: white;
     padding: 10px 0 25px 0;
     text-align: center;
 }
@@ -188,7 +193,7 @@
 .icon-bar {
     width: 30px;
     height: 4px;
-    background-color: #fff;
+    background-color: black !important;
     display: block;
     transition: all 0.2s;
     margin-top: 7px;
