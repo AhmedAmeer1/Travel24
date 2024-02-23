@@ -4,9 +4,9 @@
 <head>
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
 
-    <meta name="title" content="About Nolimit Cars: Trusted Airport Transfer Service" />
+    <meta name="title" content="About Travel24: Trusted Airport Transfer Service" />
     <meta name="description"
-        content="Learn more about Nolimit Cars, your trusted partner for airport transfers. Our story, values, and commitment to providing top-quality, reliable, and affordable transportation solutions across the UK." />
+        content="Learn more aboutTravel24, your trusted partner for airport transfers. Our story, values, and commitment to providing top-quality, reliable, and affordable transportation solutions across the UK." />
 
     <title>Blogs</title>
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">

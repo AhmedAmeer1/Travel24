@@ -27,7 +27,7 @@ class BookingModel extends CI_Model {
               You can share here: <a href=".base_url()."Reviews/addReview/".encode_param($book_details->id).">Please Click</a> <br><br>
               You're amazing either way. <br><br>
               Best, <br>
-              Nolimit Cars";
+              Travel24";
 
       newEmailFunction($book_details->email,$msg);
     }

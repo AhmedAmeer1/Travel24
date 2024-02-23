@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Customer Reviews: See What Others Say About Nolimit Cars" />
-    <meta name="description" content="Read authentic customer reviews and experiences with Nolimit Cars. Discover why our clients choose us for reliable and comfortable airport transfers across the UK" />
+    <meta name="title" content="Customer Reviews: See What Others Say About Travel24" />
+    <meta name="description" content="Read authentic customer reviews and experiences with Travel24. Discover why our clients choose us for reliable and comfortable airport transfers across the UK" />
  
     <title>Reviews</title>
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">

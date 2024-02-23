@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="title" content="Contact Nolimit Cars for Airport Transfers and Inquiries" />
+    <meta name="title" content="Contac Travel24 for Airport Transfers and Inquiries" />
     <meta name="description"
-        content="Reach out to Nolimit Cars for all your airport transfer needs or any inquiries. Our team is ready to assist you with bookings, questions, and customized travel solutions." />
+        content="Reach out to Travel24 for all your airport transfer needs or any inquiries. Our team is ready to assist you with bookings, questions, and customized travel solutions." />
 
 
 
@@ -304,7 +304,7 @@
                 <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="terms_icon"
                     class="contact_icon">
                 <div>
-                    <h1>Nolimit Cars LTD</h1>
+                    <h1>Travel24 LTD</h1>
                     <p> 102 Mulberry Crescentwest Drayton UB7 9AJ</p>
                 </div>
             </div>

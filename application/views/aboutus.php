@@ -4,9 +4,9 @@
 <head>
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
 
-    <meta name="title" content="About Nolimit Cars: Trusted Airport Transfer Service" />
+    <meta name="title" content="AboutTravel24: Trusted Airport Transfer Service" />
     <meta name="description"
-        content="Learn more about Nolimit Cars, your trusted partner for airport transfers. Our story, values, and commitment to providing top-quality, reliable, and affordable transportation solutions across the UK." />
+        content="Learn more about Travel24, your trusted partner for airport transfers. Our story, values, and commitment to providing top-quality, reliable, and affordable transportation solutions across the UK." />
 
     <title>About Us</title>
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">
@@ -47,7 +47,7 @@
         <div class=" aboutus_wrapper">
             <div class="aboutus_content_div">
                 <h1>About us </h1>
-                <p>NoLimit Cars offer a highly professional taxi, minibus, chauffeur, parcel and executive service
+                <p>Travel24 offer a highly professional taxi, minibus, chauffeur, parcel and executive service
                     who are airport and distance specialists. We have been serving customers for over 15 years, now
                     new management, new price.</p>
                 <p>When you require a taxi we can meet your needs 24/7.</p>
@@ -58,8 +58,8 @@
                 <p>All our taxis are licensed and badged and vehicles undergo a regular safety check which is
                     carried out by the relevant Council.</p>
                 <p>Bookings can be made online, by email or by telephone although email should only be used for
-                    advance bookings. NoLimit Cars will confirm such bookings by return e-mail.</p>
-                <p>NoLimit Cars also provide account facilities, and are available for regular school runs, these
+                    advance bookings.Travel24 will confirm such bookings by return e-mail.</p>
+                <p>Travel24 also provide account facilities, and are available for regular school runs, these
                     can be set-up upon request. We accept all card payments.</p>
                 <p>Remember online, Airport, Distance and Local Specialists will meet your needs and always put
                     customers first.</p>

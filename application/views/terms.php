@@ -39,10 +39,10 @@
                         class="terms_icon">
                     <p>
                         You will receive a welcome email containing your login details and password on your first
-                        booking with us. you will automatically receive a NoLimit Cars acknowledgement email for the
+                        booking with us. you will automatically receive a Travel24 acknowledgement email for the
                         journey you have made. We will send your journey details automatically. You have to check your
                         email and all details are correct which provided. If there is any change call us or email us. If
-                        you missed to do so NoLimit Cars won’t responsible for your journey.
+                        you missed to do so Travel24 won’t responsible for your journey.
                     </p>
                 </div>
 
@@ -54,7 +54,7 @@
                     <p>
                         We will send your journey details, pick up instructions and driver phone number when the journey
                         has been assigned to a driver. You have to check your email and phone time to time your journey
-                        begins. Driver will call or you can call driver. If you missed to do so NoLimit Cars will not
+                        begins. Driver will call or you can call driver. If you missed to do so Travel24 will not
                         responsible and will not refundable. You have to follow all the instructions.
                     </p>
                 </div>
@@ -66,7 +66,7 @@
                         class="terms_icon">
                     <p>
                         We advise passenger to arrive 3 hours early as possible to the airport. Other places are depend
-                        on the check in time. Unpredicted traffic delays and routes NoLimit Cars won’t responsible for
+                        on the check in time. Unpredicted traffic delays and routes Travel24 won’t responsible for
                         your missed flight or other appointments.
                     </p>
                 </div>
@@ -75,7 +75,7 @@
                     <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
                         class="terms_icon">
                     <p>
-                        NoLimit Cars will not accept any responsibilities for missed flight or any other appointments.
+                    Travel24 will not accept any responsibilities for missed flight or any other appointments.
                         What ever reason eg; severe weather, traffic delays and accidents unforseen circumstances.
                     </p>
                 </div>
@@ -118,8 +118,8 @@
                     <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
                         class="terms_icon">
                     <p>
-                        NoLimit Cars will not take any responsible for passengers take other alternative transport. (no
-                        refundable for the cost) you have to wait for the driver or call the driver or the NoLimit Cars.
+                    Travel24 will not take any responsible for passengers take other alternative transport. (no
+                        refundable for the cost) you have to wait for the driver or call the driver or the Travel24.
                     </p>
                 </div>
 
@@ -127,7 +127,7 @@
                     <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
                         class="terms_icon">
                     <p>
-                        If there is any change in journey times you must inform NoLimit Cars as soon as possible if you
+                        If there is any change in journey times you must inform Travel24 as soon as possible if you
                         missed to do so no refundable.
                     </p>
                 </div>
@@ -137,9 +137,9 @@
                     <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
                         class="terms_icon">
                     <p>
-                        NoLimit Cars advise you to book the right size vehicle for passengers and luggages. If exceeding
+                    Travel24 advise you to book the right size vehicle for passengers and luggages. If exceeding
                         of luggages and passengers we wont take any responsibilities for that. if you are not sure about
-                        the capacity of vehicle you booked with us please give us call 24/7 to NoLimit Cars.
+                        the capacity of vehicle you booked with us please give us call 24/7 toTravel24.
                     </p>
                 </div>
 
@@ -147,7 +147,7 @@
                     <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
                         class="terms_icon">
                     <p>
-                        NoLimit Cars use their own transport most of the time. Sometimes NoLimit Cars do use third party
+                    Travel24 use their own transport most of the time. Sometimes Travel24 do use third party
                         company appropriate due to the volume of bookings we have.
                     </p>
                 </div>
