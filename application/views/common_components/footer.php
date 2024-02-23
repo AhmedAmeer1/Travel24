@@ -31,7 +31,8 @@
         <div class="row mt-md-4 mt-3">
             <div class="col-md-6">
                 <ul class="side-menu ">
-                    <li><a href="<?php echo base_url()?>blogs" class="footer-p1">Blogs</a></li>
+                    <!-- <li><a href="<?php echo base_url()?>blogs" class="footer-p1">Blogs</a></li> -->
+                    <li><a href="<?php echo base_url()?>customerReviews" class="footer-p1">Reviews</a></li>
                     <li><a href="<?php echo base_url()?>drivers" class="footer-p1">Drivers</a></li>
                     <li><a href="<?php echo base_url()?>aboutus" class="footer-p1">About Us</a></li>
                     <li><a href="<?php echo base_url()?>contactUs" class="footer-p1">Contact</a></li>

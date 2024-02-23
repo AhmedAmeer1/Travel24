@@ -108,7 +108,7 @@
                 <a href="<?php echo base_url()?>faq">Faq </a>
             </li>
             <li>
-                <a href="<?php echo base_url()?>customerReviews">reviews</a>
+                <a href="<?php echo base_url()?>customerReviews">Reviews</a>
             </li>
             <li class=" mt-1">
                 <a href="tel:02039822911 " class=" call-div">
