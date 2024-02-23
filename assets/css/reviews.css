@@ -1,11 +1,130 @@
 .banner-section {
-    background-color: #004C78;
-    text-align: center;
-
+	background-color: #004c78;
+	text-align: center;
 }
 
 .banner-image {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
+}
 
+.subpagecontent h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	color: #101828;
+	margin-top: 150px;
+}
+
+.subpagecontent .sub-heading {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	color: #475467;
+	line-height: 26px;
+	margin-top: 20px;
+}
+
+.customer_name {
+	text-align: left;
+	font-size: 24px;
+	font-weight: 400;
+	color: #475467;
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+.client_rating {
+	font-size: 20px;
+	color: #f38422;
+	margin-top: 30px;
+}
+.swiper-slide {
+	/* width: 200px; */
+	/* background-color: lightgreen; */
+	/* border: 1px solid #ddd; */
+	padding: 15px;
+	margin-right: 10px;
+	border-radius: 5px;
+	padding: 10px 250px 10px 150px !important;
+}
+
+.swiper-container-outer {
+	overflow: hidden;
+	margin-top: 150px;
+}
+
+.swiper-button-prev {
+	margin-top: 580px;
+}
+
+.swiper-button-next {
+	margin-top: 580px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 1366px) {
+	.swiper-button-prev {
+		margin-top: 540px;
+	}
+
+	.swiper-button-next {
+		margin-top: 540px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.swiper-slide {
+		padding: 10px 50px 10px 90px !important;
+	}
+	.swiper-button-prev {
+		margin-top: 378px;
+	}
+
+	.swiper-button-next {
+		margin-top: 378px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.swiper-slide {
+		width: calc(50% - 10px);
+		/* Two reviews in a row with some margin in between */
+		margin-right: 0;
+	}
+
+	.swiper-container-outer {
+		margin-top: 100px;
+	}
+
+	.subpagecontent h1 {
+		text-align: center;
+		font-size: 28px;
+
+		margin-top: 50px;
+	}
+	.subpagecontent .sub-heading {
+		text-align: center;
+		font-size: 17px;
+
+		margin-top: 10px;
+	}
+
+	.swiper-slide {
+		padding: 10px 50px 10px 90px !important;
+	}
+
+	.customer_name {
+		text-align: left;
+		font-size: 20px;
+	}
+	.swiper-button-prev {
+		font-size: 20px !important;
+		margin-top: 250px;
+	}
+
+	.swiper-button-next {
+		margin-top: 250px;
+	}
 }
