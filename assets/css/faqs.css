@@ -119,6 +119,14 @@ embed {
     border-radius: 10px;
     padding: 10px 15px 10px 15px ;
 }
+.get_in_touch button a{
+   
+       color: white !important;
+       font-family: 'Helvetica 55 Roman';
+       font-size: 16px;
+       font-weight: 600;
+      
+   }
 
 
 
