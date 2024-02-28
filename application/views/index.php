@@ -443,7 +443,7 @@
                 <p>
                     Here's your coupon code
                 </p>
-                <h3>LUTH23</h3>
+                <h3>LUTH24</h3>
             </div>
         </div>
 
