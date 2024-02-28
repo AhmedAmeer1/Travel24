@@ -42,7 +42,7 @@ class ContactUs extends CI_Controller {
           
             $this->email->initialize($config);
        
-            $to = "info@nolimitcars.co.uk";
+            $to = "info@travel24taxi.com";
             $this->email->initialize($config);
             $this->email->from($name, $email);
 

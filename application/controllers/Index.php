@@ -542,7 +542,7 @@ public function check_promo_code(){
 		$config['bcc_batch_mode'] = FALSE; // TRUE or FALSE (boolean)    Enable BCC Batch Mode.
 		$config['bcc_batch_size'] = 200; // Number of emails in each BCC batch.
 		$this->email->initialize($config);
-		$this->email->from('bookings@nolimitcars.co.uk', 'TRAVEL 24 CARS');
+		$this->email->from('bookings@travel24taxi.com', 'TRAVEL 24 CARS');
 		$this->email->to($data['email']);
 		
         $this->email->subject('Your Nolimit Taxi order has been received!');
@@ -555,12 +555,12 @@ public function check_promo_code(){
 
 
 		if($this->email->send()){
-			$to = "bookings@nolimitcars.co.uk";
+			$to = "bookings@travel24taxi.com";
 			$subject =$data['booking_id'];
 
 			//$to = "soumen.karmakar@solutions2xl.com";
 		$this->email->initialize($config);
-		$this->email->from('bookings@nolimitcars.co.uk', 'TRAVEL24 CARS');
+		$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 CARS');
 		$this->email->to($to);
         $this->email->subject($subject);
 		$mesg = $this->load->view('template/email_admin',$data,true);

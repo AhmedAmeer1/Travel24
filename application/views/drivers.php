@@ -54,7 +54,7 @@
                         class="terms_icon">
                     <p>
                         Please download and complete the form below and send it back with all required documents by
-                        email: <a href="mailto:info@nolimitcars.co.uk" class="">info@nolimitcars.co.uk </a>
+                        email: <a href="mailto:info@travel24taxi.com" class="">info@travel24taxi.com </a>
                     </p>
                 </div>
             </div>

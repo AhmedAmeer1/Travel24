@@ -297,7 +297,7 @@
                     class="contact_icon">
                 <div>
                     <h1>Email</h1>
-                    <p> info@nolimitcars.co.uk</p>
+                    <p>info@travel24taxi.com</p>
                 </div>
             </div>
             <div class="d-flex mt-5 mt-md-0 p-xl-5">
