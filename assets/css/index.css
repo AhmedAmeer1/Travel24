@@ -340,11 +340,11 @@
 }
 
 .carlist-wrapper .list-details-box p {
-	color: #000000;
-	margin-top: 15px;
-	font-size: 13px;
-	font-weight: 400;
-	line-height: 22px;
+    color: #000000;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
 .flag-div {
