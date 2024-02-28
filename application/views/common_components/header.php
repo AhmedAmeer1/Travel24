@@ -26,7 +26,7 @@
     <header class="limits-header-wrapper  d-md-block d-none ">
 
         <nav class="navbar navbar-expand-md">
-            <div class=" row container-fluid pa-50">
+            <div class=" row container-fluid pa-50 mt-4">
 
 
                 <div class="col-md-4">
@@ -71,7 +71,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid" alt="Logo">
+                    <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid mt-3" alt="Logo">
                     <ul class="sub-header-res-new">
 
                         <li>
