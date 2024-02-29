@@ -9,7 +9,7 @@
         content="Learn more about Travel24, your trusted partner for airport transfers. Our story, values, and commitment to providing top-quality, reliable, and affordable transportation solutions across the UK." />
 
     <title>Blogs</title>
-    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">
+    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/blogs.css') ?>">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

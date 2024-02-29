@@ -7,7 +7,7 @@
     <meta name="description" content="Read authentic customer reviews and experiences with Travel24. Discover why our clients choose us for reliable and comfortable airport transfers across the UK" />
  
     <title>Reviews</title>
-    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">
+    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= base_url('assets/css/reviews.css') ?>">
     <style>

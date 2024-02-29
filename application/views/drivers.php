@@ -10,7 +10,7 @@
 
 
     <title>Drivers</title>
-    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">
+    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/drivers.css') ?>">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

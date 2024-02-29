@@ -15,14 +15,9 @@
     <meta name="title"
         content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
     <meta name="language" content="ES">
-    <meta property="og:image" content="https://nolimitcars.co.uk/assets/images/logo.png">
-
-
-
-
+    <meta property="og:image" content="<?php echo base_url('assets/images/travel24.jpg')?>">
     <title>TRAVEL 24 </title>
-
-    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/favicon.png')?>">
+    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
