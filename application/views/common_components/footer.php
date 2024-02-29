@@ -51,7 +51,7 @@
             <div class="col-md-6">
                 <div class=" text-center text-md-left">
                     <span class="footer-p2 mt-3">
-                        © NolimitCars 2017
+                        © Travel24 2017
                     </span>
                 </div>
             </div>

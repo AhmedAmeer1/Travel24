@@ -312,77 +312,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
-                        <div class="car-box">
-                            <div class="w-100 image_card">
-                                <img src="assets/images/fleet-9.png" class="img-fluid w-100 mt-4" alt="car">
-                            </div>
-                            <div class="text_card">
-                                <h2>VIP</h2>
-                                <p>Up to 2 passengers plus 2 suitcases (20kg max) or 3 passengers plus hand luggage.</p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;2&nbsp;Passengers</h3>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;2&nbsp;Suitcases</h3>
-                                    </div>
-                                </div>
-                            </div>
+           
 
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4">
-                        <div class="car-box">
-                            <div class="w-100 image_card">
-                                <img src="assets/images/fleet-10.png" class="img-fluid w-100" alt="car">
-                            </div>
-                            <div class="text_card">
-                                <h2>SUV</h2>
-                                <p>Up to 3 passengers plus 3 suitcases (20kg max) or 4 passengers plus hand luggage.</p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;3&nbsp;Passengers</h3>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;3&nbsp;Suitcases</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="car-box">
-                            <div class="w-100 image_card">
-                                <img src="assets/images/fleet-7.png" class="img-fluid w-100" alt="car">
-                            </div>
-                            <div class="text_card">
-                                <h2>16 SEATER MINIBUS</h2>
-                                <p>12 passengers plus up to 12 suitcases (20kg max) or 16 passengers with hand luggage.
-                                </p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;12&nbsp;Passengers</h3>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;12&nbsp;Suitcases</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
+          
 
 
 

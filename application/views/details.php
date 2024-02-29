@@ -343,7 +343,7 @@ input[type=number] {
                            </div>
                            <div class="col-md-12 pt-2">
                               <div class="form-group d-flex align-items-center">
-                                 <input type="checkbox" id="meet_and_greet" class="c-check"><label class="ml-2"> MEET AND GREET (£6) 30 MINUTES </label>&nbsp;&nbsp;&nbsp;
+                                 <input type="checkbox" id="meet_and_greet" class="c-check"><label class="ml-2"> MEET AND GREET (£8) 30 MINUTES </label>&nbsp;&nbsp;&nbsp;
                                  <!-- <span id="meet_amount" class="text_amt" > </span> &nbsp; -->
                                  <input type="checkbox" id="drop_off" class="c-check"><label class="ml-2"> DROP OFF (£5) </label>
                                  <!-- <span id="drop_amount" class="text_amt"></span> -->
