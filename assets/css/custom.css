@@ -665,6 +665,12 @@ select {
 	font-weight: 500;
 	font-family: "allerbold";
 }
+.details-main-wrapper .heading {
+	font-size: 28px !important;
+	color: #00517c;
+	font-weight: 500;
+	font-family: "allerbold";
+}
 
 .details-main-wrapper .details-box {
 	border: 1px solid #000;

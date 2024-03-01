@@ -13,7 +13,7 @@
                     <ul class="social-media">
                         <li>
                             <a href="https://twitter.com/nolimit_cars" target="_blank"><img
-                                    src="<?php echo base_url('assets/images/travel24/twitter.svg')?>" alt="icon"></a>
+                                    src="<?php echo base_url('assets/images/nolimitcars8/twitter.svg')?>" alt="icon"></a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/nolimitcars8/" target="_blank"><img
@@ -32,7 +32,7 @@
             <div class="col-md-6">
                 <ul class="side-menu ">
                     <!-- <li><a href="<?php echo base_url()?>blogs" class="footer-p1">Blogs</a></li> -->
-                    <li><a href="<?php echo base_url()?>customerReviews" class="footer-p1">Reviews</a></li>
+                    <!-- <li><a href="<?php echo base_url()?>customerReviews" class="footer-p1">Reviews</a></li> -->
                     <li><a href="<?php echo base_url()?>drivers" class="footer-p1">Drivers</a></li>
                     <li><a href="<?php echo base_url()?>aboutus" class="footer-p1">About Us</a></li>
                     <li><a href="<?php echo base_url()?>contactUs" class="footer-p1">Contact</a></li>

@@ -130,11 +130,12 @@
 
         <div class="text-container ">
             <p>
-                For reliable and professional airport transfers, NoLimitCars has you covered. We offer 24/7 minicab
+                For reliable and professional airport transfers, Travel24 has you covered. We offer 24/7 minicab
                 services to all UK airports for individuals and groups, with clear, upfront pricing.
             </p>
             <p class="mt-4">
-                For a hassle-free quote, fill out our online form or call us at <a href="tel:02039822911"> 02039 822 911.</a> Travel comfortably from
+                For a hassle-free quote, fill out our online form or call us at <a href="tel:02039822911"> 02039 822
+                    911.</a> Travel comfortably from
                 Brighton to Heathrow, Gatwick, and beyond with us.
             </p>
         </div>
@@ -147,7 +148,8 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="assets/images/fleet-1.png" class="img-fluid w-100" alt="car">
+                                <img src="assets/images/travel24/fleet/SaloonCar.png" class="img-fluid w-100 py-4"
+                                    alt="car">
                             </div>
                             <div class="text_card">
                                 <h2>SALOON CAR</h2>
@@ -169,7 +171,8 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="assets/images/fleet-2.png" class="img-fluid w-100" alt="car">
+                                <img src="assets/images/travel24/fleet/EstateCar.png" class="img-fluid w-100 py-4"
+                                    alt="car">
                             </div>
                             <div class="text_card">
                                 <h2>ESTATE CAR</h2>
@@ -191,7 +194,8 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="assets/images/fleet-3.png" class="img-fluid w-100" alt="car">
+                                <img src="assets/images/travel24/fleet/PeopleCarrier.png" class="img-fluid w-100 py-3"
+                                    alt="car">
                             </div>
                             <div class="text_card">
                                 <h2>PEOPLE CARRIER</h2>
@@ -216,7 +220,8 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="assets/images/fleet-4.png" class="img-fluid w-100" alt="car">
+                                <img src="assets/images/travel24/fleet/ExecutiveCar.png" class="img-fluid w-100 py-4"
+                                    alt="car">
                             </div>
                             <div class="text_card">
                                 <h2>EXECUTIVE CAR</h2>
@@ -241,7 +246,8 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="assets/images/fleet-6.png" class="img-fluid w-100" alt="car">
+                                <img src="assets/images/travel24/fleet/8SeaterMiniBus.png" class="img-fluid w-100 "
+                                    alt="car">
                             </div>
                             <div class="text_card">
                                 <h2>8 SEATER MINIBUS</h2>
@@ -265,7 +271,8 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="assets/images/fleet-5.png" class="img-fluid w-100" alt="car">
+                                <img src="assets/images/travel24/fleet/ExecutivePeopleCarrier.png"
+                                    class="img-fluid w-100 py-2" alt="car">
                             </div>
                             <div class="text_card">
                                 <h2>EXECUTIVE PEOPLE CARRIER</h2>
@@ -289,7 +296,8 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="assets/images/fleet-8.png" class="img-fluid w-100" alt="car">
+                                <img src="assets/images/travel24/fleet/MobilityVehicle.png" class="img-fluid w-100 py-4"
+                                    alt="car">
                             </div>
                             <div class="text_card">
                                 <h2>MOBILITY VEHICLE</h2>
@@ -312,9 +320,9 @@
                         </div>
                     </div>
 
-           
 
-          
+
+
 
 
 
@@ -331,25 +339,30 @@
                             </div>
 
                             <p>
-                            When you choose us for your travel needs, we're committed to delivering a seamless experience from start to finish. Our diverse fleet, 
-                            ranging from professional minicabs to executive chauffeurs and minibuses, is tailored to fit your specific passenger and luggage needs.
+                                When you choose us for your travel needs, we're committed to delivering a seamless
+                                experience from start to finish. Our diverse fleet,
+                                ranging from professional minicabs to executive chauffeurs and minibuses, is tailored to
+                                fit your specific passenger and luggage needs.
                             </p>
                             <p>
-                            Our drivers are hand-picked for their exceptional customer service and in-depth local knowledge, ensuring a smooth and pleasant journey.
+                                Our drivers are hand-picked for their exceptional customer service and in-depth local
+                                knowledge, ensuring a smooth and pleasant journey.
                             </p>
 
 
                             <p>
-                            Plus, we're inclusive to all travelers with specially
-                             designed wheelchair-accessible vehicles. Come take a look at our extensive fleet and find the perfect ride for you.
+                                Plus, we're inclusive to all travelers with specially
+                                designed wheelchair-accessible vehicles. Come take a look at our extensive fleet and
+                                find the perfect ride for you.
                             </p>
 
                             <p>
-                            We offer a selection of wheelchair-accessible vehicles, ensuring comfortable travel for passengers with disabilities.
-                             Take a glimpse at our extensive fleet tailored to meet diverse needs.
+                                We offer a selection of wheelchair-accessible vehicles, ensuring comfortable travel for
+                                passengers with disabilities.
+                                Take a glimpse at our extensive fleet tailored to meet diverse needs.
                             </p>
 
-                          
+
 
 
                         </div>
@@ -362,8 +375,9 @@
 
 
 
-
-        <div class="image-container">
+        <?php $this->load->view('common_components/customerReview'); ?>
+        <div class="mt-5"></div>
+        <div class="image-container mt-5">
             <img src="assets/images/travel24/offer_image.svg" class="img-fluid offer-banner-img" alt="offer">
             <div class="text-overlay">
                 <h1> GET 10% OFF</h1>

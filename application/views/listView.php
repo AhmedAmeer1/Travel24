@@ -8,7 +8,7 @@
     <meta name="description" content="<?php echo $setting->v_list_meta_desc; ?>" />
     <meta name="title" content="<?php echo $setting->v_list_meta_title; ?>" />
     <meta name="language" content="ES">
-    <title>NoLimitCars</title>
+    <title>Travel24</title>
 
 
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center  booking-form">
-                        <h2 >Booking Form </h2>
+                        <h1 >Booking Form </h1>
                         <p>Passengers & Luggages</p>
                     </div>
 
@@ -177,13 +177,13 @@
                                                     <h5 class="single-amount">£<span
                                                             id="<?php echo "single-amount-".$vh->vehicle_id?>"></span>
                                                     </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="1">SINGLE</button>
+                                                    <button class="btn-slct-taxi" data-travel-type="1">Select Single</button>
                                                 </div>
                                                 <div class="return">
                                                     <h5 class="return-amount">£<span
                                                             id="<?php echo "return-amount-".$vh->vehicle_id?>"></span>
                                                     </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="2">RETURN</button>
+                                                    <button class="btn-slct-taxi" data-travel-type="2">Select Return</button>
                                                 </div>
                                             </div>
                                         </div>

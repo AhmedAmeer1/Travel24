@@ -57,7 +57,7 @@
 
                     <h1>How will I know if my booking got confirmed?</h1>
                     <p>Once you book with us, you'll get a welcome email with your personal login and password. After
-                        that, every trip you book will be confirmed with an acknowledgement email from NoLimitCars.
+                        that, every trip you book will be confirmed with an acknowledgement email from Travel24.
                         Plus, we'll send over all the details you need, like journey specifics, pick-up instructions,
                         and your driver's contact, once they're assigned</p>
                     <hr />

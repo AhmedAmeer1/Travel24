@@ -8,7 +8,7 @@
       <meta name="description" content="<?php echo $setting->journey_meta_desc; ?>" />
        <meta name="title" content="<?php echo $setting->journey_meta_title; ?>" />
       <meta name="language" content="ES">
-      <title>NoLimitCars</title>
+      <title>Travel24</title>
       <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
       <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
@@ -122,13 +122,13 @@ input[type=number] {
                <div class="row">
 
                <div class="col-12 text-center  booking-form">
-                        <h1 >Booking Details </h1>
+                        <h1 class="heading">Booking Details </h1>
                         <p>Please check journey details and select date and time</p>
                     </div>
 
                   <div class="col-md-12">
                  
-                     <h1>Please check journey details and select date and time</h1>
+                     <!-- <h1>Please check journey details and select date and time</h1> -->
                      <div class="details-box">
                         <h2>JOURNEY DETAILS</h2>
                         <button type="button" id="success_modal" class="btn btn-info btn-lg" style="display:none" data-toggle="modal" data-target="#myModal">Open Modal</button>

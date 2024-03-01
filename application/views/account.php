@@ -9,7 +9,7 @@
       <meta name="description" content="<?php echo $setting->account_meta_desc; ?>" />
        <meta name="title" content="<?php echo $setting->account_meta_title; ?>" />
       <meta name="language" content="ES">
-    <title>NoLimitCars</title>
+    <title>Travel24</title>
 
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">

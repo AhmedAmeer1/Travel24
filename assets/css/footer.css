@@ -101,21 +101,21 @@
     display: inline-block;
     border-right: 1px solid #8e8e8e;
     padding: 0 12px;
-    color: #8e8e8e;
+    color: black;
     font-size: 18px;
     font-weight: bold;
 }
 .limits-footer-wrapper .side-menu li a {
  
     padding: 0 12px;
-    color: #8e8e8e;
+    color: black;
     font-size: 18px;
     font-weight: bold;
 }
 
 
 .limits-footer-wrapper .side-menu li a {
-    color: #8e8e8e;
+    color: black;
 }
 
 .limits-footer-wrapper .credit {
