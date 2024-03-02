@@ -71,7 +71,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid mt-3" alt="Logo">
+                <a class="" href="<?php echo base_url()?>">
+                    <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid mt-3" alt="Logo"> </a>
                     <ul class="sub-header-res-new">
 
                         <li>

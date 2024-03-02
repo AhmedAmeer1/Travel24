@@ -177,13 +177,13 @@
                                                     <h5 class="single-amount">£<span
                                                             id="<?php echo "single-amount-".$vh->vehicle_id?>"></span>
                                                     </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="1">Select Single</button>
+                                                    <button class="btn-slct-taxi" data-travel-type="1">Single .</button>
                                                 </div>
                                                 <div class="return">
                                                     <h5 class="return-amount">£<span
                                                             id="<?php echo "return-amount-".$vh->vehicle_id?>"></span>
                                                     </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="2">Select Return</button>
+                                                    <button class="btn-slct-taxi" data-travel-type="2">Return .</button>
                                                 </div>
                                             </div>
                                         </div>

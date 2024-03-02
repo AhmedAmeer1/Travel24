@@ -55,11 +55,13 @@
 }
 
 .swiper-button-prev {
-	margin-top: 580px;
+	display: none;
+	/* margin-top: 580px; */
 }
 
 .swiper-button-next {
-	margin-top: 580px;
+	/* margin-top: 580px; */
+	display: none;
 }
 
 /* Media Queries for Responsive Design */
