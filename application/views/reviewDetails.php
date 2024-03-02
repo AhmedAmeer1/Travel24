@@ -60,7 +60,7 @@
             <div class="details-content">
                 <h1>Review Details</h1>
                 <div class="head">
-                    <button ><a style="text-decoration: none;color: #f38422;" href="<?php echo base_url()?>">Book a journey</a></button>
+                    <button ><a style="text-decoration: none;color: #f57606;" href="<?php echo base_url()?>">Book a journey</a></button>
                     <p>or call on <b>02039822 911</b></p>
                 </div>
                 <div class="box-content">

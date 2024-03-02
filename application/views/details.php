@@ -89,7 +89,7 @@ input[type=number] {
 
 
 .promotion-btn{
-   background-color: #f38422;
+   background-color: #f57606;
     border-radius: 25px;
     font-size: 12px;
     padding: 10px 15px;

@@ -257,7 +257,7 @@ select {
 	top: 0;
 	left: 0;
 	transform: translateX(-100%);
-	background-color: #f38422;
+	background-color: #f57606;
 	width: 70%;
 	height: 100%;
 	z-index: 10;
@@ -350,7 +350,7 @@ select {
 }
 
 .areas-wrapper h1 {
-	color: #f38422;
+	color: #f57606;
 	font-size: 20px;
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -363,7 +363,7 @@ select {
 
 .areas-wrapper ul li {
 	display: inline-block;
-	border-right: #f38422 1px solid;
+	border-right: #f57606 1px solid;
 	margin: 1px 0;
 }
 
@@ -373,7 +373,7 @@ select {
 
 .areas-main .areas-wrapper ul li,
 .areas-main .areas-wrapper ul li a {
-	color: #f38422;
+	color: #f57606;
 	text-transform: uppercase;
 	padding: 0 10px;
 	font-family: "myriad";
@@ -390,7 +390,7 @@ select {
 }
 
 .inner-header-wrapper h1 {
-	color: #f38422;
+	color: #f57606;
 	font-size: 34px;
 	font-weight: 900;
 }
@@ -401,7 +401,7 @@ select {
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #ff700a;
+	background-color: #f57606;
 	padding: 14px 24px 16px 32px;
 	border-radius: 25px;
 	margin-top: 25px;
@@ -439,7 +439,7 @@ select {
 }
 
 .inner-header-wrapper h1 {
-	color: #ff700a;
+	color: #f57606;
 	font-size: 32px;
 	font-family: "allerdisplay";
 }
@@ -569,7 +569,7 @@ select {
 
 .details-main-wrapper .details-box .trip-d h1 span {
 	font-size: 16px;
-	color: #f38422;
+	color: #f57606;
 	font-family: "helvet";
 }
 
@@ -616,11 +616,11 @@ select {
 }
 
 .details-forms-wrapper .login-box h2 {
-	color: #f38422;
+	color: #f57606;
 }
 
 .details-forms-wrapper .login-box button {
-	background-color: #ff700a;
+	background-color: #f57606;
 	color: #fff;
 	width: 100%;
 	border: 0;
@@ -704,7 +704,7 @@ select {
 }
 
 .details-forms-wrapper .bottom-buttons .paycash-btn {
-	background-color: #f38422;
+	background-color: #f57606;
 	border-radius: 25px;
 	font-size: 12px;
 	padding: 10px 15px;
@@ -735,7 +735,7 @@ select {
 }
 
 .new-lgn-btn {
-	background-color: #f38422;
+	background-color: #f57606;
 	border-radius: 25px;
 	font-size: 12px;
 	padding: 10px 15px;
@@ -812,7 +812,7 @@ select {
 }
 
 .booking-setnew .book-form-box .head h1 {
-	color: #f38422;
+	color: #f57606;
 	font-size: 32px;
 	font-weight: 700;
 }
@@ -838,7 +838,7 @@ select {
 }
 
 .booking-setnew .book-form-box .content .form-inner .form-group button {
-	color: #f38422;
+	color: #f57606;
 	border: 0;
 	background: 0;
 	height: 0;
@@ -851,7 +851,7 @@ select {
 }
 
 .booking-setnew .book-form-box .content .form-inner .form-group button:hover {
-	background-color: #f38422;
+	background-color: #f57606;
 	color: #fff;
 	height: 100%;
 	padding: 5px 8px;
@@ -864,7 +864,7 @@ select {
 
 .booking-setnew .book-form-box .content .form-inner .submit-btn {
 	width: 100%;
-	background-color: #f38422;
+	background-color: #f57606;
 	color: #fff;
 	border: 0;
 	border-radius: 5px;
@@ -890,7 +890,7 @@ select {
 }
 
 .booking-setnew .banner-details h1 {
-	color: #f38422;
+	color: #f57606;
 	font-size: 20px;
 }
 
@@ -900,12 +900,12 @@ select {
 }
 
 .booking-setnew .banner-details p span {
-	color: #f38422;
+	color: #f57606;
 	font-weight: 500;
 }
 
 .booking-setnew .banner-details p a {
-	color: #f38422;
+	color: #f57606;
 }
 
 .myaccount-wrapper {
@@ -976,7 +976,7 @@ select {
 }
 
 .myaccount-wrapper .order-details .btn-details {
-	background-color: #f38422;
+	background-color: #f57606;
 	color: #000;
 	padding: 10px 25px;
 	text-align: center;
@@ -987,12 +987,12 @@ select {
 }
 
 .myaccount-wrapper .order-details p span {
-	color: #f38422;
+	color: #f57606;
 	font-size: 14px;
 }
 
 .myaccount-wrapper table tr .action-btns a {
-	background-color: #f38422;
+	background-color: #f57606;
 	padding: 5px;
 	color: #000;
 	border-radius: 5px;
@@ -1006,7 +1006,7 @@ select {
 }
 
 .myaccount-wrapper .orders-content p a {
-	color: #f38422;
+	color: #f57606;
 }
 
 .myaccount-wrapper .account-profile {
@@ -1052,12 +1052,12 @@ select {
 .myaccount-wrapper .nav-pills .nav-link.active,
 .myaccount-wrapper .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #f38422;
+	background-color: #f57606;
 }
 
 .myaccount-wrapper .nav-pills .nav-link {
 	color: #fff;
-	background-color: #f38422;
+	background-color: #f57606;
 	min-width: 190px;
 	text-align: center;
 }
@@ -1087,7 +1087,7 @@ select {
 	.areas-wrapper ul li {
 		display: block;
 		border-right: 0;
-		border-bottom: 1px dotted #ff700a;
+		border-bottom: 1px dotted #f57606;
 		margin: 1px 0;
 		padding: 8px 0;
 	}
