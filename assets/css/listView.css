@@ -16,6 +16,221 @@ embed {
 
 }
 
+
+
+.list-main-wrapper {
+	padding: 50px 0;
+}
+
+.list-main-wrapper .side-wrapper {
+	background-color: #00517c;
+	color: #fff;
+	padding: 10px;
+}
+
+.list-main-wrapper .side-wrapper h1 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.list-main-wrapper .side-wrapper h2 {
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.list-main-wrapper .side-wrapper p {
+	font-size: 12px;
+	margin-top: 8px;
+}
+
+.list-main-wrapper .list-wrapper .filter-wrapper {
+	border: 1px solid #000;
+}
+
+.list-main-wrapper .list-wrapper .filter-wrapper h3 {
+	background-color: #acacac;
+	padding: 15px;
+	font-size: 14px;
+	font-family: "allerregular";
+}
+
+.list-main-wrapper .list-wrapper .filter-wrapper .row {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.list-main-wrapper .list-wrapper .filter-wrapper .row .filter-box {
+	padding: 10px;
+}
+
+.list-main-wrapper .list-wrapper .filter-wrapper .row .filter-box h4 {
+	font-size: 10px;
+	font-family: "allerregular";
+}
+
+.list-main-wrapper .list-wrapper .filter-wrapper .row .filter-box .formcontrol {
+	width: 100%;
+	padding: 10px 0;
+	border: 0;
+	outline: none;
+	margin-top: 10px;
+	font-family: "allerregular";
+	font-size: 14px;
+}
+
+.list-main-wrapper .list-wrapper .filter-wrapper .row .brdr-right {
+	border-right: 1px solid #000;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box {
+	background-color: #e5edf2;
+	margin-top: 15px;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box img {
+    padding: 9px;
+    -o-object-fit: cover;
+    object-fit: contain;
+    height: 144px;
+    width: 100%;
+    background: rgb(0 81 124);;
+
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .head {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 10px 10px 10px 30px;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .head h5 {
+	font-size: 24px;
+	color: #00517c;
+	font-family: "helvet";
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .head ul li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .head ul li i {
+	color: #999;
+	margin-right: 5px;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .head ul li span {
+	width: 28px;
+	height: 28px;
+	padding: 3px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid #00517c;
+	color: #00517c;
+	position: relative;
+	font-size: 18px;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .content {
+	padding: 0 10px 0 30px;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .content p {
+	font-size: 12px;
+	color: #00517c;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .bottom {
+	padding: 10px 10px 10px 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .bottom .single {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	min-width: 185px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .bottom .single h5 {
+	font-size: 28px;
+	color: #f38422;
+	margin-right: 15px;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .bottom .single button {
+	background-color: #f38422;
+	border-radius: 25px;
+	font-size: 12px;
+	padding: 10px 15px;
+	border: 0;
+	color: #fff;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .bottom .return {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .bottom .return h5 {
+	font-size: 28px;
+	color: #00517c;
+	margin-right: 15px;
+}
+
+.list-main-wrapper .list-wrapper .list-set .list-box .bottom .return button {
+	background-color: #00517c;
+	border-radius: 25px;
+	font-size: 12px;
+	padding: 10px 15px;
+	border: 0;
+	color: #fff;
+}
+
+.list-main-wrapper .list-wrapper .choose-heading {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .booking-form h1{
     font-size: 48px;
     font-weight: 600;
@@ -51,4 +266,11 @@ embed {
         margin-top: 5px;
         margin-bottom: 20px;
     }
+
+    .list-main-wrapper .list-wrapper .list-set .list-box img {
+        padding: 17px;
+       
+    
+    }
+    
 }
