@@ -171,9 +171,9 @@ input[type=number] {
                                    
                                     </div>
                                  </div>
-                                 <div class="col-md-6">
+                                 <div class="col-md-6 pickupTime-Height">
                                     <div class="form-group">
-                                       <div class="picker-head">
+                                       <div class="picker-head h-5">
                                           <img src="<?php echo base_url('assets/images/time.png')?>" alt="">
                                           <label>Pickup Time</label>
                                        </div>
