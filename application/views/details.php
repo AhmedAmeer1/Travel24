@@ -89,7 +89,7 @@ input[type=number] {
 
 
 .promotion-btn{
-   background-color: #f57606;
+   background-color: #FF6500;
     border-radius: 25px;
     font-size: 12px;
     padding: 10px 15px;
@@ -907,17 +907,38 @@ if( selectedText ==  today)
 }                        
                                             
 function Converttimeformat(time) {
-var hrs = Number(time.match(/^(\d+)/)[1]);
-var mnts = Number(time.match(/:(\d+)/)[1]);
-var format = time.match(/\s(.*)$/)[1];
-if (format == "PM" && hrs < 12) hrs = hrs + 12;
-if (format == "AM" && hrs == 12) hrs = hrs - 12;
-var hours = hrs.toString();
-var minutes = mnts.toString();
-if (hrs < 10) hours = "0" + hours;
-if (mnts < 10) minutes = "0" + minutes;
-return hours + ":" + minutes;
+    var hrs = Number(time.match(/^(\d+)/)[1]);
+    var mnts = Number(time.match(/:(\d+)/)[1]);
+    var format = time.match(/\s(.*)$/)[1];
+
+    if (format == "PM" && hrs < 12) hrs = hrs + 12;
+    if (format == "AM" && hrs == 12) hrs = hrs - 12;
+
+    // Adjust the time difference to 5 minutes instead of 30
+    var timeDifference = 5;
+    var totalMinutes = hrs * 60 + mnts;
+    totalMinutes += timeDifference;
+    hrs = Math.floor(totalMinutes / 60) % 24;
+    mnts = totalMinutes % 60;
+
+    var hours = hrs.toString();
+    var minutes = mnts.toString();
+
+
+console.log("hours",hours)
+console.log("minutes",minutes)
+    if (hrs < 10) hours = "0" + hours;
+    if (mnts < 10) minutes = "0" + minutes;
+    
+    return hours + ":" + minutes;
 }
+
+
+
+
+
+
+
 $("#timepicker").click(function(){
 
    checkTime()

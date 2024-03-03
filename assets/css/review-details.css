@@ -27,14 +27,14 @@
 .review-detailes-wrapper .details-content .head button {
 	background-color: #155a94;
 	border: 0;
-	color: #f57606;
+	color: #FF6500;
 	padding: 8px;
 	border-radius: 3px;
 	margin: 0 10px;
 }
 
 .review-detailes-wrapper .details-content .head p {
-	color: #f57606;
+	color: #FF6500;
 	margin: 0 10px;
 }
 
@@ -133,5 +133,5 @@
 	.progress-wrapper
 	.progress
 	.progress-bar {
-	background-color: #f57606;
+	background-color: #FF6500;
 }
