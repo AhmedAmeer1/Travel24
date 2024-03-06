@@ -16,7 +16,7 @@
         </div>
         <div style="padding: 20px; ">
             <div>
-            <div class="row ">
+                <!-- <div class="row ">
                     <div class="col-md-6">
                         <a class="mt-2" href="<?php echo base_url()?>"><img
                                 src="https://travel24taxi.com/assets/images/travel24/Logo.svg" alt=""></a>
@@ -24,7 +24,7 @@
                     <div class="col-md-6 text-right">
                         For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
                     </div>
-                </div>
+                </div> -->
 
 
                 <p>Hi <?php echo $first_name.' '.$last_name;?>,</p>
@@ -334,13 +334,7 @@
 
             </div><?php */?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url('assets/js/jquery.3.0.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/jquery.touchSwipe.min.js')?>"></script>
-    <script src="https://use.fontawesome.com/1e36072efd.js"></script>
-    <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
+
         </div>
     </div>
 </body>
