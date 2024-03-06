@@ -127,6 +127,18 @@
         </section>
 
 
+        <!-- <div class="row ">
+            <div class="col-md-6">
+                <a class="mt-2" href="<?php echo base_url()?>"><img
+                        src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" alt=""></a>
+            </div>
+            <div class="col-md-6 text-right">
+                For any inquiries, contact <a href="tel:02039822911 " class=" ">
+                    <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="">
+                    02039822911</a>
+            </div>
+        </div> -->
+
 
         <div class="text-container ">
             <p>
