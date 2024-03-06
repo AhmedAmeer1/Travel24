@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center  booking-form">
-                        <h1 >Booking Form </h1>
+                        <h1>Booking Form </h1>
                         <p>Passengers & Luggages</p>
                     </div>
 
@@ -177,13 +177,19 @@
                                                     <h5 class="single-amount">£<span
                                                             id="<?php echo "single-amount-".$vh->vehicle_id?>"></span>
                                                     </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="1">Single .</button>
+                                                    <button class="btn-slct-taxi" data-travel-type="1">
+                                                        Single
+                                                        <span>&#9679;</span>
+                                                    </button>
                                                 </div>
                                                 <div class="return">
                                                     <h5 class="return-amount">£<span
                                                             id="<?php echo "return-amount-".$vh->vehicle_id?>"></span>
                                                     </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="2">Return .</button>
+                                                    <button class="btn-slct-taxi" data-travel-type="2">
+                                                        Return
+                                                        <span>&#9679;</span>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>

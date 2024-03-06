@@ -375,7 +375,7 @@
 
 
 
-        <?php $this->load->view('common_components/customerReview'); ?>
+
         <div class="mt-5"></div>
         <div class="image-container mt-5">
             <img src="assets/images/travel24/offer_image.svg" class="img-fluid offer-banner-img" alt="offer">
