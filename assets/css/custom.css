@@ -392,7 +392,7 @@ select {
 .inner-header-wrapper h1 {
 	color: #FF6500;
 	font-size: 34px;
-	font-weight: 900;
+	font-weight: 600;
 }
 
 
@@ -435,7 +435,7 @@ select {
 
 .inner-header-wrapper {
 	background-color: #00517c;
-	padding: 150px 0 40px 0;
+	padding: 100px 0 40px 0;
 }
 
 .inner-header-wrapper h1 {

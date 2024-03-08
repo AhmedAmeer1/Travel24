@@ -24,13 +24,17 @@ embed {
 .booking-form p {
 	font-size: 20px;
 	font-weight: 400;
-	color: #475467;
+	color: white;
 	margin-top: 10px;
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 
 .pickupTime-Height {
 	height: 190px;
+}
+
+.promo-text{
+	font-size: 13px;
 }
 
 /* ------------------------ RESPONSIVE START ------------------------------------- */
@@ -51,5 +55,10 @@ embed {
 		font-size: 16px;
 		margin-top: 5px;
 		margin-bottom: 20px;
+	}
+
+	.promo-text{
+		font-size: 12px;
+		margin-left: -14px;
 	}
 }

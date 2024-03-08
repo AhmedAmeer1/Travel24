@@ -61,7 +61,8 @@
                             <p>
                                 Airport transfers & chauffeur services connecting all UK airports
                             </p>
-
+                            <p class="promoCode">Use <span class="code">LUTH24</span> to get 10% off.</p>
+                          
                         </div>
                     </div>
 
@@ -164,7 +165,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>SALOON CAR</h2>
+                                <h2>SALOON CAR (X)</h2>
                                 <p>Up to 3 passengers plus 3 suitcases (20kg max) or 4 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
@@ -187,7 +188,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>ESTATE CAR</h2>
+                                <h2>ESTATE CAR (XM)</h2>
                                 <p>Up to 4 passengers plus 4 suitcases (20kg max).</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
@@ -210,7 +211,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>PEOPLE CARRIER</h2>
+                                <h2>PEOPLE CARRIER (XL)</h2>
                                 <p>Up to 5 passengers plus 5 suitcases (20kg max) or 6 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
@@ -236,7 +237,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>EXECUTIVE CAR</h2>
+                                <h2>EXECUTIVE CAR (Executive)</h2>
                                 <p>Up to 3 passengers plus 3 suitcases (20kg max) or 4 passengers plus hand luggage</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
@@ -262,7 +263,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>8 SEATER MINIBUS</h2>
+                                <h2>8 SEATER MINIBUS (XXL)</h2>
                                 <p>8 passengers plus up to 8 suitcases (20kg max)</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
@@ -287,7 +288,7 @@
                                     class="img-fluid w-100 py-2" alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>EXECUTIVE PEOPLE CARRIER</h2>
+                                <h2>EXECUTIVE PEOPLE CARRIER (Comfort)</h2>
                                 <p>Up to 5 passengers plus 5 suitcases (20kg max) or 6 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
@@ -312,7 +313,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>MOBILITY VEHICLE</h2>
+                                <h2>MOBILITY VEHICLE (Sign Vehicle)</h2>
                                 <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
                                     wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages
                                     (20kg
@@ -404,7 +405,7 @@
 
 
 
-
+        <?php $this->load->view('common_components/customerReview.php'); ?>
 
     </main>
 

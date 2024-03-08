@@ -138,6 +138,22 @@
 	line-height: 40px;
 }
 
+.limits-banner .banner-details .promoCode{
+	color: #e4e4e4;
+	margin-top: 30px;
+	font-family: "helvetnormal";
+	font-size: 30px;
+	line-height: 40px;
+}
+.limits-banner .banner-details .code{
+	color: #FF6500;
+	margin-top: 30px;
+	font-family: "helvetnormal";
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 900;
+}
+
 .box-padding {
 	padding-left: 150px !important;
 }
@@ -183,6 +199,17 @@
 
 @media only screen and (max-width: 768px) {
 
+	.limits-banner .banner-details .promoCode{
+		
+		font-size: 21px;
+		
+	}
+	.limits-banner .banner-details .code{
+
+		font-size: 21px;
+	
+		font-weight: 900;
+	}
 
 	.limits-banner {
 		height: auto !important;

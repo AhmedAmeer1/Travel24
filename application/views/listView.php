@@ -36,12 +36,23 @@
 
 
     <main class="home">
-        <div></div>
+        
 
-        <div class="container-fluid banner-section">
+
+        <div class="inner-header-wrapper ">
+          
+   
+                <div class="col-12 text-center  booking-form">
+                        <h1>Booking Form </h1>
+                        <p>Passengers & Luggages</p>
+                    </div>
+
+         
+        </div>
+        <!-- <div class="container-fluid banner-section">
             <img src="<?php echo base_url('assets/images/travel24/listView/banner.svg')?>" alt="about_us_banner"
                 class="banner-image">
-        </div>
+        </div> -->
         <!-- <div class="inner-header-wrapper ">
     
             <div class="container text-center">
@@ -65,10 +76,7 @@
         <section class="list-main-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center  booking-form">
-                        <h1>Booking Form </h1>
-                        <p>Passengers & Luggages</p>
-                    </div>
+                  
 
                     <div class="col-lg-3 col-sm-12">
                         <div class="side-wrapper">

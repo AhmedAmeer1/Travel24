@@ -147,7 +147,7 @@
                         <span class="customer_name">${review.name}<br></span>
                         <span class="client_rating mt-3">${'*'.repeat(review.rating)}</span>
                         <span class="client_review">
-                            <p>${review.review}</p>
+                        <p>" ${review.review} "</p>
                         </span>
                     </div>
                 `;
