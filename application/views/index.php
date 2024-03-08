@@ -107,8 +107,8 @@
                                             <div class="d-flex justify-content-between">
                                                 <label>DESTINATION</label>
 
-                                                <button style="float:right"><i
-                                                        class="fa fa-plus-circle multi-root "></i> Multi Route</button>
+                                                <button style="float:right" class=" multi-root"><i
+                                                        class="fa fa-plus-circle  "></i> Multi Route</button>
                                             </div>
 
                                             <input type="text" class="form-control autocompleteDoc" name="destination"
