@@ -71,7 +71,7 @@
                         <div class="book-form-box">
                             <div class="head">
                                 <h1>BOOK NOW</h1>
-                                <img src="assets/images/pay-options.png" class="img-fluid image-width" alt="Payement">
+                                <img src="assets/images/travel24/online_cards.svg" class="img-fluid image-width" alt="Payement">
                             </div>
                             <?php 
                            $redirectUrl = (isset($customer_id) && !empty($customer_id))
