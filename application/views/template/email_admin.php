@@ -17,7 +17,7 @@
         <div style="padding: 20px; ">
             <div>
 
-                <!-- <div class="row ">
+                <div class="row ">
                     <div class="col-md-6">
                         <a class="mt-2" href="<?php echo base_url()?>"><img
                                 src="https://travel24taxi.com/assets/images/travel24/Logo.svg" alt=""></a>
@@ -25,7 +25,26 @@
                     <div class="col-md-6 text-right">
                         For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
                     </div>
-                </div> -->
+
+
+                    <div class="col-md-6">
+                        <a class="mt-2" href="<?php echo base_url()?>"><img
+                        src="<?php echo base_url('assets/images/travel24/facebook.svg')?>" alt=""></a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        For any inquiries, contact <a href="tel:02039822911 " class=" "> 2 nd image </a>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <a class="mt-2" href="<?php echo base_url()?>"><img
+                                src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2015%2F04%2F23%2F22%2F00%2Ftree-736885_1280.jpg&tbnid=aVgXecnmQ_f1MM&vet=12ahUKEwjnsJ7E7-aEAxV77TgGHQJDCjIQMygAegQIARBx..i&imgrefurl=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fnature%2F&docid=Ba_eiczVaD9-zM&w=1280&h=797&itg=1&q=images&ved=2ahUKEwjnsJ7E7-aEAxV77TgGHQJDCjIQMygAegQIARBx" alt=""></a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
+                    </div>
+
+                </div>
 
 
                 <p>Hi You have received the following order from - <?php echo $first_name.' '.$last_name;?>,</p>
