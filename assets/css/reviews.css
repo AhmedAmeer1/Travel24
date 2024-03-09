@@ -37,7 +37,7 @@
 .client_rating {
 	font-size: 20px;
 	color: #FF6500;
-	margin-top: 30px;
+	margin-top: 12px;
 }
 .swiper-slide {
 	/* width: 200px; */
@@ -62,6 +62,19 @@
 .swiper-button-next {
 	/* margin-top: 580px; */
 	display: none;
+}
+
+.client_review img{
+	width: 2%;
+	height: 2%;
+}
+
+.quatation_left{
+	margin-bottom: 10px;
+	margin-left: -10px;
+}
+.quatation_right{
+	margin-top: 5px;
 }
 
 /* Media Queries for Responsive Design */

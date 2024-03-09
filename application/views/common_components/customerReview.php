@@ -112,9 +112,13 @@
             var reviewHTML = `
                     <div class="swiper-slide pr-5 ">
                         <span class="customer_name">${review.name}<br></span>
-                        <span class="client_rating mt-3">${'*'.repeat(review.rating)}</span>
+                        <p class="client_rating ">${'*'.repeat(review.rating)}</p>
                         <span class="client_review">
-                            <p>" ${review.review} "</p>
+                        <p>
+                            <img class="quatation_left" src="<?php echo base_url('assets/images/travel24/quatation_left.png')?>" alt="icon">
+                            ${review.review} 
+                            <img class="quatation_right" src="<?php echo base_url('assets/images/travel24/quatation_right.png')?>" alt="icon">
+                        </p>
                         </span>
                     </div>
                 `;
