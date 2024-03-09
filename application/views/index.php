@@ -22,7 +22,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=1')?>" rel="stylesheet" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
@@ -313,7 +313,8 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>MOBILITY VEHICLE (Sign Vehicle)</h2>
+                                <h2>MOBILITY VEHICLE (  <img src="assets/images/travel24/fleet/disability.png" class="disability_img"
+                                    alt="car"> Vehicle)</h2>
                                 <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
                                     wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages
                                     (20kg
@@ -389,7 +390,7 @@
 
 
 
-        <div class="mt-5"></div>
+        <!-- <div class="mt-5"></div>
         <div class="image-container mt-5">
             <img src="assets/images/travel24/offer_image.svg" class="img-fluid offer-banner-img" alt="offer">
             <div class="text-overlay">
@@ -399,7 +400,7 @@
                 </p>
                 <h3>LUTH24</h3>
             </div>
-        </div>
+        </div> -->
 
 
 

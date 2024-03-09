@@ -1,6 +1,6 @@
 
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<link rel="stylesheet" href="<?= base_url('assets/css/reviews.css') ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=2') ?>">
 
 <body>
 

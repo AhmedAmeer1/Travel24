@@ -293,6 +293,11 @@
 	margin-bottom: 16px;
 }
 
+.disability_img{
+	width: 5%;
+	margin-top: 13px !important;
+}
+
 @media only screen and (max-width: 480px) {
 	.carlist-wrapper .car-box {
 		min-height: unset !important;

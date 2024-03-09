@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=2')?>" rel="stylesheet" />
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -124,7 +124,7 @@ form .error {
 
             <div class="col-12 text-center  booking-form">
                 <h1>Booking Form </h1>
-                
+
                 <p>Please check journey details and select date and time</p>
             </div>
 
@@ -135,7 +135,7 @@ form .error {
                 class="banner-image">
         </div> -->
 
-     
+
         <section class="details-main-wrapper">
             <div class="container">
                 <div class="row">
@@ -206,7 +206,8 @@ form .error {
                                     <div class="trip-d">
                                         <h1><?php echo $vechicle_data->title;?>,
                                             <span><?php echo ($_SESSION["journey_type"] =="1"?"Single":"Return") ?>
-                                                TRIP</span></h1>
+                                                TRIP</span>
+                                        </h1>
                                         <p><?php echo $vechicle_data->vehicle_description?></p>
                                         <div class="bottom">
                                             <img src="<?php echo base_url($vechicle_data->vehicle_image)?>" alt="Car">
@@ -240,9 +241,14 @@ form .error {
                                 </div>
                                 <!--<h2>Forgot Password?</h2>-->
                                 <button id="login">LOGIN</button>
+                                <img class="mt-4 mb-2"
+                                    src="<?php echo base_url('assets/images/travel24/online_cards.svg"')?>" alt="">
                             </div>
+                            <!-- <div class="online-payment">
+                                <img class="mt-4 mb-2"
+                                    src="<?php echo base_url('assets/images/travel24/online_cards.svg"')?>" alt="">
+                            </div> -->
 
-                            <img src="<?php echo base_url('assets/images/pay-options-2.png')?>" alt="">
                         </div>
                         <div class="login-box hide" id="my_account_div">
                             <button class="paycash-btn" id="my_account">My Account</button>
@@ -384,7 +390,8 @@ form .error {
 
 
                                     <button class=" promotion-btn  paycash-btn promo-code"
-                                        onclick="apply_promo_code()">Apply Promocode</button> <span class="promo-text">Enter LUTH24 to get 10 % off. </span>
+                                        onclick="apply_promo_code()">Apply Promocode</button> <span
+                                        class="promo-text">Enter <span class="code">LUTH24</span>  to get 10 % off. </span>
 
                                 </div>
                             </div>

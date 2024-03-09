@@ -36,6 +36,14 @@ embed {
 .promo-text{
 	font-size: 13px;
 }
+.code{
+	color: #FF6500;
+	font-weight: 900;
+}
+.online-payment{
+	background-color: black;
+	border-radius: 10px;
+}
 
 /* ------------------------ RESPONSIVE START ------------------------------------- */
 
