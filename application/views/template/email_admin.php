@@ -17,7 +17,7 @@
         <div style="padding: 20px; ">
             <div>
 
-                <div class="row ">
+                <!-- <div class="row ">
                     <div class="col-md-6">
                         <a class="mt-2" href="<?php echo base_url()?>"><img
                                 src="https://travel24taxi.com/assets/images/travel24/Logo.svg" alt=""></a>
@@ -25,26 +25,7 @@
                     <div class="col-md-6 text-right">
                         For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
                     </div>
-
-
-                    <div class="col-md-6">
-                        <a class="mt-2" href="<?php echo base_url()?>"><img
-                        src="<?php echo base_url('assets/images/travel24/test_png.png')?>" alt=""></a>
-                    </div>
-                    <div class="col-md-6 text-right">
-                        For any inquiries, contact <a href="tel:02039822911 " class=" "> 2 nd image </a>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <a class="mt-2" href="<?php echo base_url()?>"><img
-                                src="https://travel24taxi.com/assets/images/travel24/test_jpg.jpg" alt=""></a>
-                    </div>
-                    <div class="col-md-6 text-right">
-                        For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
-                    </div>
-
-                </div>
+                </div> -->
 
 
                 <p>Hi You have received the following order from - <?php echo $first_name.' '.$last_name;?>,</p>
