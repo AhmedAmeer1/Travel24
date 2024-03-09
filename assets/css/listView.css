@@ -1,22 +1,18 @@
 img,
 object,
 embed {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .banner-section {
-    background-color: #004C78;
-    text-align: center;
-
+	background-color: #004c78;
+	text-align: center;
 }
 
 .banner-image {
-    max-width: 100%;
-    height: auto;
-
+	max-width: 100%;
+	height: auto;
 }
-
-
 
 .list-main-wrapper {
 	padding: 50px 0;
@@ -90,13 +86,29 @@ embed {
 }
 
 .list-main-wrapper .list-wrapper .list-set .list-box img {
-    padding: 9px;
-    -o-object-fit: cover;
-    object-fit: contain;
-    height: 144px;
-    width: 100%;
-    background: rgb(0 81 124);;
+	padding: 9px;
+	-o-object-fit: cover;
+	object-fit: contain;
+	height: 144px;
+	width: 100%;
+	background: rgb(0 81 124);
+}
+.list-main-wrapper .list-wrapper .list-set .list-box .passanger_img {
+	padding: 5px 5px 6px 5px!important;
+	-o-object-fit: cover;
+	object-fit: contain;
+	height: 60% !important;
+	width: 60% !important;
+	background: none !important;
+}
 
+.list-main-wrapper .list-wrapper .list-set .list-box .suitcases_img {
+	padding: 0px !important;
+	-o-object-fit: cover;
+	object-fit: contain;
+	height: 60% !important;
+	width: 60% !important;
+	background: none !important;
 }
 
 .list-main-wrapper .list-wrapper .list-set .list-box .head {
@@ -114,6 +126,15 @@ embed {
 	color: #00517c;
 	font-family: "helvet";
 }
+
+.list-main-wrapper .list-wrapper .list-set .list-box .head ul  {
+width: 64% !important;
+text-align: right;
+/* background-color: wheat !important; */
+}
+.list-main-wrapper .list-wrapper .list-set .list-box .head ul h3 {
+font-size: 12px;
+	}
 
 .list-main-wrapper .list-wrapper .list-set .list-box .head ul li {
 	display: inline-block;
@@ -173,12 +194,12 @@ embed {
 
 .list-main-wrapper .list-wrapper .list-set .list-box .bottom .single h5 {
 	font-size: 28px;
-	color: #FF6500;
+	color: #ff6500;
 	margin-right: 15px;
 }
 
 .list-main-wrapper .list-wrapper .list-set .list-box .bottom .single button {
-	background-color: #FF6500;
+	background-color: #ff6500;
 	border-radius: 25px;
 	font-size: 12px;
 	padding: 10px 15px;
@@ -190,6 +211,7 @@ embed {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	justify-content: space-between;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -216,61 +238,37 @@ embed {
 	margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.booking-form h1{
-    font-size: 48px;
-    font-weight: 600;
-    color: #101828;
-  
+.booking-form h1 {
+	font-size: 48px;
+	font-weight: 600;
+	color: #101828;
 }
 
-.booking-form p{
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 80px;
+.booking-form p {
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 80px;
 }
-
-
 
 /* ------------------------ RESPONSIVE START ------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
-
 }
 
-
 @media only screen and (max-width: 767px) {
-    .booking-form h1 {
-        font-size: 29px;
-        margin-top: 0px;
-       
-    }
-    .booking-form p {
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 20px;
-    }
+	.booking-form h1 {
+		font-size: 29px;
+		margin-top: 0px;
+	}
+	.booking-form p {
+		font-size: 16px;
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}
 
-    .list-main-wrapper .list-wrapper .list-set .list-box img {
-        padding: 17px;
-       
-    
-    }
-    
+	.list-main-wrapper .list-wrapper .list-set .list-box img {
+		padding: 17px;
+	}
 }

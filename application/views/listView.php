@@ -16,11 +16,8 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/listView.css')?>" rel="stylesheet" />
-    <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="<?php echo base_url('assets/css/listView.css?v=2')?>" rel="stylesheet" />
+
     <style>
     .hide {
         display: none;
@@ -30,24 +27,12 @@
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
-
-
-
-
-
     <main class="home">
-        
-
-
         <div class="inner-header-wrapper ">
-          
-   
-                <div class="col-12 text-center  booking-form">
-                        <h1>Booking Form </h1>
-                        <p>Passengers & Luggages</p>
-                    </div>
-
-         
+            <div class="col-12 text-center  booking-form">
+                <h1>Booking Form </h1>
+                <p>Passengers & Luggages</p>
+            </div>
         </div>
         <!-- <div class="container-fluid banner-section">
             <img src="<?php echo base_url('assets/images/travel24/listView/banner.svg')?>" alt="about_us_banner"
@@ -76,8 +61,6 @@
         <section class="list-main-wrapper">
             <div class="container">
                 <div class="row">
-                  
-
                     <div class="col-lg-3 col-sm-12">
                         <div class="side-wrapper">
                             <h1>Summary</h1>
@@ -97,14 +80,10 @@
                             <p><?php echo $post_data['destination'] ?></p>
                         </div>
                         <div id="map-layer" style="margin: 20px 0px; max-width: 100%; min-height: 400;">Loading</div>
-                        <!--<iframe src="https://www.google.com/maps/embed/v1/place?key=<?php echo $setting->google_api_key; ?>'='<?php echo $post_data['sourceLat']?>.','.<?php echo $post_data['sourceLat']?>" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
-                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198740.52767444344!2d-77.15466285894087!3d38.89377999387227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC%2C%20USA!5e0!3m2!1sen!2sin!4v1602612852244!5m2!1sen!2sin"
-                            width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
                     </div>
                     <div class="col-lg-9 col-sm-12">
                         <div class="list-wrapper">
                             <div class="choose-heading">Choose an option. (All card charges included)</div>
-
                             <div class="filter-wrapper">
                                 <input type="hidden" id="special_location" value="<?php echo $special_location;?>">
                                 <h3>PASSENGERS AND LUGGAGE</h3>
@@ -123,7 +102,6 @@
                                     <div class="col-md-4 no-gutter">
                                         <div class="filter-box brdr-right">
                                             <h4>NUMBER OF SUITCASES</h4>
-
                                             <select id="suitcase_count" class="formcontrol filter-result">
                                                 <?php for($j=1;$j<=$max_suit_case;$j++){?>
                                                 <option value="<?php echo $j;?>"><?php echo $j;?></option>
@@ -143,7 +121,6 @@
                                                 <option value="<?php echo $vt->id; ?>"><?php echo $vt->type; ?></option>
                                                 <?php }
                                             ?>
-
                                             </select>
                                         </div>
                                     </div>
@@ -166,12 +143,19 @@
                                                 <h5><?php echo $vh->title?></h5>
                                                 <ul>
                                                     <li>
-                                                        <i class="fa fa-user"
-                                                            aria-hidden="true"></i><span><?php echo $vh->noOfPassengers; ?></span>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> "
+                                                                class="passanger_img" alt="passanger">
+                                                            <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
+                                                        </div>
                                                     </li>
+                                                    
                                                     <li>
-                                                        <i class="fa fa-suitcase"
-                                                            aria-hidden="true"></i><span><?php echo $vh->noOfSuitcases; ?></span>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
+                                                                class="suitcases_img" alt="passanger">
+                                                            <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
+                                                        </div>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -228,12 +212,19 @@
                                                 <h5><?php echo $vh->title?></h5>
                                                 <ul>
                                                     <li>
-                                                        <i class="fa fa-user"
-                                                            aria-hidden="true"></i><span><?php echo $vh->noOfPassengers; ?></span>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> "
+                                                                class="passanger_img" alt="passanger">
+                                                            <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
+                                                        </div>
                                                     </li>
+                                                    
                                                     <li>
-                                                        <i class="fa fa-suitcase"
-                                                            aria-hidden="true"></i><span><?php echo $vh->noOfSuitcases; ?></span>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
+                                                                class="suitcases_img" alt="passanger">
+                                                            <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
+                                                        </div>
                                                     </li>
                                                 </ul>
                                             </div>

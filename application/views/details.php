@@ -209,6 +209,17 @@ form .error {
                                                 TRIP</span>
                                         </h1>
                                         <p><?php echo $vechicle_data->vehicle_description?></p>
+                                        <div class="d-flex justify-content-between ">
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?>" class="img-fluid " alt="car">
+                                        <h3 class="mt-2">&nbsp;<?php echo $vechicle_data->noOfPassengers?>&nbsp;Passengers</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?>" class="img-fluid " alt="car">
+                                        <h3 class="mt-2 fs-2">&nbsp;<?php echo $vechicle_data->noOfSuitcases?>&nbsp;Suitcases</h3>
+                                    </div>
+                                </div>
+                                       
                                         <div class="bottom">
                                             <img src="<?php echo base_url($vechicle_data->vehicle_image)?>" alt="Car">
                                             <h4>£<span
