@@ -105,6 +105,11 @@ embed {
 	
 }
 
+.disability_img{
+	width: 5%;
+	
+}
+
 /* ------------------------ RESPONSIVE START ------------------------------------- */
 
 @media only screen and (max-width: 1024px) {

@@ -16,7 +16,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/listView.css?v=2')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/listView.css?v=3')?>" rel="stylesheet" />
 
     <style>
     .hide {
@@ -140,7 +140,16 @@
                                         </div>
                                         <div class="col-md-9 no-gutter">
                                             <div class="head">
-                                                <h5><?php echo $vh->title?></h5>
+                                                <?php  if($vh->title == "MOBILITY VEHICLE"){?>
+                                                       <h5><?php echo $vh->title?> ( 
+
+                                                         <img src="<?php echo base_url("assets/images/travel24/fleet/disability.png")?> "   class="disability_img" alt="disability">
+                                                         Vehicle)
+                                                        </h5>
+                                                <?php }  else { ?>
+                                                       <h5><?php echo $vh->title?> </h5>
+                                                <?php }  ?>
+
                                                 <ul>
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
@@ -149,7 +158,7 @@
                                                             <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
                                                         </div>
                                                     </li>
-                                                    
+
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
@@ -218,7 +227,7 @@
                                                             <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
                                                         </div>
                                                     </li>
-                                                    
+
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
@@ -400,10 +409,7 @@
                     var durationInHours = durationInMinutes / 60;
 
 
-                    console.log("kil----", kil)
-                    console.log("durationInSeconds----", durationInSeconds)
-                    console.log("durationInMinutes----", durationInMinutes)
-                    console.log("durationInHours----", durationInHours)
+
 
                     var total_mile = parseFloat(kil * 0.621371);
                     mile_total += total_mile;

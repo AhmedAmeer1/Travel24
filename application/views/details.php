@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=2')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=3')?>" rel="stylesheet" />
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -204,28 +204,47 @@ form .error {
                                 </div>
                                 <div class="col-md-5 no-gutter">
                                     <div class="trip-d">
-                                        <h1><?php echo $vechicle_data->title;?>,
-                                            <span><?php echo ($_SESSION["journey_type"] =="1"?"Single":"Return") ?>
-                                                TRIP</span>
-                                        </h1>
-                                        <p><?php echo $vechicle_data->vehicle_description?></p>
-                                        <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?>" class="img-fluid " alt="car">
-                                        <h3 class="mt-2">&nbsp;<?php echo $vechicle_data->noOfPassengers?>&nbsp;Passengers</h3>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?>" class="img-fluid " alt="car">
-                                        <h3 class="mt-2 fs-2">&nbsp;<?php echo $vechicle_data->noOfSuitcases?>&nbsp;Suitcases</h3>
-                                    </div>
-                                </div>
-                                       
-                                        <div class="bottom">
-                                            <img src="<?php echo base_url($vechicle_data->vehicle_image)?>" alt="Car">
-                                            <h4>£<span
-                                                    id="total_fare"><?php echo ($_SESSION["total_fare"]==0?$_SESSION["base_fare"]:$_SESSION["total_fare"])?></span>
-                                            </h4>
-                                        </div>
+
+                                        <?php  if($vechicle_data->title == "MOBILITY VEHICLE"){?>
+
+                                        <h1><?php echo $vechicle_data->title;?>(
+                                            <img src="<?php echo base_url("assets/images/travel24/fleet/disability.png")?> "
+                                                class="disability_img" alt="disability">
+                                            Vehicle),
+
+                                            <?php }  else { ?>
+                                            <h1><?php echo $vechicle_data->title;?>,
+                                                <?php }  ?>
+
+
+                                                <span><?php echo ($_SESSION["journey_type"] =="1"?"Single":"Return") ?>
+                                                    TRIP</span>
+                                            </h1>
+                                            <p><?php echo $vechicle_data->vehicle_description?></p>
+                                            <div class="d-flex justify-content-between ">
+                                                <div class="d-flex justify-content-between ">
+                                                    <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?>"
+                                                        class="img-fluid " alt="car">
+                                                    <h3 class="mt-2">
+                                                        &nbsp;<?php echo $vechicle_data->noOfPassengers?>&nbsp;Passengers
+                                                    </h3>
+                                                </div>
+                                                <div class="d-flex justify-content-between ">
+                                                    <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?>"
+                                                        class="img-fluid " alt="car">
+                                                    <h3 class="mt-2 fs-2">
+                                                        &nbsp;<?php echo $vechicle_data->noOfSuitcases?>&nbsp;Suitcases
+                                                    </h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="bottom">
+                                                <img src="<?php echo base_url($vechicle_data->vehicle_image)?>"
+                                                    alt="Car">
+                                                <h4>£<span
+                                                        id="total_fare"><?php echo ($_SESSION["total_fare"]==0?$_SESSION["base_fare"]:$_SESSION["total_fare"])?></span>
+                                                </h4>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
@@ -402,7 +421,8 @@ form .error {
 
                                     <button class=" promotion-btn  paycash-btn promo-code"
                                         onclick="apply_promo_code()">Apply Promocode</button> <span
-                                        class="promo-text">Enter <span class="code">LUTH24</span>  to get 10 % off. </span>
+                                        class="promo-text">Enter <span class="code">LUTH24</span> to get 10 % off.
+                                    </span>
 
                                 </div>
                             </div>
@@ -983,7 +1003,7 @@ form .error {
     </script>
     <script>
     function checkDate() {
-
+        console.log("inside checkDate 1111111 ------")
         var selectedText = document.getElementById('datepicker').value;
         var selectedDate = new Date(selectedText);
         var now = new Date();
@@ -993,7 +1013,7 @@ form .error {
         var minute = today.getMinutes();
         current_time = hour + ":" + minute;
         var dd = today.getDate();
-
+        console.log("inside minute 1111111 ------", minute)
         var mm = today.getMonth() + 1;
         var yyyy = today.getFullYear();
         if (dd < 10) {
@@ -1014,6 +1034,7 @@ form .error {
     }
 
     function Converttimeformat(time) {
+
         var hrs = Number(time.match(/^(\d+)/)[1]);
         var mnts = Number(time.match(/:(\d+)/)[1]);
         var format = time.match(/\s(.*)$/)[1];
@@ -1053,10 +1074,14 @@ form .error {
     })
 
     function checkTime() {
+        console.log("inside checkTime ------")
         var selectedText = document.getElementById('datepicker').value;
         var today = new Date();
         var dd = today.getDate();
-        var mm = today.getMonth() + 1;
+        var mm = today.getMonth() + 3;
+
+        console.log("mm ------", mm)
+        console.log("dd ------", dd)
         var yyyy = today.getFullYear();
         if (dd < 10) {
             dd = '0' + dd;
@@ -1065,7 +1090,11 @@ form .error {
             mm = '0' + mm;
         }
         today = mm + '/' + dd + '/' + yyyy;
+        console.log("today ------", today)
+
         var time = $("#timepicker").val();
+        console.log("time ------", time)
+
         var d = new Date();
         var hour = d.getHours();
         var minute = d.getMinutes();

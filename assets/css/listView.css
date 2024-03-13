@@ -94,7 +94,7 @@ embed {
 	background: rgb(0 81 124);
 }
 .list-main-wrapper .list-wrapper .list-set .list-box .passanger_img {
-	padding: 5px 5px 6px 5px!important;
+	padding: 5px 5px 6px 5px !important;
 	-o-object-fit: cover;
 	object-fit: contain;
 	height: 60% !important;
@@ -124,17 +124,17 @@ embed {
 .list-main-wrapper .list-wrapper .list-set .list-box .head h5 {
 	font-size: 24px;
 	color: #00517c;
-	font-family: "helvet";
+	font-family: "helvet"; 
 }
 
-.list-main-wrapper .list-wrapper .list-set .list-box .head ul  {
-width: 64% !important;
-text-align: right;
-/* background-color: wheat !important; */
+.list-main-wrapper .list-wrapper .list-set .list-box .head ul {
+	width: 66% !important;
+	text-align: right;
+	/* background-color: wheat !important; */
 }
 .list-main-wrapper .list-wrapper .list-set .list-box .head ul h3 {
-font-size: 12px;
-	}
+	font-size: 12px;
+}
 
 .list-main-wrapper .list-wrapper .list-set .list-box .head ul li {
 	display: inline-block;
@@ -252,6 +252,14 @@ font-size: 12px;
 	margin-bottom: 80px;
 }
 
+.disability_img {
+	padding: 0 !important;
+	width: 5% !important;
+	height: 40% !important;
+	/* margin-top: 13px !important; */
+	background-color: white !important;
+}
+
 /* ------------------------ RESPONSIVE START ------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
@@ -270,5 +278,10 @@ font-size: 12px;
 
 	.list-main-wrapper .list-wrapper .list-set .list-box img {
 		padding: 17px;
+	}
+
+	.list-main-wrapper .list-wrapper .list-set .list-box .head h5 {
+		font-size: 19px;
+	
 	}
 }

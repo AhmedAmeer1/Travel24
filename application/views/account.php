@@ -307,7 +307,7 @@
                          {
                             
                              var obj = jQuery.parseJSON(result);
-                             console.log(obj.result)
+                  
                              $(".order-details").removeClass('hide');
                              $("#list_table").addClass('hide');
                              $("#order_no").text(obj.result['booking_id']);
@@ -370,7 +370,7 @@
                          {
                             
                              var obj = jQuery.parseJSON(result);
-                             console.log()
+                           
                              $("#status-td-"+book_id).text("Trip Cancel")
                              alert(obj.msg)
                              

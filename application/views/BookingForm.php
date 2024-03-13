@@ -210,7 +210,7 @@ $( "#createCustomerForm" ).delegate( 'input', "keyup", function() {
     componentRestrictions: {country: "uk"}
         };
     var places = new google.maps.places.Autocomplete(document.getElementById(chnaged_id),options);
-    //console.log('places',places.getPlace())
+
         google.maps.event.addListener(places, 'place_changed', function () {
         var place = places.getPlace();
              var address = place.formatted_address;
