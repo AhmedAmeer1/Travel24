@@ -731,7 +731,12 @@ form .error {
             }
         });
     }
-
+    $('#timepicker').timepicker({
+        timeFormat: 'h:mm p', // Display format with AM/PM
+        interval: 5, // Time intervals in minutes
+        scrollbar: true, // Show scrollbar for longer lists
+        showMeridian: true // Show AM/PM
+    });
     $('.payment-method').click(function() {
         //  if($("#my_account_div").hasClass('hide')){
         //     alert("please login to continue");return;
