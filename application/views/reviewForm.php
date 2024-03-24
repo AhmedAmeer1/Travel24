@@ -14,15 +14,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/reviewForm.css')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/reviewForm.css?v=5')?>" rel="stylesheet" />
 
 </head>
 
     <body>
-
+    <?php $this->load->view('common_components/header'); ?>
         <div class="review-form-wrapper">
             <div class="review-box">
-                <h1>Review Us</h1>
+                <h1>Review Us</h1>   <br>
+              
+                    
+                    <input class="firstName" type="text" name="firstName" id="firstName" placeholder="First Name" >
+                  
+
+           <br>
                 <div class="rate">
                     <input type="radio" id="star5" name="rate" value="5" />
                     <label for="star5" title="text">5 stars</label>
@@ -37,7 +43,7 @@
                 </div>
                 <div class="clear"></div>
                 <div>
-                    <textarea rows="3" id="comment" placeholder="Write your comment"></textarea>
+                    <textarea rows="3" id="comment"  placeholder="Write your comment"></textarea>
                     <input type="hidden" name="trip_id" id="trip_id" >
                     <input type="hidden" name="type" id="type" >
 
@@ -48,35 +54,34 @@
                 <button id="reviewSubmit">Submit</button>
             </div>
         </div>
-
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <?php $this->load->view('common_components/footer'); ?>
     </body>
 </html>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
 <script>    
 
     $("#reviewSubmit").click(function(){ 
         var trip_id = $("#trip_id").val();
         var comment = $("#comment").val();
+        var firstName = $("#firstName").val();
+        // alert(comment)
         var type = $("#type").val();
         var rating = $( "input[type=radio][name=rate]:checked" ).val();
         if(rating == null || rating == '' || rating == undefined || rating == 'undefined' || rating == 'null' || comment == null || comment == '' || comment == undefined || comment == 'undefined' || comment == 'null'){
             alert("Please Add your Comment and Rating");
             return;
         }
-        var url ="<?php echo base_url('Reviews/add') ?>";
+        var url ="<?php echo base_url('ReviewForm/save_review') ?>";
         $.ajax({
             type: "POST",
             url: url,
-            data: {rating:rating,comment:comment,trip_id:trip_id},
+            data: {firstName:firstName,rating:rating,comment:comment,trip_id:trip_id},
             success: function(result)
             {
-                if(result == 1){
                     alert("Review Added Successfully...");
                     (type == 1)? window.location.replace('<?php echo base_url('Booking/listBookingDetails')?>'): window.location.replace('<?php echo base_url() ?>');
-                }else if(result == 0){
-                    alert("You Are Already Reviewed For this Trip.");
-                    (type == 1)? window.location.replace('<?php echo base_url('Booking/listBookingDetails')?>'): window.location.replace('<?php echo base_url() ?>');
-                }
+              
 
             }
         })

@@ -1,87 +1,71 @@
 .review-form-wrapper {
-	background-color: #00517c;
-
-	padding: 100px;
-
-	height: 100vh;
+	/* background-color: #d3d3d3; */
+	background-color: #dee2e6;
+	padding: 50px 50px 50px 50px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+	height: 70vh;
 }
 
 .review-form-wrapper .review-box {
 	background-color: #fff;
-
-	padding: 20px;
-
-	max-width: 400px;
-
+	width: 35%;
+	padding: 40px;
+	/* max-width: 400px; */
 	position: absolute;
-
 	top: 50%;
-
 	left: 50%;
-
 	transform: translate(-50%, -50%);
 }
 
 .review-form-wrapper h1 {
 	padding-left: 15px;
-
 	font-size: 20px;
-
 	font-weight: bolder;
 }
 
 .review-form-wrapper button {
 	width: 100%;
-
-	background-color: #FF6500;
-
+	background-color: #ff6500;
 	color: #fff;
-
 	border: 0;
-
 	border-radius: 25px;
-
 	padding: 10px;
-
 	text-transform: uppercase;
 }
 
 .review-form-wrapper textarea {
 	border-radius: 8px;
-
-	min-width: 300px;
+	width: 100%;
+	/* min-width: 300px; */
 
 	padding: 15px;
 }
 
+.review-form-wrapper .firstName {
+	border-radius: 8px;
+	width: 100%;
+	/* min-width: 300px; */
 
-
+	padding: 10px;
+}
 
 .rate {
-	padding: 20px 10px;
-
+	padding: 10px 10px 20px 10px;
 	float: left;
 }
 
 .rate:not(:checked) > input {
 	position: absolute;
-
 	top: -9999px;
 }
 
 .rate:not(:checked) > label {
 	float: right;
-
 	width: 1em;
-
 	overflow: hidden;
-
 	white-space: nowrap;
-
 	cursor: pointer;
-
 	font-size: 30px;
-
 	color: #ccc;
 }
 
@@ -108,4 +92,10 @@
 
 .clear {
 	clear: both !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.review-form-wrapper .review-box {
+		width: 95%;
+	}
 }
