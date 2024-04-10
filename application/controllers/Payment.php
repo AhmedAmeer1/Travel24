@@ -169,7 +169,7 @@ class Payment extends CI_Controller {
 		$this->email->to($data['email']);
 
 
-		$this->email->subject('Your Nolimit Taxi order has been received!');
+		$this->email->subject('Your Travel24 Taxi order has been received!');
 		
 	
 		

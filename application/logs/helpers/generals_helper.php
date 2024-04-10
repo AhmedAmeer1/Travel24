@@ -148,7 +148,7 @@
 		$CI->email->initialize($config);
 		$CI->email->from('divya.techware@gmail.com', 'No Limits Car');
 		$CI->email->to($email);
-        $CI->email->subject('Your Nolimit Taxi order is Completed');
+        $CI->email->subject('Your Travel24 Taxi order is Completed');
 		$CI->email->message($msg);
 		if($CI->email->send()){
 			return true;

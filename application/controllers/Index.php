@@ -545,7 +545,7 @@ public function check_promo_code(){
 		$this->email->from('bookings@travel24taxi.com', 'TRAVEL 24 CARS');
 		$this->email->to($data['email']);
 		
-        $this->email->subject('Your Nolimit Taxi order has been received!');
+        $this->email->subject('Your Travel24 Taxi order has been received!');
 		$mesg = $this->load->view('template/email',$data,true);
 		$this->email->message($mesg);
 
