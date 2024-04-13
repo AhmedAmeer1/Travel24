@@ -902,7 +902,7 @@ form .error {
 
 
             if (meet_and_greet == 1) {
-                var fare = parseFloat(fare) + 6;
+                var fare = parseFloat(fare) + 8;
             }
             if (drop_off == 1) {
                 var fare = parseFloat(fare) + 5;
@@ -913,7 +913,7 @@ form .error {
             // alert( "you need to pay extra £"+ $(this).attr('data-cost-per-child-seat') + "for booking each  child seat for this vehicle")
         } else {
             if (meet_and_greet == 1) {
-                var fare = parseFloat(fare) + 6;
+                var fare = parseFloat(fare) + 8;
             }
             if (drop_off == 1) {
                 var fare = parseFloat(fare) + 5;
@@ -927,9 +927,9 @@ form .error {
         if ($(this).prop("checked") == true) {
             $("#meet_amount").text("(+" + "£ 5)")
             //alert( "you need to pay extra £5 for avail this service")
-            $("#total_fare").text(parseFloat(fare) + 6)
+            $("#total_fare").text(parseFloat(fare) + 8)
         } else {
-            $("#total_fare").text(parseFloat(fare) - 6)
+            $("#total_fare").text(parseFloat(fare) - 8)
             $("#meet_amount").text("")
         }
 
