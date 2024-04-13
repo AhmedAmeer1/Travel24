@@ -429,6 +429,7 @@ public function booking_init(){
 			$data['hand_lagguage'] =$input['hand_lagguage'];
 			$data['flight_no'] =$input['flight_no'];
 			$data['pick_up'] =$input['pick_up'];
+			$data['image'] = 'https://travel24taxi.com/assets/images/travel24/Logo.svg'; 
 
 			debug_log(" dropOff_status' -----9999999999999999999999999- ");
 			debug_log( $booking['dropOff_status']);
@@ -948,7 +949,7 @@ public function lloyds_success(){
 			$data['scomments_special_inst'] =(!empty($_SESSION['scomments_special_inst']) ? $_SESSION['scomments_special_inst'] :  get_cookie('scomments_special_inst'));
 			$data['hand_lagguage'] =(!empty($_SESSION['hand_lagguage']) ? $_SESSION['hand_lagguage']:  get_cookie('hand_lagguage'));
 			$data['pick_up'] =(!empty($_SESSION['pick_up']) ? $_SESSION['pick_up']:  get_cookie('pick_up'));
-
+			$data['image'] = 'https://travel24taxi.com/assets/images/travel24/Logo.svg'; 
 
 		
 
