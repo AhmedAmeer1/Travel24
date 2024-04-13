@@ -239,7 +239,7 @@ public function booking_init(){
 
 	
 	if($booking['greet_status'] == '1'){
-    $greeting_cost = 6;
+    $greeting_cost = 8;
 	}else{
 		$greeting_cost = 0;
 	}
