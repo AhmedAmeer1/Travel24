@@ -17,21 +17,18 @@
         <div style="padding: 20px; ">
             <div>
 
-                <div class="row ">
+                <!-- <div class="row ">
                     <div class="col-md-6">
                         <a class="mt-2" href="<?php echo base_url()?>"><img
-                        src="<?php echo $image; ?>" alt=""></a>
+                                src="https://travel24taxi.com/assets/images/travel24/Logo.svg" alt=""></a>
                     </div>
                     <div class="col-md-6 text-right">
                         For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
                     </div>
-                </div>
+                </div> -->
 
 
                 <p>Hi You have received the following order from - <?php echo $first_name.' '.$last_name;?>,</p>
-
-                <strong>[image----- #<?php echo $image;?>]</strong><br>
-
 
                 <strong>[Order #<?php echo $booking_id;?>] (<?php echo $travel_date;?>)</strong>
             </div>

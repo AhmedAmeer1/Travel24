@@ -16,16 +16,16 @@
         </div>
         <div style="padding: 20px; ">
             <div>
-            
-            <div class="row ">
+                <!-- <div class="row ">
                     <div class="col-md-6">
-                        <img
-                        src="<?php echo $image; ?>" alt="">
+                        <a class="mt-2" href="<?php echo base_url()?>"><img
+                                src="https://travel24taxi.com/assets/images/travel24/Logo.svg" alt=""></a>
                     </div>
                     <div class="col-md-6 text-right">
                         For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
                     </div>
-                </div>
+                </div> -->
+
 
                 <p>Hi <?php echo $first_name.' '.$last_name;?>,</p>
                 <p>Just to let you know — we've received your order #<b><?php echo $booking_id;?></b>, and it is now
@@ -33,10 +33,6 @@
                 <?php /*?><?php if(isset($type) && $type=="Cash"){?>
                 <p>Pay with cash upon Journey Time.</p>
                 <?php }?><?php */?>
-
-<strong>[image----- #<?php echo $image;?>]</strong><br>
-
-
                 <strong>[Order #<?php echo $booking_id;?>] (<?php echo $travel_date;?>)</strong>
             </div>
             <div>
