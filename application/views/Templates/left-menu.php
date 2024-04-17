@@ -116,7 +116,11 @@
                             </a>
                         </li>   
                     </ul>
-                    
+                    <li><a href="<?= base_url('Review/reviewList') ?>">
+                    <i class="fa fa-bars" aria-hidden="true">
+                    </i><span>Review  </span></a>
+                  
+                </li> 
 
                 <li><a href="<?= base_url('Customer/listCustomerUsers') ?>">
                     <i class="fa fa-bars" aria-hidden="true">
