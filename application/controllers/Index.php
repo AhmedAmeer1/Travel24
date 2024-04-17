@@ -564,7 +564,7 @@ public function check_promo_code(){
 		$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 CARS');
 		$this->email->to($to);
         $this->email->subject($subject);
-		$this->email->AddEmbeddedImage(dirname(__FILE__) . 'https://travel24taxi.com/assets/images/travel24/Logo.svg','traveltaxi');
+		// $this->email->AddEmbeddedImage(dirname(__FILE__) . 'https://travel24taxi.com/assets/images/travel24/Logo.svg','traveltaxi');
 		$mesg = $this->load->view('template/email_admin',$data,true);
 		$this->email->message($mesg);
 		$this->email->send();

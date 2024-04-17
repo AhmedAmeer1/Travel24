@@ -20,7 +20,7 @@
                 <div class="row ">
                     <div class="col-md-6">
                         <h1>test image </h1>
-                       <img src="cid:traveltaxi" alt="">
+                       <!-- <img src="cid:traveltaxi" alt=""> -->
                     </div>
                     <div class="col-md-6 text-right">
                         For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
