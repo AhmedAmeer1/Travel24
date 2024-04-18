@@ -51,5 +51,14 @@ class Review_Model extends CI_Model{
 		return $result->row_array();
 	}
 
+	public function getReviewDetailsforAdmin(){
+		
+		$query = $this->db->get('reviews');	
+		debug_log($query->result_array());
+        return $query->result_array();
+	}
+		
+
+
 }
 ?>

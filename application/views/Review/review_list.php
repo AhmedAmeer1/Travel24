@@ -44,25 +44,27 @@
         <table id="driverTable" class="table table-bordered table-striped datatable ">
           <thead>
             <tr>
-              <th class="hidden">ID</th>
-              <th width="13%;">Name</th> 
-              <th width="13%;">Email ID</th> 
-              <th width="10%;">Phone</th>
-              <th width="5%;">Status</th>
-              <th width="8%;">Action</th>
+    
+              <th width="13%;">Trip Id</th> 
+              <th width="13%;">User ID</th> 
+              <th width="10%;">Comment</th>
+              <th width="5%;">Ratings</th>
+              <!-- <th width="8%;">Action</th> -->
             </tr>
           </thead> 
           <tbody>
             <?php
-            if(!empty($customerData)){
-              foreach($customerData as $customer) {
+            if(!empty($reviewData)){
+              foreach($reviewData as $review) {
                ?>
                <tr>
-                 <th class="hidden"><?= $customer->id ?></th>
-                 <td class="center"><?= $customer->name ?></th> 
-                 <td class="center"><?= $customer->email ?></th>
-                 <td class="center"><?= $customer->phone?></th>
-                 <td class="center"><?= ($customer->status == '1')?'Active':'Inactive'?></td>
+                
+            
+                 <td class="center"><?php echo $review['trip_id']; ?></td>
+                 <td class="center"><?php echo $review['userId']; ?></td>
+                 <td class="center"><?php echo $review['comment']; ?></td>
+                 <td class="center"><?php echo $review['rating']; ?> Stars</td>
+                 <!-- <td class="center"><?= ($review->status == '1')?'Active':'Inactive'?></td>
                  <td class="center">	 
                     <a class="btn btn-sm btn-primary" id="viewCustomer" customer_id="<?= encode_param($customer->id) ?>">
                       <i class="fa fa-fw fa-eye"></i>View
@@ -72,7 +74,7 @@
                       onClick="return doconfirm()">
                       <i class="fa fa-fw fa-trash"></i>Delete
                     </a>    
-                  </td>
+                  </td> -->
                 </tr>
             <?php 
               } 

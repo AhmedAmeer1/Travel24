@@ -28,6 +28,7 @@ class ReviewForm extends CI_Controller {
         $data = array(
         
             'trip_id' => $trip_id,
+            'name' => $firstName,
             'comment' => $comment,
             'rating' => $rating,
            
