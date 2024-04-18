@@ -45,8 +45,9 @@
           <thead>
             <tr>
     
-              <th width="13%;">Trip Id</th> 
-              <th width="13%;">User ID</th> 
+              <!-- <th width="13%;">Trip Id</th> 
+              <th width="13%;">User ID</th>  -->
+              <th width="13%;">User Name</th> 
               <th width="10%;">Comment</th>
               <th width="5%;">Ratings</th>
               <!-- <th width="8%;">Action</th> -->
@@ -60,8 +61,9 @@
                <tr>
                 
             
-                 <td class="center"><?php echo $review['trip_id']; ?></td>
-                 <td class="center"><?php echo $review['userId']; ?></td>
+                 <!-- <td class="center"><?php echo $review['trip_id']; ?></td>
+                 <td class="center"><?php echo $review['userId']; ?></td> -->
+                 <td class="center"><?php echo $review['name']; ?></td>
                  <td class="center"><?php echo $review['comment']; ?></td>
                  <td class="center"><?php echo $review['rating']; ?> Stars</td>
                  <!-- <td class="center"><?= ($review->status == '1')?'Active':'Inactive'?></td>
