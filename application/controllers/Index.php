@@ -518,7 +518,7 @@ public function check_promo_code(){
 	}
 	echo  json_encode(array('exist'=>$exist ,'msg' =>$msg,'status'=>$result['effected_rows'],'user_id' =>$result['insert_id']));
 	}
-	public function email_notification($data) {
+	public function email_notification($data){
 
 		$this->load->helper('custom_helper');
 		$this->load->library('email');
@@ -536,47 +536,29 @@ public function check_promo_code(){
 		$config['bcc_batch_size'] = 200;
 	
 		$this->email->initialize($config);
+	
 		$this->email->from('bookings@travel24taxi.com', 'TRAVEL 24 CARS');
 		$this->email->to($data['email']);
 		$this->email->subject('Your Travel24 Taxi order has been received!');
 	
-		// Load the email template
-		$mesg = $this->load->view('template/email', $data, true);
-	
-		// Embed the image
-		$this->email->inline('https://travel24taxi.com/assets/images/travel24/Logo.svg');
-		$cid = $this->email->attachment_cid('https://travel24taxi.com/assets/images/travel24/Logo.svg');
+		// Attach and embed the image inline
 		$this->email->attach('https://travel24taxi.com/assets/images/travel24/Logo.svg', 'inline');
-
-			debug_log(" CID--------------------------------");
-			debug_log($cid);
-
+		$cid = $this->email->attachment_cid('https://travel24taxi.com/assets/images/travel24/Logo.svg');
+	
+		$mesg = $this->load->view('template/email', $data, true);
 		$mesg = str_replace('{logo_cid}', $cid, $mesg);
-		debug_log(" mesg--------------------------------");
-		// debug_log($mesg);
+	
 		$this->email->message($mesg);
-		$this->email->set_alt_message('Your email client does not support HTML messages.');
 	
-		if ($this->email->send()) {
-			$to = "bookings@travel24taxi.com";
-			$subject = $data['booking_id'];
+		if($this->email->send()){
+				
 	
-			$this->email->initialize($config);
-			$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 CARS');
-			$this->email->to($to);
-			$this->email->subject($subject);
-	
-			// Load the admin email template
-			$mesg = $this->load->view('template/email_admin', $data, true);
-	
-			// Embed the image
-			$path_to_image = 'https://travel24taxi.com/assets/images/travel24/Logo.svg';
-			$cid = $this->email->attachment_cid($path_to_image);
-			$mesg = str_replace('{logo_cid}', $cid, $mesg);
-	
-			$this->email->message($mesg);
-			$this->email->set_alt_message('Your email client does not support HTML messages.');
-			$this->email->send();
+	 debug_log(" Email sent successfully-----");
+			echo "Email sent successfully!";
+		} else {
+			debug_log(" Email sending faile-----");
+			debug_log( $this->email->print_debugger());
+			
 		}
 	}
 	
