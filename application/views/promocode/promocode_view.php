@@ -72,10 +72,10 @@
                     <a class="btn btn-sm btn-primary" id="viewPromocode" promo_id="<?= encode_param($promocode->promo_id) ?>">
                       <i class="fa fa-fw fa-eye"></i>View
                     </a>
-                    <a class="btn btn-sm btn-danger" 
+                    <!-- <a class="btn btn-sm btn-danger" 
                       href="<?= base_url('Promocode/editpromocode/'.encode_param($promocode->promo_id)) ?>">
                       <i class="fa fa-fw fa-edit"></i>Edit
-                    </a> 
+                    </a>  -->
                     <a class="btn btn-sm btn-danger" 
                       href="<?= base_url("Promocode/changeStatus/".encode_param($promocode->promo_id))."/2" ?>" 
                       onClick="return doconfirm()">
