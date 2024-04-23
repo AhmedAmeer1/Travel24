@@ -188,7 +188,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>ESTATE CAR (XM)</h2>
+                                <h2>ESTATE CAR (Comfort)</h2>
                                 <p>Up to 4 passengers plus 4 suitcases (20kg max).</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
@@ -263,7 +263,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>8 SEATER MINIBUS (XXL)</h2>
+                                <h2>8 SEATER MINIBUS (Van)</h2>
                                 <p>8 passengers plus up to 8 suitcases (20kg max)</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
@@ -288,7 +288,7 @@
                                     class="img-fluid w-100 py-2" alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>EXECUTIVE PEOPLE CARRIER (Comfort)</h2>
+                                <h2>EXECUTIVE PEOPLE CARRIER (Luxury)</h2>
                                 <p>Up to 5 passengers plus 5 suitcases (20kg max) or 6 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
