@@ -26,9 +26,9 @@
                         For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
                     </div>
                 </div> -->
-
+                <img src="cid:logo_cid" alt="tetstttt">
                 <img src="cid:{logo_cid}" alt="Travel24 Logo" style="max-width: 100%;">
-
+                <p>message ---- <?php echo $mesg;?>,</p>
                 <p>Hi  1111111111 You have received the following order from - <?php echo $first_name.' '.$last_name;?>,</p>
 
                 <strong>[Order #<?php echo $booking_id;?>] (<?php echo $travel_date;?>)</strong>
