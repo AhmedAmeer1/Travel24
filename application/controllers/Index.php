@@ -547,26 +547,10 @@ public function check_promo_code(){
 		$this->email->to($data['email']);
 		
         $this->email->subject('Your Travel24 Taxi order has been received!');
+		$mesg = $this->load->view('template/email',$data,true);
+		$this->email->message($mesg);
 
 
-
-		// $mesg = $this->load->view('template/email',$data,true);
-		// $this->email->message($mesg);
-
-
-			
-			$email_message = '<p>Hello 11111,</p>';
-		$email_message .= '<p>This is a test email with a sample image.</p>';
-		$email_message .= '<img src="https://travel24taxi.com/assets/images/travel24/fleet/EstateCar.png" alt="png images Image" />';
-		$email_message .= '<img src="https://via.placeholder.com/300x200.jpg" alt="Sample Image" />';
-		$email_message .= '<img src="https://cdn-creativehub.sgp1.cdn.digitaloceanspaces.com/creativehub_website_cms/0d35255e3dad51891f2842bd1054a722.jpg" alt="jpg Image" />';
-		$email_message .= '<p>Regards,</p>';
-		$email_message .= '<p>Your Name</p>';
-		
-	
-		$this->email->message($email_message);
-	
-		
 
 
 
@@ -581,23 +565,8 @@ public function check_promo_code(){
 		$this->email->to($to);
         $this->email->subject($subject);
 		// $this->email->AddEmbeddedImage(dirname(__FILE__) . 'https://travel24taxi.com/assets/images/travel24/Logo.svg','traveltaxi');
-		// $mesg = $this->load->view('template/email_admin',$data,true);
-		// $this->email->message($mesg);
-
-
-		
-		$email_message = '<p>Hello,</p>';
-		$email_message .= '<p>This is a test email with a sample image.</p>';
-		$email_message .= '<img src="https://via.placeholder.com/300x200.jpg" alt="Sample Image" />';
-		$email_message .= '<img src="https://travel24taxi.com/assets/images/travel24/Logo.svg" alt="Sample Image" />';
-		$email_message .= '<p>Regards,</p>';
-		$email_message .= '<p>Your Name</p>';
-		
-	
-		$this->email->message($email_message);
-	
-
-
+		$mesg = $this->load->view('template/email_admin',$data,true);
+		$this->email->message($mesg);
 		$this->email->send();
 			
 		//echo "email send";
