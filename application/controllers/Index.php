@@ -568,11 +568,25 @@ public function check_promo_code(){
 		// $mesg = $this->load->view('template/email_admin',$data,true);
 		// $this->email->message($mesg);
 
-		$email_message = '<p>Hello,</p>';
-		$email_message .= '<p>This is a test email with a sample image.</p>';
-		$email_message .= '<img src="https://via.placeholder.com/300x200.jpg" alt="Sample Image" />';
-		$email_message .= '<p>Regards,</p>';
-		$email_message .= '<p>Your Name</p>';
+
+
+  // Base64-encoded image string
+  $base64_image = 'data:image/jpeg;base64, ' . base64_encode(file_get_contents('"https://via.placeholder.com/300x200.jpg'));
+
+  // Email message with base64-encoded image
+  $email_message = '<p>Hello,</p>';
+  $email_message .= '<p>This is a test email with an embedded image.</p>';
+  $email_message .= '<img src="' . $base64_image . '" alt="Sample Image" />';
+  $email_message .= '<p>Regards,</p>';
+  $email_message .= '<p>Your Name</p>';
+
+
+
+		// $email_message = '<p>Hello,</p>';
+		// $email_message .= '<p>This is a test email with a sample image.</p>';
+		// $email_message .= '<img src="https://via.placeholder.com/300x200.jpg" alt="Sample Image" />';
+		// $email_message .= '<p>Regards,</p>';
+		// $email_message .= '<p>Your Name</p>';
 		
 	
 		$this->email->message($email_message);
