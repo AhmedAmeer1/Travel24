@@ -19,16 +19,9 @@
                <div class="row ">
                     <div class="col-md-6">
                         <a class="mt-2" href="<?php echo base_url()?>"><img
-                                src="https://travel24taxi.com/assets/images/travel24/fleet/EstateCar.png" alt=""></a>
+                                src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
                     </div>
-                    <div class="col-md-6">
-                        <a class="mt-2" href="<?php echo base_url()?>"><img
-                                src="https://via.placeholder.com/300x200.jpg" alt=""></a>
-                    </div>
-                    <div class="col-md-6">
-                        <a class="mt-2" href="<?php echo base_url()?>"><img
-                        src="assets/images/travel24/travel24Logo.jpg" alt=""></a>
-                    </div>
+                
 
 
                    
