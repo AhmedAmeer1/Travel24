@@ -568,7 +568,7 @@ public function check_promo_code(){
 
 		$htmlBody = '<h1>testing-------</h1>';
 
-		$this->email->Body($htmlBody);
+		// $this->email->Body($htmlBody);
 
 
 		$this->email->AddEmbeddedImage(dirname(__FILE__) . 'https://travel24taxi.com/assets/images/travel24/Logo.svg','traveltaxi');

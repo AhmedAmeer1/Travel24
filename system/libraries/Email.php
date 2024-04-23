@@ -819,8 +819,7 @@ class CI_Email {
 	 * @param	string
 	 * @return	CI_Email
 	 */
-	// public function set_mailtype($type = 'text')
-	public function set_mailtype($type = 'html')
+	public function set_mailtype($type = 'text')
 	{
 		$this->mailtype = ($type === 'html') ? 'html' : 'text';
 		return $this;
