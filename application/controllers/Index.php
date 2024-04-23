@@ -554,7 +554,7 @@ public function check_promo_code(){
 				
 	
 	 debug_log(" Email sent successfully-----");
-			echo "Email sent successfully!";
+			// echo "Email sent successfully!";
 		} else {
 			debug_log(" Email sending faile-----");
 			debug_log( $this->email->print_debugger());
