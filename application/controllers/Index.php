@@ -546,6 +546,9 @@ public function check_promo_code(){
 		// Embed the image
 		$path_to_image = 'https://travel24taxi.com/assets/images/travel24/Logo.svg';
 		$cid = $this->email->attachment_cid($path_to_image);
+			debug_log(" CID--------------------------------");
+			debug_log( $cid);
+		echo "CID: " . $cid; 
 		$mesg = str_replace('{logo_cid}', $cid, $mesg);
 	
 		$this->email->message($mesg);
