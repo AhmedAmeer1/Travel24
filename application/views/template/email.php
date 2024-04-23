@@ -1,29 +1,29 @@
 <html>
 
 <style>
-        .row {
-            display: flex;
-            justify-content: space-between;
-        }
+.row {
+    display: flex;
+    justify-content: space-between;
+}
 
-        .col-md-4 {
-            flex: 1;
-        }
+.col-md-4 {
+    flex: 1;
+}
 
-        .text-center {
-            text-align: center;
-        }
+.text-center {
+    text-align: center;
+}
 
-        .text-right {
-            text-align: right;
-        }
+.text-right {
+    text-align: right;
+}
 
 
-        img {
-            width: 100%;
-            max-width: 100%;
-        }
-    </style>
+img {
+    width: 100%;
+    max-width: 100%;
+}
+</style>
 
 
 
@@ -289,28 +289,33 @@
 
                 </table>
             </div>
-            <div class="row">
-    <div class="col-md-4">
-        <a class="mt-2" href="<?php echo base_url()?>"><img
-                src="https://travel24taxi.com/assets/images/travel24/email/payment_option.jpg" alt=""></a>
-    </div>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="flex: 1;">
+                    <a style="margin-top: 2px;" href="<?php echo base_url()?>"><img
+                            src="https://travel24taxi.com/assets/images/travel24/email/payment_option.jpg" alt=""
+                            style="width: 100%;"></a>
+                </div>
 
-    <div class="col-md-4 text-center">
-        <a href="https://twitter.com/nolimit_cars" target="_blank">
-            <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="icon"></a>
+                <div style="flex: 1; text-align: center;">
+                    <a href="https://twitter.com/nolimit_cars" style="margin-left: 4px;" target="_blank">
+                        <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="icon"
+                            style="width: 24px;"></a>
 
-        <a href="https://www.instagram.com/nolimitcars8/" target="_blank"><img
-                src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="icon"></a>
+                    <a href="https://www.instagram.com/nolimitcars8/" style="margin-left: 4px;" target="_blank"><img
+                            src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="icon"
+                            style="width: 24px;"></a>
 
-        <a href="https://www.facebook.com/nolimitcarsltd/" target="_blank"><img
-                src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="icon"></a>
-    </div>
+                    <a href="https://www.facebook.com/nolimitcarsltd/" style="margin-left: 4px;" target="_blank"><img
+                            src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="icon"
+                            style="width: 24px;"></a>
+                </div>
 
-    <div class="col-md-4 text-right">
-        Tel : <a href="tel:02039822911"> 02039822911 </a>
-        <a href="mailto:info@travel24taxi.com"> Email Us: info@travel24taxi.com </a>
-    </div>
-</div>
+                <div style="flex: 1; text-align: right;">
+                    Tel : <a href="tel:02039822911" style="margin-right: 4px;"> 02039822911 </a>
+                    Email Us: <a href="mailto:info@travel24taxi.com"> info@travel24taxi.com </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
