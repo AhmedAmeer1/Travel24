@@ -27,6 +27,7 @@
                     </div>
                 </div> -->
 
+                <img src="cid:{logo_cid}" alt="Travel24 Logo" style="max-width: 100%;">
 
                 <p>Hi You have received the following order from - <?php echo $first_name.' '.$last_name;?>,</p>
 

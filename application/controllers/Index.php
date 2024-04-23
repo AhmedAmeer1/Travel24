@@ -518,63 +518,62 @@ public function check_promo_code(){
 	}
 	echo  json_encode(array('exist'=>$exist ,'msg' =>$msg,'status'=>$result['effected_rows'],'user_id' =>$result['insert_id']));
 	}
-	public function email_notification($data){
+	public function email_notification($data) {
 
 		$this->load->helper('custom_helper');
-	
-	
-
 		$this->load->library('email');
-		$config['protocol'] = 'sendmail'; // mail, sendmail, or smtp    The mail sending protocol.
-		//$config['smtp_host'] = 'smtp.gmail.com';
-        	//$config['smtp_user'] = 'adarsh.techware@gmail.com'; // SMTP Username.
-		//$config['smtp_pass'] = 'lcvhzkxjldzxdbja'; // SMTP Password.
-        	//$config['smtp_crypto'] = "tls";
-		//$config['smtp_port'] = '587'; // SMTP Port.
-		//$config['smtp_timeout'] = '05'; // SMTP Timeout (in seconds).
-		$config['wordwrap'] = TRUE; // TRUE or FALSE (boolean)    Enable word-wrap.
-		$config['wrapchars'] = 76; // Character count to wrap at.
-		$config['mailtype'] = 'html'; // text or html Type of mail. If you send HTML email you must send it as a complete web page. Make sure you don't have any relative links or relative image paths otherwise they will not work.
-		$config['charset'] = 'utf-8'; // Character set (utf-8, iso-8859-1, etc.).
-		$config['validate'] = FALSE; // TRUE or FALSE (boolean)    Whether to validate the email address.
-		$config['priority'] = 3; // 1, 2, 3, 4, 5    Email Priority. 1 = highest. 5 = lowest. 3 = normal.
-		$config['crlf'] = "\r\n"; // "\r\n" or "\n" or "\r" Newline character. (Use "\r\n" to comply with RFC 822).
-		$config['newline'] = "\r\n"; // "\r\n" or "\n" or "\r"    Newline character. (Use "\r\n" to comply with RFC 822).
-		$config['bcc_batch_mode'] = FALSE; // TRUE or FALSE (boolean)    Enable BCC Batch Mode.
-		$config['bcc_batch_size'] = 200; // Number of emails in each BCC batch.
+	
+		$config['protocol'] = 'sendmail';
+		$config['wordwrap'] = TRUE;
+		$config['wrapchars'] = 76;
+		$config['mailtype'] = 'html';
+		$config['charset'] = 'utf-8';
+		$config['validate'] = FALSE;
+		$config['priority'] = 3;
+		$config['crlf'] = "\r\n";
+		$config['newline'] = "\r\n";
+		$config['bcc_batch_mode'] = FALSE;
+		$config['bcc_batch_size'] = 200;
+	
 		$this->email->initialize($config);
 		$this->email->from('bookings@travel24taxi.com', 'TRAVEL 24 CARS');
 		$this->email->to($data['email']);
-		
-        $this->email->subject('Your Travel24 Taxi order has been received!');
-		$mesg = $this->load->view('template/email',$data,true);
+		$this->email->subject('Your Travel24 Taxi order has been received!');
+	
+		// Load the email template
+		$mesg = $this->load->view('template/email', $data, true);
+	
+		// Embed the image
+		$path_to_image = 'https://travel24taxi.com/assets/images/travel24/Logo.svg';
+		$cid = $this->email->attachment_cid($path_to_image);
+		$mesg = str_replace('{logo_cid}', $cid, $mesg);
+	
 		$this->email->message($mesg);
-
-
-
-
-
-
-		if($this->email->send()){
+		$this->email->set_alt_message('Your email client does not support HTML messages.');
+	
+		if ($this->email->send()) {
 			$to = "bookings@travel24taxi.com";
-			$subject =$data['booking_id'];
-
-			//$to = "soumen.karmakar@solutions2xl.com";
-		$this->email->initialize($config);
-		$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 CARS');
-		$this->email->to($to);
-        $this->email->subject($subject);
-		// $this->email->AddEmbeddedImage(dirname(__FILE__) . 'https://travel24taxi.com/assets/images/travel24/Logo.svg','traveltaxi');
-		$mesg = $this->load->view('template/email_admin',$data,true);
-		$this->email->message($mesg);
-		$this->email->send();
-			
-		//echo "email send";
-		}else{
-		//echo "email not send";
+			$subject = $data['booking_id'];
+	
+			$this->email->initialize($config);
+			$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 CARS');
+			$this->email->to($to);
+			$this->email->subject($subject);
+	
+			// Load the admin email template
+			$mesg = $this->load->view('template/email_admin', $data, true);
+	
+			// Embed the image
+			$path_to_image = 'https://travel24taxi.com/assets/images/travel24/Logo.svg';
+			$cid = $this->email->attachment_cid($path_to_image);
+			$mesg = str_replace('{logo_cid}', $cid, $mesg);
+	
+			$this->email->message($mesg);
+			$this->email->set_alt_message('Your email client does not support HTML messages.');
+			$this->email->send();
 		}
-
 	}
+	
 public function login(){
 	$username = $this->input->post('username');
 	$password = md5($this->input->post('password'));
