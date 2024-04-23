@@ -25,6 +25,13 @@
                         <a class="mt-2" href="<?php echo base_url()?>"><img
                                 src="https://via.placeholder.com/300x200.jpg" alt=""></a>
                     </div>
+                    <div class="col-md-6">
+                        <a class="mt-2" href="<?php echo base_url()?>"><img
+                        src="assets/images/travel24/travel24Logo.jpg" alt=""></a>
+                    </div>
+
+
+                   
                     <div class="col-md-6 text-right">
                         For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
                     </div>
