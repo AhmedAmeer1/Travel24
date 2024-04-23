@@ -296,7 +296,7 @@ img {
                             style="width: 100%;"></a>
                 </div>
 
-                <div style="flex: 1; text-align: center;">
+                <div style="flex: 1; text-align: center; margin-left: 20px;">
                     <a href="https://twitter.com/nolimit_cars" style="margin-left: 4px;" target="_blank">
                         <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="icon"
                             style="width: 24px;"></a>
@@ -310,7 +310,7 @@ img {
                             style="width: 24px;"></a>
                 </div>
 
-                <div style="flex: 1; text-align: right;">
+                <div style="flex: 1; text-align: right; margin-left: 20px;">
                     Tel : <a href="tel:02039822911" style="margin-right: 4px;"> 02039822911 </a>
                     Email Us: <a href="mailto:info@travel24taxi.com"> info@travel24taxi.com </a>
                 </div>
