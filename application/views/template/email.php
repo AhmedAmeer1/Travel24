@@ -23,10 +23,10 @@
                     </div>
                 
 
-
+<br />
                    
                     <div class="col-md-6 text-right">
-                        For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
+                       <h2> For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a></h2>
                     </div>
                 </div>
 
@@ -262,82 +262,39 @@
 
                 </table>
             </div>
-            <?php /*?> <div>
-                <div style="background-color: #999; margin-top: 25px;height: 50px;"></div>
-                <div style="padding: 35px; border: 1px solid #d2d2d2;">
-                    <h1 style="font-size: 16px;">GENERAL</h1>
-                    <table style="border-top: 1px dotted  #d2d2d2; width: 100%; font-size: 14px;">
-                        <tr>
-                            <td style="padding-top: 10px;">Title</td>
-                            <td style="padding-top: 10px;">Booking ID <?php echo $booking_id; ?></td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 10px;">Transfer type</td>
-                            <td style="padding-top: 10px;"><?php echo $travel_type;?></td>
-                        </tr>
-
-                        <tr>
-                            <td style="padding-top: 10px;">Pickup date and time</td>
-                            <td style="padding-top: 10px;"><?php echo $travel_date; ?> - <?php echo $travel_time; ?>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 10px;">Order total amount</td>
-                            <td style="padding-top: 10px;">£ <?php echo $total; ?></td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 10px;">COMMENTS OR SPECIAL INSTRUCTIONS</td>
-                            <td style="padding-top: 10px;"><?php echo $scomments_special_inst; ?></td>
-                        </tr>
-
-                    </table>
-                    <h1 style="font-size: 16px; margin-top: 25px;">Route Locations</h1>
-                    <table style="border-top: 1px dotted  #d2d2d2; width: 100%; font-size: 14px;">
-                        <tr>
-                            <td style="padding-top: 10px;"><?php echo $source;?></td>
-                            <?php if($way_point_1 != ''){?> <td style="padding-top: 10px;"><?php echo $way_point_1;?>
-                            </td><?php }?>
-                            <?php if($way_point_2 != ''){?> <td style="padding-top: 10px;"><?php echo $way_point_2;?>
-                            </td><?php }?>
-                            <?php if($way_point_3 != ''){?> <td style="padding-top: 10px;"><?php echo $way_point_3;?>
-                            </td><?php }?>
-                            <td style="padding-top: 10px;"><?php echo $destination;?></td>
-                        </tr>
-                    </table>
-                    <h1 style="    color: #5a5ac1;
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 5px;">VEHICLE</h1>
-                    <div style="border:1px solid #d2d2d2; padding: 20px;">
-                        <p style="margin-top: 0;">Vehicle name-<?php echo $vehicle;?></p>
-                        <p style="margin-top: 0;">Bag Count-<?php echo $suitcase;?></p>
-                        <p style="margin-top: 0;">Passengers count-<?php echo $passenger;?></p>
-
+            <div class="row ">
+                    <div class="col-md-4">
+                        <a class="mt-2" href="<?php echo base_url()?>"><img
+                                src="https://travel24taxi.com/assets/images/travel24/email/payment.jpg" alt=""></a>
                     </div>
-                    <h1 style="font-size: 16px; margin-top: 25px;">EXTRA</h1>
-                    <table style="border-top: 1px dotted  #d2d2d2; width: 100%; font-size: 14px;">
-                        <tr>
-                            <?php if($child_seat != 0){?> <td style="padding-top: 10px;">1.<?php echo $child_seat?> x
-                                Child Seat - £<?php echo $child_seat_cost?></td><?php }?>
-                            <?php if($greet_status == 1){?> <td style="padding-top: 10px;">2.<?php echo $greet_status?>
-                                x Meet and greet - Yes, please meet me in arrivals - £<?php echo $greeting_cost?></td>
-                            <?php }?>
-                        </tr>
-                    </table>
+                
+
+                    <div class="col-md-4 text-center">
+                   
+                    <ul class="social-media">
+                        <li>
+                            <a href="https://twitter.com/nolimit_cars" target="_blank"><img
+                                    src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/nolimitcars8/" target="_blank"><img
+                                    src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="icon"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/nolimitcarsltd/" target="_blank"><img
+                                    src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="icon"></a>
+                        </li>
+                    </ul>
                 </div>
-                <div style="background-color: #999; height: 50px;"></div>
-            </div>
-            <h1 style="    color: #5a5ac1;
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 5px;">CLIENT DETAILS</h1>
-            <div style="border:1px solid #d2d2d2; padding: 20px;">
-                <p style="margin-top: 0;"><?php echo $first_name.' '.$last_name;?></p>
-                <p><?php echo $email;?></p>
-                <p><?php echo $phone;?></p>
+                   
+                    <div class="col-md-4 text-right">
+                    Tel :  <a href="tel:02039822911 " class=" "> 02039822911 </a> 
+                     <a href="info@travel24taxi.com" class=" "> Email Us :info@travel24taxi.com </a>
+                       
+                    </div>
+                </div>
 
-            </div><?php */?>
-
+              
 
         </div>
     </div>
