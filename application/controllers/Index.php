@@ -568,12 +568,12 @@ public function check_promo_code(){
 		// $mesg = $this->load->view('template/email_admin',$data,true);
 		// $this->email->message($mesg);
 
-
 		$email_message = '<p>Hello,</p>';
-		$email_message .= '<p>This is a test email with an image.</p>';
-		$email_message .= '<img src="https://travel24taxi.com/assets/images/travel24/Logo.svg" alt="Travel24 Logo" />';
+		$email_message .= '<p>This is a test email with a sample image.</p>';
+		$email_message .= '<img src="https://via.placeholder.com/300x200.jpg" alt="Sample Image" />';
 		$email_message .= '<p>Regards,</p>';
 		$email_message .= '<p>Your Name</p>';
+		
 	
 		$this->email->message($email_message);
 	
