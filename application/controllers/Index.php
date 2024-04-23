@@ -587,6 +587,7 @@ public function check_promo_code(){
 		$email_message = '<p>Hello,</p>';
 		$email_message .= '<p>This is a test email with a sample image.</p>';
 		$email_message .= '<img src="https://via.placeholder.com/300x200.jpg" alt="Sample Image" />';
+		$email_message .= '<img src="https://travel24taxi.com/assets/images/travel24/Logo.svg" alt="Sample Image" />';
 		$email_message .= '<p>Regards,</p>';
 		$email_message .= '<p>Your Name</p>';
 		
