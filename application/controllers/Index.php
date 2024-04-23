@@ -553,7 +553,7 @@ public function check_promo_code(){
 
 		$mesg = str_replace('{logo_cid}', $cid, $mesg);
 		debug_log(" mesg--------------------------------");
-		debug_log($mesg);
+		// debug_log($mesg);
 		$this->email->message($mesg);
 		$this->email->set_alt_message('Your email client does not support HTML messages.');
 	
