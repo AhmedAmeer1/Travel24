@@ -1,5 +1,32 @@
 <html>
 
+<style>
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col-md-4 {
+            flex: 1;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+
+
+
 <body
     style="@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');font-family: 'Roboto', sans-serif;">
     <div style="        width: 85%;
@@ -16,17 +43,17 @@
         </div>
         <div style="padding: 20px; ">
             <div>
-               <div class="row ">
+                <div class="row ">
                     <div class="col-md-6">
                         <a class="mt-2" href="<?php echo base_url()?>"><img
                                 src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
                     </div>
-                
 
-<br />
-                   
+
+                    <br />
+
                     <div class="col-md-6 text-right">
-                       <h2> For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a></h2>
+                        <h2> For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a></h2>
                     </div>
                 </div>
 
@@ -262,40 +289,28 @@
 
                 </table>
             </div>
-            <div class="row ">
-                    <div class="col-md-4">
-                        <a class="mt-2" href="<?php echo base_url()?>"><img
-                                src="https://travel24taxi.com/assets/images/travel24/email/payment.jpg" alt=""></a>
-                    </div>
-                
+            <div class="row">
+    <div class="col-md-4">
+        <a class="mt-2" href="<?php echo base_url()?>"><img
+                src="https://travel24taxi.com/assets/images/travel24/email/payment_option.jpg" alt=""></a>
+    </div>
 
-                    <div class="col-md-4 text-center">
-                   
-                    <ul class="social-media">
-                        <li>
-                            <a href="https://twitter.com/nolimit_cars" target="_blank"><img
-                                    src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/nolimitcars8/" target="_blank"><img
-                                    src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/nolimitcarsltd/" target="_blank"><img
-                                    src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="icon"></a>
-                        </li>
-                    </ul>
-                </div>
-                   
-                    <div class="col-md-4 text-right">
-                    Tel :  <a href="tel:02039822911 " class=" "> 02039822911 </a> 
-                     <a href="info@travel24taxi.com" class=" "> Email Us :info@travel24taxi.com </a>
-                       
-                    </div>
-                </div>
+    <div class="col-md-4 text-center">
+        <a href="https://twitter.com/nolimit_cars" target="_blank">
+            <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="icon"></a>
 
-              
+        <a href="https://www.instagram.com/nolimitcars8/" target="_blank"><img
+                src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="icon"></a>
 
+        <a href="https://www.facebook.com/nolimitcarsltd/" target="_blank"><img
+                src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="icon"></a>
+    </div>
+
+    <div class="col-md-4 text-right">
+        Tel : <a href="tel:02039822911"> 02039822911 </a>
+        <a href="mailto:info@travel24taxi.com"> Email Us: info@travel24taxi.com </a>
+    </div>
+</div>
         </div>
     </div>
 </body>
