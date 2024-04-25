@@ -28,8 +28,22 @@ img {
 
 
 <body
+
+
+
+
     style="@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');font-family: 'Roboto', sans-serif;">
-    <div style="        width: 85%;
+   
+   <div>
+
+   <a class="mt-2" href="<?php echo base_url()?>"><img
+                                src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
+
+   </div>
+   
+   
+   
+   <div style="        width: 85%;
     margin: 0 auto;
     background-color: #fbfbfb;">
         <div style="background-color:#094a6c;
@@ -41,6 +55,8 @@ img {
     margin: 0 auto;
     color: #fff;">Thanks for your Order</h1>
         </div>
+
+
         <div style="padding: 20px; ">
             <div>
                 <div class="row ">
@@ -290,11 +306,7 @@ img {
                 </table>
             </div>
             <div style="display: flex; justify-content: space-between;">
-                <div style="flex: 1;">
-                    <a style="margin-top: 2px;" href="<?php echo base_url()?>"><img
-                            src="https://travel24taxi.com/assets/images/travel24/email/payment_option.jpg" alt=""
-                            style="width: 100%;"></a>
-                </div>
+            
 
                 <div style="flex: 1; text-align: center; margin-left: 20px;">
                     <a href="https://twitter.com/nolimit_cars" style="margin-left: 4px;" target="_blank">
@@ -311,10 +323,25 @@ img {
                 </div>
 
                 <div style="flex: 1; text-align: right; margin-left: 20px;">
-                    Tel : <a href="tel:02039822911" style="margin-right: 4px;"> 02039822911 </a>
-                    Email Us: <a href="mailto:info@travel24taxi.com"> info@travel24taxi.com </a>
+                <div class="col-md-6 text-right">
+                        <h2> For any inquiries, contact 
+                              Tel : <a href="tel:02039822911 " class=" "> 02039822911</a>
+                              Email Us: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com </a>
+                    </h2>
+                    </div>
+
                 </div>
             </div>
+
+            <div style=" text-align: left;">
+                        <h2> 
+                              View WebSite : <a href="https://travel24taxi.com/"  target="_blank"> https://travel24taxi.com/</a>
+                           
+                    </h2>
+                    </div>
+
+                </div>
+
 
         </div>
     </div>
