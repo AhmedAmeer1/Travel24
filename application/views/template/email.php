@@ -54,7 +54,7 @@
 
 
 
-    <div style="width: 85%; margin: 0 auto; background-color: #fbfbfb;">
+    <div style="width: fit-content; margin: 0 auto; background-color: #fbfbfb;">
     <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
                 src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
         <div style="background-color:#094a6c; padding: 15px 20px; display: flex; align-items: center;">
@@ -166,7 +166,8 @@
             </div>
 <br />
             <div style="display: flex; justify-content: space-between;">
-                <div style="flex: 1; text-align: center; margin-left: 20px;">
+                <div style="flex: 1; text-align: center;     margin-bottom: auto;
+    margin-top: auto; ">
                     <a href="https://twitter.com/nolimit_cars" style="margin-left: 4px;" target="_blank">
                         <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="icon"
                             style="width: 24px;"></a>
@@ -181,10 +182,10 @@
                 </div>
                 <div style="flex: 1; text-align: right; margin-left: 20px;">
                     <div class="col-md-6 text-right">
-                        <span style="font:size 20px !important;"> For any inquiries, contact
+                        <h2 style="font:size 20px !important;"> For any inquiries, contact
                             Tel : <a href="tel:02039822911" class="">02039822911</a>
                             Email Us: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com</a>
-                        </span>
+                        </h2>
                     </div>
                 </div>
             </div>
