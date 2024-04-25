@@ -55,7 +55,7 @@
 
 
     <div style="width: 85%; margin: 0 auto; background-color: #fbfbfb;">
-    <a class="mt-2" href="<?php echo base_url()?>"><img
+    <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
                 src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
         <div style="background-color:#094a6c; padding: 15px 20px; display: flex; align-items: center;">
             <h1 style="text-align: center; margin: 0 auto; color: #fff;">Thanks for your Order</h1>
@@ -63,15 +63,7 @@
 
         <div style="padding: 20px;">
             <div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <a class="mt-2" href="<?php echo base_url()?>"><img
-                                src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
-                    </div>
-                    <div class="col-md-6 text-right">
-                        <h2> For any inquiries, contact <a href="tel:02039822911" class="">02039822911</a></h2>
-                    </div>
-                </div>
+              
 
                 <p>Hi <?php echo $first_name.' '.$last_name;?>,</p>
                 <p>Just to let you know — we've received your order #<b><?php echo $booking_id;?></b>, and it is now
@@ -189,7 +181,7 @@
                 </div>
                 <div style="flex: 1; text-align: right; margin-left: 20px;">
                     <div class="col-md-6 text-right">
-                        <span style="font: size 20px;"> For any inquiries, contact
+                        <span style="font:size 20px !important;"> For any inquiries, contact
                             Tel : <a href="tel:02039822911" class="">02039822911</a>
                             Email Us: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com</a>
                         </span>
