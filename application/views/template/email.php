@@ -11,7 +11,7 @@
 
 <body
     style="@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');font-family: 'Roboto', sans-serif;">
-    <div style="       inline-size: fit-content;
+    <div style="      width: fit-content;
     margin: 0 auto;
     background-color: #fbfbfb;">
     <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
