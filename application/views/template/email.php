@@ -3,19 +3,36 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-
-.email-container{
-    width: 80%;
-    margin: 0 auto;
-    background-color: #fbfbfb;
-}
-@media (max-width: 768px) {
-    .email-container{
-    width: fit-content;
- 
-}
+    .email-container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fbfbfb;
     }
 
+    .blue-box {
+        background-color: #094a6c;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .blue-box h1 {
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+    .table-container {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        .email-container {
+            width: fit-content;
+
+        }
+    }
     </style>
 </head>
 
@@ -23,21 +40,16 @@
 
 <body
     style="@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');font-family: 'Roboto', sans-serif;">
-    <div class="email-container" >
-    <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
+    <div class="email-container">
+        <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
                 src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
-        <div style="background-color:#094a6c;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;">
+        <div class="blue-box" style="">
 
-            <h1 style="    text-align: center;
-    margin: 0 auto;
-    color: #fff;">Thanks for your Order</h1>
+            <h1>Thanks for your Order</h1>
         </div>
         <div style="padding: 20px; ">
             <div>
-            
+
 
                 <p>Hi <?php echo $first_name.' '.$last_name;?>,</p>
                 <p>Just to let you know — we've received your order #<b><?php echo $booking_id;?></b>, and it is now
@@ -52,7 +64,7 @@
     font-size: 24px;
     margin-block-start: 30px;
     margin-block-end: 5px;">Order Details</h1>
-                <table style="inline-size: 100%; font-size: 14px;">
+                <table class="table-container">
                     <tr style="background-color: #f1f1f1;">
                         <th style="    padding: 15px; border: 1px solid #d2d2d2; font-size: 16px;">Product</th>
                         <th style="border: 1px solid #d2d2d2; font-size: 16px;">Qty</th>
