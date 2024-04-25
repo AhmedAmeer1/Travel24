@@ -4,6 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
 
+.email-container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+}
+@media (max-width: 768px) {
+    .email-container{
+    width: fit-content;
+ 
+}
+    }
+
     </style>
 </head>
 
@@ -11,9 +23,7 @@
 
 <body
     style="@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');font-family: 'Roboto', sans-serif;">
-    <div style="      width: fit-content;
-    margin: 0 auto;
-    background-color: #fbfbfb;">
+    <div class="email-container" >
     <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
                 src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
         <div style="background-color:#094a6c;
