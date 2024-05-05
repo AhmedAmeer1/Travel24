@@ -47,7 +47,7 @@ class ContactUs extends CI_Controller {
             $this->email->from($name, $email);
 
             $this->email->to($to);
-            $this->email->subject('Your Nolimit ContactUs Form  has been received');
+            $this->email->subject('Your Travel24 ContactUs Form  has been received');
                      $this->email->message( $message);
             $this->email->send();
                 
