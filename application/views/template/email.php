@@ -300,7 +300,7 @@
                 </div>
                 <div style="flex: 1; text-align: right; margin-left: 20px;">
                     <div class="col-md-6 text-right">
-                        <h2 style="font:size 20px !important;"> For any inquiries, contact
+                        <h2 style="font:size 20px !important;"> For any changes, contact
                             Tel : <a href="tel:02039822911" class="">02039822911</a>
                             Email Us: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com</a>
                         </h2>
