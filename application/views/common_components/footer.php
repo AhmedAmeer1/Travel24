@@ -48,14 +48,21 @@
             </div>
         </div>
         <div class="row mt-md-4 mt-3">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class=" text-center text-md-left">
                     <span class="footer-p2 mt-3">
                         © Travel24 2017
                     </span>
                 </div>
             </div>
-            <div class="col-md-6 ">
+            <div class="col-md-4">
+                <div class=" text-center ">
+                    <span class="footer-p2 mt-3">
+                    Travel 24 is the Trading of NoLimit  Cars Ltd
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 ">
                 <div class="text-center text-md-right">
                     <span class="footer-p2 mt-3">
                         <a href="<?php echo base_url()?>terms" class="terms">Terms & Conditions </a>

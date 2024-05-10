@@ -147,19 +147,19 @@
     margin-top: 10px;
 }
 
-.subbottom_text{
+.subbottom_text {
     text-align: center;
-	font-family: "Helvetica Neue Medium";
-	font-size: 23px;
-	color: #000000;
-	font-weight: 700;
-	margin-top: 10px;
+    font-family: "Helvetica Neue Medium";
+    font-size: 23px;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 10px;
 }
 
 .subbottom_text a {
-	margin-left: 10px;
-	color: #000000;
-	text-decoration: underline;
+    margin-left: 10px;
+    color: #000000;
+    text-decoration: underline;
 }
 
 
@@ -304,15 +304,19 @@
                 <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="terms_icon"
                     class="contact_icon">
                 <div>
-                    <h1>Travel24 LTD</h1>
-                    <p> 102 Mulberry Crescentwest Drayton UB7 9AJ</p>
+                    <h1>TRAVEL24 </h1>
+                    <p> Regus Maidenhead, Concorde Park.
+                        Concorde Road,
+                        Maidenhead,
+                        Berkshire,
+                        SL6 4BY</p>
                 </div>
             </div>
             <div class="d-flex mt-5 mt-md-0 p-xl-5">
                 <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="terms_icon"
                     class="contact_icon">
                 <div>
-                    <h1>Nolimit Airport LTD</h1>
+                    <h1>Nolimit Airport Cars Ltd</h1>
                     <p> Registered England and Wales.Registration No: 11212437.</p>
                 </div>
             </div>
@@ -324,13 +328,13 @@
                     <p>01293&nbsp;775422 </p>
                 </div>
             </div>
-        
+
         </div>
-   
+
         <div class="subbottom_text">
-                If you would like a quote for a journey you are planning please use our
-                online booking form or call us on&nbsp;<a href="tel:02039822911">02039 822 911</a>.
-            </div>
+            If you would like a quote for a journey you are planning please use our
+            online booking form or call us on&nbsp;<a href="tel:02039822911">02039 822 911</a>.
+        </div>
 
     </section>
 
