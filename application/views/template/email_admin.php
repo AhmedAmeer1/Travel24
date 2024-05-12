@@ -5,6 +5,10 @@
     <div style="        width: 85%;
     margin: 0 auto;
     background-color: #fbfbfb;">
+ <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
+                src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
+
+
         <div style="background-color:#094a6c;
     padding: 15px 20px;
     display: flex;
