@@ -68,8 +68,8 @@
         // alert(comment)
         var type = $("#type").val();
         var rating = $( "input[type=radio][name=rate]:checked" ).val();
-        if(rating == null || rating == '' || rating == undefined || rating == 'undefined' || rating == 'null' || comment == null || comment == '' || comment == undefined || comment == 'undefined' || comment == 'null'){
-            alert("Please Add your Comment and Rating");
+        if(rating == null || rating == '' || rating == undefined || rating == 'undefined' || rating == 'null' ){
+            alert("Please Add your  Rating");
             return;
         }
         var url ="<?php echo base_url('ReviewForm/save_review') ?>";
