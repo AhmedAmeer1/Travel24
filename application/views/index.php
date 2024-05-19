@@ -25,7 +25,7 @@
     <link href="<?php echo base_url('assets/css/index.css?v=1')?>" rel="stylesheet" />
 
 
-    <script src="<?php echo base_url('assets/js/schema.js')?>"></script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
