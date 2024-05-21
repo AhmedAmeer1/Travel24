@@ -44,6 +44,7 @@
                 <div class="clear"></div>
 
                 <select id="reviewType" class="reviewType" name="reviewType">
+                <option value="">Select Review Type</option>
                 <option value="Smooth ride">Smooth ride</option>
                 <option value="Friendly driver">Friendly driver</option>
                 <option value="Clean vehicle">Clean vehicle</option>
