@@ -33,6 +33,8 @@
 	text-transform: uppercase;
 }
 
+
+
 .review-form-wrapper textarea {
 	border-radius: 8px;
 	width: 100%;
@@ -44,9 +46,19 @@
 .review-form-wrapper .firstName {
 	border-radius: 8px;
 	width: 100%;
-	/* min-width: 300px; */
-
 	padding: 10px;
+}
+
+.review-form-wrapper .reviewType {
+	border-radius: 8px;
+	width: 100%;
+	padding: 10px;
+}
+
+.review-form-wrapper select {
+
+    background-image: none !important;
+
 }
 
 .rate {

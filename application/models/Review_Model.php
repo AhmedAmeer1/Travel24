@@ -7,20 +7,11 @@ class Review_Model extends CI_Model{
 
 	public function addReview($data){
 
-		debug_log("------------------------------modelllll     START------------------------------------------------------------------------------------------- ");
-       
 		$status = $this->db->insert('reviews',$data);
 		return 1;
-		debug_log("------status------------ ");
-       
+      
 		debug_log($status);
 
-		// $result = $this->db->get_where('reviews',array('trip_id'=>$data['trip_id'],'userId'=>$data['userId']));
-		// if(empty($result) ||  $result->num_rows() <= 0 ){
-		// 	$status = $this->db->insert('reviews',$data);
-		// 	return 1;
-		// }
-		// return 0;
 	}
 
 	public function getAllReviews($type = ''){

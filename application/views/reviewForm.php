@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/reviewForm.css?v=5')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/reviewForm.css?v=8')?>" rel="stylesheet" />
 
 </head>
 
@@ -42,6 +42,17 @@
                     <label for="star1" title="text">1 star</label>
                 </div>
                 <div class="clear"></div>
+
+                <select id="reviewType" class="reviewType" name="reviewType">
+                <option value="">Select Review Type</option>
+                <option value="Smooth ride">Smooth ride</option>
+                <option value="Friendly driver">Friendly driver</option>
+                <option value="Clean vehicle">Clean vehicle</option>
+                <option value="Late arrival">Late arrival</option>
+                <option value="Bumpy ride">Bumpy ride</option>
+            </select>
+            <br><br>
+
                 <div>
                     <textarea rows="3" id="comment"  placeholder="Write your comment"></textarea>
                     <input type="hidden" name="trip_id" id="trip_id" >
@@ -65,6 +76,7 @@
         var trip_id = $("#trip_id").val();
         var comment = $("#comment").val();
         var firstName = $("#firstName").val();
+        var reviewType = $("#reviewType").val();
         // alert(comment)
         var type = $("#type").val();
         var rating = $( "input[type=radio][name=rate]:checked" ).val();
@@ -76,7 +88,7 @@
         $.ajax({
             type: "POST",
             url: url,
-            data: {firstName:firstName,rating:rating,comment:comment,trip_id:trip_id},
+            data: {firstName:firstName,rating:rating,comment:comment,reviewType:reviewType,trip_id:trip_id},
             success: function(result)
             {
                     alert("Review Added Successfully...");
