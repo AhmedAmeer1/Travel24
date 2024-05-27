@@ -809,6 +809,7 @@ $dateTime = date("Y:m:d-H:i:s");
 public function lloyds_success(){
 	//loding this class to use debug_log
 	$this->load->helper('custom_helper');
+	debug_log("------------------------------------entered lloyds_success ------------------------------------------ ------ ");
 
 	$total = $this->input->get('total');
 
@@ -817,11 +818,10 @@ public function lloyds_success(){
 
 
 
-
-	//debug_log(" session data   first_name    --lloyds_success  method ------ ");
-	// debug_log($_SESSION["book_data"]['first_name']);
-	// debug_log(" -cookie- data first_name     --lloyds_success  method ------ ");
-	// debug_log(get_cookie('first_name'));
+	debug_log(" session data   first_name    --lloyds_success  method ------ ");
+	debug_log($_SESSION["book_data"]['first_name']);
+	debug_log(" -cookie- data first_name     --lloyds_success  method ------ ");
+	debug_log(get_cookie('first_name'));
 
 
 
