@@ -143,7 +143,7 @@
                                                 <?php  if($vh->title == "MOBILITY VEHICLE"){?>
                                                        <h5><?php echo $vh->title?> ( 
 
-                                                         <img src="<?php echo base_url("assets/images/travel24/fleet/disability.png")?> "   class="disability_img" alt="disability">
+                                                         <img src="<?php echo base_url("assets/images/travel24/fleet/disability-blue.png")?> "   class="disability_img" alt="disability">
                                                          Vehicle)
                                                         </h5>
                                                 <?php }  else { ?>

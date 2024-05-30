@@ -214,7 +214,7 @@ form .error {
                                         <?php  if($vechicle_data->title == "MOBILITY VEHICLE"){?>
 
                                         <h1><?php echo $vechicle_data->title;?>(
-                                            <img src="<?php echo base_url("assets/images/travel24/fleet/disability.png")?> "
+                                            <img src="<?php echo base_url("assets/images/travel24/fleet/disability-blue.png")?> "
                                                 class="disability_img" alt="disability">
                                             Vehicle),
 

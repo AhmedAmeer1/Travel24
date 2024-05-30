@@ -359,7 +359,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>MOBILITY VEHICLE ( <img src="assets/images/travel24/fleet/disability.png"
+                                <h2>MOBILITY VEHICLE ( <img src="assets/images/travel24/fleet/disability-black.png"
                                         class="disability_img" alt="car"> Vehicle)</h2>
                                 <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
                                     wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages
