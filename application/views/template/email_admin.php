@@ -44,7 +44,7 @@
     <div style="        width: 85%;
     margin: 0 auto;
     background-color: #fbfbfb;">
-        <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
+        <a class="mt-2 " href="<?php echo base_url()?>"><img  class="logo-margin" style="width: fit-content"
                 src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
 
 
