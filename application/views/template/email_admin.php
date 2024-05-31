@@ -1,11 +1,50 @@
 <html>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .logo-margin {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+
+    .email-container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fbfbfb;
+    }
+
+    .blue-box {
+        background-color: #094a6c;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .blue-box h1 {
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+    }
+
+ 
+
+    @media (max-width: 768px) {
+        .email-container {
+            width: fit-content;
+
+        }
+    }
+    </style>
+</head>
+
 <body
     style="@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');font-family: 'Roboto', sans-serif;">
     <div style="        width: 85%;
     margin: 0 auto;
     background-color: #fbfbfb;">
- <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
+        <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
                 src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
 
 
@@ -21,15 +60,7 @@
         <div style="padding: 20px; ">
             <div>
 
-                <!-- <div class="row ">
-                    <div class="col-md-6">
-                        <h1>test image </h1>
-                       <img src="cid:traveltaxi" alt="">
-                    </div>
-                    <div class="col-md-6 text-right">
-                        For any inquiries, contact <a href="tel:02039822911 " class=" "> 02039822911</a>
-                    </div>
-                </div> -->
+
 
 
                 <p>Hi You have received the following order from - <?php echo $first_name.' '.$last_name;?>,</p>
@@ -257,81 +288,39 @@
 
                 </table>
             </div>
-            <?php /*?> <div>
-                <div style="background-color: #999; margin-top: 25px;height: 50px;"></div>
-                <div style="padding: 35px; border: 1px solid #d2d2d2;">
-                    <h1 style="font-size: 16px;">GENERAL</h1>
-                    <table style="border-top: 1px dotted  #d2d2d2; width: 100%; font-size: 14px;">
-                        <tr>
-                            <td style="padding-top: 10px;">Title</td>
-                            <td style="padding-top: 10px;">Booking ID <?php echo $booking_id; ?></td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 10px;">Transfer type</td>
-                            <td style="padding-top: 10px;"><?php echo $travel_type;?></td>
-                        </tr>
+     
 
-                        <tr>
-                            <td style="padding-top: 10px;">Pickup date and time</td>
-                            <td style="padding-top: 10px;"><?php echo $travel_date; ?> - <?php echo $travel_time; ?>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 10px;">Order total amount</td>
-                            <td style="padding-top: 10px;">£ <?php echo $total; ?></td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 10px;">COMMENTS OR SPECIAL INSTRUCTIONS</td>
-                            <td style="padding-top: 10px;"><?php echo $scomments_special_inst; ?></td>
-                        </tr>
+            <br />
+            <div style="display: flex; justify-content: space-between;">
+                <div style="flex: 1; text-align: center;     margin-bottom: auto;
+                     margin-top: auto; ">
+                    <a href="https://twitter.com/nolimit_cars" style="margin-left: 4px;" target="_blank">
+                        <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="icon"
+                            style="width: 24px;"></a>
 
-                    </table>
-                    <h1 style="font-size: 16px; margin-top: 25px;">Route Locations</h1>
-                    <table style="border-top: 1px dotted  #d2d2d2; width: 100%; font-size: 14px;">
-                        <tr>
-                            <td style="padding-top: 10px;"><?php echo $source;?></td>
-                            <?php if($way_point_1 != ''){?> <td style="padding-top: 10px;"><?php echo $way_point_1;?>
-                            </td><?php }?>
-                            <?php if($way_point_2 != ''){?> <td style="padding-top: 10px;"><?php echo $way_point_2;?>
-                            </td><?php }?>
-                            <?php if($way_point_3 != ''){?> <td style="padding-top: 10px;"><?php echo $way_point_3;?>
-                            </td><?php }?>
-                            <td style="padding-top: 10px;"><?php echo $destination;?></td>
-                        </tr>
-                    </table>
-                    <h1 style="    color: #5a5ac1;
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 5px;">VEHICLE</h1>
-                    <div style="border:1px solid #d2d2d2; padding: 20px;">
-                        <p style="margin-top: 0;">Vehicle name-<?php echo $vehicle;?></p>
-                        <p style="margin-top: 0;">Bag Count-<?php echo $suitcase;?></p>
-                        <p style="margin-top: 0;">Passengers count-<?php echo $passenger;?></p>
+                    <a href="https://www.instagram.com/nolimitcars8/" style="margin-left: 4px;" target="_blank"><img
+                            src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="icon"
+                            style="width: 24px;"></a>
 
-                    </div>
-                    <h1 style="font-size: 16px; margin-top: 25px;">EXTRA</h1>
-                    <table style="border-top: 1px dotted  #d2d2d2; width: 100%; font-size: 14px;">
-                        <tr>
-                            <?php if($child_seat != 0){?> <td style="padding-top: 10px;">1.<?php echo $child_seat?> x
-                                Child Seat - £<?php echo $child_seat_cost?></td><?php }?>
-                            <?php if($greet_status == 1){?> <td style="padding-top: 10px;">2.<?php echo $greet_status?>
-                                x Meet and greet - Yes, please meet me in arrivals - £<?php echo $greeting_cost?></td>
-                            <?php }?>
-                        </tr>
-                    </table>
+                    <a href="https://www.facebook.com/nolimitcarsltd/" style="margin-left: 4px;" target="_blank"><img
+                            src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="icon"
+                            style="width: 24px;"></a>
                 </div>
-                <div style="background-color: #999; height: 50px;"></div>
+                <div style="flex: 1; text-align: right; margin-left: 20px;">
+                    <div class="col-md-6 text-right">
+                        <h2 style="font:size 20px !important;"> For any changes, contact
+                            Tel : <a href="tel:02039822911" class="">02039822911</a>
+                            Email Us: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com</a>
+                        </h2>
+                    </div>
+                </div>
             </div>
-            <h1 style="    color: #5a5ac1;
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 5px;">CLIENT DETAILS</h1>
-            <div style="border:1px solid #d2d2d2; padding: 20px;">
-                <p style="margin-top: 0;"><?php echo $first_name.' '.$last_name;?></p>
-                <p><?php echo $email;?></p>
-                <p><?php echo $phone;?></p>
 
-            </div><?php */?>
+            <div style="text-align: left;">
+                <h2>
+                    View Website: <a href="https://travel24taxi.com/" target="_blank">https://travel24taxi.com/</a>
+                </h2>
+            </div>
 
 
         </div>

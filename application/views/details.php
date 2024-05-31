@@ -456,9 +456,29 @@ form .error {
 
 
 <!------------------------------------------ OLD PAYMENT CODE END ---------------------------------------- -->
- <div class="bottom-buttons">
+ <!-- <div class="bottom-buttons">
+    <div class="user-pay-type">
+        <?php foreach($payment_types as $pt) {
+            if ($pt->title === 'CARD') { ?>
+                <p class="danger-text">Our online payment is under maintenance; please use cash for now.</p>
+            <?php } else { ?>
+                <button class="paynow-btn payment-method" id="myButton"
+                        data-method="<?php echo $pt->method ?>">
+                    <a id="pay_now_a">
+                        <?php echo $pt->title ?>
+                        <span class="hidden spinner" id="loading"></span>
+                    </a>
+                </button>
+            <?php }
+        } ?>
 
-</div>
+        <span id="loading" class="hidden">
+            <span id="hiddenBtn">
+                <span class="spinner"></span>
+            </span>
+        </span>
+    </div>
+</div> -->
 
 
 
