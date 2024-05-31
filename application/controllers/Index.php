@@ -369,12 +369,10 @@ public function booking_init(){
 
 
 
-
-
 	
 	debug_log(" first_name - sesssiion---booking init  method ------ ");
 	debug_log($_SESSION["book_data"]['first_name']);
-
+	debug_log(get_cookie('first_name'));
 
 
 	$this->load->helper('custom_helper');
@@ -748,19 +746,6 @@ function get_per_mile_charge(){
 		}
 	}
 
-
-	// debug_log(" --------------------------VECHICLE title -------------------");
-	// debug_log($result->title);
-	// debug_log(" kilometer price -- ");
-	// debug_log($single);
-	// debug_log(" timing  price -- ");
-	// debug_log($singleTime);
-	// debug_log(" ================= ");
-	// debug_log(" return kilometer price -- ");
-	// debug_log($return);
-	// debug_log(" return timing  price -- ");
-	// debug_log($returnTime);
-
 	$totalsingle = $single + $singleTime ;
 	$totalreturn = $return + $returnTime ;
 
@@ -887,7 +872,7 @@ public function lloyds_success(){
 
 
 	debug_log("----------------ENTERED  ONLINE PAYMENT METHOD  lloyds_success ------------------ ");
-	// debug_log(" session booking data  in online payment from cookies   ----lloyds_success------ ");
+	
 	debug_log($_SESSION["book_data"]);
 
 
