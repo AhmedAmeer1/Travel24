@@ -436,7 +436,7 @@ form .error {
 
                         </div>
 <!------------------------------------------ OLD PAYMENT CODE START ---------------------------------------- -->
-
+<!-- 
                         <div class="bottom-buttons">
                             <div class="user-pay-type">
                                 <?php foreach($payment_types as $pt){?>
@@ -452,11 +452,11 @@ form .error {
                                     </span>
                                 </span>
                             </div>
-                        </div>
+                        </div> -->
 
 
 <!------------------------------------------ OLD PAYMENT CODE END ---------------------------------------- -->
- <!-- <div class="bottom-buttons">
+ <div class="bottom-buttons">
     <div class="user-pay-type">
         <?php foreach($payment_types as $pt) {
             if ($pt->title === 'CARD') { ?>
@@ -478,7 +478,7 @@ form .error {
             </span>
         </span>
     </div>
-</div> -->
+</div>
 
 
 
