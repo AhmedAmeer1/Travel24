@@ -29,7 +29,7 @@ if(file_exists("ipg-util.php")){
 <input type="text" name="currency" value="826"/>
 
 <input type="text" name="responseFailURL" value="http://localhost/lloydsbank/sorry.php"/>
-<input type="hidden" name="responseSuccessURL" value="<?php echo base_url('index/lloyds_success') . '?total=' . $total . '&bookingData=' . urlencode($bookingData) . '&bookingOtherData=' . urlencode($bookingOtherData) ?>"/>
+<input type="text" name="responseSuccessURL" value="http://localhost/lloydsbank/ok.php"/>
 
 <input type="submit" value="Submit">
 </form>

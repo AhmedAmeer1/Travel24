@@ -18,10 +18,28 @@
 <input type="hidden" name="chargetotal" value="<?php echo $total?>"/>
 <input type="hidden" name="currency" value="826"/>
 
+
+<p>total ammount ----   <?php echo $total?></p>
+
+<p> Cardholder Name</p>
+<input type="text" name="cardname"/>
+
+<p>cardnumber</p>
+<input type="number" name="cardnumber" />
+<p>expmonth</p>
+<input type="number" name="expmonth" />
+<p>expyear</p>
+<input type="number" name="expyear" />
+
+<p>card code </p>
+<input type="number" name="cvm"/>
+
 <input type="hidden" name="responseFailURL" value="<?php echo base_url('index/lloyds_failure') ?>"/>
+<!-- <input type="hidden" name="responseSuccessURL" value="<?php echo base_url('index/lloyds_success' ) ?>"/> -->
+<!-- <input type="hidden" name="responseSuccessURL" value="<?php echo base_url('index/lloyds_success') . '?total=' . $total ?>"/> -->
 <input type="hidden" name="responseSuccessURL" value="<?php echo base_url('index/lloyds_success') . '?total=' . $total . '&bookingData=' . urlencode($bookingData) . '&bookingOtherData=' . urlencode($bookingOtherData) ?>"/>
 
-<input type="submit" style="display:none" id="submit" value="Submit">
+<input type="submit"  id="submit" value="Submit">
 </form>
 </body>
 </html>
@@ -30,12 +48,12 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 <script>
 
-setTimeout(function(){ 
+// setTimeout(function(){ 
    
-    $("#submit").click();
-    }, 
-    2000);
-
+//     $("#submit").click();
+//     }, 
+//     2000);
+  
 
 
     function redirectToPage() {
