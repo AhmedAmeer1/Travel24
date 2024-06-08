@@ -941,11 +941,16 @@ public function lloyds_success(){
 		
 			$data['booking_id'] = $result['booking_id'];
 			$data=$bookingData;
+			$data=$bookingOtherData;
+			$data['booking_id'] = $result['booking_id'];
+
 
 			debug_log(" -----THE DATA SENT TO EMAIL FROM LOLC BANK SUCESS --------- ");
 			debug_log($data);
 
 			$this->email_notification($data);
+		
+
 
 		    redirect(base_url('index/journey_data?status=1&booking_id='.$result['booking_id']));
 	}
