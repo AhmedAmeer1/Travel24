@@ -790,7 +790,7 @@ $data['total'] = ($_SESSION['total_fare']);
 	    'way_point_1' =>get_cookie('way_point_1') || '',
 		'way_point_2' =>get_cookie('way_point_2') || '',
 		'way_point_3' =>get_cookie('way_point_3') || '',
-		'travel_type' =>get_cookie('travel_type') || '',
+	
 
 		'travel_date' =>$_SESSION["book_data"]['travel_date'],
 		'travel_time' =>$_SESSION["book_data"]['travel_time'],
@@ -816,6 +816,7 @@ $data['total'] = ($_SESSION['total_fare']);
 
 	$bookingOtherData = [  
 		'vehice_id' =>$_SESSION["vehice_id"],
+		'travel_type' =>get_cookie('travel_type') || '',
 		'hand_lagguage' =>get_cookie('hand_lagguage'),
 		'pick_up' =>get_cookie('pick_up'),
 		'scomments_special_inst' =>get_cookie('scomments_special_inst'),
@@ -939,6 +940,7 @@ public function lloyds_success(){
 			$data=$bookingData;
 			$data['booking_id'] = $result['booking_id'];
 			$data['vehicle'] =$this->db->get('vehicle')->row('title');
+			$data['travel_type'] =$bookingOtherData['travel_type'];
 			$data['hand_lagguage'] =$bookingOtherData['hand_lagguage'];
 			$data['pick_up'] =$bookingOtherData['pick_up'];
 			$data['scomments_special_inst'] =$bookingOtherData['scomments_special_inst'];
@@ -946,7 +948,7 @@ public function lloyds_success(){
 			$data['total_fare'] =$bookingOtherData['total_fare'];
 			$data['type'] ="Online";
 			
-
+			
 
 			// $data=$bookingOtherData;
 
