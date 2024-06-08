@@ -858,20 +858,6 @@ public function lloyds_success(){
 	//loding this class to use debug_log
 	$this->load->helper('custom_helper');
 
-	if (isset($_GET['total'])) {
-        // Retrieve the total value
-        $totalget = $_GET['total'];
-
-		debug_log(" -trueeeeeeee 0000total000000000000000000 ------ ");
-		debug_log($totalget);
-        // Now you can use the $total value as needed
-		
-    } else {
-        // Handle the case where 'total' parameter is not set
-		debug_log(" -falseeeeeee 0000total000000000000000000 ------ ");
-		
-    }
-
 	$bookingDataJson = $this->input->get('bookingData');
 	$bookingData = json_decode(urldecode($bookingDataJson), true);
 
@@ -879,17 +865,6 @@ public function lloyds_success(){
 	$bookingOtherData = json_decode(urldecode($bookingOtherDataJson), true);
 
 
-
-
-
-
-
-	debug_log("------------------------------------entered lloyds_success ------------------------------------------ ------ ");
-
-	$total = $this->input->get('total');
-
-
-	
 	$_SESSION['hand_lagguage'] =$bookingOtherData['hand_lagguage'];
 	$_SESSION['pick_up'] = $bookingOtherData['pick_up'];
 	$_SESSION['scomments_special_inst']  =$bookingOtherData['scomments_special_inst'];
@@ -950,20 +925,10 @@ public function lloyds_success(){
 			$data['total_fare'] =$bookingOtherData['total_fare'];
 			$data['type'] ="Online";
 			
-			
-
-			// $data=$bookingOtherData;
-
-
-
-			debug_log(" -----THE DATA SENT TO EMAIL FROM LOLC BANK SUCESS --------- ");
-			debug_log($data);
-
-			$this->email_notification($data);
+	
+		$this->email_notification($data);
 		
-
-
-		    redirect(base_url('index/journey_data?status=1&booking_id='.$result['booking_id']));
+		redirect(base_url('index/journey_data?status=1&booking_id='.$result['booking_id']));
 	}
 	public function lloyds_failure(){
 		
