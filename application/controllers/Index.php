@@ -793,6 +793,7 @@ $data['total'] = ($_SESSION['total_fare']);
 		
 		'travel_date' =>$_SESSION["book_data"]['travel_date'],
 		'travel_time' =>$_SESSION["book_data"]['travel_time'],
+		'travel_type' =>$_SESSION["book_data"]['travel_type'],
 		'pick_up_door_name' =>$_SESSION["book_data"]['pick_up_door_name'],
 		'flight_no' =>$_SESSION["book_data"]['flight_no'] || '',
 		'passenger' =>$_SESSION["book_data"]['passenger'],
@@ -800,6 +801,7 @@ $data['total'] = ($_SESSION['total_fare']);
 		'child_seat' =>$_SESSION["book_data"]['child_seat'],
 		'greet_status' =>$_SESSION["book_data"]['greet_status'],
 		'dropOff_status' =>$_SESSION["book_data"]['dropOff_status'],
+		'dropoff_cost' =>$_SESSION["book_data"]['dropoff_cost'],
 		'base_fare' =>$_SESSION["book_data"]['base_fare'],
 		'user_id' =>$_SESSION["book_data"]['user_id'] || '',
 		'userType' =>$_SESSION["book_data"]['userType'],
@@ -807,12 +809,13 @@ $data['total'] = ($_SESSION['total_fare']);
 		'promocode_discount' =>$_SESSION["book_data"]['promocode_discount'],
 		'child_seat_cost' =>$_SESSION["book_data"]['child_seat_cost'],
 		'greeting_cost' =>$_SESSION["book_data"]['greeting_cost'],
-		'amount' =>$_SESSION["book_data"]['amount'],
-
+		'sub_total' =>$_SESSION["book_data"]['base_fare'],
+        'total' =>$_SESSION["book_data"]['amount'],
     ];
 
 
-	$bookingOtherData = [   
+	$bookingOtherData = [  
+		'vehice_id' =>$_SESSION["vehice_id"],
 		'hand_lagguage' =>get_cookie('hand_lagguage'),
 		'pick_up' =>get_cookie('pick_up'),
 		'scomments_special_inst' =>get_cookie('scomments_special_inst'),
@@ -937,17 +940,19 @@ public function lloyds_success(){
 			//setting the values to data variable to send to the email
 			$data['booking_id'] = $result['booking_id'];
 		
-			
-		
+			;
+
+			$this->db->where('vehicle_id',$bookingOtherData['vehice_id']);
 		
 			$data=$bookingData;
 			$data['booking_id'] = $result['booking_id'];
+			$data['vehicle'] =$this->db->get('vehicle')->row('title');
 			$data['hand_lagguage'] =$bookingOtherData['hand_lagguage'];
 			$data['pick_up'] =$bookingOtherData['pick_up'];
 			$data['scomments_special_inst'] =$bookingOtherData['scomments_special_inst'];
 			$data['promocode'] =$bookingOtherData['promocode'];
 			$data['total_fare'] =$bookingOtherData['total_fare'];
-
+			$data['type'] ="Online";
 			
 
 
