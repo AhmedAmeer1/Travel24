@@ -939,10 +939,20 @@ public function lloyds_success(){
 		
 			
 		
-			$data['booking_id'] = $result['booking_id'];
+		
 			$data=$bookingData;
-			$data=$bookingOtherData;
 			$data['booking_id'] = $result['booking_id'];
+			$data['hand_lagguage'] =$bookingOtherData['hand_lagguage'];
+			$data['pick_up'] =$bookingOtherData['pick_up'];
+			$data['scomments_special_inst'] =$bookingOtherData['scomments_special_inst'];
+			$data['promocode'] =$bookingOtherData['promocode'];
+			$data['total_fare'] =$bookingOtherData['total_fare'];
+
+			
+
+
+			// $data=$bookingOtherData;
+
 
 
 			debug_log(" -----THE DATA SENT TO EMAIL FROM LOLC BANK SUCESS --------- ");
