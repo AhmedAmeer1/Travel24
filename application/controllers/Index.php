@@ -790,10 +790,10 @@ $data['total'] = ($_SESSION['total_fare']);
 	    'way_point_1' =>get_cookie('way_point_1') || '',
 		'way_point_2' =>get_cookie('way_point_2') || '',
 		'way_point_3' =>get_cookie('way_point_3') || '',
-		
+		'travel_type' =>get_cookie('travel_type') || '',
+
 		'travel_date' =>$_SESSION["book_data"]['travel_date'],
 		'travel_time' =>$_SESSION["book_data"]['travel_time'],
-		'travel_type' =>$_SESSION["book_data"]['travel_type'],
 		'pick_up_door_name' =>$_SESSION["book_data"]['pick_up_door_name'],
 		'flight_no' =>$_SESSION["book_data"]['flight_no'] || '',
 		'passenger' =>$_SESSION["book_data"]['passenger'],
@@ -878,14 +878,6 @@ public function lloyds_success(){
 	$bookingOtherData = json_decode(urldecode($bookingOtherDataJson), true);
 
 
-
-	debug_log(" -bookingDataJson ---1111---====================================== ");
-    debug_log($bookingData);
-	debug_log(" -bookingDataJson ----1111--====================================== ");
-
-	debug_log(" -bookingOtherDataJson ----2222--====================================== ");
-    debug_log($bookingOtherDataJson);
-	debug_log(" -bookingOtherDataJson ------22222====================================== ");
 
 
 
