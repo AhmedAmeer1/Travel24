@@ -809,7 +809,6 @@ $data['total'] = ($_SESSION['total_fare']);
 		'promocode_discount' =>$_SESSION["book_data"]['promocode_discount'],
 		'child_seat_cost' =>$_SESSION["book_data"]['child_seat_cost'],
 		'greeting_cost' =>$_SESSION["book_data"]['greeting_cost'],
-        'total' =>$_SESSION["book_data"]['amount'],
     ];
 
 
@@ -821,6 +820,7 @@ $data['total'] = ($_SESSION['total_fare']);
 		'scomments_special_inst' =>get_cookie('scomments_special_inst'),
 		'promocode' =>get_cookie('promocode') || '',
 		'total_fare' =>get_cookie('total_fare'),
+		'total' =>$_SESSION["book_data"]['amount'],
 		'sub_total' =>$_SESSION["book_data"]['base_fare'],
     ];
 
@@ -946,6 +946,7 @@ public function lloyds_success(){
 			$data['scomments_special_inst'] =$bookingOtherData['scomments_special_inst'];
 			$data['promocode'] =$bookingOtherData['promocode'];
 			$data['sub_total'] =$bookingOtherData['sub_total'];
+			$data['total'] =$bookingOtherData['total'];
 			$data['total_fare'] =$bookingOtherData['total_fare'];
 			$data['type'] ="Online";
 			
