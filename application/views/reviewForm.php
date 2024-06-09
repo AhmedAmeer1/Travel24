@@ -25,7 +25,7 @@
                 <h1>Review Us</h1>   <br>
               
                     
-                    <input class="firstName" type="text" name="firstName" id="firstName" placeholder="First Name" >
+                    <input class="firstName" type="text" name="firstName" id="firstName" placeholder="First Name" required>
                   
 
            <br>
@@ -80,10 +80,15 @@
         // alert(comment)
         var type = $("#type").val();
         var rating = $( "input[type=radio][name=rate]:checked" ).val();
+        if(firstName == null || firstName == '' || firstName == undefined || firstName == 'undefined' || firstName == 'null' ){
+            alert("Please Add your  Name");
+            return;
+        }
         if(rating == null || rating == '' || rating == undefined || rating == 'undefined' || rating == 'null' ){
             alert("Please Add your  Rating");
             return;
         }
+    
         var url ="<?php echo base_url('ReviewForm/save_review') ?>";
         $.ajax({
             type: "POST",

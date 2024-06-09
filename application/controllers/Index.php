@@ -12,6 +12,7 @@ class Index extends CI_Controller
 		$this->load->model('Index_Model');
 		$this->load->helper('cookie');
 		$this->load->helper('custom_helper');
+		$this->load->model('Review_Model');
 	}
 	public function index()
 	{
@@ -33,6 +34,7 @@ class Index extends CI_Controller
 
 		$this->load->model('Review_Model');
 		$home_template['reviews'] =  $this->Review_Model->getAllReviews(1);
+		$home_template['CustomerReviewData'] = $this->Review_Model->getReviewDetailsforAdmin();
 		$this->load->view('index', $home_template);
 	}
 

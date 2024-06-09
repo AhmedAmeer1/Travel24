@@ -452,7 +452,7 @@
 
 
 
-        <?php $this->load->view('common_components/customerReview.php'); ?>
+        <?php $this->load->view('common_components/customerReview.php',array('CustomerReviewData' => $CustomerReviewData)); ?>
 
     </main>
 
