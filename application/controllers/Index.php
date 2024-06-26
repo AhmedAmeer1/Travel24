@@ -322,8 +322,8 @@ class Index extends CI_Controller
 		set_cookie('hand_lagguage', $input['hand_lagguage'], 86400);
 		set_cookie('pick_up', $input['pick_up'], 86400);
 		set_cookie('total_fare', $booking['amount'], 86400);
-
-
+		set_cookie('travel_type', ($booking['service_type'] == "1" ? "Single" : "Return"), 86400);
+		
 		$this->db->where('vehicle_id', $_SESSION["vehice_id"]);
 		set_cookie('vehicleName', $this->db->get('vehicle')->row('title'), 86400);
 

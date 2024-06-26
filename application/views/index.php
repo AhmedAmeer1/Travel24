@@ -22,7 +22,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=1')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=3')?>" rel="stylesheet" />
 
     <script type="application/ld+json">
     {
@@ -359,7 +359,7 @@
                                     alt="car">
                             </div>
                             <div class="text_card">
-                                <h2>MOBILITY VEHICLE ( <img src="assets/images/travel24/fleet/disability-black.png"
+                                <h2>MOBILITY VEHICLE ( <img src="assets/images/travel24/fleet/disability.png"
                                         class="disability_img" alt="car"> Vehicle)</h2>
                                 <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
                                     wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages
