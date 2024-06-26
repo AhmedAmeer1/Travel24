@@ -45,8 +45,23 @@ class Review_Model extends CI_Model{
 	public function getReviewDetailsforAdmin(){
 		
 		$query = $this->db->get('reviews');	
-		debug_log($query->result_array());
+		// debug_log($query->result_array());
         return $query->result_array();
+	}
+
+
+	public function deletedReview($review_id){
+
+		// Check if review_id is empty
+		if(empty($review_id)){
+			return 0;
+		}
+
+		// Delete the reviews based on review_id
+		$this->db->where('id', $review_id);
+		$status = $this->db->delete('reviews');
+		debug_log($status);
+		return $status;
 	}
 		
 

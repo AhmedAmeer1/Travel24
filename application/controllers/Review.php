@@ -25,5 +25,24 @@ class Review extends CI_Controller {
         $template['reviewData'] = $this->Review_Model->getReviewDetailsforAdmin();
         $this->load->view('template',$template);
     }
+
+
+    public function deletedReview($review_id){    
+        
+        $flashMsg = array('message'=>'Something went wrong, please try again..!','class'=>'error');
+        if(empty($review_id)){
+            $this->session->set_flashdata('message',$flashMsg);
+            redirect(base_url('Review/reviewList'));
+        }
+        $review_id = decode_param($review_id);
+ 
+        $status = $this->Review_Model->deletedReview($review_id);
+        if(!$status){
+            $this->session->set_flashdata('message',$flashMsg);
+        }
+        redirect(base_url('Review/reviewList'));
+    }
+
+
 }
 ?>
