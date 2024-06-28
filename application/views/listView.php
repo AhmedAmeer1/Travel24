@@ -16,7 +16,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/listView.css?v=3')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/listView.css?v=4')?>" rel="stylesheet" />
 
     <style>
     .hide {
@@ -143,7 +143,7 @@
                                                 <?php  if($vh->title == "MOBILITY VEHICLE"){?>
                                                        <h5><?php echo $vh->title?> ( 
 
-                                                         <img src="<?php echo base_url("assets/images/travel24/fleet/disability-blue.png")?> "   class="disability_img" alt="disability">
+                                                         <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> "   class="disability_img" alt="disability">
                                                          Vehicle)
                                                         </h5>
                                                 <?php }  else { ?>

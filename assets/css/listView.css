@@ -254,8 +254,8 @@ embed {
 
 .disability_img {
 	padding: 0 !important;
-	width: 5% !important;
-	height: 40% !important;
+	width: unset !important;
+	height: unset !important;
 	background-color: #efe9e9  !important;
 	
 }

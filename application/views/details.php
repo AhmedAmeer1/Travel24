@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=3')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=5')?>" rel="stylesheet" />
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -214,7 +214,7 @@ form .error {
                                         <?php  if($vechicle_data->title == "MOBILITY VEHICLE"){?>
 
                                         <h1><?php echo $vechicle_data->title;?>(
-                                            <img src="<?php echo base_url("assets/images/travel24/fleet/disability-blue.png")?> "
+                                            <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> "
                                                 class="disability_img" alt="disability">
                                             Vehicle),
 
