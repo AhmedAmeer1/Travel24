@@ -45,9 +45,9 @@
 
                 <select id="reviewType" class="reviewType" name="reviewType">
                 <option value="">Select Review Type</option>
+                <option value="Excellent Service">Excellent Service </option>
                 <option value="Smooth ride">Smooth ride</option>
                 <option value="Friendly driver">Friendly driver</option>
-                <option value="Clean vehicle">Clean vehicle</option>
                 <option value="Late arrival">Late arrival</option>
                 <option value="Bumpy ride">Bumpy ride</option>
             </select>

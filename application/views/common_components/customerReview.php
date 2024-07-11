@@ -1,6 +1,5 @@
-
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=2') ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=6') ?>">
 
 <body>
 
@@ -58,32 +57,39 @@
                 rating: 5,
                 review: "Everything’s excellent, except traffic"
             },
-           // Add more reviews as needed
+            // Add more reviews as needed
         ];
         var reviewsData = <?php echo json_encode($CustomerReviewData); ?>;
         var reviewsContainer = document.getElementById('reviews-container');
         reviewsData.forEach(function(review) {
             var reviewHTML = `
-            <div class="swiper-slide pr-5 ">
-                <span class="customer_name">${review.name }<br></span>
-                <p class="client_rating ">${'*'.repeat(review.rating)}</p>
-                <span class="review_type">${review.reviewType}<br></span> <br />
-                <span class="client_review">
-             `;
+       <div class="swiper-slide pr-5 ">
+    <span class="customer_name">${review.name }<br></span>
+    <p class="client_rating ">${'*'.repeat(review.rating)}</p>
+    ${review.reviewType ? `<img class="quatation_review_type" src="<?php echo base_url('assets/images/travel24/quatation_left.png')?>" alt="icon">` : ''}
+    <span class="review_type">${review.reviewType}  ${review.reviewType  &&  review.comment? ',':'' }    
+    
+    
+    ${!review.comment ? `<img class="quatation_review_type_right" src="<?php echo base_url('assets/images/travel24/quatation_right.png')?>" alt="icon">` : ''}
+    
+    <br></span> <br />
+    <span class="client_review">
+`;
 
             if (review.comment) { // Check if review.comment is not null or empty
                 reviewHTML += `
-                                <p>
-                                    <img class="quatation_left" src="<?php echo base_url('assets/images/travel24/quatation_left.png')?>" alt="icon">
-                                    ${review.comment} 
-                                    <img class="quatation_right" src="<?php echo base_url('assets/images/travel24/quatation_right.png')?>" alt="icon">
-                                </p>
-                    `;
+        <p>
+            ${review.reviewType ? '' : `<img class="quatation_left" src="<?php echo base_url('assets/images/travel24/quatation_left.png')?>" alt="icon">`}
+            ${review.comment}
+            <img class="quatation_right" src="<?php echo base_url('assets/images/travel24/quatation_right.png')?>" alt="icon">
+        </p>
+    `;
             }
 
             reviewHTML += `
-                </span>
-            </div>
+    </span>
+</div>
+
           `;
             reviewsContainer.innerHTML += reviewHTML;
         });

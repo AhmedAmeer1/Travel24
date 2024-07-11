@@ -32,8 +32,14 @@
 	color: #475467;
 	line-height: 26px;
 	margin-bottom: 30px;
+	text-transform: capitalize;
 }
-
+.review_type{
+	text-transform: capitalize;
+}
+.client_review{
+	text-transform: capitalize;
+}
 .client_rating {
 	font-size: 30px;
 	color: #FF6500;
@@ -70,10 +76,29 @@
 }
 
 .quatation_left{
+	width: 4% !important;
+	height: 2% !important;
 	margin-bottom: 10px;
 	margin-left: -10px;
 }
+
+.quatation_review_type{
+	width: 4%;
+	height: 2%;
+	margin-bottom: 10px;
+	margin-left: -10px;
+}
+.quatation_review_type_right{
+	width: 4%;
+	height: 2%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+
 .quatation_right{
+	width: 4% !important;
+	height: 2% !important;
 	margin-top: 5px;
 }
 
