@@ -16,11 +16,11 @@
                                     src="<?php echo base_url('assets/images/travel24/x_logo.svg')?>" alt="icon"></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/nolimitcars8/" target="_blank"><img
+                            <a href="https://www.instagram.com/travel24taxi" target="_blank"><img
                                     src="<?php echo base_url('assets/images/travel24/insta.svg')?>" alt="icon"></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/nolimitcarsltd/" target="_blank"><img
+                            <a href="https://www.facebook.com/travel24taxi/" target="_blank"><img
                                     src="<?php echo base_url('assets/images/travel24/facebook.svg')?>" alt="icon"></a>
                         </li>
                     </ul>
