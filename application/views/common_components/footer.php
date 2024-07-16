@@ -12,7 +12,7 @@
                     <h3 class="footer-h3">All major credit cards accepted</h3>
                     <ul class="social-media">
                         <li>
-                            <a href="https://twitter.com/nolimit_cars" target="_blank"><img
+                            <a href="https://twitter.com/travel24taxi" target="_blank"><img
                                     src="<?php echo base_url('assets/images/travel24/x_logo.svg')?>" alt="icon"></a>
                         </li>
                         <li>
