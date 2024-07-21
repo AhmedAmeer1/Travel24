@@ -256,7 +256,7 @@ form .error {
                             </div>
                         </div>
                         <br>
-                        <h1 class="note-text">Please give us 2 hours in advance for the booking or call us.</h1>
+                        <h1 class="note-text">Please give us 3 hours in advance for the booking or call us.</h1>
                     </div>
                 </div>
             </div>
