@@ -111,7 +111,7 @@ form .error {
     margin-right: 15px;
 }
 
-.danger-text{
+.danger-text {
     margin-top: 8px;
     color: red;
     font-size: 13px;
@@ -435,7 +435,7 @@ form .error {
 
 
                         </div>
-<!------------------------------------------ OLD PAYMENT CODE START ---------------------------------------- -->
+                        <!------------------------------------------ OLD PAYMENT CODE START ---------------------------------------- -->
 
                         <div class="bottom-buttons">
                             <div class="user-pay-type">
@@ -455,8 +455,8 @@ form .error {
                         </div>
 
 
-<!------------------------------------------ OLD PAYMENT CODE END ---------------------------------------- -->
- <!-- <div class="bottom-buttons">
+                        <!------------------------------------------ OLD PAYMENT CODE END ---------------------------------------- -->
+                        <!-- <div class="bottom-buttons">
     <div class="user-pay-type">
         <?php foreach($payment_types as $pt) {
             if ($pt->title === 'CARD') { ?>
@@ -773,6 +773,51 @@ form .error {
         scrollbar: true, // Show scrollbar for longer lists
         showMeridian: true // Show AM/PM
     });
+
+    function calculateTimeDifference(dateInput, timeInput) {
+        // Split the string into day, month, and year
+        const [day, month, year] = dateInput.split("/");
+        // Create a new Date object
+        const date = new Date(`${year}-${month}-${day}`);
+        // Format the date using toString() method
+        const formattedDate = date.toString();
+
+        // Parse the time string
+        const [time, modifier] = timeInput.split(" ");
+        let [hours, minutes] = time.split(":");
+
+        // Convert to 24-hour format
+        if (modifier === "PM" && hours !== "12") {
+            hours = parseInt(hours, 10) + 12;
+        } else if (modifier === "AM" && hours === "12") {
+            hours = "00";
+        } else {
+            hours = hours.padStart(2, "0");
+        }
+
+        // Increment the minutes by 1
+        minutes = (parseInt(minutes, 10) + 1).toString().padStart(2, "0");
+
+        // Format the time
+        const formattedTime = `${hours}:${minutes}`;
+
+        // Create the date-time string and Date object
+        const formattedDateTime = `${year}-${month}-${day}T${hours}:${minutes}:00`;
+        const enteredDateTime = new Date(formattedDateTime);
+        const currentDateTime = new Date();
+
+        // Calculate time differences
+        const timeDifferenceMilliseconds = enteredDateTime - currentDateTime;
+        const threeHoursInMilliseconds = 3 * 60 * 60 * 1000;
+
+        return {
+            timeDifferenceMilliseconds,
+            threeHoursInMilliseconds
+        };
+    }
+
+
+
     $('.payment-method').click(function() {
         //  if($("#my_account_div").hasClass('hide')){
         //     alert("please login to continue");return;
@@ -780,6 +825,21 @@ form .error {
         //alert($("#exceed_time").val())
         var valid_phone = validatePhone($("#phone_no").val())
         var valid_email = ValidateEmail($("#email_id").val())
+
+
+        const dateInputValue = $("#datepicker").val();
+        const timeInputValue = $("#timepicker").val();
+        const { timeDifferenceMilliseconds, threeHoursInMilliseconds } = calculateTimeDifference(dateInputValue, timeInputValue);
+
+        const hoursDifference = Math.floor(timeDifferenceMilliseconds / (1000 * 60 * 60));
+        const minutesDifference = Math.floor((timeDifferenceMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
+
+        if (timeDifferenceMilliseconds < threeHoursInMilliseconds) {
+            alert(
+                ` The entered date and time is less than 3 hours .\nPlease give us 3 hours in advance for the booking or call us.`);
+            return;
+        } 
+
 
         if ($("#exceed_time").val() == "1") {
 
@@ -1044,7 +1104,6 @@ form .error {
     </script>
     <script>
     function checkDate() {
-        console.log("inside checkDate 1111111 ------")
         var selectedText = document.getElementById('datepicker').value;
         var selectedDate = new Date(selectedText);
         var now = new Date();
@@ -1054,7 +1113,6 @@ form .error {
         var minute = today.getMinutes();
         current_time = hour + ":" + minute;
         var dd = today.getDate();
-        console.log("inside minute 1111111 ------", minute)
         var mm = today.getMonth() + 1;
         var yyyy = today.getFullYear();
         if (dd < 10) {
@@ -1115,14 +1173,10 @@ form .error {
     })
 
     function checkTime() {
-        console.log("inside checkTime ------")
         var selectedText = document.getElementById('datepicker').value;
         var today = new Date();
         var dd = today.getDate();
         var mm = today.getMonth() + 3;
-
-        console.log("mm ------", mm)
-        console.log("dd ------", dd)
         var yyyy = today.getFullYear();
         if (dd < 10) {
             dd = '0' + dd;
