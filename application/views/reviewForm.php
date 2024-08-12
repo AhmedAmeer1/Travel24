@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/reviewForm.css?v=8')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/reviewForm.css?v=1')?>" rel="stylesheet" />
 
 </head>
 
@@ -63,6 +63,7 @@
 
                 </div><br>
                 <button id="reviewSubmit">Submit</button>
+                <h2>Could you kindly include a Google review as well?</h2>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
