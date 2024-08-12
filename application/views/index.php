@@ -22,7 +22,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=3')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=1')?>" rel="stylesheet" />
 
     <script type="application/ld+json">
     {
@@ -100,16 +100,7 @@
         <section class="limits-banner">
             <div class="banner_container ">
                 <div class="row ">
-                    <div class="col-md-6 banner-details">
-                        <div class="mx-auto">
-                            <h1>Your Destination is our goal</h1>
-                            <p>
-                                Airport transfers & chauffeur services connecting all UK airports
-                            </p>
-                            <p class="promoCode">Use <span class="code">LUTH24</span> to get 10% off.</p>
-
-                        </div>
-                    </div>
+           
 
 
                     <div class="col-md-6 box-padding">
@@ -168,6 +159,18 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-6 banner-details">
+                        <div class="mx-auto">
+                            <h1>Your Destination is our goal</h1>
+                            <p>
+                                Airport transfers & chauffeur services connecting all UK airports
+                            </p>
+                            <p class="promoCode">Use <span class="code">LUTH24</span> to get 10% off.</p>
+
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
