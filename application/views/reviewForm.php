@@ -63,7 +63,7 @@
 
                 </div><br>
                 <button id="reviewSubmit">Submit</button>
-                <h2>Could you kindly include a Google review as well?</h2>
+        
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
