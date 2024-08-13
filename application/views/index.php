@@ -223,7 +223,7 @@
                                     </div>
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;3&nbsp;Suitcases</h3>
+                                        <h3>&nbsp;2&nbsp;Suitcases</h3>
                                     </div>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@
                                     </div>
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;4&nbsp;Suitcases</h3>
+                                        <h3>&nbsp;3&nbsp;Suitcases</h3>
                                     </div>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@
                                     </div>
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;5&nbsp;Suitcases</h3>
+                                        <h3>&nbsp;4&nbsp;Suitcases</h3>
                                     </div>
                                 </div>
                             </div>
@@ -295,7 +295,7 @@
                                     </div>
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;3&nbsp;Suitcases</h3>
+                                        <h3>&nbsp;2&nbsp;Suitcases</h3>
                                     </div>
                                 </div>
                             </div>
@@ -321,7 +321,7 @@
                                     </div>
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;8&nbsp;Suitcases</h3>
+                                        <h3>&nbsp;7&nbsp;Suitcases</h3>
                                     </div>
                                 </div>
                             </div>
@@ -346,7 +346,7 @@
                                     </div>
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="car">
-                                        <h3>&nbsp;5&nbsp;Suitcases</h3>
+                                        <h3>&nbsp;4&nbsp;Suitcases</h3>
                                     </div>
                                 </div>
                             </div>
