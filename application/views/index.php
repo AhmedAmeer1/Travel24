@@ -215,7 +215,7 @@
                             </div>
                             <div class="text_card">
                                 <h2>SALOON CAR (X)</h2>
-                                <p>Up to 3 passengers plus 2 suitcases (20kg max) or 4 passengers plus hand luggage.</p>
+                                <p>Up to 3 passengers plus 2 suitcases or 4 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
@@ -238,7 +238,7 @@
                             </div>
                             <div class="text_card">
                                 <h2>ESTATE CAR (Comfort)</h2>
-                                <p>Up to 4 passengers plus 3 suitcases (20kg max).</p>
+                                <p>Up to 4 passengers plus 3 suitcases.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
@@ -261,7 +261,7 @@
                             </div>
                             <div class="text_card">
                                 <h2>PEOPLE CARRIER (XL)</h2>
-                                <p>Up to 5 passengers plus 4 suitcases (20kg max) or 6 passengers plus hand luggage.</p>
+                                <p>Up to 5 passengers plus 4 suitcases or 6 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
@@ -287,7 +287,7 @@
                             </div>
                             <div class="text_card">
                                 <h2>EXECUTIVE CAR (Executive)</h2>
-                                <p>Up to 3 passengers plus 2 suitcases (20kg max) or 4 passengers plus hand luggage</p>
+                                <p>Up to 3 passengers plus 2 suitcases  or 4 passengers plus hand luggage</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
@@ -313,7 +313,7 @@
                             </div>
                             <div class="text_card">
                                 <h2>8 SEATER MINIBUS (Van)</h2>
-                                <p>8 passengers plus up to 7 suitcases (20kg max)</p>
+                                <p>8 passengers plus up to 7 suitcases </p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
@@ -338,7 +338,7 @@
                             </div>
                             <div class="text_card">
                                 <h2>EXECUTIVE PEOPLE CARRIER (Luxury)</h2>
-                                <p>Up to 5 passengers plus 4 suitcases (20kg max) or 6 passengers plus hand luggage.</p>
+                                <p>Up to 5 passengers plus 4 suitcases  or 6 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
@@ -366,8 +366,7 @@
                                         class="disability_img" alt="car"> Vehicle)</h2>
                                 <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
                                     wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages
-                                    (20kg
-                                    max).</p>
+                                  .</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
