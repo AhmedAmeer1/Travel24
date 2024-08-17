@@ -4,7 +4,7 @@
 /* ----- Ahmed css start  --------- */
 
 .footer-container{
-    /* background-color: red; */
+    background-color: #00517c;
     padding: 100px 100px 30px 100px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .footer-p2{
-    color: #2E2E2E;
+    color: white;
     font-size: 14px;
     font-family: 'allerbold';
     font-weight: 400;
@@ -99,23 +99,38 @@
 
 .limits-footer-wrapper .side-menu li {
     display: inline-block;
-    border-right: 1px solid #8e8e8e;
+    border-right: 3px solid white;
     padding: 0 12px;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: bold;
 }
 .limits-footer-wrapper .side-menu li a {
- 
+
     padding: 0 12px;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: bold;
+}
+.limits-footer-wrapper .side-menu .contact a {
+    text-decoration: underline;
+    padding: 0 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.limits-footer-wrapper .side-menu .circle {
+    width: 8px;  /* Diameter of the circle */
+    height: 8px;
+    background-color: white; /* Color of the circle */
+    border-radius: 50%; /* Makes the shape a circle */
+    margin-right: 5px; /* Adds some space between the circle and the text */
 }
 
 
 .limits-footer-wrapper .side-menu li a {
-    color: black;
+    color: white;
 }
 
 .limits-footer-wrapper .credit {
@@ -142,7 +157,7 @@
 
     .footer-container{
         /* background-color: red; */
-        padding: 30px 40px 30px 40px;
+        padding: 30px 20px 30px 20px;
     }
 
 
