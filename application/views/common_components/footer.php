@@ -36,7 +36,7 @@
                     <li><a href="<?php echo base_url()?>" class="footer-p1">Home</a></li>
                     <li><a href="<?php echo base_url()?>drivers" class="footer-p1">Drivers</a></li>
                     <li><a href="<?php echo base_url()?>aboutus" class="footer-p1">About Us</a></li>
-                    <li><a href="<?php echo base_url()?>populardestinations" class="footer-p1">Destination</a></li>
+                    <li><a href="<?php echo base_url()?>popularDestinations" class="footer-p1">Destination</a></li>
                     <li><a href="<?php echo base_url()?>faq" class="footer-p1">FAQ</a></li>
                     <li><a href="<?php echo base_url()?>terms" class="footer-p1">Terms & Conditions</a></li>
                     <li><a href="<?php echo base_url()?>contactUs" class="footer-p1">Contact</a></li>
