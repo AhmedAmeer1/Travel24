@@ -4,9 +4,10 @@
 /* ----- Ahmed css start  --------- */
 
 .footer-container{
-    /* background-color: #00517c; */
-    background-color: #166e9d;
+    background-color: #00517c;
+    /* background-color: #166e9d; */
     padding: 100px 100px 30px 100px;
+    margin-top: 50px;
 }
 
 
