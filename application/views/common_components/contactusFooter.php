@@ -1,28 +1,27 @@
 <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
 <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/footer.css?v=8')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/footer.css?v=9')?>" rel="stylesheet" />
 
 <footer class="limits-footer-wrapper">
     <div class="footer-container">
         <div class="mx-auto no-gutter text-center order-md-1 order-0">
-            <a href="<?php echo base_url()?>"> <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>"
-                    class="img-fluid footr-logo" alt="Logo"></a>
+        <a  href="<?php echo base_url()?>" > <img src="<?php echo base_url('assets/images/travel24/white-logo.png')?>" class="footr-logo" alt="Logo"></a>
 
             <div class="row">
                 <div class="col-md-12 text-center">
 
-                    <ul class="social-media">
+                    <ul class="social-media ">
                         <li>
                             <a href="https://twitter.com/travel24taxi" target="_blank"><img
-                                    src="<?php echo base_url('assets/images/travel24/x_logo.svg')?>" alt="icon"></a>
+                                    src="<?php echo base_url('assets/images/travel24/x-white.png')?>" alt="icon"></a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/travel24taxi" target="_blank"><img
-                                    src="<?php echo base_url('assets/images/travel24/insta.svg')?>" alt="icon"></a>
+                                    src="<?php echo base_url('assets/images/travel24/instagram-white.png')?>" alt="icon"></a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/travel24taxi/" target="_blank"><img
-                                    src="<?php echo base_url('assets/images/travel24/facebook.svg')?>" alt="icon"></a>
+                                    src="<?php echo base_url('assets/images/travel24/facebook-white.png')?>" alt="icon"></a>
                         </li>
                     </ul>
                 </div>
