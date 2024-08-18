@@ -202,6 +202,10 @@
             </p>
         </div>
 
+        <?php $this->load->view('common_components/howToBookTaxi'); ?> 
+
+
+     
 
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
