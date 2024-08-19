@@ -172,14 +172,15 @@
 
     }
 
-    .test-img {
+    .howToBook-img {
         display: none;
     }
 
     /* Media query for mobile view */
     @media (max-width: 767.98px) {
-        .test-img {
-            width: 400px;
+        .howToBook-img {
+            margin-top: 40px;
+            width: -webkit-fill-available;
             display: block;
         }
 
@@ -205,6 +206,10 @@
             padding: 27px 7px 49px 22px;
         }
 
+        .book-container {
+            display: none;
+        }
+
     }
     </style>
 </head>
@@ -212,7 +217,7 @@
 <body>
 
 
-    <img src="assets/images/travel24/book_taxi/book_taxi.png" class="test-img" alt="car">
+    <img src="assets/images/travel24/book_taxi/book_taxi.png" class="howToBook-img" alt="car">
 
     <div class="book-container">
         <!-- <div class="container-fluid"> -->
