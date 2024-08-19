@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Shape Layout</title>
-    <!-- Bootstrap CSS -->
 
     <style>
     .shape-container {
@@ -13,47 +12,40 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
-        /* Space between shapes */
         flex-wrap: wrap;
-        /* Allows wrapping on small screens */
     }
 
     .book-container {
-        margin-top: 50px;
+        background-color: #d6dfe7;
         padding: 78px 310px 100px 229px;
     }
 
     .taxi-heading {
-        font-size: 42px;
+        font-size: 36px;
         text-align: center;
         font-weight: bold;
         margin-bottom: 60px;
-
     }
 
     .shape-container>div {
         flex: 1 1 100px;
-        /* Flex-grow, flex-shrink, and minimum width */
         max-width: 260px;
     }
 
-
+    /* Adjusted width for all horizontal lines */
     .horizontal-line {
-        width: 100px;
+        width: 50px;
         height: 2px;
         background-color: #333;
         margin: 10px auto;
         margin-bottom: 74px;
-        /* Centers the line when stacked */
     }
-
 
     .main-heading {
         text-align: center;
-        font-size: 27px;
+        font-size: 22px;
         margin-bottom: 40px;
         color: #00517c;
-        /* color: black; */
         font-weight: 600;
     }
 
@@ -88,14 +80,13 @@
         font-size: 15px;
         text-transform: capitalize;
         margin-top: 30px;
-        /* color: black; */
         color: #00517c;
         font-weight: 400;
     }
 
     @media only screen and (max-width: 1688px) {
         .book-container {
-            padding: 17px 90px 0px 90px;
+            padding: 50px 90px 0px 90px;
         }
     }
 
@@ -128,8 +119,6 @@
         .image-container img {
             height: 49%;
         }
-
-
     }
 
     @media (max-width: 1032px) {
@@ -169,7 +158,6 @@
             width: 52px;
             height: 45px;
         }
-
     }
 
     .howToBook-img {
@@ -179,7 +167,7 @@
     /* Media query for mobile view */
     @media (max-width: 767.98px) {
         .howToBook-img {
-            margin-top: 40px;
+            /* margin-top: 40px; */
             width: -webkit-fill-available;
             display: block;
         }
@@ -209,41 +197,29 @@
         .book-container {
             display: none;
         }
-
     }
     </style>
 </head>
 
 <body>
-
-
-    <img src="assets/images/travel24/book_taxi/book_taxi.png" class="howToBook-img" alt="car">
+    <img src="assets/images/travel24/book_taxi/taxi.png" class="howToBook-img" alt="car">
 
     <div class="book-container">
-        <!-- <div class="container-fluid"> -->
-
-        <h1 class="taxi-heading">How to book a ride ?</h1>
+        <h1 class="taxi-heading">How to book a ride?</h1>
 
         <div class="shape-container">
             <div class="step1">
-                <h1 class="main-heading mt-5 mt-md-0">Location </h1>
+                <h1 class="main-heading mt-5 mt-md-0">Location</h1>
                 <div class="image-row">
                     <div class="image-container">
                         <img src="assets/images/travel24/book_taxi/location.png" alt="Image 1">
                     </div>
-                    <!-- <div class="image-container">
-                        <img src="assets/images/travel24/book_taxi/people.png" alt="Image 2">
-                    </div>
-                    <div class="image-container">
-                        <img src="assets/images/travel24/book_taxi/people.png" alt="Image 3">
-                    </div> -->
                 </div>
-                <h2 class="sub-heading">Select Location and Destination
-                </h2>
+                <h2 class="sub-heading">Select Location and Destination</h2>
             </div>
             <div class="horizontal-line"></div>
             <div class="step2">
-                <h1 class="main-heading"> Compare Price</h1>
+                <h1 class="main-heading">Vehicle Type</h1>
                 <div class="image-row">
                     <div class="image-container">
                         <img src="assets/images/travel24/book_taxi/pound.png" alt="pound">
@@ -255,12 +231,11 @@
                         <img src="assets/images/travel24/book_taxi/car.png" alt="car">
                     </div>
                 </div>
-                <!-- <h2 class="sub-heading">Choose by Price , ratings and car type</h2> -->
-                <h2 class="sub-heading">Choose Right Vehicle and Right Price </h2>
+                <h2 class="sub-heading">Choose Right Vehicle and Right Price</h2>
             </div>
             <div class="horizontal-line"></div>
             <div class="step3">
-                <h1 class="main-heading">Add Details </h1>
+                <h1 class="main-heading">Add Details</h1>
                 <div class="image-row">
                     <div class="image-container">
                         <img src="assets/images/travel24/book_taxi/calendar.png" alt="calendar">
@@ -272,7 +247,7 @@
                         <img src="assets/images/travel24/book_taxi/suitcase.png" alt="suitcase">
                     </div>
                 </div>
-                <h2 class="sub-heading">Choose date and time number of passangers and any luggage</h2>
+                <h2 class="sub-heading">Choose date and time, number of passengers, and any luggage</h2>
             </div>
             <div class="horizontal-line"></div>
             <div class="step4">
@@ -290,15 +265,10 @@
                     <div class="image-container">
                         <img src="assets/images/travel24/book_taxi/dollars.png" alt="dollars">
                     </div>
-
                 </div>
-
-
-
                 <h2 class="sub-heading">Booking confirmation sent via email</h2>
             </div>
         </div>
-
     </div>
 </body>
 

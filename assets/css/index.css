@@ -125,7 +125,7 @@
 	font-size: 65px;
 	font-weight: 500;
 	line-height: 60px;
-	color: #FF6500;
+	color: white;
 	margin: 0 0 10px;
 	font-family: "helvet";
 }
@@ -316,7 +316,7 @@
 }
 
 .home_container {
-	background-color: #f9fafb;
+	background-color: #d6dfe7;
 	padding: 77px 230px 100px 230px;
 }
 

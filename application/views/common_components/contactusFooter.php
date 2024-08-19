@@ -1,11 +1,12 @@
 <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
 <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/footer.css?v=9')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/footer.css?v=2')?>" rel="stylesheet" />
 
 <footer class="limits-footer-wrapper">
     <div class="footer-container">
         <div class="mx-auto no-gutter text-center order-md-1 order-0">
-        <a  href="<?php echo base_url()?>" > <img src="<?php echo base_url('assets/images/travel24/white-logo.png')?>" class="footr-logo" alt="Logo"></a>
+            <a href="<?php echo base_url()?>"> <img src="<?php echo base_url('assets/images/travel24/white-logo.png')?>"
+                    class="footr-logo" alt="Logo"></a>
 
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -17,11 +18,13 @@
                         </li>
                         <li>
                             <a href="https://www.instagram.com/travel24taxi" target="_blank"><img
-                                    src="<?php echo base_url('assets/images/travel24/instagram-white.png')?>" alt="icon"></a>
+                                    src="<?php echo base_url('assets/images/travel24/instagram-white.png')?>"
+                                    alt="icon"></a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/travel24taxi/" target="_blank"><img
-                                    src="<?php echo base_url('assets/images/travel24/facebook-white.png')?>" alt="icon"></a>
+                                    src="<?php echo base_url('assets/images/travel24/facebook-white.png')?>"
+                                    alt="icon"></a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +51,7 @@
             <div class="col-md-12 text-center mt-3 ">
 
                 <ul class="side-menu  ">
-                    <span class="circle d-none d-md-inline-block"></span>
+
                     <li class="contact">Tel :<a href="tel:02039822911" class="">02039822911 </a></li>
                     <li class="contact">Email Us :<a href="mailto:info@travel24taxi.com"
                             class="">info@travel24taxi.com</a></li>

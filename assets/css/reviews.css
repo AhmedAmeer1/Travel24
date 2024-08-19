@@ -57,7 +57,7 @@
 
 .swiper-container-outer {
 	overflow: hidden;
-	margin-top: 150px;
+	margin-top: 50px;
 }
 
 .swiper-button-prev {
@@ -140,7 +140,7 @@
 	}
 
 	.swiper-container-outer {
-		margin-top: 100px;
+		margin-top: 30px;
 	}
 
 	.subpagecontent h1 {
