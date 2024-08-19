@@ -23,12 +23,13 @@
         padding: 78px 310px 100px 229px;
     }
 
-.taxi-heading{
-    font-size: 42px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 60px;
-}
+    .taxi-heading {
+        font-size: 42px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 60px;
+
+    }
 
     .shape-container>div {
         flex: 1 1 100px;
@@ -51,8 +52,8 @@
         text-align: center;
         font-size: 27px;
         margin-bottom: 40px;
-        /* color: #00517c; */
-        color:black;
+        color: #00517c;
+        /* color: black; */
         font-weight: 600;
     }
 
@@ -60,56 +61,81 @@
         display: flex;
         justify-content: center;
         gap: 10px;
-        /* Space between images */
         margin-bottom: 20px;
     }
 
     .image-container {
         width: 56px;
-        /* Container size */
         height: 52px;
         border-radius: 50%;
-        /* Makes the border round */
         overflow: hidden;
-        /* Ensures the image stays within the round border */
         border: 2px solid black;
-        /* Border color */
         display: flex;
         justify-content: center;
-        /* Centers the image horizontally */
         align-items: center;
-        /* Centers the image vertically */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        /* Optional: adds a shadow */
     }
 
     .image-container img {
-        width: 53%;
+        width: fit-content;
         height: 58%;
-        /* Adjust the height of the image */
         object-fit: cover;
-        /* Ensures the image covers the container proportionally */
     }
 
     .sub-heading {
-        /* background: aquamarine; */
         height: 100px;
         text-align: center;
         font-size: 15px;
         text-transform: capitalize;
         margin-top: 30px;
-        color: black;
+        /* color: black; */
+        color: #00517c;
         font-weight: 400;
     }
 
-
-
-
-    @media only screen and (max-width: 1366px) {
+    @media only screen and (max-width: 1688px) {
         .book-container {
             padding: 17px 90px 0px 90px;
         }
+    }
 
+    @media (max-width: 1350px) {
+        .book-container {
+            padding: 17px 10px 0px 10px;
+        }
+    }
+
+    @media (max-width: 1171px) {
+        .book-container {
+            padding: 17px 2px 0px 2px;
+        }
+
+        .shape-container>div {
+            max-width: 234px;
+        }
+    }
+
+    @media (max-width: 1133px) {
+        .shape-container>div {
+            max-width: 170px;
+        }
+
+        .image-container {
+            width: 46px;
+            height: 41px;
+        }
+
+        .image-container img {
+            height: 49%;
+        }
+
+
+    }
+
+    @media (max-width: 1032px) {
+        .shape-container>div {
+            max-width: 165px;
+        }
     }
 
     @media (max-width: 1024px) {
@@ -122,47 +148,16 @@
         }
     }
 
-    /* Media query for mobile view */
-    @media (max-width: 767.98px) {
-
-        .image-container img {
-     
-        height: 58%;
-        /* Adjust the height of the image */
-      
-    }
-
-    .main-heading {
-     
-        font-size: 20px;
-        margin-bottom: 24px;
-    }
-
-    .taxi-heading {
-    font-size: 29px;
-    margin-bottom: 0px;
-}
-
-        .shape-container>div {
-            max-width: 260px;
-        }
-
-
-        .book-container {
-            padding: 27px 7px 49px 22px;
-        }
-
+    @media (max-width: 1005px) {
         .shape-container {
             flex-direction: column;
-            /* Stack items vertically */
         }
 
         .horizontal-line {
             width: 2px;
             height: 100px;
             margin-bottom: 0px;
-            margin-top: 34px;
-            /* Changes line to vertical */
+            margin-top: 10px;
         }
 
         .sub-heading {
@@ -170,7 +165,45 @@
             margin-bottom: 20px;
         }
 
+        .image-container {
+            width: 52px;
+            height: 45px;
+        }
 
+    }
+
+    .test-img {
+        display: none;
+    }
+
+    /* Media query for mobile view */
+    @media (max-width: 767.98px) {
+        .test-img {
+            width: 400px;
+            display: block;
+        }
+
+        .image-container img {
+            height: 58%;
+        }
+
+        .main-heading {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+
+        .taxi-heading {
+            font-size: 29px;
+            margin-bottom: 0px;
+        }
+
+        .shape-container>div {
+            max-width: 260px;
+        }
+
+        .book-container {
+            padding: 27px 7px 49px 22px;
+        }
 
     }
     </style>
@@ -179,15 +212,16 @@
 <body>
 
 
-
+    <img src="assets/images/travel24/book_taxi/book_taxi.png" class="test-img" alt="car">
 
     <div class="book-container">
+        <!-- <div class="container-fluid"> -->
 
-<h1 class="taxi-heading">How to book a taxi ?</h1>
+        <h1 class="taxi-heading">How to book a ride ?</h1>
 
         <div class="shape-container">
             <div class="step1">
-                <h1 class="main-heading">&nbsp;&nbsp;&nbsp; </h1>
+                <h1 class="main-heading mt-5 mt-md-0">Location </h1>
                 <div class="image-row">
                     <div class="image-container">
                         <img src="assets/images/travel24/book_taxi/location.png" alt="Image 1">
@@ -216,7 +250,8 @@
                         <img src="assets/images/travel24/book_taxi/car.png" alt="car">
                     </div>
                 </div>
-                <h2 class="sub-heading">Choose by Price , ratings and car type</h2>
+                <!-- <h2 class="sub-heading">Choose by Price , ratings and car type</h2> -->
+                <h2 class="sub-heading">Choose Right Vehicle and Right Price </h2>
             </div>
             <div class="horizontal-line"></div>
             <div class="step3">
@@ -236,7 +271,7 @@
             </div>
             <div class="horizontal-line"></div>
             <div class="step4">
-                <h1 class="main-heading">Book</h1>
+                <h1 class="main-heading">Book and Pay</h1>
                 <div class="image-row">
                     <div class="image-container">
                         <img src="assets/images/travel24/book_taxi/visa.png" alt="visa">

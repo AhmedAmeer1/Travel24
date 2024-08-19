@@ -189,6 +189,7 @@
             </div>
         </div> -->
 
+        <?php $this->load->view('common_components/howToBookTaxi'); ?> 
 
         <div class="text-container ">
             <p>
@@ -202,8 +203,7 @@
             </p>
         </div>
 
-        <?php $this->load->view('common_components/howToBookTaxi'); ?> 
-
+    
 
      
 
