@@ -202,7 +202,7 @@
 </head>
 
 <body>
-    <img src="assets/images/travel24/book_taxi/taxi.png" class="howToBook-img" alt="car">
+    <img src="assets/images/travel24/book_taxi/book-taxi.png" class="howToBook-img" alt="car">
 
     <div class="book-container">
         <h1 class="taxi-heading">How to book a ride?</h1>
