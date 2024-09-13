@@ -1,28 +1,109 @@
 <!doctype html>
 <html>
-<style>
+ <!-- Add custom styles if needed -->
+ <style>
+        .blog-details h1 {
+            font-size: 2.5rem;
+            /* Adjust the size as needed */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
 
+        .blog-details p {
+            font-size: 1.5srem;
+            /* Standard paragraph size */
+            margin-bottom: 15px;
+            line-height: 25px;
+        }
 
-</style>
+        @media (max-width: 768px) {
+            .blog-details h1 {
+                font-size: 2rem;
+                /* Slightly smaller on tablets */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .blog-details h1 {
+                font-size: 1.75rem;
+                /* Smaller on mobile */
+            }
+
+            .blog-details p {
+                font-size: 0.9rem;
+                line-height: 22px;
+                /* Adjust paragraph size on mobile */
+            }
+        }
+        </style>
+
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
     <meta name="author" content="">
-    <meta name="keywords" content="<?php echo $result->meta_keyword; ?>" />
-    <meta name="description"
-        content="Experience top-notch airport transfer services with Travel24. Catering to Gatwick, Heathrow, and Luton, we specialize in providing reliable, professional, and affordable travel solutions for both individuals and groups. Book now for a smooth and stress-free journey!" />
+
+
+    <meta name="keywords" content="
+        <?php 
+        if (isset($blog['title'])) {
+            if ($blog['title'] === 'Heathorw Airport Transfer') {
+                echo 'Taxis, Private-hire cars, Transport, Minicabs, Heathrow airport taxi, Taxi to Heathrow airport, Taxi from Heathrow airport, London airport taxi, Minibuses, Transfer, Heathrow airport cab, Minicab, Pre-book, Affordable prices, Credit card payment, Airport taxi to Heathrow, London Heathrow airport taxi service, Airport taxi service, Stansted airport drop off, Heathrow taxis quotes'; // Custom keywords for "Heathorw Airport Transfer"
+            } else {
+                echo $result->meta_keyword; // Use default or dynamic keywords from $result
+            }
+        } else {
+            echo $result->meta_keyword; // Default keywords if $blog['title'] is not set
+        }
+        ?>" />
+
+
+
+    <meta name="description" content="
+        <?php 
+        if (isset($blog['title'])) {
+            if ($blog['title'] === 'Heathorw Airport Transfer') {
+                echo 'Reliable Heathrow Airport taxi transfers. Pre-book your ride for fixed fares, 24/7 service, and stress-free travel to and from any Heathrow terminal in London'; // Custom description
+            } else {
+                echo 'Experience top-notch airport transfer services with Travel24. Catering to Gatwick, Heathrow, and Luton, we specialize in providing reliable, professional, and affordable travel solutions for both individuals and groups. Book now for a smooth and stress-free journey!';
+            }
+        } else {
+            echo 'Experience top-notch airport transfer services with Travel24. Catering to Gatwick, Heathrow, and Luton, we specialize in providing reliable, professional, and affordable travel solutions for both individuals and groups. Book now for a smooth and stress-free journey!'; // Default description
+        }
+        ?>" />
+
+
     <meta name="title"
         content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
     <meta name="language" content="ES">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
-    <title>TRAVEL 24 </title>
+
+
+
+    <title>
+        <?php 
+        if (isset($blog['title'])) {
+            if ($blog['title'] === 'Heathorw Airport Transfer') {
+                echo 'Heathrow Airport Taxi Transfers | Quick, Reliable Heathrow Cabs & Instant Quotes'; // Set to "ahmed test" if title matches "Heathorw Airport Transfer"
+            } else {
+                echo $blog['title']; // Otherwise, use the blog title
+            }
+        } else {
+            echo 'TRAVEL 24'; // Default title if $blog['title'] is not set
+        }
+        ?>
+    </title>
+
+
+
+
+
     <link rel="icon" type="img/png" sizes="32x32" href="https://travel24taxi.com/assets/images/travel24.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=2')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=1')?>" rel="stylesheet" />
 
 
 
@@ -127,6 +208,53 @@
                 </div>
             </div>
         </section>
+
+        <section class="blog-details container-fluid">
+            <?php if (isset($blog)): ?>
+
+
+            <!-- Check if the title is "Heathrow Airport Transfer" -->
+            <?php if ($blog['title'] === 'Heathorw Airport Transfer'): ?>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-10 col-md-12">
+                    <h1 class="text-center display-4 font-weight-bold mb-4">Heathrow airport transfers and minicabs</h1>
+                    <div class="text-left">
+                        <p>Book a chauffeur/private-hire vehicle from Heathrow to elsewhere in the UK through our
+                            Heathrow
+                            airport transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (car
+                            Vehicle)
+                            etc., to serve the purpose of the passengers.</p>
+                        <p>Our airport transfer service to and from Heathrow Airport offers an affordable and
+                            top-quality
+                            private-hire experience. We are reliable, experienced, and committed to delivering quality
+                            travel
+                            solutions in Heathrow at the best prices. We understand that passengers often worry about
+                            reaching the
+                            airport and other destinations on time, so we work hard to ensure you arrive safely and
+                            punctually.</p>
+
+                        <p>Our services extend from Heathrow to London and other popular locations, offering convenient
+                            travel
+                            options. We are well-equipped with a variety of cars/cabs and experienced drivers. Services
+                            are tailored
+                            to meet the needs of the number of passengers and luggage requirements.</p>
+
+                        <p>You can book your ride through our online booking system by simply entering your details and
+                            getting your
+                            transfer quote instantly on our website.</p>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
+            <?php else: ?>
+            <p>No blog details available.</p>
+            <?php endif; ?>
+        </section>
+
+       
+
+
+
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
                 <h1>OUR FLEET</h1>
