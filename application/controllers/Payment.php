@@ -84,7 +84,8 @@ class Payment extends CI_Controller {
 		$payment_method = "paypal";
 		$return_url     = base_url()."index.php/payment/success_payment";
 		$cancel_url     = base_url()."index.php/payment/cancel";
-		$total          = $_SESSION['total_fare'];
+		// $total          = $_SESSION['total_fare'];
+		$total          = 200;
 		$description    = "Paypal product payment";
 		$intent         = "sale";
 		

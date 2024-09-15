@@ -107,6 +107,8 @@
                         <div class="book-form-box">
                             <div class="head">
                                 <h1>BOOK NOW</h1>
+                                <a href="<?php echo base_url('Payment/create_payment'); ?>" class="btn btn-primary">Pay with PayPal Test </a>
+
                                 <img src="assets/images/travel24/online_cards.svg" class="img-fluid image-width"
                                     alt="Payement">
                             </div>
