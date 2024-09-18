@@ -1,41 +1,50 @@
 <!doctype html>
 <html>
- <!-- Add custom styles if needed -->
- <style>
-        .blog-details h1 {
-            font-size: 2.5rem;
-            /* Adjust the size as needed */
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+<!-- Add custom styles if needed -->
+<style>
+.blog-details h1 {
+    font-size: 2.5rem;
+    /* Adjust the size as needed */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-        .blog-details p {
-            font-size: 1.5srem;
-            /* Standard paragraph size */
-            margin-bottom: 15px;
-            line-height: 25px;
-        }
+.blog-details p {
+    font-size: 24px;
+    /* Standard paragraph size */
+    margin-bottom: 15px;
+    line-height: 40px;
+    color: #495057
+}
 
-        @media (max-width: 768px) {
-            .blog-details h1 {
-                font-size: 2rem;
-                /* Slightly smaller on tablets */
-            }
-        }
+.blog-details span {
+    font-size: 24px;
+    /* Standard paragraph size */
+    margin-bottom: 15px;
+    line-height: 40px;
+    color: #495057
+}
 
-        @media (max-width: 576px) {
-            .blog-details h1 {
-                font-size: 1.75rem;
-                /* Smaller on mobile */
-            }
+@media (max-width: 768px) {
+    .blog-details h1 {
+        font-size: 2rem;
+        /* Slightly smaller on tablets */
+    }
+}
 
-            .blog-details p {
-                font-size: 0.9rem;
-                line-height: 22px;
-                /* Adjust paragraph size on mobile */
-            }
-        }
-        </style>
+@media (max-width: 576px) {
+    .blog-details h1 {
+        font-size: 1.75rem;
+        /* Smaller on mobile */
+    }
+
+    .blog-details p {
+        font-size: 0.9rem;
+        line-height: 22px;
+        /* Adjust paragraph size on mobile */
+    }
+}
+</style>
 
 
 <head>
@@ -95,10 +104,31 @@
     </title>
 
 
+    <link rel="
+        <?php 
+        if (isset($blog['title'])) {
+            if ($blog['title'] === 'Heathorw Airport Transfer') {
+                echo 'canonical'; 
+            } else {
+                echo 'icon'; 
+            }
+        } else {
+            echo 'icon';
+        }
+        ?>" type="img/png" sizes="32x32" href="
+        <?php 
+        if (isset($blog['title'])) {
+            if ($blog['title'] === 'Heathorw Airport Transfer') {
+                echo 'https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer'; 
+            } else {
+                echo 'https://travel24taxi.com/assets/images/travel24.jpg'; 
+            }
+        } else {
+            echo 'https://travel24taxi.com/assets/images/travel24.jpg';
+        }
+        ?>" />
 
-
-
-    <link rel="icon" type="img/png" sizes="32x32" href="https://travel24taxi.com/assets/images/travel24.jpg">
+    <!-- <link rel="icon" type="img/png" sizes="32x32" href="https://travel24taxi.com/assets/images/travel24.jpg"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
@@ -217,13 +247,13 @@
             <?php if ($blog['title'] === 'Heathorw Airport Transfer'): ?>
             <div class="row justify-content-center my-5">
                 <div class="col-lg-10 col-md-12">
-                    <h1 class="text-center display-4 font-weight-bold mb-4">Heathrow airport transfers and minicabs</h1>
+                    <h1 class="text-left display-4 font-weight-bold mb-4">Heathrow airport transfers and minicabs</h1>
                     <div class="text-left">
-                        <p>Book a chauffeur/private-hire vehicle from Heathrow to elsewhere in the UK through our
+                        <span>Book a chauffeur/private-hire vehicle from Heathrow to elsewhere in the UK through our
                             Heathrow
                             airport transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (car
                             Vehicle)
-                            etc., to serve the purpose of the passengers.</p>
+                            etc., to serve the purpose of the passengers.</span>
                         <p>Our airport transfer service to and from Heathrow Airport offers an affordable and
                             top-quality
                             private-hire experience. We are reliable, experienced, and committed to delivering quality
@@ -251,7 +281,7 @@
             <?php endif; ?>
         </section>
 
-       
+
 
 
 
