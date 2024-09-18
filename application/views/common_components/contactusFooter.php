@@ -62,7 +62,7 @@
         <div class=" mt-md-4 mt-3   text-center">
 
             <p class="footer-p2">
-                Travel 24 is the Trading of NoLimit Airport Cars Ltd
+                Travel 24 Taxi is the Trading Name of NoLimit Airport Cars Ltd
             </p>
             <span class="footer-p2 mt-3">
                 © Travel24 2017 - 2024

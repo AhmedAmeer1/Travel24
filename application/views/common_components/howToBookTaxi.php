@@ -17,7 +17,7 @@
 
     .book-container {
         background-color: #d6dfe7;
-        padding: 78px 310px 100px 229px;
+        padding: 21px 310px 50px 229px;
     }
 
     .taxi-heading {
@@ -35,7 +35,7 @@
     /* Adjusted width for all horizontal lines */
     .horizontal-line {
         width: 50px;
-        height: 2px;
+        height: 3px;
         background-color: #333;
         margin: 10px auto;
         margin-bottom: 74px;
@@ -61,7 +61,7 @@
         height: 52px;
         border-radius: 50%;
         overflow: hidden;
-        border: 2px solid black;
+        border: 3px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,7 +86,7 @@
 
     @media only screen and (max-width: 1688px) {
         .book-container {
-            padding: 50px 90px 0px 90px;
+            padding: 5px 90px 0px 90px;
         }
     }
 
