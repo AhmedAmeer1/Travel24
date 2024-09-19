@@ -22,6 +22,16 @@
     .hide {
         display: none;
     }
+   .circle {
+   
+    display: inline-block;
+    width: 10px;  /* Adjust size as needed */
+    height: 10px;
+    background-color: white;  /* Adjust color as needed */
+    border-radius: 50%;  /* Makes the element circular */
+    margin-left: 5px;  /* Adds some space between the text and the circle */
+}
+
     </style>
 </head>
 
@@ -180,7 +190,7 @@
                                                     </h5>
                                                     <button class="btn-slct-taxi" data-travel-type="1">
                                                         Single
-                                                        <span>&#9679;</span>
+                                                        <span class="circle"></span>
                                                     </button>
                                                 </div>
                                                 <div class="return">
@@ -189,7 +199,7 @@
                                                     </h5>
                                                     <button class="btn-slct-taxi" data-travel-type="2">
                                                         Return
-                                                        <span>&#9679;</span>
+                                                        <span class="circle"></span>
                                                     </button>
                                                 </div>
                                             </div>
