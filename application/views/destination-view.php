@@ -6,14 +6,15 @@
     font-size: 2.5rem;
     /* Adjust the size as needed */
     font-weight: bold;
-    margin-bottom: 20px;
+
 }
 
 .blog-details p {
-    font-size: 24px;
+    font-size: 1.5srem;
     /* Standard paragraph size */
+   
     margin-bottom: 15px;
-    line-height: 40px;
+    line-height: 25px;
     color: #495057
 }
 
@@ -21,7 +22,7 @@
     font-size: 24px;
     /* Standard paragraph size */
     margin-bottom: 15px;
-    line-height: 40px;
+    line-height: 32px;
     color: #495057
 }
 
@@ -247,14 +248,14 @@
             <?php if ($blog['title'] === 'Heathorw Airport Transfer'): ?>
             <div class="row justify-content-center my-5">
                 <div class="col-lg-10 col-md-12">
-                    <h1 class="text-left display-4 font-weight-bold mb-4">Heathrow airport transfers and minicabs</h1>
+                    <h1 class="text-left display-4 font-weight-bold ">Heathrow airport transfers and minicabs</h1>
                     <div class="text-left">
                         <span>Book a chauffeur/private-hire vehicle from Heathrow to elsewhere in the UK through our
                             Heathrow
                             airport transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (car
                             Vehicle)
                             etc., to serve the purpose of the passengers.</span>
-                        <p>Our airport transfer service to and from Heathrow Airport offers an affordable and
+                        <p class="mt-4">Our airport transfer service to and from Heathrow Airport offers an affordable and
                             top-quality
                             private-hire experience. We are reliable, experienced, and committed to delivering quality
                             travel
