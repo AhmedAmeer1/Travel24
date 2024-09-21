@@ -148,13 +148,16 @@ class Payment extends CI_Controller {
 
 	}
 	public function email_notification($data){
+
+		
 		$this->load->library('email');
-		$config['protocol'] = 'smtp'; // mail, sendmail, or smtp    The mail sending protocol.
-		$config['smtp_host'] = 'smtp.sendgrid.net'; // SMTP Server Address.
-		$config['smtp_user'] = 'adarsh@techware.in'; // SMTP Username.
-		$config['smtp_pass'] = 'Golden_123'; // SMTP Password.
-		$config['smtp_port'] = '587'; // SMTP Port.
-		$config['smtp_timeout'] = '05'; // SMTP Timeout (in seconds).
+		$config['protocol'] = 'sendmail'; // mwail, sendmail, or smtp    The mail sending protocol.
+		//$config['smtp_host'] = 'smtp.gmail.com';
+		//$config['smtp_user'] = 'adarsh.techware@gmail.com'; // SMTP Username.
+		//$config['smtp_pass'] = 'lcvhzkxjldzxdbja'; // SMTP Password.
+		//$config['smtp_crypto'] = "tls";
+		//$config['smtp_port'] = '587'; // SMTP Port.
+		//$config['smtp_timeout'] = '05'; // SMTP Timeout (in seconds).
 		$config['wordwrap'] = TRUE; // TRUE or FALSE (boolean)    Enable word-wrap.
 		$config['wrapchars'] = 76; // Character count to wrap at.
 		$config['mailtype'] = 'html'; // text or html Type of mail. If you send HTML email you must send it as a complete web page. Make sure you don't have any relative links or relative image paths otherwise they will not work.
@@ -166,22 +169,36 @@ class Payment extends CI_Controller {
 		$config['bcc_batch_mode'] = FALSE; // TRUE or FALSE (boolean)    Enable BCC Batch Mode.
 		$config['bcc_batch_size'] = 200; // Number of emails in each BCC batch.
 		$this->email->initialize($config);
-		$this->email->from('divya.techware@gmail.com', 'No Limits Car');
+		$this->email->from('bookings@travel24taxi.com', 'TRAVEL 24 CARS');
 		$this->email->to($data['email']);
 
 
 		$this->email->subject('Your Travel24 Taxi order has been received!');
-		
-	
-		
-		$mesg = $this->load->view('template/email',$data,true);
+		$mesg = $this->load->view('template/email', $data, true);
 		$this->email->message($mesg);
-		if($this->email->send()){
-		//echo "email send";
-		}else{
-		//echo "email not send";
-		}
 
+
+
+	
+		if ($this->email->send()) {
+			$to = "bookings@travel24taxi.com";
+			$subject = $data['booking_id'];
+
+			//$to = "soumen.karmakar@solutions2xl.com";
+			$this->email->initialize($config);
+			$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 CARS');
+			$this->email->to($to);
+			$this->email->subject($subject);
+			// $this->email->AddEmbeddedImage(dirname(__FILE__) . 'https://travel24taxi.com/assets/images/travel24/Logo.svg','traveltaxi');
+			$mesg = $this->load->view('template/email_admin', $data, true);
+			$this->email->message($mesg);
+			$this->email->send();
+
+			//echo "email send";
+		} else {
+			//echo "email not send";
+		}
+w
 	}
 	
 }
