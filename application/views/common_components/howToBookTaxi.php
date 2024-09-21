@@ -17,14 +17,14 @@
 
     .book-container {
         background-color: #d6dfe7;
-        padding: 21px 310px 50px 229px;
+        padding: 15px 310px 22px 229px;
     }
 
     .taxi-heading {
         font-size: 36px;
         text-align: center;
         font-weight: bold;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 
     .shape-container>div {
