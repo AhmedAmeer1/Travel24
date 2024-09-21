@@ -198,7 +198,7 @@ class Payment extends CI_Controller {
 		} else {
 			//echo "email not send";
 		}
-w
+
 	}
 	
 }
