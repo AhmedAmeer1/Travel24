@@ -871,13 +871,19 @@ form .error {
             var scomments_special_inst = document.getElementById('scomments_special_inst').value;
             if ($(this).attr('data-method') == "pay_now_p") {
                 var payment_method = "paypal";
+                console.log('inside pay_now_p -------------')
             }
             if ($(this).attr('data-method') == "pay_now_l") {
                 var payment_method = "lloyds";
-            } else {
-                var payment_method = "cash";
+                console.log('inside pay_now_l -------------')
             }
+            if ($(this).attr('data-method') == "pay_cash") {
+                var payment_method = "cash";
+                console.log('inside pay_cash -------------')
+            } 
 
+            console.log('payment_method')
+            console.log(payment_method)
             if (chk_Greet.checked) {
                 var meet_and_greet = 1;
             } else {
