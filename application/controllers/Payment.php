@@ -124,7 +124,7 @@ class Payment extends CI_Controller {
 			$data['way_point_1'] =(!empty($_SESSION["way_points"][0])?$_SESSION["way_points"][0]:'');
 			$data['way_point_2']=(!empty($_SESSION["way_points"][1])?$_SESSION["way_points"][1]:'');
 			$data['way_point_3']=(!empty($_SESSION["way_points"][2])?$_SESSION["way_points"][2]:'');
-			$data['type'] ="Online";
+			$data['type'] ="Paypal";
 			$this->db->where('vehicle_id',$_SESSION["vehice_id"]);
 			$data['vehicle'] =$this->db->get('vehicle')->row('title');
 			$data['travel_date'] = $_SESSION["book_data"]['travel_date'];
