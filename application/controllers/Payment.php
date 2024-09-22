@@ -4,6 +4,7 @@ class Payment extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->library("paypal");
+		$this->load->helper('cookie');
 		$this->load->helper("url");
 		$this->load->model('Index_Model');
 	}
@@ -143,10 +144,10 @@ class Payment extends CI_Controller {
 
 			// undefined variables
 			$data['pick_up'] = $_SESSION["book_data"]['pick_up_door_name'];
-			$data['hand_lagguage'] = $_SESSION["book_data"]['hand_lagguage'];
+			$data['hand_lagguage'] = $_SESSION["hand_lagguage"] ?? get_cookie('hand_lagguage');
 			$data['dropoff_cost'] = $_SESSION["book_data"]['dropoff_cost'];
 			$data['flight_no'] = $_SESSION["book_data"]['flight_no'];
-			$data['scomments_special_inst'] = $_SESSION["book_data"]['scomments_special_inst'];
+			$data['scomments_special_inst'] = $_SESSION["scomments_special_inst"] ?? get_cookie('scomments_special_inst');
 
 			$this->email_notification($data);
 		    redirect(base_url('index/journey_data?status=1&booking_id='.$result['booking_id']));

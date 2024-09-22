@@ -218,9 +218,6 @@ class Index extends CI_Controller
 		$booking['pick_up_door_name'] = $input['pick_up'];
 		$booking['flight_no'] = $input['flight_no'];
 		$booking['passenger'] = $input['no_of_passenger'];
-		$booking['suitcase'] = $input['no_of_suitcase'];
-		// $booking['hand_lagguage'] = $input['hand_lagguage'];
-		// $booking['scomments_special_inst'] = $input['scomments_special_inst'];
 		$booking['child_seat'] = $input['child_seat'];
 		$booking['greet_status'] = $input['meet_and_greet'];
 		$booking['dropOff_status'] = $input['drop_off'];
