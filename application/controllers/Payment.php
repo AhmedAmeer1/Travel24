@@ -139,6 +139,15 @@ class Payment extends CI_Controller {
 			$data['sub_total'] = $_SESSION['base_fare'];
 			$data['total'] = $_SESSION["book_data"]['amount'];
 			$data['promocode_discount'] =$_SESSION["book_data"]['promocode_discount'];
+
+
+			// undefined variables
+			$data['pick_up'] = $_SESSION["book_data"]['pick_up_door_name'];
+			$data['hand_lagguage'] = $_SESSION["book_data"]['hand_lagguage'];
+			$data['dropoff_cost'] = $_SESSION["book_data"]['dropoff_cost'];
+			$data['flight_no'] = $_SESSION["book_data"]['flight_no'];
+			$data['scomments_special_inst'] = $_SESSION["book_data"]['scomments_special_inst'];
+
 			$this->email_notification($data);
 		    redirect(base_url('index/journey_data?status=1&booking_id='.$result['booking_id']));
 
