@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Shape Layout</title>
+    <title>How to book a ride</title>
 
     <style>
     .shape-container {
@@ -88,6 +88,12 @@
         .book-container {
             padding: 5px 90px 0px 90px;
         }
+        .sub-heading {
+            height: 70px;
+        }
+        .horizontal-line {
+        margin-bottom: 44px;
+    }
     }
 
     @media (max-width: 1350px) {
@@ -131,7 +137,10 @@
         .shape-container>div {
             max-width: 155px;
         }
-
+        .sub-heading {
+            height: 100px;
+          
+        }
         .book-container {
             padding: 17px 10px 0px 10px;
         }
