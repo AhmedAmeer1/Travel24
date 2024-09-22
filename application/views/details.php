@@ -437,7 +437,7 @@ form .error {
                         <!------------------------------------------ OLD PAYMENT CODE START ---------------------------------------- -->
 
                         <div class="bottom-buttons">
-                            <div class="user-pay-type">
+                            <div class="user-pay-type d-flex justify-content-end" style="gap: 3px;">
                                 <?php foreach($payment_types as $pt){?>
                                 <button class="paynow-btn payment-method" id="myButton"
                                     data-method=<?php echo $pt->method ?>><a id="pay_now_a"><?php echo $pt->title ?>
