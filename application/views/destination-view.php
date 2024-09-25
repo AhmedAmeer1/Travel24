@@ -1,59 +1,9 @@
 <!doctype html>
 <html>
-<!-- Add custom styles if needed -->
-<style>
-.blog-details h1 {
-    font-size: 2.5rem;
-    /* Adjust the size as needed */
-    font-weight: bold;
-
-}
-
-.blog-details p {
-    font-size: 1.5srem;
-    /* Standard paragraph size */
-   
-    margin-bottom: 15px;
-    line-height: 25px;
-    color: #495057
-}
-
-.blog-details span {
-    font-size: 24px;
-    /* Standard paragraph size */
-    margin-bottom: 15px;
-    line-height: 32px;
-    color: #495057
-}
-
-@media (max-width: 768px) {
-    .blog-details h1 {
-        font-size: 2rem;
-        /* Slightly smaller on tablets */
-    }
-}
-
-@media (max-width: 576px) {
-    .blog-details h1 {
-        font-size: 1.75rem;
-        /* Smaller on mobile */
-    }
-
-    .blog-details p {
-        font-size: 0.9rem;
-        line-height: 22px;
-        /* Adjust paragraph size on mobile */
-    }
-}
-</style>
-
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
     <meta name="author" content="">
-
-
     <meta name="keywords" content="
         <?php 
         if (isset($blog['title'])) {
@@ -66,9 +16,6 @@
             echo $result->meta_keyword; // Default keywords if $blog['title'] is not set
         }
         ?>" />
-
-
-
     <meta name="description" content="
         <?php 
         if (isset($blog['title'])) {
@@ -81,15 +28,10 @@
             echo 'Experience top-notch airport transfer services with Travel24. Catering to Gatwick, Heathrow, and Luton, we specialize in providing reliable, professional, and affordable travel solutions for both individuals and groups. Book now for a smooth and stress-free journey!'; // Default description
         }
         ?>" />
-
-
     <meta name="title"
         content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
     <meta name="language" content="ES">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
-
-
-
     <title>
         <?php 
         if (isset($blog['title'])) {
@@ -103,8 +45,6 @@
         }
         ?>
     </title>
-
-
     <link rel="
         <?php 
         if (isset($blog['title'])) {
@@ -128,16 +68,13 @@
             echo 'https://travel24taxi.com/assets/images/travel24.jpg';
         }
         ?>" />
-
-    <!-- <link rel="icon" type="img/png" sizes="32x32" href="https://travel24taxi.com/assets/images/travel24.jpg"> -->
+    <link rel="icon" type="img/png" sizes="32x32" href="https://travel24taxi.com/assets/images/travel24.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=1')?>" rel="stylesheet" />
-
-
-
+    <link href="<?php echo base_url('assets/css/destination-view.css')?>" rel="stylesheet" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
     <script>
@@ -147,21 +84,11 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'UA-230246454-1');
     </script>
-
-
 </head>
-
 <body>
-
-
-
     <?php $this->load->view('common_components/header'); ?>
-
-
-
     <main class="home">
         <div class="responsive-header-image mt-2"></div>
         <section class="limits-banner">
@@ -202,7 +129,6 @@
                                             </div>
                                         </div>
                                         <div class="way-points">
-
                                         </div>
                                         <div class="form-group">
                                             <div class="d-flex justify-content-between">
@@ -211,7 +137,6 @@
                                                 <button style="float:right" class=" multi-root"><i
                                                         class="fa fa-plus-circle  "></i> Multi Route</button>
                                             </div>
-
                                             <input type="text" class="form-control autocompleteDoc" name="destination"
                                                 required id="dropPoint" placeholder="Enter a location">
                                             <input type="hidden" class="lat_perfect" id="destLat" name="destLat">
@@ -223,7 +148,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-6 banner-details">
                         <div class="mx-auto">
                             <h1>Your Destination is our goal</h1>
@@ -231,19 +155,13 @@
                                 Airport transfers & chauffeur services connecting all UK airports
                             </p>
                             <p class="promoCode">Use <span class="code">LUTH24</span> to get 10% off.</p>
-
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
-
         <section class="blog-details container-fluid">
             <?php if (isset($blog)): ?>
-
-
             <!-- Check if the title is "Heathrow Airport Transfer" -->
             <?php if ($blog['title'] === 'Heathorw Airport Transfer'): ?>
             <div class="row justify-content-center my-5">
@@ -255,7 +173,8 @@
                             airport transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (car
                             Vehicle)
                             etc., to serve the purpose of the passengers.</span>
-                        <p class="mt-4">Our airport transfer service to and from Heathrow Airport offers an affordable and
+                        <p class="mt-4">Our airport transfer service to and from Heathrow Airport offers an affordable
+                            and
                             top-quality
                             private-hire experience. We are reliable, experienced, and committed to delivering quality
                             travel
@@ -281,11 +200,6 @@
             <p>No blog details available.</p>
             <?php endif; ?>
         </section>
-
-
-
-
-
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
                 <h1>OUR FLEET</h1>
@@ -319,36 +233,29 @@
                     <?php  } ?>
                 </div>
             </div>
-        </section </main>
-
-        <?php $this->load->view('common_components/footer'); ?>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="<?php echo base_url('assets/js/jquery.3.0.min.js')?>"></script>
-        <script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script>
-        <script src="<?php echo base_url('assets/js/jquery.touchSwipe.min.js')?>"></script>
-        <script src="https://use.fontawesome.com/1e36072efd.js"></script>
-        <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
+        </section>
+    </main>
+    <?php $this->load->view('common_components/footer'); ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url('assets/js/jquery.3.0.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/js/jquery.touchSwipe.min.js')?>"></script>
+    <script src="https://use.fontawesome.com/1e36072efd.js"></script>
+    <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
 </body>
-<!-- AIzaSyBn6hOlr6YHcZAmbptlsmbhvH5iQllWflE -->
 <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=<?php echo $result->google_api_key; ?>&sensor=false&libraries=places">
 </script>
-
 <script type="text/javascript">
 var chnaged_id = "pickPoint";
-
 $("#createCustomerForm").delegate('input', "keyup", function() {
     chnaged_id = $(this).attr('id');
     find_locations(chnaged_id)
 
 })
 
-
-
 function find_locations(chnaged_id) {
-
     var options = {
         // types: ['(cities)'],
         componentRestrictions: {
@@ -378,8 +285,6 @@ function find_locations(chnaged_id) {
         }
 
     });
-
-
 }
 $("#createCustomerForm").delegate('.multi-root', "click", function() {
     var total_way_points = $('.multi-btn').length;
@@ -390,7 +295,6 @@ $("#createCustomerForm").delegate('.multi-root', "click", function() {
         alert("OOPS !!! way Points limited to 3");
         return;
     }
-
     var html = '<div id="way-points-div-' + next_way_point +
         '" class="form-group"><div class="d-flex justify-content-between"><label>WAY POINT</label> <span class="chbs-location-remove chbs-meta-icon-minus remove-multi-root"></span> <button style="float:right" class="multi-btn" ><i class="fa fa-plus-circle multi-root " ></i> Multi Route</button><button style="float:right"><i class="fa fa-minus-circle remove-multi-root" data-index = ' +
         next_way_point +
@@ -408,5 +312,4 @@ $("#createCustomerForm").delegate('.remove-multi-root', "click", function() {
     $("#way-points-div-" + id).remove();
 })
 </script>
-
 </html>

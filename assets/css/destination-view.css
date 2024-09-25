@@ -1,0 +1,38 @@
+.blog-details h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.blog-details p {
+    font-size: 1.5srem;
+    margin-bottom: 15px;
+    line-height: 25px;
+    color: #495057
+}
+
+.blog-details span {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+    line-height: 32px;
+    color: #495057
+}
+
+@media (max-width: 768px) {
+    .blog-details h1 {
+        font-size: 2rem;
+        /* Slightly smaller on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-details h1 {
+        font-size: 1.75rem;
+        /* Smaller on mobile */
+    }
+
+    .blog-details p {
+        font-size: 0.9rem;
+        line-height: 22px;
+        /* Adjust paragraph size on mobile */
+    }
+}
