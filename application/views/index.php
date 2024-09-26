@@ -69,8 +69,10 @@
     </script>
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -79,8 +81,9 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'UA-230246454-1');
+    gtag('config', 'G-0B0RRH5ZD3');
     </script>
+
 
 
 </head>
@@ -100,7 +103,7 @@
         <section class="limits-banner">
             <div class="banner_container ">
                 <div class="row ">
-           
+
 
 
                     <div class="col-md-6 box-padding">
@@ -191,7 +194,7 @@
             </div>
         </div> -->
 
-        <?php $this->load->view('common_components/howToBookTaxi'); ?> 
+        <?php $this->load->view('common_components/howToBookTaxi'); ?>
 
         <div class="text-container ">
             <p>
@@ -205,9 +208,9 @@
             </p>
         </div>
 
-    
 
-     
+
+
 
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
@@ -293,7 +296,7 @@
                             </div>
                             <div class="text_card">
                                 <h2>EXECUTIVE CAR (Executive)</h2>
-                                <p>Up to 3 passengers plus 2 suitcases  or 4 passengers plus hand luggage</p>
+                                <p>Up to 3 passengers plus 2 suitcases or 4 passengers plus hand luggage</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
@@ -344,7 +347,7 @@
                             </div>
                             <div class="text_card">
                                 <h2>EXECUTIVE PEOPLE CARRIER (Luxury)</h2>
-                                <p>Up to 5 passengers plus 4 suitcases  or 6 passengers plus hand luggage.</p>
+                                <p>Up to 5 passengers plus 4 suitcases or 6 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
@@ -372,7 +375,7 @@
                                         class="disability_img" alt="car"> Vehicle)</h2>
                                 <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
                                     wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages
-                                  .</p>
+                                    .</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="car">
