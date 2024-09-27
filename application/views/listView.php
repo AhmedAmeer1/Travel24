@@ -17,6 +17,18 @@
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/listView.css?v=4')?>" rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0B0RRH5ZD3');
+    </script>
 
     <style>
     .hide {

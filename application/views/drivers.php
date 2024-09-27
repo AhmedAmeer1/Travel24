@@ -13,8 +13,8 @@
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/drivers.css') ?>">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -23,7 +23,7 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'UA-230246454-1');
+    gtag('config', 'G-0B0RRH5ZD3');
     </script>
 
 </head>

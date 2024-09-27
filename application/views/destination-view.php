@@ -75,8 +75,8 @@
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=1')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/destination-view.css')?>" rel="stylesheet" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -84,7 +84,8 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    gtag('config', 'UA-230246454-1');
+
+    gtag('config', 'G-0B0RRH5ZD3');
     </script>
 </head>
 <body>

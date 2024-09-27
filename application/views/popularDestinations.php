@@ -13,8 +13,18 @@
 
 
     <link href="<?= base_url('assets/css/destination.css?v=2') ?>" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0B0RRH5ZD3');
+    </script>
 </head>
 
 

@@ -27,7 +27,18 @@
 
     <link href="<?php echo base_url('assets/css/review-details.css')?>" rel="stylesheet" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0B0RRH5ZD3');
+    </script>
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>

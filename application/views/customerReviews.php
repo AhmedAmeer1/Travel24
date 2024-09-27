@@ -12,11 +12,18 @@
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=3') ?>">
-    <style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-
-    </style>
+    gtag('config', 'G-0B0RRH5ZD3');
+    </script>
 </head>
 
 <body>

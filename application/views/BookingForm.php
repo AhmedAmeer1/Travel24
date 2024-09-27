@@ -19,14 +19,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-230246454-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
-    gtag('config', 'UA-230246454-1');
-    </script> 
+    gtag('config', 'G-0B0RRH5ZD3');
+    </script>
  
 </head>
     
