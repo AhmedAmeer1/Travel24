@@ -1123,3 +1123,10 @@ select {
 	text-decoration: none;
 	color: black;
 }
+
+@media only screen and (max-width: 300px) {
+	.details-main-wrapper .picker-head {
+
+		margin-top: 2px !important;
+	}
+}
