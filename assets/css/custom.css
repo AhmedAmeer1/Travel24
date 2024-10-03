@@ -1123,6 +1123,13 @@ select {
 	text-decoration: none;
 	color: black;
 }
+@media only screen and (max-width: 400px) {
+	.details-main-wrapper .picker-head {
+
+		margin-top: 20px !important;
+	}
+}
+
 
 @media only screen and (max-width: 300px) {
 	.details-main-wrapper .picker-head {
