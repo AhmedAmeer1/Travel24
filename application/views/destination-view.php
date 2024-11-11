@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
@@ -88,6 +89,7 @@
     gtag('config', 'G-0B0RRH5ZD3');
     </script>
 </head>
+
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
@@ -164,39 +166,22 @@
         <section class="blog-details container-fluid">
             <?php if (isset($blog)): ?>
             <!-- Check if the title is "Heathrow Airport Transfer" -->
-            <?php if ($blog['title'] === 'Heathorw Airport Transfer'): ?>
+
             <div class="row justify-content-center my-5">
                 <div class="col-lg-10 col-md-12">
-                    <h1 class="text-left display-4 font-weight-bold ">Heathrow airport transfers and minicabs</h1>
+                    <h1 class="text-left display-4 font-weight-bold "> <?php echo $blog['heading']; ?></h1>
                     <div class="text-left">
-                        <span>Book a chauffeur/private-hire vehicle from Heathrow to elsewhere in the UK through our
-                            Heathrow
-                            airport transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (car
-                            Vehicle)
-                            etc., to serve the purpose of the passengers.</span>
-                        <p class="mt-4">Our airport transfer service to and from Heathrow Airport offers an affordable
-                            and
-                            top-quality
-                            private-hire experience. We are reliable, experienced, and committed to delivering quality
-                            travel
-                            solutions in Heathrow at the best prices. We understand that passengers often worry about
-                            reaching the
-                            airport and other destinations on time, so we work hard to ensure you arrive safely and
-                            punctually.</p>
+                        <span> <?php echo $blog['subHeading']; ?></span>
+                        
+                        <p class="mt-4"> <?php echo $blog['content1']; ?></p>
 
-                        <p>Our services extend from Heathrow to London and other popular locations, offering convenient
-                            travel
-                            options. We are well-equipped with a variety of cars/cabs and experienced drivers. Services
-                            are tailored
-                            to meet the needs of the number of passengers and luggage requirements.</p>
+                        <p> <?php echo $blog['content2']; ?></p>
 
-                        <p>You can book your ride through our online booking system by simply entering your details and
-                            getting your
-                            transfer quote instantly on our website.</p>
+                        <p> <?php echo $blog['content3']; ?></p>
                     </div>
                 </div>
             </div>
-            <?php endif; ?>
+
             <?php else: ?>
             <p>No blog details available.</p>
             <?php endif; ?>
@@ -313,4 +298,5 @@ $("#createCustomerForm").delegate('.remove-multi-root', "click", function() {
     $("#way-points-div-" + id).remove();
 })
 </script>
+
 </html>
