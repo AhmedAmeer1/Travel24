@@ -37,7 +37,7 @@
         <?php 
         if (isset($blog['title'])) {
             if ($blog['title'] === 'Heathorw Airport Transfer') {
-                echo 'Heathrow Airport Taxi Transfers | Quick, Reliable Heathrow Cabs & Instant Quotes'; // Set to "ahmed test" if title matches "Heathorw Airport Transfer"
+                echo 'Heathrow Airport Taxi Transfers | Quick, Reliable Heathrow Cabs & Instant Quotes'; 
             } else {
                 echo $blog['title']; // Otherwise, use the blog title
             }
@@ -46,29 +46,18 @@
         }
         ?>
     </title>
-    <link rel="
-        <?php 
-        if (isset($blog['title'])) {
-            if ($blog['title'] === 'Heathorw Airport Transfer') {
-                echo 'canonical'; 
-            } else {
-                echo 'icon'; 
-            }
-        } else {
-            echo 'icon';
-        }
-        ?>" type="img/png" sizes="32x32" href="
-        <?php 
-        if (isset($blog['title'])) {
-            if ($blog['title'] === 'Heathorw Airport Transfer') {
-                echo 'https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer'; 
-            } else {
-                echo 'https://travel24taxi.com/assets/images/travel24.jpg'; 
-            }
-        } else {
-            echo 'https://travel24taxi.com/assets/images/travel24.jpg';
-        }
-        ?>" />
+
+    <link rel="canonical" href="
+       <?php 
+       if (isset($blog['canonicalLink'])) {
+           echo $blog['canonicalLink']; 
+       } else {
+           echo 'https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer'; 
+       }
+    ?>" />
+
+
+
     <link rel="icon" type="img/png" sizes="32x32" href="https://travel24taxi.com/assets/images/travel24.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
@@ -172,7 +161,7 @@
                     <h1 class="text-left display-4 font-weight-bold "> <?php echo $blog['heading']; ?></h1>
                     <div class="text-left">
                         <span> <?php echo $blog['subHeading']; ?></span>
-                        
+
                         <p class="mt-4"> <?php echo $blog['content1']; ?></p>
 
                         <p> <?php echo $blog['content2']; ?></p>

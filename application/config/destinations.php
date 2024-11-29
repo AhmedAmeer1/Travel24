@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['destinations'] = [
     [
         'title' => 'Brighton Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/brighton-transfer',
         'slug' => 'brighton-transfer',
         'heading' => 'Brighton Transfer',
         'subHeading' => 'Book a private-hire from Brighton to elsewhere in the UK through our Brighton  transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -13,6 +14,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Bristol Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/bristol-transfer',
         'slug' => 'bristol-transfer',
         'heading' => 'Bristol transfer',
         'subHeading' => 'Book a private-hire from Bristol  to elsewhere in the UK through our Bristol transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -23,6 +25,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'Gatwick Airport Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/gatwick-airport-transfer',
         'slug' => 'gatwick-airport-transfer',
         'heading' => 'Gatwick Airport transfer',
         'subHeading' => 'Book a private-hire from Gatwick to elsewhere in the UK through our Gatwick transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -32,6 +35,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'Guildford Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/guildford-transfer',
         'slug' => 'guildford-transfer',
         'heading' => 'Guilford transfer',
         'subHeading' => 'Book a private-hire from Guilford to elsewhere in the UK through our Guilford  transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -41,6 +45,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'Heathorw Airport Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer',
         'slug' => 'heathorw-airport-transfer',
         'heading' => 'Heathrow airport transfers and minicabs',
         'subHeading' => 'Book a chauffeur/private-hire vehicle from Heathrow to elsewhere in the UK through our Heathrow airport transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (car Vehicle) etc., to serve the purpose of the passengers.',
@@ -50,6 +55,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'Luton Airport Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/luton-airport-transfer',
         'slug' => 'luton-airport-transfer',
         'heading' => 'Luton airport transfer',
         'subHeading' => 'Book a private-hire from Luton to elsewhere in the UK through our Luton transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -59,6 +65,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'London Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/london-transfer',
         'slug' => 'london-transfer',
         'heading' => 'London transfer',
         'subHeading' => 'Book a private-hire from London to elsewhere in the UK through our London transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -68,6 +75,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'London City Airport Transfer ',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/London-city-airport-transfer',
         'slug' => 'London-city-airport-transfer',
         'heading' => 'London City Airport Transfer',
         'subHeading' => 'Book a private-hire from London City to elsewhere in the UK through our London City transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -77,6 +85,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'Maidenhead Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/maidenhead-transfer',
         'slug' => 'maidenhead-transfer',
         'heading' => 'Maidenhead transfer',
         'subHeading' => 'Book a private-hire from Maidenhead  to elsewhere in the UK through our Maidenhead  transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -86,6 +95,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'Oxford Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/oxford-transfer',
         'slug' => 'oxford-transfer',
         'heading' => 'Oxford Transfer',
         'subHeading' => 'Book a private-hire from Oxfordto to elsewhere in the UK through our Oxfordtransfer Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -95,6 +105,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'Southampton Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/southampton-transfer',
         'slug' => 'southampton-transfer',
         'heading' => 'Southampton Transfer',
         'subHeading' => 'Book a private-hire from Southampton to  elsewhere in the UK through our Southampton Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -104,6 +115,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'Stansted Airport Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/stansted-airport-transfer',
         'slug' => 'stansted-airport-transfer',
         'heading' => 'Stansted Airport Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Stansted Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
@@ -113,6 +125,7 @@ who want to reach their destination on time. We make this possible with our  exp
     ],
     [
         'title' => 'Windsor Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/windsor-transfer',
         'slug' => 'windsor-transfer',
         'heading' => 'Windsor Transfer',
         'subHeading' => 'Book a private-hire from Windsor to elsewhere in the UK through our Windsor Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
