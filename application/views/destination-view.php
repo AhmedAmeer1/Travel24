@@ -33,11 +33,13 @@
         content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
     <meta name="language" content="ES">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
+
+
     <title>
         <?php 
         if (isset($blog['title'])) {
             if ($blog['title'] === 'Heathorw Airport Transfer') {
-                echo 'Heathrow Airport Taxi Transfers | Quick, Reliable Heathrow Cabs & Instant Quotes'; 
+                echo 'Heathrow Airport Transfer | Reliable & Affordable Taxi Services - Travel24 Taxi'; 
             } else {
                 echo $blog['title']; // Otherwise, use the blog title
             }
@@ -46,6 +48,10 @@
         }
         ?>
     </title>
+
+
+
+
 
     <link rel="canonical" href="
        <?php 
