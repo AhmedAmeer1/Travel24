@@ -50,7 +50,34 @@
     </title>
 
 
-
+    <?php if (isset($blog['title']) && $blog['title'] === 'Heathorw Airport Transfer'): ?>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Travel24Taxi",
+      "description": "Reliable taxi service available in Heathrow for fast and convenient transportation.",
+      "telephone": "+442039822911",
+      "url": "https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.4700",
+        "longitude": "-0.4543"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Heathrow",
+        "addressCountry": "United Kingdom"
+      },
+      "openingHours": "Mo-Su 00:00-23:59",
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.instagram.com/travel24taxi/",
+        "https://web.facebook.com/travel24taxi/?_rdc=1&_rdr"
+      ]
+    }
+    </script>
+    <?php endif; ?>
 
 
     <link rel="canonical" href="
