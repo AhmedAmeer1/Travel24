@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Travel24 FAQs: Your Airport Transfer Questions Answered" />

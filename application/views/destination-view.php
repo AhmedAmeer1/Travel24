@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
     <meta name="author" content="">
@@ -77,6 +78,15 @@
       ]
     }
     </script>
+
+    <meta property="og:title" content="Heathrow Airport Transfer">
+    <meta property="og:description" content="Travel24 Taxi offers reliable Heathrow Airport transfer services with a diverse fleet, experienced drivers, and easy online booking for timely journeys.">
+    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
+    <meta property="og:url" content="https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_UK">
+    <meta property="og:site_name" content="travel 24 taxi">
+
     <?php endif; ?>
 
 

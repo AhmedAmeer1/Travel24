@@ -1,4 +1,5 @@
 <head>
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <style>
         body{
             background:#C3CAA0;

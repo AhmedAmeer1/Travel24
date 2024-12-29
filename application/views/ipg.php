@@ -9,7 +9,9 @@ if(file_exists("ipg-util.php")){
 ?>
 
 <html>
-<head><title>IPG Connect Sample for PHP</title></head>
+<head>
+    
+<title>IPG Connect Sample for PHP</title></head>
 <body>
 <p><h1>Order Form</h1>
 
