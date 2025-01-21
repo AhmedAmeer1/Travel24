@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Join Our Team: Drive withTravel24
-        content="Become a part of theTravel24 driving team. We're inviting professional drivers to register with us and join our network for airport transfers. Enjoy flexible hours, competitive earnings, and the chance to provide top-tier service across the UK." />
+        content=" Become a part of theTravel24 driving team. We're inviting professional drivers to register with us
+        and join our network for airport transfers. Enjoy flexible hours, competitive earnings, and the chance to
+        provide top-tier service across the UK." />
 
 
 
@@ -15,7 +17,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/drivers.css') ?>">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -23,8 +25,7 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
-    gtag('config', 'G-0B0RRH5ZD3');
+    gtag('config', 'G-XK1KGHX0F7');
     </script>
 
 </head>

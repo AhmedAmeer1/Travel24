@@ -28,7 +28,7 @@
 
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -36,8 +36,7 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
-    gtag('config', 'G-0B0RRH5ZD3');
+    gtag('config', 'G-XK1KGHX0F7');
     </script>
 
 </head>
@@ -829,16 +828,20 @@ form .error {
 
         const dateInputValue = $("#datepicker").val();
         const timeInputValue = $("#timepicker").val();
-        const { timeDifferenceMilliseconds, threeHoursInMilliseconds } = calculateTimeDifference(dateInputValue, timeInputValue);
+        const {
+            timeDifferenceMilliseconds,
+            threeHoursInMilliseconds
+        } = calculateTimeDifference(dateInputValue, timeInputValue);
 
         const hoursDifference = Math.floor(timeDifferenceMilliseconds / (1000 * 60 * 60));
         const minutesDifference = Math.floor((timeDifferenceMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
 
         if (timeDifferenceMilliseconds < threeHoursInMilliseconds) {
             alert(
-                ` The entered date and time is less than 3 hours .\nPlease give us 3 hours in advance for the booking or call us.`);
+                ` The entered date and time is less than 3 hours .\nPlease give us 3 hours in advance for the booking or call us.`
+                );
             return;
-        } 
+        }
 
 
         if ($("#exceed_time").val() == "1") {
@@ -881,7 +884,7 @@ form .error {
             if ($(this).attr('data-method') == "pay_cash") {
                 var payment_method = "cash";
                 console.log('inside pay_cash -------------')
-            } 
+            }
 
             console.log('payment_method')
             console.log(payment_method)

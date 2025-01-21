@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -22,25 +22,19 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
-    gtag('config', 'G-0B0RRH5ZD3');
+    gtag('config', 'G-XK1KGHX0F7');
     </script>
-    
-    <style>
-    /* Custom styles for the banner */
-    /* -------------AHMED CSS START------------------  */
 
- 
-    </style>
+
 
 </head>
 
 <body>
 
-<?php $this->load->view('common_components/header'); ?>
+    <?php $this->load->view('common_components/header'); ?>
 
 
-    <section >
+    <section>
 
         <div class="container-fluid banner-section">
             <img src="<?php echo base_url('assets/images/travel24/about_us.svg')?>" alt="about_us_banner"

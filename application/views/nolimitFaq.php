@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/faqs.css') ?>">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -25,8 +25,7 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
-    gtag('config', 'G-0B0RRH5ZD3');
+    gtag('config', 'G-XK1KGHX0F7');
     </script>
 
 </head>
@@ -79,10 +78,11 @@
 
                 </div>
                 <div class="get_in_touch">
-                <img src="<?php echo base_url('assets/images/get_in_touch.svg')?>" class="img-fluid" alt="get_in_touch">
-                    <h1 >Still have questions? </h1>
+                    <img src="<?php echo base_url('assets/images/get_in_touch.svg')?>" class="img-fluid"
+                        alt="get_in_touch">
+                    <h1>Still have questions? </h1>
                     <p class="">Everything you need to know about the taxi ride and bookings </p>
-                    <button> <a href="<?php echo base_url()?>contactUs" >Get in touch </a></button>
+                    <button> <a href="<?php echo base_url()?>contactUs">Get in touch </a></button>
                 </div>
 
             </div>

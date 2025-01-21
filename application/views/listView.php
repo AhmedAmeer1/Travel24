@@ -18,7 +18,7 @@
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/listView.css?v=4')?>" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -26,24 +26,26 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
-    gtag('config', 'G-0B0RRH5ZD3');
+    gtag('config', 'G-XK1KGHX0F7');
     </script>
-
     <style>
     .hide {
         display: none;
     }
-   .circle {
-   
-    display: inline-block;
-    width: 10px;  /* Adjust size as needed */
-    height: 10px;
-    background-color: white;  /* Adjust color as needed */
-    border-radius: 50%;  /* Makes the element circular */
-    margin-left: 5px;  /* Adds some space between the text and the circle */
-}
 
+    .circle {
+
+        display: inline-block;
+        width: 10px;
+        /* Adjust size as needed */
+        height: 10px;
+        background-color: white;
+        /* Adjust color as needed */
+        border-radius: 50%;
+        /* Makes the element circular */
+        margin-left: 5px;
+        /* Adds some space between the text and the circle */
+    }
     </style>
 </head>
 
@@ -163,13 +165,14 @@
                                         <div class="col-md-9 no-gutter">
                                             <div class="head">
                                                 <?php  if($vh->title == "MOBILITY VEHICLE"){?>
-                                                       <h5><?php echo $vh->title?> ( 
+                                                <h5><?php echo $vh->title?> (
 
-                                                         <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> "   class="disability_img" alt="disability">
-                                                         Vehicle)
-                                                        </h5>
+                                                    <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> "
+                                                        class="disability_img" alt="disability">
+                                                    Vehicle)
+                                                </h5>
                                                 <?php }  else { ?>
-                                                       <h5><?php echo $vh->title?> </h5>
+                                                <h5><?php echo $vh->title?> </h5>
                                                 <?php }  ?>
 
                                                 <ul>

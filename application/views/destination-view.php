@@ -54,33 +54,34 @@
     <?php if (isset($blog['title']) && $blog['title'] === 'Heathorw Airport Transfer'): ?>
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "TaxiService",
-      "name": "Travel24Taxi",
-      "description": "Reliable taxi service available in Heathrow for fast and convenient transportation.",
-      "telephone": "+442039822911",
-      "url": "https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer",
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "51.4700",
-        "longitude": "-0.4543"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Heathrow",
-        "addressCountry": "United Kingdom"
-      },
-      "openingHours": "Mo-Su 00:00-23:59",
-      "priceRange": "$$",
-      "sameAs": [
-        "https://www.instagram.com/travel24taxi/",
-        "https://web.facebook.com/travel24taxi/?_rdc=1&_rdr"
-      ]
+        "@context": "https://schema.org",
+        "@type": "TaxiService",
+        "name": "Travel24Taxi",
+        "description": "Reliable taxi service available in Heathrow for fast and convenient transportation.",
+        "telephone": "+442039822911",
+        "url": "https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "51.4700",
+            "longitude": "-0.4543"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Heathrow",
+            "addressCountry": "United Kingdom"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$",
+        "sameAs": [
+            "https://www.instagram.com/travel24taxi/",
+            "https://web.facebook.com/travel24taxi/?_rdc=1&_rdr"
+        ]
     }
     </script>
 
     <meta property="og:title" content="Heathrow Airport Transfer">
-    <meta property="og:description" content="Travel24 Taxi offers reliable Heathrow Airport transfer services with a diverse fleet, experienced drivers, and easy online booking for timely journeys.">
+    <meta property="og:description"
+        content="Travel24 Taxi offers reliable Heathrow Airport transfer services with a diverse fleet, experienced drivers, and easy online booking for timely journeys.">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
     <meta property="og:url" content="https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer">
     <meta property="og:type" content="website">
@@ -108,8 +109,9 @@
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=1')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/destination-view.css')?>" rel="stylesheet" />
+
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -117,8 +119,7 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
-    gtag('config', 'G-0B0RRH5ZD3');
+    gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
 

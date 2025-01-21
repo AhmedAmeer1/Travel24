@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/blogDetails.css') ?>">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -21,8 +21,7 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
-    gtag('config', 'G-0B0RRH5ZD3');
+    gtag('config', 'G-XK1KGHX0F7');
     </script>
 
 </head>
@@ -87,7 +86,7 @@
 
             <div class="related_posts">
                 <h1>Related Posts</h1>
-              
+
             </div>
 
             <div class="row mt-5 no-gutter-responsive">
@@ -132,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-              
+
 
 
 

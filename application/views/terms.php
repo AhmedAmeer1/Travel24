@@ -9,7 +9,7 @@
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/terms.css') ?>">
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0RRH5ZD3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -17,8 +17,7 @@
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
-    gtag('config', 'G-0B0RRH5ZD3');
+    gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
 
@@ -76,7 +75,7 @@
                     <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
                         class="terms_icon">
                     <p>
-                    Travel24 will not accept any responsibilities for missed flight or any other appointments.
+                        Travel24 will not accept any responsibilities for missed flight or any other appointments.
                         What ever reason eg; severe weather, traffic delays and accidents unforseen circumstances.
                     </p>
                 </div>
@@ -119,7 +118,7 @@
                     <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
                         class="terms_icon">
                     <p>
-                    Travel24 will not take any responsible for passengers take other alternative transport. (no
+                        Travel24 will not take any responsible for passengers take other alternative transport. (no
                         refundable for the cost) you have to wait for the driver or call the driver or the Travel24.
                     </p>
                 </div>
@@ -138,7 +137,7 @@
                     <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
                         class="terms_icon">
                     <p>
-                    Travel24 advise you to book the right size vehicle for passengers and luggages. If exceeding
+                        Travel24 advise you to book the right size vehicle for passengers and luggages. If exceeding
                         of luggages and passengers we wont take any responsibilities for that. if you are not sure about
                         the capacity of vehicle you booked with us please give us call 24/7 toTravel24.
                     </p>
@@ -148,7 +147,7 @@
                     <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
                         class="terms_icon">
                     <p>
-                    Travel24 use their own transport most of the time. Sometimes Travel24 do use third party
+                        Travel24 use their own transport most of the time. Sometimes Travel24 do use third party
                         company appropriate due to the volume of bookings we have.
                     </p>
                 </div>
