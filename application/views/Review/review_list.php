@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Customer Review </title>
-    <link rel="icon" type="img/png" sizes="32x32" href="https://travel24taxi.com/assets/images/travel24.jpg">
+    <link rel="icon" type="img/png" sizes="32x32" href="/favicon.ico">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css') ?>">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">

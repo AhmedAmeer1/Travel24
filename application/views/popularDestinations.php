@@ -10,7 +10,7 @@
     <meta name="title"
         content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
     <title>Popular Destinations</title>
-    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('assets/images/travel24.jpg')?>">
+    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
 
 
     <link href="<?= base_url('assets/css/destination.css?v=2') ?>" rel="stylesheet">
