@@ -239,7 +239,7 @@ class Index extends CI_Controller
 
 
 		if ($booking['dropOff_status'] == '1') {
-			$dropoff_cost = 5;
+			$dropoff_cost = 6;
 		} else {
 			$dropoff_cost = 0;
 		}

@@ -263,34 +263,11 @@ form .error {
         <section class="details-forms-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div id="login_div">
-                            <div class="login-box">
-                                <h1>Guest member login:</h1>
-                                <div class="form-group">
-                                    <input type="text" id="exist_id" class="formcontrol" placeholder="Your email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="formcontrol" id="exist_password"
-                                        placeholder="Password">
-                                </div>
-                                <!--<h2>Forgot Password?</h2>-->
-                                <button id="login">LOGIN</button>
-                                <img class="mt-4 mb-2"
-                                    src="<?php echo base_url('assets/images/travel24/online_cards.svg"')?>" alt="">
-                            </div>
-                            <!-- <div class="online-payment">
-                                <img class="mt-4 mb-2"
-                                    src="<?php echo base_url('assets/images/travel24/online_cards.svg"')?>" alt="">
-                            </div> -->
 
-                        </div>
-                        <div class="login-box hide" id="my_account_div">
-                            <button class="paycash-btn" id="my_account">My Account</button>
-                        </div>
-
-                    </div>
-                    <div class="col-md-8">
+               
+           
+          
+                    <div class="col-md-12">
                         <h1 class="d-head">New Users please complete details below</h1>
                         <div class="user-from">
                             <h2>CONTACT DETAILS</h2>
@@ -413,7 +390,7 @@ form .error {
                                             MEET AND GREET (£8) 30 MINUTES </label>&nbsp;&nbsp;&nbsp;
                                         <!-- <span id="meet_amount" class="text_amt" > </span> &nbsp; -->
                                         <input type="checkbox" id="drop_off" class="c-check"><label class="ml-2"> DROP
-                                            OFF (£5) </label>
+                                            OFF (£6) </label>
                                         <!-- <span id="drop_amount" class="text_amt"></span> -->
                                     </div>
 
@@ -1010,7 +987,7 @@ form .error {
                 var fare = parseFloat(fare) + 8;
             }
             if (drop_off == 1) {
-                var fare = parseFloat(fare) + 5;
+                var fare = parseFloat(fare) + 6;
             }
 
             $("#total_fare").text(parseFloat(child_seat_cost) + parseFloat(fare))
@@ -1021,7 +998,7 @@ form .error {
                 var fare = parseFloat(fare) + 8;
             }
             if (drop_off == 1) {
-                var fare = parseFloat(fare) + 5;
+                var fare = parseFloat(fare) + 6;
             }
             $("#total_fare").text(parseFloat(fare))
         }
@@ -1047,9 +1024,9 @@ form .error {
         if ($(this).prop("checked") == true) {
             $("#drop_amount").text("(+" + "£ 10)")
             //alert( "you need to pay extra £5 for avail this service")
-            $("#total_fare").text(parseFloat(fare) + 5)
+            $("#total_fare").text(parseFloat(fare) + 6)
         } else {
-            $("#total_fare").text(parseFloat(fare) - 5)
+            $("#total_fare").text(parseFloat(fare) - 6)
             $("#drop_amount").text("")
         }
 

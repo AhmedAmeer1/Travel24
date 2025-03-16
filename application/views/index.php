@@ -427,11 +427,11 @@
                                 find the perfect ride for you.
                             </p>
 
-                            <p>
+                            <!-- <p>
                                 We offer a selection of wheelchair-accessible vehicles, ensuring comfortable travel for
                                 passengers with disabilities.
                                 Take a glimpse at our extensive fleet tailored to meet diverse needs.
-                            </p>
+                            </p> -->
 
 
 
