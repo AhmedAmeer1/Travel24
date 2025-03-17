@@ -32,7 +32,6 @@
         ?>" />
     <meta name="title"
         content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
-    <meta name="language" content="ES">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
 
 

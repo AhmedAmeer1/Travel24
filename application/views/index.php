@@ -12,7 +12,6 @@
         content="Experience top-notch airport transfer services with Travel24. Catering to Gatwick, Heathrow, and Luton, we specialize in providing reliable, professional, and affordable travel solutions for both individuals and groups. Book now for a smooth and stress-free journey!" />
     <meta name="title"
         content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
-    <meta name="language" content="ES">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
     <title>TRAVEL 24 </title>
     <link rel="icon" type="img/png" sizes="32x32"  href="<?php echo base_url('/favicon.ico')?>">
