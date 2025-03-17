@@ -13,8 +13,8 @@
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/contactUs" />
     <link rel="stylesheet" href="<?= base_url('assets/css/contact.css') ?>">
-       <!-- Google tag (gtag.js) -->
-       <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -269,11 +269,6 @@
                         <textarea name="message" cols="" rows="" id="message" placeholder="Leave us a message..."
                             class="input_fields p-3 w-100 h-100 "></textarea>
                     </div>
-                    <!-- 
-                    <input name="Gcode" id="Gcode" size="10" maxlength="6" type="text"
-                        class="captcha validate[required] text-input" placeholder="CODE">
-                    <div class="capimage"><img src="<?php echo base_url('assets/themes/captcha.php')?>"
-                            alt="Enter captcha" title="Enter captcha" id="captcha"></div> -->
 
 
                     <button class="btnsubmit " name="" id="">Submit</button>
@@ -289,7 +284,7 @@
 
         <div class=" contact-detail-container d-flex flex-column flex-md-row justify-content-between">
             <div class="d-flex  p-xl-5">
-                <img src="<?php echo base_url('assets/images/travel24/email.svg')?>" alt="terms_icon"
+                <img src="<?php echo base_url('assets/images/travel24/email.svg')?>" alt="email icon"
                     class="contact_icon">
                 <div>
                     <h1>Email</h1>
@@ -297,7 +292,7 @@
                 </div>
             </div>
             <div class="d-flex mt-5 mt-md-0 p-xl-5">
-                <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="terms_icon"
+                <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="location icon"
                     class="contact_icon">
                 <div>
                     <h1>TRAVEL24 </h1>
@@ -309,7 +304,7 @@
                 </div>
             </div>
             <div class="d-flex mt-5 mt-md-0 p-xl-5">
-                <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="terms_icon"
+                <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="location icon"
                     class="contact_icon">
                 <div>
                     <h1>Nolimit Airport Cars Ltd</h1>
@@ -317,7 +312,7 @@
                 </div>
             </div>
             <div class="d-flex mt-5 mt-md-0 p-xl-5">
-                <img src="<?php echo base_url('assets/images/travel24/phone.svg')?>" alt="terms_icon"
+                <img src="<?php echo base_url('assets/images/travel24/phone.svg')?>" alt="call icon"
                     class="contact_icon">
                 <div>
                     <h1>Phone</h1>

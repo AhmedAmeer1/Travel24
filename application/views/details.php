@@ -136,10 +136,6 @@ form .error {
 
 
         </div>
-        <!-- <div class="container-fluid banner-section">
-            <img src="<?php echo base_url('assets/images/travel24/listView/banner.svg')?>" alt="about_us_banner"
-                class="banner-image">
-        </div> -->
 
 
         <section class="details-main-wrapper">
@@ -186,7 +182,7 @@ form .error {
                                             <div class="form-group">
                                                 <div class="picker-head">
                                                     <img src="<?php echo base_url('assets/images/calendar.png')?>"
-                                                        alt="">
+                                                        alt="calendar">
                                                     <label>Pickup Date</label>
                                                 </div>
                                                 <p class="picker"><input onChange="checkDate()" required type="text"
@@ -198,7 +194,7 @@ form .error {
                                         <div class="col-md-6 pickupTime-Height">
                                             <div class="form-group">
                                                 <div class="picker-head h-5">
-                                                    <img src="<?php echo base_url('assets/images/time.png')?>" alt="">
+                                                    <img src="<?php echo base_url('assets/images/time.png')?>" alt="time icon">
                                                     <label>Pickup Time</label>
                                                 </div>
                                                 <p class="picker"><input type="text" id="timepicker" autocomplete="off">
@@ -215,7 +211,7 @@ form .error {
 
                                         <h1><?php echo $vechicle_data->title;?>(
                                             <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> "
-                                                class="disability_img" alt="disability">
+                                                class="disability_img" alt="disability icon">
                                             Vehicle),
 
                                             <?php }  else { ?>
@@ -230,14 +226,14 @@ form .error {
                                             <div class="d-flex justify-content-between ">
                                                 <div class="d-flex justify-content-between ">
                                                     <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?>"
-                                                        class="img-fluid " alt="car">
+                                                        class="img-fluid " alt="passangers">
                                                     <h3 class="mt-2">
                                                         &nbsp;<?php echo $vechicle_data->noOfPassengers?>&nbsp;Passengers
                                                     </h3>
                                                 </div>
                                                 <div class="d-flex justify-content-between ">
                                                     <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?>"
-                                                        class="img-fluid " alt="car">
+                                                        class="img-fluid " alt="Suitcases">
                                                     <h3 class="mt-2 fs-2">
                                                         &nbsp;<?php echo $vechicle_data->noOfSuitcases?>&nbsp;Suitcases
                                                     </h3>

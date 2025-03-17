@@ -36,7 +36,7 @@
                 <h1>Terms & Conditions</h1>
 
                 <div class="d-flex ">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         You will receive a welcome email containing your login details and password on your first
@@ -50,7 +50,7 @@
 
 
                 <div class="d-flex">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         We will send your journey details, pick up instructions and driver phone number when the journey
@@ -63,7 +63,7 @@
 
 
                 <div class="d-flex ">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         We advise passenger to arrive 3 hours early as possible to the airport. Other places are depend
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="d-flex ">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         Travel24 will not accept any responsibilities for missed flight or any other appointments.
@@ -84,7 +84,7 @@
 
 
                 <div class="d-flex ">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         Unfortunately for vehicle breakdown we will arrange for another vehicle to get your destination.
@@ -97,7 +97,7 @@
 
 
                 <div class="d-flex">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         Please make sure you provide correctly date and time of departure or arrival in UK time zone.
@@ -106,7 +106,7 @@
 
 
                 <div class="d-flex ">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         Free of changeable date and time if you change the vehicle. Different price for what size
@@ -116,7 +116,7 @@
 
 
                 <div class="d-flex ">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         Travel24 will not take any responsible for passengers take other alternative transport. (no
@@ -125,7 +125,7 @@
                 </div>
 
                 <div class="d-flex ">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         If there is any change in journey times you must inform Travel24 as soon as possible if you
@@ -135,7 +135,7 @@
 
 
                 <div class="d-flex">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         Travel24 advise you to book the right size vehicle for passengers and luggages. If exceeding
@@ -145,7 +145,7 @@
                 </div>
 
                 <div class="d-flex">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         Travel24 use their own transport most of the time. Sometimes Travel24 do use third party

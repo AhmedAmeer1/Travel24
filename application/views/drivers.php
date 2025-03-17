@@ -35,14 +35,14 @@
 
     <section>
         <div class="container-fluid banner-section">
-            <img src="<?php echo base_url('assets/images/travel24/driver.svg')?>" alt="about_us_banner"
+            <img src="<?php echo base_url('assets/images/travel24/driver.svg')?>" alt="driver icon"
                 class="banner-image">
         </div>
         <div class=" drivers_wrapper background-gray">
             <div class="drivers_content_div">
                 <h1>Driver Application</h1>
                 <div class="d-flex ">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         We specialise in taxi transfers to and from all UK airports for both individuals and groups,
@@ -51,7 +51,7 @@
                     </p>
                 </div>
                 <div class="d-flex">
-                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms_icon"
+                    <img src="<?php echo base_url('assets/images/travel24/terms.svg')?>" alt="terms icon"
                         class="terms_icon">
                     <p>
                         Please download and complete the form below and send it back with all required documents by
@@ -63,7 +63,7 @@
         <div class="drivers_wrapper ">
             <div class="flex-container  ">
                 <div class="docs">
-                    <img src="<?php echo base_url('assets/images/doc-logo.png')?>" alt="terms_icon" class="">
+                    <img src="<?php echo base_url('assets/images/doc-logo.png')?>" alt="terms icon" class="">
                     <p>
                         Download and complete the provided Word document to start your driver application with us.
                     </p>
@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="docs">
-                    <img src="<?php echo base_url('assets/images/pdf-logo.png')?>" alt="terms_icon" class="">
+                    <img src="<?php echo base_url('assets/images/pdf-logo.png')?>" alt="terms icon" class="">
                     <p>
                         Download and complete the provided Word document to start your driver application with us.
                     </p>

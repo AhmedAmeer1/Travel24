@@ -52,7 +52,7 @@
 
         <div class="inner-header-wrapper text-center">
             <div class="container text-right nw-num d-md-block d-none">
-                 <a href="tel:02039822911"><img src="<?php echo base_url('assets/images/call.png')?>" alt=""> 02039822911</a>
+                 <a href="tel:02039822911"><img src="<?php echo base_url('assets/images/call.png')?>" alt="Call Icon"> 02039822911</a>
             </div>
             <div class="container text-center">
        

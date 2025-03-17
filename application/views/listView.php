@@ -58,17 +58,7 @@
                 <p>Passengers & Luggages</p>
             </div>
         </div>
-        <!-- <div class="container-fluid banner-section">
-            <img src="<?php echo base_url('assets/images/travel24/listView/banner.svg')?>" alt="about_us_banner"
-                class="banner-image">
-        </div> -->
-        <!-- <div class="inner-header-wrapper ">
-    
-            <div class="container text-center">
-       
-                <h1>Booking Form11 </h1>
-            </div>
-        </div> -->
+  
         <div class="way-points-option" style="display:none"><input type="checkbox" name="way_points[]" checked="true"
                 class="way_points" value="<?php echo $post_data['source']; ?>"> <?php echo $post_data['source'];?></div>
         <?php
@@ -158,7 +148,7 @@
                                     id="<?php echo "vehicle".$vh->vehicle_id?>">
                                     <div class="row">
                                         <div class="col-md-3 no-gutter">
-                                            <!-- <img src="assets/images/img-1.jpg" class="img-fluid" alt="Car"> -->
+                                         
                                             <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid"
                                                 alt="Car">
                                         </div>
@@ -187,7 +177,7 @@
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
-                                                                class="suitcases_img" alt="passanger">
+                                                                class="suitcases_img" alt="Suitcases">
                                                             <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
                                                         </div>
                                                     </li>
@@ -237,7 +227,7 @@
                                     id="<?php echo "vehicle".$vh->vehicle_id?>">
                                     <div class="row">
                                         <div class="col-md-3 no-gutter">
-                                            <!-- <img src="assets/images/img-1.jpg" class="img-fluid" alt="Car"> -->
+                                  
                                             <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid"
                                                 alt="Car">
                                         </div>
@@ -256,7 +246,7 @@
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
                                                             <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
-                                                                class="suitcases_img" alt="passanger">
+                                                                class="suitcases_img" alt="Suitcases">
                                                             <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
                                                         </div>
                                                     </li>
@@ -292,9 +282,7 @@
 
 
                         </div>
-                        <!-- <div class="text-center text-md-right">
-                            <button id="contact_details" class="btn enter-contact-btn" >Enter Contact Details <img src="../assets/images/arrow-right.png" alt="Arrow right"></button>
-                        </div> -->
+                    
                     </div>
                 </div>
             </div>

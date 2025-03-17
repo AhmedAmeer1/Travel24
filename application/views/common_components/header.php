@@ -15,7 +15,8 @@
         <div class=" row container-fluid pa-50 mt-4">
             <div class="col-md-4">
                 <a class="" href="<?php echo base_url()?>"><img
-                        src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" alt=""></a>
+                        src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" alt="travel 24 taxi SVG Logo
+"></a>
             </div>
             <div class="col-md-8">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,7 +32,7 @@
                         </li>
                         <li class="nav-item mt-1">
                             <a href="tel:02039822911 " class=" call-div">
-                                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="">
+                                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon">
                                 02039822911</a>
                         </li>
                     </ul>
@@ -47,11 +48,11 @@
             <div class="col-md-12">
                 <a class="" href="<?php echo base_url()?>">
                     <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid mt-3"
-                        alt="Logo"> </a>
+                        alt="travel 24 taxi SVG Logo"> </a>
                 <ul class="sub-header-res-new">
                     <li>
                         <a href="tel:02039822911">
-                            <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="call-icon">
+                            <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon">
                             02039822911</a>
                     </li>
                 </ul>
@@ -81,7 +82,7 @@
         </li>
         <li class=" mt-1">
             <a href="tel:02039822911 " class=" call-div">
-                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="">
+                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon">
                 02039822911</a>
         </li>
     </ul>

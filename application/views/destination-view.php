@@ -134,7 +134,7 @@
                             <div class="head">
                                 <h1>BOOK NOW</h1>
                                 <img src="../../assets/images/travel24/online_cards.svg" class="img-fluid image-width"
-                                    alt="Payement">
+                                    alt="Payment">
                             </div>
                             <?php 
                            $redirectUrl = (isset($customer_id) && !empty($customer_id))
@@ -236,12 +236,12 @@
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="../../assets/images/travel24/passangers.svg" class="img-fluid "
-                                            alt="car">
+                                            alt="passangers">
                                         <h3><?php echo $vh['noOfPassengers']; ?>&nbsp;Passengers</h3>
                                     </div>
                                     <div class="d-flex justify-content-between ">
                                         <img src="../../assets/images/travel24/Suitcases.svg" class="img-fluid "
-                                            alt="car">
+                                            alt="Suitcases">
                                         <h3><?php echo $vh['noOfSuitcases']; ?>&nbsp;Suitcases</h3>
                                     </div>
                                 </div>

@@ -10,7 +10,7 @@
             <h1 class="main-heading mt-5 mt-md-0">Location</h1>
             <div class="image-row">
                 <div class="image-container">
-                    <img src="assets/images/travel24/book_taxi/location.png" alt="Image 1">
+                    <img src="assets/images/travel24/book_taxi/location.png" alt="location">
                 </div>
             </div>
             <h2 class="sub-heading">Select Location and Destination</h2>
