@@ -1,9 +1,6 @@
 <!doctype html>
-<html>
-<style>
+<html lang="en">
 
-
-</style>
 
 <head>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />

@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
@@ -102,7 +102,7 @@
 
 
 
-    <link rel="icon" type="img/png" sizes="32x32"   href="<?php echo base_url('/favicon.ico')?>" >
+    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />

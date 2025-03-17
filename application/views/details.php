@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <style>
 .hide {
     display: none
