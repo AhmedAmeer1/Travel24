@@ -16,6 +16,7 @@
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
     <title>TRAVEL 24 </title>
     <link rel="icon" type="img/png" sizes="32x32"  href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="canonical" href="https://travel24taxi.com/" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />

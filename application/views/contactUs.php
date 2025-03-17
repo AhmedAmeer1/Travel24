@@ -9,12 +9,9 @@
     <meta name="title" content="Contac Travel24 for Airport Transfers and Inquiries" />
     <meta name="description"
         content="Reach out to Travel24 for all your airport transfer needs or any inquiries. Our team is ready to assist you with bookings, questions, and customized travel solutions." />
-
-
-
-
     <title>Contact us</title>
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="canonical" href="https://travel24taxi.com/contactUs" />
     <link rel="stylesheet" href="<?= base_url('assets/css/contact.css') ?>">
        <!-- Google tag (gtag.js) -->
        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>

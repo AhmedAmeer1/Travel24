@@ -11,6 +11,7 @@
 
     <title>About Us</title>
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="canonical" href="https://travel24taxi.com/aboutus" />
     <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
 
     <!-- Google tag (gtag.js) -->

@@ -8,11 +8,9 @@
     <meta name="title" content="Travel24 FAQs: Your Airport Transfer Questions Answered" />
     <meta name="description"
         content="Find answers to all your queries about Travel24' airport transfer services. Our FAQ section covers everything from booking processes to journey details, ensuring a smooth travel experience for every customer." />
-
-
-
     <title>faq</title>
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="canonical" href="https://travel24taxi.com/faq" />
     <!-- <link rel="stylesheet" href="./css/faqs.css"> -->
     <link rel="stylesheet" href="<?= base_url('assets/css/faqs.css') ?>">
 

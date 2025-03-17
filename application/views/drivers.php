@@ -10,10 +10,9 @@
         and join our network for airport transfers. Enjoy flexible hours, competitive earnings, and the chance to
         provide top-tier service across the UK." />
 
-
-
     <title>Drivers</title>
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="canonical" href="https://travel24taxi.com/drivers" />
     <link rel="stylesheet" href="<?= base_url('assets/css/drivers.css') ?>">
 
     <!-- Google tag (gtag.js) -->
