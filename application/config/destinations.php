@@ -8,7 +8,7 @@ $config['destinations'] = [
         'slug' => 'brighton-transfer',
         'heading' => 'Brighton Transfer',
         'subHeading' => 'Book a private-hire from Brighton to elsewhere in the UK through our Brighton  transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
-        'content1' => 'Our taxi service around Brighton would ensure you’re having a seamless ride  from Brighton to other locations in the UK and vise versa. ',
+        'content1' => 'Our taxi service around Brighton would ensure you’re having a seamless ride  from Brighton to other locations in the UK and vice versa. ',
         'content2' => ' Our reliable service is also affordable and easy to access. You can simply book your ride through our online booking system, and get your transfer quote instantly..',
         'content3' => ''
     ],
@@ -108,7 +108,7 @@ $config['destinations'] = [
         'slug' => 'southampton-transfer',
         'heading' => 'Southampton Transfer',
         'subHeading' => 'Book a private-hire from Southampton to  elsewhere in the UK through our Southampton Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle  (cars, cabs etc.), to serve the purpose of the passengers.',
-        'content1' => 'Our taxi service around Southampton would ensure you’re having a seamless ride from Southampton to other locations in the UK and vise versa ',
+        'content1' => 'Our taxi service around Southampton would ensure you’re having a seamless ride from Southampton to other locations in the UK and vice versa ',
         'content2' => '. Our reliable service is also affordable and easy to access. You can simply book your ride through our online booking system and get your transfer quote instantly on our website. ',
         'content3' => 'We provide tailored travel solutions for the specific needs of the passengers. Our variety of vehicles are designed to suit the luggage requirements of the passengers and our experienced drivers will make sure you reach the relevant destination in style.'
     ],

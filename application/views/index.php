@@ -14,13 +14,13 @@
         content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
     <title>TRAVEL 24 </title>
-    <link rel="icon" type="img/png" sizes="32x32"  href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=3')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=8')?>" rel="stylesheet" />
 
     <script type="application/ld+json">
     {
@@ -106,7 +106,7 @@
                     <div class="col-md-6 box-padding">
                         <div class="book-form-box">
                             <div class="head">
-                                <h1>BOOK NOW</h1>
+                                <span>BOOK NOW</span>
                                 <!-- <a href="<?php echo base_url('Payment/create_payment'); ?>" class="btn btn-primary">Pay with PayPal Test </a> -->
 
                                 <img src="assets/images/travel24/online_cards.svg" class="img-fluid image-width"
@@ -199,25 +199,27 @@
 
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
-                <h1>OUR FLEET</h1>
+                <h2>OUR FLEET</h2>
                 <div class="row mt-2 no-gutter-responsive">
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <img src="assets/images/travel24/fleet/SaloonCar.png" class="img-fluid w-100 py-4"
-                                    alt="car">
+                                    alt="sedan-style car">
                             </div>
                             <div class="text_card">
-                                <h2>SALOON CAR (X)</h2>
+                                <h3>SALOON CAR (X)</h3>
                                 <p>Up to 3 passengers plus 2 suitcases or 4 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="passangers">
-                                        <h3>&nbsp;3&nbsp;Passengers</h3>
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
+                                            alt="passangers">
+                                        <span>&nbsp;3&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="Suitcases">
-                                        <h3>&nbsp;2&nbsp;Suitcases</h3>
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
+                                            alt="Suitcases">
+                                        <span>&nbsp;2&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
@@ -228,19 +230,21 @@
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <img src="assets/images/travel24/fleet/EstateCar.png" class="img-fluid w-100 py-4"
-                                    alt="EstateCar">
+                                    alt="station wagon (estate car)">
                             </div>
                             <div class="text_card">
-                                <h2>ESTATE CAR (Comfort)</h2>
+                                <h3>ESTATE CAR (Comfort)</h3>
                                 <p>Up to 4 passengers plus 3 suitcases.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="passangers">
-                                        <h3>&nbsp;4&nbsp;Passengers</h3>
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
+                                            alt="passangers">
+                                        <span>&nbsp;4&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="Suitcases">
-                                        <h3>&nbsp;3&nbsp;Suitcases</h3>
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
+                                            alt="Suitcases">
+                                        <span>&nbsp;3&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
@@ -251,19 +255,22 @@
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <img src="assets/images/travel24/fleet/PeopleCarrier.png" class="img-fluid w-100 py-3"
-                                    alt="PeopleCarrier">
+                                    alt="3. people carrier (MPV or minivan)
+">
                             </div>
                             <div class="text_card">
-                                <h2>PEOPLE CARRIER (XL)</h2>
+                                <h3>PEOPLE CARRIER (XL)</h3>
                                 <p>Up to 5 passengers plus 4 suitcases or 6 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="passangers">
-                                        <h3>&nbsp;5&nbsp;Passengers</h3>
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
+                                            alt="passangers">
+                                        <span>&nbsp;5&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="Suitcases">
-                                        <h3>&nbsp;4&nbsp;Suitcases</h3>
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
+                                            alt="Suitcases">
+                                        <span>&nbsp;4&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
@@ -277,19 +284,21 @@
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <img src="assets/images/travel24/fleet/ExecutiveCar.png" class="img-fluid w-100 py-4"
-                                    alt="ExecutiveCar">
+                                    alt="executive car">
                             </div>
                             <div class="text_card">
-                                <h2>EXECUTIVE CAR (Executive)</h2>
+                                <h3>EXECUTIVE CAR (Executive)</h3>
                                 <p>Up to 3 passengers plus 2 suitcases or 4 passengers plus hand luggage</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="passangers">
-                                        <h3>&nbsp;3&nbsp;Passengers</h3>
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
+                                            alt="passangers">
+                                        <span>&nbsp;3&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="Suitcases">
-                                        <h3>&nbsp;2&nbsp;Suitcases</h3>
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
+                                            alt="Suitcases">
+                                        <span>&nbsp;2&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
@@ -303,19 +312,21 @@
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <img src="assets/images/travel24/fleet/8SeaterMiniBus.png" class="img-fluid w-100 "
-                                    alt="8SeaterMiniBus">
+                                    alt="8 Seater minibus">
                             </div>
                             <div class="text_card">
-                                <h2>8 SEATER MINIBUS (Van)</h2>
+                                <h3>8 SEATER MINIBUS (Van)</h3>
                                 <p>8 passengers plus up to 7 suitcases </p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="passangers">
-                                        <h3>&nbsp;8&nbsp;Passengers</h3>
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
+                                            alt="passangers">
+                                        <span>&nbsp;8&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="Suitcases">
-                                        <h3>&nbsp;7&nbsp;Suitcases</h3>
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
+                                            alt="Suitcases">
+                                        <span>&nbsp;7&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
@@ -328,19 +339,21 @@
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <img src="assets/images/travel24/fleet/ExecutivePeopleCarrier.png"
-                                    class="img-fluid w-100 py-2" alt="ExecutivePeopleCarrier">
+                                    class="img-fluid w-100 py-2" alt="Executive People Carrier">
                             </div>
                             <div class="text_card">
-                                <h2>EXECUTIVE PEOPLE CARRIER (Luxury)</h2>
+                                <h3>EXECUTIVE PEOPLE CARRIER (Luxury)</h3>
                                 <p>Up to 5 passengers plus 4 suitcases or 6 passengers plus hand luggage.</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="passangers">
-                                        <h3>&nbsp;5&nbsp;Passengers</h3>
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
+                                            alt="passangers">
+                                        <span>&nbsp;5&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="Suitcases">
-                                        <h3>&nbsp;4&nbsp;Suitcases</h3>
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
+                                            alt="Suitcases">
+                                        <span>&nbsp;4&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
@@ -353,22 +366,24 @@
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <img src="assets/images/travel24/fleet/MobilityVehicle.png" class="img-fluid w-100 py-4"
-                                    alt="MobilityVehicle">
+                                    alt="Mobility Vehicle">
                             </div>
                             <div class="text_card">
-                                <h2>MOBILITY VEHICLE ( <img src="assets/images/travel24/fleet/disability.png"
-                                        class="disability_img" alt="disability"> Vehicle)</h2>
+                                <h3>MOBILITY VEHICLE ( <img src="assets/images/travel24/fleet/disability.png"
+                                        class="disability_img" alt="disability"> Vehicle)</h3>
                                 <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
                                     wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages
                                     .</p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid " alt="passangers">
-                                        <h3>&nbsp;4&nbsp;Passengers</h3>
+                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
+                                            alt="passangers">
+                                        <span>&nbsp;4&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid " alt="Suitcases">
-                                        <h3>&nbsp;1&nbsp;Suitcases</h3>
+                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
+                                            alt="Suitcases">
+                                        <span>&nbsp;1&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
@@ -389,8 +404,9 @@
                     <div class="col-md-8">
                         <div class="list-details-box">
                             <div class="d-flex justify-content-between flag-div">
-                                <h4>Your destination is our goal</h4>
-                                <img src="assets/images/travel24/england.svg" class="img-fluid " alt="car">
+                                <h2>Your journey is our mission </h2>
+                                <img src="assets/images/travel24/england.svg" class="img-fluid "
+                                    alt="flag of the United Kingdom">
 
                             </div>
 

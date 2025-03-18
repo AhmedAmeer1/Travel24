@@ -44,7 +44,7 @@
 	align-items: center;
 }
 
-.limits-banner .book-form-box .head h1 {
+.limits-banner .book-form-box .head span {
 	color: black;
 	font-size: 22px;
 	font-weight: 600;
@@ -225,7 +225,7 @@
 	.limits-banner .book-form-box {
 		margin-top: 5px;
 	}
-	.limits-banner .book-form-box .head h1 {
+	.limits-banner .book-form-box .head span {
 		font-size: 20px;
 	}
 	.limits-banner .book-form-box .content {
@@ -284,7 +284,7 @@
 	width: 100%;
 	/* padding: 50px 0; */
 }
-.carlist-wrapper h1 {
+.carlist-wrapper h2 {
 	color: #155a94;
 	text-align: center;
 	font-size: 28px;
@@ -349,13 +349,13 @@
 	line-height: 24px;
 }
 
-.text_card h2 {
+.text_card h3 {
 	color: #101828;
 	font-size: 22px;
 	font-family: "helvet";
 }
 
-.text_card h3 {
+.text_card span {
 	color: #004c78;
 	font-size: 16px;
 	font-weight: 500;
@@ -368,7 +368,7 @@
 	padding: 20px 46px 20px 78px;
 }
 
-.carlist-wrapper .list-details-box h4 {
+.carlist-wrapper .list-details-box h2 {
 	color: #004c78;
 	font-size: 30px;
 	font-weight: 600;

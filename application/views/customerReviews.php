@@ -13,7 +13,7 @@
     <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/customerReviews" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=3') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=8') ?>">
       <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
@@ -37,7 +37,7 @@
         </div>
 
         <section class="subpagecontent my-5 ">
-            <h1 class="reviewshead">What our customers say</h1>
+            <h2 class="reviewshead">What our customers say</h2>
             <p class="sub-heading">Discover why our passengers applaud the excellence of our taxi service.</p>
 
             <!-- Outer Container with Padding -->

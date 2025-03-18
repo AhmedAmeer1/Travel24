@@ -106,8 +106,8 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=1')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/destination-view.css')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=7')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/destination-view.css?v=6')?>" rel="stylesheet" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
@@ -132,7 +132,7 @@
                     <div class="col-md-6 box-padding">
                         <div class="book-form-box">
                             <div class="head">
-                                <h1>BOOK NOW</h1>
+                                <span>BOOK NOW</span>
                                 <img src="../../assets/images/travel24/online_cards.svg" class="img-fluid image-width"
                                     alt="Payment">
                             </div>
@@ -220,7 +220,7 @@
         </section>
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
-                <h1>OUR FLEET</h1>
+                <h2>OUR FLEET</h2>
                 <div class="row mt-2 no-gutter-responsive">
                     <?php
                          foreach($fleet as $vh){?>
@@ -231,18 +231,18 @@
                                     class="img-fluid w-100 py-4" alt="car">
                             </div>
                             <div class="text_card">
-                                <h2><?php echo $vh['title']; ?></h2>
+                                <h3><?php echo $vh['title']; ?></h3>
                                 <p> <?php echo $vh['description']; ?></p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
                                         <img src="../../assets/images/travel24/passangers.svg" class="img-fluid "
                                             alt="passangers">
-                                        <h3><?php echo $vh['noOfPassengers']; ?>&nbsp;Passengers</h3>
+                                        <span><?php echo $vh['noOfPassengers']; ?>&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
                                         <img src="../../assets/images/travel24/Suitcases.svg" class="img-fluid "
                                             alt="Suitcases">
-                                        <h3><?php echo $vh['noOfSuitcases']; ?>&nbsp;Suitcases</h3>
+                                        <span><?php echo $vh['noOfSuitcases']; ?>&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>

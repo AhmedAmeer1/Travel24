@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=3') ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=2') ?>">
 
 <body>
 
@@ -8,7 +8,7 @@
 
 
         <section class="subpagecontent my-5">
-            <h1 class="reviewshead">What our customers say</h1>
+            <h2 class="reviewshead">What our customers say</h2>
             <p class="sub-heading">Discover why our passengers applaud the excellence of our taxi service.</p>
 
             <!-- Outer Container with Padding -->

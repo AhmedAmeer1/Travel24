@@ -63,7 +63,7 @@
 
 
             <span class="footer-p2 mt-3">
-                © Travel24 2017 - 2024
+                © Travel24 2017 - 2025
             </span>
 
 
