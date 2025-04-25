@@ -170,6 +170,12 @@
                     </i><span>Pay Types</span></a>
                    
                 </li>
+
+                <li><a href="<?= base_url('GenerateInvoice') ?>">
+                    <i class="fa fa-bars" aria-hidden="true">
+                    </i><span>Generate Invoice</span></a>
+                   
+                </li>
             <?php if($this->session->userdata['user_type'] == 1){ ?>
                 <li><a href="<?= base_url('Settings') ?>">
                     <i class="fa fa-wrench" aria-hidden="true">
