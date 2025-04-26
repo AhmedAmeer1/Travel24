@@ -147,7 +147,7 @@
             <td>£6.00</td>
           </tr>
           <tr>
-            <td class="text-right"><strong>Total</strong></td>
+            <td class="text-left"><strong>Total</strong></td>
             <td id="total"></td>
           </tr>
         </tbody>
