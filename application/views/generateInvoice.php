@@ -69,6 +69,16 @@
             text-align: center;
             margin-top: 10px;
         }
+
+        @media print {
+            .container, #invoice {
+                page-break-inside: avoid;
+            }
+
+            .footer {
+                page-break-inside: avoid;
+            }
+        }
     </style>
 </head>
 
@@ -81,11 +91,8 @@
             <label>Booking ID</label>
             <input type="text" id="bookingId" placeholder="Enter Booking ID" required>
 
-            <label>First Name</label>
-            <input type="text" id="firstName" required>
-
-            <label>Last Name</label>
-            <input type="text" id="lastName" required>
+            <label>Full Name</label>
+            <input type="text" id="fullName" required>
 
             <label>Email</label>
             <input type="email" id="email" required>
@@ -108,6 +115,13 @@
             <label>Taxi Fare (£)</label>
             <input type="number" id="fare" placeholder="Enter Fare Manually" required>
 
+            <label>Payment Type</label>
+            <select id="paymentType" required>
+                <option value="Cash">Cash</option>
+                <option value="Card">Card</option>
+                <option value="PayPal">PayPal</option>
+            </select>
+
             <button type="submit" class="btn">Download PDF Invoice</button>
         </form>
     </div>
@@ -115,8 +129,7 @@
     <div id="invoice-preview" style="display:none;">
         <div id="invoice" style="padding:30px; font-family:Arial;">
             <div style="text-align:center; margin-bottom:20px;">
-                <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" alt="Travel24 Logo"
-                    style="max-width:180px;">
+                <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" alt="Travel24 Logo" style="max-width:180px;">
             </div>
 
             <h1 style="text-align:center;">Travel24 Taxi Invoice</h1>
@@ -131,12 +144,16 @@
                     <td class="text-right"><strong>Time:</strong> <span id="time"></span></td>
                 </tr>
                 <tr>
-                    <td><strong>Drop:</strong> <span id="c-drop"></span></td>
+                    <td><strong>Payment Type:</strong> <span id="c-payment"></span></td>
                     <td class="text-right"><strong>Phone:</strong> <span id="c-phone"></span></td>
                 </tr>
                 <tr>
                     <td><strong>Pickup:</strong> <span id="c-pickup"></span></td>
                     <td class="text-right"><strong>Email:</strong> <span id="c-email"></span></td>
+                </tr>
+                <tr>
+                    <td><strong>Drop:</strong> <span id="c-drop"></span></td>
+                    <td></td>
                 </tr>
             </table>
 
@@ -161,14 +178,14 @@
 
             <p style="text-align:center; margin-top:30px;">Thank you for riding with us!</p>
 
-            <div style="text-align:center; margin-top:20px;">
+            <div style="text-align:center; margin-top:20px;" class="footer">
                 <p><strong>Any inquiries please contact us</strong><br><br>
                     Tel: 02039822911 &nbsp;&nbsp;|&nbsp;&nbsp;
                     Email: <a href="mailto:info@travel24taxi.com">info@travel24taxi.com</a>
                 </p>
 
                 <p class="address">
-                    <strong> Address:</strong> Regus Maidenhead, Concorde Park. Concorde Road, Maidenhead, Berkshire, SL6 4FJ
+                    <strong>Address:</strong> Regus Maidenhead, Concorde Park. Concorde Road, Maidenhead, Berkshire, SL6 4FJ
                 </p>
 
                 <p style="margin-top:20px;"><strong>Stay in touch</strong></p>
@@ -194,24 +211,37 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
-        // Populate time options with 5-min gaps
         window.onload = function() {
+            // Populate time options with AM/PM format
             const timeInput = document.getElementById('timeInput');
             for (let h = 0; h < 24; h++) {
                 for (let m = 0; m < 60; m += 5) {
-                    const hour = h.toString().padStart(2, '0');
-                    const minute = m.toString().padStart(2, '0');
-                    const timeOption = `${hour}:${minute}`;
+                    const rawHour = h;
+                    const hour12 = (rawHour % 12) || 12; // 12-hour format
+                    const ampm = rawHour < 12 ? 'AM' : 'PM';
+                    const hourStr = hour12.toString().padStart(2, '0');
+                    const minuteStr = m.toString().padStart(2, '0');
+                    const timeOption = `${hourStr}:${minuteStr} ${ampm}`;
+                    
                     const option = document.createElement('option');
-                    option.value = timeOption;
-                    option.text = timeOption;
+                    option.value = `${rawHour.toString().padStart(2, '0')}:${minuteStr}`; // machine-readable
+                    option.text = timeOption; // user display
                     timeInput.appendChild(option);
                 }
             }
+
+            // Fix for Date Input
+            const dateInput = document.getElementById('dateInput');
+            dateInput.addEventListener('focus', function() {
+                this.showPicker && this.showPicker();
+            });
+            dateInput.addEventListener('click', function() {
+                this.showPicker && this.showPicker();
+            });
         }
 
         function generateInvoice(event) {
-            event.preventDefault(); // Prevent form real submit
+            event.preventDefault(); // Prevent form submit
 
             const form = document.getElementById('invoiceForm');
             if (!form.checkValidity()) {
@@ -220,59 +250,37 @@
             }
 
             const bookingId = document.getElementById('bookingId').value;
-            const firstName = document.getElementById('firstName').value;
-            const lastName = document.getElementById('lastName').value;
+            const fullName = document.getElementById('fullName').value;
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
             const pickup = document.getElementById('pickup').value;
             const drop = document.getElementById('drop').value;
             const dateInput = document.getElementById('dateInput').value;
-            const timeInput = document.getElementById('timeInput').value;
+            const selectedOption = document.getElementById('timeInput').selectedOptions[0];
+            const formattedTime = selectedOption.text; // already in AM/PM
             const fare = parseFloat(document.getElementById('fare').value);
-
-            // Format time as AM/PM
-            const [hour, minute] = timeInput.split(':');
-            let amPm = 'AM';
-            let formattedHour = parseInt(hour);
-
-            if (formattedHour >= 12) {
-                amPm = 'PM';
-                if (formattedHour > 12) formattedHour -= 12;
-            } else if (formattedHour === 0) {
-                formattedHour = 12;
-            }
-
-            const formattedTime = `${formattedHour}:${minute} ${amPm}`;
-
-            const total = fare;
+            const paymentType = document.getElementById('paymentType').value;
 
             document.getElementById('booking-id').textContent = bookingId;
-            document.getElementById('c-name').textContent = `${firstName} ${lastName}`;
+            document.getElementById('c-name').textContent = fullName;
             document.getElementById('c-email').textContent = email;
             document.getElementById('c-phone').textContent = phone;
             document.getElementById('c-pickup').textContent = pickup;
             document.getElementById('c-drop').textContent = drop;
             document.getElementById('date').textContent = dateInput;
             document.getElementById('time').textContent = formattedTime;
+            document.getElementById('c-payment').textContent = paymentType;
             document.getElementById('amount-fare').textContent = `£${fare.toFixed(2)}`;
-            document.getElementById('total').textContent = `£${total.toFixed(2)}`;
+            document.getElementById('total').textContent = `£${fare.toFixed(2)}`;
 
             const element = document.getElementById('invoice');
             html2pdf().set({
                 margin: 0,
                 filename: 'taxi-invoice.pdf',
-                image: {
-                    type: 'jpeg',
-                    quality: 0.98
-                },
-                html2canvas: {
-                    scale: 2
-                },
-                jsPDF: {
-                    unit: 'mm',
-                    format: 'a4',
-                    orientation: 'portrait'
-                }
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
             }).from(element).save();
         }
     </script>
