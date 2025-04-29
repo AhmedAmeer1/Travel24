@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Taxi Invoice Generator</title>
     <style>
         body {
@@ -12,7 +12,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             background: white;
             padding: 30px;
             margin: auto;
@@ -23,9 +23,19 @@
             text-align: center;
         }
 
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-group {
+            flex: 1 1 calc(50% - 20px);
+        }
+
         label {
             display: block;
-            margin-top: 15px;
+            margin-bottom: 5px;
             font-weight: bold;
         }
 
@@ -73,7 +83,6 @@
             .container, #invoice {
                 page-break-inside: avoid;
             }
-
             .footer {
                 page-break-inside: avoid;
             }
@@ -83,180 +92,192 @@
 
 <body>
 
-    <div class="container">
-        <h2>Travel24 Taxi Invoice Generator</h2>
+<div class="container">
+    <h2>Travel24 Taxi Invoice Generator</h2>
 
-        <form id="invoiceForm" onsubmit="generateInvoice(event)">
+    <form id="invoiceForm" onsubmit="generateInvoice(event)">
+        <div class="form-group">
             <label>Booking ID</label>
             <input type="text" id="bookingId" placeholder="Enter Booking ID" required>
+        </div>
 
+        <div class="form-group">
             <label>Full Name</label>
             <input type="text" id="fullName" required>
+        </div>
 
+        <div class="form-group">
             <label>Email</label>
             <input type="email" id="email" required>
+        </div>
 
+        <div class="form-group">
             <label>Phone Number</label>
             <input type="text" id="phone" required>
+        </div>
 
+        <div class="form-group">
             <label>Pickup Location</label>
             <input type="text" id="pickup" required>
+        </div>
 
+        <div class="form-group">
             <label>Drop Location</label>
             <input type="text" id="drop" required>
+        </div>
 
+        <div class="form-group">
             <label>Date & Time</label>
             <input type="text" id="dateTimeInput" placeholder="Enter Date and Time (e.g., 2025-04-28 03:30 PM)" required>
+        </div>
 
+        <div class="form-group">
             <label>Taxi Fare (£)</label>
             <input type="text" id="fare" placeholder="Enter Fare Manually" required>
+        </div>
 
+        <div class="form-group">
             <label>Payment Type</label>
             <select id="paymentType" required>
                 <option value="Cash">Cash</option>
                 <option value="Card">Card</option>
                 <option value="PayPal">PayPal</option>
             </select>
+        </div>
 
+        <div style="flex: 1 1 100%; text-align: center;">
             <button type="submit" class="btn">Download PDF Invoice</button>
-        </form>
-    </div>
+        </div>
+    </form>
+</div>
 
-    <div id="invoice-preview" style="display:none;">
-        <div id="invoice" style="padding:30px; font-family:Arial;">
-            <div style="text-align:center; margin-bottom:20px;">
-                <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" alt="Travel24 Logo" style="max-width:180px;">
-            </div>
+<!-- Invoice Preview (Hidden) -->
+<div id="invoice-preview" style="display:none;">
+    <div id="invoice" style="padding:30px; font-family:Arial;">
+        <div style="text-align:center; margin-bottom:20px;">
+            <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" alt="Travel24 Logo" style="max-width:180px;">
+        </div>
 
-            <h1 style="text-align:center;">Travel24 Taxi Invoice</h1>
+        <h1 style="text-align:center;">Travel24 Taxi Invoice</h1>
 
-            <table style="width:100%; margin-bottom:20px;">
-                <tr>
-                    <td><strong>Booking ID:</strong> <span id="booking-id"></span></td>
-                    <td class="text-right"><strong>Date & Time:</strong> <span id="date"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>Customer:</strong> <span id="c-name"></span></td>
-                    <td class="text-right"><strong>Phone:</strong> <span id="c-phone"></span></td>
-                </tr>
-                <tr>
-                    <td>
-                    <strong>Drop:</strong> <span id="c-drop"></span>
-                  
-                
-                
-                </td>
-                    <td class="text-right"><strong>Email:</strong> <span id="c-email"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>Pickup:</strong> <span id="c-pickup"></span></td>
-                    <td class="text-right">
-                        
-                    <strong>Payment Type:</strong> <span id="c-payment"></span>
-              
-                
-                
-                
-                </td>
-                </tr>
-            </table>
+        <table style="width:100%; margin-bottom:20px;">
+            <tr>
+                <td><strong>Booking ID:</strong> <span id="booking-id"></span></td>
+                <td class="text-right"><strong>Date & Time:</strong> <span id="date"></span></td>
+            </tr>
+            <tr>
+                <td><strong>Customer:</strong> <span id="c-name"></span></td>
+                <td class="text-right"><strong>Phone:</strong> <span id="c-phone"></span></td>
+            </tr>
+            <tr>
+                <td><strong>Drop:</strong> <span id="c-drop"></span></td>
+                <td class="text-right"><strong>Email:</strong> <span id="c-email"></span></td>
+            </tr>
+            <tr>
+                <td><strong>Pickup:</strong> <span id="c-pickup"></span></td>
+                <td class="text-right"><strong>Payment Type:</strong> <span id="c-payment"></span></td>
+            </tr>
+        </table>
 
-            <table style="width:100%; border-collapse:collapse;" border="1" cellpadding="10">
-                <thead style="background:#f0f0f0;">
-                    <tr>
-                        <th>Description</th>
-                        <th>Amount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Taxi Fare</td>
-                        <td id="amount-fare"></td>
-                    </tr>
-                    <tr>
-                        <td class="text-left"><strong>Total</strong></td>
-                        <td id="total"></td>
-                    </tr>
-                </tbody>
-            </table>
+        <table style="width:100%; border-collapse:collapse;" border="1" cellpadding="10">
+            <thead style="background:#f0f0f0;">
+            <tr>
+                <th>Description</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Taxi Fare</td>
+                <td id="amount-fare"></td>
+            </tr>
+            <tr>
+                <td class="text-left"><strong>Total</strong></td>
+                <td id="total"></td>
+            </tr>
+            </tbody>
+        </table>
 
-            <p style="text-align:center; margin-top:30px;">Thank you for riding with us!</p>
+        <p style="text-align:center; margin-top:30px;">Thank you for riding with us!</p>
 
-            <div style="text-align:center; margin-top:20px;" class="footer">
-                <p><strong>Any inquiries please contact us</strong><br><br>
-                    Tel: 02039822911 &nbsp;&nbsp;|&nbsp;&nbsp;
-                    Email: <a href="mailto:info@travel24taxi.com">info@travel24taxi.com</a>
-                </p>
+        <div style="text-align:center; margin-top:20px;" class="footer">
+            <p><strong>Any inquiries please contact us</strong><br><br>
+                Tel: 02039822911 &nbsp;&nbsp;|&nbsp;&nbsp;
+                Email: <a href="mailto:info@travel24taxi.com">info@travel24taxi.com</a>
+            </p>
 
-                <p class="address">
-                    <strong>Address:</strong> Regus Maidenhead, Concorde Park. Concorde Road, Maidenhead, Berkshire, SL6 4FJ
-                </p>
+            <p class="address">
+                <strong>Address:</strong> Regus Maidenhead, Concorde Park. Concorde Road, Maidenhead, Berkshire, SL6 4FJ
+            </p>
 
-                <p style="margin-top:20px;"><strong>Stay in touch</strong></p>
+            <p style="margin-top:20px;"><strong>Stay in touch</strong></p>
 
-                <p>
-                    <a href="https://facebook.com/travel24taxi" target="_blank" style="margin-right:10px;">
-                        <img src="<?php echo base_url('assets/images/travel24/facebook.svg')?>" width="24" alt="Facebook">
-                    </a>
-                    <a href="https://twitter.com/travel24taxi" target="_blank" style="margin-right:10px;">
-                        <img src="<?php echo base_url('assets/images/travel24/x_logo.svg')?>" width="24" alt="Twitter">
-                    </a>
-                    <a href="https://instagram.com/travel24taxi" target="_blank">
-                        <img src="<?php echo base_url('assets/images/travel24/instagram.jpg')?>" width="24" alt="Instagram">
-                    </a>
-                </p>
+            <p>
+                <a href="https://facebook.com/travel24taxi" target="_blank" style="margin-right:10px;">
+                    <img src="<?php echo base_url('assets/images/travel24/facebook.svg')?>" width="24" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/travel24taxi" target="_blank" style="margin-right:10px;">
+                    <img src="<?php echo base_url('assets/images/travel24/x_logo.svg')?>" width="24" alt="Twitter">
+                </a>
+                <a href="https://instagram.com/travel24taxi" target="_blank">
+                    <img src="<?php echo base_url('assets/images/travel24/instagram.jpg')?>" width="24" alt="Instagram">
+                </a>
+            </p>
 
-                <p style="margin-top:10px;">
-                    View Website: <a href="https://travel24taxi.com/" target="_blank">https://travel24taxi.com/</a>
-                </p>
-            </div>
+            <p style="margin-top:10px;">
+                View Website: <a href="https://travel24taxi.com/" target="_blank">https://travel24taxi.com/</a>
+            </p>
         </div>
     </div>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script>
-        function generateInvoice(event) {
-            event.preventDefault(); // Prevent form submit
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
-            const form = document.getElementById('invoiceForm');
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
-            }
-
-            const bookingId = document.getElementById('bookingId').value;
-            const fullName = document.getElementById('fullName').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const pickup = document.getElementById('pickup').value;
-            const drop = document.getElementById('drop').value;
-            const dateTimeInput = document.getElementById('dateTimeInput').value;
-            const fare = document.getElementById('fare').value;
-            const paymentType = document.getElementById('paymentType').value;
-
-            document.getElementById('booking-id').textContent = bookingId;
-            document.getElementById('c-name').textContent = fullName;
-            document.getElementById('c-email').textContent = email;
-            document.getElementById('c-phone').textContent = phone;
-            document.getElementById('c-pickup').textContent = pickup;
-            document.getElementById('c-drop').textContent = drop;
-            document.getElementById('date').textContent = dateTimeInput;
-            document.getElementById('c-payment').textContent = paymentType;
-            document.getElementById('amount-fare').textContent = `£${fare}`;
-            document.getElementById('total').textContent = `£${fare}`;
-
-            const element = document.getElementById('invoice');
-            html2pdf().set({
-                margin: 0,
-                filename: 'taxi-invoice.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-            }).from(element).save();
+<script>
+    function breakLongText(text, limit) {
+        if (!text) return "";
+        let result = "";
+        for (let i = 0; i < text.length; i += limit) {
+            result += text.substring(i, i + limit) + "<br>";
         }
-    </script>
+        return result;
+    }
+
+    function generateInvoice(event) {
+        event.preventDefault();
+
+        const bookingId = document.getElementById('bookingId').value;
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const pickup = document.getElementById('pickup').value;
+        const drop = document.getElementById('drop').value;
+        const dateTimeInput = document.getElementById('dateTimeInput').value;
+        const fare = document.getElementById('fare').value;
+        const paymentType = document.getElementById('paymentType').value;
+
+        document.getElementById('booking-id').innerHTML = breakLongText(bookingId, 30);
+        document.getElementById('c-name').innerHTML = breakLongText(fullName, 30);
+        document.getElementById('c-email').innerHTML = breakLongText(email, 30);
+        document.getElementById('c-phone').innerHTML = breakLongText(phone, 30);
+        document.getElementById('c-pickup').innerHTML = breakLongText(pickup, 30);
+        document.getElementById('c-drop').innerHTML = breakLongText(drop, 30);
+        document.getElementById('date').innerHTML = breakLongText(dateTimeInput, 30);
+        document.getElementById('c-payment').innerHTML = breakLongText(paymentType, 30);
+        document.getElementById('amount-fare').innerHTML = `£${fare}`;
+        document.getElementById('total').innerHTML = `£${fare}`;
+
+        const element = document.getElementById('invoice');
+        html2pdf().set({
+            margin: 0,
+            filename: 'taxi-invoice.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+        }).from(element).save();
+    }
+</script>
 
 </body>
-
 </html>
