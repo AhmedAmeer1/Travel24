@@ -32,7 +32,6 @@
         input[type="text"],
         input[type="email"],
         input[type="number"],
-        input[type="date"],
         select {
             width: 100%;
             padding: 8px;
@@ -106,14 +105,11 @@
             <label>Drop Location</label>
             <input type="text" id="drop" required>
 
-            <label>Date</label>
-            <input type="date" id="dateInput" required>
-
-            <label>Time</label>
-            <select id="timeInput" required></select>
+            <label>Date & Time</label>
+            <input type="text" id="dateTimeInput" placeholder="Enter Date and Time (e.g., 2025-04-28 03:30 PM)" required>
 
             <label>Taxi Fare (£)</label>
-            <input type="number" id="fare" placeholder="Enter Fare Manually" required>
+            <input type="text" id="fare" placeholder="Enter Fare Manually" required>
 
             <label>Payment Type</label>
             <select id="paymentType" required>
@@ -137,23 +133,31 @@
             <table style="width:100%; margin-bottom:20px;">
                 <tr>
                     <td><strong>Booking ID:</strong> <span id="booking-id"></span></td>
-                    <td class="text-right"><strong>Date:</strong> <span id="date"></span></td>
+                    <td class="text-right"><strong>Date & Time:</strong> <span id="date"></span></td>
                 </tr>
                 <tr>
                     <td><strong>Customer:</strong> <span id="c-name"></span></td>
-                    <td class="text-right"><strong>Time:</strong> <span id="time"></span></td>
-                </tr>
-                <tr>
-                    <td><strong>Payment Type:</strong> <span id="c-payment"></span></td>
                     <td class="text-right"><strong>Phone:</strong> <span id="c-phone"></span></td>
                 </tr>
                 <tr>
-                    <td><strong>Pickup:</strong> <span id="c-pickup"></span></td>
+                    <td>
+                    <strong>Drop:</strong> <span id="c-drop"></span>
+                  
+                
+                
+                </td>
                     <td class="text-right"><strong>Email:</strong> <span id="c-email"></span></td>
                 </tr>
                 <tr>
-                    <td><strong>Drop:</strong> <span id="c-drop"></span></td>
-                    <td></td>
+                    <td><strong>Pickup:</strong> <span id="c-pickup"></span></td>
+                    <td class="text-right">
+                        
+                    <strong>Payment Type:</strong> <span id="c-payment"></span>
+              
+                
+                
+                
+                </td>
                 </tr>
             </table>
 
@@ -211,35 +215,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script>
-        window.onload = function() {
-            // Populate time options with AM/PM format
-            const timeInput = document.getElementById('timeInput');
-            for (let h = 0; h < 24; h++) {
-                for (let m = 0; m < 60; m += 5) {
-                    const rawHour = h;
-                    const hour12 = (rawHour % 12) || 12; // 12-hour format
-                    const ampm = rawHour < 12 ? 'AM' : 'PM';
-                    const hourStr = hour12.toString().padStart(2, '0');
-                    const minuteStr = m.toString().padStart(2, '0');
-                    const timeOption = `${hourStr}:${minuteStr} ${ampm}`;
-                    
-                    const option = document.createElement('option');
-                    option.value = `${rawHour.toString().padStart(2, '0')}:${minuteStr}`; // machine-readable
-                    option.text = timeOption; // user display
-                    timeInput.appendChild(option);
-                }
-            }
-
-            // Fix for Date Input
-            const dateInput = document.getElementById('dateInput');
-            dateInput.addEventListener('focus', function() {
-                this.showPicker && this.showPicker();
-            });
-            dateInput.addEventListener('click', function() {
-                this.showPicker && this.showPicker();
-            });
-        }
-
         function generateInvoice(event) {
             event.preventDefault(); // Prevent form submit
 
@@ -255,10 +230,8 @@
             const phone = document.getElementById('phone').value;
             const pickup = document.getElementById('pickup').value;
             const drop = document.getElementById('drop').value;
-            const dateInput = document.getElementById('dateInput').value;
-            const selectedOption = document.getElementById('timeInput').selectedOptions[0];
-            const formattedTime = selectedOption.text; // already in AM/PM
-            const fare = parseFloat(document.getElementById('fare').value);
+            const dateTimeInput = document.getElementById('dateTimeInput').value;
+            const fare = document.getElementById('fare').value;
             const paymentType = document.getElementById('paymentType').value;
 
             document.getElementById('booking-id').textContent = bookingId;
@@ -267,11 +240,10 @@
             document.getElementById('c-phone').textContent = phone;
             document.getElementById('c-pickup').textContent = pickup;
             document.getElementById('c-drop').textContent = drop;
-            document.getElementById('date').textContent = dateInput;
-            document.getElementById('time').textContent = formattedTime;
+            document.getElementById('date').textContent = dateTimeInput;
             document.getElementById('c-payment').textContent = paymentType;
-            document.getElementById('amount-fare').textContent = `£${fare.toFixed(2)}`;
-            document.getElementById('total').textContent = `£${fare.toFixed(2)}`;
+            document.getElementById('amount-fare').textContent = `£${fare}`;
+            document.getElementById('total').textContent = `£${fare}`;
 
             const element = document.getElementById('invoice');
             html2pdf().set({
