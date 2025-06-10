@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Customer Reviews: See What Others Say About Travel24" />
     <meta name="description"
         content="Read authentic customer reviews and experiences with Travel24. Discover why our clients choose us for reliable and comfortable airport transfers across the UK" />

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="title" content="About Travel24: Trusted Airport Transfer Service" />
     <meta name="description"
