@@ -9,11 +9,11 @@
         content="Learn more about Travel24, your trusted partner for airport transfers. Our story, values, and commitment to providing top-quality, reliable, and affordable transportation solutions across the UK." />
 
     <title>Blogs</title>
-    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/blogs.css') ?>">
 
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 

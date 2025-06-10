@@ -7,8 +7,8 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <title>Terms and Conditions - Travel24</title>
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon.ico'); ?>">
     <link rel="canonical" href="https://travel24taxi.com/terms">
     <link rel="stylesheet" href="<?= base_url('assets/css/terms.css'); ?>">
 

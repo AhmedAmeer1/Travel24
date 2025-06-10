@@ -10,7 +10,7 @@
         content="Learn more about Travel24, your trusted partner for airport transfers. Our story, values, and commitment to providing top-quality, reliable, and affordable transportation solutions across the UK." />
 
     <title>About Us</title>
-    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
+    <<link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/aboutus" />
     <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
 

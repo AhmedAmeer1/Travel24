@@ -11,7 +11,7 @@
     <meta name="title" content="<?php echo $setting->journey_meta_title; ?>" />
     <meta name="language" content="ES">
     <title>Travel24</title>
-    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
@@ -194,7 +194,8 @@ form .error {
                                         <div class="col-md-6 pickupTime-Height">
                                             <div class="form-group">
                                                 <div class="picker-head h-5">
-                                                    <img src="<?php echo base_url('assets/images/time.png')?>" alt="time icon">
+                                                    <img src="<?php echo base_url('assets/images/time.png')?>"
+                                                        alt="time icon">
                                                     <label>Pickup Time</label>
                                                 </div>
                                                 <p class="picker"><input type="text" id="timepicker" autocomplete="off">
@@ -260,9 +261,9 @@ form .error {
             <div class="container">
                 <div class="row">
 
-               
-           
-          
+
+
+
                     <div class="col-md-12">
                         <h1 class="d-head">New Users please complete details below</h1>
                         <div class="user-from">
@@ -812,7 +813,7 @@ form .error {
         if (timeDifferenceMilliseconds < threeHoursInMilliseconds) {
             alert(
                 ` The entered date and time is less than 3 hours .\nPlease give us 3 hours in advance for the booking or call us.`
-                );
+            );
             return;
         }
 

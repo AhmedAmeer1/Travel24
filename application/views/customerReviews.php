@@ -10,12 +10,12 @@
         content="Read authentic customer reviews and experiences with NTravel24. Discover why our clients choose us for reliable and comfortable airport transfers across the UK" />
 
     <title>Reviews</title>
-    <link rel="icon" type="img/png" sizes="32x32" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/customerReviews" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=8') ?>">
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
