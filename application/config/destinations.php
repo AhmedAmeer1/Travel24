@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['destinations'] = [
     [
         'title' => 'Brighton Transfer',
+        'metaDescription' => '24/7 Brighton airport taxi & transfer services to Gatwick, Heathrow & all UK airports. Fixed rates, executive cars, hassle-free travel every time.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/brighton-transfer',
         'slug' => 'brighton-transfer',
         'heading' => 'Brighton Transfer',
@@ -14,6 +15,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Bristol Transfer',
+        'metaDescription' => 'Reliable Bristol airport taxi transfers to any UK destination. Affordable prices, 24/7 service. Book now for a smooth, on-time airport journey.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/bristol-transfer',
         'slug' => 'bristol-transfer',
         'heading' => 'Bristol transfer',
@@ -24,6 +26,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Gatwick Airport Transfer',
+        'metaDescription' => 'Book reliable, low-cost Gatwick Airport taxi transfers. 24/7 service, fixed fares, professional drivers, and easy online booking!',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/gatwick-airport-transfer',
         'slug' => 'gatwick-airport-transfer',
         'heading' => 'Gatwick Airport transfer',
@@ -34,6 +37,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Guildford Transfer',
+        'metaDescription' => 'Reliable Guildford airport taxi service to all major UK airports. Book online 24/7 for fast, affordable, and trusted airport transfers.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/guildford-transfer',
         'slug' => 'guildford-transfer',
         'heading' => 'Guilford transfer',
@@ -44,6 +48,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Heathorw Airport Transfer',
+        'metaDescription' => 'Heathrow Airport Transfer made easy. Book reliable, 24/7 taxi or private hire service with fixed fares to and from any terminal in London hassle-free.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer',
         'slug' => 'heathorw-airport-transfer',
         'heading' => 'Heathrow Airport Transfer - Reliable and Comfortable Transfer Service',
@@ -54,6 +59,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Luton Airport Transfer',
+        'metaDescription' => 'Affordable, reliable Luton Airport taxi transfers. 24/7 service from London & beyond. Fixed fares with professional drivers and on-time pickup guaranteed .',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/luton-airport-transfer',
         'slug' => 'luton-airport-transfer',
         'heading' => 'Luton airport transfer',
@@ -64,6 +70,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'London Transfer',
+        'metaDescription' => 'Book reliable London airport transfers to/from Heathrow, Gatwick, Stansted & more. Private, on-time service with fixed rates. Travel stress-free today!',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/london-transfer',
         'slug' => 'london-transfer',
         'heading' => 'London transfer',
@@ -74,6 +81,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'London City Airport Transfer ',
+        'metaDescription' => 'Book your London City Airport transfer with Travel24Taxi. Fast, reliable, and affordable taxi service for a smooth, hassle-free ride to or from the airport.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/London-city-airport-transfer',
         'slug' => 'London-city-airport-transfer',
         'heading' => 'London City Airport Transfer',
@@ -84,6 +92,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Maidenhead Transfer',
+        'metaDescription' => 'Reliable 24/7 Maidenhead taxi service. Airport transfers, private hire, minibus, and executive cars. Book online or call for fixed-price quotes.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/maidenhead-transfer',
         'slug' => 'maidenhead-transfer',
         'heading' => 'Maidenhead transfer',
@@ -94,6 +103,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Oxford Transfer',
+        'metaDescription' => 'Oxford airport transfers, taxis & chauffeur service. Fixed prices, 24/7 availability & clean cars. Book online for travel to all major UK airports.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/oxford-transfer',
         'slug' => 'oxford-transfer',
         'heading' => 'Oxford Transfer',
@@ -104,6 +114,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Southampton Transfer',
+        'metaDescription' => 'Book reliable Southampton airport & cruise taxi transfers. 24/7 service, private hire & chauffeur cars. Low fixed rates. Easy online booking available',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/southampton-transfer',
         'slug' => 'southampton-transfer',
         'heading' => 'Southampton Transfer',
@@ -114,6 +125,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Stansted Airport Transfer',
+        'metaDescription' => 'Stansted Airport taxi & transfer service. 24/7 private hire, meet & greet, minibuses, fixed rates & online booking. Fast, reliable travel to/from London.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/stansted-airport-transfer',
         'slug' => 'stansted-airport-transfer',
         'heading' => 'Stansted Airport Transfer',
@@ -124,6 +136,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Windsor Transfer',
+        'metaDescription' => 'Windsor taxi & airport transfer service. 24/7 local & long-distance rides, fixed fares, meet & greet, saloon to minibus. Book online for all major airports.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/windsor-transfer',
         'slug' => 'windsor-transfer',
         'heading' => 'Windsor Transfer',

@@ -4,10 +4,10 @@
 <head>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Customer Reviews: See What Others Say AboutTravel24" />
     <meta name="description"
-        content="Read authentic customer reviews and experiences with NTravel24. Discover why our clients choose us for reliable and comfortable airport transfers across the UK" />
+        content="Read real Travel24 customer reviews: punctual, professional drivers, clean cars & excellent 24/7 service. Discover why passengers love us." />
 
     <title>Reviews</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">

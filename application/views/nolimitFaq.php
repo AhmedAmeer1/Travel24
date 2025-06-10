@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Travel24 FAQs: Your Airport Transfer Questions Answered" />
     <meta name="description"
-        content="Find answers to all your queries about Travel24' airport transfer services. Our FAQ section covers everything from booking processes to journey details, ensuring a smooth travel experience for every customer." />
+        content="Find answers about bookings, payments, vehicle types & more on Travel24’s FAQ. Simple online, phone or email support—24/7 clarity for every ride" />
     <title>faq</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/faq" />

@@ -9,7 +9,7 @@
         content=" Become a part of theTravel24 driving team. We're inviting professional drivers to register with us
         and join our network for airport transfers. Enjoy flexible hours, competitive earnings, and the chance to
         provide top-tier service across the UK." />
-
+    <meta name="description" content="Join Travel24’s 24/7 UK airport & chauffeur fleet. We hire professional drivers with local knowledge—wheelchair-accessible vehicles, steady bookings." />
     <title>Drivers</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/drivers" />

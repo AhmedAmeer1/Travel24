@@ -7,6 +7,8 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <title>Terms and Conditions - Travel24</title>
+    <meta name="description"
+        content="View Travel24’s terms: booking emails, journey details, free date/time changes, no liability for delays or missed flights. Clear rules, 24/7 support." />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
 
     <link rel="canonical" href="https://travel24taxi.com/terms">

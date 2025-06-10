@@ -8,7 +8,7 @@
 
     <meta name="title" content="Contac Travel24 for Airport Transfers and Inquiries" />
     <meta name="description"
-        content="Reach out to Travel24 for all your airport transfer needs or any inquiries. Our team is ready to assist you with bookings, questions, and customized travel solutions." />
+        content="Get in touch with Travel24 Taxi – contact us via online form, call 02039 822 911 or email info@travel24taxi.com. Fast quotes & 24/7 support." />
     <title>Contact us</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/contactUs" />
