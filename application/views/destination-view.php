@@ -22,7 +22,7 @@
         <?php 
         if (isset($blog['title'])) {
             if ($blog['title'] === 'Heathorw Airport Transfer') {
-                echo 'Reliable Heathrow Airport taxi transfers. Pre-book your ride for fixed fares, 24/7 service, and stress-free travel to and from any Heathrow terminal in London'; // Custom description
+                echo 'Heathrow Airport Transfer made easy. Book reliable, 24/7 taxi or private hire service with fixed fares to and from any terminal in London hassle-free.'; // Custom description
             } else {
                 echo 'Experience top-notch airport transfer services with Travel24. Catering to Gatwick, Heathrow, and Luton, we specialize in providing reliable, professional, and affordable travel solutions for both individuals and groups. Book now for a smooth and stress-free journey!';
             }
@@ -39,7 +39,7 @@
         <?php 
         if (isset($blog['title'])) {
             if ($blog['title'] === 'Heathorw Airport Transfer') {
-                echo 'Heathrow Airport Transfer | Reliable & Affordable Taxi Services - Travel24 Taxi'; 
+                echo 'Heathrow Airport Transfer | London Heathrow Airport Transfers '; 
             } else {
                 echo $blog['title']; // Otherwise, use the blog title
             }
