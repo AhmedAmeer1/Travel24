@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta charset="utf-8">
@@ -10,36 +9,23 @@
     <meta name="description" content="" />
     <meta name="language" content="ES">
     <title>Booking</title>
-
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="assets/css/bootstrap.min1.css" rel="stylesheet" />
-    <link href="assets/css/custom.css " rel="stylesheet" />
-    <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link href="assets/css/custom.css" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
     gtag('config', 'G-XK1KGHX0F7');
     </script>
-
 </head>
-
-
-
 <body>
     <?php $this->load->view('common_components/header'); ?>
-
     <div class="menu-side-wrapper d-md-none d-block">
         <ul>
             <li>HOME</li>
@@ -48,20 +34,15 @@
             <li>CONTACT</li>
         </ul>
     </div>
-
     <main class="booking">
-
         <div class="inner-header-wrapper text-center">
             <div class="container text-right nw-num d-md-block d-none">
-                <a href="tel:02039822911"><img src="<?php echo base_url('assets/images/call.png')?>" alt="Call Icon">
-                    02039822911</a>
+                <a href="tel:02039822911"><img src="<?php echo base_url('assets/images/call.png')?>" alt="Call Icon"> 02039822911</a>
             </div>
             <div class="container text-center">
-
                 <h1>Booking Form</h1>
             </div>
         </div>
-
         <section class="booking-setnew">
             <div class="container">
                 <div class="book-form-box">
@@ -93,16 +74,13 @@
                                     </div>
                                 </div>
                                 <div class="way-points">
-
                                 </div>
                                 <div class="form-group">
                                     <div class="d-flex justify-content-between">
                                         <label>DESTINATION</label>
-
                                         <button style="float:right"><i class="fa fa-plus-circle multi-root "></i> Way
                                             Point</button>
                                     </div>
-
                                     <input type="text" class="form-control autocompleteDoc" name="destination" required
                                         id="dropPoint" placeholder="Enter a location">
                                     <input type="hidden" class="lat_perfect" id="destLat" name="destLat">
@@ -116,12 +94,9 @@
                 </div>
             </div>
         </section>
-
     </main>
-
     <?php $this->load->view('common_components/footer'); ?>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
-
     <div class="collapse areas-main" id="collapseExample">
         <div class="container">
             <div class="areas-wrapper">

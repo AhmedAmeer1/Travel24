@@ -4,16 +4,14 @@
 <head>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="language" content="ES">
     <title>Travel24</title>
-
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/reviewForm.css?v=1')?>" rel="stylesheet" />
@@ -21,7 +19,6 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -29,17 +26,12 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
-
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <div class="review-form-wrapper">
         <div class="review-box">
             <h1>Review Us</h1> <br>
-
-
             <input class="firstName" type="text" name="firstName" id="firstName" placeholder="First Name" required>
-
-
             <br>
             <div class="rate">
                 <input type="radio" id="star5" name="rate" value="5" />
@@ -54,7 +46,6 @@
                 <label for="star1" title="text">1 star</label>
             </div>
             <div class="clear"></div>
-
             <select id="reviewType" class="reviewType" name="reviewType">
                 <option value="">Select Review Type</option>
                 <option value="Excellent Service">Excellent Service </option>
@@ -64,26 +55,18 @@
                 <option value="Bumpy ride">Bumpy ride</option>
             </select>
             <br><br>
-
             <div>
                 <textarea rows="3" id="comment" placeholder="Write your comment"></textarea>
                 <input type="hidden" name="trip_id" id="trip_id">
                 <input type="hidden" name="type" id="type">
-
-                <!-- <input type="hidden" name="trip_id" id="trip_id" value="<?= $trip_id; ?>">
-                    <input type="hidden" name="type" id="type" value="<?= $type; ?>"> -->
-
             </div><br>
             <button id="reviewSubmit">Submit</button>
-
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <?php $this->load->view('common_components/footer'); ?>
 </body>
-
 </html>
-
 <script>
 $("#reviewSubmit").click(function() {
     var trip_id = $("#trip_id").val();

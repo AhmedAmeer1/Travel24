@@ -9,11 +9,8 @@
     <meta name="title" content="<?php echo $setting->v_list_meta_title; ?>" />
     <meta name="language" content="ES">
     <title>Travel24</title>
-
-
-<link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/listView.css?v=4')?>" rel="stylesheet" />
@@ -34,17 +31,12 @@
     }
 
     .circle {
-
         display: inline-block;
         width: 10px;
-        /* Adjust size as needed */
         height: 10px;
         background-color: white;
-        /* Adjust color as needed */
         border-radius: 50%;
-        /* Makes the element circular */
         margin-left: 5px;
-        /* Adds some space between the text and the circle */
     }
     </style>
 </head>
@@ -58,7 +50,6 @@
                 <p>Passengers & Luggages</p>
             </div>
         </div>
-  
         <div class="way-points-option" style="display:none"><input type="checkbox" name="way_points[]" checked="true"
                 class="way_points" value="<?php echo $post_data['source']; ?>"> <?php echo $post_data['source'];?></div>
         <?php
@@ -148,36 +139,27 @@
                                     id="<?php echo "vehicle".$vh->vehicle_id?>">
                                     <div class="row">
                                         <div class="col-md-3 no-gutter">
-                                         
-                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid"
-                                                alt="Car">
+                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid" alt="Car">
                                         </div>
                                         <div class="col-md-9 no-gutter">
                                             <div class="head">
                                                 <?php  if($vh->title == "MOBILITY VEHICLE"){?>
                                                 <h5><?php echo $vh->title?> (
-
-                                                    <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> "
-                                                        class="disability_img" alt="disability">
-                                                    Vehicle)
+                                                    <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> " class="disability_img" alt="disability">
                                                 </h5>
                                                 <?php }  else { ?>
                                                 <h5><?php echo $vh->title?> </h5>
                                                 <?php }  ?>
-
                                                 <ul>
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> "
-                                                                class="passanger_img" alt="passanger">
+                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> " class="passanger_img" alt="passanger">
                                                             <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
                                                         </div>
                                                     </li>
-
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
-                                                                class="suitcases_img" alt="Suitcases">
+                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> " class="suitcases_img" alt="Suitcases">
                                                             <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
                                                         </div>
                                                     </li>
@@ -211,14 +193,8 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
                             <?php } } ?>
-
-
-
-
                             <?php
                          foreach($vehicle as $vh){
                             if($vh->title == "16 SEATER MINIBUS"){?>
@@ -227,9 +203,7 @@
                                     id="<?php echo "vehicle".$vh->vehicle_id?>">
                                     <div class="row">
                                         <div class="col-md-3 no-gutter">
-                                  
-                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid"
-                                                alt="Car">
+                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid" alt="Car">
                                         </div>
                                         <div class="col-md-9 no-gutter">
                                             <div class="head">
@@ -237,16 +211,13 @@
                                                 <ul>
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> "
-                                                                class="passanger_img" alt="passanger">
+                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> " class="passanger_img" alt="passanger">
                                                             <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
                                                         </div>
                                                     </li>
-
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
-                                                                class="suitcases_img" alt="Suitcases">
+                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> " class="suitcases_img" alt="Suitcases">
                                                             <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
                                                         </div>
                                                     </li>
@@ -274,27 +245,16 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
                             <?php } } ?>
-
-
-
                         </div>
-                    
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
-
     <?php $this->load->view('common_components/footer'); ?>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/1e36072efd.js"></script>
@@ -305,7 +265,6 @@
     <script>
     var map;
     var waypoints
-
     function initMap() {
         var mapLayer = document.getElementById("map-layer");
         var centerCoordinates = new google.maps.LatLng(37.6, -95.665);
@@ -314,11 +273,8 @@
             zoom: 4
         }
         map = new google.maps.Map(mapLayer, defaultOptions);
-
-
         var directionsService = new google.maps.DirectionsService;
         var directionsDisplay = new google.maps.DirectionsRenderer;
-
         directionsDisplay.setMap(map);
 
         // $("#go").on("click",function() {

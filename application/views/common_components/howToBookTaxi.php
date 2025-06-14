@@ -1,10 +1,7 @@
 <link href="<?php echo base_url('assets/css/howToBookTaxi.css')?>" rel="stylesheet" />
-
 <img src="assets/images/travel24/book_taxi/book-taxi.png" class="howToBook-img" alt="car">
-
 <div class="book-container">
     <h2 class="taxi-heading">How to book a ride?</h2>
-
     <div class="shape-container">
         <div class="step1">
             <h3 class="main-heading mt-5 mt-md-0">Location</h3>

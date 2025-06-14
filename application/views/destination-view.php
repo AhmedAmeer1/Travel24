@@ -1,45 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
-    <meta name="keywords" content="
-        <?php 
-        if (isset($blog['title'])) {
-            if ($blog['title'] === 'Heathorw Airport Transfer') {
-                echo 'Taxis, Private-hire cars, Transport, Minicabs, Heathrow airport taxi, Taxi to Heathrow airport, Taxi from Heathrow airport, London airport taxi, Minibuses, Transfer, Heathrow airport cab, Minicab, Pre-book, Affordable prices, Credit card payment, Airport taxi to Heathrow, London Heathrow airport taxi service, Airport taxi service, Stansted airport drop off, Heathrow taxis quotes'; // Custom keywords for "Heathorw Airport Transfer"
-            } else {
-                echo $result->meta_keyword; // Use default or dynamic keywords from $result
-            }
-        } else {
-            echo $result->meta_keyword; // Default keywords if $blog['title'] is not set
-        }
-        ?>" />
+    <meta name="keywords" content="<?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Taxis, Private-hire cars, Transport, Minicabs, Heathrow airport taxi, Taxi to Heathrow airport, Taxi from Heathrow airport, London airport taxi, Minibuses, Transfer, Heathrow airport cab, Minicab, Pre-book, Affordable prices, Credit card payment, Airport taxi to Heathrow, London Heathrow airport taxi service, Airport taxi service, Stansted airport drop off, Heathrow taxis quotes' : $result->meta_keyword; ?>" />
     <meta name="description" content="<?php echo $blog['metaDescription']; ?>" />
-    <meta name="title"
-        content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
+    <meta name="title" content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
-
-
-    <title>
-        <?php 
-        if (isset($blog['title'])) {
-            if ($blog['title'] === 'Heathorw Airport Transfer') {
-                echo 'Heathrow Airport Transfer | London Heathrow Airport Transfers '; 
-            } else {
-                echo $blog['title']; // Otherwise, use the blog title
-            }
-        } else {
-            echo 'TRAVEL 24'; // Default title if $blog['title'] is not set
-        }
-        ?>
-    </title>
-
-
-    <?php if (isset($blog['title']) && $blog['title'] === 'Heathorw Airport Transfer'): ?>
+    <title><?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Heathrow Airport Transfer | London Heathrow Airport Transfers' : ($blog['title'] ?? 'TRAVEL 24'); ?></title>
+    <?php if (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer'): ?>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -47,7 +18,7 @@
         "name": "Travel24Taxi",
         "description": "Reliable taxi service available in Heathrow for fast and convenient transportation.",
         "telephone": "+442039822911",
-        "url": "https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer",
+        "url": "https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer",
         "geo": {
             "@type": "GeoCoordinates",
             "latitude": "51.4700",
@@ -66,43 +37,24 @@
         ]
     }
     </script>
-
     <meta property="og:title" content="Heathrow Airport Transfer">
-    <meta property="og:description"
-        content="Travel24 Taxi offers reliable Heathrow Airport transfer services with a diverse fleet, experienced drivers, and easy online booking for timely journeys.">
+    <meta property="og:description" content="Travel24 Taxi offers reliable Heathrow Airport transfer services with a diverse fleet, experienced drivers, and easy online booking for timely journeys.">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
-    <meta property="og:url" content="https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer">
+    <meta property="og:url" content="https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_UK">
-    <meta property="og:site_name" content="travel 24 taxi">
-
-    <?php endif; ?>
-
-
-    <link rel="canonical" href="
-       <?php 
-       if (isset($blog['canonicalLink'])) {
-           echo $blog['canonicalLink']; 
-       } else {
-           echo 'https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer'; 
-       }
-    ?>" />
-
-
-
+    <meta property="og:site_name" content="travel 24 taxi"><?php endif; ?>
+    <link rel="canonical" href="<?php echo isset($blog['canonicalLink']) ? $blog['canonicalLink'] : 'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer'; ?>" />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=7')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/destination-view.css?v=6')?>" rel="stylesheet" />
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -110,7 +62,6 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
-
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
@@ -122,8 +73,7 @@
                         <div class="book-form-box">
                             <div class="head">
                                 <span>BOOK NOW</span>
-                                <img src="../../assets/images/travel24/online_cards.svg" class="img-fluid image-width"
-                                    alt="Payment">
+                                <img src="../../assets/images/travel24/online_cards.svg" class="img-fluid image-width" alt="Payment">
                             </div>
                             <?php 
                            $redirectUrl = (isset($customer_id) && !empty($customer_id))
@@ -216,21 +166,18 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="../../assets/images/travel24/fleet/<?php echo $vh['vehicle_image']; ?>"
-                                    class="img-fluid w-100 py-4" alt="car">
+                                <img src="../../assets/images/travel24/fleet/<?php echo $vh['vehicle_image']; ?>" class="img-fluid w-100 py-4" alt="car">
                             </div>
                             <div class="text_card">
                                 <h3><?php echo $vh['title']; ?></h3>
                                 <p> <?php echo $vh['description']; ?></p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
-                                        <img src="../../assets/images/travel24/passangers.svg" class="img-fluid "
-                                            alt="passangers">
+                                        <img src="../../assets/images/travel24/passangers.svg" class="img-fluid " alt="passangers">
                                         <span><?php echo $vh['noOfPassengers']; ?>&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
-                                        <img src="../../assets/images/travel24/Suitcases.svg" class="img-fluid "
-                                            alt="Suitcases">
+                                        <img src="../../assets/images/travel24/Suitcases.svg" class="img-fluid " alt="Suitcases">
                                         <span><?php echo $vh['noOfSuitcases']; ?>&nbsp;Suitcases</span>
                                     </div>
                                 </div>

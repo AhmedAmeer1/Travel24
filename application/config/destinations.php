@@ -47,10 +47,10 @@ $config['destinations'] = [
         'content3' => 'You can get an instant transfer quote and book your ride through our online  booking system available at our official website'
     ],
     [
-        'title' => 'Heathorw Airport Transfer',
+        'title' => 'Heathrow Airport Transfer',
         'metaDescription' => 'Heathrow Airport Transfer made easy. Book reliable, 24/7 taxi or private hire service with fixed fares to and from any terminal in London hassle-free.',
-        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer',
-        'slug' => 'heathorw-airport-transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer',
+        'slug' => 'heathrow-airport-transfer',
         'heading' => 'Heathrow Airport Transfer - Reliable and Comfortable Transfer Service',
         'subHeading' => 'London Heathrow Transfer services offer seamless chauffeur and private-hire vehicle bookings from Heathrow Airport to any destination across the UK. Our diverse fleet—including 8-seater minibuses, mobility vehicles, and more—is designed to meet the needs of every passenger.',
         'content1' => 'Our airport transfer service to and from Heathrow Airport offers an affordable and top-quality private-hire experience. We are reliable, experienced, and committed to delivering quality travel solutions in Heathrow at the best prices. We understand that passengers often worry about reaching the airport and other destinations on time, so we work hard to ensure you arrive safely and punctually. ',

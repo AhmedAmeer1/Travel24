@@ -6,17 +6,13 @@
     border-radius: 5px;
 }
 </style>
-
 <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
 <link href="<?php echo base_url('assets/css/header.css')?>" rel="stylesheet" />
-
 <header class="limits-header-wrapper  d-md-block d-none ">
     <nav class="navbar navbar-expand-md">
         <div class=" row container-fluid pa-50 mt-4">
             <div class="col-md-4">
-                <a class="" href="<?php echo base_url()?>"><img
-                        src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" alt="travel 24 taxi SVG Logo
-"></a>
+                <a class="" href="<?php echo base_url()?>"><img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>"alt="travel 24 taxi SVG Logo"></a>
             </div>
             <div class="col-md-8">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,8 +28,7 @@
                         </li>
                         <li class="nav-item mt-1">
                             <a href="tel:02039822911 " class=" call-div">
-                                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon">
-                                02039822911</a>
+                                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon"> 02039822911</a>
                         </li>
                     </ul>
                 </div>
@@ -47,13 +42,11 @@
         <div class="row">
             <div class="col-md-12">
                 <a class="" href="<?php echo base_url()?>">
-                    <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid mt-3"
-                        alt="travel 24 taxi SVG Logo"> </a>
+                    <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid mt-3" alt="travel 24 taxi SVG Logo"> </a>
                 <ul class="sub-header-res-new">
                     <li>
                         <a href="tel:02039822911">
-                            <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon">
-                            02039822911</a>
+                            <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon"> 02039822911</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +61,6 @@
         </button>
     </div>
 </header>
-
 <div class="menu-side-wrapper d-md-none d-block">
     <ul>
         <li>
@@ -82,15 +74,7 @@
         </li>
         <li class=" mt-1">
             <a href="tel:02039822911 " class=" call-div">
-                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon">
-                02039822911</a>
+                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon"> 02039822911</a>
         </li>
     </ul>
 </div>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url('assets/js/jquery.3.0.min.js')?>"></script>
-<script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script>
-<script src="<?php echo base_url('assets/js/jquery.touchSwipe.min.js')?>"></script>
-<script src="https://use.fontawesome.com/1e36072efd.js"></script>
-<script src="<?php echo base_url('assets/js/custom.js')?>"></script>
