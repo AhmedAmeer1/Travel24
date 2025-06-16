@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="<?php echo $setting->meta_keyword; ?>" />
     <meta name="description" content="<?php echo $setting->v_list_meta_desc; ?>" />
-    <meta name="title" content="<?php echo $setting->v_list_meta_title; ?>" />
     <meta name="language" content="ES">
     <title>Travel24</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">

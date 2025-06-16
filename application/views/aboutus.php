@@ -3,7 +3,6 @@
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="AboutTravel24: Trusted Airport Transfer Service" />
     <meta name="description" content="Travel24: 15+ years of 24/7 taxi, minibus, chauffeur & executive services. Airport, long-distance specialists with licensed safe vehicles & competitive rates." />
     <title>About Us</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">

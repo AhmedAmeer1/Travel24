@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="<?php echo $result->meta_keyword; ?>" />
     <meta name="description" content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
-    <meta name="title" content="Travel24: Premier Airport Transfers | Gatwick, Heathrow, Luton, Hove, Southampton, Bristol" />
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
     <title>TRAVEL 24 </title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">

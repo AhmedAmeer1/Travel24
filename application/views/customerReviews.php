@@ -4,7 +4,6 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Customer Reviews: See What Others Say AboutTravel24" />
     <meta name="description" content="Read real Travel24 customer reviews: punctual, professional drivers, clean cars & excellent 24/7 service. Discover why passengers love us." />
     <title>Reviews</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">

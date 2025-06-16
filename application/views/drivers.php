@@ -4,7 +4,6 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content=" Become a part of theTravel24 driving team. We're inviting professional drivers to register with us and join our network for airport transfers. Enjoy flexible hours, competitive earnings, and the chance to provide top-tier service across the UK." />
     <meta name="description"content="Join Travel24’s 24/7 UK airport & chauffeur fleet. We hire professional drivers with local knowledge—wheelchair-accessible vehicles, steady bookings." />
     <title>Drivers</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
