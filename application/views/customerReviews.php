@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Read real Travel24 customer reviews: punctual, professional drivers, clean cars & excellent 24/7 service. Discover why passengers love us." />
     <title>Reviews</title>
+    <meta property="og:title" content="Travel 24 Taxi - Verified Customer Reviews & Testimonials">
+    <meta property="og:description" content="Read real customer reviews about Travel 24 Taxi’s airport transfer services. Discover why our passengers trust us for their UK journeys.">
+    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
+    <meta property="og:url" content="https://travel24taxi.com/customerReviews">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/customerReviews" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />

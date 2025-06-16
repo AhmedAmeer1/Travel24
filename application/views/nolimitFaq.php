@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Find answers about bookings, payments, vehicle types & more on Travel24’s FAQ. Simple online, phone or email support—24/7 clarity for every ride" />
     <title>faq</title>
+    <meta property="og:title" content="Travel 24 Taxi - Frequently Asked Questions (FAQ)">
+    <meta property="og:description" content="Find answers to common questions about Travel 24 Taxi’s booking process, pricing, airport pickups, cancellations, and more.">
+    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
+    <meta property="og:url" content="https://travel24taxi.com/faq">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/faq" />
     <!-- <link rel="stylesheet" href="./css/faqs.css"> -->

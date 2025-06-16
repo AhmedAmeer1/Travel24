@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Get in touch with Travel24 Taxi – contact us via online form, call 02039 822 911 or email info@travel24taxi.com. Fast quotes & 24/7 support." />
     <title>Contact us</title>
+    <meta property="og:title" content="Contact Travel 24 Taxi - 24/7 Airport Transfer Support">
+    <meta property="og:description" content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">
+    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
+    <meta property="og:url" content="https://travel24taxi.com/contactUs">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/contactUs" />
     <link rel="stylesheet" href="<?= base_url('assets/css/contactUs.css') ?>">

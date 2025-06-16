@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Explore our most popular taxi destinations: airports, cruise terminals & UK cities. Book fixed rate transfers online with reliable 24/7 service." />
     <title>Popular Destinations</title>
+    <meta property="og:title" content="Popular UK Airport Taxi Destinations - Travel 24 Taxi">
+    <meta property="og:description" content="Explore top UK airport transfer routes including Heathrow, Gatwick, Luton & more. Travel 24 Taxi offers reliable 24/7 taxi services.">
+    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
+    <meta property="og:url" content="https://travel24taxi.com/popularDestinations">
+    <meta property="og:type" content="website">
+
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/popularDestinations" />
     <link href="<?= base_url('assets/css/destination.css?v=2') ?>" rel="stylesheet">

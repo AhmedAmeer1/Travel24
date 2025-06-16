@@ -7,6 +7,11 @@
     <title>About Us</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/aboutus" />
+    <meta property="og:title" content="About Travel 24 Taxi - Your Trusted UK Airport Transfer Service">
+    <meta property="og:description" content="Learn about Travel 24 Taxi – a professional, customer-focused airport transfer company offering safe, reliable transport across the UK.">
+    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
+    <meta property="og:url" content="https://travel24taxi.com/aboutus">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"content="Join Travel24’s 24/7 UK airport & chauffeur fleet. We hire professional drivers with local knowledge—wheelchair-accessible vehicles, steady bookings." />
     <title>Drivers</title>
+    <meta property="og:title" content="Join Travel 24 Taxi as a Driver - Flexible Airport Transfer Jobs">
+    <meta property="og:description" content="Become a driver with Travel 24 Taxi. Enjoy flexible hours, competitive pay, and the opportunity to provide top-notch airport transfer services across the UK.">
+    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
+    <meta property="og:url" content="https://travel24taxi.com/drivers">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/drivers" />
     <link rel="stylesheet" href="<?= base_url('assets/css/drivers.css') ?>">
