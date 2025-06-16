@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="<?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Taxis, Private-hire cars, Transport, Minicabs, Heathrow airport taxi, Taxi to Heathrow airport, Taxi from Heathrow airport, London airport taxi, Minibuses, Transfer, Heathrow airport cab, Minicab, Pre-book, Affordable prices, Credit card payment, Airport taxi to Heathrow, London Heathrow airport taxi service, Airport taxi service, Stansted airport drop off, Heathrow taxis quotes' : $result->meta_keyword; ?>" />
     <meta name="description" content="<?php echo $blog['metaDescription']; ?>" />
-    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24.jpg">
     <title><?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Heathrow Airport Transfer | London Heathrow Airport Transfers' : ($blog['title'] ?? 'TRAVEL 24'); ?></title>
     <?php if (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer'): ?>
     <script type="application/ld+json">
@@ -37,7 +36,6 @@
     </script>
     <meta property="og:title" content="Heathrow Airport Transfer">
     <meta property="og:description" content="Travel24 Taxi offers reliable Heathrow Airport transfer services with a diverse fleet, experienced drivers, and easy online booking for timely journeys.">
-    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
     <meta property="og:url" content="https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_UK">
