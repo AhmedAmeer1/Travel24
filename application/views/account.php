@@ -2,7 +2,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
     <meta name="keywords" content="<?php echo $setting->meta_keyword; ?>" />
     <meta name="description" content="<?php echo $setting->account_meta_desc; ?>" />
     <meta name="title" content="<?php echo $setting->account_meta_title; ?>" />
