@@ -9,40 +9,10 @@
     <meta name="og:title" content="<?php echo $blog['ogTitle']; ?>" />
     <meta name="og:description" content="<?php echo $blog['ogDescription']; ?>" />
     <meta name="og:url" content="<?php echo $blog['canonicalLink']; ?>" />
-    <meta property="og:image" content=" https://travel24taxi.com/assets/images/travel24/about_us.svg ">
+    <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
     <meta property="og:type" content="website">
     <title><?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Heathrow Airport Transfer | London Heathrow Airport Transfers' : ($blog['title'] ?? 'TRAVEL 24'); ?></title>
     <?php if (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer'): ?>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "TaxiService",
-        "name": "Travel24Taxi",
-        "description": "Reliable taxi service available in Heathrow for fast and convenient transportation.",
-        "telephone": "+442039822911",
-        "url": "https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer",
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "51.4700",
-            "longitude": "-0.4543"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Heathrow",
-            "addressCountry": "United Kingdom"
-        },
-        "openingHours": "Mo-Su 00:00-23:59",
-        "priceRange": "$$",
-        "sameAs": [
-            "https://www.instagram.com/travel24taxi/",
-            "https://web.facebook.com/travel24taxi/?_rdc=1&_rdr"
-        ]
-    }
-    </script>
-    <meta property="og:title" content="Heathrow Airport Transfer">
-    <meta property="og:description" content="Travel24 Taxi offers reliable Heathrow Airport transfer services with a diverse fleet, experienced drivers, and easy online booking for timely journeys.">
-    <meta property="og:url" content="https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer">
-    <meta property="og:type" content="website">
     <meta property="og:locale" content="en_UK">
     <meta property="og:site_name" content="travel 24 taxi"><?php endif; ?>
     <link rel="canonical" href="<?php echo isset($blog['canonicalLink']) ? $blog['canonicalLink'] : 'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer'; ?>" />
@@ -54,6 +24,7 @@
     <link href="<?php echo base_url('assets/css/destination-view.css?v=6')?>" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
+    <?php $this->load->view('assets/js/seo/popularDestination/'.$blog['slug']); ?>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {

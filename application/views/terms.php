@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <title>Terms and Conditions - Travel24</title>
-   <meta property="og:title" content="Travel 24 Taxi - Terms & Conditions of Service">
+    <meta property="og:title" content="Travel 24 Taxi - Terms & Conditions of Service">
     <meta property="og:description" content="Review the terms and conditions for using Travel 24 Taxi services, including booking policies, cancellations, and service guidelines.">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
     <meta property="og:url" content="https://travel24taxi.com/terms">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/terms.css'); ?>">
     <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
+     <?php $this->load->view('assets/js/seo/terms'); ?>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {

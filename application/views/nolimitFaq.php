@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/faqs.css') ?>">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
+     <?php $this->load->view('assets/js/seo/nolimitFaq'); ?>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {

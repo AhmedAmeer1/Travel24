@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= base_url('assets/css/reviews.css?v=8') ?>">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
+    <?php $this->load->view('assets/js/seo/customerReviews'); ?>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
