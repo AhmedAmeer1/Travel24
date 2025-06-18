@@ -11,12 +11,12 @@
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
     <meta property="og:url" content="https://travel24taxi.com/popularDestinations">
     <meta property="og:type" content="website">
-
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="canonical" href="https://travel24taxi.com/popularDestinations" />
     <link href="<?= base_url('assets/css/destination.css?v=2') ?>" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
+    <?php $this->load->view('assets/js/seo/popularDestinations'); ?>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
