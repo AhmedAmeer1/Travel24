@@ -17,6 +17,9 @@
     <meta property="og:site_name" content="travel 24 taxi"><?php endif; ?>
     <link rel="canonical" href="<?php echo isset($blog['canonicalLink']) ? $blog['canonicalLink'] : 'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer'; ?>" />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="icon" type="image/png" sizes="16x16"  href="<?php echo base_url('/favicon-16x16.png')?> " >
+    <link rel="icon" type="image/png" sizes="32x32"  href="<?php echo base_url('/favicon-32x32.png')?>">
+    <link rel="icon" type="image/png" sizes="48x48"  href="<?php echo base_url('/favicon-48x48.png')?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />

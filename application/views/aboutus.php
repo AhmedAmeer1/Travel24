@@ -6,6 +6,9 @@
     <meta name="description" content="Travel24: 15+ years of 24/7 taxi, minibus, chauffeur & executive services. Airport, long-distance specialists with licensed safe vehicles & competitive rates." />
     <title>About Us</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="icon" type="image/png" sizes="16x16"  href="<?php echo base_url('/favicon-16x16.png')?> " >
+    <link rel="icon" type="image/png" sizes="32x32"  href="<?php echo base_url('/favicon-32x32.png')?>">
+    <link rel="icon" type="image/png" sizes="48x48"  href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/aboutus" />
     <meta property="og:title" content="About Travel 24 Taxi - Your Trusted UK Airport Transfer Service">
     <meta property="og:description" content="Learn about Travel 24 Taxi – a professional, customer-focused airport transfer company offering safe, reliable transport across the UK.">

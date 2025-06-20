@@ -12,6 +12,9 @@
     <meta property="og:url" content="https://travel24taxi.com/popularDestinations">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="icon" type="image/png" sizes="16x16"  href="<?php echo base_url('/favicon-16x16.png')?> " >
+    <link rel="icon" type="image/png" sizes="32x32"  href="<?php echo base_url('/favicon-32x32.png')?>">
+    <link rel="icon" type="image/png" sizes="48x48"  href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/popularDestinations" />
     <link href="<?= base_url('assets/css/destination.css?v=2') ?>" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
