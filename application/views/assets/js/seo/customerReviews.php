@@ -13,11 +13,6 @@
         "addressRegion": "Berkshire",
         "postalCode": "SL6 4FJ",
         "addressCountry": "UK"
-    },
-    "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "137"
     }
 }
 </script>
