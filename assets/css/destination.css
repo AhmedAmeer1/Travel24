@@ -9,10 +9,11 @@
 }
 
 .destination {
-	margin-block-start: 20px;
+	margin-block-start: 40px;
+	
 }
 
-.destination h2 a {
+.destination span a {
 	text-align: start;
 	color: #101828 !important;
 	font-family: "Helvetica 55 Roman";
@@ -42,14 +43,24 @@
 	padding: 77px 400px 100px 400px;
 }
 
+.destination_content_p_div {
+	padding:0px 400px 100px 400px;
+}
+
 @media only screen and (max-width: 1366px) {
 	.destination_content_div {
+		padding: 50px 150px 50px 150px;
+	}
+	.destination_content_p_div {
 		padding: 50px 150px 50px 150px;
 	}
 }
 
 @media only screen and (max-width: 1024px) {
 	.destination_content_div {
+		padding: 50px 100px 50px 100px;
+	}
+	.destination_content_p_div {
 		padding: 50px 100px 50px 100px;
 	}
 }
@@ -65,6 +76,11 @@
 	.destination_content_div {
 		padding: 30px 30px 30px 30px;
 	}
+
+	.destination_content_p_div {
+		padding: 30px 30px 30px 30px;
+	}
+
 	.aboutus_wrapper p {
 		color: #818181;
 		font-family: "Helvetica 55 Roman";
