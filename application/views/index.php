@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=7')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=11')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
 
     <!-- Google tag (gtag.js) -->
