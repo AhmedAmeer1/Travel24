@@ -121,7 +121,7 @@
 	padding: 20px 80px 20px 20px;
 }
 
-.limits-banner .banner-details h1 {
+.limits-banner .banner-details span {
 	font-size: 65px;
 	font-weight: 500;
 	line-height: 60px;
@@ -179,7 +179,7 @@
 	.limits-banner .banner-details  {
 		margin-top: 15px
 	}
-	.limits-banner .banner-details h1 {
+	.limits-banner .banner-details span {
 		font-size: 52px;
 		line-height: 50px;
 	}
@@ -231,7 +231,7 @@
 	.limits-banner .book-form-box .content {
 		padding: 6px;
 	}
-	.limits-banner .banner-details h1 {
+	.limits-banner .banner-details span {
 		font-size: 30px;
 		text-align: center;
 	}
@@ -310,7 +310,7 @@
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-	.limits-banner .banner-details h1 {
+	.limits-banner .banner-details span {
 		font-size: 26px !important;
 	}
 }
@@ -368,7 +368,7 @@
 	padding: 20px 46px 20px 78px;
 }
 
-.carlist-wrapper .list-details-box h2 {
+.carlist-wrapper .list-details-box h1 {
 	color: #004c78;
 	font-size: 30px;
 	font-weight: 600;

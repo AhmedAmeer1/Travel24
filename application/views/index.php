@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=8')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=7')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
 
     <!-- Google tag (gtag.js) -->
@@ -96,7 +96,8 @@
                     </div>
                     <div class="col-md-6 banner-details">
                         <div class="mx-auto">
-                            <h1>Your Destination is our goal</h1>
+                          <span >Your Destination is our goal</span>
+
                             <p>
                                 Airport transfers & chauffeur services connecting all UK airports
                             </p>
@@ -298,7 +299,7 @@
                     <div class="col-md-8">
                         <div class="list-details-box">
                             <div class="d-flex justify-content-between flag-div">
-                                <h2>Your journey is our mission </h2>
+                                <h1 class="text-uppercase">Your journey is our mission </h1>
                                 <img src="assets/images/travel24/england.svg" class="img-fluid " alt="flag of the United Kingdom">
                             </div>
                             <p>
