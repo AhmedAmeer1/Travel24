@@ -15,7 +15,7 @@
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
     <meta property="og:url" content="https://travel24taxi.com/aboutus">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css?v=1') ?>">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <?php $this->load->view('assets/js/seo/aboutus'); ?>

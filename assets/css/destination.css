@@ -15,20 +15,15 @@
 .destination span a {
 	text-align: start;
 	color: #101828 !important;
-	font-family: "helvetnormal";
+
 	font-size: 25px;
 	line-height: 40px;
 	font-weight: 500;
 }
 
-.destination_wrapper {
-	font-family: "helvetnormal";
-	/* font-family: "helvet"; */
-}
-
 .destination_wrapper h1 {
 	color: black;
-	/* font-family: "Helvetica Neue Condensed Bold"; */
+
 	font-size: 30px;
 	text-align: center;
 	font-weight: 600;
@@ -37,7 +32,7 @@
 
 .destination_wrapper p {
 	/* color: #818181;
-	font-family: "Helvetica 55 Roman";
+
 	font-size: 20px; */
 	line-height: 25px;
 	/* margin-block-end: 20px; */
@@ -87,19 +82,14 @@
 
 	.aboutus_wrapper p {
 		color: #818181;
-		/* font-family: "Helvetica 55 Roman"; */
+
 		font-size: 18px;
 		line-height: 27px;
 		margin-block-end: 19px;
 	}
 }
 
-
-
-
-
-
-    /* .card-img-left {
+/* .card-img-left {
       width: 100px;
       height: 100px;
       object-fit: cover;

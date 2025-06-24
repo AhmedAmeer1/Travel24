@@ -1,80 +1,67 @@
 img,
 object,
 embed {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .banner-section {
-    background-color: #004C78;
-    text-align: center;
-
+	background-color: #004c78;
+	text-align: center;
 }
 
 .banner-image {
-    max-width: 100%;
-    height: auto;
-
+	max-width: 100%;
+	height: auto;
 }
 .aboutus_content_div {
-    padding: 77px 100px 100px 100px;
+	padding: 77px 100px 100px 100px;
 }
 
-
 .aboutus_wrapper {
-    margin: 3.8359375% 4.6953125%;
-    background-color: #F9FAFB;
-
+	margin: 3.8359375% 4.6953125%;
+	background-color: #f9fafb;
 }
 
 .aboutus_wrapper h1 {
-    color: black;
-    font-family: 'Helvetica Neue Condensed Bold';
-    font-size: 30px;
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 30px;
+	color: black;
+
+	font-size: 30px;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 30px;
 }
 
 .aboutus_wrapper p {
-    color: #818181;
-    font-family: 'Helvetica 55 Roman';
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 20px;
+	color: #818181;
+
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 20px;
 }
-
-
-
 
 .subbottom_text {
-    font-family: 'Helvetica Neue Medium';
-    font-size: 23px;
-    color: #000000;
-    font-weight: 700;
-    margin-top: 80px;
+	font-size: 23px;
+	color: #000000;
+	font-weight: 700;
+	margin-top: 80px;
 }
-
 
 .subbottom_text a {
-    margin-left: 10px;
-    color: #000000;
-    text-decoration: underline;
-
+	margin-left: 10px;
+	color: #000000;
+	text-decoration: underline;
 }
-
 
 /* ------------------------ RESPONSIVE START ------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
-    .aboutus_content_div {
-        padding: 30px 0px 0px 0px;
-    }
+	.aboutus_content_div {
+		padding: 30px 0px 0px 0px;
+	}
 }
 
-
 @media only screen and (max-width: 767px) {
-    .aboutus_content_div {
-        padding: 30px 0px 0px 0px;
-    }
-
+	.aboutus_content_div {
+		padding: 30px 0px 0px 0px;
+	}
 }

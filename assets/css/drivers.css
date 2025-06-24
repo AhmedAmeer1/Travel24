@@ -31,8 +31,7 @@ embed {
 }
 
 .drivers_wrapper h1 {
-	color: black;
-	font-family: "Helvetica Neue Condensed Bold";
+
 	font-size: 30px;
 	text-align: center;
 	font-weight: 600;
@@ -41,7 +40,7 @@ embed {
 
 .drivers_wrapper p {
 	color: #818181;
-	font-family: "Helvetica 55 Roman";
+
 	font-size: 20px;
 	line-height: 30px;
 	margin-bottom: 20px;
@@ -49,7 +48,7 @@ embed {
 
 .subbottom_text {
 	text-align: center;
-	font-family: "Helvetica Neue Medium";
+
 	font-size: 23px;
 	color: #000000;
 	font-weight: 700;
@@ -86,7 +85,7 @@ embed {
 
 .docs p {
 	color: #818181;
-	font-family: "Helvetica 55 Roman";
+
 	font-size: 20px;
 	line-height: 30px;
 	margin-top: 20px;

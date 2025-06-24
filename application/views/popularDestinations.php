@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/popularDestinations" />
-    <link href="<?= base_url('assets/css/destination.css?v=11') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/destination.css?v=12') ?>" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <?php $this->load->view('assets/js/seo/popularDestinations'); ?>

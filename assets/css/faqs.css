@@ -1,158 +1,136 @@
 img,
 object,
 embed {
-    max-width: 100%;
+	max-inline-size: 100%;
 }
 
 .banner-section {
-    background-color: #004C78;
-    text-align: center;
-
+	background-color: #004c78;
+	text-align: center;
 }
 
 .banner-image {
-    max-width: 100%;
-    height: auto;
-
+	max-inline-size: 100%;
+	block-size: auto;
 }
 .faq_content_div {
-    padding: 77px 160px 100px 160px;
+	padding: 77px 160px 100px 160px;
 }
 
-
 .faq_wrapper {
-    margin: 3.8359375% 13.6953125%;
-    background-color: #F9FAFB;
-
+	margin: 3.8359375% 13.6953125%;
+	background-color: #f9fafb;
+   
 }
 
 .faq_wrapper h1 {
-    color: black;
-    font-family: 'Helvetica Neue Condensed Bold';
-    font-size: 30px;
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 10px;
+	color: black;
+
+	font-size: 30px;
+	text-align: center;
+	font-weight: 600;
+	margin-block-end: 10px;
 }
 .faq_wrapper .sub_heading {
-    color: black;
-    font-family: 'Helvetica Neue Condensed Bold';
-    font-size: 18px;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 70px;
-}
+	color: black;
 
+	font-size: 18px;
+	text-align: center;
+	font-weight: 400;
+	margin-block-end: 70px;
+}
 
 .faq_wrapper p {
-    color: #818181;
-    font-family: 'Helvetica 55 Roman';
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 20px;
+	color: #818181;
+
+	font-size: 20px;
+	line-height: 30px;
+	margin-block-end: 20px;
 }
-
-
-
 
 .subbottom_text {
-    font-family: 'Helvetica Neue Medium';
-    font-size: 23px;
-    color: #000000;
-    font-weight: 700;
-    margin-top: 30px;
-    text-align: center;
-}
 
+	font-size: 23px;
+	color: #000000;
+	font-weight: 700;
+	margin-block-start: 30px;
+	text-align: center;
+}
 
 .subbottom_text a {
-    margin-left: 10px;
-    color: #000000;
-    text-decoration: underline;
-
+	margin-inline-start: 10px;
+	color: #000000;
+	text-decoration: underline;
 }
 
-.questions{
-    margin-top: 20px;
+.questions {
+	margin-block-start: 20px;
 }
 
 .questions h1 {
-    text-align: left;
-    color: #101828;
-    font-family: 'Helvetica 55 Roman';
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 700;
-   
+	text-align: start;
+	color: #101828;
+
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 700;
 }
 .questions p {
-    text-align: left;
-    color: #475467;
-    font-family: 'Helvetica 55 Roman';
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-   
+	text-align: start;
+	color: #475467;
+
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
 }
 
 .get_in_touch {
-    margin-top: 100px;
-    text-align: center;
+	margin-block-start: 100px;
+	text-align: center;
 }
 
-.get_in_touch h1{
- 
-    color: #101828;
-    font-family: 'Helvetica 55 Roman';
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 600;
+.get_in_touch h1 {
+	color: #101828;
+
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
 }
 
-.get_in_touch button{
- background-color: #004C78;
-    color: white;
-    font-family: 'Helvetica 55 Roman';
-    font-size: 16px;
-    border: none;
-    font-weight: 600;
-    border-radius: 10px;
-    padding: 10px 15px 10px 15px ;
+.get_in_touch button {
+	background-color: #004c78;
+	color: white;
+
+	font-size: 16px;
+	border: none;
+	font-weight: 600;
+	border-radius: 10px;
+	padding: 10px 15px 10px 15px;
 }
-.get_in_touch button a{
-   
-       color: white !important;
-       font-family: 'Helvetica 55 Roman';
-       font-size: 16px;
-       font-weight: 600;
-      
-   }
+.get_in_touch button a {
+	color: white !important;
 
-
-
-
-
-
-
+	font-size: 16px;
+	font-weight: 600;
+}
 
 /* ------------------------ RESPONSIVE START ------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
-    .faq_content_div {
-        padding: 30px 0px 0px 0px;
-    }
+	.faq_content_div {
+		padding: 30px 0px 0px 0px;
+	}
 }
 
-
 @media only screen and (max-width: 767px) {
-    .faq_content_div {
-        padding: 30px 0px 0px 0px;
-    }
-    .aboutus_wrapper p {
-        color: #818181;
-        font-family: 'Helvetica 55 Roman';
-        font-size: 18px;
-        line-height: 27px;
-        margin-bottom: 19px;
-    }
+	.faq_content_div {
+		padding: 30px 0px 0px 0px;
+	}
+	.aboutus_wrapper p {
+		color: #818181;
+
+		font-size: 18px;
+		line-height: 27px;
+		margin-block-end: 19px;
+	}
 }
