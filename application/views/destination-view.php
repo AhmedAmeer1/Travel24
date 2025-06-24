@@ -163,6 +163,13 @@
                 </div>
             </div>
         </section>
+
+        <?php if (isset($blog['slug']) && $blog['slug'] === 'heathrow-airport-transfer'): ?>
+<section class="airport-transfer-heading text-center my-5">
+   <?php $this->load->view('common_components/heathrow-airport-transfer'); ?>
+</section>
+<?php endif; ?>
+
     </main>
     <?php $this->load->view('common_components/footer'); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -1,7 +1,7 @@
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "TaxiService",
+    "@type": "LocalBusiness",
     "name": "Travel 24 Taxi",
     "url": "https://travel24taxi.com/popularDestinations",
     "logo": "https://www.travel24taxi.com/assets/images/logo.png",
@@ -19,38 +19,48 @@
         "@type": "Place",
         "name": "London and surrounding airports"
     },
-    "url": "https://travel24taxi.com/popularDestinations",
-    "mainEntity": {
-        "@type": "ItemList",
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Airport Transfers",
         "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "url": "https://travel24taxi.com/popularDestinations/view/stansted-airport-transfer",
-                "name": "Stansted Airport Transfer"
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Stansted Airport Transfer",
+                    "url": "https://travel24taxi.com/popularDestinations/view/stansted-airport-transfer"
+                }
             },
             {
-                "@type": "ListItem",
-                "position": 2,
-                "url": "https://travel24taxi.com/popularDestinations/view/heathorw-airport-transfer",
-                "name": "Heathrow Airport Transfer"
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Heathrow Airport Transfer",
+                    "url": "https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer"
+                }
             },
             {
-                "@type": "ListItem",
-                "position": 3,
-                "url": "https://travel24taxi.com/popularDestinations/view/gatwick-airport-transfer",
-                "name": "Gatwick Airport Transfer"
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Gatwick Airport Transfer",
+                    "url": "https://travel24taxi.com/popularDestinations/view/gatwick-airport-transfer"
+                }
             },
             {
-                "@type": "ListItem",
-                "position": 4,
-                "url": "https://travel24taxi.com/popularDestinations/view/guildford-transfer",
-                "name": "Guildford Transfer"
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Guildford Transfer",
+                    "url": "https://travel24taxi.com/popularDestinations/view/guildford-transfer"
+                }
             },
             {
-                "@type": "ListItem",
-                "position": 5,
-                "url": "https://travel24taxi.com/popularDestinations/view/brighton-transfer",
-                "name": "Brighton Transfer"
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Brighton Transfer",
+                    "url": "https://travel24taxi.com/popularDestinations/view/brighton-transfer"
+                }
             }
         ]
     }

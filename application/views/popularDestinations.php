@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/popularDestinations" />
-    <link href="<?= base_url('assets/css/destination.css?v=3') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/destination.css?v=11') ?>" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <?php $this->load->view('assets/js/seo/popularDestinations'); ?>
@@ -36,11 +36,18 @@
             <img src="<?php echo base_url('assets/images/travel24/about_us.svg')?>" alt="about_us_banner"
                 class="banner-image">
         </div>
-        <div class=" destination_wrapper">
+        <div class="destination_wrapper">
             <div class="destination_content_div">
                 <div class="">
                     <h1>Popular Destinations </h1>
                 </div>
+            <div class="">
+                <p>At Travel24, we provide expert transfer services to and from all major airports around the UK, offering efficient and reliable transportation for affordable rates. We offer personalized, tailor-made services to serve the needs of passengers.</p>
+                <br />
+             <p>We ensure hassle-free rides, with our extensive fleet of vehicles tailored to suit your requirements. Whether you’re traveling in larger groups with extra luggage or as individuals we meet your need! Our vehicles are air conditioned and driven by experienced drivers. </p>
+               <br /> <p>We focus on quality customer service therefore, we work hard to serve you with the best possible ways and make your journey seamless and fulfilling.</p>
+                 <br /><p>Our services are available 24/7 and are easily accessible. You can book a ride anytime through our website or by contacting hotline.</p>
+            </div>
                 <div class="destination">
                     <div class="row">
                         <?php foreach ($destinations as $index => $dest): ?>
@@ -65,13 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="destination_content_p_div">
-                <p>At Travel24, we provide expert transfer services to and from all major airports around the UK, offering efficient and reliable transportation for affordable rates. We offer personalized, tailor-made services to serve the needs of passengers.</p>
-                <br />
-             <p>We ensure hassle-free rides, with our extensive fleet of vehicles tailored to suit your requirements. Whether you’re traveling in larger groups with extra luggage or as individuals we meet your need! Our vehicles are air conditioned and driven by experienced drivers. </p>
-               <br /> <p>We focus on quality customer service therefore, we work hard to serve you with the best possible ways and make your journey seamless and fulfilling.</p>
-                 <br /><p>Our services are available 24/7 and are easily accessible. You can book a ride anytime through our website or by contacting hotline.</p>
-        </div>
+     
         </div>
     </section>
     <?php $this->load->view('common_components/footer'); ?>
