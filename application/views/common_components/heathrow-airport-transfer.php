@@ -1,4 +1,4 @@
-<div class="home_container my-5 bg-white">
+<div class="container my-5 bg-white">
 
     <!-- Heading -->
     <h2 class="mb-4 ml-3" style="font-weight: 700; text-align: left; color: #000; font-size: 20px;">
@@ -21,9 +21,9 @@
             <div class="card p-3 d-flex flex-column flex-md-row align-items-center align-items-md-start"
                 style="border: 2px solid #000; border-radius: 10px; height: 100%;">
                 <img src="<?php echo base_url('assets/images/travel24/destination-view/driver.png') ?>" alt="driver"
-                    class="img-fluid mb-3 mb-md-0 me-md-3 mx-auto card-img-sm-desktop"
+                    class="img-fluid mx-auto my-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
-                <div class="text-center text-md-left ml-3">
+                <div class="text-center text-md-left ml-3  my-auto ">
                     <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Expert Drivers</h5>
                     <p class="card-text">Our drivers will attend you at your doorstep for your pick-up or drop-off at
                         the earliest convenience, assisting with your luggage to or from Heathrow Airport.</p>
@@ -36,7 +36,7 @@
             <div class="card p-3 d-flex flex-column flex-md-row align-items-center align-items-md-start"
                 style="border: 2px solid #000; border-radius: 10px; height: 100%;">
                 <img src="<?php echo base_url('assets/images/travel24/destination-view/choice.png') ?>" alt="choice"
-                    class="img-fluid mb-3 mb-md-0 me-md-3 mx-auto card-img-sm-desktop"
+                    class="img-fluid  me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3">
                     <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Fleet options</h5>
@@ -52,7 +52,7 @@
                 style="border: 2px solid #000; border-radius: 10px; height: 100%;">
                 <img src="<?php echo base_url('assets/images/travel24/destination-view/plane-landing.png') ?>"
                     alt="/plane-landing"
-                    class="img-fluid mb-3 mb-md-0 me-md-3 mx-auto card-img-sm-desktop"
+                    class="img-fluid  me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3">
                     <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Terminal drop-off</h5>
@@ -67,7 +67,7 @@
             <div class="card p-3 d-flex flex-column flex-md-row align-items-center align-items-md-start"
                 style="border: 2px solid #000; border-radius: 10px; height: 100%;">
                 <img src="<?php echo base_url('assets/images/travel24/destination-view/takeoff.png') ?>" alt="takeoff"
-                    class="img-fluid mb-3 mb-md-0 me-md-3 mx-auto card-img-sm-desktop"
+                    class="img-fluid  me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3">
                     <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Terminal Pick-up</h5>
@@ -83,7 +83,7 @@
                 style="border: 2px solid #000; border-radius: 10px; height: 100%;">
                 <img src="<?php echo base_url('assets/images/travel24/destination-view/hourglass.png') ?>"
                     alt="hourglass"
-                    class="img-fluid mb-3 mb-md-0 me-md-3 mx-auto card-img-sm-desktop"
+                    class="img-fluid  me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3">
                     <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Free-of-Charge Waiting</h5>
@@ -94,13 +94,13 @@
         </div>
 
         <!-- Card 6 -->
-        <div class="col-12 col-md-6 mb-4 h-100">
-            <div class="card p-3 d-flex flex-column flex-md-row align-items-center align-items-md-start"
+        <div class="col-12 col-md-6 mb-4 h-120">
+            <div class="card p-3 d-flex flex-column flex-md-row align-items-center my-auto  align-items-md-start"
                 style="border: 2px solid #000; border-radius: 10px; height: 100%;">
                 <img src="<?php echo base_url('assets/images/travel24/destination-view/time.png') ?>" alt="Service 6"
-                    class="img-fluid mb-3 mb-md-0 me-md-3 mx-auto card-img-sm-desktop"
+                    class="img-fluid me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
-                <div class="text-center text-md-left ml-3">
+                <div class="text-center text-md-left ml-3 my-auto">
                     <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Reschedule your pick-up</h5>
                     <p class="card-text">We offer you the flexibility to delay your pick-up time, if you need more time
                         after your arrival.</p>
