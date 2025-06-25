@@ -24,7 +24,7 @@
                     class="img-fluid mx-auto my-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3  my-auto ">
-                    <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Expert Drivers</h5>
+                    <h3 class="card-title mb-1" style="color: #000; font-weight: 700;">Expert Drivers</h3>
                     <p class="card-text">Our drivers will attend you at your doorstep for your pick-up or drop-off at
                         the earliest convenience, assisting with your luggage to or from Heathrow Airport.</p>
                 </div>
@@ -39,7 +39,7 @@
                     class="img-fluid  me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3">
-                    <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Fleet options</h5>
+                    <h3 class="card-title mb-1" style="color: #000; font-weight: 700;">Fleet options</h3>
                     <p class="card-text">We offer a range of vehicle options, to accommodate individuals, families and
                         large groups of up to 8 passengers with plenty of luggage, ensuring a seamless journey.</p>
                 </div>
@@ -55,7 +55,7 @@
                     class="img-fluid  me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3">
-                    <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Terminal drop-off</h5>
+                    <h3 class="card-title mb-1" style="color: #000; font-weight: 700;">Terminal drop-off</h3>
                     <p class="card-text">We will drop you off at the right terminal at Heathrow Airport, ensuring
                         convenient transport assistance.</p>
                 </div>
@@ -70,7 +70,7 @@
                     class="img-fluid  me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3">
-                    <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Terminal Pick-up</h5>
+                    <h3 class="card-title mb-1" style="color: #000; font-weight: 700;">Terminal Pick-up</h3>
                     <p class="card-text">Our drivers will pick you up at Heathrow Airport terminals, waiting with a name
                         board and ready to assist you with your luggage.</p>
                 </div>
@@ -86,7 +86,7 @@
                     class="img-fluid  me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3">
-                    <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Free-of-Charge Waiting</h5>
+                    <h3 class="card-title mb-1" style="color: #000; font-weight: 700;">Free-of-Charge Waiting</h3>
                     <p class="card-text">We gladly offer a free waiting time option for scheduled pick-ups, arranged
                         within 45 minutes from the landing time of your flight.</p>
                 </div>
@@ -101,7 +101,7 @@
                     class="img-fluid me-md-3 m-auto card-img-sm-desktop"
                     style="width: 80px; height: 80px;">
                 <div class="text-center text-md-left ml-3 my-auto">
-                    <h5 class="card-title mb-1" style="color: #000; font-weight: 700;">Reschedule your pick-up</h5>
+                    <h3 class="card-title mb-1" style="color: #000; font-weight: 700;">Reschedule your pick-up</h3>
                     <p class="card-text">We offer you the flexibility to delay your pick-up time, if you need more time
                         after your arrival.</p>
                 </div>
