@@ -33,18 +33,17 @@ embed {
 	height: 190px;
 }
 
-.promo-text{
+.promo-text {
 	font-size: 13px;
 }
-.code{
-	color: #FF6500;
+.code {
+	color: #ff6500;
 	font-weight: 900;
 }
-.online-payment{
+.online-payment {
 	background-color: black;
 	border-radius: 10px;
 }
-
 
 .details-main-wrapper
 	.details-box
@@ -68,7 +67,7 @@ embed {
 
 .details-main-wrapper .details-box .trip-d h1 span {
 	font-size: 16px;
-	color: #FF6500;
+	color: #ff6500;
 	font-family: "helvet";
 }
 
@@ -99,16 +98,81 @@ embed {
 	font-weight: 500;
 }
 
-.details-main-wrapper .details-box .trip-d  h3 {
+.details-main-wrapper .details-box .trip-d h3 {
 	color: #00517c;
 	font-size: 13px;
-	
 }
 
-.disability_img{
-    margin-bottom: 2px;
-    width: 3%;
-	
+.disability_img {
+	margin-bottom: 2px;
+	width: 3%;
+}
+
+.spinner {
+	border: 4px solid rgba(255, 255, 255, 0.3);
+	border-top: 4px solid white;
+	border-radius: 50%;
+	width: 17px;
+	height: 17px;
+	animation: spin 2s linear infinite;
+	margin-left: -24px !important;
+	margin-top: -14px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.note-text {
+	color: red !important;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.hide {
+	display: none;
+}
+
+form .error {
+	color: #ff0000;
+}
+
+.text_amt {
+	font-size: 12px;
+}
+
+.hidden {
+	display: none;
+}
+.promotion-btn {
+	background-color: #ff6500;
+	border-radius: 25px;
+	font-size: 12px;
+	padding: 10px 15px;
+	border: 0;
+	color: #fff;
+	margin-right: 15px;
+}
+
+.danger-text {
+	margin-top: 8px;
+	color: red;
+	font-size: 13px;
 }
 
 /* ------------------------ RESPONSIVE START ------------------------------------- */
@@ -131,7 +195,7 @@ embed {
 		margin-bottom: 20px;
 	}
 
-	.promo-text{
+	.promo-text {
 		font-size: 12px;
 		margin-left: -14px;
 	}

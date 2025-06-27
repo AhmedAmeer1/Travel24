@@ -1,10 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="<?php echo $setting->meta_keyword; ?>" />
     <meta name="description" content="<?php echo $setting->journey_meta_desc; ?>" />
     <meta name="language" content="ES">
@@ -13,136 +12,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/custom.css?v=5')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=5')?>" rel="stylesheet" />
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
+    <link href="<?php echo base_url('assets/css/custom.css?v=7')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=8')?>" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
     gtag('config', 'G-XK1KGHX0F7');
     </script>
-
 </head>
 <style>
-.hidden {
-    display: none;
-}
-
-.spinner {
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    border-top: 4px solid white;
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    animation: spin 2s linear infinite;
-    margin-left: -24px !important;
-    margin-top: -14px;
-
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 
-
-
-
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.note-text {
-    color: red !important;
-}
-
-/* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
-.hide {
-    display: none
-}
-
-form .error {
-    color: #ff0000;
-}
-
-.text_amt {
-    font-size: 12px;
-}
-
-
-
-.promotion-btn {
-    background-color: #FF6500;
-    border-radius: 25px;
-    font-size: 12px;
-    padding: 10px 15px;
-    border: 0;
-    color: #fff;
-    margin-right: 15px;
-}
-
-.danger-text {
-    margin-top: 8px;
-    color: red;
-    font-size: 13px;
-}
 </style>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
-    <!-- responsive menu -->
-
     <main class="home">
-
         <div class="inner-header-wrapper ">
-
-
             <div class="col-12 text-center  booking-form">
                 <h1>Booking Form </h1>
-
                 <p>Please check journey details and select date and time</p>
             </div>
-
-
         </div>
-
-
         <section class="details-main-wrapper">
             <div class="container">
                 <div class="row">
-
-
                     <div class="col-md-12">
-
                         <!-- <h1>Please check journey details and select date and time</h1> -->
                         <div class="details-box">
                             <h2>JOURNEY DETAILS</h2>
@@ -216,8 +121,6 @@ form .error {
                                             <?php }  else { ?>
                                             <h1><?php echo $vechicle_data->title;?>,
                                                 <?php }  ?>
-
-
                                                 <span><?php echo ($_SESSION["journey_type"] =="1"?"Single":"Return") ?>
                                                     TRIP</span>
                                             </h1>
@@ -258,10 +161,6 @@ form .error {
         <section class="details-forms-wrapper">
             <div class="container">
                 <div class="row">
-
-
-
-
                     <div class="col-md-12">
                         <h1 class="d-head">New Users please complete details below</h1>
                         <div class="user-from">
@@ -270,7 +169,7 @@ form .error {
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
                                         <label>FIRST NAME*</label>
-                                        <!-- <input type="text" onBlur="validateFN(this);"  id="first_name" class="formcontrol" name="first_name"> -->
+
                                         <input type="text" id="first_name" class="formcontrol" name="first_name">
                                     </div>
                                 </div>
@@ -278,7 +177,7 @@ form .error {
                                 <div class="col-md-6 brdr-b">
                                     <div class="form-group">
                                         <label>LAST NAME*</label>
-                                        <!-- <input type="text" onBlur="validateLN(this);" name ="last_name" id="last_name"class="formcontrol"> -->
+
                                         <input type="text" name="last_name" id="last_name" class="formcontrol">
                                     </div>
                                 </div>
@@ -287,7 +186,7 @@ form .error {
                                     <div class="form-group">
                                         <label>E-MAIL ADDRESS*</label>
                                         <input type="email" id="email_id" class="formcontrol">
-                                        <!-- <input  type="email" id="email_id"   class="formcontrol"  size="10" onblur="apply_promo_code('email_id')"> -->
+
                                     </div>
                                 </div>
 
@@ -297,21 +196,7 @@ form .error {
                                         <input type="number" id="phone_no" name="phone_no" class="formcontrol">
                                     </div>
                                 </div>
-                                <!-- onblur="validatePhone(this);" -->
-                                <!-- <script>
-                              function validatePhone(phone_no){
-                                  var reg = /^[0-9]{10}$/;
-                              
-                                  if (reg.test(phone_no.value) == false) 
-                                  {
-                                      alert('Invalid Phone Number');
-                                      return false;
-                                  }
-                              
-                                  return true;
-                              
-                              }
-                           </script> -->
+
                                 <input type="hidden" id="exceed_time" value="0">
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
@@ -427,30 +312,6 @@ form .error {
 
 
                         <!------------------------------------------ OLD PAYMENT CODE END ---------------------------------------- -->
-                        <!-- <div class="bottom-buttons">
-    <div class="user-pay-type">
-        <?php foreach($payment_types as $pt) {
-            if ($pt->title === 'CARD') { ?>
-                <p class="danger-text">Our online payment is under maintenance; please use cash for now.</p>
-            <?php } else { ?>
-                <button class="paynow-btn payment-method" id="myButton"
-                        data-method="<?php echo $pt->method ?>">
-                    <a id="pay_now_a">
-                        <?php echo $pt->title ?>
-                        <span class="hidden spinner" id="loading"></span>
-                    </a>
-                </button>
-            <?php }
-        } ?>
-
-        <span id="loading" class="hidden">
-            <span id="hiddenBtn">
-                <span class="spinner"></span>
-            </span>
-        </span>
-    </div>
-</div> -->
-
 
 
 
@@ -462,120 +323,7 @@ form .error {
     <?php $this->load->view('common_components/footer'); ?>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
 
-    <div class="collapse areas-main" id="collapseExample">
-        <div class="container">
-            <div class="areas-wrapper">
-                <h1>Popular Destinations</h1>
-                <ul class="mb-5">
-                    <li>Birmingham</li>
-                    <li>Blackpool</li>
-                    <li>Bournemouth</li>
-                    <li>Bristol</li>
-                    <li>Cardiff</li>
-                    <li>Coventry</li>
-                    <li>East Midlands</li>
-                    <li>Exeter</li>
-                    <li>Euston Station</li>
-                    <li>Gatwick</li>
-                    <li>Heathrow</li>
-                    <li>humberside</li>
-                    <li>Leeds-Bradford</li>
-                    <li>Liverpool</li>
-                    <li>London City</li>
-                </ul>
-                <ul>
-                    <li><a href="https://www.nolimitcars.co.uk/local-taxi-cab-hire-company-brighton/"> LOCAL TAXI CAB
-                            HIRE COMPANY BRIGHTON</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-brighton/"> LOCAL MINI CAB
-                            HIRE COMPANY BRIGHTON</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-corporate-taxi-cab-company-brighton/"> LOCAL
-                            CORPORATE TAXI CAB COMPANY BRIGHTON</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-chauffeured-car-hire-company-brighton/"> LOCAL
-                            CHAUFFEURED CAR HIRE COMPANY BRIGHTON</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-airport-taxi-transfer-company-brighton/"> LOCAL
-                            AIRPORT TAXI TRANSFER COMPANY BRIGHTON</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-taxi-cab-hire-company-clifton-in-bristol/"> LOCAL
-                            TAXI CAB HIRE COMPANY CLIFTON IN BRISTOL</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-clifton-in-bristol/"> LOCAL
-                            MINI CAB HIRE COMPANY CLIFTON IN BRISTOL</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-corporate-taxi-cab-company-clifton-in-bristol/">
-                            LOCAL CORPORATE TAXI CAB COMPANY CLIFTON IN BRISTOL</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-chauffeured-car-hire-company-clifton-in-bristol/">
-                            LOCAL CHAUFFEURED CAR HIRE COMPANY CLIFTON IN BRISTOL</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-airport-taxi-transfer-company-clifton-in-bristol/">
-                            LOCAL AIRPORT TAXI TRANSFER COMPANY CLIFTON IN BRISTOL</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-taxi-cab-hire-company-gatwick-airport/"> LOCAL TAXI
-                            CAB HIRE COMPANY GATWICK AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-gatwick-airport/"> LOCAL MINI
-                            CAB HIRE COMPANY GATWICK AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-corporate-taxi-cab-company-gatwick-airport/"> LOCAL
-                            CORPORATE TAXI CAB COMPANY GATWICK AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-chauffeured-car-hire-company-gatwick-airport/">
-                            LOCAL CHAUFFEURED CAR HIRE COMPANY GATWICK AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-taxi-cab-hire-company-heathrow-airport/"> LOCAL
-                            TAXI CAB HIRE COMPANY HEATHROW AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-heathrow-airport/"> LOCAL
-                            MINI CAB HIRE COMPANY HEATHROW AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-corporate-taxi-cab-company-heathrow-airport/">
-                            LOCAL CORPORATE TAXI CAB COMPANY HEATHROW AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-chauffeured-car-hire-company-heathrow-airport/">
-                            LOCAL CHAUFFEURED CAR HIRE COMPANY HEATHROW AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-airport-taxi-transfer-company-heathrow-airport/">
-                            LOCAL AIRPORT TAXI TRANSFER COMPANY HEATHROW AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-taxi-cab-hire-company-hove/"> LOCAL TAXI CAB HIRE
-                            COMPANY HOVE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-hove/"> LOCAL MINI CAB HIRE
-                            COMPANY HOVE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-corporate-taxi-cab-company-hove/"> LOCAL CORPORATE
-                            TAXI CAB COMPANY HOVE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-chauffeured-car-hire-company-hove/"> LOCAL
-                            CHAUFFEURED CAR HIRE COMPANY HOVE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-airport-taxi-transfer-company-hove/"> LOCAL AIRPORT
-                            TAXI TRANSFER COMPANY HOVE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-taxi-cab-hire-company-luton-airport/"> LOCAL TAXI
-                            CAB HIRE COMPANY LUTON AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-luton-airport/"> LOCAL MINI
-                            CAB HIRE COMPANY LUTON AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-corporate-taxi-cab-company-luton-airport/"> LOCAL
-                            CORPORATE TAXI CAB COMPANY LUTON AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-chauffeured-car-hire-company-luton-airport/"> LOCAL
-                            CHAUFFEURED CAR HIRE COMPANY LUTON AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-airport-taxi-transfer-company-luton-airport/">
-                            LOCAL AIRPORT TAXI TRANSFER COMPANY LUTON AIRPORT</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-taxi-cab-hire-company-ocean-village/"> LOCAL TAXI
-                            CAB HIRE COMPANY OCEAN VILLAGE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-ocean-village/"> LOCAL MINI
-                            CAB HIRE COMPANY OCEAN VILLAGE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-corporate-taxi-cab-company-ocean-village/"> LOCAL
-                            CORPORATE TAXI CAB COMPANY OCEAN VILLAGE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-chauffeured-car-hire-company-ocean-village/"> LOCAL
-                            CHAUFFEURED CAR HIRE COMPANY OCEAN VILLAGE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-airport-taxi-transfer-company-ocean-village/">
-                            LOCAL AIRPORT TAXI TRANSFER COMPANY OCEAN VILLAGE</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-taxi-cab-hire-company-preston-park/"> LOCAL TAXI
-                            CAB HIRE COMPANY PRESTON PARK</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-preston-park/"> LOCAL MINI
-                            CAB HIRE COMPANY PRESTON PARK</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-preston-park-2/"> LOCAL
-                            CORPORATE TAXI CAB COMPANY PRESTON PARK</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-chauffeured-car-hire-company-preston-park/"> LOCAL
-                            CHAUFFEURED CAR HIRE COMPANY PRESTON PARK</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-airport-taxi-transfer-company-preston-park/"> LOCAL
-                            AIRPORT TAXI TRANSFER COMPANY PRESTON PARK</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-taxi-cab-hire-company-southampton/"> LOCAL TAXI CAB
-                            HIRE COMPANY SOUTHAMPTON</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-mini-cab-hire-company-southampton/"> LOCAL MINI CAB
-                            HIRE COMPANY SOUTHAMPTON</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-corporate-taxi-cab-company-southampton/"> LOCAL
-                            CORPORATE TAXI CAB COMPANY SOUTHAMPTON</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-chauffeured-car-hire-company-southampton/"> LOCAL
-                            CHAUFFEURED CAR HIRE COMPANY SOUTHAMPTON</a></li>
-                    <li><a href="https://www.nolimitcars.co.uk/local-airport-taxi-transfer-company-southampton/"> LOCAL
-                            AIRPORT TAXI TRANSFER COMPANY SOUTHAMPTON</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
