@@ -354,6 +354,8 @@
     var directionsService = new google.maps.DirectionsService();
     //   
     var total_way_point = "<?php echo $post_data['total_way_points'] ?>";
+    var destination = "<?php echo $post_data['destination'] ?>";
+    var source = "<?php echo $post_data['source'] ?>";
     var loop_count = parseInt(total_way_point) + 2;
     var res;
     var all_points = <?php echo json_encode($all_points); ?>;
@@ -402,7 +404,10 @@
                                     vehicle_id: vehicle_id,
                                     total_mile: mile_total,
                                     special_location: special_location,
-                                    durationInMinutes: durationInMinutes
+                                    durationInMinutes: durationInMinutes,
+                                    destination:destination,
+                                    source:source
+                                    
                                 },
                                 success: function(data) {
                                     var obj = jQuery.parseJSON(data);
@@ -414,6 +419,9 @@
                                     if (obj['single'] == 0 || obj['retn'] == 0) {
                                         $("#vehicle" + vehicle_id).hide();
                                     }
+
+                                    console.log("AIRPORT AMOUNT CHECK---------",obj)
+
                                     if (total_amount_single == 0 || total_amount_return ==
                                         0) {
                                         $("#vehicle" + vehicle_id).hide();

@@ -683,7 +683,47 @@ class Index extends CI_Controller
 		$totalsingle = $single + $singleTime;
 		$totalreturn = $return + $returnTime;
 
-		$array1 = array('single' => $totalsingle, 'retn' => $totalreturn);
+
+		// -----------------------------------------------------------------------------
+		// Apply Additional Airport/Terminal Surcharge to Fare
+		//
+		// Logic:
+		// - If either the pickup (source) or drop-off (destination) location contains
+		//   the keywords "airport" or "terminal" (case-insensitive), a surcharge applies.
+		//     • If only one location matches → Add £8
+		//     • If both locations match → Add £16 (double charge)
+		// - The surcharge is added to both single and return fare totals.
+		// -----------------------------------------------------------------------------
+
+		$beforeAirportCharge_single = $single + $singleTime;
+		$beforeAirportCharge_return = $return + $returnTime;
+		
+		$source = $_POST['source'] ?? '';
+		$destination = $_POST['destination'] ?? '';
+
+		// Flags to detect airport or terminal keywords
+		$source_is_airport_or_terminal = (
+			stripos($source, 'airport') !== false || stripos($source, 'terminal') !== false
+		);
+		$destination_is_airport_or_terminal = (
+			stripos($destination, 'airport') !== false || stripos($destination, 'terminal') !== false
+		);
+
+		// Apply the charge based on how many match
+		if ($source_is_airport_or_terminal && $destination_is_airport_or_terminal) {
+			// Both have airport/terminal — add £16
+			$totalsingle += 16;
+			$totalreturn += 16;
+		} elseif ($source_is_airport_or_terminal || $destination_is_airport_or_terminal) {
+			// Only one has it — add £8
+			$totalsingle += 8;
+			$totalreturn += 8;
+		}
+
+		//Airport pickup and drop off cost logic end ----------------------------
+
+
+		$array1 = array('single' => $totalsingle, 'retn' => $totalreturn, 'beforeAirportCharge_single' => $beforeAirportCharge_single, 'beforeAirportCharge_return' => $beforeAirportCharge_return);
 
 		echo json_encode($array1);
 	}
