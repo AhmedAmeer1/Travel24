@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=7')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=8')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/destination-view.css?v=6')?>" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
@@ -46,10 +46,10 @@
                 <div class="row ">
                     <div class="col-md-6 box-padding">
                         <div class="book-form-box">
-                            <div class="head">
+                            <!-- <div class="head">
                                 <span>BOOK NOW</span>
                                 <img src="../../assets/images/travel24/online_cards.svg" class="img-fluid image-width" alt="Payment">
-                            </div>
+                            </div> -->
                             <?php 
                            $redirectUrl = (isset($customer_id) && !empty($customer_id))
                             ?'Index/Search'.$customer_id
@@ -99,7 +99,7 @@
                     </div>
                     <div class="col-md-6 banner-details">
                         <div class="mx-auto">
-                            <h1>Your Destination is our goal</h1>
+                            <span>Your Destination is our goal</span>
                             <p>
                                 Airport transfers & chauffeur services connecting all UK airports
                             </p>

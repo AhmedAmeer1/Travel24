@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="<?php echo $result->meta_keyword; ?>" />
-    <meta name="description" content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
+    <meta name="description"
+        content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
     <title> Travel24 | Reliable UK Airport Transfers & Local Taxi Services</title>
     <meta property="og:title" content=" Travel24 | Reliable UK Airport Transfers & Local Taxi Services ">
-    <meta property="og:description" content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
+    <meta property="og:description"
+        content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
     <meta property="og:image" content=" https://travel24taxi.com/assets/images/travel24/about_us.svg ">
     <meta property="og:url" content=" https://travel24taxi.com">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
-    <link rel="icon" type="image/png" sizes="16x16"  href="<?php echo base_url('/favicon-16x16.png')?> " >
-    <link rel="icon" type="image/png" sizes="32x32"  href="<?php echo base_url('/favicon-32x32.png')?>">
-    <link rel="icon" type="image/png" sizes="48x48"  href="<?php echo base_url('/favicon-48x48.png')?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
+    <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=11')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=22')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -34,6 +39,7 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
+
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
@@ -43,11 +49,10 @@
                 <div class="row ">
                     <div class="col-md-6 box-padding">
                         <div class="book-form-box">
-                            <div class="head">
+                            <!-- <div class="head">
                                 <span>BOOK NOW</span>
-                                <!-- <a href="<?php echo base_url('Payment/create_payment'); ?>" class="btn btn-primary">Pay with PayPal Test </a> -->
                                 <img src="assets/images/travel24/online_cards.svg" class="img-fluid image-width"alt="Payement">
-                            </div>
+                            </div> -->
                             <?php 
                            $redirectUrl = (isset($customer_id) && !empty($customer_id))
                             ?'Index/Search'.$customer_id
@@ -64,10 +69,10 @@
                                         method="post" class="validate" data-parsley-validate=""
                                         enctype="multipart/form-data">
                                         <div class="form-group">
-                                            <label class="mt-4">PICKUP LOCATION</label>
+
                                             <div id="search_car">
                                                 <input type="text" class="form-control autocompleteDoc" name="source"
-                                                    required id="pickPoint" placeholder="Enter a location">
+                                                    required id="pickPoint" placeholder="Pickup Location">
                                                 <input type="hidden" class="lat_perfect" id="sourceLat"
                                                     name="sourceLat">
                                                 <input type="hidden" class="lon_perfect" id="sourceLon"
@@ -79,24 +84,25 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="d-flex justify-content-between">
-                                                <label>DESTINATION</label>
+                                                <label>&nbsp;</label>
+
                                                 <button style="float:right" class=" multi-root"><i
                                                         class="fa fa-plus-circle  "></i> Multi Route</button>
                                             </div>
                                             <input type="text" class="form-control autocompleteDoc" name="destination"
-                                                required id="dropPoint" placeholder="Enter a location">
+                                                required id="dropPoint" placeholder="Destination">
                                             <input type="hidden" class="lat_perfect" id="destLat" name="destLat">
                                             <input type="hidden" class="lon_perfect" id="destLong" name="destLong">
                                         </div>
                                         <button id="createCustomerSubmit" type="submit" class="submit-btn">GET A
-                                            QUOTE</button>
+                                            QUOTE & BOOK NOW</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 banner-details">
                         <div class="mx-auto">
-                          <span >Your Destination is our goal</span>
+                            <span>Your Destination is our goal</span>
 
                             <p>
                                 Airport transfers & chauffeur services connecting all UK airports
@@ -111,13 +117,15 @@
         <div class="text-container ">
             <p>
                 For reliable and professional airport transfers, Travel24 has you covered. We offer 24/7 minicab
-                services to all UK airports for individuals and groups, with clear, upfront pricing.
+                services to all UK airports for individuals and groups, <strong>&#10003; with clear, upfront
+                    pricing.</strong>
             </p>
-            <p class="mt-4">
+
+            <!-- <p class="mt-4">
                 For a hassle-free quote, fill out our online form or call us at <a href="tel:02039822911"> 02039 822
                     911.</a> Travel comfortably from
                 Brighton to Heathrow, Gatwick, and beyond with us.
-            </p>
+            </p> -->
         </div>
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
@@ -300,7 +308,8 @@
                         <div class="list-details-box">
                             <div class="d-flex justify-content-between flag-div">
                                 <h1 class="text-uppercase">Your journey is our mission </h1>
-                                <img src="assets/images/travel24/england.svg" class="img-fluid " alt="flag of the United Kingdom">
+                                <img src="assets/images/travel24/england.svg" class="img-fluid "
+                                    alt="flag of the United Kingdom">
                             </div>
                             <p>
                                 When you choose us for your travel needs, we're committed to delivering a seamless

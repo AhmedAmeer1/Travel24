@@ -32,10 +32,10 @@
 	);
 }
 
-.limits-banner .book-form-box {
+/* .limits-banner .book-form-box {
 	background-color: rgb(255 255 255 / 78%);
 	border-radius: 20px;
-}
+} */
 
 .limits-banner .book-form-box .head {
 	padding: 20px 23px 20px 23px;
@@ -56,9 +56,12 @@
 }
 
 .limits-banner .book-form-box .content .form-inner {
+	margin-top: 90px;
 	background-color: #00517c;
-	padding: 10px;
+	/* background-color: rgb(255 255 255 / 78%); */
+	padding: 20px;
 	border-radius: 12px;
+	border: 1px solid #ccc;
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group label {
@@ -74,12 +77,12 @@
 	padding: 8px 10px;
 	border-radius: 6px;
 	margin-top: 10px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	height: 45px;
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group button {
-	color: #FF6500;
+	color: #ff6500;
 	border: 0;
 	background: 0;
 	height: 0;
@@ -87,6 +90,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	font-weight: 700;
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group button i {
@@ -98,13 +102,13 @@
 	width: 100%;
 	font-size: 14px;
 	font-weight: 600;
-	background-color: #FF6500;
+	background-color: #ff6500;
 	color: #fff;
 	border: 0;
 	border-radius: 4px;
 	padding: 10px;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	height: 45px;
 }
 
@@ -138,15 +142,15 @@
 	line-height: 40px;
 }
 
-.limits-banner .banner-details .promoCode{
+.limits-banner .banner-details .promoCode {
 	color: #e4e4e4;
 	margin-top: 30px;
 	font-family: "helvetnormal";
 	font-size: 30px;
 	line-height: 40px;
 }
-.limits-banner .banner-details .code{
-	color: #FF6500;
+.limits-banner .banner-details .code {
+	color: #ff6500;
 	margin-top: 30px;
 	font-family: "helvetnormal";
 	font-size: 30px;
@@ -176,8 +180,8 @@
 }
 
 @media only screen and (max-width: 1366px) {
-	.limits-banner .banner-details  {
-		margin-top: 15px
+	.limits-banner .banner-details {
+		margin-top: 15px;
 	}
 	.limits-banner .banner-details span {
 		font-size: 52px;
@@ -201,18 +205,12 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-
-
-	.limits-banner .banner-details .promoCode{
-		
+	.limits-banner .banner-details .promoCode {
 		font-size: 21px;
-		
 	}
-	.limits-banner .banner-details .code{
-
+	.limits-banner .banner-details .code {
 		font-size: 21px;
-	
+
 		font-weight: 900;
 	}
 
@@ -235,6 +233,10 @@
 		font-size: 30px;
 		text-align: center;
 	}
+	.limits-banner .book-form-box .content .form-inner {
+		margin-top: 10px;
+	}
+
 	.banner_container {
 		padding: 22px 0px 48px 0px;
 	}
@@ -272,8 +274,6 @@
 	.text-container {
 		padding: 27px 39px 49px 22px;
 	}
-
-
 }
 
 /*  =============================BANNER COMPONENT  END  ================================= */
@@ -298,7 +298,7 @@
 	margin-bottom: 16px;
 }
 
-.disability_img{
+.disability_img {
 	/* width: 5%; */
 	margin-top: 13px !important;
 }
@@ -377,11 +377,11 @@
 }
 
 .carlist-wrapper .list-details-box p {
-    color: #000000;
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
+	color: #000000;
+	margin-top: 15px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
 }
 
 .flag-div {
