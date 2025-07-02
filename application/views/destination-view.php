@@ -141,18 +141,18 @@
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="../../assets/images/travel24/fleet/<?php echo $vh['vehicle_image']; ?>" class="img-fluid w-100 py-4" alt="car">
+                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $vh['vehicle_image']); ?>" class="img-fluid w-100 py-4" alt="car">
                             </div>
                             <div class="text_card">
                                 <h3><?php echo $vh['title']; ?></h3>
                                 <p> <?php echo $vh['description']; ?></p>
                                 <div class="d-flex justify-content-between ">
                                     <div class="d-flex justify-content-between ">
-                                        <img src="../../assets/images/travel24/passangers.svg" class="img-fluid " alt="passangers">
+                                        <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>" class="img-fluid" alt="passangers">
                                         <span><?php echo $vh['noOfPassengers']; ?>&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between ">
-                                        <img src="../../assets/images/travel24/Suitcases.svg" class="img-fluid " alt="Suitcases">
+                                        <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>" class="img-fluid " alt="Suitcases">
                                         <span><?php echo $vh['noOfSuitcases']; ?>&nbsp;Suitcases</span>
                                     </div>
                                 </div>

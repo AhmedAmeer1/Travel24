@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Index extends CI_Controller
 {
 
-
+ private $fleet_data;
 
 	public function __construct()
 	{
@@ -13,6 +13,8 @@ class Index extends CI_Controller
 		$this->load->helper('cookie');
 		$this->load->helper('custom_helper');
 		$this->load->model('Review_Model');
+		$this->load->config('fleet_data'); 
+		  $this->fleet_data = $this->config->item('fleet_data'); // Get the data from the config file
 	}
 	public function index()
 	{
@@ -23,6 +25,9 @@ class Index extends CI_Controller
 			session_start();
 		}
 
+
+
+
 		/* === Language Translation [ Directory Listings ] === */
 		/* === Common Homepage Supporting Methods === */
 		$home_template['page'] = "Homepage";
@@ -31,10 +36,13 @@ class Index extends CI_Controller
 		$home_template['result'] = $this->db->get('settings')->row();
 		$this->db->join('vehicle_type vt', 'vt.id=v.vehicle_type');
 		$home_template['fleet'] =  $this->db->get('vehicle v')->result();
-
+  	    $home_template['fleet_data'] = $this->fleet_data;
 		$this->load->model('Review_Model');
 		$home_template['reviews'] =  $this->Review_Model->getAllReviews(1);
 		$home_template['CustomerReviewData'] = $this->Review_Model->getReviewDetailsforAdmin();
+	debug_log(" -----home_template  --------- ");
+			debug_log($home_template);
+
 		$this->load->view('index', $home_template);
 	}
 

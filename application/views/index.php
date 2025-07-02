@@ -120,7 +120,6 @@
                 services to all UK airports for individuals and groups, <strong>&#10003; with clear, upfront
                     pricing.</strong>
             </p>
-
             <!-- <p class="mt-4">
                 For a hassle-free quote, fill out our online form or call us at <a href="tel:02039822911"> 02039 822
                     911.</a> Travel comfortably from
@@ -131,179 +130,32 @@
             <div class="home_container no-gutter-responsive">
                 <h2>OUR FLEET</h2>
                 <div class="row mt-2 no-gutter-responsive">
+                    <?php foreach ($fleet_data as $fleet): ?>
                     <div class="col-md-4">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="assets/images/travel24/fleet/SaloonCar.png" class="img-fluid w-100 py-4"
-                                    alt="sedan-style car">
+                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image']); ?>"
+                                    class="img-fluid w-100 py-4" alt="car">
                             </div>
                             <div class="text_card">
-                                <h3>SALOON CAR (X)</h3>
-                                <p>Up to 3 passengers plus 2 suitcases or 4 passengers plus hand luggage.</p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
-                                            alt="passangers">
-                                        <span>&nbsp;3&nbsp;Passengers</span>
+                                <h3><?= $fleet['title']; ?></h3>
+                                <p><?= $fleet['description']; ?></p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex justify-content-between">
+                                        <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>"
+                                            class="img-fluid" alt="passengers">
+                                        <span>&nbsp;<?= $fleet['noOfPassengers']; ?>&nbsp;Passengers</span>
                                     </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
-                                            alt="Suitcases">
-                                        <span>&nbsp;2&nbsp;Suitcases</span>
+                                    <div class="d-flex justify-content-between">
+                                        <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>"
+                                            class="img-fluid" alt="suitcases">
+                                        <span>&nbsp;<?= $fleet['noOfSuitcases']; ?>&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="car-box">
-                            <div class="w-100 image_card">
-                                <img src="assets/images/travel24/fleet/EstateCar.png" class="img-fluid w-100 py-4"
-                                    alt="station wagon (estate car)">
-                            </div>
-                            <div class="text_card">
-                                <h3>ESTATE CAR (Comfort)</h3>
-                                <p>Up to 4 passengers plus 3 suitcases.</p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
-                                            alt="passangers">
-                                        <span>&nbsp;4&nbsp;Passengers</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
-                                            alt="Suitcases">
-                                        <span>&nbsp;3&nbsp;Suitcases</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="car-box">
-                            <div class="w-100 image_card">
-                                <img src="assets/images/travel24/fleet/PeopleCarrier.png" class="img-fluid w-100 py-3"
-                                    alt="3. people carrier (MPV or minivan)">
-                            </div>
-                            <div class="text_card">
-                                <h3>PEOPLE CARRIER (XL)</h3>
-                                <p>Up to 5 passengers plus 4 suitcases or 6 passengers plus hand luggage.</p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
-                                            alt="passangers">
-                                        <span>&nbsp;5&nbsp;Passengers</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
-                                            alt="Suitcases">
-                                        <span>&nbsp;4&nbsp;Suitcases</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="car-box">
-                            <div class="w-100 image_card">
-                                <img src="assets/images/travel24/fleet/ExecutiveCar.png" class="img-fluid w-100 py-4"
-                                    alt="executive car">
-                            </div>
-                            <div class="text_card">
-                                <h3>EXECUTIVE CAR (Executive)</h3>
-                                <p>Up to 3 passengers plus 2 suitcases or 4 passengers plus hand luggage</p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
-                                            alt="passangers">
-                                        <span>&nbsp;3&nbsp;Passengers</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
-                                            alt="Suitcases">
-                                        <span>&nbsp;2&nbsp;Suitcases</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="car-box">
-                            <div class="w-100 image_card">
-                                <img src="assets/images/travel24/fleet/8SeaterMiniBus.png" class="img-fluid w-100 "
-                                    alt="8 Seater minibus">
-                            </div>
-                            <div class="text_card">
-                                <h3>8 SEATER MINIBUS (Van)</h3>
-                                <p>8 passengers plus up to 7 suitcases </p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
-                                            alt="passangers">
-                                        <span>&nbsp;8&nbsp;Passengers</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
-                                            alt="Suitcases">
-                                        <span>&nbsp;7&nbsp;Suitcases</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="car-box">
-                            <div class="w-100 image_card">
-                                <img src="assets/images/travel24/fleet/ExecutivePeopleCarrier.png"
-                                    class="img-fluid w-100 py-2" alt="Executive People Carrier">
-                            </div>
-                            <div class="text_card">
-                                <h3>EXECUTIVE PEOPLE CARRIER (Luxury)</h3>
-                                <p>Up to 5 passengers plus 4 suitcases or 6 passengers plus hand luggage.</p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
-                                            alt="passangers">
-                                        <span>&nbsp;5&nbsp;Passengers</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
-                                            alt="Suitcases">
-                                        <span>&nbsp;4&nbsp;Suitcases</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="car-box">
-                            <div class="w-100 image_card">
-                                <img src="assets/images/travel24/fleet/MobilityVehicle.png" class="img-fluid w-100 py-4"
-                                    alt="Mobility Vehicle">
-                            </div>
-                            <div class="text_card">
-                                <h3>MOBILITY VEHICLE ( <img src="assets/images/travel24/fleet/disability.png"
-                                        class="disability_img" alt="disability"> Vehicle)</h3>
-                                <p>Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and
-                                    wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages
-                                    .</p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/passangers.svg" class="img-fluid "
-                                            alt="passangers">
-                                        <span>&nbsp;4&nbsp;Passengers</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="assets/images/travel24/Suitcases.svg" class="img-fluid "
-                                            alt="Suitcases">
-                                        <span>&nbsp;1&nbsp;Suitcases</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                     <div class="col-md-8">
                         <div class="list-details-box">
                             <div class="d-flex justify-content-between flag-div">
