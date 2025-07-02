@@ -90,7 +90,7 @@
                     <div class="col-lg-9 col-sm-12">
                         <div class="list-wrapper">
                             <div class="choose-heading">Choose an option. (All card charges included)</div>
-                            <div class="filter-wrapper">
+                            <div class="filter-wrapper hide">
                                 <input type="hidden" id="special_location" value="<?php echo $special_location;?>">
                                 <h3>PASSENGERS AND LUGGAGE</h3>
                                 <div class="row">
