@@ -293,10 +293,7 @@
 	text-transform: uppercase;
 }
 
-.carlist-wrapper .car-box img {
-	margin-top: 8px;
-	margin-bottom: 16px;
-}
+
 
 .disability_img {
 	/* width: 5%; */
@@ -323,17 +320,39 @@
 .car-box {
 	margin-top: 28px;
 	opacity: 1;
-	min-height: 320px;
+	/* min-height: 320px; */
 }
 
 .image_card {
-	box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1);
-	background-color: rgb(0 81 124);;
+	/* box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1); */
+	/* background-color: rgb(0 81 124); */
+	background-color: rgb(191 198 201);
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
-	padding: 20px 50px 10px 50px;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	padding: 20px 30px 10px 30px;
 }
 
+.image_card h3 {
+	color: #101828;
+	font-size: 16px;
+	font-family: "helvet";
+	font-weight: 500;
+}
+
+.image_card span {
+	color: #004c78;
+	font-size: 13px;
+	font-weight: 500;
+	margin-top: 12px;
+}
+.image_card .passangers {
+	height: 20px;
+}
+.image_card .suitcases {
+	height: 20px;
+}
 .text_card {
 	box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1);
 	background-color: white;
@@ -349,18 +368,18 @@
 	line-height: 24px;
 }
 
-.text_card h3 {
+/* .text_card h3 {
 	color: #101828;
 	font-size: 22px;
 	font-family: "helvet";
-}
+} */
 
-.text_card span {
+/* .text_card span {
 	color: #004c78;
 	font-size: 16px;
 	font-weight: 500;
 	margin-top: 15px;
-}
+} */
 
 .carlist-wrapper .list-details-box {
 	margin-top: 24px;

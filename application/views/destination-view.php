@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=8')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=9')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/destination-view.css?v=6')?>" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
@@ -127,33 +127,29 @@
                     </div>
                 </div>
             </div>
-
             <?php else: ?>
             <p>No blog details available.</p>
             <?php endif; ?>
         </section>
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
-                <h2>OUR FLEET</h2>
+                <h2 class=" pt-2">OUR FLEET</h2>
                 <div class="row mt-2 no-gutter-responsive">
                     <?php
                          foreach($fleet as $vh){?>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $vh['vehicle_image']); ?>" class="img-fluid w-100 py-4" alt="car">
-                            </div>
-                            <div class="text_card">
-                                <h3><?php echo $vh['title']; ?></h3>
-                                <p> <?php echo $vh['description']; ?></p>
-                                <div class="d-flex justify-content-between ">
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>" class="img-fluid" alt="passangers">
-                                        <span><?php echo $vh['noOfPassengers']; ?>&nbsp;Passengers</span>
+                                  <h3><?php echo $vh['title']; ?></h3>
+                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $vh['vehicle_image']); ?>" class="img-fluid w-100 py-2" alt="car">
+                            <div class="d-flex justify-content-between">
+                                    <div class="d-flex justify-content-between">
+                                        <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>" class="img-fluid passangers" alt="passengers">
+                                        <span  class="my-auto">&nbsp;<?= $vh['noOfPassengers']; ?>&nbsp;Passengers</span>
                                     </div>
-                                    <div class="d-flex justify-content-between ">
-                                        <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>" class="img-fluid " alt="Suitcases">
-                                        <span><?php echo $vh['noOfSuitcases']; ?>&nbsp;Suitcases</span>
+                                    <div class="d-flex justify-content-between">
+                                        <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>"class="img-fluid suitcases" alt="suitcases">
+                                        <span class="my-auto">&nbsp;<?= $vh['noOfSuitcases']; ?>&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
@@ -163,13 +159,11 @@
                 </div>
             </div>
         </section>
-
         <?php if (isset($blog['slug']) && $blog['slug'] === 'heathrow-airport-transfer'): ?>
 <section class="airport-transfer-heading text-center my-5">
    <?php $this->load->view('common_components/heathrow-airport-transfer'); ?>
 </section>
 <?php endif; ?>
-
     </main>
     <?php $this->load->view('common_components/footer'); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

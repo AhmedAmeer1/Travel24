@@ -24,7 +24,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=22')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=4')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
 
     <!-- Google tag (gtag.js) -->
@@ -128,35 +128,33 @@
         </div>
         <section class="carlist-wrapper">
             <div class="home_container no-gutter-responsive">
-                <h2>OUR FLEET</h2>
+                <h2 class=" pt-2">OUR FLEET</h2>
                 <div class="row mt-2 no-gutter-responsive">
                     <?php foreach ($fleet_data as $fleet): ?>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="car-box">
                             <div class="w-100 image_card">
-                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image']); ?>"
-                                    class="img-fluid w-100 py-4" alt="car">
-                            </div>
-                            <div class="text_card">
                                 <h3><?= $fleet['title']; ?></h3>
-                                <p><?= $fleet['description']; ?></p>
+                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image']); ?>"
+                                    class="img-fluid w-100 py-2" alt="car">
                                 <div class="d-flex justify-content-between">
                                     <div class="d-flex justify-content-between">
                                         <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>"
-                                            class="img-fluid" alt="passengers">
-                                        <span>&nbsp;<?= $fleet['noOfPassengers']; ?>&nbsp;Passengers</span>
+                                            class="img-fluid passangers" alt="passengers">
+                                        <span  class="my-auto">&nbsp;<?= $fleet['noOfPassengers']; ?>&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>"
-                                            class="img-fluid" alt="suitcases">
-                                        <span>&nbsp;<?= $fleet['noOfSuitcases']; ?>&nbsp;Suitcases</span>
+                                            class="img-fluid suitcases" alt="suitcases">
+                                        <span class="my-auto">&nbsp;<?= $fleet['noOfSuitcases']; ?>&nbsp;Suitcases</span>
                                     </div>
                                 </div>
                             </div>
+                    
                         </div>
                     </div>
                     <?php endforeach; ?>
-                    <div class="col-md-8">
+                    <div class="col-md-8 mt-3">
                         <div class="list-details-box">
                             <div class="d-flex justify-content-between flag-div">
                                 <h1 class="text-uppercase">Your journey is our mission </h1>
