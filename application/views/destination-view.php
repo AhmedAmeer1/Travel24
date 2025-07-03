@@ -8,6 +8,9 @@
     <meta name="description" content="<?php echo $blog['metaDescription']; ?>" />
     <meta name="og:title" content="<?php echo $blog['ogTitle']; ?>" />
     <meta name="og:description" content="<?php echo $blog['ogDescription']; ?>" />
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <meta name="og:url" content="<?php echo $blog['canonicalLink']; ?>" />
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
     <meta property="og:type" content="website">

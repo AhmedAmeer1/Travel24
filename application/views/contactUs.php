@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Get in touch with Travel24 Taxi – contact us via online form, call 02039 822 911 or email info@travel24taxi.com. Fast quotes & 24/7 support." />
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Contact us</title>
     <meta property="og:title" content="Contact Travel 24 Taxi - 24/7 Airport Transfer Support">
     <meta property="og:description" content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">

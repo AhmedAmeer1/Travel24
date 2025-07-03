@@ -4,6 +4,9 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Travel24: 15+ years of 24/7 taxi, minibus, chauffeur & executive services. Airport, long-distance specialists with licensed safe vehicles & competitive rates." />
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>About Us</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="icon" type="image/png" sizes="16x16"  href="<?php echo base_url('/favicon-16x16.png')?> " >

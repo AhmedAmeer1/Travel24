@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"content="Join Travel24’s 24/7 UK airport & chauffeur fleet. We hire professional drivers with local knowledge—wheelchair-accessible vehicles, steady bookings." />
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Drivers</title>
     <meta property="og:title" content="Join Travel 24 Taxi as a Driver - Flexible Airport Transfer Jobs">
     <meta property="og:description" content="Become a driver with Travel 24 Taxi. Enjoy flexible hours, competitive pay, and the opportunity to provide top-notch airport transfer services across the UK.">

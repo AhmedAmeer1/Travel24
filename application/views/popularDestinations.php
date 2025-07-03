@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"content="Explore our most popular taxi destinations: airports, cruise terminals & UK cities. Book fixed rate transfers online with reliable 24/7 service." />
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Popular Destinations</title>
     <meta property="og:title" content="Popular UK Airport Taxi Destinations - Travel 24 Taxi">
     <meta property="og:description"content="Explore top UK airport transfer routes including Heathrow, Gatwick, Luton & more. Travel 24 Taxi offers reliable 24/7 taxi services.">

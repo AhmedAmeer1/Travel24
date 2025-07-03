@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Terms and Conditions - Travel24</title>
     <meta property="og:title" content="Travel 24 Taxi - Terms & Conditions of Service">
     <meta property="og:description" content="Review the terms and conditions for using Travel 24 Taxi services, including booking policies, cancellations, and service guidelines.">

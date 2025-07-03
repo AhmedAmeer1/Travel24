@@ -7,6 +7,9 @@
     <meta name="keywords" content="<?php echo $setting->meta_keyword; ?>" />
     <meta name="description" content="<?php echo $setting->journey_meta_desc; ?>" />
     <meta name="language" content="ES">
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Travel24</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"

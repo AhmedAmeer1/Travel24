@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Read real Travel24 customer reviews: punctual, professional drivers, clean cars & excellent 24/7 service. Discover why passengers love us." />
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Reviews</title>
     <meta property="og:title" content="Travel 24 Taxi - Verified Customer Reviews & Testimonials">
     <meta property="og:description" content="Read real customer reviews about Travel 24 Taxi’s airport transfer services. Discover why our passengers trust us for their UK journeys.">

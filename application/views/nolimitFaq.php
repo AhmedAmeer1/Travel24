@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Find answers about bookings, payments, vehicle types & more on Travel24’s FAQ. Simple online, phone or email support—24/7 clarity for every ride" />
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>faq</title>
     <meta property="og:title" content="Travel 24 Taxi - Frequently Asked Questions (FAQ)">
     <meta property="og:description" content="Find answers to common questions about Travel 24 Taxi’s booking process, pricing, airport pickups, cancellations, and more.">
