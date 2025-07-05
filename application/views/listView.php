@@ -88,7 +88,7 @@
                             <h2>DROP - POINT:</h2>
                             <p><?php echo $post_data['destination'] ?></p>
                         </div>
-                        <div id="map-layer" style="margin: 20px 0px; max-width: 100%; min-height: 400;">Loading</div>
+                        <!-- <div id="map-layer" style="margin: 20px 0px; max-width: 100%; min-height: 400;">Loading</div> -->
                     </div>
                     <div class="col-lg-9 col-sm-12">
                         <div class="list-wrapper">

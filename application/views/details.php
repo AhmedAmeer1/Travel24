@@ -17,7 +17,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=7')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=10')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=11')?>" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -203,13 +203,6 @@
                                         <input type="text" id="flight_no" class="formcontrol">
                                     </div>
                                 </div>
-
-
-
-
-
-
-
                                 <div class="col-md-6 brdr-b-r ">
                                     <div class="form-group">
                                         <div class="picker-head">

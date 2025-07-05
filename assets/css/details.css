@@ -108,7 +108,15 @@ embed {
 	color: #00517c;
 	font-size: 13px;
 }
-
+.form-group .picker input {
+	height: 35px;
+	background-color: #efefef;
+	border: none;
+	color: #000;
+	font-size: 12px;
+	padding: 10px;
+	font-weight: bold;
+}
 .disability_img {
 	margin-bottom: 2px;
 	width: 3%;
