@@ -82,11 +82,11 @@
 }
 
 .limits-banner .book-form-box .content .form-inner .form-group button {
-	color: #ff6500;
+	color: white;
 	border: 0;
 	background: 0;
 	height: 0;
-	font-size: 12px;
+	font-size: 14px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

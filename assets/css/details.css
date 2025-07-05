@@ -117,9 +117,23 @@ embed {
 	padding: 10px;
 	font-weight: bold;
 }
+
+.picker::placeholder {
+	color: black;
+	font-weight: bold;
+}
+  .custom-placeholder::placeholder {
+    color: black;
+    font-weight: bold;
+  }
+
 .disability_img {
 	margin-bottom: 2px;
 	width: 3%;
+}
+.formcontrol::placeholder {
+	color: black;
+	font-weight: bold;
 }
 
 .spinner {

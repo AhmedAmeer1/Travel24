@@ -48,12 +48,12 @@
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
-        <div class="inner-header-wrapper ">
+        <!-- <div class="inner-header-wrapper ">
             <div class="col-12 text-center  booking-form">
                 <h1>Booking Form </h1>
                 <p>Passengers & Luggages</p>
             </div>
-        </div>
+        </div> -->
         <div class="way-points-option" style="display:none"><input type="checkbox" name="way_points[]" checked="true"
                 class="way_points" value="<?php echo $post_data['source']; ?>"> <?php echo $post_data['source'];?></div>
         <?php
@@ -70,7 +70,7 @@
         <section class="list-main-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-sm-12">
+                    <!-- <div class="col-lg-3 col-sm-12">
                         <div class="side-wrapper">
                             <h1>Summary</h1>
                             <h2>PICK UP - POINT:</h2>
@@ -88,9 +88,9 @@
                             <h2>DROP - POINT:</h2>
                             <p><?php echo $post_data['destination'] ?></p>
                         </div>
-                        <!-- <div id="map-layer" style="margin: 20px 0px; max-width: 100%; min-height: 400;">Loading</div> -->
-                    </div>
-                    <div class="col-lg-9 col-sm-12">
+                        <div id="map-layer" style="margin: 20px 0px; max-width: 100%; min-height: 400;">Loading</div>
+                    </div> -->
+                    <div class="col-lg-12 col-sm-12">
                         <div class="list-wrapper">
                             <div class="choose-heading">Choose an option. (All card charges included)</div>
                             <div class="filter-wrapper hide">
@@ -169,9 +169,9 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="content">
+                                            <!-- <div class="content">
                                                 <p><?php echo $vh->vehicle_description?></p>
-                                            </div>
+                                            </div> -->
                                             <div class="bottom amount-div" data-per-km="<?php echo $vh->perKm;?>"
                                                 data-per-km-return="<?php echo $vh->perKmReturn;?>"
                                                 data-vehicle-id="<?php echo $vh->vehicle_id;?>">
@@ -227,9 +227,9 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="content">
+                                            <!-- <div class="content">
                                                 <p><?php echo $vh->vehicle_description?></p>
-                                            </div>
+                                            </div> -->
                                             <div class="bottom amount-div" data-per-km="<?php echo $vh->perKm;?>"
                                                 data-per-km-return="<?php echo $vh->perKmReturn;?>"
                                                 data-vehicle-id="<?php echo $vh->vehicle_id;?>">

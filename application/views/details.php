@@ -17,7 +17,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=7')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=11')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=4')?>" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -34,10 +34,7 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
-<style>
 
-
-</style>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <body>
@@ -51,7 +48,7 @@
         </div> -->
         <section class="details-main-wrapper">
             <div class="container">
-                <p class="formHeading">Please check journey details and select date and time</p>
+                <p class="formHeading">Please check journey details</p>
                 <div class="row">
                     <div class="col-md-12">
                         <!-- <h1>Please check journey details and select date and time</h1> -->
@@ -161,9 +158,10 @@
                             <div class="row">
                                 <div class="col-md-12 brdr-b">
                                     <div class="form-group">
-                                        <label>Full NAME*</label>
+                                        <!-- <label>Full NAME*</label> -->
 
-                                        <input type="text" id="first_name" class="formcontrol" name="first_name">
+                                        <input type="text" id="first_name" class="formcontrol" name="first_name" placeholder="FULL NAME*"
+                                            required>
                                     </div>
                                 </div>
                                 <script></script>
@@ -171,46 +169,46 @@
                                     <div class="form-group">
                                         <label>LAST NAME*</label>
 
-                                        <input type="text" name="last_name" id="last_name" class="formcontrol">
+                                        <input type="text" name="last_name" id="last_name" class="formcontrol" placeholder="First Name">
                                     </div>
                                 </div>
                                 </script>
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
-                                        <label>E-MAIL ADDRESS*</label>
-                                        <input type="email" id="email_id" class="formcontrol">
+                                        <!-- <label>E-MAIL ADDRESS*</label> -->
+                                        <input type="email" id="email_id" class="formcontrol" placeholder="E-MAIL ADDRESS*">
 
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 brdr-b">
                                     <div class="form-group">
-                                        <label>PHONE NUMBER</label>
-                                        <input type="number" id="phone_no" name="phone_no" class="formcontrol">
+                                        <!-- <label>PHONE NUMBER</label> -->
+                                        <input type="number" id="phone_no" name="phone_no" class="formcontrol" placeholder="PHONE NUMBER">
                                     </div>
                                 </div>
 
                                 <input type="hidden" id="exceed_time" value="0">
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
-                                        <label>PICKUP DOOR NAME / HOME NUMBER</label>
-                                        <input type="text" id="pick_up" class="formcontrol">
+                                        <!-- <label>PICKUP DOOR NAME / HOME NUMBER</label> -->
+                                        <input type="text" id="pick_up" class="formcontrol" placeholder="PICKUP DOOR NAME / HOME NUMBER">
                                     </div>
                                 </div>
                                 <div class="col-md-6 brdr-b">
                                     <div class="form-group">
-                                        <label>FLIGHT NUMBER(IF APPLICABLE)</label>
-                                        <input type="text" id="flight_no" class="formcontrol">
+                                        <!-- <label>FLIGHT NUMBER(IF APPLICABLE)</label> -->
+                                        <input type="text" id="flight_no" class="formcontrol" placeholder="FLIGHT NUMBER(IF APPLICABLE)">
                                     </div>
                                 </div>
                                 <div class="col-md-6 brdr-b-r ">
                                     <div class="form-group">
                                         <div class="picker-head">
 
-                                            <label>Pickup Date</label>
+                                            <!-- <label>Pickup Date</label> -->
                                         </div>
                                         <p class="picker mb-2"><input onChange="checkDate()" required type="text"
-                                                id="datepicker" class="w-100" autocomplete="off"></p>
+                                                id="datepicker" class="w-100 custom-placeholder" autocomplete="off" placeholder="PICKUP DATE "></p>
 
 
                                     </div>
@@ -219,9 +217,9 @@
                                     <div class="form-group">
                                         <div class="picker-head h-5">
 
-                                            <label>Pickup Time</label>
+                                            <!-- <label>Pickup Time</label> -->
                                         </div>
-                                        <p class="picker mb-2"><input type="text" class="w-100" id="timepicker" autocomplete="off">
+                                        <p class="picker mb-2"><input type="text" class="w-100 custom-placeholder" id="timepicker" autocomplete="off" placeholder="PICKUP TIME ">
                                         </p>
                                     </div>
 
@@ -286,8 +284,8 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-12 pt-2 ">
-                                    <div class="form-group d-flex align-items-center hide">
+                                <div class="col-md-12  ">
+                                    <div class="form-group-test d-flex align-items-center hide">
                                         <input type="checkbox" id="meet_and_greet" class="c-check hide"><label
                                             class="ml-2 hide">
                                             MEET AND GREET (£8) 30 MINUTES </label>&nbsp;&nbsp;&nbsp;
@@ -298,7 +296,7 @@
                                         <!-- <span id="drop_amount" class="text_amt"></span> -->
                                     </div>
 
-                                    <div class="form-group mt-3 hide">
+                                    <div class="form-group  hide">
                                         <label>COMMENTS OR SPECIAL INSTRUCTIONS</label>
                                         <textarea rows="3" class="formcontrol" id="scomments_special_inst"
                                             name="scomments_special_inst"></textarea>
