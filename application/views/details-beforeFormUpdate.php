@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="utf-8">
@@ -8,13 +7,16 @@
     <meta name="keywords" content="<?php echo $setting->meta_keyword; ?>" />
     <meta name="description" content="<?php echo $setting->journey_meta_desc; ?>" />
     <meta name="language" content="ES">
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Travel24</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=7')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=8')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=10')?>" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -23,7 +25,6 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -31,20 +32,24 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
+<style>
 
+
+</style>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
-        <div class="inner-header-wrapper ">
+        <!-- <div class="inner-header-wrapper ">
             <div class="col-12 text-center  booking-form">
                 <h1>Booking Form </h1>
                 <p>Please check journey details and select date and time</p>
             </div>
-        </div>
+        </div> -->
         <section class="details-main-wrapper">
             <div class="container">
+                             <p class="formHeading">Please check journey details and select date and time</p>
                 <div class="row">
                     <div class="col-md-12">
                         <!-- <h1>Please check journey details and select date and time</h1> -->
@@ -141,23 +146,10 @@
                                                 </div>
                                             </div>
 
-
-
-                                            <div class="bottom" id="airport_charge_row" style="display: none;">
-                                                <strong>Airport Charge (Included in Total) : </strong>
-                                                <span> £ <span id="airport_charge_display">0</span></span>
-
-
-                                            </div>
-
                                             <div class="bottom">
                                                 <img src="<?php echo base_url($vechicle_data->vehicle_image)?>"
                                                     alt="Car">
-
-
-
-
-                                                <h4>£ <span
+                                                <h4>£<span
                                                         id="total_fare"><?php echo ($_SESSION["total_fare"]==0?$_SESSION["base_fare"]:$_SESSION["total_fare"])?></span>
                                                 </h4>
                                             </div>
@@ -281,8 +273,8 @@
                                         <input type="checkbox" id="meet_and_greet" class="c-check"><label class="ml-2">
                                             MEET AND GREET (£8) 30 MINUTES </label>&nbsp;&nbsp;&nbsp;
                                         <!-- <span id="meet_amount" class="text_amt" > </span> &nbsp; -->
-                                        <!-- <input type="checkbox" id="drop_off" class="c-check"><label class="ml-2"> DROP
-                                            OFF (£6) </label> -->
+                                        <input type="checkbox" id="drop_off" class="c-check"><label class="ml-2"> DROP
+                                            OFF (£6) </label>
                                         <!-- <span id="drop_amount" class="text_amt"></span> -->
                                     </div>
 
@@ -303,6 +295,8 @@
 
 
                         </div>
+                        <!------------------------------------------ OLD PAYMENT CODE START ---------------------------------------- -->
+
                         <div class="bottom-buttons">
                             <div class="user-pay-type d-flex justify-content-end" style="gap: 3px;">
                                 <?php foreach($payment_types as $pt){?>
@@ -319,8 +313,15 @@
                                 </span>
                             </div>
                         </div>
+
+
+                        <!------------------------------------------ OLD PAYMENT CODE END ---------------------------------------- -->
+
+
+
                     </div>
                 </div>
+
         </section>
     </main>
     <?php $this->load->view('common_components/footer'); ?>
@@ -371,35 +372,11 @@
 
     <script>
     $(document).ready(function() {
+        console.log("inside  document ready function ----- ")
         var payment_status = '<?php echo $payment_status;?>';
+        console.log("payment_status ----- ", payment_status)
         var book_id = '<?php echo $booking_id;?>';
-
-        // Airport Charge Calculation start
-        <?php
-        $source = isset($_SESSION["source"]) ? $_SESSION["source"] : '';
-        $destination = isset($_SESSION["destination"]) ? $_SESSION["destination"] : '';
-
-        // Check if the word "airport" exists in source or destination
-        $airport_charge = (stripos($source, 'airport') !== false || stripos($destination, 'airport') !== false) ? 5 : 0;
-        ?>
-
-        var airport_charge = <?php echo $airport_charge; ?>;
-        var fare = <?php echo $_SESSION["base_fare"] ?? 0; ?>;
-        var child_seat_cost = <?php echo $_SESSION["child_seat_cost"] ?? 0; ?>;
-
-        var total = parseFloat(fare) + parseFloat(child_seat_cost) + parseFloat(airport_charge);
-        $("#total_fare").text(total.toFixed(2));
-
-        if (airport_charge > 0) {
-            $("#airport_charge_display").text(airport_charge.toFixed(2));
-            $("#airport_charge_row").show();
-        } else {
-            $("#airport_charge_row").hide();
-        }
-
-        // Airport Charge Calculation end
-
-
+        console.log("book_id ----- ", book_id)
         if (payment_status == "done" && book_id != 0) {
 
             console.log("inside if condition  ----- ", book_id)
@@ -474,11 +451,18 @@
 
                                     let fare = $("#total_fare").text();
 
+
+
+
+
                                     let discount_amt = (fare * obj.result['discount'] / 100)
                                         .toFixed(2);
-
+                                    console.log(
+                                        " dicount success---------------44444444444-- discount_amt-----",
+                                        discount_amt)
                                     let after_dscnt = (fare - discount_amt)
-
+                                    console.log("after_dscnt----------------------",
+                                        after_dscnt)
 
                                     $("#total_fare").text(after_dscnt.toFixed(2));
                                     $(".promo-code").hide();
@@ -558,7 +542,10 @@
 
 
     $('.payment-method').click(function() {
-
+        //  if($("#my_account_div").hasClass('hide')){
+        //     alert("please login to continue");return;
+        //  }
+        //alert($("#exceed_time").val())
         var valid_phone = validatePhone($("#phone_no").val())
         var valid_email = ValidateEmail($("#email_id").val())
 
@@ -612,16 +599,19 @@
             var scomments_special_inst = document.getElementById('scomments_special_inst').value;
             if ($(this).attr('data-method') == "pay_now_p") {
                 var payment_method = "paypal";
+                console.log('inside pay_now_p -------------')
             }
             if ($(this).attr('data-method') == "pay_now_l") {
                 var payment_method = "lloyds";
+                console.log('inside pay_now_l -------------')
             }
             if ($(this).attr('data-method') == "pay_cash") {
                 var payment_method = "cash";
-
+                console.log('inside pay_cash -------------')
             }
 
-
+            console.log('payment_method')
+            console.log(payment_method)
             if (chk_Greet.checked) {
                 var meet_and_greet = 1;
             } else {

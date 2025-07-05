@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="utf-8">
@@ -16,7 +17,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=7')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=8')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=10')?>" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -25,6 +26,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -41,14 +43,15 @@
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
-        <div class="inner-header-wrapper ">
+        <!-- <div class="inner-header-wrapper ">
             <div class="col-12 text-center  booking-form">
                 <h1>Booking Form </h1>
                 <p>Please check journey details and select date and time</p>
             </div>
-        </div>
+        </div> -->
         <section class="details-main-wrapper">
             <div class="container">
+                <p class="formHeading">Please check journey details and select date and time</p>
                 <div class="row">
                     <div class="col-md-12">
                         <!-- <h1>Please check journey details and select date and time</h1> -->
@@ -57,61 +60,8 @@
                             <button type="button" id="success_modal" class="btn btn-info btn-lg" style="display:none"
                                 data-toggle="modal" data-target="#myModal">Open Modal</button>
                             <div class="row">
-                                <div class="col-md-7 no-gutter">
-                                    <div class="destination-details">
-                                        <div class="row brdr-btm">
-                                            <div class="col-md-6">
-                                                <h3>PICK UP - POINT:</h3>
-                                                <p><?php echo $_SESSION["source"];?></p>
-                                            </div>
-                                            <?php 
-                                       if($_SESSION["total_way_points"] > 0){?>
-                                            <div class="col-md-6">
-                                                <h3>WAY POINTS</h3>
-                                                <?php
-                                          foreach ($_SESSION["way_points"] as $k => $v) {
-                                           // if($k !=0 && $k!=(count($_SESSION["way_points"])-1)){?>
-                                                <p><?php echo $v;?></p>
-                                                <?php }
-                                          ?>
-                                            </div>
-                                            <?php }
-                                       ?>
-                                            <div class="col-md-6">
-                                                <h3>DROP - POINT:</h3>
-                                                <p><?php echo $_SESSION["destination"];?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row h-md-100">
-                                        <div class="col-md-6 brdr-right">
-                                            <div class="form-group">
-                                                <div class="picker-head">
-                                                    <img src="<?php echo base_url('assets/images/calendar.png')?>"
-                                                        alt="calendar">
-                                                    <label>Pickup Date</label>
-                                                </div>
-                                                <p class="picker"><input onChange="checkDate()" required type="text"
-                                                        id="datepicker" autocomplete="off"></p>
-
-
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 pickupTime-Height">
-                                            <div class="form-group">
-                                                <div class="picker-head h-5">
-                                                    <img src="<?php echo base_url('assets/images/time.png')?>"
-                                                        alt="time icon">
-                                                    <label>Pickup Time</label>
-                                                </div>
-                                                <p class="picker"><input type="text" id="timepicker" autocomplete="off">
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 no-gutter">
+                            
+                                <div class="col-md-12 no-gutter">
                                     <div class="trip-d">
 
                                         <?php  if($vechicle_data->title == "MOBILITY VEHICLE"){?>
@@ -128,7 +78,45 @@
                                                     TRIP</span>
                                             </h1>
                                             <p><?php echo $vechicle_data->vehicle_description?></p>
-                                            <div class="d-flex justify-content-between ">
+                                            <!-- <div class="d-flex justify-content-between ">
+                                                <h3>PICK UP - POINT:</h3>
+                                                <p><?php echo $_SESSION["source"];?></p>
+                                                <div class="d-flex justify-content-between ">
+                                                    <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?>"
+                                                        class="img-fluid " alt="Suitcases">
+                                                    <h3 class="mt-2 fs-2">
+                                                        &nbsp;<?php echo $vechicle_data->noOfSuitcases?>&nbsp;Suitcases
+                                                    </h3>
+                                                </div>
+                                            </div> -->
+                                            <div class="destination-details">
+                                                <div class="row brdr-btm">
+                                                    <div class="col-md-6 " style="margin-left: -14px;">
+                                                        <h3>PICK UP - POINT:</h3>
+                                                        <p><?php echo $_SESSION["source"];?></p>
+                                                    </div>
+                                                    <?php 
+                                                if($_SESSION["total_way_points"] > 0){?>
+                                                    <div class="col-md-6" style="margin-left: -14px;">
+                                                        <h3>WAY POINTS</h3>
+                                                        <?php
+                                                    foreach ($_SESSION["way_points"] as $k => $v) {
+                                                    // if($k !=0 && $k!=(count($_SESSION["way_points"])-1)){?>
+                                                        <p><?php echo $v;?></p>
+                                                        <?php }
+                                                    ?>
+                                                    </div>
+                                                    <?php }
+                                                ?>
+                                                    <div class="col-md-6" style="margin-left: -14px;">
+                                                        <h3>DROP - POINT:</h3>
+                                                        <p><?php echo $_SESSION["destination"];?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="d-flex justify-content-between mt-2">
                                                 <div class="d-flex justify-content-between ">
                                                     <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?>"
                                                         class="img-fluid " alt="passangers">
@@ -148,7 +136,7 @@
                                             <div class="bottom">
                                                 <img src="<?php echo base_url($vechicle_data->vehicle_image)?>"
                                                     alt="Car">
-                                                <h4>£<span
+                                                <h4 class="my-auto">£<span
                                                         id="total_fare"><?php echo ($_SESSION["total_fare"]==0?$_SESSION["base_fare"]:$_SESSION["total_fare"])?></span>
                                                 </h4>
                                             </div>
@@ -166,18 +154,20 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="d-head">New Users please complete details below</h1>
+
+
                         <div class="user-from">
                             <h2>CONTACT DETAILS</h2>
                             <div class="row">
-                                <div class="col-md-6 brdr-b-r">
+                                <div class="col-md-12 brdr-b">
                                     <div class="form-group">
-                                        <label>FIRST NAME*</label>
+                                        <label>Full NAME*</label>
 
                                         <input type="text" id="first_name" class="formcontrol" name="first_name">
                                     </div>
                                 </div>
                                 <script></script>
-                                <div class="col-md-6 brdr-b">
+                                <div class="col-md-6 brdr-b hide">
                                     <div class="form-group">
                                         <label>LAST NAME*</label>
 
@@ -213,7 +203,43 @@
                                         <input type="text" id="flight_no" class="formcontrol">
                                     </div>
                                 </div>
-                                <div class="col-md-3 brdr-b-r">
+
+
+
+
+
+
+
+                                <div class="col-md-6 brdr-b-r ">
+                                    <div class="form-group">
+                                        <div class="picker-head">
+
+                                            <label>Pickup Date</label>
+                                        </div>
+                                        <p class="picker mb-2"><input onChange="checkDate()" required type="text"
+                                                id="datepicker" class="w-100" autocomplete="off"></p>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 brdr-b ">
+                                    <div class="form-group">
+                                        <div class="picker-head h-5">
+
+                                            <label>Pickup Time</label>
+                                        </div>
+                                        <p class="picker mb-2"><input type="text" class="w-100" id="timepicker" autocomplete="off">
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+                                <div class="col-md-3 brdr-b-r hide">
                                     <div class="form-group">
                                         <label>PASSENGERS</label>
                                         <!-- <select class="formcontrol">
@@ -230,7 +256,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-3 brdr-b-r">
+                                <div class="col-md-3 brdr-b-r hide">
                                     <div class="form-group">
                                         <label>SUITCASES</label>
                                         <select id="no_of_suitcase" class="formcontrol ">
@@ -242,7 +268,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-3 brdr-b-r">
+                                <div class="col-md-3 brdr-b-r hide">
                                     <div class="form-group">
                                         <label>HAND LUGGAGE</label>
                                         <select id="hand_lagguage" class="formcontrol ">
@@ -254,7 +280,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-3 brdr-b">
+                                <div class="col-md-3 brdr-b hide ">
                                     <div class="form-group">
                                         <label>CHILD SEAT /TOOLS CHARGE</label><span id="child_seat_amt"></span>
                                         <select id="child_seat" class="formcontrol cost-add-on"
@@ -267,17 +293,19 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-12 pt-2">
-                                    <div class="form-group d-flex align-items-center">
-                                        <input type="checkbox" id="meet_and_greet" class="c-check"><label class="ml-2">
+                                <div class="col-md-12 pt-2 ">
+                                    <div class="form-group d-flex align-items-center hide">
+                                        <input type="checkbox" id="meet_and_greet" class="c-check hide"><label
+                                            class="ml-2 hide">
                                             MEET AND GREET (£8) 30 MINUTES </label>&nbsp;&nbsp;&nbsp;
                                         <!-- <span id="meet_amount" class="text_amt" > </span> &nbsp; -->
-                                        <input type="checkbox" id="drop_off" class="c-check"><label class="ml-2"> DROP
+                                        <input type="checkbox" id="drop_off" class="c-check hide"><label
+                                            class="ml-2 hide"> DROP
                                             OFF (£6) </label>
                                         <!-- <span id="drop_amount" class="text_amt"></span> -->
                                     </div>
 
-                                    <div class="form-group mt-3">
+                                    <div class="form-group mt-3 hide">
                                         <label>COMMENTS OR SPECIAL INSTRUCTIONS</label>
                                         <textarea rows="3" class="formcontrol" id="scomments_special_inst"
                                             name="scomments_special_inst"></textarea>
@@ -573,7 +601,7 @@
             return;
         } else if ($("#datepicker").val() == '' || $("#timepicker").val() == '') {
             alert("Please fill Journey  details to proceed")
-        } else if ($("#first_name").val() == '' || $("#last_name").val() == '' || $("#email_id").val() == '' ||
+        } else if ($("#first_name").val() == '' || $("#email_id").val() == '' ||
             $("#phone_no").val() == '' || $("#pickup").val() == '') {
             alert("Please fill all mandatory contact   details to proceed")
         } else if (valid_phone == false) {
@@ -609,8 +637,9 @@
                 console.log('inside pay_cash -------------')
             }
 
-            console.log('payment_method')
-            console.log(payment_method)
+            // console.log('jouney_date', jouney_date)
+            // console.log('journey_time', journey_time)
+            // console.log(payment_method)
             if (chk_Greet.checked) {
                 var meet_and_greet = 1;
             } else {

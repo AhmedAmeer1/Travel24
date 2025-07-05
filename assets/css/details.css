@@ -52,6 +52,12 @@ embed {
 	background: none;
 	z-index: 1;
 }
+.details-main-wrapper .formHeading {
+	font-size: 20px;
+	font-weight: 400;
+	color: black;
+	margin-left: 15px;
+}
 
 .details-main-wrapper .details-box .trip-d {
 	border-left: 1px solid #000;
@@ -193,6 +199,11 @@ form .error {
 		font-size: 16px;
 		margin-top: 5px;
 		margin-bottom: 20px;
+	}
+
+	.details-main-wrapper .formHeading {
+		font-size: 16px;
+		font-weight: 600;
 	}
 
 	.promo-text {
