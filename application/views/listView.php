@@ -11,13 +11,14 @@
     <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Travel24</title>
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
-    <link rel="icon" type="image/png" sizes="16x16"  href="<?php echo base_url('/favicon-16x16.png')?> " >
-    <link rel="icon" type="image/png" sizes="32x32"  href="<?php echo base_url('/favicon-32x32.png')?>">
-    <link rel="icon" type="image/png" sizes="48x48"  href="<?php echo base_url('/favicon-48x48.png')?>">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
+    <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/listView.css?v=4')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/listView.css?v=9')?>" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
@@ -92,7 +93,35 @@
                     </div> -->
                     <div class="col-lg-12 col-sm-12">
                         <div class="list-wrapper">
-                            <div class="choose-heading">Choose an option. (All card charges included)</div>
+                            <!-- <div class="choose-heading">Choose an option. (All card charges included)</div> -->
+
+
+                            <div class="row address-wrapper">
+                                <div class="col-md-6 mt-2">
+                                    <h2>PICK UP - POINT:</h2>
+                                    <p><?php echo $post_data['source'] ?></p>
+
+                                </div>
+
+
+                                <div class="col-md-6  mt-2">
+                                    <h2>DROP - POINT:</h2>
+                                    <p><?php echo $post_data['destination'] ?></p>
+                                </div>
+                                <div class="col-md-6  mt-2">
+                                    <?php 
+                               // $total_wayPoints = count($way_points)-2;
+                                    if(count($way_points)> 0){?>
+                                    <h2 class="mt-2 ">WAY POINT - POINTS:</h2>
+                                    <?php }
+                                        foreach ($way_points as $k => $v) {
+                                    //  if($k !=0 && $k!=(count($way_points)-1)){?>
+
+                                    <p><?php echo $v ?></p>
+                                    <?php }?>
+                                </div>
+                            </div>
+
                             <div class="filter-wrapper hide">
                                 <input type="hidden" id="special_location" value="<?php echo $special_location;?>">
                                 <h3>PASSENGERS AND LUGGAGE</h3>
@@ -143,13 +172,15 @@
                                     id="<?php echo "vehicle".$vh->vehicle_id?>">
                                     <div class="row">
                                         <div class="col-md-3 no-gutter">
-                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid" alt="Car">
+                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid"
+                                                alt="Car">
                                         </div>
                                         <div class="col-md-9 no-gutter">
                                             <div class="head">
                                                 <?php  if($vh->title == "MOBILITY VEHICLE"){?>
                                                 <h5><?php echo $vh->title?> (
-                                                    <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> " class="disability_img" alt="disability">
+                                                    <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> "
+                                                        class="disability_img" alt="disability">
                                                 </h5>
                                                 <?php }  else { ?>
                                                 <h5><?php echo $vh->title?> </h5>
@@ -157,13 +188,15 @@
                                                 <ul>
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> " class="passanger_img" alt="passanger">
+                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> "
+                                                                class="passanger_img" alt="passanger">
                                                             <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> " class="suitcases_img" alt="Suitcases">
+                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
+                                                                class="suitcases_img" alt="Suitcases">
                                                             <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
                                                         </div>
                                                     </li>
@@ -207,7 +240,8 @@
                                     id="<?php echo "vehicle".$vh->vehicle_id?>">
                                     <div class="row">
                                         <div class="col-md-3 no-gutter">
-                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid" alt="Car">
+                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid"
+                                                alt="Car">
                                         </div>
                                         <div class="col-md-9 no-gutter">
                                             <div class="head">
@@ -215,13 +249,15 @@
                                                 <ul>
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> " class="passanger_img" alt="passanger">
+                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> "
+                                                                class="passanger_img" alt="passanger">
                                                             <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> " class="suitcases_img" alt="Suitcases">
+                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
+                                                                class="suitcases_img" alt="Suitcases">
                                                             <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
                                                         </div>
                                                     </li>
@@ -269,6 +305,7 @@
     <script>
     var map;
     var waypoints
+
     function initMap() {
         var mapLayer = document.getElementById("map-layer");
         var centerCoordinates = new google.maps.LatLng(37.6, -95.665);
@@ -408,9 +445,9 @@
                                     total_mile: mile_total,
                                     special_location: special_location,
                                     durationInMinutes: durationInMinutes,
-                                    destination:destination,
-                                    source:source
-                                    
+                                    destination: destination,
+                                    source: source
+
                                 },
                                 success: function(data) {
                                     var obj = jQuery.parseJSON(data);
@@ -423,7 +460,7 @@
                                         $("#vehicle" + vehicle_id).hide();
                                     }
 
-                                    console.log("AIRPORT AMOUNT CHECK---------",obj)
+                                    console.log("AIRPORT AMOUNT CHECK---------", obj)
 
                                     if (total_amount_single == 0 || total_amount_return ==
                                         0) {

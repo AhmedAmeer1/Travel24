@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/custom.css?v=7')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=4')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/custom.css?v=17')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=18')?>" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -48,16 +48,16 @@
         </div> -->
         <section class="details-main-wrapper">
             <div class="container">
-                <p class="formHeading">Please check journey details</p>
+                <!-- <p class="formHeading">Please check journey details</p> -->
                 <div class="row">
                     <div class="col-md-12">
                         <!-- <h1>Please check journey details and select date and time</h1> -->
                         <div class="details-box">
-                            <h2>JOURNEY DETAILS</h2>
+                            <!-- <h2>JOURNEY DETAILS</h2> -->
                             <button type="button" id="success_modal" class="btn btn-info btn-lg" style="display:none"
                                 data-toggle="modal" data-target="#myModal">Open Modal</button>
                             <div class="row">
-                            
+
                                 <div class="col-md-12 no-gutter">
                                     <div class="trip-d">
 
@@ -69,23 +69,13 @@
                                             Vehicle),
 
                                             <?php }  else { ?>
-                                            <h1><?php echo $vechicle_data->title;?>,
+                                            <!-- <h1><?php echo $vechicle_data->title;?>,
                                                 <?php }  ?>
                                                 <span><?php echo ($_SESSION["journey_type"] =="1"?"Single":"Return") ?>
                                                     TRIP</span>
-                                            </h1>
-                                            <p><?php echo $vechicle_data->vehicle_description?></p>
-                                            <!-- <div class="d-flex justify-content-between ">
-                                                <h3>PICK UP - POINT:</h3>
-                                                <p><?php echo $_SESSION["source"];?></p>
-                                                <div class="d-flex justify-content-between ">
-                                                    <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?>"
-                                                        class="img-fluid " alt="Suitcases">
-                                                    <h3 class="mt-2 fs-2">
-                                                        &nbsp;<?php echo $vechicle_data->noOfSuitcases?>&nbsp;Suitcases
-                                                    </h3>
-                                                </div>
-                                            </div> -->
+                                            </h1> -->
+                                            <!-- <p><?php echo $vechicle_data->vehicle_description?></p> -->
+
                                             <div class="destination-details">
                                                 <div class="row brdr-btm">
                                                     <div class="col-md-6 " style="margin-left: -14px;">
@@ -150,18 +140,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="d-head">New Users please complete details below</h1>
+                        <!-- <h1 class="d-head">New Users please complete details below</h1> -->
 
 
                         <div class="user-from">
-                            <h2>CONTACT DETAILS</h2>
+                            <!-- <h2>CONTACT DETAILS</h2> -->
                             <div class="row">
                                 <div class="col-md-12 brdr-b">
                                     <div class="form-group">
                                         <!-- <label>Full NAME*</label> -->
 
-                                        <input type="text" id="first_name" class="formcontrol" name="first_name" placeholder="FULL NAME*"
-                                            required>
+                                        <input type="text" id="first_name" class="formcontrol" name="first_name"
+                                            placeholder="FULL NAME*" required>
                                     </div>
                                 </div>
                                 <script></script>
@@ -169,14 +159,16 @@
                                     <div class="form-group">
                                         <label>LAST NAME*</label>
 
-                                        <input type="text" name="last_name" id="last_name" class="formcontrol" placeholder="First Name">
+                                        <input type="text" name="last_name" id="last_name" class="formcontrol"
+                                            placeholder="First Name">
                                     </div>
                                 </div>
                                 </script>
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
                                         <!-- <label>E-MAIL ADDRESS*</label> -->
-                                        <input type="email" id="email_id" class="formcontrol" placeholder="E-MAIL ADDRESS*">
+                                        <input type="email" id="email_id" class="formcontrol"
+                                            placeholder="E-MAIL ADDRESS*">
 
                                     </div>
                                 </div>
@@ -184,7 +176,8 @@
                                 <div class="col-md-6 brdr-b">
                                     <div class="form-group">
                                         <!-- <label>PHONE NUMBER</label> -->
-                                        <input type="number" id="phone_no" name="phone_no" class="formcontrol" placeholder="PHONE NUMBER">
+                                        <input type="number" id="phone_no" name="phone_no" class="formcontrol"
+                                            placeholder="PHONE NUMBER">
                                     </div>
                                 </div>
 
@@ -192,13 +185,15 @@
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
                                         <!-- <label>PICKUP DOOR NAME / HOME NUMBER</label> -->
-                                        <input type="text" id="pick_up" class="formcontrol" placeholder="PICKUP DOOR NAME / HOME NUMBER">
+                                        <input type="text" id="pick_up" class="formcontrol"
+                                            placeholder="PICKUP DOOR NAME / HOME NUMBER">
                                     </div>
                                 </div>
                                 <div class="col-md-6 brdr-b">
                                     <div class="form-group">
                                         <!-- <label>FLIGHT NUMBER(IF APPLICABLE)</label> -->
-                                        <input type="text" id="flight_no" class="formcontrol" placeholder="FLIGHT NUMBER(IF APPLICABLE)">
+                                        <input type="text" id="flight_no" class="formcontrol"
+                                            placeholder="FLIGHT NUMBER(IF APPLICABLE)">
                                     </div>
                                 </div>
                                 <div class="col-md-6 brdr-b-r ">
@@ -208,7 +203,8 @@
                                             <!-- <label>Pickup Date</label> -->
                                         </div>
                                         <p class="picker mb-2"><input onChange="checkDate()" required type="text"
-                                                id="datepicker" class="w-100 custom-placeholder" autocomplete="off" placeholder="PICKUP DATE "></p>
+                                                id="datepicker" class="w-100 custom-placeholder" autocomplete="off"
+                                                placeholder="PICKUP DATE "></p>
 
 
                                     </div>
@@ -219,7 +215,8 @@
 
                                             <!-- <label>Pickup Time</label> -->
                                         </div>
-                                        <p class="picker mb-2"><input type="text" class="w-100 custom-placeholder" id="timepicker" autocomplete="off" placeholder="PICKUP TIME ">
+                                        <p class="picker mb-2"><input type="text" class="w-100 custom-placeholder"
+                                                id="timepicker" autocomplete="off" placeholder="PICKUP TIME ">
                                         </p>
                                     </div>
 
@@ -318,8 +315,8 @@
                         <div class="bottom-buttons">
                             <div class="user-pay-type d-flex justify-content-end" style="gap: 3px;">
                                 <?php foreach($payment_types as $pt){?>
-                                <button class="paynow-btn payment-method" id="myButton"
-                                    data-method=<?php echo $pt->method ?>><a id="pay_now_a"><?php echo $pt->title ?>
+                                <button class="paynow-btn payment-method"  id="myButton"
+                                    data-method=<?php echo $pt->method ?>><a id="pay_now_a" ><?php echo $pt->title ?>
                                         <span class=" hidden spinner" id="loading"></span></a></button>
                                 <?php }?>
 

@@ -35,6 +35,10 @@ embed {
 
 .promo-text {
 	font-size: 13px;
+	white-space: nowrap;
+}
+.pay_now_a {
+	white-space: nowrap;
 }
 .code {
 	color: #ff6500;
@@ -106,8 +110,13 @@ embed {
 
 .details-main-wrapper .details-box .trip-d h3 {
 	color: #00517c;
-	font-size: 13px;
+	font-size: 11px;
 }
+.details-main-wrapper .details-box .trip-d h3 {
+	color: #00517c;
+	font-size: 11px;
+}
+
 .form-group .picker input {
 	height: 35px;
 	background-color: #efefef;
@@ -122,10 +131,10 @@ embed {
 	color: black;
 	font-weight: bold;
 }
-  .custom-placeholder::placeholder {
-    color: black;
-    font-weight: bold;
-  }
+.custom-placeholder::placeholder {
+	color: black;
+	font-weight: bold;
+}
 
 .disability_img {
 	margin-bottom: 2px;
@@ -229,7 +238,14 @@ form .error {
 	}
 
 	.promo-text {
-		font-size: 12px;
+		font-size: 11px;
 		margin-left: -14px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.promo-text {
+		font-size: 11px;
+		margin-left: 0px;
 	}
 }

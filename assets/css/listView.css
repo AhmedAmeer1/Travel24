@@ -41,6 +41,24 @@ embed {
 	margin-top: 8px;
 }
 
+.list-main-wrapper .address-wrapper {
+	margin-left:-15px ;
+}
+
+.list-main-wrapper .address-wrapper h2 {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.list-main-wrapper .address-wrapper p {
+	font-size: 12px;
+	margin-top: 8px;
+}
+
+
+
 .list-main-wrapper .list-wrapper .filter-wrapper {
 	border: 1px solid #000;
 }
@@ -91,7 +109,7 @@ embed {
 	object-fit: contain;
 	height: 144px;
 	width: 100%;
-	background: rgb(0 81 124);
+	background: rgb(191 198 201);
 }
 .list-main-wrapper .list-wrapper .list-set .list-box .passanger_img {
 	padding: 5px 5px 6px 5px !important;

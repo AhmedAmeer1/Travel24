@@ -500,18 +500,18 @@ select {
 }
 
 .details-main-wrapper .details-box .destination-details {
-	padding: 20px 0;
+	/* padding: 20px 0; */
 	border-bottom: 1px solid #000;
 	background-color: #ebebeb;
 }
 
 .details-main-wrapper .details-box .destination-details h3 {
-	font-size: 12px;
+	font-size: 11px;
 	font-family: "allerbold";
 }
 
 .details-main-wrapper .details-box .destination-details p {
-	font-size: 12px;
+	font-size: 11px;
 	font-family: "allerregular";
 	margin-top: 10px;
 	margin-bottom: 15px;
@@ -669,6 +669,7 @@ select {
 	padding: 10px 29px;
 	border: 0;
 	color: #fff;
+	 white-space: nowrap;
 }
 
 .c-check {
