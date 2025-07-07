@@ -445,7 +445,7 @@ select {
 }
 
 .details-main-wrapper {
-	padding: 50px 0;
+	padding: 0px 0;
 }
 
 .details-main-wrapper .picker-head {
@@ -550,7 +550,7 @@ select {
 
 
 .details-forms-wrapper {
-	padding: 50px 0;
+	padding: 0px 0;
 }
 
 .details-forms-wrapper .login-box {
