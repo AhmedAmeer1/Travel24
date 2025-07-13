@@ -600,12 +600,13 @@
             var jouney_date = $("#datepicker").val();
             var journey_time = $("#timepicker").val();
             var first_name = $("#first_name").val();
-           
+            var last_name = $("#last_name").val();
             var email = $("#email_id").val();
             var phone = $("#phone_no").val();
             var pick_up = $("#pick_up").val();
             var flight_no = $("#flight_no").val();
-         
+            var no_of_passenger = $("#no_of_passenger").val();
+            var no_of_suitcase = $("#no_of_suitcase").val();
             var hand_lagguage = $("#hand_lagguage").val();
             var child_seat = $("#child_seat").val();
             var chk_Greet = document.getElementById("meet_and_greet");
@@ -624,7 +625,20 @@
                 console.log('inside pay_cash -------------')
             }
 
-    
+            // console.log('jouney_date', jouney_date)
+            // console.log('journey_time', journey_time)
+            // console.log(payment_method)
+            if (chk_Greet.checked) {
+                var meet_and_greet = 1;
+            } else {
+                var meet_and_greet = 0;
+            }
+
+            if (chk_DropOff.checked) {
+                var drop_off = 1;
+            } else {
+                var drop_off = 0;
+            }
 
 
 
@@ -637,14 +651,14 @@
                     jouney_date: jouney_date,
                     journey_time: journey_time,
                     first_name: first_name,
-                    last_name: '',
+                    last_name: last_name,
                     email: email,
                     phone: phone,
                     pick_up: pick_up,
                     flight_no: flight_no,
-                    no_of_passenger: '',
-                    no_of_suitcase: '',
-                    hand_lagguage: '',
+                    no_of_passenger: no_of_passenger,
+                    no_of_suitcase: no_of_suitcase,
+                    hand_lagguage: hand_lagguage,
                     child_seat: child_seat,
                     meet_and_greet: meet_and_greet,
                     drop_off: drop_off,
