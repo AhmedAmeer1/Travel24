@@ -651,19 +651,18 @@
                     jouney_date: jouney_date,
                     journey_time: journey_time,
                     first_name: first_name,
-                    last_name: '',
+                    last_name: last_name,
                     email: email,
                     phone: phone,
                     pick_up: pick_up,
                     flight_no: flight_no,
-
-                    no_of_passenger: '',
-                    no_of_suitcase: '',
-                    hand_lagguage: '',
-                    child_seat: '',
-                    meet_and_greet: '',
-                    drop_off: '',
-                    scomments_special_inst: ''
+                    no_of_passenger: no_of_passenger,
+                    no_of_suitcase: no_of_suitcase,
+                    hand_lagguage: hand_lagguage,
+                    child_seat: child_seat,
+                    meet_and_greet: meet_and_greet,
+                    drop_off: drop_off,
+                    scomments_special_inst: scomments_special_inst
                 },
                 success: function(data) {
                     $('.payment-method').addClass('hide')
