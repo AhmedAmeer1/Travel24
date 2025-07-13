@@ -225,11 +225,11 @@ class Index extends CI_Controller
 		$booking['travel_time'] = $input['journey_time'];
 		$booking['pick_up_door_name'] = $input['pick_up'];
 		$booking['flight_no'] = $input['flight_no'];
-		$booking['passenger'] = $input['no_of_passenger'];
-		$booking['suitcase'] = $input['no_of_suitcase'];
-		$booking['child_seat'] = $input['child_seat'];
-		$booking['greet_status'] = $input['meet_and_greet'];
-		$booking['dropOff_status'] = $input['drop_off'];
+
+
+
+
+
 		$booking['payment_type'] = $input['payment_method'];
 		$booking['base_fare'] = $_SESSION['base_fare'];
 		$booking['user_id'] = (!empty($_SESSION['user_id']) ? $_SESSION['user_id'] : '0');
@@ -239,29 +239,12 @@ class Index extends CI_Controller
 
 
 
-		if ($booking['greet_status'] == '1') {
-			$greeting_cost = 8;
-		} else {
-			$greeting_cost = 0;
-		}
-
-
-		if ($booking['dropOff_status'] == '1') {
-			$dropoff_cost = 6;
-		} else {
-			$dropoff_cost = 0;
-		}
 
 
 
-		if ($booking['child_seat']  != 0) {
-			$this->db->where('vehicle_id', $booking['vehicle_id']);
-			$cost_per_seat = $this->db->get('vehicle')->row('cost_per_child_seat');
-			$total_cost_per_seat = $cost_per_seat * $booking['child_seat'];
-			$child_seat_cost = $total_cost_per_seat;
-		} else {
-			$child_seat_cost = 0;
-		}
+
+
+	
 		$booking['child_seat_cost'] = $child_seat_cost;
 		$booking['greeting_cost'] = $greeting_cost;
 		$booking['dropoff_cost'] = $dropoff_cost;
@@ -283,10 +266,9 @@ class Index extends CI_Controller
 
 		$_SESSION['total_fare'] = $booking['amount'];
 		$_SESSION['promocode'] = $booking['promocode_discount'];
-		$_SESSION['hand_lagguage'] = $input['hand_lagguage'];
-		$_SESSION['pick_up'] = $input['pick_up'];
-		$_SESSION['scomments_special_inst'] = $input['scomments_special_inst'];
 
+		$_SESSION['pick_up'] = $input['pick_up'];
+	
 
 
 		$_SESSION["book_data"] = $booking;
@@ -308,12 +290,11 @@ class Index extends CI_Controller
 		set_cookie('travel_time', $booking['travel_time'], 86400);
 		set_cookie('pick_up_door_name', $booking['pick_up_door_name'], 86400);
 		set_cookie('flight_no', $booking['flight_no'], 86400);
-		set_cookie('passenger', $booking['passenger'], 86400);
-		set_cookie('suitcase', $booking['suitcase'], 86400);
-		set_cookie('child_seat', $booking['child_seat'], 86400);
 
-		set_cookie('greet_status', $booking['greet_status'], 86400);
-		set_cookie('dropOff_status', $booking['dropOff_status'], 86400);
+
+	
+
+
 
 		set_cookie('base_fare', $booking['base_fare'], 86400);
 		set_cookie('user_id', $booking['user_id'], 86400);
@@ -326,8 +307,7 @@ class Index extends CI_Controller
 		set_cookie('dropoff_cost', $booking['dropoff_cost'], 86400);
 
 		set_cookie('amount', $booking['amount'], 86400);
-		set_cookie('scomments_special_inst', $input['scomments_special_inst'], 86400);
-		set_cookie('hand_lagguage', $input['hand_lagguage'], 86400);
+	
 		set_cookie('pick_up', $input['pick_up'], 86400);
 		set_cookie('total_fare', $booking['amount'], 86400);
 		set_cookie('travel_type', ($booking['service_type'] == "1" ? "Single" : "Return"), 86400);
@@ -372,28 +352,26 @@ class Index extends CI_Controller
 				$data['travel_date'] = $input['jouney_date'];
 				$data['travel_time'] = $booking['travel_time'];
 				$data['travel_type'] = ($booking['service_type'] == "1" ? "Single" : "Return");
-				$data['passenger'] = $booking['passenger'];
-				$data['suitcase'] = $booking['suitcase'];
-				$data['child_seat'] = $booking['child_seat'];
-				$data['child_seat_cost'] = $child_seat_cost;
+			
+	
+			
 
-				$data['greet_status'] = $booking['greet_status'];
+
+			
 				$data['greeting_cost'] = $greeting_cost;
 
-				$data['dropOff_status'] = $booking['dropOff_status'];
+			
 				$data['dropoff_cost'] = $dropoff_cost;
 
 				$data['sub_total'] = $_SESSION['base_fare'];
 				$data['total'] = $booking['amount'];
 				$data['promocode_discount'] = $booking['promocode_discount'];
-				$data['scomments_special_inst'] = $input['scomments_special_inst'];
-				$data['hand_lagguage'] = $input['hand_lagguage'];
+			
 				$data['flight_no'] = $input['flight_no'];
 				$data['pick_up'] = $input['pick_up'];
 				$data['image'] = 'https://travel24taxi.com/assets/images/travel24/Logo.svg';
 
-				debug_log(" dropOff_status' -----9999999999999999999999999- ");
-				debug_log($booking['dropOff_status']);
+			;
 
 				$this->email_notification($data);
 			} else {
@@ -403,7 +381,7 @@ class Index extends CI_Controller
 
 		echo   json_encode(array('result' => $return));
 
-		//jouney_date:,journey_time:,:email:email,phone:phone,:pick_up,flight_no:,no_of_passenger:,:no_of_suitcase,hand_lagguage:hand_lagguage,:child_seat,:meet_and_greet
+		
 	}
 	public function get_book_data()
 	{
@@ -766,12 +744,12 @@ class Index extends CI_Controller
 			'travel_time' => $_SESSION["book_data"]['travel_time'],
 			'pick_up_door_name' => $_SESSION["book_data"]['pick_up_door_name'],
 			'flight_no' => $_SESSION["book_data"]['flight_no'] || '',
-			'passenger' => $_SESSION["book_data"]['passenger'],
-			'suitcase' => $_SESSION["book_data"]['suitcase'],
-			'child_seat' => $_SESSION["book_data"]['child_seat'],
-			'greet_status' => $_SESSION["book_data"]['greet_status'],
-			'dropOff_status' => $_SESSION["book_data"]['dropOff_status'],
-			'dropoff_cost' => $_SESSION["book_data"]['dropoff_cost'],
+	
+
+
+	
+		
+
 			'base_fare' => $_SESSION["book_data"]['base_fare'],
 			'user_id' => $_SESSION["book_data"]['user_id'] || '',
 			'userType' => $_SESSION["book_data"]['userType'],
@@ -785,9 +763,9 @@ class Index extends CI_Controller
 		$bookingOtherData = [
 			'vehice_id' => $_SESSION["vehice_id"],
 			'travel_type' => get_cookie('travel_type') || '',
-			'hand_lagguage' => get_cookie('hand_lagguage'),
+	
 			'pick_up' => get_cookie('pick_up'),
-			'scomments_special_inst' => get_cookie('scomments_special_inst'),
+			
 			'promocode' => get_cookie('promocode') || '',
 			'total_fare' => get_cookie('total_fare'),
 			'total' => $_SESSION["book_data"]['amount'],
@@ -834,9 +812,9 @@ class Index extends CI_Controller
 		$bookingOtherData = json_decode(urldecode($bookingOtherDataJson), true);
 
 
-		$_SESSION['hand_lagguage'] = $bookingOtherData['hand_lagguage'];
+
 		$_SESSION['pick_up'] = $bookingOtherData['pick_up'];
-		$_SESSION['scomments_special_inst']  = $bookingOtherData['scomments_special_inst'];
+	
 		$_SESSION['promocode'] = $bookingOtherData['promocode'];
 		$_SESSION['total_fare']  = $bookingOtherData['total_fare'];
 
@@ -864,9 +842,9 @@ class Index extends CI_Controller
 		$data['booking_id'] = $result['booking_id'];
 		$data['vehicle'] = $this->db->get('vehicle')->row('title');
 		$data['travel_type'] = $bookingOtherData['travel_type'];
-		$data['hand_lagguage'] = $bookingOtherData['hand_lagguage'];
+
 		$data['pick_up'] = $bookingOtherData['pick_up'];
-		$data['scomments_special_inst'] = $bookingOtherData['scomments_special_inst'];
+		
 		$data['promocode'] = $bookingOtherData['promocode'];
 		$data['sub_total'] = $bookingOtherData['sub_total'];
 		$data['total'] = $bookingOtherData['total'];
