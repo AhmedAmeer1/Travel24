@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/custom.css?v=17')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=18')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=19')?>" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -34,6 +34,40 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
+<style>
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.info-item {
+    padding: 0 15px;
+    position: relative;
+    text-align: center;
+}
+
+.info-item:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background-color: black;
+}
+
+.info-item h4 {
+    margin: 0;
+}
+
+
+
+.info-icon {
+    width: 20px !important;
+    height: auto;
+
+}
+</style>
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
@@ -77,7 +111,7 @@
                                             <!-- <p><?php echo $vechicle_data->vehicle_description?></p> -->
 
                                             <div class="destination-details">
-                                                <div class="row brdr-btm">
+                                                <div class="row">
                                                     <div class="col-md-6 " style="margin-left: -14px;">
                                                         <h3>PICK UP - POINT:</h3>
                                                         <p><?php echo $_SESSION["source"];?></p>
@@ -103,7 +137,7 @@
                                             </div>
 
 
-                                            <div class="d-flex justify-content-between mt-2">
+                                            <!-- <div class="d-flex justify-content-between mt-2">
                                                 <div class="d-flex justify-content-between ">
                                                     <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?>"
                                                         class="img-fluid " alt="passangers">
@@ -118,23 +152,46 @@
                                                         &nbsp;<?php echo $vechicle_data->noOfSuitcases?>&nbsp;Suitcases
                                                     </h3>
                                                 </div>
-                                            </div>
+                                            </div> -->
 
                                             <div class="bottom">
-                                                <img src="<?php echo base_url($vechicle_data->vehicle_image)?>"
-                                                    alt="Car">
-                                                <h4 class="my-auto">£<span
-                                                        id="total_fare"><?php echo ($_SESSION["total_fare"]==0?$_SESSION["base_fare"]:$_SESSION["total_fare"])?></span>
-                                                </h4>
+                                                <!-- <img src="<?php echo base_url($vechicle_data->vehicle_image)?>"
+                                                    alt="Car"> -->
+                                                <h4 class="mt-2"><?php echo $vechicle_data->title;?></h4>
+
+                                                <div class="info-container">
+                                                    <div class="info-item d-flex justify-content-between">
+                                                        <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?>"
+                                                            class="info-icon" alt="Suitcases">
+                                                        <h4 class="my-auto">
+                                                            &nbsp;<span><?php echo $vechicle_data->noOfSuitcases; ?></span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="info-item d-flex justify-content-between">
+                                                        <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?>"
+                                                            class=" info-icon" alt="passangers">
+                                                        <h4 class="my-auto">
+                                                            &nbsp;
+                                                            <span><?php echo $vechicle_data->noOfPassengers; ?></span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="info-item">
+                                                        <h4 class="my-auto">
+                                                            £<span id="total_fare">
+                                                                <?php echo ($_SESSION["total_fare"]==0 ? $_SESSION["base_fare"] : $_SESSION["total_fare"]); ?>
+                                                            </span>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
-                        <br>
                     </div>
                 </div>
-            </div>
         </section>
         <section class="details-forms-wrapper">
             <div class="container">
@@ -315,8 +372,8 @@
                         <div class="bottom-buttons">
                             <div class="user-pay-type d-flex justify-content-end" style="gap: 3px;">
                                 <?php foreach($payment_types as $pt){?>
-                                <button class="paynow-btn payment-method"  id="myButton"
-                                    data-method=<?php echo $pt->method ?>><a id="pay_now_a" ><?php echo $pt->title ?>
+                                <button class="paynow-btn payment-method" id="myButton"
+                                    data-method=<?php echo $pt->method ?>><a id="pay_now_a"><?php echo $pt->title ?>
                                         <span class=" hidden spinner" id="loading"></span></a></button>
                                 <?php }?>
 

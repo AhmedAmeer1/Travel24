@@ -39,14 +39,14 @@ $config['fleet_data'] = [
         'vehicle_image' => '8SeaterMiniBus.png'
     ],
     [
-        'title' => 'EXECUTIVE PEOPLE CARRIER (Luxury)',
+        'title' => 'EXECUTIVE PEOPLE CARRIER',
         'description' => 'Up to 5 passengers plus 4 suitcases or 6 passengers plus hand luggage.',
         'noOfPassengers' => '5',
         'noOfSuitcases' => '4',
         'vehicle_image' => 'ExecutivePeopleCarrier.png'
     ],
     [
-        'title' => 'MOBILITY VEHICLE ( car Vehicle)',
+        'title' => 'MOBILITY VEHICLE',
         'description' => 'Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages.',
         'noOfPassengers' => '4',
         'noOfSuitcases' => '1',

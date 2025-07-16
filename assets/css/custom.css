@@ -483,6 +483,7 @@ select {
 	border: 1px solid #000;
 	margin-top: 15px;
 	overflow: hidden;
+	background-color: #ebebeb;
 }
 
 .details-main-wrapper .details-box label {
@@ -501,20 +502,21 @@ select {
 
 .details-main-wrapper .details-box .destination-details {
 	/* padding: 20px 0; */
-	border-bottom: 1px solid #000;
+	/* border-bottom: 1px solid #000; */
 	background-color: #ebebeb;
 }
 
 .details-main-wrapper .details-box .destination-details h3 {
 	font-size: 11px;
 	font-family: "allerbold";
+	font-weight: bold;
 }
 
 .details-main-wrapper .details-box .destination-details p {
 	font-size: 11px;
 	font-family: "allerregular";
 	margin-top: 10px;
-	margin-bottom: 15px;
+	/* margin-bottom: 15px; */
 }
 
 .details-main-wrapper .details-box .datep {
@@ -598,7 +600,7 @@ select {
 
 .details-forms-wrapper .user-from {
 	border: 1px solid #000;
-	margin-top: 15px;
+	margin-top: -1px;
 	padding-bottom: 15px;
 }
 
