@@ -45,7 +45,7 @@
     }
 
     .card-title {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 600;
         margin: 10px 0;
     }
@@ -54,12 +54,34 @@
         font-size: 12px;
         padding: 4px 10px;
     }
-
+.passangers-text{
+    font-size: 11px;
+}
+.suitcases-text{
+    font-size: 11px;
+}
     .amount-div h6 {
         margin-bottom: 5px;
         font-weight: bold;
+         font-size: 12px;
+    }
+.bg-graycolor{
+        background-color: rgb(191 198 201) !important;
     }
 
+    .list-box {
+        border: 1px solid #004C78;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .list-box:hover {
+        transform: scale(1.05);
+    }
+
+    .list-box .card-body {
+        padding: 10px;
+}
     .circle {
         display: inline-block;
         width: 8px;
@@ -203,15 +225,15 @@
 
                             <div class="row mt-5">
                                 <?php foreach ($vehicle as $vh) { ?>
-                                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                                    <div class="card h-100 list-box text-center"
+                                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                    <div class="card h-100 list-box text-center bg-graycolor"
                                         data-vehicle="<?php echo $vh->vehicle_id ?>"
                                         id="vehicle<?php echo $vh->vehicle_id ?>">
                                         <!-- Vehicle Image -->
                                         <img src="<?php echo base_url($vh->vehicle_image) ?>"
                                             class="card-img-top p-2" alt="Car">
 
-                                        <div class="card-body px-3 pt-1  ">
+                                        <div class="card-body px-1 pt-1  ">
                                             <!-- Vehicle Title -->
                                             <h5 class="card-title">
                                                 <?php if ($vh->title == "MOBILITY VEHICLE") { ?>
@@ -232,7 +254,7 @@
                                                     <img src="<?php echo base_url("assets/images/travel24/passangers.svg") ?>"
                                                         class="passanger_img" alt="Passengers"
                                                         style="height: 20px; margin-right: 6px;">
-                                                    <span><?php echo $vh->noOfPassengers; ?> </span>
+                                                    <span class="passangers-text"><?php echo $vh->noOfPassengers; ?> </span>
                                                 </div>
 
                                                 <!-- Suitcases -->
@@ -240,14 +262,14 @@
                                                     <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg") ?>"
                                                         class="suitcases_img" alt="Suitcases"
                                                         style="height: 20px; margin-right: 6px;">
-                                                    <span><?php echo $vh->noOfSuitcases; ?> </span>
+                                                    <span class="suitcases-text"><?php echo $vh->noOfSuitcases; ?> </span>
                                                 </div>
                                             </div>
 
                                         </div>
 
                                         <!-- Fare Info -->
-                            <div class="card-footer bg-white border-top-0" style="margin-top: -2.5rem !important;">
+                            <div class="card-footer border-top-0 bg-graycolor" style="margin-top: -1.5rem !important;">
 
                                             <div class="d-flex justify-content-around amount-div"
                                                 data-per-km="<?php echo $vh->perKm; ?>"
