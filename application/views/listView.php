@@ -209,7 +209,7 @@
                                         id="vehicle<?php echo $vh->vehicle_id ?>">
                                         <!-- Vehicle Image -->
                                         <img src="<?php echo base_url($vh->vehicle_image) ?>"
-                                            class="card-img-top img-fluid" alt="Car">
+                                            class="card-img-top p-2" alt="Car">
 
                                         <div class="card-body px-3 pt-1  ">
                                             <!-- Vehicle Title -->
