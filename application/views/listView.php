@@ -72,11 +72,7 @@
     .list-box {
         border: 1px solid #004C78;
         border-radius: 10px;
-        transition: transform 0.3s ease;
-    }
-
-    .list-box:hover {
-        transform: scale(1.05);
+      
     }
 
     .list-box .card-body {
