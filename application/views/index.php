@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=7')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=9')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>

@@ -115,21 +115,21 @@
 /* ---------------ahmed css ------------------------  */
 
 .pickupLocation {
-	color: black;
+	color: black !important;
 	font-weight: bold;
 }
 
 .destination {
-	color: black;
+	color: black !important;
 	font-weight: bold;
 }
 
 .pickupLocation::placeholder {
-	color: black;
+	color: black !important;
 	font-weight: bold;
 }
 .destination::placeholder {
-	color: black;
+	color: black !important;
 	font-weight: bold;
 }
 .banner_container {

@@ -18,7 +18,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/listView.css?v=9')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/listView.css?v=10')?>" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
@@ -42,6 +42,41 @@
         background-color: white;
         border-radius: 50%;
         margin-left: 5px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .card-footer .btn {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .amount-div h6 {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .circle {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        border-radius: 50%;
+        margin-left: 5px;
+        border: 1px solid #004C78;
+    }
+
+    .card .img-fluid {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .disability_img {
+        vertical-align: middle;
     }
     </style>
 </head>
@@ -164,129 +199,84 @@
                                     </div>
                                 </div>
                             </div>
-                            <?php
-                         foreach($vehicle as $vh){
-                            if($vh->title != "16 SEATER MINIBUS"){?>
-                            <div class="list-set">
-                                <div class="list-box" data-vehicle="<?php echo $vh->vehicle_id?>"
-                                    id="<?php echo "vehicle".$vh->vehicle_id?>">
-                                    <div class="row">
-                                        <div class="col-md-3 no-gutter">
-                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid"
-                                                alt="Car">
-                                        </div>
-                                        <div class="col-md-9 no-gutter">
-                                            <div class="head">
-                                                <?php  if($vh->title == "MOBILITY VEHICLE"){?>
-                                                <h5><?php echo $vh->title?> (
-                                                    <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> "
-                                                        class="disability_img" alt="disability">
-                                                </h5>
-                                                <?php }  else { ?>
-                                                <h5><?php echo $vh->title?> </h5>
-                                                <?php }  ?>
-                                                <ul>
-                                                    <li>
-                                                        <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> "
-                                                                class="passanger_img" alt="passanger">
-                                                            <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
-                                                                class="suitcases_img" alt="Suitcases">
-                                                            <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
-                                                        </div>
-                                                    </li>
-                                                </ul>
+
+
+                            <div class="row mt-5">
+                                <?php foreach ($vehicle as $vh) { ?>
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                    <div class="card h-100 list-box text-center"
+                                        data-vehicle="<?php echo $vh->vehicle_id ?>"
+                                        id="vehicle<?php echo $vh->vehicle_id ?>">
+                                        <!-- Vehicle Image -->
+                                        <img src="<?php echo base_url($vh->vehicle_image) ?>"
+                                            class="card-img-top img-fluid" alt="Car">
+
+                                        <div class="card-body px-3 pt-1  ">
+                                            <!-- Vehicle Title -->
+                                            <h5 class="card-title">
+                                                <?php if ($vh->title == "MOBILITY VEHICLE") { ?>
+                                                <?php echo $vh->title ?>
+                                                <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png") ?>"
+                                                    class="disability_img" alt="disability"
+                                                    style="height: 20px; margin-left: 5px;">
+                                                <?php } else { ?>
+                                                <?php echo $vh->title ?>
+                                                <?php } ?>
+                                            </h5>
+
+
+                                            <!-- Passenger & Suitcase Info -->
+                                            <div class="d-flex justify-content-between align-items-center mb-3 px-3">
+                                                <!-- Passengers -->
+                                                <div class="d-flex align-items-center">
+                                                    <img src="<?php echo base_url("assets/images/travel24/passangers.svg") ?>"
+                                                        class="passanger_img" alt="Passengers"
+                                                        style="height: 20px; margin-right: 6px;">
+                                                    <span><?php echo $vh->noOfPassengers; ?> </span>
+                                                </div>
+
+                                                <!-- Suitcases -->
+                                                <div class="d-flex align-items-center">
+                                                    <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg") ?>"
+                                                        class="suitcases_img" alt="Suitcases"
+                                                        style="height: 20px; margin-right: 6px;">
+                                                    <span><?php echo $vh->noOfSuitcases; ?> </span>
+                                                </div>
                                             </div>
-                                            <!-- <div class="content">
-                                                <p><?php echo $vh->vehicle_description?></p>
-                                            </div> -->
-                                            <div class="bottom amount-div" data-per-km="<?php echo $vh->perKm;?>"
-                                                data-per-km-return="<?php echo $vh->perKmReturn;?>"
-                                                data-vehicle-id="<?php echo $vh->vehicle_id;?>">
-                                                <div class="single">
-                                                    <h5 class="single-amount">£<span
-                                                            id="<?php echo "single-amount-".$vh->vehicle_id?>"></span>
-                                                    </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="1">
+
+                                        </div>
+
+                                        <!-- Fare Info -->
+                            <div class="card-footer bg-white border-top-0" style="margin-top: -2.5rem !important;">
+
+                                            <div class="d-flex justify-content-around amount-div"
+                                                data-per-km="<?php echo $vh->perKm; ?>"
+                                                data-per-km-return="<?php echo $vh->perKmReturn; ?>"
+                                                data-vehicle-id="<?php echo $vh->vehicle_id; ?>">
+                                                <div class="text-center ">
+                                                    <h6>£<span id="single-amount-<?php echo $vh->vehicle_id ?>"></span>
+                                                    </h6>
+                                                    <button class="btn btn-outline-primary btn-sm btn-slct-taxi"
+                                                        data-travel-type="1">
                                                         Single
                                                         <span class="circle"></span>
                                                     </button>
                                                 </div>
-                                                <div class="return">
-                                                    <h5 class="return-amount">£<span
-                                                            id="<?php echo "return-amount-".$vh->vehicle_id?>"></span>
-                                                    </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="2">
+                                                <!-- <div class="text-center">
+                                                    <h6>£<span id="return-amount-<?php echo $vh->vehicle_id ?>"></span>
+                                                    </h6>
+                                                    <button class="btn btn-outline-primary btn-sm btn-slct-taxi"
+                                                        data-travel-type="2">
                                                         Return
                                                         <span class="circle"></span>
                                                     </button>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <?php } ?>
                             </div>
-                            <?php } } ?>
-                            <?php
-                         foreach($vehicle as $vh){
-                            if($vh->title == "16 SEATER MINIBUS"){?>
-                            <div class="list-set">
-                                <div class="list-box" data-vehicle="<?php echo $vh->vehicle_id?>"
-                                    id="<?php echo "vehicle".$vh->vehicle_id?>">
-                                    <div class="row">
-                                        <div class="col-md-3 no-gutter">
-                                            <img src="<?php echo base_url($vh->vehicle_image)?>" class="img-fluid"
-                                                alt="Car">
-                                        </div>
-                                        <div class="col-md-9 no-gutter">
-                                            <div class="head">
-                                                <h5><?php echo $vh->title?></h5>
-                                                <ul>
-                                                    <li>
-                                                        <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?> "
-                                                                class="passanger_img" alt="passanger">
-                                                            <h3><?php echo $vh->noOfPassengers;?>&nbsp;Passengers</h3>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="d-flex justify-content-center align-items-center">
-                                                            <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?> "
-                                                                class="suitcases_img" alt="Suitcases">
-                                                            <h3><?php echo $vh->noOfSuitcases; ?>&nbsp;Suitcases</h3>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- <div class="content">
-                                                <p><?php echo $vh->vehicle_description?></p>
-                                            </div> -->
-                                            <div class="bottom amount-div" data-per-km="<?php echo $vh->perKm;?>"
-                                                data-per-km-return="<?php echo $vh->perKmReturn;?>"
-                                                data-vehicle-id="<?php echo $vh->vehicle_id;?>">
-                                                <div class="single">
-                                                    <h5 class="single-amount">£<span
-                                                            id="<?php echo "single-amount-".$vh->vehicle_id?>"></span>
-                                                    </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="1">SINGLE</button>
-                                                </div>
-                                                <div class="return">
-                                                    <h5 class="return-amount">£<span
-                                                            id="<?php echo "return-amount-".$vh->vehicle_id?>"></span>
-                                                    </h5>
-                                                    <button class="btn-slct-taxi" data-travel-type="2">RETURN</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php } } ?>
                         </div>
                     </div>
                 </div>

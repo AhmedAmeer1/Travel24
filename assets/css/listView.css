@@ -53,8 +53,10 @@ embed {
 }
 
 .list-main-wrapper .address-wrapper p {
-	font-size: 12px;
+	font-size: 13px;
 	margin-top: 8px;
+	color: black !important;
+	font-weight: bold;
 }
 
 

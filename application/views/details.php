@@ -369,7 +369,7 @@
                         </div>
                         <!------------------------------------------ OLD PAYMENT CODE START ---------------------------------------- -->
 
-                        <div class="bottom-buttons">
+                        <div class="bottom-buttons mb-3">
                             <div class="user-pay-type d-flex justify-content-end" style="gap: 3px;">
                                 <?php foreach($payment_types as $pt){?>
                                 <button class="paynow-btn payment-method" id="myButton"
