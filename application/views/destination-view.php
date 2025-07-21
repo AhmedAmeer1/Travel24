@@ -106,7 +106,38 @@
                             <p>
                                 Airport transfers & chauffeur services connecting all UK airports
                             </p>
-                            <p class="promoCode">Use <span class="code">LUTH24</span> to get 10% off.</p>
+                               <ul class="features-list mt-2" style="list-style: none; padding-left: 0;">
+                                <li class="d-flex align-items-center mb-1">
+                                    <span class="check-square-icon mr-2">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <span>Airport Pickup & Drop-off Charges Included  </span>
+                                </li>
+                                <li class="d-flex align-items-center mb-1">
+                                    <span class="check-square-icon mr-2">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <span>10% Off Every Journey - Use Code : <span class="code">LUTH25</span></span>
+                                </li>
+                                <li class="d-flex align-items-center mb-1">
+                                    <span class="check-square-icon mr-2">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <span>Easy Online Booking Process</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-1">
+                                    <span class="check-square-icon mr-2">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <span>Book Now, Pay Later Option Available</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-1">
+                                    <span class="check-square-icon mr-2">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                    <span>No Surge Pricing</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

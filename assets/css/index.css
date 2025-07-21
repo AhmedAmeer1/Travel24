@@ -137,14 +137,14 @@
 }
 
 .limits-banner .banner-details {
-	margin-top: 40px;
+	margin-top: 75px;
 	/* background-color: red; */
 	border-radius: 10px;
 	padding: 20px 80px 20px 20px;
 }
 
 .limits-banner .banner-details span {
-	font-size: 65px;
+	font-size: 45px;
 	font-weight: 500;
 	line-height: 60px;
 	color: white;
@@ -152,12 +152,44 @@
 	font-family: "helvet";
 }
 
+.limits-banner .banner-details .features-list span {
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 10px;
+	color: white;
+	margin: 0 0 0px;
+	font-family: "helvetnormal";
+	text-align: left;
+}
+
+.limits-banner .banner-details .features-list span .code {
+	color: #0ae93d  !important;
+	margin-left: 2px;
+	font-family: "helvetnormal";
+	font-size: 15px;
+	
+	font-weight: 900;
+}
+
+.check-square-icon {
+	background-color: #28a745; /* Bootstrap success green */
+	color: white;
+	width: 20px;
+	height: 20px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px; /* remove if you want a hard square */
+	font-size: 12px !important;
+}
+
 .limits-banner .banner-details p {
 	color: #e4e4e4;
-	margin-top: 30px;
+	margin-top: 5px;
 	font-family: "helvetnormal";
-	font-size: 30px;
+	font-size: 23px;
 	line-height: 40px;
+	text-align: left;
 }
 
 .limits-banner .banner-details .promoCode {
@@ -258,6 +290,15 @@
 	.banner_container {
 		padding: 22px 0px 48px 0px;
 	}
+	.limits-banner .banner-details .features-list span {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.limits-banner .banner-details .features-list span .code {
+		font-size: 12px;
+	}
+
 	.limits-banner .banner-details {
 		margin-top: 40px;
 		margin-bottom: 20px;
@@ -266,8 +307,8 @@
 		margin-right: 12px;
 	}
 	.limits-banner .banner-details p {
-		font-size: 16px;
-		text-align: center;
+		font-size: 15px;
+		/* text-align: center; */
 		margin-top: 0px;
 		line-height: 25px;
 	}
@@ -310,8 +351,6 @@
 	font-family: "helvet";
 	text-transform: uppercase;
 }
-
-
 
 .disability_img {
 	/* width: 5%; */

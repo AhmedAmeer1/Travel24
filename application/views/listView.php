@@ -54,30 +54,35 @@
         font-size: 12px;
         padding: 4px 10px;
     }
-.passangers-text{
-    font-size: 11px;
-}
-.suitcases-text{
-    font-size: 11px;
-}
+
+    .passangers-text {
+        font-size: 11px;
+    }
+
+    .suitcases-text {
+        font-size: 11px;
+    }
+
     .amount-div h6 {
         margin-bottom: 5px;
         font-weight: bold;
-         font-size: 12px;
+        font-size: 12px;
     }
-.bg-graycolor{
+
+    .bg-graycolor {
         background-color: rgb(191 198 201) !important;
     }
 
     .list-box {
         border: 1px solid #004C78;
         border-radius: 10px;
-      
+
     }
 
     .list-box .card-body {
         padding: 10px;
-}
+    }
+
     .circle {
         display: inline-block;
         width: 8px;
@@ -221,13 +226,13 @@
 
                             <div class="row mt-5">
                                 <?php foreach ($vehicle as $vh) { ?>
-                                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4">
                                     <div class="card h-100 list-box text-center bg-graycolor"
                                         data-vehicle="<?php echo $vh->vehicle_id ?>"
                                         id="vehicle<?php echo $vh->vehicle_id ?>">
                                         <!-- Vehicle Image -->
-                                        <img src="<?php echo base_url($vh->vehicle_image) ?>"
-                                            class="card-img-top p-2" alt="Car">
+                                        <img src="<?php echo base_url($vh->vehicle_image) ?>" class="card-img-top p-2"
+                                            alt="Car">
 
                                         <div class="card-body px-1 pt-1  ">
                                             <!-- Vehicle Title -->
@@ -250,7 +255,8 @@
                                                     <img src="<?php echo base_url("assets/images/travel24/passangers.svg") ?>"
                                                         class="passanger_img" alt="Passengers"
                                                         style="height: 20px; margin-right: 6px;">
-                                                    <span class="passangers-text"><?php echo $vh->noOfPassengers; ?> </span>
+                                                    <span class="passangers-text"><?php echo $vh->noOfPassengers; ?>
+                                                    </span>
                                                 </div>
 
                                                 <!-- Suitcases -->
@@ -258,15 +264,16 @@
                                                     <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg") ?>"
                                                         class="suitcases_img" alt="Suitcases"
                                                         style="height: 20px; margin-right: 6px;">
-                                                    <span class="suitcases-text"><?php echo $vh->noOfSuitcases; ?> </span>
+                                                    <span class="suitcases-text"><?php echo $vh->noOfSuitcases; ?>
+                                                    </span>
                                                 </div>
                                             </div>
 
                                         </div>
 
                                         <!-- Fare Info -->
-                            <div class="card-footer border-top-0 bg-graycolor" style="margin-top: -1.5rem !important;">
-
+                                        <div class="card-footer border-top-0 bg-graycolor"
+                                            style="margin-top: -1.5rem !important;">
                                             <div class="d-flex justify-content-around amount-div"
                                                 data-per-km="<?php echo $vh->perKm; ?>"
                                                 data-per-km-return="<?php echo $vh->perKmReturn; ?>"
@@ -274,21 +281,13 @@
                                                 <div class="text-center ">
                                                     <h6>£<span id="single-amount-<?php echo $vh->vehicle_id ?>"></span>
                                                     </h6>
-                                                    <button class="btn btn-outline-primary btn-sm btn-slct-taxi"
+                                                    <button class="btn btn-sm btn-slct-taxi"
+                                                        style="background-color: #00517c; color: white; border: none;"
                                                         data-travel-type="1">
-                                                        Single
-                                                        <span class="circle"></span>
+                                                        Book Now
                                                     </button>
+
                                                 </div>
-                                                <!-- <div class="text-center">
-                                                    <h6>£<span id="return-amount-<?php echo $vh->vehicle_id ?>"></span>
-                                                    </h6>
-                                                    <button class="btn btn-outline-primary btn-sm btn-slct-taxi"
-                                                        data-travel-type="2">
-                                                        Return
-                                                        <span class="circle"></span>
-                                                    </button>
-                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
