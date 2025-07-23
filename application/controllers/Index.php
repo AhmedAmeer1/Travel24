@@ -628,10 +628,10 @@ class Index extends CI_Controller
 		$total_minutes = $_POST['durationInMinutes'];
 
 
-	debug_log(" -----total_mile 1111111  --------- ");
+		debug_log(" -----total_mile  for trip --------- ");
 		debug_log($total_mile);
-			debug_log(" -----total_minutes 1111111  --------- ");
-	debug_log($total_minutes);
+		debug_log(" -----total_minutes for trip   --------- ");
+		debug_log($total_minutes);
 
 
 		$result = $this->Index_Model->get_vehicle($vehichle_id);
@@ -672,6 +672,8 @@ class Index extends CI_Controller
 		$return = round($return, 2);
 		// $array1= array('single' =>$single,'retn' =>$return);
 
+		debug_log(" -----total Single  for Mile   --------- ");
+		debug_log($single);
 
 
 
@@ -695,8 +697,16 @@ class Index extends CI_Controller
 			}
 		}
 
+		debug_log(" -----total Single  for Time   --------- ");
+		debug_log($singleTime);
+
+
 		$totalsingle = $single + $singleTime;
 		$totalreturn = $return + $returnTime;
+
+
+		debug_log(" -----total Time   + Mile   --------- ");
+		debug_log($totalsingle);
 
 
 		// -----------------------------------------------------------------------------
