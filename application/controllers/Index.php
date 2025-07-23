@@ -655,6 +655,11 @@ class Index extends CI_Controller
 
 					if ($total_mile >= $mr->from  && $total_mile <= $mr->to) {
 						$single = ($mr->single * $total_mile) + $result->perKm;
+						debug_log(" -----mr->single ---------------------------------   --------- ");
+						debug_log($mr->single);
+
+						debug_log(" -----result->perKm ---------------------------------   --------- ");
+						debug_log($result->perKm);
 						$return = ($mr->return * $total_mile * 2) + $result->perKmReturn;
 						break;
 					} else {
