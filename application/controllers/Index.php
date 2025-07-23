@@ -627,7 +627,7 @@ class Index extends CI_Controller
 		$total_mile =  $_POST['total_mile'];
 		$total_minutes = $_POST['durationInMinutes'];
 
-
+		debug_log(" ---------------------------------------------Vehicle ------------------------------------------------- ",$vehichle_id);
 		debug_log(" -----total_mile  for trip --------- ");
 		debug_log($total_mile);
 		debug_log(" -----total_minutes for trip   --------- ");
