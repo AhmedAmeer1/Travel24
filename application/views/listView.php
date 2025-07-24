@@ -407,38 +407,27 @@
     var res;
     var all_points = <?php echo json_encode($all_points); ?>;
     var mile_total = 0;
+    var duration_total_minutes = 0; // <-- Add this line
+
     for (var j = 0; j < all_points.length; j++) {
         var k = j + 1;
-
         if (all_points[k] != undefined) {
-            // res=  test(all_points[j],all_points[k])
             var request = {
-                origin: all_points[j], // a city, full address, landmark etc
+                origin: all_points[j],
                 destination: all_points[k],
                 travelMode: google.maps.DirectionsTravelMode.DRIVING
             };
             directionsService.route(request, function(response, status) {
                 if (status == google.maps.DirectionsStatus.OK) {
-
                     var kil = response.routes[0].legs[0].distance.value / 1000;
-
-                    var minutes = response.routes[0].legs[0].duration.value / 60;
                     var durationInSeconds = response.routes[0].legs[0].duration.value;
                     var durationInMinutes = durationInSeconds / 60;
-                    var durationInHours = durationInMinutes / 60;
 
+                    mile_total += parseFloat(kil * 0.621371);
+                    duration_total_minutes += durationInMinutes; // Accumulate duration
+                    mile_array.push(kil); // or push miles if needed
 
-
-
-                    var total_mile = parseFloat(kil * 0.621371);
-                    mile_total += total_mile;
-                    mile_array.push(total_mile);
-                    console.log('mile_array.length', mile_array.length)
-                    console.log('all_points.lengt', all_points.length - 1)
                     if (mile_array.length == all_points.length - 1) {
-                        console.log('mile_array', mile_array)
-                        console.log('mile_total', mile_total)
-                        //
                         $('.amount-div').each(function(index) {
                             let km_per_hour = $(this).attr('data-per-km');
                             let vehicle_id = $(this).attr('data-vehicle-id');
@@ -451,23 +440,14 @@
                                     vehicle_id: vehicle_id,
                                     total_mile: mile_total,
                                     special_location: special_location,
-                                    durationInMinutes: durationInMinutes,
+                                    durationInMinutes: duration_total_minutes, // send full duration
                                     destination: destination,
                                     source: source
-
                                 },
                                 success: function(data) {
                                     var obj = jQuery.parseJSON(data);
-
-                                    // var total_amount_single = obj['single']*total_mile;
-                                    // var total_amount_return = obj['retn']*total_mile;
                                     var total_amount_single = obj['single'];
-                                    var total_amount_return = obj['retn']
-                                    if (obj['single'] == 0 || obj['retn'] == 0) {
-                                        $("#vehicle" + vehicle_id).hide();
-                                    }
-
-                                    console.log("AIRPORT AMOUNT CHECK---------", obj)
+                                    var total_amount_return = obj['retn'];
 
                                     if (total_amount_single == 0 || total_amount_return ==
                                         0) {
@@ -478,33 +458,19 @@
                                         total_amount_single.toFixed(2));
                                     $("#single-amount-" + vehicle_id).attr('data-fare',
                                         total_amount_single.toFixed(2));
-                                    $("#return-amount-" + vehicle_id).text((
-                                        total_amount_return).toFixed(2));
-                                    $("#return-amount-" + vehicle_id).attr('data-fare', (
-                                        total_amount_return).toFixed(2));
-                                    // $("#return-amount-"+vehicle_id).text((total_amount_return*2).toFixed(2));
-                                    // $("#return-amount-"+vehicle_id).attr('data-fare',(total_amount_return*2).toFixed(2));
+                                    $("#return-amount-" + vehicle_id).text(
+                                        total_amount_return.toFixed(2));
+                                    $("#return-amount-" + vehicle_id).attr('data-fare',
+                                        total_amount_return.toFixed(2));
                                 }
-                            })
-
-                            // var total_amount = km_per_hour*kil;
-
+                            });
                         });
-
-
-                        //
                     }
-
-
-
-
                 }
-            })
-
+            });
         }
-
-
     }
+
 
 
 
