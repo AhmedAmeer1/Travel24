@@ -25,7 +25,7 @@ $config['fleet_data'] = [
     ],
 
     [
-        'title' => 'EXECUTIVE CAR (Executive)',
+        'title' => 'EXECUTIVE CAR',
         'description' => 'Up to 3 passengers plus 2 suitcases or 4 passengers plus hand luggage',
         'noOfPassengers' => '3',
         'noOfSuitcases' => '2',

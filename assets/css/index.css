@@ -371,7 +371,7 @@
 
 .home_container {
 	background-color: #d6dfe7;
-	padding: 77px 230px 100px 230px;
+	padding: 77px 100px 100px 100px;
 }
 
 .car-box {
@@ -388,24 +388,28 @@
 	border-top-right-radius: 16px;
 	border-bottom-left-radius: 16px;
 	border-bottom-right-radius: 16px;
-	padding: 20px 30px 10px 30px;
+	padding: 20px 15px 10px 15px;
 }
 
 .image_card h3 {
 	color: #101828;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: "helvet";
 	font-weight: 500;
+	white-space: nowrap;
 }
 
 .image_card span {
 	color: #004c78;
-	font-size: 13px;
+	font-size: 10px;
 	font-weight: 500;
 	margin-top: 12px;
 }
 .image_card .passangers {
 	height: 20px;
+	background-color: white;
+	border-radius: 100px;
+	padding: 3px;
 }
 .image_card .suitcases {
 	height: 20px;

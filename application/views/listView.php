@@ -63,11 +63,14 @@
         font-size: 11px;
     }
 
+
     .amount-div h6 {
         margin-bottom: 5px;
         font-weight: bold;
         font-size: 12px;
     }
+
+
 
     .bg-graycolor {
         background-color: rgb(191 198 201) !important;
@@ -77,7 +80,30 @@
         border: 1px solid #004C78;
         border-radius: 10px;
 
+        background-color: rgb(191 198 201) !important;
+
     }
+
+    .passanger_img {
+        height: 20px;
+        background-color: white;
+        border-radius: 100px;
+        padding: 3px;
+    }
+
+    .list-box:hover {
+
+        background-color: #00517c !important;
+
+    }
+
+    .list-box:hover .card-title,
+    .list-box:hover .amount-div h6,
+    .list-box:hover .suitcases-text,
+    .list-box:hover .passangers-text {
+        color: white !important;
+    }
+
 
     .list-box .card-body {
         padding: 10px;
@@ -96,10 +122,6 @@
     .card .img-fluid {
         height: 150px;
         object-fit: cover;
-    }
-
-    .disability_img {
-        vertical-align: middle;
     }
     </style>
 </head>
@@ -227,7 +249,7 @@
                             <div class="row mt-5">
                                 <?php foreach ($vehicle as $vh) { ?>
                                 <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4">
-                                    <div class="card h-100 list-box text-center bg-graycolor"
+                                    <div class="card h-100 list-box text-center"
                                         data-vehicle="<?php echo $vh->vehicle_id ?>"
                                         id="vehicle<?php echo $vh->vehicle_id ?>">
                                         <!-- Vehicle Image -->
@@ -239,9 +261,7 @@
                                             <h5 class="card-title">
                                                 <?php if ($vh->title == "MOBILITY VEHICLE") { ?>
                                                 <?php echo $vh->title ?>
-                                                <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png") ?>"
-                                                    class="disability_img" alt="disability"
-                                                    style="height: 20px; margin-left: 5px;">
+
                                                 <?php } else { ?>
                                                 <?php echo $vh->title ?>
                                                 <?php } ?>
@@ -272,8 +292,7 @@
                                         </div>
 
                                         <!-- Fare Info -->
-                                        <div class="card-footer border-top-0 bg-graycolor"
-                                            style="margin-top: -1.5rem !important;">
+                                        <div class="card-footer border-top-0" style="margin-top: -1.5rem !important;">
                                             <div class="d-flex justify-content-around amount-div"
                                                 data-per-km="<?php echo $vh->perKm; ?>"
                                                 data-per-km-return="<?php echo $vh->perKmReturn; ?>"
@@ -282,7 +301,7 @@
                                                     <h6>£<span id="single-amount-<?php echo $vh->vehicle_id ?>"></span>
                                                     </h6>
                                                     <button class="btn btn-sm btn-slct-taxi"
-                                                        style="background-color: #00517c; color: white; border: none;"
+                                                        style="background-color: white; color: #00517c; border: none; font-weight: 600;"
                                                         data-travel-type="1">
                                                         Book Now
                                                     </button>
