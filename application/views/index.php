@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="<?php echo $result->meta_keyword; ?>" />
-    <meta name="description"content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
+    <meta name="description" content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
     <title> Travel24 | Reliable UK Airport Transfers & Local Taxi Services</title>
     <meta property="og:title" content=" Travel24 | Reliable UK Airport Transfers & Local Taxi Services ">
-    <meta property="og:description"content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
+    <meta property="og:description" content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
     <meta property="og:image" content=" https://travel24taxi.com/assets/images/travel24/about_us.svg ">
     <meta property="og:url" content=" https://travel24taxi.com">
     <meta property="og:type" content="website">
@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"  rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=15')?>" rel="stylesheet" />
@@ -37,6 +37,7 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
+
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
@@ -64,8 +65,8 @@
                                         <div class="form-group">
 
                                             <div id="search_car">
-                                                <input type="text" class="form-control autocompleteDoc pickupLocation" name="source"
-                                                    required id="pickPoint" placeholder="Pickup Location">
+                                                <input type="text" class="form-control autocompleteDoc pickupLocation"
+                                                    name="source" required id="pickPoint" placeholder="Pickup Location">
                                                 <input type="hidden" class="lat_perfect" id="sourceLat"
                                                     name="sourceLat">
                                                 <input type="hidden" class="lon_perfect" id="sourceLon"
@@ -81,8 +82,8 @@
                                                 <button style="float:right" class=" multi-root"><i
                                                         class="fa fa-plus-circle  "></i> Multi Route</button>
                                             </div>
-                                            <input type="text" class="form-control autocompleteDoc destination" name="destination"
-                                                required id="dropPoint" placeholder="Destination">
+                                            <input type="text" class="form-control autocompleteDoc destination"
+                                                name="destination" required id="dropPoint" placeholder="Destination">
                                             <input type="hidden" class="lat_perfect" id="destLat" name="destLat">
                                             <input type="hidden" class="lon_perfect" id="destLong" name="destLong">
                                         </div>
@@ -103,7 +104,7 @@
                                     <span class="check-square-icon mr-2">
                                         <i class="fa fa-check"></i>
                                     </span>
-                                    <span>Airport Pickup & Drop-off Charges Included  </span>
+                                    <span>Airport Pickup & Drop-off Charges Included </span>
                                 </li>
                                 <li class="d-flex align-items-center mb-1">
                                     <span class="check-square-icon mr-2">
@@ -152,18 +153,15 @@
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <h3><?= $fleet['title']; ?></h3>
-                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image']); ?>"
-                                    class="img-fluid w-100 py-2" alt="car">
+                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image'] . '?v=19'); ?>" class="img-fluid w-100 py-2" alt="car">
                                 <div class="d-flex justify-content-between">
                                     <div class="d-flex justify-content-between">
-                                        <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>"
-                                            class="img-fluid passangers" alt="passengers">
+                                        <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>" class="img-fluid passangers" alt="passengers">
                                         <span
                                             class="my-auto">&nbsp;<?= $fleet['noOfPassengers']; ?>&nbsp;Passengers</span>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>"
-                                            class="img-fluid suitcases" alt="suitcases">
+                                        <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>" class="img-fluid suitcases" alt="suitcases">
                                         <span
                                             class="my-auto">&nbsp;<?= $fleet['noOfSuitcases']; ?>&nbsp;Suitcases</span>
                                     </div>
@@ -177,8 +175,7 @@
                         <div class="list-details-box">
                             <div class="d-flex justify-content-between flag-div">
                                 <h1 class="text-uppercase">Your journey is our mission </h1>
-                                <img src="assets/images/travel24/england.svg" class="img-fluid "
-                                    alt="flag of the United Kingdom">
+                                <img src="assets/images/travel24/england.svg" class="img-fluid " alt="flag of the United Kingdom">
                             </div>
                             <p>
                                 When you choose us for your travel needs, we're committed to delivering a seamless
