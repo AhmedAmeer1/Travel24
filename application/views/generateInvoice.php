@@ -42,7 +42,8 @@
         input[type="text"],
         input[type="email"],
         input[type="number"],
-        select {
+        select,
+        textarea {
             width: 100%;
             padding: 8px;
             margin-top: 5px;
@@ -80,9 +81,11 @@
         }
 
         @media print {
-            .container, #invoice {
+            .container,
+            #invoice {
                 page-break-inside: avoid;
             }
+
             .footer {
                 page-break-inside: avoid;
             }
@@ -116,15 +119,7 @@
             <input type="text" id="phone" required>
         </div>
 
-        <div class="form-group">
-            <label>Pickup Location</label>
-            <input type="text" id="pickup" required>
-        </div>
-
-        <div class="form-group">
-            <label>Drop Location</label>
-            <input type="text" id="drop" required>
-        </div>
+       
 
         <div class="form-group">
             <label>Date & Time</label>
@@ -135,7 +130,10 @@
             <label>Taxi Fare (£)</label>
             <input type="text" id="fare" placeholder="Enter Fare Manually" required>
         </div>
-
+ <div class="form-group" style="flex: 1 1 100%;">
+            <label>Description</label>
+            <textarea id="description" rows="4" placeholder="Enter service description (e.g. 1\n2\n3)" required></textarea>
+        </div>
         <div class="form-group">
             <label>Payment Type</label>
             <select id="paymentType" required>
@@ -170,31 +168,24 @@
                 <td class="text-right"><strong>Phone:</strong> <span id="c-phone"></span></td>
             </tr>
             <tr>
-                <td><strong>Drop:</strong> <span id="c-drop"></span></td>
-                <td class="text-right"><strong>Email:</strong> <span id="c-email"></span></td>
-            </tr>
-            <tr>
-                <td><strong>Pickup:</strong> <span id="c-pickup"></span></td>
+                <td><strong>Email:</strong> <span id="c-email"></span></td>
                 <td class="text-right"><strong>Payment Type:</strong> <span id="c-payment"></span></td>
             </tr>
         </table>
 
         <table style="width:100%; border-collapse:collapse;" border="1" cellpadding="10">
             <thead style="background:#f0f0f0;">
-            <tr>
-                <th>Description</th>
-                <th>Amount</th>
-            </tr>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>Taxi Fare</td>
-                <td id="amount-fare"></td>
-            </tr>
-            <tr>
-                <td class="text-left"><strong>Total</strong></td>
-                <td id="total"></td>
-            </tr>
+                <tr>
+                    <td id="invoice-description"></td>
+                 <td id="invoice-amount" style="text-align:right; vertical-align:bottom; height:100px;"></td>
+
+                </tr>
             </tbody>
         </table>
 
@@ -234,15 +225,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <script>
-    function breakLongText(text, limit) {
-        if (!text) return "";
-        let result = "";
-        for (let i = 0; i < text.length; i += limit) {
-            result += text.substring(i, i + limit) + "<br>";
-        }
-        return result;
-    }
-
     function generateInvoice(event) {
         event.preventDefault();
 
@@ -250,22 +232,23 @@
         const fullName = document.getElementById('fullName').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
-        const pickup = document.getElementById('pickup').value;
-        const drop = document.getElementById('drop').value;
+        const description = document.getElementById('description').value;
         const dateTimeInput = document.getElementById('dateTimeInput').value;
         const fare = document.getElementById('fare').value;
         const paymentType = document.getElementById('paymentType').value;
 
-        document.getElementById('booking-id').innerHTML = breakLongText(bookingId, 30);
-        document.getElementById('c-name').innerHTML = breakLongText(fullName, 30);
-        document.getElementById('c-email').innerHTML = breakLongText(email, 30);
-        document.getElementById('c-phone').innerHTML = breakLongText(phone, 30);
-        document.getElementById('c-pickup').innerHTML = breakLongText(pickup, 30);
-        document.getElementById('c-drop').innerHTML = breakLongText(drop, 30);
-        document.getElementById('date').innerHTML = breakLongText(dateTimeInput, 30);
-        document.getElementById('c-payment').innerHTML = breakLongText(paymentType, 30);
-        document.getElementById('amount-fare').innerHTML = `£${fare}`;
-        document.getElementById('total').innerHTML = `£${fare}`;
+        document.getElementById('booking-id').innerText = bookingId;
+        document.getElementById('c-name').innerText = fullName;
+        document.getElementById('c-email').innerText = email;
+        document.getElementById('c-phone').innerText = phone;
+        document.getElementById('date').innerText = dateTimeInput;
+        document.getElementById('c-payment').innerText = paymentType;
+
+        // Convert newlines to <br> for the description field
+        const formattedDescription = description.replace(/\n/g, "<br>");
+        document.getElementById('invoice-description').innerHTML = formattedDescription;
+
+        document.getElementById('invoice-amount').innerText = `£${fare}`;
 
         const element = document.getElementById('invoice');
         html2pdf().set({
