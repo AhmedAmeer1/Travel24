@@ -371,7 +371,7 @@
 
 .home_container {
 	background-color: #d6dfe7;
-	padding: 77px 100px 100px 100px;
+	padding: 77px 20px 100px 20px;
 }
 
 .car-box {
@@ -390,6 +390,17 @@
 	border-bottom-right-radius: 16px;
 	padding: 20px 15px 10px 15px;
 }
+
+.fleet-img {
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .fleet-img {
+        width: 72% !important;
+    }
+}
+
 
 .image_card h3 {
 	color: #101828;

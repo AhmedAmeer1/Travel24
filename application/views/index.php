@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"  rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=15')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=18')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
@@ -153,7 +153,7 @@
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <h3><?= $fleet['title']; ?></h3>
-                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image'] . '?v=19'); ?>" class="img-fluid w-100 py-2" alt="car">
+                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image'] . '?v=19'); ?>" class="fleet-img py-2" alt="car">
                                 <div class="d-flex justify-content-between">
                                     <div class="d-flex justify-content-between">
                                         <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>" class="img-fluid passangers" alt="passengers">
