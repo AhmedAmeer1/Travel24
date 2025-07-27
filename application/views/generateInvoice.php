@@ -129,7 +129,7 @@
 
       <div class="form-group" style="flex: 1 1 100%;">
         <label>Description</label>
-        <textarea id="description" rows="4" placeholder="car from uk to london           300" required></textarea>
+        <textarea id="description" rows="4" placeholder="description" required></textarea>
       </div>
 
       <div class="form-group">
