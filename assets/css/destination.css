@@ -16,10 +16,14 @@
 	text-align: start;
 	color: #101828 !important;
 
-	font-size: 25px;
-	line-height: 40px;
+	font-size: 18px;
+	line-height: 24px;
 	font-weight: 500;
 }
+
+/* .destination-link {
+	font-size: 18px !important;
+} */
 
 .destination_wrapper h1 {
 	color: black;
@@ -86,6 +90,10 @@
 		font-size: 18px;
 		line-height: 27px;
 		margin-block-end: 19px;
+	}
+
+	.destination span a {
+		line-height: 14px;
 	}
 }
 

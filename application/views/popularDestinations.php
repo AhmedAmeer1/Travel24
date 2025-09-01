@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/popularDestinations" />
-    <link href="<?= base_url('assets/css/destination.css?v=12') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/destination.css?v=19') ?>" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <?php $this->load->view('assets/js/seo/popularDestinations'); ?>
@@ -56,17 +56,17 @@
                         <?php foreach ($destinations as $index => $dest): ?>
                         <?php
                 // Determine row number (starting from 1)
-                $rowNumber = floor($index / 3) + 1;
-                $textAlignClass = ($rowNumber == 3) ? 'text-end' : '';
+                $rowNumber = floor($index / 4) + 1;
+                $textAlignClass = ($rowNumber == 4) ? 'text-end' : '';
             ?>
-                        <div class="col-md-4 mb-4 <?php echo $textAlignClass; ?>">
-                            <span>
+                        <div class="col-md-3 mb-4 <?php echo $textAlignClass; ?>">
+                            <span class="">
                                 <a href="<?php echo site_url('popularDestinations/view/'.$dest['slug']); ?>">
                                     <?php echo $dest['title']; ?>
                                 </a>
                             </span>
                         </div>
-                        <?php if (($index + 1) % 3 == 0): ?>
+                        <?php if (($index + 1) % 4 == 0): ?>
                     </div>
                     <div class="row">
                         <?php endif; ?>
