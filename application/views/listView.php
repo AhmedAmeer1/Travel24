@@ -315,11 +315,11 @@ var directionsService;
 var mile_total = 0;
 var duration_total_minutes = 0;
 
-// function initMap(){
-//     // just to satisfy callback; we only use DirectionsService
-//     directionsService = new google.maps.DirectionsService();
-//     calcAllLegs();
-// }
+function initMap(){
+    // just to satisfy callback; we only use DirectionsService
+    directionsService = new google.maps.DirectionsService();
+    calcAllLegs();
+}
 
 function calcAllLegs(){
     mile_array = [];
