@@ -412,6 +412,7 @@
         // button visual state
         $('.btn-slct-taxi').removeClass('fa fa-check');
         $(this).addClass('fa fa-check');
+        $(".promo-code").show();
 
         // capture selected vehicle
         var $box = $(this).closest('.list-box');
