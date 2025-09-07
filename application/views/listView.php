@@ -642,7 +642,7 @@ $('.payment-method').click(function() {
 
             if (payment_method === "cash") {
                 // 👉 As requested: redirect to thank-you page (no modal)
-                window.location.replace('<?php echo base_url('thankyou.html')?>');
+                window.location.replace('<?php echo base_url('nolimitFaq.php')?>');
             } else if (payment_method === "lloyds") {
                 // keep original IPG behaviour (bank page in new tab/window)
                 window.open('<?php echo base_url('index/ipg')?>');
