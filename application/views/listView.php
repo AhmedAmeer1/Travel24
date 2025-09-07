@@ -90,12 +90,12 @@
     }
 
     .selected-card {
-    background-color: #004c78 !important ;
-   
+        background-color: #004c78 !important;
 
-    color: #fff; /* optional: make text white for better contrast */
-}
 
+        color: #fff;
+        /* optional: make text white for better contrast */
+    }
     </style>
 </head>
 
@@ -317,8 +317,8 @@
 
     <!-- Google Maps (distance/fare calc) -->
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=<?php echo $setting->google_api_key; ?>&v=3.exp&callback=initMap"
-        async defer></script>
+        src="https://maps.googleapis.com/maps/api/js?key=<?php echo $setting->google_api_key; ?>&v=3.exp&callback=initMap">
+    </script>
 
     <script>
     /* ===========================
@@ -336,98 +336,94 @@
     var selected_vehicle_id = 0;
     var selected_travel_type = 0;
     var total_fare = 0;
-    var directionsService;
+    var directionsService = new google.maps.DirectionsService();
     var mile_total = 0;
     var duration_total_minutes = 0;
 
 
-    window.initMap = function() {
-        // just to satisfy callback; we only use DirectionsService
-        directionsService = new google.maps.DirectionsService();
-        calcAllLegs();
-    };
 
 
-    function calcAllLegs() {
-        mile_array = [];
-        mile_total = 0;
-        duration_total_minutes = 0;
 
-        for (var j = 0; j < all_points.length; j++) {
-            var k = j + 1;
-            if (all_points[k] !== undefined) {
-                var request = {
-                    origin: all_points[j],
-                    destination: all_points[k],
-                    travelMode: google.maps.DirectionsTravelMode.DRIVING
-                };
-                directionsService.route(request, function(response, status) {
-                    if (status === google.maps.DirectionsStatus.OK) {
-                        var kil = response.routes[0].legs[0].distance.value / 1000;
-                        var durationInSeconds = response.routes[0].legs[0].duration.value;
-                        var durationInMinutes = durationInSeconds / 60;
 
-                        mile_total += parseFloat(kil * 0.621371);
-                        duration_total_minutes += durationInMinutes;
-                        mile_array.push(kil);
+    mile_array = [];
+    mile_total = 0;
+    duration_total_minutes = 0;
 
-                        if (mile_array.length === all_points.length - 1) {
-                            // When all legs processed, request server prices for each vehicle row
-                            $('.amount-div').each(function() {
-                                var vehicle_id = $(this).attr('data-vehicle-id');
-                                var special_location = '';
+    for (var j = 0; j < all_points.length; j++) {
+        var k = j + 1;
+        if (all_points[k] !== undefined) {
+            var request = {
+                origin: all_points[j],
+                destination: all_points[k],
+                travelMode: google.maps.DirectionsTravelMode.DRIVING
+            };
+            directionsService.route(request, function(response, status) {
+                if (status === google.maps.DirectionsStatus.OK) {
+                    var kil = response.routes[0].legs[0].distance.value / 1000;
+                    var durationInSeconds = response.routes[0].legs[0].duration.value;
+                    var durationInMinutes = durationInSeconds / 60;
 
-                                $.ajax({
-                                    type: "POST",
-                                    url: '<?php echo base_url('index/get_per_mile_charge')?>',
-                                    data: {
-                                        vehicle_id: vehicle_id,
-                                        total_mile: mile_total,
-                                        special_location: special_location,
-                                        durationInMinutes: duration_total_minutes,
-                                        destination: destination,
-                                        source: source
-                                    },
-                                    success: function(data) {
-                                        var obj = jQuery.parseJSON(data);
-                                        var total_amount_single = obj['single'];
-                                        var total_amount_return = obj['retn'];
+                    mile_total += parseFloat(kil * 0.621371);
+                    duration_total_minutes += durationInMinutes;
+                    mile_array.push(kil);
 
-                                        if (total_amount_single == 0 ||
-                                            total_amount_return == 0) {
-                                            $("#vehicle" + vehicle_id).hide();
-                                        }
+                    if (mile_array.length === all_points.length - 1) {
+                        // When all legs processed, request server prices for each vehicle row
+                        $('.amount-div').each(function() {
+                            var vehicle_id = $(this).attr('data-vehicle-id');
+                            var special_location = '';
 
-                                        $("#single-amount-" + vehicle_id).text(parseFloat(
-                                            total_amount_single).toFixed(2));
-                                        $("#single-amount-" + vehicle_id).attr('data-fare',
-                                            parseFloat(total_amount_single).toFixed(2));
-                                        // (return amount UI removed on purpose—only single displayed)
+                            $.ajax({
+                                type: "POST",
+                                url: '<?php echo base_url('index/get_per_mile_charge')?>',
+                                data: {
+                                    vehicle_id: vehicle_id,
+                                    total_mile: mile_total,
+                                    special_location: special_location,
+                                    durationInMinutes: duration_total_minutes,
+                                    destination: destination,
+                                    source: source
+                                },
+                                success: function(data) {
+                                    var obj = jQuery.parseJSON(data);
+                                    var total_amount_single = obj['single'];
+                                    var total_amount_return = obj['retn'];
+
+                                    if (total_amount_single == 0 ||
+                                        total_amount_return == 0) {
+                                        $("#vehicle" + vehicle_id).hide();
                                     }
-                                });
+
+                                    $("#single-amount-" + vehicle_id).text(parseFloat(
+                                        total_amount_single).toFixed(2));
+                                    $("#single-amount-" + vehicle_id).attr('data-fare',
+                                        parseFloat(total_amount_single).toFixed(2));
+                                    // (return amount UI removed on purpose—only single displayed)
+                                }
                             });
-                        }
+                        });
                     }
-                });
-            }
+                }
+            });
         }
     }
+
 
     /* ===========================
        Book Now -> reveal form & fill values
     =========================== */
     $(document).on('click', '.btn-slct-taxi', function() {
         // button visual state
-       $('.btn-slct-taxi').removeClass('fa fa-check');
+        $('.btn-slct-taxi').removeClass('fa fa-check');
 
-    // remove red bg from all cards
-    $('.list-box').removeClass('selected-card');
+        // remove red bg from all cards
+        $('.list-box').removeClass('selected-card');
 
-    // add check mark on clicked button
-    $(this).addClass('fa fa-check');
+        // add check mark on clicked button
+        $(this).addClass('fa fa-check');
 
-    // make current card red
-    $(this).closest('.list-box').addClass('selected-card');
+        // make current card red
+        $(this).closest('.list-box').addClass('selected-card');
         $(".promo-code").show();
 
         // capture selected vehicle
@@ -504,7 +500,7 @@
                                         "% discount for this booking");
                                     var fare = parseFloat($("#total_fare").text() || "0");
                                     var discount_amt = (fare * obj.result['discount'] /
-                                    100);
+                                        100);
                                     var after_dscnt = (fare - discount_amt);
                                     $("#total_fare").text(after_dscnt.toFixed(2));
                                     $(".promo-code").hide();
@@ -639,7 +635,8 @@
 
         if (timeDifferenceMilliseconds < threeHoursInMilliseconds) {
             alert(
-                "The entered date and time is less than 3 hours. Please book at least 3 hours in advance or call us.");
+                "The entered date and time is less than 3 hours. Please book at least 3 hours in advance or call us."
+                );
             return;
         }
 
@@ -719,7 +716,8 @@
                 if (payment_method === "cash") {
                     // 👉 As requested: redirect to thank-you page (no modal)
                     alert(
-                        "Thank you for your booking! We have sent you a email for the confirmation .");
+                        "Thank you for your booking! We have sent you a email for the confirmation ."
+                        );
                     window.location.replace('<?php echo base_url('/')?>');
                 } else if (payment_method === "lloyds") {
                     // keep original IPG behaviour (bank page in new tab/window)
@@ -748,7 +746,8 @@
        Helper to keep original checkDate hook (no-op safe)
     =========================== */
     function checkDate() {
-        /* reserved for any custom logic you had before */ }
+        /* reserved for any custom logic you had before */
+    }
     </script>
 
     <!-- jQuery Confirm (used in promo) -->
