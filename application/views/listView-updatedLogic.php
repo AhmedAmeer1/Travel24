@@ -151,7 +151,7 @@
     var selected_vehicle_id = 0;
     var selected_travel_type = 0;
     var total_fare = 0;
-
+    var directionsService = new google.maps.DirectionsService();
     var total_way_point = "<?php echo $post_data['total_way_points'] ?>";
     var destination = "<?php echo $post_data['destination'] ?>";
     var source = "<?php echo $post_data['source'] ?>";
