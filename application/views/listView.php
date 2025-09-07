@@ -36,43 +36,22 @@
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
-
-        <div class="way-points-option" style="display:none"><input type="checkbox" name="way_points[]" checked="true"
-                class="way_points" value="<?php echo $post_data['source']; ?>"> <?php echo $post_data['source'];?></div>
-        <?php
-             foreach ($way_points as $k => $v) {
-        ?>
-        <div class="way-points-option" style="display:none"><input type="checkbox" name="way_points[]" checked="true"
-                class="way_points" value="<?php echo $v; ?>"> <?php echo $v;?></div>
-        <?php
-        }
-    ?>
-        <div class="way-points-option" style="display:none"><input type="checkbox" name="way_points[]" checked="true"
-                class="way_points" value="<?php echo $post_data['destination']; ?>">
-            <?php echo $post_data['destination'];?></div>
         <section class="list-main-wrapper">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-12 col-sm-12">
                         <div class="list-wrapper">
-
-
                             <div class="row address-wrapper">
                                 <div class="col-md-6 mt-2">
                                     <h2>PICK UP - POINT:</h2>
                                     <p><?php echo $post_data['source'] ?></p>
-
                                 </div>
-
-
                                 <div class="col-md-6  mt-2">
                                     <h2>DROP - POINT:</h2>
                                     <p><?php echo $post_data['destination'] ?></p>
                                 </div>
                                 <div class="col-md-6  mt-2">
                                     <?php 
-                               // $total_wayPoints = count($way_points)-2;
                                     if(count($way_points)> 0){?>
                                     <h2 class="mt-2 ">WAY POINT - POINTS:</h2>
                                     <?php }
@@ -83,22 +62,18 @@
                                     <?php }?>
                                 </div>
                             </div>
-
-                     
-
-
                             <div class="row mt-5">
                                 <?php foreach ($vehicle as $vh) { ?>
                                 <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4">
                                     <div class="card h-100 list-box text-center"
                                         data-vehicle="<?php echo $vh->vehicle_id ?>"
                                         id="vehicle<?php echo $vh->vehicle_id ?>">
-                                        <!-- Vehicle Image -->
+
                                         <img src="<?php echo base_url($vh->vehicle_image) ?>" class="card-img-top p-2"
                                             alt="Car">
 
                                         <div class="card-body px-1 pt-1  ">
-                                            <!-- Vehicle Title -->
+
                                             <h5 class="card-title">
                                                 <?php if ($vh->title == "MOBILITY VEHICLE") { ?>
                                                 <?php echo $vh->title ?>
@@ -108,10 +83,8 @@
                                                 <?php } ?>
                                             </h5>
 
-
-                                            <!-- Passenger & Suitcase Info -->
                                             <div class="d-flex justify-content-between align-items-center mb-3 px-3">
-                                                <!-- Passengers -->
+
                                                 <div class="d-flex align-items-center">
                                                     <img src="<?php echo base_url("assets/images/travel24/passangers.svg") ?>"
                                                         class="passanger_img" alt="Passengers"
@@ -120,7 +93,7 @@
                                                     </span>
                                                 </div>
 
-                                                <!-- Suitcases -->
+
                                                 <div class="d-flex align-items-center">
                                                     <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg") ?>"
                                                         class="suitcases_img" alt="Suitcases"
@@ -132,7 +105,7 @@
 
                                         </div>
 
-                                        <!-- Fare Info -->
+
                                         <div class="card-footer border-top-0" style="margin-top: -1.5rem !important;">
                                             <div class="d-flex justify-content-around amount-div"
                                                 data-per-km="<?php echo $vh->perKm; ?>"
@@ -169,72 +142,16 @@
     <script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/jquery.touchSwipe.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
-    <script>
-    var map;
-    var waypoints
-
-    function initMap() {
-        var mapLayer = document.getElementById("map-layer");
-        var centerCoordinates = new google.maps.LatLng(37.6, -95.665);
-        var defaultOptions = {
-            center: centerCoordinates,
-            zoom: 4
-        }
-        map = new google.maps.Map(mapLayer, defaultOptions);
-        var directionsService = new google.maps.DirectionsService;
-        var directionsDisplay = new google.maps.DirectionsRenderer;
-        directionsDisplay.setMap(map);
-
-        // $("#go").on("click",function() {
-        waypoints = Array();
-        $('.way_points:checked').each(function() {
-            waypoints.push({
-                location: $(this).val(),
-                stopover: true
-            });
-        });
-        var locationCount = waypoints.length;
-        if (locationCount > 0) {
-            var start = waypoints[0].location;
-            var end = waypoints[locationCount - 1].location;
-
-            drawPath(directionsService, directionsDisplay, start, end);
-        }
-        // });
-
-    }
-
-    function drawPath(directionsService, directionsDisplay, start, end) {
-        directionsService.route({
-            origin: start,
-            destination: end,
-            waypoints: waypoints,
-            optimizeWaypoints: true,
-            travelMode: 'DRIVING'
-        }, function(response, status) {
-            if (status === 'OK') {
-                directionsDisplay.setDirections(response);
-            } else {
-                window.alert('Problem in showing direction due to ' + status);
-            }
-        });
-    }
-    </script>
 
     <script
         src="https://maps.googleapis.com/maps/api/js?key=<?php echo $setting->google_api_key; ?>&v=3.exp&callback=initMap">
     </script>
     <script>
     var mile_array = new Array();
-
-
-
     var selected_vehicle_id = 0;
     var selected_travel_type = 0;
     var total_fare = 0;
-
     var directionsService = new google.maps.DirectionsService();
-    //   
     var total_way_point = "<?php echo $post_data['total_way_points'] ?>";
     var destination = "<?php echo $post_data['destination'] ?>";
     var source = "<?php echo $post_data['source'] ?>";
@@ -266,7 +183,7 @@
                         $('.amount-div').each(function(index) {
                             let km_per_hour = $(this).attr('data-per-km');
                             let vehicle_id = $(this).attr('data-vehicle-id');
-                            let special_location ='';
+                            let special_location = '';
 
                             $.ajax({
                                 type: "POST",
@@ -306,52 +223,6 @@
         }
     }
 
-
-
-
-    $('.filter-result').change(function() {
-        let no_of_passenger = $("#passenger_count").val();
-        let no_of_suitcase = $("#suitcase_count").val();
-        let vehicle_type = $("#vehicle_type").val();
-        var url = "<?php echo base_url('index/filter_result')?>";
-        var vehicles = new Array();
-        var filter_vehicles = new Array();
-        $('.list-box').each(function() {
-            vehicles.push($(this).attr('data-vehicle'));
-        })
-
-        if (no_of_passenger != 1 || no_of_suitcase != 1 || vehicle_type != 0) {
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: {
-                    no_of_passenger: no_of_passenger,
-                    no_of_suitcase: no_of_suitcase,
-                    vehicle_type: vehicle_type
-                },
-                success: function(data) {
-                    var obj = jQuery.parseJSON(data);
-                    var res = obj.result;
-                    $.each(res, function(index, value) {
-                        filter_vehicles.push(value.vehicle_id);
-                    });
-                    // var first = [ 1, 2, 3, 4, 5 ];
-                    // var second = [ 4, 5, 6 ];
-
-                    var difference = vehicles.filter(x => filter_vehicles.indexOf(x) === -1);
-                    console.log(difference);
-                    $('.list-box').removeClass('hide')
-                    $.each(difference, function(index, value) {
-                        $("#vehicle" + value).addClass('hide')
-
-                    });
-
-
-                },
-
-            });
-        }
-    })
     $('.btn-slct-taxi').click(function() {
         $('.btn-slct-taxi').removeClass('fa fa-check');
         $(this).addClass('fa fa-check');
@@ -375,28 +246,6 @@
                 window.location.replace('<?php echo base_url('index/journey_data')?>');
             }
         })
-
-    })
-    $('#contact_details').click(function() {
-        var url = "<?php echo base_url('index/journey_details')?>";
-        if (selected_vehicle_id == 0) {
-            alert("Please choose vehicle to proceed")
-        } else {
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: {
-                    selected_vehicle_id: selected_vehicle_id,
-                    selected_travel_type: selected_travel_type,
-                    total_fare: total_fare
-                },
-                success: function(data) {
-                    window.location.replace('<?php echo base_url('index/journey_data')?>');
-                }
-            })
-
-
-        }
 
     })
     </script>
