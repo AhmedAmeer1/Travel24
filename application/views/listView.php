@@ -18,7 +18,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/listView.css?v=10')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/listView.css?v=11')?>" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
@@ -30,111 +30,13 @@
     gtag('js', new Date());
     gtag('config', 'G-XK1KGHX0F7');
     </script>
-    <style>
-    .hide {
-        display: none;
-    }
 
-    .circle {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background-color: white;
-        border-radius: 50%;
-        margin-left: 5px;
-    }
-
-    .card-title {
-        font-size: 12px;
-        font-weight: 600;
-        margin: 10px 0;
-    }
-
-    .card-footer .btn {
-        font-size: 12px;
-        padding: 4px 10px;
-    }
-
-    .passangers-text {
-        font-size: 11px;
-    }
-
-    .suitcases-text {
-        font-size: 11px;
-    }
-
-
-    .amount-div h6 {
-        margin-bottom: 5px;
-        font-weight: bold;
-        font-size: 12px;
-    }
-
-
-
-    .bg-graycolor {
-        background-color: rgb(191 198 201) !important;
-    }
-
-    .list-box {
-        border: 1px solid #004C78;
-        border-radius: 10px;
-
-        background-color: rgb(191 198 201) !important;
-
-    }
-
-    .passanger_img {
-        height: 20px;
-        background-color: white;
-        border-radius: 100px;
-        padding: 3px;
-    }
-
-    .list-box:hover {
-
-        background-color: #00517c !important;
-
-    }
-
-    .list-box:hover .card-title,
-    .list-box:hover .amount-div h6,
-    .list-box:hover .suitcases-text,
-    .list-box:hover .passangers-text {
-        color: white !important;
-    }
-
-
-    .list-box .card-body {
-        padding: 10px;
-    }
-
-    .circle {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background-color: white;
-        border-radius: 50%;
-        margin-left: 5px;
-        border: 1px solid #004C78;
-    }
-
-    .card .img-fluid {
-        height: 150px;
-        object-fit: cover;
-    }
-    </style>
 </head>
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
-        <!-- <div class="inner-header-wrapper ">
-            <div class="col-12 text-center  booking-form">
-                <h1>Booking Form </h1>
-                <p>Passengers & Luggages</p>
-            </div>
-        </div> -->
+
         <div class="way-points-option" style="display:none"><input type="checkbox" name="way_points[]" checked="true"
                 class="way_points" value="<?php echo $post_data['source']; ?>"> <?php echo $post_data['source'];?></div>
         <?php
@@ -151,29 +53,9 @@
         <section class="list-main-wrapper">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="col-lg-3 col-sm-12">
-                        <div class="side-wrapper">
-                            <h1>Summary</h1>
-                            <h2>PICK UP - POINT:</h2>
-                            <p><?php echo $post_data['source'] ?></p>
-                            <?php 
-                               // $total_wayPoints = count($way_points)-2;
-                               if(count($way_points)> 0){?>
-                            <h2>WAY POINT - POINTS:</h2>
-                            <?php }
-                                 foreach ($way_points as $k => $v) {
-                                    //  if($k !=0 && $k!=(count($way_points)-1)){?>
 
-                            <p><?php echo $v ?></p>
-                            <?php }?>
-                            <h2>DROP - POINT:</h2>
-                            <p><?php echo $post_data['destination'] ?></p>
-                        </div>
-                        <div id="map-layer" style="margin: 20px 0px; max-width: 100%; min-height: 400;">Loading</div>
-                    </div> -->
                     <div class="col-lg-12 col-sm-12">
                         <div class="list-wrapper">
-                            <!-- <div class="choose-heading">Choose an option. (All card charges included)</div> -->
 
 
                             <div class="row address-wrapper">
@@ -379,9 +261,6 @@
         });
     }
     </script>
-    <!-- <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnCzDk6ec1OJFcW5FYgxP3LWVHMNumGDM&callback=initMap">
-    </script> -->
 
     <script
         src="https://maps.googleapis.com/maps/api/js?key=<?php echo $setting->google_api_key; ?>&v=3.exp&callback=initMap">
@@ -390,29 +269,7 @@
     var mile_array = new Array();
 
 
-    // function test(a,b){
 
-    //         var request = {
-    //   origin      : a, // a city, full address, landmark etc
-    //   destination : b,
-    //   travelMode  : google.maps.DirectionsTravelMode.DRIVING
-    //     };
-    //     directionsService.route(request, function(response, status) {
-    //         if ( status == google.maps.DirectionsStatus.OK ) {
-
-    //             var kil =   response.routes[0].legs[0].distance.value/1000;
-    //              var total_mile = parseFloat( kil * 0.621371);
-    //              final_mile = final_mile+total_mile;
-    //              alert("tes"+total_mile)
-    //              mile_array.push(total_mile);
-
-
-
-
-    //         }
-    //     })
-
-    // }
     var selected_vehicle_id = 0;
     var selected_travel_type = 0;
     var total_fare = 0;
@@ -492,67 +349,6 @@
 
 
 
-
-
-    //
-
-
-    // var request = {
-    //   origin      : "<?php echo $post_data['source'] ?>", // a city, full address, landmark etc
-    //   destination : "<?php echo $post_data['destination'] ?>",
-    //   travelMode  : google.maps.DirectionsTravelMode.DRIVING
-    // };
-
-    // directionsService.route(request, function(response, status) {
-    //     console.log('response',response)
-    //   if ( status == google.maps.DirectionsStatus.OK ) {
-    //       $("#total_kilometer").val(response.routes[0].legs[0].distance.value/1000);
-    //         var kil =   response.routes[0].legs[0].distance.value/1000;
-    //         var total_mile = parseFloat( kil * 0.621371);
-    //         //i km = 0.621371 mile
-    //         $('.amount-div').each(function( index ) {
-    //         let km_per_hour =  $(this).attr('data-per-km');
-    //         let vehicle_id =$(this).attr('data-vehicle-id');
-    //         let special_location =$("#special_location").val();
-
-    //         $.ajax({
-    //                 type: "POST",
-    //                 url: '<?php echo base_url('index/get_per_mile_charge')?>',
-    //                 data: {vehicle_id:vehicle_id,total_mile:total_mile,special_location:special_location},
-    //                 success: function(data)
-    //                 {
-    //                     var obj = jQuery.parseJSON(data);
-
-    //                     // var total_amount_single = obj['single']*total_mile;
-    //                     // var total_amount_return = obj['retn']*total_mile;
-    //                     var total_amount_single = obj['single'];
-    //                     var total_amount_return = obj['retn'];
-    //                     if(obj['single'] == 0 || obj['retn'] == 0){
-    //                         $("#vehicle"+vehicle_id).hide();
-    //                     }
-    //                     if(total_amount_single == 0 || total_amount_return == 0){
-    //                         $("#vehicle"+vehicle_id).hide();
-    //                     }
-
-    //         $("#single-amount-"+vehicle_id).text(total_amount_single.toFixed(2));
-    //         $("#single-amount-"+vehicle_id).attr('data-fare',total_amount_single.toFixed(2));
-    //         $("#return-amount-"+vehicle_id).text((total_amount_return).toFixed(2));
-    //         $("#return-amount-"+vehicle_id).attr('data-fare',(total_amount_return).toFixed(2));
-    //         // $("#return-amount-"+vehicle_id).text((total_amount_return*2).toFixed(2));
-    //         // $("#return-amount-"+vehicle_id).attr('data-fare',(total_amount_return*2).toFixed(2));
-    //                 }
-    //         })
-
-    //         // var total_amount = km_per_hour*kil;
-
-    //         });
-    //   }
-    //   else {
-    //     // oops, there's no route between these two locations
-    //     // every time this happens, a kitten dies
-    //     // so please, ensure your address is formatted properly
-    //   }
-    //});
 
     $('.filter-result').change(function() {
         let no_of_passenger = $("#passenger_count").val();

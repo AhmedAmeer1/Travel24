@@ -42,7 +42,7 @@ embed {
 }
 
 .list-main-wrapper .address-wrapper {
-	margin-left:-15px ;
+	margin-left: -15px;
 }
 
 .list-main-wrapper .address-wrapper h2 {
@@ -58,8 +58,6 @@ embed {
 	color: black !important;
 	font-weight: bold;
 }
-
-
 
 .list-main-wrapper .list-wrapper .filter-wrapper {
 	border: 1px solid #000;
@@ -144,7 +142,7 @@ embed {
 .list-main-wrapper .list-wrapper .list-set .list-box .head h5 {
 	font-size: 24px;
 	color: #00517c;
-	font-family: "helvet"; 
+	font-family: "helvet";
 }
 
 .list-main-wrapper .list-wrapper .list-set .list-box .head ul {
@@ -276,8 +274,93 @@ embed {
 	padding: 0 !important;
 	width: unset !important;
 	height: unset !important;
-	background-color: #efe9e9  !important;
-	
+	background-color: #efe9e9 !important;
+}
+
+.hide {
+	display: none;
+}
+
+.circle {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+	margin-left: 5px;
+}
+
+.card-title {
+	font-size: 12px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.card-footer .btn {
+	font-size: 12px;
+	padding: 4px 10px;
+}
+
+.passangers-text {
+	font-size: 11px;
+}
+
+.suitcases-text {
+	font-size: 11px;
+}
+
+.amount-div h6 {
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.bg-graycolor {
+	background-color: rgb(191 198 201) !important;
+}
+
+.list-box {
+	border: 1px solid #004c78;
+	border-radius: 10px;
+
+	background-color: rgb(191 198 201) !important;
+}
+
+.passanger_img {
+	height: 20px;
+	background-color: white;
+	border-radius: 100px;
+	padding: 3px;
+}
+
+.list-box:hover {
+	background-color: #00517c !important;
+}
+
+.list-box:hover .card-title,
+.list-box:hover .amount-div h6,
+.list-box:hover .suitcases-text,
+.list-box:hover .passangers-text {
+	color: white !important;
+}
+
+.list-box .card-body {
+	padding: 10px;
+}
+
+.circle {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background-color: white;
+	border-radius: 50%;
+	margin-left: 5px;
+	border: 1px solid #004c78;
+}
+
+.card .img-fluid {
+	height: 150px;
+	object-fit: cover;
 }
 
 /* ------------------------ RESPONSIVE START ------------------------------------- */
@@ -302,6 +385,5 @@ embed {
 
 	.list-main-wrapper .list-wrapper .list-set .list-box .head h5 {
 		font-size: 19px;
-	
 	}
 }
