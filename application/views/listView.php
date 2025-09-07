@@ -88,6 +88,14 @@
     .promo-text .code {
         font-weight: 700;
     }
+
+    .selected-card {
+    background-color: #004c78 !important ;
+   
+
+    color: #fff; /* optional: make text white for better contrast */
+}
+
     </style>
 </head>
 
@@ -410,8 +418,16 @@
     =========================== */
     $(document).on('click', '.btn-slct-taxi', function() {
         // button visual state
-        $('.btn-slct-taxi').removeClass('fa fa-check');
-        $(this).addClass('fa fa-check');
+       $('.btn-slct-taxi').removeClass('fa fa-check');
+
+    // remove red bg from all cards
+    $('.list-box').removeClass('selected-card');
+
+    // add check mark on clicked button
+    $(this).addClass('fa fa-check');
+
+    // make current card red
+    $(this).closest('.list-box').addClass('selected-card');
         $(".promo-code").show();
 
         // capture selected vehicle
