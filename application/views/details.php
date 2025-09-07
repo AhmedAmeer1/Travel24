@@ -339,25 +339,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12  ">
-                                    <div class="form-group-test d-flex align-items-center hide">
-                                        <input type="checkbox" id="meet_and_greet" class="c-check hide"><label
-                                            class="ml-2 hide">
-                                            MEET AND GREET (£8) 30 MINUTES </label>&nbsp;&nbsp;&nbsp;
-                                        <!-- <span id="meet_amount" class="text_amt" > </span> &nbsp; -->
-                                        <input type="checkbox" id="drop_off" class="c-check hide"><label
-                                            class="ml-2 hide"> DROP
-                                            OFF (£6) </label>
-                                        <!-- <span id="drop_amount" class="text_amt"></span> -->
-                                    </div>
-
-                                    <div class="form-group  hide">
-                                        <label>COMMENTS OR SPECIAL INSTRUCTIONS</label>
-                                        <textarea rows="3" class="formcontrol" id="scomments_special_inst"
-                                            name="scomments_special_inst"></textarea>
-                                    </div>
-
-
-                                    <button class=" promotion-btn  paycash-btn promo-code"
+                                    <button class=" promotion-btn  paycash-btn promo-code mt-4"
                                         onclick="apply_promo_code()">Apply Promocode</button> <span
                                         class="promo-text">Enter <span class="code">LUTH25</span> to get 10 % off.
                                     </span>
@@ -614,10 +596,7 @@
 
 
     $('.payment-method').click(function() {
-        //  if($("#my_account_div").hasClass('hide')){
-        //     alert("please login to continue");return;
-        //  }
-        //alert($("#exceed_time").val())
+
         var valid_phone = validatePhone($("#phone_no").val())
         var valid_email = ValidateEmail($("#email_id").val())
 
@@ -666,9 +645,9 @@
             var no_of_suitcase = $("#no_of_suitcase").val();
             var hand_lagguage = $("#hand_lagguage").val();
             var child_seat = $("#child_seat").val();
-            var chk_Greet = document.getElementById("meet_and_greet");
-            var chk_DropOff = document.getElementById("drop_off");
-            var scomments_special_inst = document.getElementById('scomments_special_inst').value;
+            var chk_Greet = 0;
+            var chk_DropOff = 0;
+            var scomments_special_inst = '';
             if ($(this).attr('data-method') == "pay_now_p") {
                 var payment_method = "paypal";
                 console.log('inside pay_now_p -------------')
@@ -780,77 +759,19 @@
     var valid = "true";
     $('.cost-add-on').change(function(e) {
         var fare = '<?php echo $_SESSION["base_fare"];?>';
-        var chk_Greet = document.getElementById("meet_and_greet");
-        var chk_DropOff = document.getElementById("drop_off");
-        if (chk_Greet.checked) {
-            var meet_and_greet = 1;
-        } else {
-            var meet_and_greet = 0;
-        }
-
-
-        if (chk_DropOff.checked) {
-            var drop_off = 1;
-        } else {
-            var drop_off = 0;
-        }
-
-
         if ($(this).val() != 0) {
             let no_of_chile_seat = $(this).val();
-
             let child_seat_cost = no_of_chile_seat * $(this).attr('data-cost-per-child-seat');
-
-
-
-            if (meet_and_greet == 1) {
-                var fare = parseFloat(fare) + 8;
-            }
-            if (drop_off == 1) {
-                var fare = parseFloat(fare) + 6;
-            }
-
             $("#total_fare").text(parseFloat(child_seat_cost) + parseFloat(fare))
             $("#child_seat_amt").text("(£" + $(this).attr('data-cost-per-child-seat') + "/Seat)")
             // alert( "you need to pay extra £"+ $(this).attr('data-cost-per-child-seat') + "for booking each  child seat for this vehicle")
         } else {
-            if (meet_and_greet == 1) {
-                var fare = parseFloat(fare) + 8;
-            }
-            if (drop_off == 1) {
-                var fare = parseFloat(fare) + 6;
-            }
             $("#total_fare").text(parseFloat(fare))
         }
     })
-    $('input#meet_and_greet[type="checkbox"]').click(function() {
 
-        var fare = $("#total_fare").text();
-        if ($(this).prop("checked") == true) {
-            $("#meet_amount").text("(+" + "£ 5)")
-            //alert( "you need to pay extra £5 for avail this service")
-            $("#total_fare").text(parseFloat(fare) + 8)
-        } else {
-            $("#total_fare").text(parseFloat(fare) - 8)
-            $("#meet_amount").text("")
-        }
 
-    });
 
-    //new check box inserted using this function the total cost will change 
-    $('input#drop_off[type="checkbox"]').click(function() {
-
-        var fare = $("#total_fare").text();
-        if ($(this).prop("checked") == true) {
-            $("#drop_amount").text("(+" + "£ 10)")
-            //alert( "you need to pay extra £5 for avail this service")
-            $("#total_fare").text(parseFloat(fare) + 6)
-        } else {
-            $("#total_fare").text(parseFloat(fare) - 6)
-            $("#drop_amount").text("")
-        }
-
-    });
 
 
 
@@ -868,45 +789,6 @@
         }
     })
     // Wait for the DOM to be ready
-
-
-
-    $("#login").click(function() {
-        var username = $("#exist_id").val();
-        var password = $("#exist_password").val();
-        var url = "<?php echo base_url('index/login') ?>";
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: {
-                username: username,
-                password: password
-            },
-            success: function(result) {
-
-                var obj = jQuery.parseJSON(result);
-                if (obj.status == 1) {
-                    $("#login_div").addClass('hide');
-                    $("#my_account_div").removeClass('hide');
-                    if (obj.type == 'admin') {
-                        $('.admin-pay-type').removeClass('hide');
-                        $('.user-pay-type').addClass('hide');
-                        // $("#my_account").attr('disabled','disabled');
-                    }
-                    $("#my_account").attr('data-user-id', obj.result['user_id'])
-                    $("#my_account").append('<a href="<?php echo base_url('index/account')?>">');
-                }
-                alert(obj.msg)
-
-
-            }
-        })
-    })
-    $('#my_account').click(function(e) {
-        var user_id = $(this).attr('data-user-id');
-        var uri = '<?php echo base_url('Index/account')?>';
-        window.location.replace(uri);
-    })
     </script>
     <script>
     function checkDate() {
