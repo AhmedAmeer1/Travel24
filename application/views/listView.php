@@ -642,7 +642,8 @@ $('.payment-method').click(function() {
 
             if (payment_method === "cash") {
                 // 👉 As requested: redirect to thank-you page (no modal)
-                window.location.replace('<?php echo base_url('faq')?>');
+                alert("Thank you for your booking! We have sent you a email for the confirmation .");
+                window.location.replace('<?php echo base_url('/')?>');
             } else if (payment_method === "lloyds") {
                 // keep original IPG behaviour (bank page in new tab/window)
                 window.open('<?php echo base_url('index/ipg')?>');
