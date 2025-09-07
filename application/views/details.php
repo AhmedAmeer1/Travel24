@@ -306,21 +306,15 @@
 
     <script>
     $(document).ready(function() {
-
         var payment_status = '<?php echo $payment_status;?>';
-
         var book_id = '<?php echo $booking_id;?>';
 
         if (payment_status == "done" && book_id != 0) {
-
-
             get_book_details(book_id)
             $('.payment-method').addClass('hide')
             $("#book_id").text('<?php echo $booking_id;?>');
             $("#success_modal").trigger('click')
-
         }
-
     })
     window.get_book_details = function(book_id) {
         var url = "<?php echo base_url('index/get_book_data') ?>";
@@ -331,18 +325,11 @@
                 book_id: book_id
             },
             success: function(result) {
-
                 var obj = jQuery.parseJSON(result);
-
-
-
                 $("#book_date").text(obj.result['travel_date'])
                 $("#book_amount").text(obj.result['amount'])
-
-
             }
         })
-
     };
     window.apply_promo_code = function(email_id) {
         var email_id = document.getElementById("email_id").value;
@@ -367,7 +354,6 @@
                             return false;
                         }
                         var url = "<?php echo base_url('index/check_promo_code') ?>"
-
                         $.ajax({
                             type: "POST",
                             url: url,
@@ -385,10 +371,6 @@
 
                                     let fare = $("#total_fare").text();
 
-
-
-
-
                                     let discount_amt = (fare * obj.result['discount'] / 100)
                                         .toFixed(2);
 
@@ -400,14 +382,11 @@
                                 } else {
                                     $.alert(obj.msg)
                                 }
-
-
                             }
                         })
                     }
                 },
                 cancel: function() {
-
                 },
             },
             onContentReady: function() {
@@ -435,7 +414,6 @@
         const date = new Date(`${year}-${month}-${day}`);
         // Format the date using toString() method
         const formattedDate = date.toString();
-
         // Parse the time string
         const [time, modifier] = timeInput.split(" ");
         let [hours, minutes] = time.split(":");
@@ -448,22 +426,18 @@
         } else {
             hours = hours.padStart(2, "0");
         }
-
         // Increment the minutes by 1
         minutes = (parseInt(minutes, 10) + 1).toString().padStart(2, "0");
 
         // Format the time
         const formattedTime = `${hours}:${minutes}`;
-
         // Create the date-time string and Date object
         const formattedDateTime = `${year}-${month}-${day}T${hours}:${minutes}:00`;
         const enteredDateTime = new Date(formattedDateTime);
         const currentDateTime = new Date();
-
         // Calculate time differences
         const timeDifferenceMilliseconds = enteredDateTime - currentDateTime;
         const threeHoursInMilliseconds = 3 * 60 * 60 * 1000;
-
         return {
             timeDifferenceMilliseconds,
             threeHoursInMilliseconds
@@ -473,11 +447,8 @@
 
 
     $('.payment-method').click(function() {
-
         var valid_phone = validatePhone($("#phone_no").val())
         var valid_email = ValidateEmail($("#email_id").val())
-
-
         const dateInputValue = $("#datepicker").val();
         const timeInputValue = $("#timepicker").val();
         const {
@@ -487,14 +458,12 @@
 
         const hoursDifference = Math.floor(timeDifferenceMilliseconds / (1000 * 60 * 60));
         const minutesDifference = Math.floor((timeDifferenceMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
-
         if (timeDifferenceMilliseconds < threeHoursInMilliseconds) {
             alert(
                 ` The entered date and time is less than 3 hours .\nPlease give us 3 hours in advance for the booking or call us.`
             );
             return;
         }
-
 
         if ($("#exceed_time").val() == "1") {
 
@@ -538,7 +507,6 @@
 
             }
 
-
             if (chk_Greet.checked) {
                 var meet_and_greet = 1;
             } else {
@@ -550,8 +518,6 @@
             } else {
                 var drop_off = 0;
             }
-
-
 
             var url = "<?php echo base_url('index/booking_init') ?>"
             $.ajax({
@@ -645,11 +611,6 @@
         }
     })
 
-
-
-
-
-
     $('.close').click(function() {
         window.location.replace('<?php echo base_url('index')?>');
     })
@@ -660,7 +621,6 @@
 
         } else {
             $("#create_acnt_div").addClass('hide');
-
         }
     })
     // Wait for the DOM to be ready
@@ -691,7 +651,6 @@
         }
         if (selectedText == today) {
             alert("select today")
-
         }
     }
 
@@ -714,9 +673,6 @@
         var hours = hrs.toString();
         var minutes = mnts.toString();
 
-
-
-
         if (hrs < 10) hours = "0" + hours;
         if (mnts < 10) minutes = "0" + minutes;
 
@@ -724,15 +680,8 @@
     }
 
 
-
-
-
-
-
     $("#timepicker").click(function() {
-
         checkTime()
-
     })
 
     function checkTime() {
@@ -748,11 +697,7 @@
             mm = '0' + mm;
         }
         today = mm + '/' + dd + '/' + yyyy;
-
-
         var time = $("#timepicker").val();
-
-
         var d = new Date();
         var hour = d.getHours();
         var minute = d.getMinutes();
@@ -780,7 +725,6 @@
         if (phoneno.match(/^\d{10}/)) {
             return true;
         }
-
         return false;
     }
 
@@ -798,15 +742,12 @@
         timeZone: 'Europe/London'
     });
     var ukdatetime = minUk.split(" ");
-
     var uktime = ukdatetime[1];
     var ukdates = ukdatetime[0].split(",");
     var ukdate = ukdates[0];
     var ukhourminute = uktime.split(":");
     var ukhour = ukhourminute[0];
     var ukminute = ukhourminute[1];
-
-
     var min = new Date();
 
     strMin = $.datepicker.formatDate("dd/mm/yy", min);
@@ -821,8 +762,6 @@
         minDate: 0,
         onSelect: function(v) {
             $("#timepicker").val('')
-
-
             $('#timepicker').timepicker('option', 'minTime', v == ukdate ? min : '12:00am');
             //  $('#timepicker').timepicker('option', 'minTime', v == strMin ? min : '12:00am');
         }
