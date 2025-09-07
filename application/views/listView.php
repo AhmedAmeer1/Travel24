@@ -311,20 +311,13 @@ var mile_array = [];
 var selected_vehicle_id = 0;
 var selected_travel_type = 0;
 var total_fare = 0;
-var directionsService;
+var directionsService = new google.maps.DirectionsService();
 var mile_total = 0;
 var duration_total_minutes = 0;
 
-function initMap(){
-    // just to satisfy callback; we only use DirectionsService
-    directionsService = new google.maps.DirectionsService();
-    calcAllLegs();
-}
 
-function calcAllLegs(){
-    mile_array = [];
-    mile_total = 0;
-    duration_total_minutes = 0;
+
+  
 
     for (var j = 0; j < all_points.length; j++) {
         var k = j + 1;
@@ -381,7 +374,7 @@ function calcAllLegs(){
             });
         }
     }
-}
+
 
 /* ===========================
    Book Now -> reveal form & fill values
