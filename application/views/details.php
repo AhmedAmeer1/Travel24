@@ -212,14 +212,7 @@
                                     </div>
                                 </div>
                                 <script></script>
-                                <div class="col-md-6 brdr-b hide">
-                                    <div class="form-group">
-                                        <label>LAST NAME*</label>
 
-                                        <input type="text" name="last_name" id="last_name" class="formcontrol"
-                                            placeholder="First Name">
-                                    </div>
-                                </div>
                                 </script>
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
@@ -284,60 +277,9 @@
 
 
 
-                                <div class="col-md-3 brdr-b-r hide">
-                                    <div class="form-group">
-                                        <label>PASSENGERS</label>
-                                        <!-- <select class="formcontrol">
-                                    <?php
-                                       ?>
-                                    <option><?php echo $vechicle_data->noOfPassengers?></option>
-                                    </select> -->
-                                        <select id="no_of_passenger" class="formcontrol ">
-                                            <option value="0">select</option>
-                                            <?php for($i=1;$i<=$vechicle_data->noOfPassengers;$i++){?>
-                                            <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                                            <?php }
-                                       ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 brdr-b-r hide">
-                                    <div class="form-group">
-                                        <label>SUITCASES</label>
-                                        <select id="no_of_suitcase" class="formcontrol ">
-                                            <option value="0">select</option>
-                                            <?php for($j=1;$j<=$vechicle_data->noOfSuitcases;$j++){?>
-                                            <option value="<?php echo $j; ?>"><?php echo $j; ?></option>
-                                            <?php }
-                                       ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 brdr-b-r hide">
-                                    <div class="form-group">
-                                        <label>HAND LUGGAGE</label>
-                                        <select id="hand_lagguage" class="formcontrol ">
-                                            <option value="0">select</option>
-                                            <?php for($k=1;$k<=$vechicle_data->hand_lagguage;$k++){?>
-                                            <option value="<?php echo $k; ?>"><?php echo $k; ?></option>
-                                            <?php }
-                                       ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 brdr-b hide ">
-                                    <div class="form-group">
-                                        <label>CHILD SEAT /TOOLS CHARGE</label><span id="child_seat_amt"></span>
-                                        <select id="child_seat" class="formcontrol cost-add-on"
-                                            data-cost-per-child-seat="<?php echo $vechicle_data->cost_per_child_seat;?>">
-                                            <option value="0">Select</option>
-                                            <?php for($k=1;$k<=$vechicle_data->child_seat;$k++){?>
-                                            <option value="<?php echo $k; ?>"><?php echo $k; ?></option>
-                                            <?php }
-                                       ?>
-                                        </select>
-                                    </div>
-                                </div>
+
+
+
                                 <div class="col-md-12  ">
                                     <button class=" promotion-btn  paycash-btn promo-code mt-4"
                                         onclick="apply_promo_code()">Apply Promocode</button> <span
@@ -426,14 +368,14 @@
 
     <script>
     $(document).ready(function() {
-        console.log("inside  document ready function ----- ")
+
         var payment_status = '<?php echo $payment_status;?>';
-        console.log("payment_status ----- ", payment_status)
+
         var book_id = '<?php echo $booking_id;?>';
-        console.log("book_id ----- ", book_id)
+
         if (payment_status == "done" && book_id != 0) {
 
-            console.log("inside if condition  ----- ", book_id)
+
             get_book_details(book_id)
             $('.payment-method').addClass('hide')
             $("#book_id").text('<?php echo $booking_id;?>');
@@ -453,9 +395,9 @@
             success: function(result) {
 
                 var obj = jQuery.parseJSON(result);
-                //alert(obj.result['amount'])
-                console.log('here', obj)
-                //$("#book_time").text(obj.result['travel_time'])
+
+
+
                 $("#book_date").text(obj.result['travel_date'])
                 $("#book_amount").text(obj.result['amount'])
 
@@ -511,12 +453,9 @@
 
                                     let discount_amt = (fare * obj.result['discount'] / 100)
                                         .toFixed(2);
-                                    console.log(
-                                        " dicount success---------------44444444444-- discount_amt-----",
-                                        discount_amt)
+
                                     let after_dscnt = (fare - discount_amt)
-                                    console.log("after_dscnt----------------------",
-                                        after_dscnt)
+
 
                                     $("#total_fare").text(after_dscnt.toFixed(2));
                                     $(".promo-code").hide();
@@ -636,34 +575,32 @@
             var jouney_date = $("#datepicker").val();
             var journey_time = $("#timepicker").val();
             var first_name = $("#first_name").val();
-            var last_name = $("#last_name").val();
+            var last_name = '';
             var email = $("#email_id").val();
             var phone = $("#phone_no").val();
             var pick_up = $("#pick_up").val();
             var flight_no = $("#flight_no").val();
-            var no_of_passenger = $("#no_of_passenger").val();
-            var no_of_suitcase = $("#no_of_suitcase").val();
-            var hand_lagguage = $("#hand_lagguage").val();
-            var child_seat = $("#child_seat").val();
+            var no_of_passenger = 0;
+            var no_of_suitcase = 0;
+            var hand_lagguage = 0;
+            var child_seat = 0;
             var chk_Greet = 0;
             var chk_DropOff = 0;
             var scomments_special_inst = '';
             if ($(this).attr('data-method') == "pay_now_p") {
                 var payment_method = "paypal";
-                console.log('inside pay_now_p -------------')
+
             }
             if ($(this).attr('data-method') == "pay_now_l") {
                 var payment_method = "lloyds";
-                console.log('inside pay_now_l -------------')
+
             }
             if ($(this).attr('data-method') == "pay_cash") {
                 var payment_method = "cash";
-                console.log('inside pay_cash -------------')
+
             }
 
-            // console.log('jouney_date', jouney_date)
-            // console.log('journey_time', journey_time)
-            // console.log(payment_method)
+
             if (chk_Greet.checked) {
                 var meet_and_greet = 1;
             } else {
@@ -764,7 +701,7 @@
             let child_seat_cost = no_of_chile_seat * $(this).attr('data-cost-per-child-seat');
             $("#total_fare").text(parseFloat(child_seat_cost) + parseFloat(fare))
             $("#child_seat_amt").text("(£" + $(this).attr('data-cost-per-child-seat') + "/Seat)")
-            // alert( "you need to pay extra £"+ $(this).attr('data-cost-per-child-seat') + "for booking each  child seat for this vehicle")
+
         } else {
             $("#total_fare").text(parseFloat(fare))
         }
@@ -840,8 +777,8 @@
         var minutes = mnts.toString();
 
 
-        console.log("hours", hours)
-        console.log("minutes", minutes)
+
+
         if (hrs < 10) hours = "0" + hours;
         if (mnts < 10) minutes = "0" + minutes;
 
@@ -873,10 +810,10 @@
             mm = '0' + mm;
         }
         today = mm + '/' + dd + '/' + yyyy;
-        console.log("today ------", today)
+
 
         var time = $("#timepicker").val();
-        console.log("time ------", time)
+
 
         var d = new Date();
         var hour = d.getHours();
@@ -923,7 +860,7 @@
         timeZone: 'Europe/London'
     });
     var ukdatetime = minUk.split(" ");
-    console.log(ukdatetime)
+
     var uktime = ukdatetime[1];
     var ukdates = ukdatetime[0].split(",");
     var ukdate = ukdates[0];
@@ -935,20 +872,19 @@
     var min = new Date();
 
     strMin = $.datepicker.formatDate("dd/mm/yy", min);
-    console.log('india', strMin)
-    console.log('uk', ukdate)
+
     // min.setHours(min.getHours() + 0.5);
     // min.setMinutes(min.getMinutes() + (15 - min.getMinutes() % 15))
     min.setHours(ukhour);
     min.setMinutes(ukminute)
-    console.log('uk-min', min)
+
     $('#datepicker').datepicker({
         dateFormat: 'dd/mm/yy',
         minDate: 0,
         onSelect: function(v) {
             $("#timepicker").val('')
-            console.log("v", v)
-            console.log("strMin", strMin)
+
+
             $('#timepicker').timepicker('option', 'minTime', v == ukdate ? min : '12:00am');
             //  $('#timepicker').timepicker('option', 'minTime', v == strMin ? min : '12:00am');
         }
