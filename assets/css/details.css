@@ -237,6 +237,10 @@ form .error {
 	margin: 0;
 }
 
+.info-item .amount-text {
+	font-weight: 700;
+}
+
 .info-icon {
 	width: 20px !important;
 	height: auto;
