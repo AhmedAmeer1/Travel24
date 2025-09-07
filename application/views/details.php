@@ -307,6 +307,24 @@
 
 
     <script>
+
+
+window.get_book_details = function (book_id) {
+	var url = "<?php echo base_url('index/get_book_data') ?>";
+	$.ajax({
+		type: "POST",
+		url: url,
+		data: {
+			book_id: book_id,
+		},
+		success: function (result) {
+			var obj = jQuery.parseJSON(result);
+			$("#book_date").text(obj.result["travel_date"]);
+			$("#book_amount").text(obj.result["amount"]);
+		},
+	});
+};
+
     window.apply_promo_code = function(email_id) {
         var email_id = document.getElementById("email_id").value;
         //alert(mail_id);

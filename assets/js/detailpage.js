@@ -15,21 +15,7 @@ $(document).ready(function () {
 	}
 });
 
-window.get_book_details = function (book_id) {
-	var url = "<?php echo base_url('index/get_book_data') ?>";
-	$.ajax({
-		type: "POST",
-		url: url,
-		data: {
-			book_id: book_id,
-		},
-		success: function (result) {
-			var obj = jQuery.parseJSON(result);
-			$("#book_date").text(obj.result["travel_date"]);
-			$("#book_amount").text(obj.result["amount"]);
-		},
-	});
-};
+
 
 $("#timepicker").timepicker({
 	timeFormat: "h:mm p", // Display format with AM/PM
