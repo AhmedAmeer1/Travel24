@@ -268,7 +268,7 @@ class Index extends CI_Controller
 		$booking['greeting_cost'] = $greeting_cost;
 		$booking['dropoff_cost'] = $dropoff_cost;
 
-		$booking['amount'] = $_SESSION['base_fare'] + $greeting_cost + $dropoff_cost + $child_seat_cost;
+		$booking['amount'] =$input['total_fare'] + $greeting_cost + $dropoff_cost + $child_seat_cost;
 		//echo "a-".$booking['amount']."discount-".$booking['promocode_discount'];
 		if ($booking['promocode_discount'] != 0) {
 			$booking['amount'] = $booking['amount'] - ($booking['amount'] * ($booking['promocode_discount'] / 100));
