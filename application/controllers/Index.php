@@ -214,7 +214,7 @@ class Index extends CI_Controller
 		$booking['last_name'] = $input['last_name'];
 		$booking['email'] = $input['email'];
 		$booking['phone'] = $input['phone'];
-		$booking['vehicle_id'] = $_SESSION["vehice_id"] ? $_SESSION["vehice_id"] :$input['selected_vehicle_id'];
+		$booking['vehicle_id'] = $input['selected_vehicle_id'];
 		$booking['selected_vehicle_id'] =  $input['selected_vehicle_id'];
 		$booking['service_type'] = $_SESSION["journey_type"];
 		$booking['source'] = $_SESSION["source"];
@@ -334,7 +334,7 @@ class Index extends CI_Controller
 		set_cookie('total_fare', $booking['amount'], 86400);
 		set_cookie('travel_type', ($booking['service_type'] == "1" ? "Single" : "Return"), 86400);
 		set_cookie('selected_vehicle_id', $booking['selected_vehicle_id'], 86400);
-		$this->db->where('vehicle_id', $_SESSION["vehice_id"]);
+		$this->db->where('vehicle_id',$booking['selected_vehicle_id']);
 		set_cookie('vehicleName', $this->db->get('vehicle')->row('title'), 86400);
 
 
