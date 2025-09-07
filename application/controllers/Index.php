@@ -808,8 +808,8 @@ class Index extends CI_Controller
 
 
 		$bookingOtherData = [
-			// 'vehice_id' => $_SESSION["vehice_id"],
-			'vehice_id' =>get_cookie('selected_vehicle_id') || '',
+			'vehice_id' => $_SESSION["vehice_id"],
+			// 'vehice_id' =>get_cookie('selected_vehicle_id') || '',
 			'travel_type' => get_cookie('travel_type') || '',
 			'hand_lagguage' => get_cookie('hand_lagguage'),
 			'pick_up' => get_cookie('pick_up'),
