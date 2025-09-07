@@ -340,6 +340,7 @@
     var total_fare = 0;
     var directionsService = new google.maps.DirectionsService();
     var mile_total = 0;
+    var promoDiscountAmount = 0;
     var duration_total_minutes = 0;
 
 
@@ -503,6 +504,7 @@
                                     var fare = parseFloat($("#total_fare").text() || "0");
                                     var discount_amt = (fare * obj.result['discount'] /
                                         100);
+                                    promoDiscountAmount = discount_amt;
                                     var after_dscnt = (fare - discount_amt);
                                     $("#total_fare").text(after_dscnt.toFixed(2));
                                     $(".promo-code").hide();
@@ -705,7 +707,9 @@
                 scomments_special_inst: scomments_special_inst,
                 selected_vehicle_id: selected_vehicle_id,
                 selected_travel_type: selected_travel_type,
-                total_fare: $("#total_fare").text()
+                promoDiscountAmount:promoDiscountAmount
+                total_fare: $("#total_fare").text(),
+               
             },
             success: function(data) {
                 // visual loading feedback

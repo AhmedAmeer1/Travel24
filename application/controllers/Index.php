@@ -386,7 +386,7 @@ class Index extends CI_Controller
 				// $data['sub_total'] = $_SESSION['base_fare'];
 				$data['sub_total'] =$input['total_fare'];
 				$data['total'] = $booking['amount'];
-				$data['promocode_discount'] = $booking['promocode_discount'];
+				$data['promocode_discount'] =$input['promoDiscountAmount'];
 				$data['scomments_special_inst'] = $input['scomments_special_inst'];
 				$data['hand_lagguage'] = $input['hand_lagguage'];
 				$data['flight_no'] = $input['flight_no'];
