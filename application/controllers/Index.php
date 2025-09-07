@@ -215,7 +215,6 @@ class Index extends CI_Controller
 		$booking['email'] = $input['email'];
 		$booking['phone'] = $input['phone'];
 		$booking['vehicle_id'] = $input['selected_vehicle_id'];
-		$booking['selected_vehicle_id'] =  $input['selected_vehicle_id'];
 		$booking['service_type'] = $input['selected_travel_type'];
 		$booking['source'] = $_SESSION["source"];
 		$booking['destination'] = $_SESSION["destination"];
