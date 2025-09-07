@@ -17,7 +17,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/details.css?v=19')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/details.css?v=1')?>" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -34,60 +34,22 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
-<style>
-.info-container {
-    display: flex;
-    align-items: center;
-}
 
-.info-item {
-    padding: 0 15px;
-    position: relative;
-    text-align: center;
-}
-
-.info-item:not(:first-child)::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 10%;
-    height: 80%;
-    width: 1px;
-    background-color: black;
-}
-
-.info-item h4 {
-    margin: 0;
-}
-
-
-
-.info-icon {
-    width: 20px !important;
-    height: auto;
-
-}
-</style>
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
-        <!-- <div class="inner-header-wrapper ">
-            <div class="col-12 text-center  booking-form">
-                <h1>Booking Form </h1>
-                <p>Please check journey details and select date and time</p>
-            </div>
-        </div> -->
+
         <section class="details-main-wrapper">
             <div class="container">
-                <!-- <p class="formHeading">Please check journey details</p> -->
+
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- <h1>Please check journey details and select date and time</h1> -->
+
                         <div class="details-box">
-                            <!-- <h2>JOURNEY DETAILS</h2> -->
+
                             <button type="button" id="success_modal" class="btn btn-info btn-lg" style="display:none"
                                 data-toggle="modal" data-target="#myModal">Open Modal</button>
                             <div class="row">
@@ -137,26 +99,9 @@
                                             </div>
 
 
-                                            <!-- <div class="d-flex justify-content-between mt-2">
-                                                <div class="d-flex justify-content-between ">
-                                                    <img src="<?php echo base_url("assets/images/travel24/passangers.svg")?>"
-                                                        class="img-fluid " alt="passangers">
-                                                    <h3 class="mt-2">
-                                                        &nbsp;<?php echo $vechicle_data->noOfPassengers?>&nbsp;Passengers
-                                                    </h3>
-                                                </div>
-                                                <div class="d-flex justify-content-between ">
-                                                    <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?>"
-                                                        class="img-fluid " alt="Suitcases">
-                                                    <h3 class="mt-2 fs-2">
-                                                        &nbsp;<?php echo $vechicle_data->noOfSuitcases?>&nbsp;Suitcases
-                                                    </h3>
-                                                </div>
-                                            </div> -->
 
                                             <div class="bottom">
-                                                <!-- <img src="<?php echo base_url($vechicle_data->vehicle_image)?>"
-                                                    alt="Car"> -->
+
                                                 <h4 class="mt-2"><?php echo $vechicle_data->title;?></h4>
 
                                                 <div class="info-container">
@@ -197,15 +142,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- <h1 class="d-head">New Users please complete details below</h1> -->
 
 
                         <div class="user-from">
-                            <!-- <h2>CONTACT DETAILS</h2> -->
+
                             <div class="row">
                                 <div class="col-md-12 brdr-b">
                                     <div class="form-group">
-                                        <!-- <label>Full NAME*</label> -->
+
 
                                         <input type="text" id="first_name" class="formcontrol" name="first_name"
                                             placeholder="FULL NAME*" required>
@@ -216,7 +160,7 @@
                                 </script>
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
-                                        <!-- <label>E-MAIL ADDRESS*</label> -->
+
                                         <input type="email" id="email_id" class="formcontrol"
                                             placeholder="E-MAIL ADDRESS*">
 
@@ -225,7 +169,7 @@
 
                                 <div class="col-md-6 brdr-b">
                                     <div class="form-group">
-                                        <!-- <label>PHONE NUMBER</label> -->
+
                                         <input type="number" id="phone_no" name="phone_no" class="formcontrol"
                                             placeholder="PHONE NUMBER">
                                     </div>
@@ -234,24 +178,21 @@
                                 <input type="hidden" id="exceed_time" value="0">
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
-                                        <!-- <label>PICKUP DOOR NAME / HOME NUMBER</label> -->
+
                                         <input type="text" id="pick_up" class="formcontrol"
                                             placeholder="PICKUP DOOR NAME / HOME NUMBER">
                                     </div>
                                 </div>
                                 <div class="col-md-6 brdr-b">
                                     <div class="form-group">
-                                        <!-- <label>FLIGHT NUMBER(IF APPLICABLE)</label> -->
+
                                         <input type="text" id="flight_no" class="formcontrol"
                                             placeholder="FLIGHT NUMBER(IF APPLICABLE)">
                                     </div>
                                 </div>
                                 <div class="col-md-6 brdr-b-r ">
                                     <div class="form-group">
-                                        <div class="picker-head">
 
-                                            <!-- <label>Pickup Date</label> -->
-                                        </div>
                                         <p class="picker mb-2"><input onChange="checkDate()" required type="text"
                                                 id="datepicker" class="w-100 custom-placeholder" autocomplete="off"
                                                 placeholder="PICKUP DATE "></p>
@@ -261,10 +202,7 @@
                                 </div>
                                 <div class="col-md-6 brdr-b ">
                                     <div class="form-group">
-                                        <div class="picker-head h-5">
 
-                                            <!-- <label>Pickup Time</label> -->
-                                        </div>
                                         <p class="picker mb-2"><input type="text" class="w-100 custom-placeholder"
                                                 id="timepicker" autocomplete="off" placeholder="PICKUP TIME ">
                                         </p>

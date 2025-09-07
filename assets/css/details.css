@@ -212,22 +212,52 @@ form .error {
 	font-size: 13px;
 }
 
+.info-container {
+	display: flex;
+	align-items: center;
+}
+
+.info-item {
+	padding: 0 15px;
+	position: relative;
+	text-align: center;
+}
+
+.info-item:not(:first-child)::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 10%;
+	height: 80%;
+	width: 1px;
+	background-color: black;
+}
+
+.info-item h4 {
+	margin: 0;
+}
+
+.info-icon {
+	width: 20px !important;
+	height: auto;
+}
+
 /* ------------------------ RESPONSIVE START ------------------------------------- */
 
 @media only screen and (max-width: 1024px) {
 }
 
 @media only screen and (max-width: 767px) {
-.details-main-wrapper .details-box .trip-d .bottom {
-	margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.info-container {
- margin-left: -14px;
-}
+	.details-main-wrapper .details-box .trip-d .bottom {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.info-container {
+		margin-left: -14px;
+	}
 	.pickupTime-Height {
 		height: 270px;
 	}
