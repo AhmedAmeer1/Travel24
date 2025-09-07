@@ -148,7 +148,6 @@ class Index extends CI_Controller
 		//echo "<pre>";print_r($data['all_points']);exit;
 		$data['setting'] = $this->db->get('settings')->row();
 
-		$data['payment_types'] = $this->db->get('payment_types')->result();
 		$this->load->view('listView', $data);
 	}
 	public function filter_result()
@@ -215,7 +214,6 @@ class Index extends CI_Controller
 		$booking['email'] = $input['email'];
 		$booking['phone'] = $input['phone'];
 		$booking['vehicle_id'] = $_SESSION["vehice_id"];
-		$booking['selected_vehicle_id'] =  $input['selected_vehicle_id'];
 		$booking['service_type'] = $_SESSION["journey_type"];
 		$booking['source'] = $_SESSION["source"];
 		$booking['destination'] = $_SESSION["destination"];
@@ -333,7 +331,7 @@ class Index extends CI_Controller
 		set_cookie('pick_up', $input['pick_up'], 86400);
 		set_cookie('total_fare', $booking['amount'], 86400);
 		set_cookie('travel_type', ($booking['service_type'] == "1" ? "Single" : "Return"), 86400);
-		set_cookie('selected_vehicle_id', $booking['selected_vehicle_id'], 86400);
+		
 		$this->db->where('vehicle_id', $_SESSION["vehice_id"]);
 		set_cookie('vehicleName', $this->db->get('vehicle')->row('title'), 86400);
 
@@ -809,7 +807,6 @@ class Index extends CI_Controller
 
 		$bookingOtherData = [
 			'vehice_id' => $_SESSION["vehice_id"],
-			// 'vehice_id' =>get_cookie('selected_vehicle_id') || '',
 			'travel_type' => get_cookie('travel_type') || '',
 			'hand_lagguage' => get_cookie('hand_lagguage'),
 			'pick_up' => get_cookie('pick_up'),
