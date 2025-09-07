@@ -384,7 +384,7 @@ class Index extends CI_Controller
 				$data['dropOff_status'] = $booking['dropOff_status'];
 				$data['dropoff_cost'] = $dropoff_cost;
 				// $data['sub_total'] = $_SESSION['base_fare'];
-				$data['sub_total'] =$input['total_fare'];
+				$data['sub_total'] =$input['subTotal'];
 				$data['total'] = $booking['amount'];
 				$data['promocode_discount'] =$input['promoDiscountAmount'];
 				$data['scomments_special_inst'] = $input['scomments_special_inst'];
