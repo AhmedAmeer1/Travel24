@@ -707,7 +707,7 @@
                 scomments_special_inst: scomments_special_inst,
                 selected_vehicle_id: selected_vehicle_id,
                 selected_travel_type: selected_travel_type,
-                promoDiscountAmount:promoDiscountAmount
+                promoDiscountAmount:promoDiscountAmount,
                 total_fare: $("#total_fare").text(),
                
             },
