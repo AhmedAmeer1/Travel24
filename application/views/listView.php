@@ -200,6 +200,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="details-box">
+                             <button type="button" id="success_modal" class="btn btn-info btn-lg" style="display:none"
+                                data-toggle="modal" data-target="#myModal">Open Modal</button>
                             <div class="row">
                                 <div class="col-md-12 no-gutter">
                                     <div class="trip-d">
@@ -715,10 +717,21 @@
 
                 if (payment_method === "cash") {
                     // 👉 As requested: redirect to thank-you page (no modal)
-                    alert(
-                        "Thank you for your booking! We have sent you a email for the confirmation ."
-                        );
-                    window.location.replace('<?php echo base_url('/')?>');
+
+
+                 var obj = jQuery.parseJSON(data);
+
+                        if (obj.result['booking_id'] != "") {
+                            $("#book_id").text(obj.result['booking_id']);
+                            get_book_details(obj.result['booking_id'])
+                            $("#success_modal").trigger('click')
+
+                        }
+
+                    // alert(
+                    //     "Thank you for your booking! We have sent you a email for the confirmation ."
+                    //     );
+                    // window.location.replace('<?php echo base_url('/')?>');
                 } else if (payment_method === "lloyds") {
                     // keep original IPG behaviour (bank page in new tab/window)
                     window.open('<?php echo base_url('index/ipg')?>');
