@@ -84,48 +84,7 @@
                                 </div>
                             </div>
 
-                            <div class="filter-wrapper hide">
-                                <input type="hidden" id="special_location" value="<?php echo $special_location;?>">
-                                <h3>PASSENGERS AND LUGGAGE</h3>
-                                <div class="row">
-                                    <div class="col-md-4 no-gutter">
-                                        <div class="filter-box brdr-right">
-                                            <h4>NUMBER OF PASSENGERS</h4>
-                                            <select id="passenger_count" class="formcontrol filter-result">
-                                                <?php for($i=1;$i<=$max_passenger;$i++){?>
-                                                <option value="<?php echo $i;?>"><?php echo $i;?></option>
-                                                <?php }
-                                                ?>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 no-gutter">
-                                        <div class="filter-box brdr-right">
-                                            <h4>NUMBER OF SUITCASES</h4>
-                                            <select id="suitcase_count" class="formcontrol filter-result">
-                                                <?php for($j=1;$j<=$max_suit_case;$j++){?>
-                                                <option value="<?php echo $j;?>"><?php echo $j;?></option>
-                                                <?php }
-                                                ?>
-                                            </select>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 no-gutter">
-                                        <div class="filter-box">
-                                            <h4>VEHICLE TYPE</h4>
-                                            <select id="vehicle_type" class="formcontrol filter-result">
-                                                <option value="0">- All Vehicles -</option>
-                                                <?php foreach($vehicle_type as $vt){?>
-
-                                                <option value="<?php echo $vt->id; ?>"><?php echo $vt->type; ?></option>
-                                                <?php }
-                                            ?>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                     
 
 
                             <div class="row mt-5">
@@ -307,7 +266,7 @@
                         $('.amount-div').each(function(index) {
                             let km_per_hour = $(this).attr('data-per-km');
                             let vehicle_id = $(this).attr('data-vehicle-id');
-                            let special_location = $("#special_location").val();
+                            let special_location ='';
 
                             $.ajax({
                                 type: "POST",
