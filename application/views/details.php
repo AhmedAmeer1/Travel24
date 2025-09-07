@@ -41,24 +41,17 @@
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
-
         <section class="details-main-wrapper">
             <div class="container">
-
                 <div class="row">
                     <div class="col-md-12">
-
                         <div class="details-box">
-
                             <button type="button" id="success_modal" class="btn btn-info btn-lg" style="display:none"
                                 data-toggle="modal" data-target="#myModal">Open Modal</button>
                             <div class="row">
-
                                 <div class="col-md-12 no-gutter">
                                     <div class="trip-d">
-
                                         <?php  if($vechicle_data->title == "MOBILITY VEHICLE"){?>
-
                                         <h1><?php echo $vechicle_data->title;?>(
                                             <img src="<?php echo base_url("assets/images/travel24/fleet/blue-disability.png")?> "
                                                 class="disability_img" alt="disability icon">
@@ -69,8 +62,6 @@
                                                 <?php }  ?>
                                                 
                                             </h1> -->
-                     
-
                                             <div class="destination-details">
                                                 <div class="row">
                                                     <div class="col-md-6 " style="margin-left: -14px;">
@@ -97,12 +88,8 @@
                                                 </div>
                                             </div>
 
-
-
                                             <div class="bottom">
-
                                                 <h4 class="mt-2"><?php echo $vechicle_data->title;?></h4>
-
                                                 <div class="info-container">
                                                     <div class="info-item d-flex justify-content-between">
                                                         <img src="<?php echo base_url("assets/images/travel24/Suitcases.svg")?>"
@@ -141,39 +128,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-
-
                         <div class="user-from">
-
                             <div class="row">
                                 <div class="col-md-12 brdr-b">
                                     <div class="form-group">
-
-
                                         <input type="text" id="first_name" class="formcontrol" name="first_name"
                                             placeholder="FULL NAME*" required>
                                     </div>
                                 </div>
-                                <script></script>
-
-                                </script>
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
-
                                         <input type="email" id="email_id" class="formcontrol"
                                             placeholder="E-MAIL ADDRESS*">
 
                                     </div>
                                 </div>
-
                                 <div class="col-md-6 brdr-b">
                                     <div class="form-group">
-
                                         <input type="number" id="phone_no" name="phone_no" class="formcontrol"
                                             placeholder="PHONE NUMBER">
                                     </div>
                                 </div>
-
                                 <input type="hidden" id="exceed_time" value="0">
                                 <div class="col-md-6 brdr-b-r">
                                     <div class="form-group">
@@ -191,45 +166,26 @@
                                 </div>
                                 <div class="col-md-6 brdr-b-r ">
                                     <div class="form-group">
-
                                         <p class="picker mb-2"><input onChange="checkDate()" required type="text"
                                                 id="datepicker" class="w-100 custom-placeholder" autocomplete="off"
                                                 placeholder="PICKUP DATE "></p>
-
-
                                     </div>
                                 </div>
                                 <div class="col-md-6 brdr-b ">
                                     <div class="form-group">
-
                                         <p class="picker mb-2"><input type="text" class="w-100 custom-placeholder"
                                                 id="timepicker" autocomplete="off" placeholder="PICKUP TIME ">
                                         </p>
                                     </div>
-
                                 </div>
-
-
-
-
-
-
-
-
-
                                 <div class="col-md-12  ">
                                     <button class=" promotion-btn  paycash-btn promo-code mt-4"
                                         onclick="apply_promo_code()">Apply Promocode</button> <span
                                         class="promo-text">Enter <span class="code">LUTH25</span> to get 10 % off.
                                     </span>
-
                                 </div>
                             </div>
-
-
                         </div>
-                        <!------------------------------------------ OLD PAYMENT CODE START ---------------------------------------- -->
-
                         <div class="bottom-buttons mb-3">
                             <div class="user-pay-type d-flex justify-content-end" style="gap: 3px;">
                                 <?php foreach($payment_types as $pt){?>
@@ -246,12 +202,6 @@
                                 </span>
                             </div>
                         </div>
-
-
-                        <!------------------------------------------ OLD PAYMENT CODE END ---------------------------------------- -->
-
-
-
                     </div>
                 </div>
 
@@ -259,8 +209,6 @@
     </main>
     <?php $this->load->view('common_components/footer'); ?>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
-
-
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -307,23 +255,21 @@
 
 
     <script>
-
-
-window.get_book_details = function (book_id) {
-	var url = "<?php echo base_url('index/get_book_data') ?>";
-	$.ajax({
-		type: "POST",
-		url: url,
-		data: {
-			book_id: book_id,
-		},
-		success: function (result) {
-			var obj = jQuery.parseJSON(result);
-			$("#book_date").text(obj.result["travel_date"]);
-			$("#book_amount").text(obj.result["amount"]);
-		},
-	});
-};
+    window.get_book_details = function(book_id) {
+        var url = "<?php echo base_url('index/get_book_data') ?>";
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: {
+                book_id: book_id,
+            },
+            success: function(result) {
+                var obj = jQuery.parseJSON(result);
+                $("#book_date").text(obj.result["travel_date"]);
+                $("#book_amount").text(obj.result["amount"]);
+            },
+        });
+    };
 
     window.apply_promo_code = function(email_id) {
         var email_id = document.getElementById("email_id").value;
