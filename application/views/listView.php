@@ -448,7 +448,7 @@
         $("#bk-passengers").text(vhPassengers);
         $("#bk-suitcases").text(vhSuitcases);
         $("#total_fare").text(parseFloat(total_fare).toFixed(2));
-
+        subTotal=total_fare;
         // ensure source/destination shown (already from PHP)
         // waypoints already printed; if you need dynamic override, you can rebuild #bf_waypoints
 
