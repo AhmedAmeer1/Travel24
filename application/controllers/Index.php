@@ -216,7 +216,7 @@ class Index extends CI_Controller
 		$booking['phone'] = $input['phone'];
 		$booking['vehicle_id'] = $input['selected_vehicle_id'];
 		$booking['selected_vehicle_id'] =  $input['selected_vehicle_id'];
-		$booking['service_type'] = $_SESSION["journey_type"];
+		$booking['service_type'] = $input['selected_travel_type'];
 		$booking['source'] = $_SESSION["source"];
 		$booking['destination'] = $_SESSION["destination"];
 		$booking['way_point_1'] = (!empty($_SESSION["way_points"][0]) ? $_SESSION["way_points"][0] : '');
@@ -233,7 +233,7 @@ class Index extends CI_Controller
 		$booking['greet_status'] = $input['meet_and_greet'];
 		$booking['dropOff_status'] = $input['drop_off'];
 		$booking['payment_type'] = $input['payment_method'];
-		$booking['base_fare'] = $_SESSION['base_fare'];
+		$booking['base_fare'] =$input['total_fare'];
 		$booking['user_id'] = (!empty($_SESSION['user_id']) ? $_SESSION['user_id'] : '0');
 		$booking['userType'] = (!empty($_SESSION['user_type']) ? $_SESSION['user_type'] : '');
 		$booking['status'] = 1;
@@ -808,8 +808,8 @@ class Index extends CI_Controller
 
 
 		$bookingOtherData = [
-			'vehice_id' => $_SESSION["vehice_id"],
-			// 'vehice_id' =>get_cookie('selected_vehicle_id') || '',
+			// 'vehice_id' => $_SESSION["vehice_id"],
+			'vehice_id' =>get_cookie('selected_vehicle_id') || '',
 			'travel_type' => get_cookie('travel_type') || '',
 			'hand_lagguage' => get_cookie('hand_lagguage'),
 			'pick_up' => get_cookie('pick_up'),
