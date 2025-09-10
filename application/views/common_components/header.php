@@ -7,9 +7,9 @@
 }
 </style>
 <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/header.css')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/header.css?v=2')?>" rel="stylesheet" />
 <header class="limits-header-wrapper  d-md-block d-none ">
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar header_container  navbar-expand-md">
         <div class=" row container-fluid pa-50 mt-4">
             <div class="col-md-4">
                 <a class="" href="<?php echo base_url()?>"><img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>"alt="travel 24 taxi SVG Logo"></a>

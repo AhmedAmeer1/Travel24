@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"  rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=19')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=9')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
@@ -149,7 +149,7 @@
                 <h2 class=" pt-2">OUR FLEET</h2>
                 <div class="row mt-2 no-gutter-responsive">
                     <?php foreach ($fleet_data as $fleet): ?>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <h3><?= $fleet['title']; ?></h3>
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                     <?php endforeach; ?>
-                    <div class="col-md-8 mt-3">
+                    <div class="col-md-12 mt-3">
                         <div class="list-details-box">
                             <div class="d-flex justify-content-between flag-div">
                                 <h1 class="text-uppercase">Your journey is our mission </h1>
