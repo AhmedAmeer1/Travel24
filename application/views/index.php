@@ -6,13 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="<?php echo $result->meta_keyword; ?>" />
-    <meta name="description" content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
+    <meta name="description"
+        content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
     <title> Travel24 | Reliable UK Airport Transfers & Local Taxi Services</title>
     <meta property="og:title" content=" Travel24 | Reliable UK Airport Transfers & Local Taxi Services ">
-    <meta property="og:description" content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
+    <meta property="og:description"
+        content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
     <meta property="og:image" content=" https://travel24taxi.com/assets/images/travel24/about_us.svg ">
     <meta property="og:url" content=" https://travel24taxi.com">
     <meta property="og:type" content="website">
@@ -21,15 +23,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=9')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=11')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -149,23 +153,25 @@
                 <h2 class=" pt-2">OUR FLEET</h2>
                 <div class="row mt-2 no-gutter-responsive">
                     <?php foreach ($fleet_data as $fleet): ?>
-                    <div class="col-md-3">
-                        <div class="car-box">
+                    <div class="col-6 col-md">
+                        <div class="car-box -ml-2">
                             <div class="w-100 image_card">
                                 <h3><?= $fleet['title']; ?></h3>
-                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image'] . '?v=19'); ?>" class="fleet-img py-2" alt="car">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex justify-content-between">
-                                        <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>" class="img-fluid passangers" alt="passengers">
-                                        <span
-                                            class="my-auto">&nbsp;<?= $fleet['noOfPassengers']; ?>&nbsp;Passengers</span>
+                                <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image'] . '?v=19'); ?>"
+                                    class="fleet-img mt-2" alt="car">
+                                <div class="fleet-details">
+                                    <div class="detail-item">
+                                        <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>"  class="img-fluid passangers"
+                                            alt="passengers">
+                                        <span><?= $fleet['noOfPassengers']; ?> Passengers</span>
                                     </div>
-                                    <div class="d-flex justify-content-between">
-                                        <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>" class="img-fluid suitcases" alt="suitcases">
-                                        <span
-                                            class="my-auto">&nbsp;<?= $fleet['noOfSuitcases']; ?>&nbsp;Suitcases</span>
+                                    <div class="detail-item">
+                                        <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>"
+                                            alt="suitcases">
+                                        <span><?= $fleet['noOfSuitcases']; ?> Suitcases</span>
                                     </div>
                                 </div>
+
                             </div>
 
                         </div>
@@ -175,7 +181,8 @@
                         <div class="list-details-box">
                             <div class="d-flex justify-content-between flag-div">
                                 <h1 class="text-uppercase">Your journey is our mission </h1>
-                                <img src="assets/images/travel24/england.svg" class="img-fluid " alt="flag of the United Kingdom">
+                                <img src="assets/images/travel24/england.svg" class="img-fluid "
+                                    alt="flag of the United Kingdom">
                             </div>
                             <p>
                                 When you choose us for your travel needs, we're committed to delivering a seamless
