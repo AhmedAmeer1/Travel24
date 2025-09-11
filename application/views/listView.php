@@ -59,7 +59,6 @@
     </script>
 
     <style>
-    /* tiny helper to keep it clean */
     .hidden {
         display: none !important;
     }
@@ -68,11 +67,11 @@
         cursor: pointer;
     }
 
+    /* Form is now always visible */
     .details-forms-wrapper {
-        display: none;
+        display: block;
     }
 
-    /* hidden until Book Now */
     .slide-anchor-spacer {
         height: 10px;
     }
@@ -91,10 +90,7 @@
 
     .selected-card {
         background-color: #004c78 !important;
-
-
         color: #fff;
-        /* optional: make text white for better contrast */
     }
     </style>
 </head>
@@ -448,7 +444,7 @@
         $("#bk-passengers").text(vhPassengers);
         $("#bk-suitcases").text(vhSuitcases);
         $("#total_fare").text(parseFloat(total_fare).toFixed(2));
-        subTotal=total_fare;
+        subTotal = total_fare;
         // ensure source/destination shown (already from PHP)
         // waypoints already printed; if you need dynamic override, you can rebuild #bf_waypoints
 
@@ -506,7 +502,7 @@
                                     var discount_amt = (fare * obj.result['discount'] /
                                         100);
                                     promoDiscountAmount = discount_amt;
-                                    subTotal=fare;
+                                    subTotal = fare;
                                     var after_dscnt = (fare - discount_amt);
                                     $("#total_fare").text(after_dscnt.toFixed(2));
                                     $(".promo-code").hide();
@@ -628,6 +624,10 @@
        Payment submit (merged)
     =========================== */
     $('.payment-method').click(function() {
+        if (selected_vehicle_id == 0) {
+            alert("Please select a vehicle before proceeding with payment.");
+            return;
+        }
         // basic validation
         var valid_phone = validatePhone($("#phone_no").val());
         var valid_email = ValidateEmail($("#email_id").val());
@@ -709,10 +709,10 @@
                 scomments_special_inst: scomments_special_inst,
                 selected_vehicle_id: selected_vehicle_id,
                 selected_travel_type: selected_travel_type,
-                subTotal:subTotal,
-                promoDiscountAmount:promoDiscountAmount,
+                subTotal: subTotal,
+                promoDiscountAmount: promoDiscountAmount,
                 total_fare: $("#total_fare").text(),
-               
+
             },
             success: function(data) {
                 // visual loading feedback
