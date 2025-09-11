@@ -639,12 +639,7 @@
             threeHoursInMilliseconds
         } = calculateTimeDifference(dateInputValue, timeInputValue);
 
-        if (timeDifferenceMilliseconds < threeHoursInMilliseconds) {
-            alert(
-                "The entered date and time is less than 3 hours. Please book at least 3 hours in advance or call us."
-            );
-            return;
-        }
+      
 
         if ($("#exceed_time").val() == "1") {
             alert("You should book 3 hour prior to your journey");
@@ -660,6 +655,12 @@
             return;
         } else if (valid_email == false) {
             alert("You have entered an invalid email address!");
+            return;
+        }
+          if (timeDifferenceMilliseconds < threeHoursInMilliseconds) {
+            alert(
+                "The entered date and time is less than 3 hours. Please book at least 3 hours in advance or call us."
+            );
             return;
         }
 
