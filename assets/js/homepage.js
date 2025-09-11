@@ -44,12 +44,12 @@ $("#createCustomerForm").delegate('.multi-root', "click", function (e) {
 
     var html = '<div id="way-points-div-' + next_way_point + '" class="form-group">' +
         '<div class="d-flex justify-content-between">' +
-        '<label>WAY POINT</label>' +
+        '<label></label>' +
         '<span class="chbs-location-remove chbs-meta-icon-minus remove-multi-root"></span>' +
         '<button style="float:right" class="multi-btn"><i class="fa fa-plus-circle multi-root"></i> Multi Route</button>' +
         '<button style="float:right"><i class="fa fa-minus-circle remove-multi-root" data-index="' + next_way_point + '"></i></button>' +
         '</div>' +
-        '<input type="text" class="form-control autocompleteDoc" name="wayPoint-' + next_way_point + '" required id="wayPoint-' + next_way_point + '" placeholder="Enter a location">' +
+        '<input type="text" class="form-control autocompleteDoc multiRoute" name="wayPoint-' + next_way_point + '" required id="wayPoint-' + next_way_point + '" placeholder="Enter a location">' +
         '<input type="hidden" class="lat_perfect" id="lat_doc" name="destLat">' +
         '<input type="hidden" class="lon_perfect" id="lon_doc" name="destLong">' +
         '</div>';
