@@ -1,6 +1,6 @@
 <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
 <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/footer.css?v=2')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/footer.css?v=5')?>" rel="stylesheet" />
 <footer class="limits-footer-wrapper">
     <div class="footer-container">
         <div class="mx-auto no-gutter text-center order-md-1 order-0">

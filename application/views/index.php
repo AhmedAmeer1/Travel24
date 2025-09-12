@@ -27,7 +27,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=14')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=15')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
@@ -62,7 +62,10 @@
                             </div>
                             <?php } ?>
                             <div class="content">
+                               
                                 <div class="form-inner">
+                                    
+                                     <p class="form-heading">Quick & Easy Booking</p>
                                     <form id="createCustomerForm" role="form" action="<?=base_url($redirectUrl)?>"
                                         method="post" class="validate" data-parsley-validate=""
                                         enctype="multipart/form-data">
@@ -104,31 +107,31 @@
                                 Airport transfers & chauffeur services connecting all UK airports
                             </p>
                             <ul class="features-list mt-2" style="list-style: none; padding-left: 0;">
-                                <li class="d-flex align-items-center mb-1">
+                                <li class="d-flex align-items-center mb-2">
                                     <span class="check-square-icon mr-2">
                                         <i class="fa fa-check"></i>
                                     </span>
                                     <span>Airport Pickup & Drop-off Charges Included </span>
                                 </li>
-                                <li class="d-flex align-items-center mb-1">
+                                <li class="d-flex align-items-center mb-2">
                                     <span class="check-square-icon mr-2">
                                         <i class="fa fa-check"></i>
                                     </span>
                                     <span>10% Off Every Journey - Use Code : <span class="code">LUTH25</span></span>
                                 </li>
-                                <li class="d-flex align-items-center mb-1">
+                                <li class="d-flex align-items-center mb-2">
                                     <span class="check-square-icon mr-2">
                                         <i class="fa fa-check"></i>
                                     </span>
                                     <span>Easy Online Booking Process</span>
                                 </li>
-                                <li class="d-flex align-items-center mb-1">
+                                <li class="d-flex align-items-center mb-2">
                                     <span class="check-square-icon mr-2">
                                         <i class="fa fa-check"></i>
                                     </span>
                                     <span>Book Now, Pay Later Option Available</span>
                                 </li>
-                                <li class="d-flex align-items-center mb-1">
+                                <li class="d-flex align-items-center mb-2">
                                     <span class="check-square-icon mr-2">
                                         <i class="fa fa-check"></i>
                                     </span>

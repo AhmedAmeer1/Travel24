@@ -92,7 +92,7 @@
 
 .limits-banner .book-form-box .content .form-inner {
 	margin-top: 90px;
-	background-color: #00517c;
+	background-color: #999b9d;
 	/* background-color: rgb(255 255 255 / 78%); */
 	padding: 20px;
 	border-radius: 12px;
@@ -202,6 +202,7 @@
 	margin: 0 0 0px;
 	font-family: "helvetnormal";
 	text-align: left;
+	letter-spacing: 1px;
 }
 
 .limits-banner .banner-details .features-list span .code {
@@ -381,6 +382,15 @@ padding: 26px 181px 74px 167px;
 
 /*  ----------------------------------- OUR FLEET COMPONENT START -------------------------------- */
 
+.form-heading{
+	font-size: 20px;
+	/* color: #00517c; */
+	color: black;
+	font-weight: 600;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
 .carlist-wrapper {
 	width: 100%;
 	/* padding: 50px 0; */
@@ -461,7 +471,7 @@ padding: 26px 181px 74px 167px;
 }
 .image_card .passangers {
 	height: 20px;
-	background-color: white;
+	background-color: #e6e6ef;
 	border-radius: 100px;
 	padding: 3px;
 }
