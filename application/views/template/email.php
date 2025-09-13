@@ -85,7 +85,7 @@
                         <td style="border: 1px solid #d2d2d2;    text-align: start;
     border: 1px solid #f5f5f5;
     padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Travel Type</td>
-                        <!-- <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $travel_type?> -->
+                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $travel_type?>
 
                         </td>
                         <td style="border: 1px solid #d2d2d2; background-color: #fff;">£<?php echo $sub_total?></td>
@@ -99,7 +99,7 @@
                         </td>
                         <td style="border: 1px solid #d2d2d2; background-color: #fff;"></td>
                     </tr>
-                    <!-- <tr style="text-align: center;">
+                    <tr style="text-align: center;">
                         <td style="border: 1px solid #d2d2d2;    text-align: start;
     border: 1px solid #f5f5f5;
     padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Suitcase</td>
@@ -107,8 +107,8 @@
 
                         </td>
                         <td style="border: 1px solid #d2d2d2; background-color: #fff;">‎</td>
-                    </tr> -->
-<!-- 
+                    </tr>
+
                     <tr style="text-align: center;">
                         <td style="border: 1px solid #d2d2d2;    text-align: start;
     border: 1px solid #f5f5f5;
@@ -117,9 +117,9 @@
 
                         </td>
                         <td style="border: 1px solid #d2d2d2; background-color: #fff;">‎</td>
-                    </tr> -->
+                    </tr>
 
-                    <!-- <tr style="text-align: center;">
+                    <tr style="text-align: center;">
                         <td style="border: 1px solid #d2d2d2;    text-align: start;
     border: 1px solid #f5f5f5;
     padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">ChildSeat</td>
@@ -128,7 +128,7 @@
                         </td>
                         <td style="border: 1px solid #d2d2d2; background-color: #fff;">£ <?php echo $child_seat_cost;?>
                         </td>
-                    </tr> -->
+                    </tr>
                     <!-- <?php if($greet_status == 1){?>
                         <tr style="text-align: center;">
                         <td style="border: 1px solid #d2d2d2;    text-align: start;
@@ -140,7 +140,7 @@
                     </tr>
                     <?php }?> -->
 
-<!-- 
+
                     <tr style="text-align: center;">
                         <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
     border: 1px solid #f5f5f5;
@@ -148,9 +148,9 @@
                         <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎£
                             <?php echo $dropoff_cost; ?></td>
 
-                    </tr> -->
+                    </tr>
 
-<!-- 
+
                     <tr style="text-align: center;">
                         <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
     border: 1px solid #f5f5f5;
@@ -160,7 +160,7 @@
 
 
 
- -->
+
 
 
 
@@ -271,14 +271,14 @@
                             <?php echo $pick_up;?></td>
                     </tr>
 
-                    <!-- <tr style="text-align: center;">
+                    <tr style="text-align: center;">
                         <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
     border: 1px solid #f5f5f5;
     padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">COMMENTS OR SPECIAL
                             INSTRUCTIONS</td>
                         <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
                             <?php echo $scomments_special_inst;?></td>
-                    </tr> -->
+                    </tr>
 
                 </table>
             </div>
