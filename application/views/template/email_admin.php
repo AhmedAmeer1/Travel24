@@ -1,7 +1,7 @@
 <html>
 
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     .logo-margin {
         margin-top: 15px;
@@ -28,7 +28,7 @@
         color: #fff;
     }
 
- 
+
 
     @media (max-width: 768px) {
         .email-container {
@@ -44,7 +44,7 @@
     <div style="        width: 85%;
     margin: 0 auto;
     background-color: #fbfbfb;">
-        <a class="mt-2 " href="<?php echo base_url()?>"><img  class="logo-margin" style="width: fit-content"
+        <a class="mt-2 " href="<?php echo base_url()?>"><img class="logo-margin" style="width: fit-content"
                 src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
 
 
@@ -92,63 +92,28 @@
                     <tr style="text-align: center;">
                         <td style="border: 1px solid #d2d2d2;    text-align: left;
     border: 1px solid #f5f5f5;
+    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Sub Total</td>
+                        <td style="border: 1px solid #d2d2d2; background-color: #fff;">£<?php echo $sub_total?>
+
+                        </td>
+                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"> </td>
+                    </tr>
+
+                    <tr style="text-align: center;">
+                        <td style="border: 1px solid #d2d2d2;    text-align: left;
+    border: 1px solid #f5f5f5;
     padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Travel Type</td>
                         <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $travel_type?>
 
                         </td>
                         <td style="border: 1px solid #d2d2d2; background-color: #fff;">£<?php echo $sub_total?></td>
                     </tr>
-                  
 
-                    <tr style="text-align: center;">
-                        <td style="border: 1px solid #d2d2d2;    text-align: left;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Hand Lagguage</td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $hand_lagguage?>
-
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;">‎</td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td style="border: 1px solid #d2d2d2;    text-align: left;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">ChildSeat</td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $child_seat?>
-
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;">£ <?php echo $child_seat_cost;?>
-                        </td>
-                    </tr>
-                    <!-- <?php if($greet_status == 1){?>
-                        <tr style="text-align: center;">
-                        <td style="border: 1px solid #d2d2d2;    text-align: left;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">MEET AND GREET & DROP OFF - YES, PLEASE MEET ME IN ARRIVALS</td>
-                
-                <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $greet_status?>   
-                <td style="border: 1px solid #d2d2d2; background-color: #fff;">£ <?php echo $greeting_cost;?></td>
-                    </tr>
-                    <?php }?> -->
 
 
                     <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: left;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Drop Off </td>
-                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎£
-                            <?php echo $dropoff_cost; ?></td>
-
-                    </tr>
-
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: left;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Meet and greet </td>
-                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎£
-                            <?php echo $greeting_cost; ?></td>
-
+         
+                     
 
 
 
@@ -260,18 +225,11 @@
                             <?php echo $pick_up;?></td>
                     </tr>
 
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: left;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">COMMENTS OR SPECIAL
-                            INSTRUCTIONS</td>
-                        <td style="border: 1px solid #d2d2d2; padding-top: 20px; background-color: #fff;">
-                            <?php echo $scomments_special_inst;?></td>
-                    </tr>
+            
 
                 </table>
             </div>
-     
+
 
             <br />
             <div style="display: flex; justify-content: space-between;">
