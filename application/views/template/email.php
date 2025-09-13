@@ -1,7 +1,7 @@
 <html>
 
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     .email-container {
         width: 80%;
@@ -66,20 +66,14 @@
     margin-block-end: 5px;">Order Details</h1>
                 <table class="table-container">
                     <tr style="background-color: #f1f1f1;">
-                        <th style="    padding: 15px; border: 1px solid #d2d2d2; font-size: 16px;">Product</th>
-                        <th style="border: 1px solid #d2d2d2; font-size: 16px;">Qty</th>
-                        <th style="border: 1px solid #d2d2d2; font-size: 16px;">Price</th>
+                        <th colspan="2" style=" padding: 15px; border: 1px solid #d2d2d2; font-size: 16px;">Product
+                        </th>
+
+                        <th style="  padding: 15px;  border: 1px solid #d2d2d2; font-size: 16px;">Price</th>
                     </tr>
 
-                    <tr style="text-align: center;">
-                        <td style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Vehicle Name</td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $vehicle;?>
 
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"> </td>
-                    </tr>
+
 
                     <tr style="text-align: center;">
                         <td style="border: 1px solid #d2d2d2;    text-align: start;
@@ -90,15 +84,14 @@
                         </td>
                         <td style="border: 1px solid #d2d2d2; background-color: #fff;">£<?php echo $sub_total?></td>
                     </tr>
-             td style="border: 1px solid #d2d2d2; background-color: #fff;"></td>
-                    </tr>
-               
+                   
 
 
-          
 
 
-           
+
+
+
 
 
 
@@ -212,7 +205,7 @@
                             <?php echo $pick_up;?></td>
                     </tr>
 
-          
+
 
                 </table>
             </div>
