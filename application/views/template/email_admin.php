@@ -74,18 +74,18 @@
     margin-bottom: 5px;">Order Details</h1>
                 <table style="width: 100%; font-size: 14px;">
                     <tr style="background-color: #f1f1f1;">
-                        <th style="    padding: 15px; border: 1px solid #d2d2d2; font-size: 16px;">Product</th>
+                        <th  colspan="2" style="    padding: 15px; border: 1px solid #d2d2d2; font-size: 16px;">Product</th>
 
                         <th style="border: 1px solid #d2d2d2; font-size: 16px;">Price</th>
                     </tr>
 
 
-     <tr  style="background-color: #f1f1f1;">
+                    <tr style="background-color: #f1f1f1;">
                         <th colspan="2" style="border: 1px solid #d2d2d2;    text-align: left;
     border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Product
+    padding: 15px 10px;     font-weight: bold; border: 1px solid #d2d2d2;">Product
                         </th>
-                        <th style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎Price</th>
+                        <th style="border: 1px solid #d2d2d2; font-weight: bolder;">‎Price</th>
                     </tr>
 
 
