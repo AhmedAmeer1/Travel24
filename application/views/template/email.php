@@ -75,26 +75,28 @@
 
 
 
+
+
+
                     <tr style="text-align: center;">
-                        <td style="border: 1px solid #d2d2d2;    text-align: start;
+                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
     border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Travel Type</td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $travel_type?>
-
+    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Vehicle Name
                         </td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;">£<?php echo $sub_total?></td>
+                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎
+                            <?php echo $vehicle;?></td>
                     </tr>
-                   
 
 
 
-
-
-
-
-
-
-
+                    <tr style="text-align: center;">
+                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
+    border: 1px solid #f5f5f5;
+    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Sub Total
+                        </td>
+                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">
+                            ‎£<?php echo $sub_total?></td>
+                    </tr>
 
 
 
