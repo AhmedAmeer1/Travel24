@@ -98,24 +98,7 @@
                         </td>
                         <td style="border: 1px solid #d2d2d2; background-color: #fff;">£<?php echo $sub_total?></td>
                     </tr>
-                    <tr style="text-align: center;">
-                        <td style="border: 1px solid #d2d2d2;    text-align: left;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Passengers</td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $passenger?>
-
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"></td>
-                    </tr>
-                    <tr style="text-align: center;">
-                        <td style="border: 1px solid #d2d2d2;    text-align: left;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Suitcase</td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $suitcase?>
-
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;">‎</td>
-                    </tr>
+                  
 
                     <tr style="text-align: center;">
                         <td style="border: 1px solid #d2d2d2;    text-align: left;
