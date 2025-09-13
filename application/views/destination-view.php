@@ -72,14 +72,15 @@ if (file_exists($seoFile)) {
                             <?php } ?>
                             <div class="content">
                                 <div class="form-inner">
+                                    <p class="form-heading">Quick & Easy Booking</p>
                                     <form id="createCustomerForm" role="form" action="<?= base_url($redirectUrl) ?>"
                                         method="post" class="validate" data-parsley-validate=""
                                         enctype="multipart/form-data">
                                         <div class="form-group">
-                                            <label class="mt-4">PICKUP LOCATION</label>
+
                                             <div id="search_car">
-                                                <input type="text" class="form-control autocompleteDoc" name="source"
-                                                    required id="pickPoint" placeholder="Enter a location">
+                                                <input type="text" class="form-control autocompleteDoc pickupLocation"
+                                                    name="source" required id="pickPoint" placeholder="Pickup Location">
                                                 <input type="hidden" class="lat_perfect" id="sourceLat"
                                                     name="sourceLat">
                                                 <input type="hidden" class="lon_perfect" id="sourceLon"
@@ -90,17 +91,18 @@ if (file_exists($seoFile)) {
                                         <div class="way-points"></div>
                                         <div class="form-group">
                                             <div class="d-flex justify-content-between">
-                                                <label>DESTINATION</label>
+                                                <label>&nbsp;</label>
                                                 <button style="float:right" class=" multi-root"><i
                                                         class="fa fa-plus-circle"></i> Multi Route</button>
                                             </div>
-                                            <input type="text" class="form-control autocompleteDoc" name="destination"
-                                                required id="dropPoint" placeholder="Enter a location">
+                                            <input type="text" class="form-control autocompleteDoc destination"
+                                                name="destination" required id="dropPoint"
+                                                placeholder="Enter a location">
                                             <input type="hidden" class="lat_perfect" id="destLat" name="destLat">
                                             <input type="hidden" class="lon_perfect" id="destLong" name="destLong">
                                         </div>
                                         <button id="createCustomerSubmit" type="submit" class="submit-btn">GET A
-                                            QUOTE</button>
+                                            QUOTE & BOOK NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -162,21 +164,22 @@ if (file_exists($seoFile)) {
                 <h2 class="pt-2">OUR FLEET</h2>
                 <div class="row mt-2 no-gutter-responsive">
                     <?php foreach($fleet as $vh){ ?>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md">
                         <div class="car-box">
                             <div class="w-100 image_card">
                                 <h3><?= $vh['title'] ?? '' ?></h3>
-                                <img src="<?= base_url('assets/images/travel24/fleet/' . ($vh['vehicle_image'] ?? '')) ?>" class="img-fluid w-100 py-2" alt="car">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex justify-content-between">
-                                        <img src="<?= base_url('assets/images/travel24/passangers.svg')?>" class="img-fluid passangers" alt="passengers">
-                                        <span
-                                            class="my-auto">&nbsp;<?= $vh['noOfPassengers'] ?? '' ?>&nbsp;Passengers</span>
+                                <img src="<?= base_url('assets/images/travel24/fleet/' . ($vh['vehicle_image'] ?? '')) ?>"
+                                    class="fleet-img mt-2" alt="car">
+                                <div class="fleet-details">
+                                    <div class="detail-item">
+                                        <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>"
+                                            class="img-fluid passangers" alt="passengers">
+                                        <span>&nbsp;<?= $vh['noOfPassengers'] ?? '' ?>&nbsp; Passengers</span>
                                     </div>
-                                    <div class="d-flex justify-content-between">
-                                        <img src="<?= base_url('assets/images/travel24/Suitcases.svg')?>" class="img-fluid suitcases" alt="suitcases">
-                                        <span
-                                            class="my-auto">&nbsp;<?= $vh['noOfSuitcases'] ?? '' ?>&nbsp;Suitcases</span>
+                                    <div class="detail-item">
+                                        <img src="<?php echo base_url('assets/images/travel24/Suitcases.svg')?>"
+                                            alt="suitcases">
+                                        <span>&nbsp;<?= $vh['noOfSuitcases'] ?? '' ?>&nbsp; Suitcases</span>
                                     </div>
                                 </div>
                             </div>
@@ -204,57 +207,9 @@ if (file_exists($seoFile)) {
 <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=<?= $result->google_api_key ?? '' ?>&sensor=false&libraries=places">
 </script>
-<script type="text/javascript">
-var chnaged_id = "pickPoint";
-$("#createCustomerForm").delegate('input', "keyup", function() {
-    chnaged_id = $(this).attr('id');
-    find_locations(chnaged_id)
-})
+<script src="<?php echo base_url('assets/js/homepage.js?v=3'); ?>">
+</script>
 
-function find_locations(chnaged_id) {
-    var options = {
-        componentRestrictions: {
-            country: "uk"
-        }
-    };
-    var places = new google.maps.places.Autocomplete(document.getElementById(chnaged_id), options);
-    google.maps.event.addListener(places, 'place_changed', function() {
-        var place = places.getPlace();
-        var latitude = place.geometry.location.lat();
-        var longitude = place.geometry.location.lng();
-        if (chnaged_id == "pickPoint") {
-            $("#sourceLat").val(latitude);
-            $("#sourceLon").val(longitude);
-        } else if (chnaged_id == "dropPoint") {
-            $("#destLat").val(latitude);
-            $("#destLong").val(longitude);
-        }
-    });
-}
-$("#createCustomerForm").delegate('.multi-root', "click", function() {
-    var total_way_points = $('.multi-btn').length;
-    var next_way_point = parseInt(total_way_points) + 1;
-    $("#total_way_points").val(next_way_point);
-    if (next_way_point > 3) {
-        $("#total_way_points").val('3');
-        alert("OOPS !!! way Points limited to 3");
-        return;
-    }
-    var html = '<div id="way-points-div-' + next_way_point +
-        '" class="form-group"><div class="d-flex justify-content-between"><label>WAY POINT</label> <span class="chbs-location-remove chbs-meta-icon-minus remove-multi-root"></span> <button style="float:right" class="multi-btn" ><i class="fa fa-plus-circle multi-root " ></i> Multi Route</button><button style="float:right"><i class="fa fa-minus-circle remove-multi-root" data-index = ' +
-        next_way_point +
-        ' ></i> </button></div><input type="text" class="form-control autocompleteDoc" name="wayPoint-' +
-        next_way_point + '" required id="wayPoint-' + next_way_point +
-        '" placeholder="Enter a location"><input type="hidden" class="lat_perfect" id="lat_doc" name="destLat"><input type="hidden" class="lon_perfect" id="lon_doc" name="destLong">';
-    if ($('.way-points').hasClass('hide')) {
-        $('.way-points').removeClass('hide')
-    }
-    $('.way-points').append(html)
-});
-$("#createCustomerForm").delegate('.remove-multi-root', "click", function() {
-    var id = $(this).attr('data-index')
-    $("#way-points-div-" + id).remove();
-})
 </script>
 
 </html>

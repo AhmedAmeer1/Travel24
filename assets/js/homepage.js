@@ -46,8 +46,8 @@ $("#createCustomerForm").delegate('.multi-root', "click", function (e) {
         '<div class="d-flex justify-content-between">' +
         '<label></label>' +
         '<span class="chbs-location-remove chbs-meta-icon-minus remove-multi-root"></span>' +
-        '<button style="float:right" class="multi-btn"><i class="fa fa-plus-circle multi-root"></i> Multi Route</button>' +
-        '<button style="float:right"><i class="fa fa-minus-circle remove-multi-root" data-index="' + next_way_point + '"></i></button>' +
+        '<button style="float:right" class="multi-btn mb-4"><i class="fa fa-plus-circle multi-root  "></i> Multi Route</button>' +
+        '<button style="float:right" class="mb-4"><i class="fa fa-minus-circle remove-multi-root " data-index="' + next_way_point + '"></i></button>' +
         '</div>' +
         '<input type="text" class="form-control autocompleteDoc multiRoute" name="wayPoint-' + next_way_point + '" required id="wayPoint-' + next_way_point + '" placeholder="Enter a location">' +
         '<input type="hidden" class="lat_perfect" id="lat_doc" name="destLat">' +

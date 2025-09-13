@@ -27,7 +27,7 @@
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=15')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=19')?>" rel="stylesheet" />
     <?php $this->load->view('assets/js/seo/home'); ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
@@ -221,7 +221,7 @@
 <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=<?php echo $result->google_api_key; ?>&sensor=false&libraries=places">
 </script>
-<script src="<?php echo base_url('assets/js/homepage.js?v=1'); ?>">
+<script src="<?php echo base_url('assets/js/homepage.js?v=3'); ?>">
 </script>
 
 </script>
