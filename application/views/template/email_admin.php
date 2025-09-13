@@ -75,38 +75,37 @@
                 <table style="width: 100%; font-size: 14px;">
                     <tr style="background-color: #f1f1f1;">
                         <th style="    padding: 15px; border: 1px solid #d2d2d2; font-size: 16px;">Product</th>
-                        <th style="border: 1px solid #d2d2d2; font-size: 16px;">Qty</th>
+
                         <th style="border: 1px solid #d2d2d2; font-size: 16px;">Price</th>
                     </tr>
 
-                    <tr style="text-align: center;">
-                        <td style="border: 1px solid #d2d2d2;    text-align: left;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Vehicle Name</td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"><?php echo $vehicle;?>
 
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;"> </td>
-                    </tr>
+
+
 
                     <tr style="text-align: center;">
-                        <td style="border: 1px solid #d2d2d2;    text-align: left;
+                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: left;
     border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Sub Total</td>
-                        <td style="border: 1px solid #d2d2d2; background-color: #fff;">£<?php echo $sub_total?>
-
+    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Vehicle Name
                         </td>
-
+                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎
+                            <?php echo $vehicle;?></td>
                     </tr>
 
 
 
 
-
                     <tr style="text-align: center;">
 
 
-
+                    <tr style="text-align: center;">
+                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: left;
+    border: 1px solid #f5f5f5;
+    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Sub Total
+                        </td>
+                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎£
+                            <?php echo $sub_total; ?></td>
+                    </tr>
 
 
 
