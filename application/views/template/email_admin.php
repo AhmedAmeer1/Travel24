@@ -80,6 +80,14 @@
                     </tr>
 
 
+     <tr  style="background-color: #f1f1f1;">
+                        <th colspan="2" style="border: 1px solid #d2d2d2;    text-align: left;
+    border: 1px solid #f5f5f5;
+    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Product
+                        </th>
+                        <th style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎Price</th>
+                    </tr>
+
 
 
 
