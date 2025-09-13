@@ -1,251 +1,259 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Confirmation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
     .email-container {
-        width: 80%;
-        margin: 0 auto;
-        background-color: #fbfbfb;
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fbfbfb;
+      border: 1px solid #e0e0e0;
     }
 
-    .blue-box {
-        background-color: #094a6c;
-        padding: 15px 20px;
-        display: flex;
-        align-items: center;
+    .header {
+      background-color: #094a6c;
+      padding: 15px 20px;
+      text-align: center;
     }
 
-    .blue-box h1 {
-        text-align: center;
-        margin: 0 auto;
-        color: #fff;
+    .header h1 {
+      margin: 0;
+      color: #fff;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h1 {
+      color: #5a5ac1;
+      font-size: 24px;
+      margin: 30px 0 5px;
     }
 
     .table-container {
-        width: 100%;
-        font-size: 14px;
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .table-container th,
+    .table-container td {
+      border: 1px solid #d2d2d2;
+      padding: 15px 10px;
+      background-color: #fff;
+    }
+
+    .table-container th {
+      background-color: #f1f1f1;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .table-container td {
+      font-weight: bold;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .social-links img {
+      width: 24px;
+      margin-left: 6px;
+    }
+
+    .contact-info h2 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .website-link {
+      margin-top: 10px;
+    }
+
+    .website-link a {
+      color: #094a6c;
+      text-decoration: none;
     }
 
     @media (max-width: 768px) {
-        .email-container {
-            width: fit-content;
+      .email-container {
+        width: 95%;
+      }
 
-        }
+      .social-links {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .contact-info {
+        margin-top: 15px;
+      }
     }
-    </style>
+  </style>
 </head>
 
-
-
-<body
-    style="@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');font-family: 'Roboto', sans-serif;">
-    <div class="email-container">
-        <a class="mt-2" href="<?php echo base_url()?>"><img style="width: fit-content"
-                src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt=""></a>
-        <div class="blue-box" style="">
-
-            <h1>Thanks for your Order</h1>
-        </div>
-        <div style="padding: 20px; ">
-            <div>
-
-
-                <p>Hi <?php echo $first_name.' '.$last_name;?>,</p>
-                <p>Just to let you know — we've received your order #<b><?php echo $booking_id;?></b>, and it is now
-                    being processed:</p>
-                <?php /*?><?php if(isset($type) && $type=="Cash"){?>
-                <p>Pay with cash upon Journey Time.</p>
-                <?php }?><?php */?>
-                <strong>[Order #<?php echo $booking_id;?>] (<?php echo $travel_date;?>)</strong>
-            </div>
-            <div>
-                <h1 style="    color: #5a5ac1;
-    font-size: 24px;
-    margin-block-start: 30px;
-    margin-block-end: 5px;">Order Details</h1>
-                <table class="table-container">
-                    <tr style="background-color: #f1f1f1;">
-                        <th colspan="2" style=" padding: 15px; border: 1px solid #d2d2d2; font-size: 16px;">Product
-                        </th>
-
-                        <th style="  padding: 15px;  border: 1px solid #d2d2d2; font-size: 16px;">Price</th>
-                    </tr>
-
-
-
-
-
-
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Vehicle Name
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎
-                            <?php echo $vehicle;?></td>
-                    </tr>
-
-
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Sub Total
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">
-                            ‎£<?php echo $sub_total?></td>
-                    </tr>
-
-
-
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">PromoCode Discount
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎£
-                            <?php echo $promocode_discount; ?></td>
-                    </tr>
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">‎Grand Total:</td>
-                        <td style="border: 1px solid #d2d2d2; font-weight: bolder; background-color: #fff;">‎£
-                            <?php echo $total; ?></td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">‎Payment Method</td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
-                            <?php echo $type?></td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">‎Customer Name</td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
-                            <?php echo $first_name.' '.$last_name;?></td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">‎Pickup date and
-                            time</td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
-                            <?php echo $travel_date; ?> - <?php echo $travel_time; ?></td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">‎Phone Number</td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
-                            <?php echo $phone;?></td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Email Address</td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
-                            <?php echo $email;?></td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Flight Number</td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
-                            <?php echo $flight_no;?></td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">
-                            <h1 style="font-size: 16px; margin-block-start: 25px;">Route Locations</h1>
-                        </td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;"></td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Pickup Point</td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
-                            <?php echo $source;?>
-                            <?php if($way_point_1 != ''){?> <br>
-                            <div style="padding-block-start: 10px;"><?php echo $way_point_1;?></div><?php }?>
-                            <?php if($way_point_2 != ''){?><br>
-                            <div style="padding-block-start: 10px;"><?php echo $way_point_2;?></div><?php }?>
-                            <?php if($way_point_3 != ''){?><br>
-                            <div style="padding-block-start: 10px;"><?php echo $way_point_3;?></div><?php }?>
-                        </td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Dropoff Point</td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
-                            <?php echo $destination;?></td>
-                    </tr>
-
-                    <tr style="text-align: center;">
-                        <td colspan="2" style="border: 1px solid #d2d2d2;    text-align: start;
-    border: 1px solid #f5f5f5;
-    padding: 15px 10px;     background-color: #fff; font-weight: bold; border: 1px solid #d2d2d2;">Pickup Door Name /
-                            Home Number</td>
-                        <td style="border: 1px solid #d2d2d2; padding-block-start: 20px; background-color: #fff;">
-                            <?php echo $pick_up;?></td>
-                    </tr>
-
-
-
-                </table>
-            </div>
-            <br />
-            <div style="display: flex; justify-content: space-between;">
-                <div style="flex: 1; text-align: center;     margin-bottom: auto;
-                     margin-top: auto; ">
-                    <a href="https://twitter.com/nolimit_cars" style="margin-left: 4px;" target="_blank">
-                        <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="icon"
-                            style="width: 24px;"></a>
-
-                    <a href="https://www.instagram.com/nolimitcars8/" style="margin-left: 4px;" target="_blank"><img
-                            src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="icon"
-                            style="width: 24px;"></a>
-
-                    <a href="https://www.facebook.com/nolimitcarsltd/" style="margin-left: 4px;" target="_blank"><img
-                            src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="icon"
-                            style="width: 24px;"></a>
-                </div>
-                <div style="flex: 1; text-align: right; margin-left: 20px;">
-                    <div class="col-md-6 text-right">
-                        <h2 style="font:size 20px !important;"> For any changes, contact
-                            Tel : <a href="tel:02039822911" class="">02039822911</a>
-                            Email Us: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com</a>
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align: left;">
-                <h2>
-                    View Website: <a href="https://travel24taxi.com/" target="_blank">https://travel24taxi.com/</a>
-                </h2>
-            </div>
-
-
-        </div>
+<body>
+  <div class="email-container">
+    <!-- Logo -->
+    <div style="text-align: center; padding: 10px;">
+      <a href="<?php echo base_url() ?>">
+        <img src="https://travel24taxi.com/assets/images/travel24/travel24Logo.jpg" alt="Travel24 Logo"
+          style="max-width: 200px;">
+      </a>
     </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Thanks for your Order</h1>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <p>Hi <?php echo $first_name . ' ' . $last_name; ?>,</p>
+      <p>
+        Just to let you know — we've received your order
+        <b>#<?php echo $booking_id; ?></b>, and it is now being processed:
+      </p>
+      <strong>[Order #<?php echo $booking_id; ?>] (<?php echo $travel_date; ?>)</strong>
+
+      <!-- Order Details -->
+      <h1>Order Details</h1>
+      <table class="table-container">
+        <tr>
+          <th colspan="2">Product</th>
+          <th>Price</th>
+        </tr>
+
+        <tr>
+          <td colspan="2">Vehicle Name</td>
+          <td><?php echo $vehicle; ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Sub Total</td>
+          <td>£<?php echo $sub_total ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">PromoCode Discount</td>
+          <td>£<?php echo $promocode_discount; ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Grand Total</td>
+          <td>£<?php echo $total; ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Payment Method</td>
+          <td><?php echo $type ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Customer Name</td>
+          <td><?php echo $first_name . ' ' . $last_name; ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Pickup Date and Time</td>
+          <td><?php echo $travel_date; ?> - <?php echo $travel_time; ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Phone Number</td>
+          <td><?php echo $phone; ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Email Address</td>
+          <td><?php echo $email; ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Flight Number</td>
+          <td><?php echo $flight_no; ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <h2 style="font-size: 16px; margin: 0;">Route Locations</h2>
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Pickup Point</td>
+          <td>
+            <?php echo $source; ?>
+            <?php if ($way_point_1 != '') { ?><br>
+            <div><?php echo $way_point_1; ?></div><?php } ?>
+            <?php if ($way_point_2 != '') { ?><br>
+            <div><?php echo $way_point_2; ?></div><?php } ?>
+            <?php if ($way_point_3 != '') { ?><br>
+            <div><?php echo $way_point_3; ?></div><?php } ?>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Dropoff Point</td>
+          <td><?php echo $destination; ?></td>
+        </tr>
+
+        <tr>
+          <td colspan="2">Pickup Door Name / Home Number</td>
+          <td><?php echo $pick_up; ?></td>
+        </tr>
+      </table>
+
+      <!-- Social & Contact -->
+      <div class="social-links">
+        <div>
+          <a href="https://twitter.com/nolimit_cars" target="_blank">
+            <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="Twitter">
+          </a>
+          <a href="https://www.instagram.com/nolimitcars8/" target="_blank">
+            <img src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/nolimitcarsltd/" target="_blank">
+            <img src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="Facebook">
+          </a>
+        </div>
+
+        <div class="contact-info">
+          <h2>
+            For any changes, contact<br>
+            Tel: <a href="tel:02039822911">02039822911</a><br>
+            Email: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com</a>
+          </h2>
+        </div>
+      </div>
+
+      <!-- Website -->
+      <div class="website-link">
+        <h2>
+          View Website: <a href="https://travel24taxi.com/" target="_blank">https://travel24taxi.com/</a>
+        </h2>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
