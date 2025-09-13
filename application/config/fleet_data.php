@@ -5,7 +5,7 @@ $config['fleet_data'] = [
     [
         'title' => 'SALOON CAR (X)',
         'description' => 'Up to 3 passengers plus 2 suitcases  or 4 passengers plus hand luggage.',
-        'noOfPassengers' => '3',
+        'noOfPassengers' => '4',
         'noOfSuitcases' => '2',
         'vehicle_image' => 'SaloonCar.png'
     ],
@@ -28,7 +28,7 @@ $config['fleet_data'] = [
         'title' => 'EXECUTIVE CAR',
         'description' => 'Up to 3 passengers plus 2 suitcases or 4 passengers plus hand luggage',
         'noOfPassengers' => '3',
-        'noOfSuitcases' => '2',
+        'noOfSuitcases' => '3',
          'vehicle_image' => 'ExecutiveCar.png'
     ],
     [
@@ -49,7 +49,7 @@ $config['fleet_data'] = [
         'title' => 'MOBILITY VEHICLE',
         'description' => 'Exclusive to wheelchairs and passengers with disabilities. Any mobility scooter and wheelchair. Up to 4 passengers along with a 1 wheelchair passenger and luggages.',
         'noOfPassengers' => '4',
-        'noOfSuitcases' => '1',
+        'noOfSuitcases' => '3',
         'vehicle_image' => 'MobilityVehicle.png'
     ],
 

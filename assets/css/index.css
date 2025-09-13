@@ -206,6 +206,7 @@
 	font-family: "helvetnormal";
 	text-align: left;
 	letter-spacing: 1px;
+	line-height: 20px;
 }
 
 .limits-banner .banner-details .features-list span .code {

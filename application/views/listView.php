@@ -412,24 +412,18 @@
     /* ===========================
        Book Now -> reveal form & fill values
     =========================== */
-    $(document).on('click', '.btn-slct-taxi', function() {
-        // button visual state
-        $('.btn-slct-taxi').removeClass('fa fa-check');
-
-        // remove red bg from all cards
+    // Make the whole card clickable instead of just Book Now button
+    function handleVehicleSelection($box, travelType = "1") {
+        // remove selection state
         $('.list-box').removeClass('selected-card');
 
-        // add check mark on clicked button
-        $(this).addClass('fa fa-check');
-
-        // make current card red
-        $(this).closest('.list-box').addClass('selected-card');
+        // add selection state to clicked card
+        $box.addClass('selected-card');
         $(".promo-code").show();
 
         // capture selected vehicle
-        var $box = $(this).closest('.list-box');
         selected_vehicle_id = $box.data('vehicle');
-        selected_travel_type = $(this).attr('data-travel-type') || "1";
+        selected_travel_type = travelType;
 
         // fare value from span
         total_fare = $("#single-amount-" + selected_vehicle_id).attr('data-fare') || "0.00";
@@ -445,8 +439,6 @@
         $("#bk-suitcases").text(vhSuitcases);
         $("#total_fare").text(parseFloat(total_fare).toFixed(2));
         subTotal = total_fare;
-        // ensure source/destination shown (already from PHP)
-        // waypoints already printed; if you need dynamic override, you can rebuild #bf_waypoints
 
         // reveal form with slide and scroll
         var $section = $("#booking-form-section");
@@ -461,7 +453,26 @@
                 scrollTop: $("#form-anchor").offset().top - 10
             }, 350);
         }
+    }
+
+    // 📌 Click anywhere on the card
+    $(document).on('click', '.list-box', function(e) {
+        // skip if clicking directly on Book Now button (let its handler run)
+        if ($(e.target).closest('.btn-slct-taxi').length) {
+            return;
+        }
+        handleVehicleSelection($(this));
     });
+
+    // 📌 Click Book Now button
+    $(document).on('click', '.btn-slct-taxi', function(e) {
+        e.stopPropagation(); // prevent triggering parent card click again
+        var $box = $(this).closest('.list-box');
+        var travelType = $(this).attr('data-travel-type') || "1";
+        handleVehicleSelection($box, travelType);
+    });
+
+
 
     /* ===========================
        Promo code modal flow (kept)
@@ -639,7 +650,7 @@
             threeHoursInMilliseconds
         } = calculateTimeDifference(dateInputValue, timeInputValue);
 
-      
+
 
         if ($("#exceed_time").val() == "1") {
             alert("You should book 3 hour prior to your journey");
@@ -657,7 +668,7 @@
             alert("You have entered an invalid email address!");
             return;
         }
-          if (timeDifferenceMilliseconds < threeHoursInMilliseconds) {
+        if (timeDifferenceMilliseconds < threeHoursInMilliseconds) {
             alert(
                 "The entered date and time is less than 3 hours. Please book at least 3 hours in advance or call us."
             );
