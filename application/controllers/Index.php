@@ -230,7 +230,7 @@ class Index extends CI_Controller
 		$booking['suitcase'] = $input['no_of_suitcase'];
 		$booking['child_seat'] = $input['child_seat'];
 		$booking['greet_status'] = $input['meet_and_greet'];
-		$booking['dropOff_status'] = $input['drop_off'];
+
 		$booking['payment_type'] = $input['payment_method'];
 		$booking['base_fare'] =$input['total_fare'];
 		$booking['user_id'] = (!empty($_SESSION['user_id']) ? $_SESSION['user_id'] : '0');
@@ -247,11 +247,7 @@ class Index extends CI_Controller
 		}
 
 
-		if ($booking['dropOff_status'] == '1') {
-			$dropoff_cost = 6;
-		} else {
-			$dropoff_cost = 0;
-		}
+
 
 
 
@@ -314,7 +310,7 @@ class Index extends CI_Controller
 		set_cookie('child_seat', $booking['child_seat'], 86400);
 
 		set_cookie('greet_status', $booking['greet_status'], 86400);
-		set_cookie('dropOff_status', $booking['dropOff_status'], 86400);
+
 
 		set_cookie('base_fare', $booking['base_fare'], 86400);
 		set_cookie('user_id', $booking['user_id'], 86400);
@@ -381,7 +377,7 @@ class Index extends CI_Controller
 				$data['greet_status'] = $booking['greet_status'];
 				$data['greeting_cost'] = $greeting_cost;
 
-				$data['dropOff_status'] = $booking['dropOff_status'];
+		
 				$data['dropoff_cost'] = $dropoff_cost;
 				// $data['sub_total'] = $_SESSION['base_fare'];
 				$data['sub_total'] =$input['subTotal'];
@@ -393,8 +389,7 @@ class Index extends CI_Controller
 				$data['pick_up'] = $input['pick_up'];
 				$data['image'] = 'https://travel24taxi.com/assets/images/travel24/Logo.svg';
 
-				debug_log(" dropOff_status' -----9999999999999999999999999- ");
-				debug_log($booking['dropOff_status']);
+		
 
 				$this->email_notification($data);
 			} else {
@@ -794,7 +789,7 @@ class Index extends CI_Controller
 			'suitcase' => $_SESSION["book_data"]['suitcase'],
 			'child_seat' => $_SESSION["book_data"]['child_seat'],
 			'greet_status' => $_SESSION["book_data"]['greet_status'],
-			'dropOff_status' => $_SESSION["book_data"]['dropOff_status'],
+		
 			'dropoff_cost' => $_SESSION["book_data"]['dropoff_cost'],
 			'base_fare' => $_SESSION["book_data"]['base_fare'],
 			'user_id' => $_SESSION["book_data"]['user_id'] || '',
