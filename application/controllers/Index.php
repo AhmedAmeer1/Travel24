@@ -226,10 +226,7 @@ class Index extends CI_Controller
 		$booking['travel_time'] = $input['journey_time'];
 		$booking['pick_up_door_name'] = $input['pick_up'];
 		$booking['flight_no'] = $input['flight_no'];
-		$booking['passenger'] = $input['no_of_passenger'];
-		$booking['suitcase'] = $input['no_of_suitcase'];
-		$booking['child_seat'] = $input['child_seat'];
-		$booking['greet_status'] = $input['meet_and_greet'];
+	
 
 		$booking['payment_type'] = $input['payment_method'];
 		$booking['base_fare'] =$input['total_fare'];
@@ -240,11 +237,7 @@ class Index extends CI_Controller
 
 
 
-		if ($booking['greet_status'] == '1') {
-			$greeting_cost = 8;
-		} else {
-			$greeting_cost = 0;
-		}
+
 
 
 
@@ -259,11 +252,10 @@ class Index extends CI_Controller
 		} else {
 			$child_seat_cost = 0;
 		}
-		$booking['child_seat_cost'] = $child_seat_cost;
-		$booking['greeting_cost'] = $greeting_cost;
-		$booking['dropoff_cost'] = $dropoff_cost;
+	
 
-		$booking['amount'] =$input['total_fare'] + $greeting_cost + $dropoff_cost + $child_seat_cost;
+
+		$booking['amount'] =$input['total_fare'] ;
 		//echo "a-".$booking['amount']."discount-".$booking['promocode_discount'];
 		// if ($booking['promocode_discount'] != 0) {
 		// 	$booking['amount'] = $booking['amount'] - ($booking['amount'] * ($booking['promocode_discount'] / 100));
@@ -305,11 +297,7 @@ class Index extends CI_Controller
 		set_cookie('travel_time', $booking['travel_time'], 86400);
 		set_cookie('pick_up_door_name', $booking['pick_up_door_name'], 86400);
 		set_cookie('flight_no', $booking['flight_no'], 86400);
-		set_cookie('passenger', $booking['passenger'], 86400);
-		set_cookie('suitcase', $booking['suitcase'], 86400);
-		set_cookie('child_seat', $booking['child_seat'], 86400);
 
-		set_cookie('greet_status', $booking['greet_status'], 86400);
 
 
 		set_cookie('base_fare', $booking['base_fare'], 86400);
@@ -317,10 +305,7 @@ class Index extends CI_Controller
 		set_cookie('userType', $booking['userType'], 86400);
 		set_cookie('status', $booking['status'], 86400);
 		set_cookie('promocode_discount', $booking['promocode_discount'], 86400);
-		set_cookie('child_seat_cost', $booking['child_seat_cost'], 86400);
-
-		set_cookie('greeting_cost', $booking['greeting_cost'], 86400);
-		set_cookie('dropoff_cost', $booking['dropoff_cost'], 86400);
+	
 
 		set_cookie('amount', $booking['amount'], 86400);
 		set_cookie('scomments_special_inst', $input['scomments_special_inst'], 86400);
@@ -369,16 +354,11 @@ class Index extends CI_Controller
 				$data['travel_date'] = $input['jouney_date'];
 				$data['travel_time'] = $booking['travel_time'];
 				$data['travel_type'] = ($booking['service_type'] == "1" ? "Single" : "Return");
-				$data['passenger'] = $booking['passenger'];
-				$data['suitcase'] = $booking['suitcase'];
-				$data['child_seat'] = $booking['child_seat'];
-				$data['child_seat_cost'] = $child_seat_cost;
-
-				$data['greet_status'] = $booking['greet_status'];
-				$data['greeting_cost'] = $greeting_cost;
+			
+			
 
 		
-				$data['dropoff_cost'] = $dropoff_cost;
+	
 				// $data['sub_total'] = $_SESSION['base_fare'];
 				$data['sub_total'] =$input['subTotal'];
 				$data['total'] = $booking['amount'];
@@ -785,19 +765,14 @@ class Index extends CI_Controller
 			'travel_time' => $_SESSION["book_data"]['travel_time'],
 			'pick_up_door_name' => $_SESSION["book_data"]['pick_up_door_name'],
 			'flight_no' => $_SESSION["book_data"]['flight_no'] || '',
-			'passenger' => $_SESSION["book_data"]['passenger'],
-			'suitcase' => $_SESSION["book_data"]['suitcase'],
-			'child_seat' => $_SESSION["book_data"]['child_seat'],
-			'greet_status' => $_SESSION["book_data"]['greet_status'],
 		
-			'dropoff_cost' => $_SESSION["book_data"]['dropoff_cost'],
+		
 			'base_fare' => $_SESSION["book_data"]['base_fare'],
 			'user_id' => $_SESSION["book_data"]['user_id'] || '',
 			'userType' => $_SESSION["book_data"]['userType'],
 			'status' => $_SESSION["book_data"]['status'],
 			'promocode_discount' => $_SESSION["book_data"]['promocode_discount'],
-			'child_seat_cost' => $_SESSION["book_data"]['child_seat_cost'],
-			'greeting_cost' => $_SESSION["book_data"]['greeting_cost'],
+		
 		];
 
 
