@@ -349,17 +349,12 @@ class Index extends CI_Controller
 				$data['way_point_2'] = (!empty($_SESSION["way_points"][1]) ? $_SESSION["way_points"][1] : '');
 				$data['way_point_3'] = (!empty($_SESSION["way_points"][2]) ? $_SESSION["way_points"][2] : '');
 				$data['type'] = "Cash";
-				$this->db->where('vehicle_id', $_SESSION["vehice_id"]);
+				// $this->db->where('vehicle_id', $_SESSION["vehice_id"]);
+				$this->db->where('vehicle_id', $input['selected_vehicle_id']);
 				$data['vehicle'] = $this->db->get('vehicle')->row('title');
 				$data['travel_date'] = $input['jouney_date'];
 				$data['travel_time'] = $booking['travel_time'];
 				$data['travel_type'] = ($booking['service_type'] == "1" ? "Single" : "Return");
-			
-			
-
-		
-	
-				// $data['sub_total'] = $_SESSION['base_fare'];
 				$data['sub_total'] =$input['subTotal'];
 				$data['total'] = $booking['amount'];
 				$data['promocode_discount'] =$input['promoDiscountAmount'];
