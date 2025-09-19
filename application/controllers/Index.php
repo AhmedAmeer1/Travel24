@@ -492,7 +492,7 @@ class Index extends CI_Controller
 
 			//$to = "soumen.karmakar@solutions2xl.com";
 			$this->email->initialize($config);
-			$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 CARS');
+			$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 ');
 			$this->email->to($to);
 			$this->email->subject($subject);
 			// $this->email->AddEmbeddedImage(dirname(__FILE__) . 'https://travel24taxi.com/assets/images/travel24/Logo.svg','traveltaxi');
