@@ -179,7 +179,7 @@ class Payment extends CI_Controller {
 		$config['bcc_batch_mode'] = FALSE; // TRUE or FALSE (boolean)    Enable BCC Batch Mode.
 		$config['bcc_batch_size'] = 200; // Number of emails in each BCC batch.
 		$this->email->initialize($config);
-		$this->email->from('bookings@travel24taxi.com', 'TRAVEL 24 CARS');
+		$this->email->from('bookings@travel24taxi.com', 'TRAVEL 24 ');
 		$this->email->to($data['email']);
 
 
@@ -196,7 +196,7 @@ class Payment extends CI_Controller {
 
 			//$to = "soumen.karmakar@solutions2xl.com";
 			$this->email->initialize($config);
-			$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 CARS');
+			$this->email->from('bookings@travel24taxi.com', 'TRAVEL24 ');
 			$this->email->to($to);
 			$this->email->subject($subject);
 			// $this->email->AddEmbeddedImage(dirname(__FILE__) . 'https://travel24taxi.com/assets/images/travel24/Logo.svg','traveltaxi');
