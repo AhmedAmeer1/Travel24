@@ -1,4 +1,4 @@
-<link href="<?php echo base_url('assets/css/howToBookTaxi.css?v=3')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/howToBookTaxi.css?v=4')?>" rel="stylesheet" />
 
 <div class="book-container">
     <h2 class="taxi-heading">How to book a ride?</h2>

@@ -122,6 +122,7 @@
 
 	.image-container img {
 		height: 49%;
+		        object-fit: cover;
 	}
 }
 
