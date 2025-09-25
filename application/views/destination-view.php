@@ -5,7 +5,8 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="<?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Taxis, Private-hire cars, Transport, Minicabs, Heathrow airport taxi, Taxi to Heathrow airport, Taxi from Heathrow airport, London airport taxi, Minibuses, Transfer, Heathrow airport cab, Minicab, Pre-book, Affordable prices, Credit card payment, Airport taxi to Heathrow, London Heathrow airport taxi service, Airport taxi service, Stansted airport drop off, Heathrow taxis quotes' : ($result->meta_keyword ?? ''); ?>" />
+    <meta name="keywords"
+        content="<?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Taxis, Private-hire cars, Transport, Minicabs, Heathrow airport taxi, Taxi to Heathrow airport, Taxi from Heathrow airport, London airport taxi, Minibuses, Transfer, Heathrow airport cab, Minicab, Pre-book, Affordable prices, Credit card payment, Airport taxi to Heathrow, London Heathrow airport taxi service, Airport taxi service, Stansted airport drop off, Heathrow taxis quotes' : ($result->meta_keyword ?? ''); ?>" />
     <meta name="description" content="<?php echo $blog['metaDescription'] ?? ''; ?>" />
     <meta name="og:title" content="<?php echo $blog['ogTitle'] ?? ''; ?>" />
     <meta name="og:description" content="<?php echo $blog['ogDescription'] ?? ''; ?>" />
@@ -22,12 +23,14 @@
     <meta property="og:locale" content="en_UK">
     <meta property="og:site_name" content="travel 24 taxi">
     <?php endif; ?>
-    <link rel="canonical" href="<?php echo $blog['canonicalLink'] ?? 'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer'; ?>" />
+    <link rel="canonical"
+        href="<?php echo $blog['canonicalLink'] ?? 'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer'; ?>" />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=9')?>" rel="stylesheet" />
@@ -108,34 +111,9 @@ if (file_exists($seoFile)) {
                         </div>
                     </div>
                     <div class="col-md-6 banner-details">
-                        <div class="mx-auto">
-                            <span>Your Destination is our goal</span>
-                            <p>
-                                Airport transfers & chauffeur services connecting all UK airports
-                            </p>
-                            <ul class="features-list mt-2" style="list-style: none; padding-left: 0;">
-                                <li class="d-flex align-items-center mb-1">
-                                    <span class="check-square-icon mr-2"><i class="fa fa-check"></i></span>
-                                    <span>Airport Pickup & Drop-off Charges Included</span>
-                                </li>
-                                <li class="d-flex align-items-center mb-1">
-                                    <span class="check-square-icon mr-2"><i class="fa fa-check"></i></span>
-                                    <span>10% Off Every Journey - Use Code : <span class="code">LUTH25</span></span>
-                                </li>
-                                <li class="d-flex align-items-center mb-1">
-                                    <span class="check-square-icon mr-2"><i class="fa fa-check"></i></span>
-                                    <span>Easy Online Booking Process</span>
-                                </li>
-                                <li class="d-flex align-items-center mb-1">
-                                    <span class="check-square-icon mr-2"><i class="fa fa-check"></i></span>
-                                    <span>Book Now, Pay Later Option Available</span>
-                                </li>
-                                <li class="d-flex align-items-center mb-1">
-                                    <span class="check-square-icon mr-2"><i class="fa fa-check"></i></span>
-                                    <span>No Surge Pricing</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- Banner Features Section -->
+                        <?php $this->load->view('common_components/Home/banner_features'); ?>
+
                     </div>
                 </div>
             </div>
