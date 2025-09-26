@@ -2,7 +2,7 @@
 <html lang="en">
 <?php $this->load->view('common_components/Home/head'); ?>
 <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/index.css?v=20')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/index.css?v=21')?>" rel="stylesheet" />
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
@@ -24,18 +24,17 @@
                             </div>
                             <?php } ?>
                             <div class="content">
-
                                 <div class="form-inner">
-
                                     <p class="form-heading">Quick & Easy Booking</p>
                                     <form id="createCustomerForm" role="form" action="<?=base_url($redirectUrl)?>"
                                         method="post" class="validate" data-parsley-validate=""
                                         enctype="multipart/form-data">
-                                        <div class="form-group">
-
-                                            <div id="search_car">
+                                        <div class="form-group position-relative">
+                                            <div id="">
                                                 <input type="text" class="form-control autocompleteDoc pickupLocation"
                                                     name="source" required id="pickPoint" placeholder="Pickup Location">
+                                                <div class="custom-dropdown" id="dropdown-pickPoint"></div>
+
                                                 <input type="hidden" class="lat_perfect" id="sourceLat"
                                                     name="sourceLat">
                                                 <input type="hidden" class="lon_perfect" id="sourceLon"
@@ -45,7 +44,7 @@
                                         </div>
                                         <div class="way-points">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group position-relative">
                                             <div class="d-flex justify-content-between">
                                                 <label>&nbsp;</label>
                                                 <button style="float:right" class=" multi-root"><i
@@ -53,6 +52,8 @@
                                             </div>
                                             <input type="text" class="form-control autocompleteDoc destination"
                                                 name="destination" required id="dropPoint" placeholder="Destination">
+
+                                            <div class="custom-dropdown" id="dropdown-dropPoint"></div>
                                             <input type="hidden" class="lat_perfect" id="destLat" name="destLat">
                                             <input type="hidden" class="lon_perfect" id="destLong" name="destLong">
                                         </div>
@@ -70,7 +71,7 @@
                 </div>
             </div>
         </section>
-         <!-- How to book a ride Container -->
+        <!-- How to book a ride Container -->
         <?php $this->load->view('common_components/howToBookTaxi'); ?>
         <!-- Text Container -->
         <?php $this->load->view('common_components/Home/text_container'); ?>
@@ -111,7 +112,7 @@
                 </div>
             </div>
         </section>
-          <!-- Customer Review Container -->
+        <!-- Customer Review Container -->
         <?php $this->load->view('common_components/customerReview.php',array('CustomerReviewData' => $CustomerReviewData)); ?>
     </main>
     <?php $this->load->view('common_components/footer'); ?>
@@ -126,7 +127,7 @@
 <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=<?php echo $result->google_api_key; ?>&sensor=false&libraries=places">
 </script>
-<script src="<?php echo base_url('assets/js/homepage.js?v=3'); ?>">
+<script src="<?php echo base_url('assets/js/homepage.js?v=8'); ?>">
 </script>
 
 </script>

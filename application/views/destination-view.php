@@ -5,8 +5,7 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords"
-        content="<?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Taxis, Private-hire cars, Transport, Minicabs, Heathrow airport taxi, Taxi to Heathrow airport, Taxi from Heathrow airport, London airport taxi, Minibuses, Transfer, Heathrow airport cab, Minicab, Pre-book, Affordable prices, Credit card payment, Airport taxi to Heathrow, London Heathrow airport taxi service, Airport taxi service, Stansted airport drop off, Heathrow taxis quotes' : ($result->meta_keyword ?? ''); ?>" />
+    <meta name="keywords" content="<?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Taxis, Private-hire cars, Transport, Minicabs, Heathrow airport taxi, Taxi to Heathrow airport, Taxi from Heathrow airport, London airport taxi, Minibuses, Transfer, Heathrow airport cab, Minicab, Pre-book, Affordable prices, Credit card payment, Airport taxi to Heathrow, London Heathrow airport taxi service, Airport taxi service, Stansted airport drop off, Heathrow taxis quotes' : ($result->meta_keyword ?? ''); ?>" />
     <meta name="description" content="<?php echo $blog['metaDescription'] ?? ''; ?>" />
     <meta name="og:title" content="<?php echo $blog['ogTitle'] ?? ''; ?>" />
     <meta name="og:description" content="<?php echo $blog['ogDescription'] ?? ''; ?>" />
@@ -23,17 +22,15 @@
     <meta property="og:locale" content="en_UK">
     <meta property="og:site_name" content="travel 24 taxi">
     <?php endif; ?>
-    <link rel="canonical"
-        href="<?php echo $blog['canonicalLink'] ?? 'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer'; ?>" />
+    <link rel="canonical" href="<?php echo $blog['canonicalLink'] ?? 'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer'; ?>" />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/index.css?v=9')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=10')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/destination-view.css?v=6')?>" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
@@ -79,11 +76,12 @@ if (file_exists($seoFile)) {
                                     <form id="createCustomerForm" role="form" action="<?= base_url($redirectUrl) ?>"
                                         method="post" class="validate" data-parsley-validate=""
                                         enctype="multipart/form-data">
-                                        <div class="form-group">
-
-                                            <div id="search_car">
+                                        <div class="form-group position-relative">
+                                            <div id="">
                                                 <input type="text" class="form-control autocompleteDoc pickupLocation"
                                                     name="source" required id="pickPoint" placeholder="Pickup Location">
+                                                <div class="custom-dropdown" id="dropdown-pickPoint"></div>
+
                                                 <input type="hidden" class="lat_perfect" id="sourceLat"
                                                     name="sourceLat">
                                                 <input type="hidden" class="lon_perfect" id="sourceLon"
@@ -91,16 +89,18 @@ if (file_exists($seoFile)) {
                                                 <input type="hidden" id="total_way_points" name="total_way_points">
                                             </div>
                                         </div>
-                                        <div class="way-points"></div>
-                                        <div class="form-group">
+                                        <div class="way-points">
+                                        </div>
+                                        <div class="form-group position-relative">
                                             <div class="d-flex justify-content-between">
                                                 <label>&nbsp;</label>
                                                 <button style="float:right" class=" multi-root"><i
-                                                        class="fa fa-plus-circle"></i> Multi Route</button>
+                                                        class="fa fa-plus-circle  "></i> Multi Route</button>
                                             </div>
                                             <input type="text" class="form-control autocompleteDoc destination"
-                                                name="destination" required id="dropPoint"
-                                                placeholder="Enter a location">
+                                                name="destination" required id="dropPoint" placeholder="Destination">
+
+                                            <div class="custom-dropdown" id="dropdown-dropPoint"></div>
                                             <input type="hidden" class="lat_perfect" id="destLat" name="destLat">
                                             <input type="hidden" class="lon_perfect" id="destLong" name="destLong">
                                         </div>
@@ -185,7 +185,7 @@ if (file_exists($seoFile)) {
 <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=<?= $result->google_api_key ?? '' ?>&sensor=false&libraries=places">
 </script>
-<script src="<?php echo base_url('assets/js/homepage.js?v=3'); ?>">
+<script src="<?php echo base_url('assets/js/homepage.js?v=9'); ?>">
 </script>
 
 </script>

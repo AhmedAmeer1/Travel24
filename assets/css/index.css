@@ -7,6 +7,29 @@
 .menu-side-wrapper li a {
 	color: #fff;
 }
+.custom-dropdown {
+    position: absolute;
+    top: 100%;
+    /* directly under the input */
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    max-height: 250px;
+    overflow-y: auto;
+    display: none;
+    font-size: 12px;
+}
+
+.custom-dropdown div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-dropdown div:hover {
+    background-color: #f1f1f1;
+}
 
 /*  ============================= COMMON CODE  END  ================================= */
 
