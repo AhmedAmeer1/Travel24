@@ -540,7 +540,7 @@
        Date/Time picker + validations
     =========================== */
     function calculateTimeDifference(dateInput, timeInput) {
-        const [day, month, year] = (dateInput || "").split("/");
+        const [month, day, year] = (dateInput || "").split("/");
         if (!day || !month || !year) {
             return {
                 timeDifferenceMilliseconds: -Infinity,
