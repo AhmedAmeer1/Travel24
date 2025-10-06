@@ -540,7 +540,7 @@
        Date/Time picker + validations
     =========================== */
     function calculateTimeDifference(dateInput, timeInput) {
-        const [month, day, year] = (dateInput || "").split("/");
+        const [day, month, year] = (dateInput || "").split("/");
         if (!day || !month || !year) {
             return {
                 timeDifferenceMilliseconds: -Infinity,
@@ -588,37 +588,7 @@
     }
 
     $(function() {
-        // UK min time logic for same-day bookings
-        var now = new Date();
-        var minUk = now.toLocaleString('en-GB', {
-            timeZone: 'Europe/London'
-        });
-        var ukdatetime = minUk.split(" ");
-        var ukdate = ukdatetime[0].split(",")[0];
-        var uktime = ukdatetime[1];
-        var ukhour = uktime.split(":")[0];
-        var ukminute = uktime.split(":")[1];
 
-        var min = new Date();
-        min.setHours(parseInt(ukhour, 10));
-        min.setMinutes(parseInt(ukminute, 10));
-
-        $('#datepicker').datepicker({
-            dateFormat: 'dd/mm/yy',
-            minDate: 0,
-            onSelect: function(v) {
-                $("#timepicker").val('');
-                $('#timepicker').timepicker('remove'); // reset before re-init
-                $('#timepicker').timepicker({
-                    timeFormat: 'hh:mm p',
-                    interval: 15,
-                    minTime: (v === ukdate ? min : '12:00am'),
-                    dynamic: false,
-                    dropdown: true,
-                    scrollbar: true
-                });
-            }
-        });
 
         // initial timepicker (in case date pre-selected later)
         $('#timepicker').timepicker({
@@ -629,6 +599,45 @@
             dropdown: true,
             scrollbar: true
         });
+    });
+
+
+
+    var min1 = new Date();
+
+    var minUk = min1.toLocaleString('en-GB', {
+        timeZone: 'Europe/London'
+    });
+    var ukdatetime = minUk.split(" ");
+    console.log(ukdatetime)
+    var uktime = ukdatetime[1];
+    var ukdates = ukdatetime[0].split(",");
+    var ukdate = ukdates[0];
+    var ukhourminute = uktime.split(":");
+    var ukhour = ukhourminute[0];
+    var ukminute = ukhourminute[1];
+
+
+    var min = new Date();
+
+    strMin = $.datepicker.formatDate("dd/mm/yy", min);
+    console.log('india', strMin)
+    console.log('uk', ukdate)
+    // min.setHours(min.getHours() + 0.5);
+    // min.setMinutes(min.getMinutes() + (15 - min.getMinutes() % 15))
+    min.setHours(ukhour);
+    min.setMinutes(ukminute)
+    console.log('uk-min', min)
+    $('#datepicker').datepicker({
+        dateFormat: 'dd/mm/yy',
+        minDate: 0,
+        onSelect: function(v) {
+            $("#timepicker").val('')
+            console.log("v", v)
+            console.log("strMin", strMin)
+            $('#timepicker').timepicker('option', 'minTime', v == ukdate ? min : '12:00am');
+            //  $('#timepicker').timepicker('option', 'minTime', v == strMin ? min : '12:00am');
+        }
     });
 
     /* ===========================
