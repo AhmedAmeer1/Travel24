@@ -96,11 +96,16 @@
     .footer-left .social-links img {
       width: 28px;
       height: 28px;
+      transition: transform 0.2s;
+    }
+
+    .footer-left .social-links img:hover {
+      transform: scale(1.1);
     }
 
     .footer-left .website-link {
       text-align: left;
-      margin-top: 5px;
+      margin: 10px 0;
     }
 
     .footer-left .website-link a {
@@ -115,17 +120,24 @@
       margin: 0;
     }
 
-    .footer-right {
-      flex: 1;
-      text-align: right;
-      min-width: 250px;
+    /* Contact Section (Moved to Left) */
+    .footer-left .contact-info {
+      margin-top: 10px;
+      text-align: left;
     }
 
-    .footer-right h2 {
-      font-size: 16px;
-      margin: 0;
+    .footer-left .contact-info h2 {
+      font-size: 15px;
       font-weight: normal;
+      margin: 0;
       line-height: 1.6;
+      color: #333;
+    }
+
+    .footer-left .contact-info a {
+      color: #094a6c;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     @media (max-width: 768px) {
@@ -139,13 +151,16 @@
         text-align: center;
       }
 
-      .footer-left .website-link {
+      .footer-left {
         text-align: center;
       }
 
-      .footer-right {
+      .footer-left .social-links {
+        justify-content: center;
+      }
+
+      .footer-left .contact-info {
         text-align: center;
-        margin-top: 15px;
       }
     }
   </style>
@@ -287,14 +302,15 @@
               <a href="https://travel24taxi.com/" target="_blank">https://travel24taxi.com/</a>
             </h2>
           </div>
-        </div>
 
-        <div class="footer-right">
-          <h2>
-            For any changes, contact<br>
-            Tel: <a href="tel:02039822911">02039822911</a><br>
-            Email: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com</a>
-          </h2>
+          <!-- Contact Info (Now Left) -->
+          <div class="contact-info">
+            <h2>
+              For any changes, contact<br>
+              Tel: <a href="tel:02039822911">02039822911</a><br>
+              Email: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com</a>
+            </h2>
+          </div>
         </div>
       </div>
     </div>
