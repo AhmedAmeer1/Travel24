@@ -67,30 +67,65 @@
       font-weight: bold;
     }
 
-    .social-links {
+    /* ---- Footer Section ---- */
+    .footer-section {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin: 20px 0;
+      align-items: flex-start;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 20px;
     }
 
-    .social-links img {
-      width: 24px;
-      margin-left: 6px;
+    .footer-left {
+      flex: 1;
+      min-width: 250px;
     }
 
-    .contact-info h2 {
-      font-size: 16px;
+    .footer-left .social-links {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .footer-left .social-links a {
+      margin-right: 8px;
+    }
+
+    .footer-left .social-links img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .footer-left .website-link {
+      text-align: left;
+      margin-top: 5px;
+    }
+
+    .footer-left .website-link a {
+      color: #094a6c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .footer-left .website-link h2 {
+      font-size: 15px;
       margin: 0;
     }
 
-    .website-link {
-      margin-top: 10px;
+    .footer-right {
+      flex: 1;
+      text-align: right;
+      min-width: 250px;
     }
 
-    .website-link a {
-      color: #094a6c;
-      text-decoration: none;
+    .footer-right h2 {
+      font-size: 16px;
+      margin: 0;
+      font-weight: normal;
+      line-height: 1.6;
     }
 
     @media (max-width: 768px) {
@@ -98,12 +133,18 @@
         width: 95%;
       }
 
-      .social-links {
+      .footer-section {
         flex-direction: column;
+        align-items: center;
         text-align: center;
       }
 
-      .contact-info {
+      .footer-left .website-link {
+        text-align: center;
+      }
+
+      .footer-right {
+        text-align: center;
         margin-top: 15px;
       }
     }
@@ -223,34 +264,38 @@
         </tr>
       </table>
 
-      <!-- Social & Contact -->
-      <div class="social-links">
-        <div>
-          <a href="https://twitter.com/nolimit_cars" target="_blank">
-            <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="Twitter">
-          </a>
-          <a href="https://www.instagram.com/nolimitcars8/" target="_blank">
-            <img src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="Instagram">
-          </a>
-          <a href="https://www.facebook.com/nolimitcarsltd/" target="_blank">
-            <img src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="Facebook">
-          </a>
+      <!-- Footer Section -->
+      <div class="footer-section">
+        <div class="footer-left">
+          <!-- Social Media -->
+          <div class="social-links">
+            <a href="https://twitter.com/nolimit_cars" target="_blank">
+              <img src="https://travel24taxi.com/assets/images/travel24/email/x_logo.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/nolimitcars8/" target="_blank">
+              <img src="https://travel24taxi.com/assets/images/travel24/email/instagram.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/nolimitcarsltd/" target="_blank">
+              <img src="https://travel24taxi.com/assets/images/travel24/email/facebook.jpg" alt="Facebook">
+            </a>
+          </div>
+
+          <!-- Website -->
+          <div class="website-link">
+            <h2>
+              View Website:
+              <a href="https://travel24taxi.com/" target="_blank">https://travel24taxi.com/</a>
+            </h2>
+          </div>
         </div>
 
-        <div class="contact-info">
+        <div class="footer-right">
           <h2>
             For any changes, contact<br>
             Tel: <a href="tel:02039822911">02039822911</a><br>
             Email: <a href="mailto:bookings@travel24taxi.com">bookings@travel24taxi.com</a>
           </h2>
         </div>
-      </div>
-
-      <!-- Website -->
-      <div class="website-link">
-        <h2>
-          View Website: <a href="https://travel24taxi.com/" target="_blank">https://travel24taxi.com/</a>
-        </h2>
       </div>
     </div>
   </div>
