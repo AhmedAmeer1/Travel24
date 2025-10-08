@@ -119,7 +119,13 @@
       color: #094a6c;
       text-decoration: none;
       font-weight: bold;
+      font-size: 15px;
     }
+    .website-link h2 {
+      font-size: 15px;
+    
+    }
+
 
     @media (max-width: 768px) {
       .email-container {
@@ -127,6 +133,9 @@
       }
 
       .contact-info {
+        text-align: center;
+      }
+      .website-link {
         text-align: center;
       }
     }
