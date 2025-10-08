@@ -222,7 +222,7 @@ class Index extends CI_Controller
 		$booking['way_point_2'] = (!empty($_SESSION["way_points"][1]) ? $_SESSION["way_points"][1] : '');
 		$booking['way_point_3'] = (!empty($_SESSION["way_points"][2]) ? $_SESSION["way_points"][2] : '');
 		$dates = str_replace("/", "-", $input['jouney_date']);
-		$booking['travel_date'] = date("Y-m-d", strtotime($dates));
+		$booking['travel_date'] = date("d-m-Y", strtotime($dates));
 		$booking['travel_time'] = $input['journey_time'];
 		$booking['pick_up_door_name'] = $input['pick_up'];
 		$booking['flight_no'] = $input['flight_no'];
@@ -315,8 +315,8 @@ class Index extends CI_Controller
 		set_cookie('travel_type', ($booking['service_type'] == "1" ? "Single" : "Return"), 86400);
 		set_cookie('selected_vehicle_id', $booking['selected_vehicle_id'], 86400);
 		$this->db->where('vehicle_id',$booking['selected_vehicle_id']);
-		set_cookie('vehicleName', $this->db->get('vehicle')->row('title'), 86400);
-
+		// set_cookie('vehicleName', $this->db->get('vehicle')->row('title'), 86400);
+		set_cookie('vehicleName',  $input['selected_vehicle_name'], 86400);
 
 
 
@@ -857,7 +857,8 @@ class Index extends CI_Controller
 
 		$data = $bookingData;
 		$data['booking_id'] = $result['booking_id'];
-		$data['vehicle'] = $this->db->get('vehicle')->row('title');
+		// $data['vehicle'] = $this->db->get('vehicle')->row('title');
+		$data['vehicle'] = get_cookie('vehicleName') || '';
 		$data['travel_type'] = $bookingOtherData['travel_type'];
 		$data['hand_lagguage'] = $bookingOtherData['hand_lagguage'];
 		$data['pick_up'] = $bookingOtherData['pick_up'];

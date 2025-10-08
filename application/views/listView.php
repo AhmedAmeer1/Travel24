@@ -705,6 +705,8 @@
         var methodAttr = $(this).attr('data-method');
         var payment_method = (methodAttr === "pay_now_p") ? "paypal" : (methodAttr === "pay_now_l") ? "lloyds" :
             "cash";
+        var selected_vehicle_name = $(".list-box.selected-card").data("vehicle-title") || "";
+
 
         // Persist selection like original flow expected
         // (server can read from session or request—here we send as part of init)
@@ -729,6 +731,7 @@
                 drop_off: drop_off,
                 scomments_special_inst: scomments_special_inst,
                 selected_vehicle_id: selected_vehicle_id,
+                selected_vehicle_name: selected_vehicle_name,
                 selected_travel_type: selected_travel_type,
                 subTotal: subTotal,
                 promoDiscountAmount: promoDiscountAmount,
