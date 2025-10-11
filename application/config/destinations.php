@@ -195,6 +195,7 @@ Our fleet includes a variety of vehicles, such as 8-seater minibuses and accessi
 
     [
         'title' => 'Henley on Thames Transfer',
+        'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/henley-on-thames-transfer',
         'heading' => 'Henley-on-Thames Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Henley-on-Thames Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Enjoy hassle-free Henley-on-Thames transfers with reliable drivers, 24/7 service, tailored vehicles, instant online quotes and affordable rates.',
@@ -205,6 +206,7 @@ Our fleet includes a variety of vehicles, such as 8-seater minibuses and accessi
 
     [
         'title' => 'Hounslow Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/hounslow-transfer',
          'heading' => 'Hounslow Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Hounslow
 Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.
@@ -217,6 +219,7 @@ Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (
 
    [
         'title' => 'Reading Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/reading-transfer',
             'heading' => 'Reading Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Reading Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Seamless transfers to and from Reading with affordable rates, diverse vehicles, instant booking, and skilled drivers for stress-free journeys across the UK.',
@@ -229,6 +232,7 @@ Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (
 
    [
         'title' => 'Dorking Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/dorking-transfer',
         'heading' => 'Dorking Transfers',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Dorking transfers services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers',
         'metaDescription' => 'Affordable Dorking transfers across the UK—24/7 booking, saloon cars to 8-seaters, expert drivers and tailored travel solutions for hassle-free rides.',
@@ -238,6 +242,7 @@ Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (
 
        [
         'title' => 'Godalming Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/godalming-transfer',
         'heading' => 'Godalming Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Godalming Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Seamless Godalming transfers—affordable rates, skilled drivers, 24/7 service, tailored travel options, and instant online booking for stress-free journeys.',
@@ -249,6 +254,7 @@ Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (
 
     [
         'title' => 'Brighton and Hove Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/brighton-and-hove-transfer',
         'heading' => 'Brighton and Hove Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Brighton and Hove Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers',
         'metaDescription' => 'Affordable Brighton & Hove transfers with saloon cars to 8-seaters, 24/7 service, instant online booking, and tailored travel for individuals or groups',
@@ -261,6 +267,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],  
       [
         'title' => 'Redhill Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/redhill-transfer',
         'heading' => 'Redhill Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Redhill Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Book Redhill transfers with Travel24—tailored travel solutions, 24/7 availability, vehicles for all group sizes, plus wheelchair accessible options',
@@ -269,6 +276,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
       [
         'title' => 'Reigate Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/reigate-transfer',
         'heading' => 'Reigate Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Reigate Transfer  services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Reigate transfers—24/7 service, instant online booking, tailored vehicles for individuals and groups, and hassle-free travel across the UK.',
@@ -278,6 +286,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
       [
         'title' => 'Bracknell Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/bracknell-transfer',
         'heading' => 'Bracknell Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Bracknell Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Bracknell transfers—24/7 service, instant online booking, saloon cars to 8-seaters, for individuals or groups across the UK',
@@ -286,6 +295,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
       [
         'title' => 'Farnborough Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/farnborough-transfer',
         'heading' => 'Farnborough Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Farnborough Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Book Farnborough transfers with Travel24—reliable, efficient, vehicles for all group sizes, tailored solutions, and quick online booking',
@@ -294,6 +304,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
     [
         'title' => 'Woking Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/woking-transfer',
         'heading' => 'Woking Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Woking Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Woking transfers—24/7 service, instant online booking, tailored vehicles for individuals or groups, and hassle-free travel across the UK',
@@ -302,6 +313,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
     [
         'title' => 'Wokingham Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/wokingham-transfer',
         'heading' => 'Wokingham Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Wokingham Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers',
         'metaDescription' => 'Seamless Wokingham transfers—affordable rates, 24/7 availability, diverse fleet for individuals and groups, with hassle-free online booking across the UK.',
@@ -310,6 +322,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
     [
         'title' => 'High Wycombe Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/high-wycombe-transfer',
         'heading' => 'High Wycombe Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our High Wycombe Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable High Wycombe transfers—24/7 service, instant online booking, saloon cars to 8-seaters, and tailored travel for individuals or groups',
@@ -320,6 +333,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
     [
         'title' => 'Surrey Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/surrey-transfer',
         'heading' => 'Surrey Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Surrey Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Book Surrey transfers with Travel24—reliable, efficient, vehicles for all group sizes, 24/7 service, and quick online booking for stress-free journeys.',
@@ -328,6 +342,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'Berkshire Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/berkshire-transfer',
         'heading' => 'Berkshire Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Berkshire Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Berkshire transfers—24/7 service, instant online booking, tailored vehicles for individuals or groups, and hassle-free travel across the UK',
@@ -336,6 +351,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'Buckinghamshire Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/buckinghamshire-transfer',
         'heading' => 'Buckinghamshire Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Buckinghamshire Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers',
         'metaDescription' => 'Book Buckinghamshire transfers with Travel24—reliable, efficient, vehicles for all group sizes, 24/7 service, and quick online booking for hassle-free trave',
@@ -346,6 +362,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'Hampshire Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/hampshire-transfer',
         'heading' => 'Hampshire Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Hampshire Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Seamless Hampshire transfers—affordable rates, 24/7 service, diverse fleet for individuals and groups, with instant online booking across the UK',
@@ -354,6 +371,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'Hertfordshire Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/hertfordshire-transfer',
         'heading' => 'Hertfordshire Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Hertfordshire Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers',
         'metaDescription' => 'Affordable Hertfordshire transfers—24/7 service, instant online booking, tailored vehicles for individuals or 8-seaters, and hassle-free travel across the UK',
@@ -363,6 +381,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'West Sussex Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/west-sussex-transfer',
         'heading' => 'West Sussex Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our West Sussex Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers',
         'metaDescription' => 'Book West Sussex transfers with Travel24—reliable, efficient, vehicles for all group sizes, 24/7 service, and quick online booking for hassle-free travel',
@@ -371,6 +390,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'Oxfordshire Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/oxfordshire-transfer',
         'heading' => 'Oxfordshire Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Oxfordshire Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Seamless Oxfordshire transfers—affordable rates, 24/7 service, diverse fleet for individuals and groups, with instant online booking across the UK',
@@ -379,6 +399,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'Wallingford Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/wallingford-transfer',
         'heading' => 'Wallingford Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Wallingford Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Wallingford transfers—24/7 service, instant online booking, tailored vehicles for individuals or groups, and hassle-free travel across the UK',
@@ -387,6 +408,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'Beaconsfield Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/beaconsfield-transfer',
         'heading' => 'Beaconsfield Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Beaconsfield Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Book Beaconsfield transfers with Travel24—reliable, efficient, vehicles for all group sizes, 24/7 service, and quick online booking for seamless journeys',
@@ -395,6 +417,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'Aldershot Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/aldershot-transfer',
         'heading' => 'Aldershot Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Aldershot Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers',
         'metaDescription' => 'Affordable Aldershot transfers—24/7 service, instant online booking, saloons to 8-seaters, and tailored travel for individuals or groups across the UK',
@@ -404,6 +427,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
      [
         'title' => 'Bagshot Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/bagshot-transfer',
         'heading' => 'Bagshot Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Bagshot Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Bagshot transfers—24/7 service, instant online booking, vehicles for individuals or 8-seaters, and tailored travel solutions across the UK',
@@ -412,6 +436,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ],   
     [
         'title' => 'Ascot Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/ascot-transfer',
         'heading' => 'Ascot Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Ascot Transfer  services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Book Ascot transfers with Travel24—reliable, efficient, vehicles for individuals or 8-seaters, 24/7 service, and quick online booking for seamless journeys',
@@ -421,6 +446,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
     [
         'title' => 'Aylesbury Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/aylesbury-transfer',
         'heading' => 'Aylesbury Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Aylesbury Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Seamless Aylesbury transfers—affordable rates, 24/7 availability, diverse fleet for individuals or 8-seaters, with instant online booking across the UK',
@@ -429,6 +455,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
     [
         'title' => 'Chalford Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/chalford-transfer',
         'heading' => 'Chalford Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Chalford Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Chalford transfers—24/7 service, instant online booking, tailored vehicles for individuals or 8-seaters, and hassle-free travel across the UK.',
@@ -437,6 +464,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
     [
         'title' => 'Winchester Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/winchester-transfer',
         'heading' => 'Winchester Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Winchester Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Book Winchester transfers with Travel24—reliable, efficient, vehicles for individuals or 8-seaters, 24/7 service, and quick online booking for seamless journeys',
@@ -447,6 +475,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
     [
         'title' => 'Andover Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/andover-transfer',
         'heading' => 'Andover Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Andover Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Seamless Andover transfers—affordable rates, 24/7 availability, diverse fleet for individuals or 8-seaters, with instant online booking across the UK',
@@ -455,6 +484,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
     [
         'title' => 'Newbury Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/newbury-transfer',
         'heading' => 'Newbury Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Newbury Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Newbury transfers—24/7 service, instant online booking, tailored vehicles for individuals or 8-seaters, and hassle-free travel across the UK',
@@ -464,6 +494,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
      [
         'title' => 'Swindon Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/swindon-transfer',
         'heading' => 'Swindon Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Swindon Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Book Swindon transfers with Travel24—reliable, efficient, vehicles for individuals or 8-seaters, 24/7 service, and quick online booking for seamless journeys.',
@@ -472,6 +503,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
      [
         'title' => 'Coventry Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/coventry-transfer',
         'heading' => 'Coventry Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Coventry Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Seamless Coventry transfers—affordable rates, 24/7 availability, diverse fleet for individuals or 8-seaters, with instant online booking across the UK',
@@ -480,6 +512,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
      [
         'title' => 'Leicester Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/leicester-transfer',
         'heading' => 'Leicester Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Leicester Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Leicester transfers—24/7 service, instant online booking, tailored vehicles for individuals or 8-seaters, and hassle-free travel across the UK',
@@ -490,6 +523,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
      [
         'title' => 'Northampton Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/northampton-transfer',
         'heading' => 'Northampton Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Northampton Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Book Northampton transfers with Travel24—reliable, efficient, vehicles for individuals or 8-seaters, 24/7 service, and quick online booking for seamless journeys',
@@ -498,6 +532,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
      [
         'title' => 'Bicester village Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/bicester-village-transfer',
         'heading' => 'Bicester village Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Bicester village Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers',
         'metaDescription' => 'Seamless Bicester Village transfers—affordable rates, 24/7 availability, diverse fleet for individuals or 8-seaters, with instant online booking across the UK.',
@@ -508,6 +543,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
      [
         'title' => 'Watford Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/watford-transfer',
         'heading' => 'Watford transfers',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Watford transfers services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Affordable Watford transfers—24/7 service, instant online booking, tailored vehicles for individuals or 8-seaters, and hassle-free travel across the UK',
@@ -516,6 +552,7 @@ solutions tailored to passengers who want to reach their destination on time. We
     ], 
      [
         'title' => 'Hemel Hempstead Transfer',
+         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/hemel-hempstead-transfer',
         'heading' => 'Hemel Hempstead Transfer',
         'subHeading' => 'Book a private-hire from Stansted to elsewhere in the UK through our Hemel Hempstead Transfer services. Our fleet includes 8 Seater Minibus (Van), Mobility Vehicle (cars, cabs etc.), to serve the purpose of the passengers.',
         'metaDescription' => 'Seamless Hemel Hempstead transfers—affordable rates, 24/7 availability, diverse fleet for individuals or 8-seaters, with instant online booking across the UK',
