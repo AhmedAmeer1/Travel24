@@ -1,0 +1,9 @@
+1. first step import the below file inside constructor 
+
+        		$this->load->helper('custom_helper');
+
+
+2. second step just write debug log query to print message same as console log in javascript 
+
+    	 debug_log(" write the message here --------- ");
+         debug_log($variable_name);

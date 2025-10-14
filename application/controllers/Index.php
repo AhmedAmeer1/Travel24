@@ -50,7 +50,7 @@ class Index extends CI_Controller
 	public function Search()
 	{
 
-
+	 debug_log(" -----Search 11111 --------- ");	
 		$post_data = $this->input->post();
 
 		if (count($post_data) == 0) {
@@ -70,26 +70,7 @@ class Index extends CI_Controller
 			$found_location = "false";
 		}
 
-		// $theta    = $longitudeFrom - $longitudeTo;
-		// $dist    = sin(deg2rad($latitudeFrom)) * sin(deg2rad($latitudeTo)) +  cos(deg2rad($latitudeFrom)) * cos(deg2rad($latitudeTo)) * cos(deg2rad($theta));
-		// $special_locations =$this->Index_Model->get_special_locations();
-		// $found_location ="fasle";
-		// foreach($special_locations as $key => $sl){
-		// 	$sl_lattitude = $sl->lattitude;
-		// 	$sl_longitude = $sl->longitude;
-		// 	$theta    = $longitudeTo - $sl_longitude;
-		// 	$dist    = sin(deg2rad($latitudeTo)) * sin(deg2rad($sl_lattitude)) +  cos(deg2rad($latitudeTo)) * cos(deg2rad($sl_lattitude)) * cos(deg2rad($theta));
-		// 	$dist    = acos($dist);
-		// 	$dist    = rad2deg($dist);
-		// 	$miles   = $dist * 60 * 1.1515;
-		// 	$output = round($miles, 2);
-		// 	if($output <= $sl->mile){
-		// 	  $found_location ="true";
-		//       $location_id = $sl->id;
-		// 	  break; 
-		// 	}
-
-		// }
+	
 
 		$data['page'] = "Listpage";
 		$data['page_title'] = "List Page";
@@ -331,8 +312,6 @@ class Index extends CI_Controller
 			$result = $this->Index_Model->save_booking();
 
 
-			debug_log(" -----THE DATA RETURN FROM  SAVE BOOKING FUNCTION INSIDE   CASH FUNCTION   1111111  --------- ");
-			debug_log($result);
 
 
 			if ($result['status'] == 1) {
@@ -598,12 +577,7 @@ class Index extends CI_Controller
 		$total_mile =  $_POST['total_mile'];
 		$total_minutes = $_POST['durationInMinutes'];
 
-		debug_log(" ---------------------------------------------Vehicle ------------------------------------------------- ");
-		debug_log($vehichle_id);
-		debug_log(" -----total_mile  for trip --------- ");
-		debug_log($total_mile);
-		debug_log(" -----total_minutes for trip   --------- ");
-		debug_log($total_minutes);
+
 
 
 		$result = $this->Index_Model->get_vehicle($vehichle_id);
@@ -626,11 +600,7 @@ class Index extends CI_Controller
 
 					if ($total_mile >= $mr->from  && $total_mile <= $mr->to) {
 						$single = ($mr->single * $total_mile) + $result->perKm;
-						debug_log(" -----mr->single ---------------AMOUNT PER KM------------------   --------- ");
-						debug_log($mr->single);
-
-						debug_log(" -----result->perKm --------------BASE RATE -------------------   --------- ");
-						debug_log($result->perKm);
+						
 						$return = ($mr->return * $total_mile * 2) + $result->perKmReturn;
 						break;
 					} else {
@@ -649,8 +619,7 @@ class Index extends CI_Controller
 		$return = round($return, 2);
 		// $array1= array('single' =>$single,'retn' =>$return);
 
-		debug_log(" -----total Single  for Mile   --------- ");
-		debug_log($single);
+
 
 
 
@@ -674,17 +643,13 @@ class Index extends CI_Controller
 			}
 		}
 
-		debug_log(" -----total Single  for Time   --------- ");
-		debug_log($singleTime);
 
 
 		$totalsingle = $single + $singleTime;
 		$totalreturn = $return + $returnTime;
 
 
-		debug_log(" -----total Time   + Mile   --------- ");
-		debug_log($totalsingle);
-
+		
 
 		// -----------------------------------------------------------------------------
 		// Apply Additional Airport/Terminal Surcharge to Fare
