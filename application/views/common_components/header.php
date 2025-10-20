@@ -27,9 +27,9 @@
                             <a class="nav-link" href="<?php echo base_url()?>customerReviews">reviews</a>
                         </li>
 
-                         <li class="nav-item">
+                         <!-- <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url()?>bookNow">BookNow</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item mt-1">
                             <a href="tel:02039822911 " class=" call-div">
                                 <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon"> 02039822911</a>
