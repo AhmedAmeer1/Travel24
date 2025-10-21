@@ -63,7 +63,7 @@
     
     ${!review.comment ? `<img class="quatation_review_type_right" src="<?php echo base_url('assets/images/travel24/quatation_right.png')?>" alt="icon">` : ''}
     
-    <br></span> <br />
+    <br></span> 
     <span class="client_review">
 `;
 

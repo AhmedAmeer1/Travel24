@@ -88,7 +88,7 @@
     ${review.reviewType ? `<img class="quatation_review_type" src="<?php echo base_url('assets/images/travel24/quatation_left.png')?>" alt="icon">` : ''}
     <span class="review_type">${review.reviewType}  ${review.reviewType  &&  review.comment? ',':'' }    
     ${!review.comment ? `<img class="quatation_review_type_right" src="<?php echo base_url('assets/images/travel24/quatation_right.png')?>" alt="icon">` : ''}
-    <br></span> <br />
+    <br></span>
     <span class="client_review">
 `;
 
