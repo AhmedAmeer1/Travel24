@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Find answers about bookings, payments, vehicle types & more on Travel24’s FAQ. Simple online, phone or email support—24/7 clarity for every ride" />
+    <meta name="description"
+        content="Find answers about bookings, payments, vehicle types & more on Travel24’s FAQ. Simple online, phone or email support—24/7 clarity for every ride" />
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>faq</title>
     <meta property="og:title" content="Travel 24 Taxi - Frequently Asked Questions (FAQ)">
-    <meta property="og:description" content="Find answers to common questions about Travel 24 Taxi’s booking process, pricing, airport pickups, cancellations, and more.">
+    <meta property="og:description"
+        content="Find answers to common questions about Travel 24 Taxi’s booking process, pricing, airport pickups, cancellations, and more.">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
     <meta property="og:url" content="https://travel24taxi.com/faq">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
-    <link rel="icon" type="image/png" sizes="16x16"  href="<?php echo base_url('/favicon-16x16.png')?> " >
-    <link rel="icon" type="image/png" sizes="32x32"  href="<?php echo base_url('/favicon-32x32.png')?>">
-    <link rel="icon" type="image/png" sizes="48x48"  href="<?php echo base_url('/favicon-48x48.png')?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
+    <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/faq" />
     <!-- <link rel="stylesheet" href="./css/faqs.css"> -->
     <link rel="stylesheet" href="<?= base_url('assets/css/faqs.css?v=9') ?>">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
-     <?php $this->load->view('assets/js/seo/nolimitFaq'); ?>
+    <?php $this->load->view('assets/js/seo/nolimitFaq'); ?>
     <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -33,11 +37,13 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
+
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <section>
         <div class="container-fluid banner-section">
-            <img src="<?php echo base_url('assets/images/travel24/about_us.svg')?>" alt="about_us_banner" class="banner-image">
+            <img src="<?php echo base_url('assets/images/travel24/about_us.svg')?>" alt="about_us_banner"
+                class="banner-image">
         </div>
         <div class=" faq_wrapper">
             <div class="faq_content_div">
@@ -67,7 +73,8 @@
                     <hr />
                 </div>
                 <div class="get_in_touch">
-                    <img src="<?php echo base_url('assets/images/get_in_touch.svg')?>" class="img-fluid" alt="get_in_touch">
+                    <img src="<?php echo base_url('assets/images/get_in_touch.svg')?>" class="img-fluid"
+                        alt="get_in_touch">
                     <h1>Still have questions? </h1>
                     <p class="">Everything you need to know about the taxi ride and bookings </p>
                     <button> <a href="<?php echo base_url()?>contactUs">Get in touch </a></button>
@@ -80,8 +87,12 @@
     <?php $this->load->view('common_components/footer'); ?>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url('assets/js/jquery.3.0.min.js')?>"></script>
+
 
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
 </body>
+
 </html>
