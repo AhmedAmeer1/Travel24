@@ -119,6 +119,7 @@
         </div>
     </section>
     <?php $this->load->view('common_components/contactusFooter'); ?>
+        <script src="<?php echo base_url('assets/js/jquery.3.0.min.js')?>"></script>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
 </body>
 </html>
