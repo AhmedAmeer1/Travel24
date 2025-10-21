@@ -202,16 +202,16 @@
                                     </div>
                                 </div>
 
-                                <!-- <div class="col-md-12">
+                                <div class="col-md-12">
                                     <button class="promotion-btn paycash-btn promo-code mt-4"
                                         onclick="apply_promo_code()">Apply Promocode</button>
                                     <span class="promo-text">Enter <span class="code">LUTH25</span> to get 10 %
                                         off.</span>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
 
-                        <!-- <div class="bottom-buttons mb-3">
+                      <div class="bottom-buttons mb-3">
                         <div class="user-pay-type d-flex justify-content-end" style="gap: 3px;">
                             <?php foreach($payment_types as $pt){?>
                             <button class="paynow-btn payment-method" id="pay_btn_<?php echo $pt->method; ?>"
@@ -227,7 +227,7 @@
                                 </span>
                             </span>
                         </div>
-                    </div> -->
+                    </div> 
 
                     </div>
                 </div>

@@ -1,9 +1,10 @@
 <style>
 .nav-item .call-div {
     background-color: #00517c;
-    padding: 12px 16px 18px 17px;
+    padding: 11px 16px 11px 17px;
     color: white;
     border-radius: 5px;
+    font-weight: bold;
 }
 </style>
 <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
@@ -31,8 +32,7 @@
                             <a class="nav-link" href="<?php echo base_url()?>bookNow">BookNow</a>
                         </li> -->
                         <li class="nav-item mt-1">
-                            <a href="tel:02039822911 " class=" call-div">
-                                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon"> 02039822911</a>
+                            <a  href="<?php echo base_url()?>bookNow" class=" call-div">Book Now</a>
                         </li>
                     </ul>
                 </div>
@@ -49,8 +49,8 @@
                     <img src="<?php echo base_url('assets/images/travel24/Logo.svg')?>" class="img-fluid mt-3" alt="travel 24 taxi SVG Logo"> </a>
                 <ul class="sub-header-res-new">
                     <li>
-                        <a href="tel:02039822911">
-                            <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon"> 02039822911</a>
+                          <a href="<?php echo base_url()?>bookNow">
+                            Book Now</a>
                     </li>
                 </ul>
             </div>
@@ -77,8 +77,9 @@
             <a href="<?php echo base_url()?>customerReviews">Reviews</a>
         </li>
         <li class=" mt-1">
-            <a href="tel:02039822911 " class=" call-div">
-                <img src="<?php echo base_url('assets/images/travel24/call.svg')?>" alt="Call Icon"> 02039822911</a>
+              <a  href="<?php echo base_url()?>bookNow"  class=" call-div">
+          
+                Book Now</a>
         </li>
     </ul>
 </div>

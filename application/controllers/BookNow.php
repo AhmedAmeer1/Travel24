@@ -37,6 +37,8 @@ class BookNow extends CI_Controller {
 		$this->load->model('Review_Model');
 		$home_template['reviews'] =  $this->Review_Model->getAllReviews(1);
 		$home_template['CustomerReviewData'] = $this->Review_Model->getReviewDetailsforAdmin();
+			$home_template['payment_types'] = $this->db->get('payment_types')->result();
+
 	// debug_log(" -----home_template  --------- ");
 	// 		debug_log($home_template);
 
