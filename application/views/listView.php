@@ -763,9 +763,15 @@
                 } else if (payment_method === "lloyds") {
                     // keep original IPG behaviour (bank page in new tab/window)
                     window.open('<?php echo base_url('index/ipg')?>');
+                      alert(
+                        "Thank you for your booking! We have sent you a email for the confirmation ."
+                    );
                 } else {
                     // PayPal flow (server handles redirect)
                     window.location.replace('<?php echo base_url('payment/create_payment')?>');
+                      alert(
+                        "Thank you for your booking! We have sent you a email for the confirmation ."
+                    );
                 }
             }
         });
