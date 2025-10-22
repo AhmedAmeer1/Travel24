@@ -214,25 +214,19 @@ class Index extends CI_Controller
 		$booking['user_id'] = (!empty($_SESSION['user_id']) ? $_SESSION['user_id'] : '0');
 		$booking['userType'] = (!empty($_SESSION['user_type']) ? $_SESSION['user_type'] : '');
 		$booking['status'] = 1;
-		$booking['promocode_discount'] = (!empty($_SESSION["discount"]) ? $_SESSION["discount"] : 0);
+		$booking['promocode_discount'] =$input['promoDiscountAmount'];
 
 
 
 
-
-
-
-
-
-
-		if ($booking['child_seat']  != 0) {
-			$this->db->where('vehicle_id', $booking['vehicle_id']);
-			$cost_per_seat = $this->db->get('vehicle')->row('cost_per_child_seat');
-			$total_cost_per_seat = $cost_per_seat * $booking['child_seat'];
-			$child_seat_cost = $total_cost_per_seat;
-		} else {
-			$child_seat_cost = 0;
-		}
+		// if ($booking['child_seat']  != 0) {
+		// 	$this->db->where('vehicle_id', $booking['vehicle_id']);
+		// 	$cost_per_seat = $this->db->get('vehicle')->row('cost_per_child_seat');
+		// 	$total_cost_per_seat = $cost_per_seat * $booking['child_seat'];
+		// 	$child_seat_cost = $total_cost_per_seat;
+		// } else {
+		// 	$child_seat_cost = 0;
+		// }
 	
 
 
@@ -835,29 +829,13 @@ class Index extends CI_Controller
 		$data['total_fare'] = $bookingOtherData['total_fare'];
 		$data['type'] = "Online";
 
+		$this->email_notification($data);
 
-    
-
- debug_log(" vehicle------------------------ ");
-	    debug_log(get_cookie('vehicleName'));
-	 debug_log(" bookingData------------------------ ");
-	       debug_log($data);
-
-
-
-
-$this->email_notification($data);
-
-
-
-
-echo "<script>
-    alert('Booking Successful! Redirecting to your journey details...');
-    window.location.href = '" . base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']) . "';
-</script>";
-exit;
-
-
+		echo "<script>
+			alert('Thank you for your booking! We have sent you a email for the confirmation .');
+			window.location.href = '" . base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']) . "';
+		</script>";
+		exit;
 
 		// redirect(base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']));
 	}
