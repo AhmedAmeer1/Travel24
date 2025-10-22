@@ -847,13 +847,13 @@ class Index extends CI_Controller
 
 echo "<script>
     alert('Booking Successful! Redirecting to your journey details...');
-    window.location.href = '" . base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']) . "';
+   
 </script>";
-exit;
 
 
 
-		// redirect(base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']));
+
+		redirect(base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']));
 	}
 	public function lloyds_failure()
 	{
