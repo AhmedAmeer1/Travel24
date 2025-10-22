@@ -731,7 +731,10 @@ class Index extends CI_Controller
 			'promocode' => get_cookie('promocode') || '',
 			'total_fare' => get_cookie('total_fare'),
 			'total' => $_SESSION["book_data"]['amount'],
-			'sub_total' => $_SESSION["book_data"]['base_fare'],
+
+
+
+			'sub_total' =>  get_cookie('base_fare'),
 		];
 
 
@@ -814,6 +817,8 @@ class Index extends CI_Controller
 		$data['pick_up'] = $bookingOtherData['pick_up'];
 		$data['scomments_special_inst'] ='Removed from Frontend';
 		$data['promocode'] = $bookingOtherData['promocode'];
+
+		
 		$data['sub_total'] = $bookingOtherData['sub_total'];
 		$data['total'] = $bookingOtherData['total'];
 		$data['total_fare'] = $bookingOtherData['total_fare'];
