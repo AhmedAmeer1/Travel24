@@ -741,6 +741,7 @@ class Index extends CI_Controller
 			'vehice_id' =>get_cookie('selected_vehicle_id') || '',
 			'travel_type' => get_cookie('travel_type') || '',
 			'hand_lagguage' => get_cookie('hand_lagguage'),
+			'vehicle' => get_cookie('vehicleName'),
 			'pick_up' => get_cookie('pick_up'),
 			'scomments_special_inst' => get_cookie('scomments_special_inst'),
 			'promocode' => get_cookie('promocode') || '',
@@ -823,7 +824,7 @@ class Index extends CI_Controller
 		$data = $bookingData;
 		$data['booking_id'] = $result['booking_id'];
 		// $data['vehicle'] = $this->db->get('vehicle')->row('title');
-		$data['vehicle'] = get_cookie('vehicleName') || '';
+		$data['vehicle'] = $bookingOtherData['vehicle'];
 		$data['travel_type'] = $bookingOtherData['travel_type'];
 		$data['hand_lagguage'] = $bookingOtherData['hand_lagguage'];
 		$data['pick_up'] = $bookingOtherData['pick_up'];
@@ -844,9 +845,15 @@ class Index extends CI_Controller
 
 
 
-		$this->email_notification($data);
+echo "<script>
+    alert('Booking Successful! Redirecting to your journey details...');
+    window.location.href = '" . base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']) . "';
+</script>";
+exit;
 
-		redirect(base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']));
+
+
+		// redirect(base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']));
 	}
 	public function lloyds_failure()
 	{
