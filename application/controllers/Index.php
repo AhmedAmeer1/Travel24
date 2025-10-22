@@ -720,7 +720,6 @@ class Index extends CI_Controller
 			'way_point_1' => get_cookie('way_point_1') || '',
 			'way_point_2' => get_cookie('way_point_2') || '',
 			'way_point_3' => get_cookie('way_point_3') || '',
-			'vehicleName' => get_cookie('vehicleName') || '',
 
 			'travel_date' => $_SESSION["book_data"]['travel_date'],
 			'travel_time' => $_SESSION["book_data"]['travel_time'],
@@ -836,8 +835,7 @@ class Index extends CI_Controller
 		$data['type'] = "Online";
 
 
- debug_log(" vehicle------------11111------------ ");
-	    debug_log($data['vehicleName']);
+    
 
  debug_log(" vehicle------------------------ ");
 	    debug_log(get_cookie('vehicleName'));
