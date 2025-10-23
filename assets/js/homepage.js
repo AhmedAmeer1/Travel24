@@ -16,6 +16,7 @@ function initAutocomplete() {
 	initWaypointHandlers();
 }
 
+/* ---------------- AUTOCOMPLETE INITIALIZATION ---------------- */
 function initializeAutocompleteInput(inputId, latId, lngId) {
 	const input = document.getElementById(inputId);
 	if (!input) return;
@@ -91,6 +92,7 @@ function closeDropdown() {
 	document.querySelectorAll(".custom-dropdown").forEach((el) => el.remove());
 }
 
+/* ---------------- CURRENT LOCATION ---------------- */
 function useCurrentLocation(input) {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(
@@ -100,14 +102,12 @@ function useCurrentLocation(input) {
 					lng: pos.coords.longitude,
 				};
 
-				// Reverse geocode to readable address
 				geocoder.geocode({ location: latlng }, (results, status) => {
 					if (status === "OK" && results[0]) {
-						// 🔑 Find the "country" component explicitly
 						let countryCode = null;
 						results[0].address_components.forEach((c) => {
 							if (c.types.includes("country")) {
-								countryCode = c.short_name; // e.g. "GB", "LK"
+								countryCode = c.short_name;
 							}
 						});
 
@@ -150,25 +150,34 @@ function fillLatLngFromPlaceId(placeId) {
 	});
 }
 
-/* ---------------- Waypoint handling ---------------- */
+/* ---------------- WAYPOINT HANDLING ---------------- */
 function initWaypointHandlers() {
+	const MAX_WAYPOINTS = 3;
+
+	// Add waypoint
 	$("#createCustomerForm").delegate(".multi-root", "click", function (e) {
 		e.preventDefault();
 
-		const total_way_points = $(".multi-btn").length;
-		const next_way_point = parseInt(total_way_points) + 1;
-		$("#total_way_points").val(next_way_point);
+		const currentCount = $(".way-points .multiRoute").length;
 
-		if (next_way_point > 3) {
-			$("#total_way_points").val("3");
-			alert("OOPS !!! way Points limited to 3");
+		if (currentCount >= MAX_WAYPOINTS) {
+			$("#total_way_points").val(MAX_WAYPOINTS);
+			alert("OOPS !!! way Points limited to " + MAX_WAYPOINTS);
 			return;
 		}
 
+		const next_way_point = currentCount + 1;
+		$("#total_way_points").val(next_way_point);
+
 		const html = `
-        <div id="way-points-div-${next_way_point}" class="form-group position-relative">
-            <input type="text" class="form-control autocompleteDoc multiRoute"
-                name="wayPoint-${next_way_point}" required id="wayPoint-${next_way_point}" placeholder="Enter a location">
+        <div id="way-points-div-${next_way_point}" class="form-group position-relative waypoint-item mt-2">
+            <div class="d-flex align-items-center gap-2">
+                <input type="text" class="form-control autocompleteDoc multiRoute"
+                    name="wayPoint-${next_way_point}" required id="wayPoint-${next_way_point}" placeholder="Enter a location">
+                <button type="button" class="btn btn-link text-danger remove-multi-root" data-index="${next_way_point}" title="Remove waypoint">
+                    <i class="fa fa-minus-circle"></i>
+                </button>
+            </div>
             <div class="custom-dropdown" id="dropdown-wayPoint-${next_way_point}"></div>
             <input type="hidden" class="lat_perfect" id="wayPointLat-${next_way_point}" name="wayPointLat-${next_way_point}">
             <input type="hidden" class="lon_perfect" id="wayPointLon-${next_way_point}" name="wayPointLon-${next_way_point}">
@@ -178,7 +187,7 @@ function initWaypointHandlers() {
 
 		$(".way-points").append(html);
 
-		// Initialize new waypoint
+		// Initialize new waypoint autocomplete
 		initializeAutocompleteInput(
 			`wayPoint-${next_way_point}`,
 			`wayPointLat-${next_way_point}`,
@@ -186,11 +195,22 @@ function initWaypointHandlers() {
 		);
 	});
 
+	// Remove waypoint
 	$("#createCustomerForm").delegate(".remove-multi-root", "click", function () {
 		const id = $(this).attr("data-index");
 		$("#way-points-div-" + id).remove();
+
+		// Update total count after removal
+		const remaining = $(".way-points .multiRoute").length;
+		$("#total_way_points").val(remaining);
 	});
 }
 
-// Initialize autocomplete when maps is ready
+// Initialize autocomplete when Google Maps is ready
 google.maps.event.addDomListener(window, "load", initAutocomplete);
+
+// Ensure total waypoints count is correct on load
+$(document).ready(function () {
+	const initial = $(".way-points .multiRoute").length || 0;
+	$("#total_way_points").val(initial);
+});

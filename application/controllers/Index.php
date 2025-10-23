@@ -54,16 +54,26 @@ class Index extends CI_Controller
 
 		$post_data = $this->input->post();
 
-	 debug_log($post_data);	
+	//  debug_log($post_data);	
 
 		if (count($post_data) == 0) {
 			redirect($this->index);
 		}
-		$latitudeFrom = $post_data['sourceLat'];
-		$longitudeFrom = $post_data['sourceLon'];
+		$latitudeFrom = isset($post_data['sourceLat']) && is_numeric($post_data['sourceLat'])
+		? (float)$post_data['sourceLat']
+		: 0;
 
-		$latitudeTo = $post_data['destLat'];
-		$longitudeTo = round($post_data['destLong'], 8);
+		$longitudeFrom = isset($post_data['sourceLon']) && is_numeric($post_data['sourceLon'])
+			? (float)$post_data['sourceLon']
+			: 0;
+
+		$latitudeTo = isset($post_data['destLat']) && is_numeric($post_data['destLat'])
+			? (float)$post_data['destLat']
+			: 0;
+
+		$longitudeTo = isset($post_data['destLong']) && is_numeric($post_data['destLong'])
+			? round((float)$post_data['destLong'], 8)
+			: 0;
 
 		$special_location_id = $this->Index_Model->is_special_location($post_data['source'], $post_data['destination']);
 

@@ -47,8 +47,8 @@
                                         <div class="form-group position-relative">
                                             <div class="d-flex justify-content-between">
                                                 <label>&nbsp;</label>
-                                                <button style="float:right" class="multi-root"><i
-                                                        class="fa fa-plus-circle  "></i> Multi Route</button>
+                                               <button type="button" style="float:right" class="multi-root"><i
+                                                     class="fa fa-plus-circle"></i> Multi Route</button>
                                             </div>
                                             <input type="text" class="form-control autocompleteDoc destination"
                                                 name="destination" required id="dropPoint" placeholder="Destination">
@@ -127,7 +127,7 @@
 <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=<?php echo $result->google_api_key; ?>&sensor=false&libraries=places">
 </script>
-<script src="<?php echo base_url('assets/js/homepage.js?v=8'); ?>">
+<script src="<?php echo base_url('assets/js/homepage.js?v=9'); ?>">
 </script>
 
 </script>
