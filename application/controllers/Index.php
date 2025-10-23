@@ -50,8 +50,11 @@ class Index extends CI_Controller
 	public function Search()
 	{
 
-	 debug_log(" -----Search 11111 --------- ");	
+	 debug_log(" -----inside Search function  --------- ");
+
 		$post_data = $this->input->post();
+
+	 debug_log($post_data);	
 
 		if (count($post_data) == 0) {
 			redirect($this->index);

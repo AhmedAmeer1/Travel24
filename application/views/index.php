@@ -47,7 +47,7 @@
                                         <div class="form-group position-relative">
                                             <div class="d-flex justify-content-between">
                                                 <label>&nbsp;</label>
-                                                <button style="float:right" class=" multi-root"><i
+                                                <button style="float:right" class="multi-root"><i
                                                         class="fa fa-plus-circle  "></i> Multi Route</button>
                                             </div>
                                             <input type="text" class="form-control autocompleteDoc destination"
