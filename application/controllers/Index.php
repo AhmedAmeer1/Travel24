@@ -183,7 +183,7 @@ class Index extends CI_Controller
 
 		$data['dateTime'] = $dateTime;
 		$data['createHash'] = $this->createHash("13.00", "826");
-		$this->load->view('details', $data);
+		$this->load->view('listView', $data);
 	}
 	public function booking_init()
 	{
@@ -818,7 +818,7 @@ class Index extends CI_Controller
 		$data['scomments_special_inst'] ='Removed from Frontend';
 		$data['promocode'] = $bookingOtherData['promocode'];
 
-		
+
 		$data['sub_total'] = $bookingOtherData['sub_total'];
 		$data['total'] = $bookingOtherData['total'];
 		$data['total_fare'] = $bookingOtherData['total_fare'];
