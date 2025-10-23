@@ -193,10 +193,10 @@
             <!-- Order Details -->
             <h1>Order Details</h1>
             <table class="table-container">
-                <tr>
+                <!-- <tr>
                     <th colspan="2">Product</th>
                     <th>Price</th>
-                </tr>
+                </tr> -->
 
                 <tr>
                     <td colspan="2">Vehicle Name</td>

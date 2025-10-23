@@ -190,10 +190,10 @@
             <!-- Order Details -->
             <h2 class="order-details-title">Order Details</h2>
             <table>
-                <tr>
+                <!-- <tr>
                     <th colspan="2">Product</th>
                     <th>Price</th>
-                </tr>
+                </tr> -->
 
                 <tr>
                     <td colspan="2" class="bold">Vehicle Name</td>
