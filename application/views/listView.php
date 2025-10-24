@@ -648,6 +648,14 @@
             alert("Please select a vehicle before proceeding with payment.");
             return;
         }
+
+        // check total fare before anything else
+        var totalFareValue = parseFloat($("#total_fare").text() || "0");
+        if (isNaN(totalFareValue) || totalFareValue <= 0) {
+            alert("Something went wrong. Please refresh the page and try again.");
+            return;
+        }
+
         // basic validation
         var valid_phone = validatePhone($("#phone_no").val());
         var valid_email = ValidateEmail($("#email_id").val());
