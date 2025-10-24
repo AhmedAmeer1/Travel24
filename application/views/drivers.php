@@ -20,6 +20,7 @@
     <link rel="icon" type="image/png" sizes="48x48"  href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/drivers" />
     <link rel="stylesheet" href="<?= base_url('assets/css/drivers.css?v=1') ?>">
+       <link rel="stylesheet" href="<?= base_url('assets/css/contactUs.css') ?>">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
      <?php $this->load->view('assets/js/seo/drivers'); ?>
@@ -58,7 +59,52 @@
                 </div>
             </div>
         </div>
-        <div class="drivers_wrapper ">
+
+
+
+
+        <div class="contact_form">
+            <div class="heading">
+                <h1>Apply to Become a Driver</h1>
+                <p>Interested in joining our team? Fill out the form below to apply for a driver position.</p>
+            </div>
+            <form action="<?= base_url('contactUs/send_email'); ?>" method="post">
+                <?php
+                     if ($this->session->flashdata('success_message')) {
+                     echo '<div class="success">' . $this->session->flashdata('success_message') . '</div>';
+                     } elseif ($this->session->flashdata('error_message')) {
+                     echo '<div class="error">' . $this->session->flashdata('error_message') . '</div>';
+                     }
+                ?>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="name_div">
+                        <p>First name</p>
+                        <input name="name" id="name" type="text" placeholder="Your Name*" class="input_fields p-3 w-100"
+                            required>
+                    </div>
+                    <div class="name_div">
+                        <p>Email</p>
+                        <input name="email" id="email" type="email" placeholder="Your Email*"
+                            class=" input_fields p-3  w-100" required>
+                    </div>
+                </div>
+                <div class="d-flex  flex-column justify-content-between">
+                    <div class="phone_div">
+                        <p>Phone number</p>
+                        <input name="contactnumber" id="contactnumber" type="text" placeholder="Contact Number "
+                            class="w-100 h-100 p-3 input_fields  " required>
+                    </div>
+                    <div class="enquiry_div">
+                        <p>Your Message</p>
+                        <textarea name="message" cols="" rows="" id="message" placeholder="Leave us a message..."
+                            class="input_fields p-3 w-100 h-100 "></textarea>
+                    </div>
+                    <button class="btnsubmit " name="" id="">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- <div class="drivers_wrapper ">
             <div class="flex-container  ">
                 <div class="docs">
                     <img src="<?php echo base_url('assets/images/doc-logo.png')?>" alt="terms icon" class="">
@@ -87,7 +133,7 @@
                 If you would like a quote for a journey you are planning please use our
                 online booking form or call us on&nbsp;<a href="tel:02039822911">02039 822 911</a>.
             </div>
-        </div>
+        </div> -->
     </section>
     <?php $this->load->view('common_components/footer'); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
