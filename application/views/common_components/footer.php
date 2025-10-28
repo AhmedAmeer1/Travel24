@@ -57,11 +57,10 @@
 
             <!-- ===== Column 3: Transfer Services ===== -->
             <div class="col-md-3 text-center text-md-left mb-4 mb-md-0">
-                <h5 class="footer-heading mb-3">Transfer Services</h5>
+                <h5 class="footer-heading mb-3">Our Services</h5>
                 <ul class="side-menu list-unstyled">
                     <li><a href="<?php echo base_url()?>bookNow">Airports Transfer</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">Cruise Ports Transfer</a></li>
-                    <li><a href="<?php echo base_url()?>bookNow">Media</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">Executive Chauffeur</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">Minicab Services</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">University Student Transfer</a></li>
@@ -70,8 +69,8 @@
 
             <!-- ===== Column 4: Our Services ===== -->
             <div class="col-md-3 text-center text-md-left">
-                <h5 class="footer-heading mb-3">Our Services</h5>
-                <ul class="side-menu list-unstyled">
+                <!-- <h5 class="footer-heading mb-3">Our Services</h5> -->
+                <ul class="side-menu list-unstyled mt-4">
                     <li><a href="<?php echo base_url()?>contactUs">Man and Van Services</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Parcel Services</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Weddings / Parties</a></li>
