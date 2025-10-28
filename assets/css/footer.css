@@ -1,177 +1,84 @@
-
-
-
-/* ----- Ahmed css start  --------- */
+/* ===== Ahmed - Updated for 4 Column Footer ===== */
 
 .footer-container{
     background-color: #00517c;
     /* background-color: #166e9d; */
-    padding: 100px 100px 30px 100px;
+    /* padding: 100px 100px 30px 100px; */
+        padding: 100px 90px 30px 220px;
     /* margin-top: 50px; */
 }
 
 
-.footer-p1{
-    font-size: 16px;
-    font-family: 'helvetnormal';
-    font-weight: 400;
-}
-
-.footer-p2{
-    color: white;
-    font-size: 14px;
-    font-family: 'helvetnormal';
-    font-weight: 400;
-    padding: 0 12px;
-    margin-top: 31px !important;
-}
-
-.footer-p2 .terms{
-    color: #2E2E2E !important;
-    font-size: 14px;
-    font-family: 'helvetnormal';
-    font-weight: 400;
-    padding: 0 12px;
-    margin-top: 31px !important;
-}
-
-.footer-h3{
-    color: #2E2E2E !important;
-    font-size: 18px;
-    font-family: 'helvetnormal';
-    font-weight: 600;
-    margin-top: 10px !important;
-}
-
-
-/* ----- Ahmed css end  --------- */
-
 .limits-footer-wrapper {
-    background-color: #fff;
-}
-
-.limits-footer-wrapper h1 {
-    color: #FF6500;
-    font-size: 22px;
-    margin-top: 50px;
+    background-color: #00517c;
+    color: white;
     font-family: 'helvetnormal';
 }
-
-.limits-footer-wrapper .footer-contact {
-    color: #004C78;
-    font-size: 22px;
-
-    margin: 0 auto;
-    line-height: .9;
-    font-family: 'helvetnormal';
+.footr-logo{
+    width: 60%;
+}
+.footer-container .row > div {
+    margin-bottom: 30px;
 }
 
-.limits-footer-wrapper h2 {
+.footer-heading {
     color: #fff;
-    font-size: 22px;
-    font-weight: 500;
-    padding-top: 15px;
-    width: fit-content;
-    margin: 0 auto;
-    line-height: .9;
-    display: flex;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 15px;
     font-family: 'helvetnormal';
 }
 
-.limits-footer-wrapper .footer-contact:hover {
-    border-bottom: 2px solid #fff;
+.footer-container ul {
+    padding-left: 0;
+    list-style: none;
 }
 
-.limits-footer-wrapper h3 {
-    color: #FF6500;
-    font-size: 20px;
-    margin-top: 40px;
+.footer-container ul li {
+    margin-bottom: 8px;
 }
 
-.limits-footer-wrapper .social-media {
-   
-    margin-top: 15px;
+.footer-container ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
 }
 
-.limits-footer-wrapper .social-media li {
-    display: inline-block;
-    margin: 0 5px;
-}
-.limits-footer-wrapper .footr-logo {
-    width: 20% !important;
-    height: auto;
-    /* max-width: 200px; */
+.footer-container ul li a:hover {
+    color: #ffb347; /* Slight hover color */
+    text-decoration: underline;
 }
 
-.limits-footer-wrapper .side-menu li {
-    display: inline-block;
-    border-right: 3px solid white;
-    padding: 0 12px;
-    color: white;
-    font-size: 18px;
-  
-}
-.limits-footer-wrapper .side-menu li a {
-
-    padding: 0 12px;
-    color: white;
-    font-size: 16px;
-
-}
-.limits-footer-wrapper .side-menu .contact a {
-
-    padding: 0 12px;
-    color: white;
-    font-size: 18px;
-   
+/* Contact Info Styling */
+.footer-container .contact-info li {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 5px;
 }
 
-.limits-footer-wrapper .side-menu .circle {
-    width: 8px;  /* Diameter of the circle */
-    height: 8px;
-    background-color: white; /* Color of the circle */
-    border-radius: 50%; /* Makes the shape a circle */
-    margin-right: 5px; /* Adds some space between the circle and the text */
+.footer-container .contact-info a {
+    color: #fff;
+    text-decoration: none;
 }
 
-
-.limits-footer-wrapper .side-menu li a {
-    color: white;
+.footer-container .contact-info a:hover {
+    text-decoration: underline;
 }
 
-.limits-footer-wrapper .credit {
-    color: #8e8e8e;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: right;
-    display: block;
+/* Social Media icons */
+.footer-container .social-media img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
 }
 
-.limits-footer-wrapper .credit a {
-    color: #8e8e8e;
+.footer-container .social-media img:hover {
+    transform: scale(1.1);
 }
 
-.limits-footer-wrapper .side-menu li:last-child {
-    border: 0;
-}
-
-
-@media only screen and (max-width: 1366px) {
-    .limits-footer-wrapper .footr-logo {
-        width: 25% !important;
-
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .limits-footer-wrapper .footr-logo {
-        width: 35% !important;
-
-    }
-}
-
-@media only screen and (max-width: 480px) {
-
+/* Mobile: Stack Columns */
+@media (max-width: 768px) {
 
 
     .footer-container{
@@ -179,41 +86,5 @@
         padding: 30px 20px 30px 20px;
     }
 
-
-    .limits-footer-wrapper .credit {
-        text-align: center;
-        margin-top: 10px;
-    }
-    .limits-footer-wrapper .side-menu li {
-        display: block;
-        border-right: 0;
-        text-align: center;
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    .limits-footer-wrapper .side-menu li a {
-  
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    .limits-footer-wrapper h1 {
-        margin-top: 8px !important;
-        font-size: 16px;
-    }
-    .limits-footer-wrapper .footr-logo {
-        width: 70% !important;
-        /* max-width: 200px; */
-    }
-    .limits-footer-wrapper h2 {
-        font-size: 16px;
-        padding-top: 8px;
-    }
-    .limits-footer-wrapper .footer-contact {
-        font-size: 16px;
-    }
-    .limits-footer-wrapper h3 {
-        font-size: 16px;
-        margin-top: 20px;
-    }
 
 }

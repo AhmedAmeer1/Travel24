@@ -1,53 +1,95 @@
 <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
 <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/footer.css?v=5')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/footer.css?v=10')?>" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <footer class="limits-footer-wrapper">
     <div class="footer-container">
-        <div class="mx-auto no-gutter text-center order-md-1 order-0">
-            <a href="<?php echo base_url()?>"> <img src="<?php echo base_url('assets/images/travel24/white-logo.png')?>" class="footr-logo" alt="Logo"></a>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <ul class="social-media ">
-                        <!-- <li>
-                            <a href="https://twitter.com/travel24taxi" target="_blank"><img src="<?php echo base_url('assets/images/travel24/x-white.png')?>" alt="icon"></a>
-                        </li> -->
-                        <li>
-                            <a href="https://www.instagram.com/travel24taxi" target="_blank"><img src="<?php echo base_url('assets/images/travel24/instagram-white.png')?>"alt="icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/travel24taxi/" target="_blank"><img src="<?php echo base_url('assets/images/travel24/facebook-white.png')?>"alt="icon"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-md-4 mt-3">
-            <div class="col-md-12 text-center">
-                <ul class="side-menu ">
-                    <li><a href="<?php echo base_url()?>" class="footer-p1">Home</a></li>
-                    <li><a href="<?php echo base_url()?>drivers" class="footer-p1">Drivers</a></li>
-                    <li><a href="<?php echo base_url()?>aboutus" class="footer-p1">About Us</a></li>
-                    <li><a href="<?php echo base_url()?>popularDestinations" class="footer-p1">Destination</a></li>
-                    <li><a href="<?php echo base_url()?>faq" class="footer-p1">FAQ</a></li>
-                    <li><a href="<?php echo base_url()?>terms" class="footer-p1">Terms & Conditions</a></li>
-                    <li><a href="<?php echo base_url()?>contactUs" class="footer-p1">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-12 text-center mt-3 ">
-                <ul class="side-menu  ">
-                    <li class="contact">Tel :<a href="tel:02039822911" class="">02039822911 </a></li>
-                    <li class="contact">Email Us :<a href="mailto:info@travel24taxi.com"
-                            class="">info@travel24taxi.com</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class=" mt-md-4 mt-3   text-center">
-            <p class="footer-p2">
-                Travel 24 Taxi is the Trading Name of NoLimit Airport Cars Ltd
-            </p>
-            <span class="footer-p2 mt-3">
-                © Travel24 2017 - 2025
-            </span>
-        </div>
-</footer>
+        <div class="row">
 
+            <!-- ===== Column 1: Logo + Contact ===== -->
+            <div class="col-md-3 text-center text-md-left mb-4 mb-md-0">
+                <a href="<?php echo base_url()?>">
+                    <img src="<?php echo base_url('assets/images/travel24/white-logo.png')?>" class="footr-logo mb-3"
+                        alt="Logo">
+                </a>
+
+                <ul class="contact-info list-unstyled mt-2">
+                    <li>
+                        <i class="fa-solid fa-phone me-2"></i>
+                        <a class="ml-2" href="tel:02039822911">02039822911</a>
+                    </li>
+                    <li class="mt-2">
+                        <i class="fa-solid fa-envelope me-2"></i>
+                        <a class="ml-2" href="mailto:info@travel24taxi.com">info@travel24taxi.com</a>
+                    </li>
+                </ul>
+
+                <ul class="social-media d-flex justify-content-center justify-content-md-start mt-4">
+                    <li>
+                        <a href="https://www.instagram.com/travel24taxi" target="_blank">
+                            <img src="<?php echo base_url('assets/images/travel24/instagram-white.png')?>"
+                                alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="ml-3">
+                        <a href="https://www.facebook.com/travel24taxi/" target="_blank">
+                            <img src="<?php echo base_url('assets/images/travel24/facebook-white.png')?>"
+                                alt="Facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ===== Column 2: Useful Links ===== -->
+            <div class="col-md-3 text-center text-md-left mb-4 mb-md-0">
+                <h5 class="footer-heading mb-3">Links</h5>
+                <ul class="side-menu list-unstyled">
+                    <li><a href="<?php echo base_url()?>">Home</a></li>
+                    <li><a href="<?php echo base_url()?>drivers">Drivers</a></li>
+                    <li><a href="<?php echo base_url()?>aboutus">About Us</a></li>
+                    <li><a href="<?php echo base_url()?>popularDestinations">Destinations</a></li>
+                    <li><a href="<?php echo base_url()?>faq">FAQ</a></li>
+                    <li><a href="<?php echo base_url()?>terms">Terms & Conditions</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- ===== Column 3: Transfer Services ===== -->
+            <div class="col-md-3 text-center text-md-left mb-4 mb-md-0">
+                <h5 class="footer-heading mb-3">Transfer Services</h5>
+                <ul class="side-menu list-unstyled">
+                    <li><a href="<?php echo base_url()?>bookNow">Airports Transfer</a></li>
+                    <li><a href="<?php echo base_url()?>bookNow">Cruise Ports Transfer</a></li>
+                    <li><a href="<?php echo base_url()?>bookNow">Media</a></li>
+                    <li><a href="<?php echo base_url()?>bookNow">Executive Chauffeur</a></li>
+                    <li><a href="<?php echo base_url()?>bookNow">Minicab Services</a></li>
+                    <li><a href="<?php echo base_url()?>bookNow">University Student Transfer</a></li>
+                </ul>
+            </div>
+
+            <!-- ===== Column 4: Our Services ===== -->
+            <div class="col-md-3 text-center text-md-left">
+                <h5 class="footer-heading mb-3">Our Services</h5>
+                <ul class="side-menu list-unstyled">
+                    <li><a href="<?php echo base_url()?>contactUs">Man and Van Services</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Parcel Services</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Weddings / Parties</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Vehicle Rent</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Accident Claims</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Business Account</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">School Services</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Coach Transfer</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Day Hire</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== Footer Bottom ===== -->
+    <div class="text-center py-3  border-top">
+         <span class="footer-p2">Travel 24 Taxi is the Trading Name of NoLimit Airport Cars Ltd</span><br/><br/>
+        <span class="footer-p2">© Travel24 2017 - 2025</span>
+    </div>
+</footer>

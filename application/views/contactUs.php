@@ -113,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div class="subbottom_text">
+        <div class="subbottom_text pb-5">
             If you would like a quote for a journey you are planning please use our
             online booking form or call us on&nbsp;<a href="tel:02039822911">02039 822 911</a>.
         </div>
