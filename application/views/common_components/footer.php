@@ -64,6 +64,8 @@
                     <li><a href="<?php echo base_url()?>bookNow">Executive Chauffeur</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">Minicab Services</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">University Student Transfer</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Man and Van Services</a></li>
+                    <li><a href="<?php echo base_url()?>contactUs">Parcel Services</a></li>
                 </ul>
             </div>
 
@@ -71,8 +73,7 @@
             <div class="col-md-3 text-center text-md-left">
                 <!-- <h5 class="footer-heading mb-3">Our Services</h5> -->
                 <ul class="side-menu list-unstyled mt-4">
-                    <li><a href="<?php echo base_url()?>contactUs">Man and Van Services</a></li>
-                    <li><a href="<?php echo base_url()?>contactUs">Parcel Services</a></li>
+
                     <li><a href="<?php echo base_url()?>contactUs">Weddings / Parties</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Vehicle Rent</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Accident Claims</a></li>

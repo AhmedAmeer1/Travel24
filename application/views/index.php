@@ -2,7 +2,7 @@
 <html lang="en">
 <?php $this->load->view('common_components/Home/head'); ?>
 <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/index.css?v=21')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/index.css?v=18')?>" rel="stylesheet" />
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
@@ -114,6 +114,9 @@
         </section>
         <!-- Customer Review Container -->
         <?php $this->load->view('common_components/customerReview.php',array('CustomerReviewData' => $CustomerReviewData)); ?>
+        <!-- UK Airports Section -->
+        <?php $this->load->view('common_components/Home/airports-section.php'); ?>
+
     </main>
     <?php $this->load->view('common_components/footer'); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
