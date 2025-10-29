@@ -251,23 +251,23 @@ class Index extends CI_Controller
 		$_SESSION["book_data"] = $booking;
 
 		// setting cokies for online payment  because session variable is not working for first time online booking 
-		set_cookie('first_name', $booking['first_name'], 86400);
-		set_cookie('last_name', $booking['last_name'], 86400);
-		set_cookie('email', $booking['email'], 86400);
-		set_cookie('phone', $booking['phone'], 86400);
+		// set_cookie('first_name', $booking['first_name'], 86400);
+		// set_cookie('last_name', $booking['last_name'], 86400);
+		// set_cookie('email', $booking['email'], 86400);
+		// set_cookie('phone', $booking['phone'], 86400);
 		set_cookie('vehicle_id', $booking['vehicle_id'], 86400);
-		set_cookie('service_type', $booking['service_type'], 86400);
-		set_cookie('source', $booking['source'], 86400);
-		set_cookie('destination', $booking['destination'], 86400);
+		// set_cookie('service_type', $booking['service_type'], 86400);
+		// set_cookie('source', $booking['source'], 86400);
+		// set_cookie('destination', $booking['destination'], 86400);
 
-		set_cookie('way_point_1', $booking['way_point_1'], 86400);
-		set_cookie('way_point_2', $booking['way_point_2'], 86400);
-		set_cookie('way_point_3', $booking['way_point_3'], 86400);
+		// set_cookie('way_point_1', $booking['way_point_1'], 86400);
+		// set_cookie('way_point_2', $booking['way_point_2'], 86400);
+		// set_cookie('way_point_3', $booking['way_point_3'], 86400);
 
 		set_cookie('dates', $dates, 86400);
 		set_cookie('travel_date', $booking['travel_date'], 86400);
 		set_cookie('travel_time', $booking['travel_time'], 86400);
-		set_cookie('pick_up_door_name', $booking['pick_up_door_name'], 86400);
+		// set_cookie('pick_up_door_name', $booking['pick_up_door_name'], 86400);
 		set_cookie('flight_no', $booking['flight_no'], 86400);
 
 
@@ -283,7 +283,7 @@ class Index extends CI_Controller
 
 		
 	
-		set_cookie('hand_lagguage', $input['hand_lagguage'], 86400);
+		// set_cookie('hand_lagguage', $input['hand_lagguage'], 86400);
 		set_cookie('pick_up', $input['pick_up'], 86400);
 		set_cookie('total_fare', $booking['amount'], 86400);
 		set_cookie('travel_type', ($booking['service_type'] == "1" ? "Single" : "Return"), 86400);
@@ -704,6 +704,7 @@ class Index extends CI_Controller
 		$data['total'] = ($_SESSION['total_fare']);
 
 
+
 		$bookingData = [
 			'first_name' => $_SESSION["book_data"]['first_name'],
 			'last_name' => $_SESSION["book_data"]['last_name'],
@@ -713,15 +714,9 @@ class Index extends CI_Controller
 			'service_type' => $_SESSION["book_data"]['service_type'],
 			'source' => $_SESSION["book_data"]['source'],
 			'destination' => $_SESSION["book_data"]['destination'],
-
 			'way_point_1' => $_SESSION["book_data"]['way_point_1'],
 			'way_point_2' =>$_SESSION["book_data"]['way_point_2'],
 			'way_point_3' => $_SESSION["book_data"]['way_point_3'],
-
-			// 'way_point_1' => get_cookie('way_point_1') || '',
-			// 'way_point_2' => get_cookie('way_point_2') || '',
-			// 'way_point_3' => get_cookie('way_point_3') || '',
-
 			'travel_date' => $_SESSION["book_data"]['travel_date'],
 			'travel_time' => $_SESSION["book_data"]['travel_time'],
 			'pick_up_door_name' => $_SESSION["book_data"]['pick_up_door_name'],
@@ -748,14 +743,7 @@ class Index extends CI_Controller
 			'promocode' => get_cookie('promocode') || '',
 			'total_fare' => get_cookie('total_fare'),
 			'flight_no' => get_cookie('flight_no'),
-			'way_point_1' => get_cookie('way_point_1') || '',
-			'way_point_2' => get_cookie('way_point_2') || '',
-			'way_point_3' => get_cookie('way_point_3') || '',
 			'total' => $_SESSION["book_data"]['amount'],
-			
-
-
-
 			'sub_total' =>  get_cookie('base_fare'),
 		];
 
@@ -798,16 +786,6 @@ class Index extends CI_Controller
 		$bookingOtherDataJson = $this->input->get('bookingOtherData');
 		$bookingOtherData = json_decode(urldecode($bookingOtherDataJson), true);
 
-	 	 debug_log(" bookingData --------- ");
-         debug_log($bookingData);
-
-		 debug_log(" bookingOtherData --------- ");
-         debug_log($bookingOtherData);
-
-		 debug_log(" cookies test  --------- ");
-         debug_log(get_cookie('way_point_1'));
-      		debug_log(get_cookie('way_point_2'));
-	        debug_log(get_cookie('way_point_3'));
 
 
 
@@ -836,12 +814,6 @@ class Index extends CI_Controller
 		$data['booking_id'] = $result['booking_id'];;
 
 		$this->db->where('vehicle_id', $bookingOtherData['vehice_id']);
-
-
-	// $this->db->where('vehicle_id', $_SESSION["vehice_id"]);
-	// $this->db->where('vehicle_id', $input['selected_vehicle_id']);
-
-
 		$data = $bookingData;
 		$data['booking_id'] = $result['booking_id'];
 		$data['vehicle'] = $bookingOtherData['vehicle'];
@@ -850,21 +822,9 @@ class Index extends CI_Controller
 		$data['pick_up'] = $bookingOtherData['pick_up'];
 		$data['scomments_special_inst'] ='Removed from Frontend';
 		$data['promocode'] = $bookingOtherData['promocode'];
-
-
 		$data['sub_total'] = $bookingOtherData['sub_total'];
 		$data['total'] = $bookingOtherData['total'];
 		$data['flight_no'] = $bookingOtherData['flight_no'];
-
-
-
-	    // $data['way_point_1'] = $bookingOtherData['way_point_1'];
-		// $data['way_point_2'] = $bookingOtherData['way_point_2'];
-		// $data['way_point_3'] = $bookingOtherData['way_point_3'];
-
-
-
-
 		$data['total_fare'] = $bookingOtherData['total_fare'];
 		$data['type'] = "Online";
 
