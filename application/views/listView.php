@@ -715,6 +715,8 @@
             "cash";
         var selected_vehicle_name = $(".list-box.selected-card").data("vehicle-title") || "";
 
+            // Ensure promoDiscountAmount is formatted to 2 decimals
+            promoDiscountAmount = parseFloat(promoDiscountAmount || 0).toFixed(2);
 
         // Persist selection like original flow expected
         // (server can read from session or request—here we send as part of init)

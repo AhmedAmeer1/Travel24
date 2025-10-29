@@ -251,62 +251,30 @@ class Index extends CI_Controller
 		$_SESSION["book_data"] = $booking;
 
 		// setting cokies for online payment  because session variable is not working for first time online booking 
-		// set_cookie('first_name', $booking['first_name'], 86400);
-		// set_cookie('last_name', $booking['last_name'], 86400);
-		// set_cookie('email', $booking['email'], 86400);
-		// set_cookie('phone', $booking['phone'], 86400);
 		set_cookie('vehicle_id', $booking['vehicle_id'], 86400);
-		// set_cookie('service_type', $booking['service_type'], 86400);
-		// set_cookie('source', $booking['source'], 86400);
-		// set_cookie('destination', $booking['destination'], 86400);
-
-		// set_cookie('way_point_1', $booking['way_point_1'], 86400);
-		// set_cookie('way_point_2', $booking['way_point_2'], 86400);
-		// set_cookie('way_point_3', $booking['way_point_3'], 86400);
-
 		set_cookie('dates', $dates, 86400);
 		set_cookie('travel_date', $booking['travel_date'], 86400);
 		set_cookie('travel_time', $booking['travel_time'], 86400);
-		// set_cookie('pick_up_door_name', $booking['pick_up_door_name'], 86400);
-		set_cookie('flight_no', $booking['flight_no'], 86400);
-
-
-
-	
+		set_cookie('flight_no', $booking['flight_no'], 86400);	
 		set_cookie('user_id', $booking['user_id'], 86400);
 		set_cookie('userType', $booking['userType'], 86400);
 		set_cookie('status', $booking['status'], 86400);
-
 		set_cookie('base_fare',  $input['subTotal'], 86400);
 		set_cookie('promocode_discount', $booking['promocode_discount'], 86400);
 		set_cookie('amount', $booking['amount'], 86400);
-
-		
-	
-		// set_cookie('hand_lagguage', $input['hand_lagguage'], 86400);
 		set_cookie('pick_up', $input['pick_up'], 86400);
 		set_cookie('total_fare', $booking['amount'], 86400);
 		set_cookie('travel_type', ($booking['service_type'] == "1" ? "Single" : "Return"), 86400);
 		set_cookie('selected_vehicle_id', $booking['selected_vehicle_id'], 86400);
 		$this->db->where('vehicle_id',$booking['selected_vehicle_id']);
-		// set_cookie('vehicleName', $this->db->get('vehicle')->row('title'), 86400);
 		set_cookie('vehicleName',  $input['selected_vehicle_name'], 86400);
-
-
 
 		$this->load->helper('custom_helper');
 
-
-
 		$return = array();
-
 
 		if ($input['payment_method'] == "cash") {
 			$result = $this->Index_Model->save_booking();
-
-
-
-
 			if ($result['status'] == 1) {
 
 				$return['booking_id'] = $result['booking_id'];
