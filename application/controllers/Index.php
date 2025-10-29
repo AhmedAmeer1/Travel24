@@ -714,6 +714,10 @@ class Index extends CI_Controller
 			'source' => $_SESSION["book_data"]['source'],
 			'destination' => $_SESSION["book_data"]['destination'],
 
+			'way_point_1' => $_SESSION["book_data"]['way_point_1'],
+			'way_point_2' =>$_SESSION["book_data"]['way_point_2'],
+			'way_point_3' => $_SESSION["book_data"]['way_point_3'],
+
 			// 'way_point_1' => get_cookie('way_point_1') || '',
 			// 'way_point_2' => get_cookie('way_point_2') || '',
 			// 'way_point_3' => get_cookie('way_point_3') || '',
@@ -800,6 +804,13 @@ class Index extends CI_Controller
 		 debug_log(" bookingOtherData --------- ");
          debug_log($bookingOtherData);
 
+		 debug_log(" cookies test  --------- ");
+         debug_log(get_cookie('way_point_1'));
+      		debug_log(get_cookie('way_point_2'));
+	        debug_log(get_cookie('way_point_3'));
+
+
+
 		$_SESSION['hand_lagguage'] = $bookingOtherData['hand_lagguage'];
 		$_SESSION['pick_up'] = $bookingOtherData['pick_up'];
 		$_SESSION['scomments_special_inst']  ='Removed from Frontend';
@@ -847,9 +858,9 @@ class Index extends CI_Controller
 
 
 
-	    $data['way_point_1'] = $bookingOtherData['way_point_1'];
-		$data['way_point_2'] = $bookingOtherData['way_point_2'];
-		$data['way_point_3'] = $bookingOtherData['way_point_3'];
+	    // $data['way_point_1'] = $bookingOtherData['way_point_1'];
+		// $data['way_point_2'] = $bookingOtherData['way_point_2'];
+		// $data['way_point_3'] = $bookingOtherData['way_point_3'];
 
 
 
