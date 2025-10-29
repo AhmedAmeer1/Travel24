@@ -714,9 +714,9 @@ class Index extends CI_Controller
 			'source' => $_SESSION["book_data"]['source'],
 			'destination' => $_SESSION["book_data"]['destination'],
 
-			'way_point_1' => get_cookie('way_point_1') || '',
-			'way_point_2' => get_cookie('way_point_2') || '',
-			'way_point_3' => get_cookie('way_point_3') || '',
+			// 'way_point_1' => get_cookie('way_point_1') || '',
+			// 'way_point_2' => get_cookie('way_point_2') || '',
+			// 'way_point_3' => get_cookie('way_point_3') || '',
 
 			'travel_date' => $_SESSION["book_data"]['travel_date'],
 			'travel_time' => $_SESSION["book_data"]['travel_time'],
@@ -743,7 +743,12 @@ class Index extends CI_Controller
 			'scomments_special_inst' => 'Removed from Frontend',
 			'promocode' => get_cookie('promocode') || '',
 			'total_fare' => get_cookie('total_fare'),
+			'flight_no' => get_cookie('flight_no'),
+			'way_point_1' => get_cookie('way_point_1') || '',
+			'way_point_2' => get_cookie('way_point_2') || '',
+			'way_point_3' => get_cookie('way_point_3') || '',
 			'total' => $_SESSION["book_data"]['amount'],
+			
 
 
 
@@ -789,6 +794,11 @@ class Index extends CI_Controller
 		$bookingOtherDataJson = $this->input->get('bookingOtherData');
 		$bookingOtherData = json_decode(urldecode($bookingOtherDataJson), true);
 
+	 	 debug_log(" bookingData --------- ");
+         debug_log($bookingData);
+
+		 debug_log(" bookingOtherData --------- ");
+         debug_log($bookingOtherData);
 
 		$_SESSION['hand_lagguage'] = $bookingOtherData['hand_lagguage'];
 		$_SESSION['pick_up'] = $bookingOtherData['pick_up'];
@@ -823,7 +833,6 @@ class Index extends CI_Controller
 
 		$data = $bookingData;
 		$data['booking_id'] = $result['booking_id'];
-		// $data['vehicle'] = $this->db->get('vehicle')->row('title');
 		$data['vehicle'] = $bookingOtherData['vehicle'];
 		$data['travel_type'] = $bookingOtherData['travel_type'];
 		$data['hand_lagguage'] = $bookingOtherData['hand_lagguage'];
@@ -834,6 +843,17 @@ class Index extends CI_Controller
 
 		$data['sub_total'] = $bookingOtherData['sub_total'];
 		$data['total'] = $bookingOtherData['total'];
+		$data['flight_no'] = $bookingOtherData['flight_no'];
+
+
+
+	    $data['way_point_1'] = $bookingOtherData['way_point_1'];
+		$data['way_point_2'] = $bookingOtherData['way_point_2'];
+		$data['way_point_3'] = $bookingOtherData['way_point_3'];
+
+
+
+
 		$data['total_fare'] = $bookingOtherData['total_fare'];
 		$data['type'] = "Online";
 
