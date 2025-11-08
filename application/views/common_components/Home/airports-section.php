@@ -1,5 +1,5 @@
 <section class="uk-airports-section"
-    style="background: url('<?php echo base_url('assets/images/travel24/airport-terminal.jpg'); ?>') no-repeat center center/cover;">
+    style="background: url('<?php echo base_url('assets/images/travel24/airport-terminal.webp'); ?>') no-repeat center center/cover;">
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-md-7 col-sm-12">
