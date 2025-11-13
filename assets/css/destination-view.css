@@ -1,38 +1,83 @@
-.blog-details h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-.blog-details p {
-    font-size: 1.5srem;
-    margin-bottom: 15px;
-    line-height: 25px;
-    color: #495057
+.heathrow_container {
+	background-color: #d6dfe7;
+	padding: 77px 160px 100px 160px;
 }
 
-.blog-details span {
-    font-size: 24px;
+.heathrow-guide-title {
+	font-weight: 700;
+	text-align: left;
+	color: #000;
+	font-size: 25px;
+}
 
-    margin-bottom: 15px;
-    line-height: 32px;
-    color: #495057
+.read-more-btn {
+	font-size: 16px;
 }
 
 @media (max-width: 768px) {
-    .blog-details h1 {
-        font-size: 2rem;
-        /* Slightly smaller on tablets */
-    }
+	.heathrow-guide-title {
+		font-size: 17px;
+		line-height: 1.4;
+	}
+
+	.read-more-btn {
+		font-size: 14px !important;
+	}
+}
+
+@media only screen and (max-width: 1866px) {
+	.heathrow_container {
+		padding: 77px 85px 100px 85px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	.heathrow_container {
+		padding: 77px 5px 100px 5px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.heathrow_container {
+		padding: 77px 30px 100px 30px;
+	}
+}
+
+.blog-details h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.blog-details p {
+	font-size: 1.5srem;
+	margin-bottom: 15px;
+	line-height: 25px;
+	color: #495057;
+}
+
+.blog-details span {
+	font-size: 24px;
+
+	margin-bottom: 15px;
+	line-height: 32px;
+	color: #495057;
+}
+
+@media (max-width: 768px) {
+	.blog-details h1 {
+		font-size: 2rem;
+		/* Slightly smaller on tablets */
+	}
 }
 
 @media (max-width: 576px) {
-    .blog-details h1 {
-        font-size: 1.75rem;
-        /* Smaller on mobile */
-    }
+	.blog-details h1 {
+		font-size: 1.75rem;
+		/* Smaller on mobile */
+	}
 
-    .blog-details p {
-        font-size: 0.9rem;
-        line-height: 22px;
-        /* Adjust paragraph size on mobile */
-    }
+	.blog-details p {
+		font-size: 0.9rem;
+		line-height: 22px;
+		/* Adjust paragraph size on mobile */
+	}
 }
