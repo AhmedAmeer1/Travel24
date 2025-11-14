@@ -28,22 +28,6 @@
 	background-color: #fff;
 }
 
-.heathrow-guide-section h1 {
-	font-size: 32px;
-	font-weight: 800;
-	color: #000;
-	line-height: 1.3;
-	margin-bottom: 20px;
-}
-
-.heathrow-guide-section span {
-	display: inline-block;
-	font-size: 16px;
-	color: #00517c;
-	font-weight: 600;
-	margin-bottom: 15px;
-}
-
 .heathrow-guide-section p {
 	font-size: 17px;
 	color: #333;
@@ -63,25 +47,73 @@
 	}
 }
 
-/* ===== Heathrow Terminals Section ===== */
-
-.heathrow-terminals-section {
-	margin-top: 20px;
-}
-
-.heathrow-terminals-section h2 {
+.heathrow-title {
 	font-size: 30px;
 	font-weight: 800;
 	color: #000;
 	margin-bottom: 20px;
 }
-
-.heathrow-terminals-section p {
+.heathrow-subTitle {
+	font-size: 25px;
+	font-weight: 800;
+	color: #000;
+}
+.heathrow-parahraph {
 	font-size: 17px;
 	color: #333;
-	line-height: 1.7;
+	line-height: 1.5;
 	margin-bottom: 15px;
 	text-align: left;
+	margin-bottom: 5px;
+}
+.heathrow-link {
+	color: #333;
+	text-decoration: underline;
+}
+
+.heathrow-btn {
+	font-size: 16px;
+}
+
+/* ===== Terminal Bullet Styling ===== */
+
+.terminal-features {
+	margin-top: 15px;
+	padding-left: 20px;
+}
+
+.terminal-features li {
+	margin-bottom: 8px;
+	list-style-type: disc;
+}
+
+.terminal-features li strong {
+	font-size: 18px;
+	color: #000;
+}
+
+.terminal-features p {
+	margin-top: 5px;
+	margin-bottom: 0;
+	font-size: 16px;
+	color: #444;
+	line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+	.terminal-features li strong {
+		font-size: 16px;
+	}
+	.terminal-features p {
+		font-size: 15px;
+	}
+}
+
+/* ===== Heathrow Terminals Section ===== */
+
+.heathrow-terminals-section {
+	margin-top: 20px;
 }
 
 .heathrow-terminals-section img {
@@ -94,16 +126,6 @@
 @media (max-width: 767px) {
 	.heathrow-terminals-section {
 		padding: 50px 15px;
-	}
-
-	.heathrow-terminals-section h2 {
-		font-size: 24px;
-		text-align: center;
-	}
-
-	.heathrow-terminals-section p {
-		font-size: 15px;
-		text-align: justify;
 	}
 
 	.heathrow-terminals-section img {
