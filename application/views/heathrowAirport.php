@@ -17,7 +17,7 @@
     <link rel="canonical" href="https://travel24taxi.com/terms">
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=10')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/heathrow-airport?v=18')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/heathrow-airport?v=19')?>" rel="stylesheet" />
 
 
 
@@ -132,7 +132,7 @@
 
 
         <div class="heathrow-container">
-            <div class="heathrow-guide-section">
+            <div class="section-marginTop">
                 <div class=" ">
                     <div class="">
                         <h1 class="text-left  heathrow-title">
@@ -140,7 +140,7 @@
                         </h1>
                         <div class="text-left mt-3">
                             <span class='heathrow-subTitle'>Heathrow Airport information</span>
-                            <p class="mt-4">
+                            <p class="mt-4 heathrow-parahraph">
                                 London Heathrow Airport is one of the largest and busiest airline hubs in the world,
                                 which
                                 is located approximately 23 kilometres away to the west of Central London, covering an
@@ -164,7 +164,7 @@
             </div>
 
 
-            <section class="heathrow-terminals-section">
+            <section class="heathrow-terminals-section section-marginTop">
                 <div class="">
                     <div class="row align-items-center">
                         <!-- ===== LEFT SIDE: Text ===== -->
@@ -224,8 +224,9 @@
 
                         <!-- ===== RIGHT SIDE: Image ===== -->
                         <div class="col-lg-6 col-md-12 text-center">
-                            <img src="<?php echo base_url('assets/images/travel24/destination-view/airport-terminal.jpg') ?>"
-                                alt="Heathrow Airport Terminals" class="img-fluid rounded shadow">
+                            <img src="<?php echo base_url('assets/images/travel24/full-shot-woman-traveling-with-baggage.jpg') ?>"
+                                alt="full-shot-woman-traveling-with-baggage"
+                                class="img-fluid rounded shadow heathrow-terminals-section-img">
                         </div>
                     </div>
                 </div>
@@ -251,7 +252,7 @@
 
 
 
-            <section class=" my-5">
+            <section class="section-marginTop">
                 <div class="">
                     <div class="row ">
                         <!-- ===== LEFT SIDE: Text ===== -->
@@ -314,35 +315,35 @@
 
 
 
-            <section class="">
+            <section class="section-marginTop">
                 <div class="">
                     <div class="row align-items-center">
                         <!-- ===== LEFT SIDE: Text ===== -->
                         <div class="col-lg-6 col-md-12">
                             <h2 class='heathrow-title'>Tips for Travelers</h2>
-                            <p class='heathrow-parahraph'>
+                            <p class='heathrow-parahraph mt-4'>
                                 Whether you are a frequent flyer or it’s your first time at Heathrow, there are useful
                                 tips that can help streamline your journey.
                             </p>
-                            <p class="heathrow-parahraph">
+                            <p class="heathrow-parahraph mt-4">
                                 Whether you are a frequent flyer or it’s your first time at Heathrow, there are useful
                                 tips that can help streamline your journey.
                             </p>
-                            <p class='heathrow-parahraph'>
+                            <p class='heathrow-parahraph mt-4'>
                                 The security process at Heathrow airport is strictly maintained to ensure safety of all
                                 passengers, authorities and flights. Therefore it is mandatory for passengers to go
                                 through security checks at security control points after check-in and baggage drop. A
                                 staff member is assigned to scan your Boarding Pass before entering this area therefore
                                 ensuring accessibility of all the necessary documents is crucial.
                             </p>
-                            <p class='heathrow-parahraph'>
+                            <p class='heathrow-parahraph mt-4'>
                                 After your flight lands head to Baggage claim areas, located inside the arrival area,
                                 after passing the passport control (for international flights). Directions to these
                                 areas will be shown through clear signs at the airport. There you can collect your
                                 bags/luggage when it appear on the carousel (conveyor belt) which shows your flight
                                 number. You would have to proceed at the customs if required before exiting the airport.
                             </p>
-                            <p class='heathrow-parahraph'>
+                            <p class='heathrow-parahraph mt-4'>
                                 When it comes to connecting journeys at Heathrow, first you will have to enter ‘Flight
                                 Connections’ area after you have disembarked from the landed aircraft. Then look up the
                                 screens at the area, to find out which terminal your connecting flight departs from. You
@@ -358,8 +359,9 @@
 
                         <!-- ===== RIGHT SIDE: Image ===== -->
                         <div class="col-lg-6 col-md-12 text-center">
-                            <img src="<?php echo base_url('assets/images/travel24/destination-view/airport-terminal.jpg') ?>"
-                                alt="Heathrow Airport Terminals" class="img-fluid rounded shadow">
+                            <img src="<?php echo base_url('assets/images/travel24/destination-view/charming-blonde-woman-white-blouse-beige-pants-eyeglasses-moves-near-airport.jpg') ?>"
+                                alt="charming-blonde-woman-white-blouse-beige-pants-eyeglasses-moves-near-airport"
+                                class="img-fluid rounded shadow">
                         </div>
                     </div>
                 </div>
@@ -373,7 +375,7 @@
 
 
 
-            <section class=" my-5">
+            <section class=" section-marginTop">
                 <div class="">
                     <div class="row ">
                         <!-- ===== LEFT SIDE: Text ===== -->
@@ -399,17 +401,17 @@
                                 Click the following links to receive live updates on Heathrow Flight Arrival and
                                 Departure respectively
                             </p>
-                            <div class="d-flex justify-content-center gap-5">
+                            <div class="d-flex justify-content-center gap-5 mt-2">
                                 <div class="text-center">
                                     <a href="https://www.heathrow.com/arrivals" class="btn btn-dark heathrow-btn"
-                                        style="border-radius: 18px; padding: 12px 55px; font-weight: 600;">
+                                        style="border-radius: 25px; font-weight: 600;">
                                         Arrivals
                                     </a>
                                 </div>
 
                                 <div class="text-center ml-4">
                                     <a href="https://www.heathrow.com/departures" class="btn btn-dark heathrow-btn"
-                                        style="border-radius: 18px; padding: 12px 55px; font-weight: 600;">
+                                        style="border-radius: 25px; font-weight: 600;">
                                         Departures
                                     </a>
                                 </div>
@@ -446,7 +448,7 @@
 
 
 
-            <section class=" my-5">
+            <section class="  section-marginTop">
                 <div class="">
                     <div class="row ">
                         <!-- ===== LEFT SIDE: Text ===== -->
@@ -460,7 +462,7 @@
                                 Some of the popular place are:
                             </p>
 
-                            <ul class="terminal-features">
+                            <ul class="heathrow-attractions-list">
                                 <li>Windsor Castle </li>
                                 <li>Hampton Court Palace </li>
                                 <li>Kew Gardens (Royal Botanic Gardens) </li>
@@ -492,7 +494,7 @@
 
 
 
-                            <ul class="terminal-features">
+                            <ul class="heathrow-attractions-list">
                                 <li>Terminal drop-off </li>
                                 <li>Baggage assistance </li>
                                 <li>Terminal Pick-up</li>
