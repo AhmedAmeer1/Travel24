@@ -17,7 +17,7 @@
     <link rel="canonical" href="https://travel24taxi.com/terms">
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=10')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/heathrow-airport?v=19')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/heathrow-airport?v=12')?>" rel="stylesheet" />
 
 
 
