@@ -140,7 +140,7 @@
 
             <!-- Centered button -->
             <div class="text-center">
-                <a href="<?php echo base_url()?>heathrowAirport" class="btn btn-dark mt-3 read-more-btn"
+                <a href="<?php echo base_url()?>completeGuideToHeathrowAirportLHR" class="btn btn-dark mt-3 read-more-btn"
                     style="border-radius: 18px; padding: 12px 55px;  font-weight: 600;">
                     READ MORE
                 </a>

@@ -180,7 +180,7 @@
                                 faiths around the world. On top of that, each terminal features wide parking areas,
                                 allowing convenient ground transportation to and from Heathrow.
                             </p>
-                            <p class="heathrow-parahraph">
+                            <p class="heathrow-parahraph mt-4">
                                 Similarly, there are terminal-specific facilities, which adds to the exceptional
                                 services provided at Heathrow.
                             </p>
@@ -360,8 +360,8 @@
                         <!-- ===== RIGHT SIDE: Image ===== -->
                         <div class="col-lg-6 col-md-12 text-center">
                             <img src="<?php echo base_url('assets/images/travel24/destination-view/charming-blonde-woman-white-blouse-beige-pants-eyeglasses-moves-near-airport.jpg') ?>"
-                                alt="charming-blonde-woman-white-blouse-beige-pants-eyeglasses-moves-near-airport"
-                                class="img-fluid rounded shadow">
+                                alt="charming-blonde-woman" class="img-fluid rounded shadow tips-image">
+
                         </div>
                     </div>
                 </div>
@@ -480,7 +480,7 @@
 
 
                         <div class="col-lg-6 col-md-12 ">
-                            <h2 class='heathrow-title'>Travel24 Heathrow Airport Transfer</h2>
+                            <h2 class='heathrow-title mt-4 mt-md-0'>Travel24 Heathrow Airport Transfer</h2>
                             <p class='heathrow-parahraph'>
                                 At Travel24, we offer efficient and reliable transfers; pick-ups and drop-offs from and
                                 to Heathrow Airport for affordable rates. With a range of vehicle options, we cater to

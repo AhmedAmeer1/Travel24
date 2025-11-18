@@ -9,6 +9,22 @@
 	margin-top: 80px;
 }
 
+/* Reduce image height but keep responsiveness */
+.tips-image {
+    max-height: 820px;      /* adjust the height as you like */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .tips-image {
+        max-height: none;  /* smaller for mobiles */
+    }
+}
+
+
+
 @media only screen and (max-width: 1866px) {
 	.heathrow-container {
 		padding: 77px 85px 100px 85px;
