@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +8,7 @@
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Complete Guide to Heathrow Airport - LHR</title>
-    <meta name="description"
-        content="Discover Heathrow Airport (LHR) with our complete guide covering terminals, facilities, transfer options, travel tips, nearby hotels and attractions, plus trusted private taxi services by Travel24." />
+    <meta name="description" content="Discover Heathrow Airport (LHR) with our complete guide covering terminals, facilities, transfer options, travel tips, nearby hotels and attractions, plus trusted private taxi services by Travel24." />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
@@ -20,39 +18,35 @@
     <link href="<?php echo base_url('assets/css/index.css?v=10')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/heathrow-airport.css?v=12')?>" rel="stylesheet" />
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+    <script type="application/ld+json">
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://travel24taxi.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "London Heathrow Airport Transfer Taxi Services",
-      "item": "https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Complete Guide to Heathrow Airport (LHR)",
-      "item": "https://travel24taxi.com/completeGuideToHeathrowAirportLHR"
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://travel24taxi.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "London Heathrow Airport Transfer Taxi Services",
+                "item": "https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Complete Guide to Heathrow Airport (LHR)",
+                "item": "https://travel24taxi.com/completeGuideToHeathrowAirportLHR"
+            }
+        ]
     }
-  ]
-}
-</script>
-
+    </script>
     <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
-
     <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -60,16 +54,10 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
-
 <body>
     <?php $this->load->view('common_components/header'); ?>
-
-
     <main class="home">
-
-
         <div class="responsive-header-image mt-2"></div>
-
         <section class="limits-banner">
             <div class="banner_container ">
                 <div class="row ">
@@ -132,31 +120,7 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </section>
-
-
-
         <div class="heathrow-container">
             <div class="section-marginTop">
                 <div class=" ">
@@ -188,8 +152,6 @@
                     </div>
                 </div>
             </div>
-
-
             <section class="heathrow-terminals-section section-marginTop">
                 <div class="">
                     <div class="row align-items-center">
@@ -210,7 +172,6 @@
                                 Similarly, there are terminal-specific facilities, which adds to the exceptional
                                 services provided at Heathrow.
                             </p>
-
                             <ul class="terminal-features">
                                 <li>
                                     <strong>Terminal 2:</strong>
@@ -219,7 +180,6 @@
                                         range of duty-free shops, self-service check-in kiosks and airport Lounges.
                                     </span>
                                 </li>
-
                                 <li>
                                     <strong>Terminal 3:</strong>
                                     <span>
@@ -227,7 +187,6 @@
                                         for passengers with mobility needs and family services.
                                     </span>
                                 </li>
-
                                 <li>
                                     <strong>Terminal 4:</strong>
                                     <span>
@@ -236,7 +195,6 @@
                                         parking and transport links.
                                     </span>
                                 </li>
-
                                 <li>
                                     <strong>Terminal 5:</strong>
                                     <span>
@@ -245,9 +203,7 @@
                                     </span>
                                 </li>
                             </ul>
-
                         </div>
-
                         <!-- ===== RIGHT SIDE: Image ===== -->
                         <div class="col-lg-6 col-md-12 text-center">
                             <img src="<?php echo base_url('assets/images/travel24/destination-view/full-shot-woman-traveling-with-baggage.jpg') ?>"
@@ -257,27 +213,6 @@
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <section class="section-marginTop">
                 <div class="">
                     <div class="row ">
@@ -302,8 +237,6 @@
                                 as business travellers. (to book your ride – www.travel24taxi.com)
                             </p>
                         </div>
-
-
                         <div class="col-lg-6 col-md-12 ">
                             <h2 class='heathrow-title'>Heathrow Airport Facilities</h2>
                             <p class='heathrow-parahraph'>
@@ -315,9 +248,6 @@
                             <p class='heathrow-parahraph'>
                                 Some of the important facilities include:
                             </p>
-
-
-
                             <ul class="terminal-features">
                                 <li> Wi-Fi and Charging Stations</li>
                                 <li> Airport Lounges </li>
@@ -325,22 +255,10 @@
                                 <li> Currency Exchange and ATMs</li>
                                 <li> Assistance Services </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
-
             <section class="section-marginTop">
                 <div class="">
                     <div class="row align-items-center">
@@ -378,29 +296,15 @@
                                 accordingly. If your connecting onto a domestic flight you should pass through UK
                                 immigration prior to security. Finally enter the departure lounge for your 2nd flight. .
                             </p>
-
-
-
                         </div>
-
                         <!-- ===== RIGHT SIDE: Image ===== -->
                         <div class="col-lg-6 col-md-12 text-center">
                             <img src="<?php echo base_url('assets/images/travel24/destination-view/charming-blonde-woman-white-blouse-beige-pants-eyeglasses-moves-near-airport.jpg') ?>"
                                 alt="charming-blonde-woman" class="img-fluid rounded shadow tips-image">
-
                         </div>
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
             <section class=" section-marginTop">
                 <div class="">
                     <div class="row ">
@@ -413,10 +317,7 @@
                                 These hotels has plenty of options, tailored to suit different budget ranges from budget
                                 friendly hotels to luxury hotels and resorts.
                             </p>
-
                         </div>
-
-
                         <div class="col-lg-6 col-md-12 ">
                             <h2 class='heathrow-title'>Flight Information & Updates</h2>
                             <p class='heathrow-parahraph'>
@@ -442,38 +343,10 @@
                                     </a>
                                 </div>
                             </div>
-
-
-
-
-
-
-
                         </div>
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <section class="  section-marginTop">
                 <div class="">
                     <div class="row ">
@@ -487,7 +360,6 @@
                             <p class='heathrow-parahraph'>
                                 Some of the popular place are:
                             </p>
-
                             <ul class="heathrow-attractions-list">
                                 <li>Windsor Castle </li>
                                 <li>Hampton Court Palace </li>
@@ -503,8 +375,6 @@
 
                             </ul>
                         </div>
-
-
                         <div class="col-lg-6 col-md-12 ">
                             <h2 class='heathrow-title mt-4 mt-md-0'>Travel24 Heathrow Airport Transfer</h2>
                             <p class='heathrow-parahraph'>
@@ -517,9 +387,6 @@
                             <p class='heathrow-parahraph'>
                                 We offer tailored Airport transfer services which include:
                             </p>
-
-
-
                             <ul class="heathrow-attractions-list">
                                 <li>Terminal drop-off </li>
                                 <li>Baggage assistance </li>
@@ -530,34 +397,16 @@
                                 <li>Expert drivers </li>
                                 <li>Fleet options </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
             </section>
-
-
-
-
         </div>
-
-
-
-
-
-
-
     </main>
-
-
-
-
     <?php $this->load->view('common_components/footer'); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url('assets/js/jquery.3.0.min.js')?>"></script>
-
     <script src="<?php echo base_url('assets/js/custom.js'); ?>"></script>
 </body>
-
 </html>
