@@ -17,7 +17,7 @@
     <link rel="canonical" href="https://travel24taxi.com/terms">
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=10')?>" rel="stylesheet" />
-    <link href="<?php echo base_url('assets/css/heathrow-airport?v=12')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/heathrow-airport.css?v=12')?>" rel="stylesheet" />
 
 
 
@@ -224,7 +224,7 @@
 
                         <!-- ===== RIGHT SIDE: Image ===== -->
                         <div class="col-lg-6 col-md-12 text-center">
-                            <img src="<?php echo base_url('assets/images/travel24/full-shot-woman-traveling-with-baggage.jpg') ?>"
+                            <img src="<?php echo base_url('assets/images/travel24/destination-view/full-shot-woman-traveling-with-baggage.jpg') ?>"
                                 alt="full-shot-woman-traveling-with-baggage"
                                 class="img-fluid rounded shadow heathrow-terminals-section-img">
                         </div>
