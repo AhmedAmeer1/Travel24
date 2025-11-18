@@ -8,18 +8,44 @@
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
-    <title>Heathrow Airport - Travel24</title>
-
+    <title>Complete Guide to Heathrow Airport - LHR</title>
+    <meta name="description"
+        content="Discover Heathrow Airport (LHR) with our complete guide covering terminals, facilities, transfer options, travel tips, nearby hotels and attractions, plus trusted private taxi services by Travel24." />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
-    <link rel="canonical" href="https://travel24taxi.com/terms">
+    <link rel="canonical" href="https://travel24taxi.com/completeGuideToHeathrowAirportLHR">
     <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=10')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/heathrow-airport.css?v=12')?>" rel="stylesheet" />
 
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://travel24taxi.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "London Heathrow Airport Transfer Taxi Services",
+      "item": "https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Complete Guide to Heathrow Airport (LHR)",
+      "item": "https://travel24taxi.com/completeGuideToHeathrowAirportLHR"
+    }
+  ]
+}
+</script>
 
     <!-- Google Tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
