@@ -16,7 +16,7 @@
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
     <meta property="og:type" content="website">
     <title>
-        <?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'Heathrow Airport Transfer | London Heathrow Airport Transfers' : ($blog['title'] ?? 'TRAVEL 24'); ?>
+        <?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'London Heathrow Airport Transfer Taxi and Minicab Services' : ($blog['title'] ?? 'TRAVEL 24'); ?>
     </title>
     <?php if (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer'): ?>
     <meta property="og:locale" content="en_UK">

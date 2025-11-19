@@ -60,7 +60,7 @@ $config['destinations'] = [
     ],
     [
         'title' => 'Heathrow Airport Transfer',
-        'metaDescription' => 'Heathrow Airport Transfer made easy. Book reliable, 24/7 taxi or private hire service with fixed fares to and from any terminal in London hassle-free.',
+        'metaDescription' => 'London Heathrow Airport taxi and minicab services for fast, reliable, and affordable transfers. Pre-book your Heathrow ride for the best prices.',
         'canonicalLink'=>'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer',
         'slug' => 'heathrow-airport-transfer',
         'ogTitle' => 'Heathrow Airport Transfer – Reliable & Affordable Taxi Service | Travel 24 Taxi',
