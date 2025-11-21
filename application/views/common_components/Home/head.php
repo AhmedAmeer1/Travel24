@@ -7,7 +7,7 @@
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
-    <title> Travel24 | Reliable UK Airport Transfers & Local Taxi Services</title>
+    <title>Travel24 | Reliable UK Airport Transfers & Local Taxi Services</title>
     <meta property="og:title" content=" Travel24 | Reliable UK Airport Transfers & Local Taxi Services ">
     <meta property="og:description"content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
     <meta property="og:image" content=" https://travel24taxi.com/assets/images/travel24/about_us.svg ">

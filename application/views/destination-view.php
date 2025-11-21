@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="utf-8">
@@ -15,14 +14,10 @@
     <meta name="og:url" content="<?php echo $blog['canonicalLink'] ?? ''; ?>" />
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
     <meta property="og:type" content="website">
-    <title>
-        <?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'London Heathrow Airport Transfer Taxi and Minicab Services' : ($blog['title'] ?? 'TRAVEL 24'); ?>
-    </title>
-    <?php if (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer'): ?>
-    <meta property="og:locale" content="en_UK">
+    <title><?php echo (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer') ? 'London Heathrow Airport Transfer Taxi and Minicab Services' : ($blog['title'] ?? 'TRAVEL 24'); ?></title>
+    <?php if (isset($blog['title']) && $blog['title'] === 'Heathrow Airport Transfer'): ?><meta property="og:locale" content="en_UK">
     <meta property="og:site_name" content="travel 24 taxi">
-    <?php endif; ?>
-    <link rel="canonical" href="<?php echo $blog['canonicalLink'] ?? 'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer'; ?>" />
+    <?php endif; ?><link rel="canonical" href="<?php echo $blog['canonicalLink'] ?? 'https://travel24taxi.com/popularDestinations/view/heathrow-airport-transfer'; ?>" />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
