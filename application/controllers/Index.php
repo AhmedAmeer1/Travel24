@@ -231,15 +231,9 @@ class Index extends CI_Controller
 
 		$booking['amount'] =$input['total_fare'] ;
 
-
-
-
-
-
-	
-
-
-
+		$_SESSION['vehicle_name'] = $input['selected_vehicle_name'];
+		$_SESSION['subTotal'] = $input['subTotal'];
+		
 		$_SESSION['total_fare'] = $booking['amount'];
 		$_SESSION['promocode'] = $booking['promocode_discount'];
 		$_SESSION['hand_lagguage'] = $input['hand_lagguage'];

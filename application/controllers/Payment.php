@@ -127,7 +127,12 @@ class Payment extends CI_Controller {
 			$data['way_point_3']=(!empty($_SESSION["way_points"][2])?$_SESSION["way_points"][2]:'');
 			$data['type'] ="Paypal";
 			$this->db->where('vehicle_id',$_SESSION["vehice_id"]);
-			$data['vehicle'] =$this->db->get('vehicle')->row('title');
+
+			// $data['vehicle'] =$this->db->get('vehicle')->row('title');
+
+			$data['vehicle'] =$_SESSION['vehicle_name'];
+
+
 			$data['travel_date'] = $_SESSION["book_data"]['travel_date'];
 			$data['travel_time'] =$_SESSION["book_data"]['travel_time'];
 			$data['travel_type'] = ($_SESSION["journey_type"]== "1"?"Single":"Return");
@@ -137,7 +142,8 @@ class Payment extends CI_Controller {
 			$data['child_seat_cost'] = $_SESSION["book_data"]['child_seat_cost'];
 			$data['greet_status'] =  $_SESSION["book_data"]['greet_status'];
 			$data['greeting_cost'] = $_SESSION["book_data"]['greeting_cost'];
-			$data['sub_total'] = $_SESSION['base_fare'];
+			// $data['sub_total'] = $_SESSION['base_fare'];
+			$data['sub_total'] = $_SESSION['subTotal'];
 			$data['total'] = $_SESSION["book_data"]['amount'];
 			$data['promocode_discount'] =$_SESSION["book_data"]['promocode_discount'];
 
@@ -150,7 +156,15 @@ class Payment extends CI_Controller {
 			$data['scomments_special_inst'] = $_SESSION["scomments_special_inst"] ?? get_cookie('scomments_special_inst');
 
 			$this->email_notification($data);
-		    redirect(base_url('index/journey_data?status=1&booking_id='.$result['booking_id']));
+		  
+			
+			echo "<script>
+			alert('Thank you for your booking! We have sent you a email for the confirmation .');
+			window.location.href = '" . base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']) . "';
+			</script>";
+			exit;
+			
+			// redirect(base_url('index/journey_data?status=1&booking_id='.$result['booking_id']));
 
 		}
 
