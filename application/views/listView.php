@@ -777,9 +777,9 @@
                 } else {
                     // PayPal flow (server handles redirect)
                     window.location.replace('<?php echo base_url('payment/create_payment')?>');
-                      alert(
-                        "Thank you for your booking! We have sent you a email for the confirmation ."
-                    );
+                    //   alert(
+                    //     "Thank you for your booking! We have sent you a email for the confirmation ."
+                    // );
                 }
             }
         });
