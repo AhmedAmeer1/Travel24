@@ -158,13 +158,13 @@ class Payment extends CI_Controller {
 			$this->email_notification($data);
 		  
 			
-			echo "<script>
-			alert('Thank you for your booking! We have sent you a email for the confirmation .');
-			window.location.href = '" . base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']) . "';
-			</script>";
-			exit;
+			// echo "<script>
+			// alert('Thank you for your booking! We have sent you a email for the confirmation .');
+			// window.location.href = '" . base_url('index/journey_data?status=1&booking_id=' . $result['booking_id']) . "';
+			// </script>";
+			// exit;
 			
-			// redirect(base_url('index/journey_data?status=1&booking_id='.$result['booking_id']));
+			redirect(base_url('index/journey_data?status=1&booking_id='.$result['booking_id']));
 
 		}
 
