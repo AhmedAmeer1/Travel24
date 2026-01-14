@@ -170,18 +170,25 @@ function initWaypointHandlers() {
 		$("#total_way_points").val(next_way_point);
 
 		const html = `
-        <div id="way-points-div-${next_way_point}" class="form-group position-relative waypoint-item mt-2">
-            <div class="d-flex align-items-center gap-2">
-                <input type="text" class="form-control autocompleteDoc multiRoute"
-                    name="wayPoint-${next_way_point}" required id="wayPoint-${next_way_point}" placeholder="Enter a location">
-                <button type="button" class="btn btn-link text-danger remove-multi-root" data-index="${next_way_point}" title="Remove waypoint">
-                    <i class="fa fa-minus-circle"></i>
-                </button>
-            </div>
-            <div class="custom-dropdown" id="dropdown-wayPoint-${next_way_point}"></div>
-            <input type="hidden" class="lat_perfect" id="wayPointLat-${next_way_point}" name="wayPointLat-${next_way_point}">
-            <input type="hidden" class="lon_perfect" id="wayPointLon-${next_way_point}" name="wayPointLon-${next_way_point}">
-        </div>`;
+<div id="way-points-div-${next_way_point}" class="form-group position-relative waypoint-item mt-2">
+    <div class="d-flex align-items-center gap-2">
+        <input type="text"
+               class="form-control autocompleteDoc multiRoute waypoint"
+               name="way_points[]"
+               required
+               id="wayPoint-${next_way_point}"
+               placeholder="Enter a location">
+        <button type="button"
+                class="btn btn-link text-danger remove-multi-root"
+                data-index="${next_way_point}">
+            <i class="fa fa-minus-circle"></i>
+        </button>
+    </div>
+
+    <input type="hidden" id="wayPointLat-${next_way_point}">
+    <input type="hidden" id="wayPointLon-${next_way_point}">
+</div>`;
+
 
 		if ($(".way-points").hasClass("hide")) $(".way-points").removeClass("hide");
 

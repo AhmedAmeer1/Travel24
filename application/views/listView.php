@@ -27,6 +27,7 @@
     <link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/listView.css?v=11')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/details.css?v=3')?>" rel="stylesheet" />
+     <link href="<?php echo base_url('assets/css/index.css?v=18')?>" rel="stylesheet" />
 
     <!-- jQuery (single include) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -99,6 +100,10 @@
     <?php $this->load->view('common_components/header'); ?>
 
     <main class="home">
+
+
+        <?php $this->load->view('common_components/ListView/editForm'); ?>
+
         <!-- ===== VEHICLE LIST / FIRST SECTION ===== -->
         <section class="list-main-wrapper" id="vehicle-list-section">
             <div class="container">
@@ -314,9 +319,180 @@
     <script src="<?php echo base_url('assets/js/jquery.touchSwipe.min.js')?>"></script>
 
     <!-- Google Maps (distance/fare calc) -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=<?php echo $setting->google_api_key; ?>&v=3.exp&callback=initMap">
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd6AQCrQBjsP5I9KMXGVUVWhJJeQet3C4&sensor=false&libraries=places">
     </script>
+
+
+
+    <script>
+    $(document).ready(function() {
+
+        var wayPoints = <?php echo json_encode($way_points); ?>;
+        var source = "<?php echo addslashes($post_data['source']); ?>";
+        var destination = "<?php echo addslashes($post_data['destination']); ?>";
+
+        // Show edit form
+
+        $('#editRouteContainer').slideDown(300);
+        $('html, body').animate({
+            scrollTop: $('#editRouteContainer').offset().top - 20
+        }, 300);
+
+        // Prefill pickup & destination
+        $('#pickPoint').val(source);
+        $('#dropPoint').val(destination);
+
+        // Clear old waypoints
+        $('.way-points').empty();
+
+        // Append waypoints dynamically
+        if (Array.isArray(wayPoints) && wayPoints.length > 0) {
+            wayPoints.forEach(function(wp, i) {
+                var wpSafe = wp.replace(/"/g, '&quot;'); // escape quotes
+                $('.way-points').append(`
+                    <div class="form-group position-relative">
+                        <input type="text" class="form-control autocompleteDoc waypoint" name="way_points[]" value="${wpSafe}" placeholder="Waypoint ${i+1}">
+                      
+                        <span class="remove-waypoint"
+                            style="
+                                position:absolute;
+                                right:10px;
+                                top:10px;
+                                width:22px;
+                                height:22px;
+                                background:red;
+                                color:white;
+                                border-radius:50%;
+                                display:flex;
+                                align-items:center;
+                                justify-content:center;
+                                font-size:16px;
+                                font-weight:bold;
+                                cursor:pointer;
+                            ">
+                        -
+                        </span>
+                    </div>
+                `);
+            });
+        }
+
+        // Update total_way_points hidden input
+        $('#total_way_points').val($('.way-points .waypoint').length);
+
+        // Reinitialize Google Places for all inputs
+        initAutocomplete();
+
+
+        function hasEmptyWaypoint() {
+            var isEmpty = false;
+
+            $('.way-points .waypoint').each(function() {
+                if ($(this).val().trim() === '') {
+                    isEmpty = true;
+                    $(this).focus();
+                    return false; // break loop
+                }
+            });
+
+            return isEmpty;
+        }
+        $(document).on('click', '#updateRouteBtn', function(e) {
+
+            if (hasEmptyWaypoint()) {
+                e.preventDefault();
+                alert('Please fill or remove all waypoints before updating the route.');
+                return false;
+            }
+
+        });
+
+
+
+        // Add new waypoint button
+        $(document).on('click', '.multi-root', function() {
+
+            const MAX_WAYPOINTS = 3;
+
+            if (hasEmptyWaypoint()) {
+                alert('Please fill or remove the current waypoint before adding a new one.');
+                return;
+            }
+
+            // current count
+            var currentCount = $('.way-points .waypoint').length;
+
+            // block if limit reached
+            if (currentCount >= MAX_WAYPOINTS) {
+                alert('You can add a maximum of 3 waypoints only.');
+                return;
+            }
+
+            var idx = currentCount + 1;
+
+            $('.way-points').append(`
+        <div class="form-group position-relative waypoint-wrapper">
+            <input type="text"
+                   class="form-control autocompleteDoc waypoint"
+                   name="way_points[]"
+                   placeholder="Waypoint ${idx}">
+
+                    <span class="remove-waypoint"
+                        style="
+                            position:absolute;
+                            right:10px;
+                            top:10px;
+                            width:22px;
+                            height:22px;
+                            background:red;
+                            color:white;
+                            border-radius:50%;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            font-size:16px;
+                            font-weight:bold;
+                            cursor:pointer;
+                        ">
+                    -
+                    </span>
+
+
+        </div>
+    `);
+
+            $('#total_way_points').val($('.way-points .waypoint').length);
+
+            initAutocomplete();
+        });
+
+
+        // Remove waypoint
+        $(document).on('click', '.remove-waypoint', function() {
+            $(this).closest('.form-group').remove();
+            $('#total_way_points').val($('.way-points .waypoint').length);
+        });
+
+        // Google Places autocomplete
+        function initAutocomplete() {
+            $('.autocompleteDoc').each(function() {
+                if (!this.autocomplete) {
+                    this.autocomplete = new google.maps.places.Autocomplete(this, {
+                        componentRestrictions: {
+                            country: "uk"
+                        },
+                        fields: ["address_components", "geometry", "formatted_address"],
+                        types: ["geocode"]
+                    });
+                }
+            });
+        }
+
+        initAutocomplete();
+    });
+    </script>
+    <script src="<?php echo base_url('assets/js/homepage.js?v=9'); ?>" ></script>
 
     <script>
     /* ===========================

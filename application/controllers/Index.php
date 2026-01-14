@@ -47,104 +47,96 @@ class Index extends CI_Controller
 	}
 
 
-	public function Search()
-	{
+public function Search()
+{
+    $post_data = $this->input->post();
 
-	 debug_log(" -----inside Search function  --------- ");
+    // Redirect if no POST data
+    if (count($post_data) == 0) {
+        redirect($this->index);
+    }
 
-		$post_data = $this->input->post();
+    // Sanitize and cast lat/lon
+    $latitudeFrom = isset($post_data['sourceLat']) && is_numeric($post_data['sourceLat'])
+        ? (float)$post_data['sourceLat'] : 0;
 
-	//  debug_log($post_data);	
+    $longitudeFrom = isset($post_data['sourceLon']) && is_numeric($post_data['sourceLon'])
+        ? (float)$post_data['sourceLon'] : 0;
 
-		if (count($post_data) == 0) {
-			redirect($this->index);
-		}
-		$latitudeFrom = isset($post_data['sourceLat']) && is_numeric($post_data['sourceLat'])
-		? (float)$post_data['sourceLat']
-		: 0;
+    $latitudeTo = isset($post_data['destLat']) && is_numeric($post_data['destLat'])
+        ? (float)$post_data['destLat'] : 0;
 
-		$longitudeFrom = isset($post_data['sourceLon']) && is_numeric($post_data['sourceLon'])
-			? (float)$post_data['sourceLon']
-			: 0;
+    $longitudeTo = isset($post_data['destLong']) && is_numeric($post_data['destLong'])
+        ? round((float)$post_data['destLong'], 8) : 0;
 
-		$latitudeTo = isset($post_data['destLat']) && is_numeric($post_data['destLat'])
-			? (float)$post_data['destLat']
-			: 0;
+    // Check for special locations
+    $special_location_id = $this->Index_Model->is_special_location($post_data['source'], $post_data['destination']);
+    $found_location = isset($special_location_id) ? "true" : "false";
 
-		$longitudeTo = isset($post_data['destLong']) && is_numeric($post_data['destLong'])
-			? round((float)$post_data['destLong'], 8)
-			: 0;
+    // Prepare data for view
+    $data['page'] = "Listpage";
+    $data['page_title'] = "List Page";
+    $data['post_data'] = $post_data;
 
-		$special_location_id = $this->Index_Model->is_special_location($post_data['source'], $post_data['destination']);
+    // Fetch vehicles
+    $this->db->where('status', 1);
+    $this->db->order_by('sort_order', "ASC");
+    $data['vehicle_type'] = $this->db->get('vehicle_type')->result();
 
-		if (isset($special_location_id)) {
-			$found_location = "true";
-		} else {
-			$found_location = "false";
-		}
+    $data['way_points'] = [];
+    if (!empty($post_data['way_points']) && is_array($post_data['way_points'])) {
+        foreach ($post_data['way_points'] as $wp) {
+            // Exclude source and destination
+            if ($wp != $post_data['source'] && $wp != $post_data['destination']) {
+                $data['way_points'][] = $wp;
+            }
+        }
+    }
 
-	
+    $data['total_way_points'] = count($data['way_points']);
 
-		$data['page'] = "Listpage";
-		$data['page_title'] = "List Page";
-		$data['post_data'] = $post_data;
-		$data['total_way_points'] = $post_data['total_way_points'];
-		$this->db->where('status', 1);
-		$this->db->order_by('sort_order', "ASC");
-		$data['vehicle_type'] = $this->db->get('vehicle_type')->result();
-		$data['way_points'] = array();
-		// array_push($data['way_points'],$post_data['source']);
-		for ($i = 1; $i <= $data['total_way_points']; $i++) {
-			if (($post_data['wayPoint-' . $i] != $post_data['source']) && ($post_data['wayPoint-' . $i] != $post_data['destination'])) {
-				//echo "if".$post_data['source']."=".$post_data['wayPoint-'.$i];
-				array_push($data['way_points'], $post_data['wayPoint-' . $i]);
-			}
-			//  else{
-			// 	echo "else".$post_data['source']."=".$post_data['wayPoint-'.$i];
-			//  }
-		}
-		//array_push($data['way_points'],$post_data['destination']);
+    // Fetch vehicle list
+    $this->db->where('v.status', 1);
+    $this->db->order_by('vt.sort_order', 'ASC');
+    $this->db->join('vehicle_type vt', 'vt.id=v.vehicle_type');
+    $data['vehicle'] = $this->db->get('vehicle v')->result();
 
-		$this->db->where('v.status', 1);
-		$this->db->order_by('vt.sort_order', 'ASC');
-		$this->db->join('vehicle_type vt', 'vt.id=v.vehicle_type');
-		$data['vehicle'] = $this->db->get('vehicle v')->result();
-		$data['max_passenger'] = 0;
-		$data['max_suit_case'] = 0;
-		foreach ($data['vehicle'] as $new) {
-			if ($new->noOfPassengers >  $data['max_passenger']) {
-				$data['max_passenger'] = $new->noOfPassengers;
-			}
-			if ($new->noOfSuitcases >   $data['max_suit_case']) {
-				$data['max_suit_case']  = $new->noOfSuitcases;
-			}
-		}
-		if ($found_location == "true") {
-			$data['special_location'] = $special_location_id;
-		} else {
-			$data['special_location'] = 0;
-		}
-		$_SESSION["source"] = $post_data['source'];
-		$_SESSION["destination"] = $post_data['destination'];
-		$_SESSION["total_way_points"] = (!empty($data['total_way_points']) ? $data['total_way_points'] : 0);
-		$_SESSION["way_points"] = $data['way_points'];
+    // Determine max passengers & suitcases
+    $data['max_passenger'] = 0;
+    $data['max_suit_case'] = 0;
+    foreach ($data['vehicle'] as $vh) {
+        $data['max_passenger'] = max($data['max_passenger'], $vh->noOfPassengers);
+        $data['max_suit_case'] = max($data['max_suit_case'], $vh->noOfSuitcases);
+    }
+
+    // Special location
+    $data['special_location'] = ($found_location == "true") ? $special_location_id : 0;
+
+    // Save session for later use
+    $_SESSION["source"] = $post_data['source'];
+    $_SESSION["destination"] = $post_data['destination'];
+    $_SESSION["total_way_points"] = $data['total_way_points'];
+    $_SESSION["way_points"] = $data['way_points'];
+
+    // Build ordered points array for Google Maps
+    $data['all_points'] = [];
+    $data['all_points'][] = $post_data['source'];
+    if ($data['total_way_points'] > 0) {
+        foreach ($data['way_points'] as $wp) {
+            $data['all_points'][] = $wp;
+        }
+    }
+    $data['all_points'][] = $post_data['destination'];
+
+    // Settings & payment types
+    $data['setting'] = $this->db->get('settings')->row();
+    $data['payment_types'] = $this->db->get('payment_types')->result();
+
+    // Load the view
+    $this->load->view('listView', $data);
+}
 
 
-		$data['all_points'] =  array();
-		$data['all_points'][] = $post_data['source'];
-		if ($_SESSION["total_way_points"] != 0) {
-			foreach ($data['way_points'] as $new) {
-				$data['all_points'][] = $new;
-			}
-		}
-
-		$data['all_points'][] = $post_data['destination'];
-		//echo "<pre>";print_r($data['all_points']);exit;
-		$data['setting'] = $this->db->get('settings')->row();
-
-		$data['payment_types'] = $this->db->get('payment_types')->result();
-		$this->load->view('listView', $data);
-	}
 	public function filter_result()
 	{
 		$input = $this->input->post();

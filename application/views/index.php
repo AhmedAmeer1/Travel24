@@ -130,7 +130,7 @@
 <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=<?php echo $result->google_api_key; ?>&sensor=false&libraries=places">
 </script>
-<script src="<?php echo base_url('assets/js/homepage.js?v=9'); ?>">
+<script src="<?php echo base_url('assets/js/homepage.js?v=11'); ?>">
 </script>
 
 </script>
