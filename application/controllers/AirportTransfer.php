@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-class BookNow extends CI_Controller {
+class AirportTransfer extends CI_Controller {
 
 
  private $fleet_data;
@@ -39,11 +39,11 @@ class BookNow extends CI_Controller {
 		$home_template['CustomerReviewData'] = $this->Review_Model->getReviewDetailsforAdmin();
 			$home_template['payment_types'] = $this->db->get('payment_types')->result();
 
-	// debug_log(" -----home_template  --------- ");
-	// 		debug_log($home_template);
+;
 
-        $this->load->view('bookNow',$home_template);
+        $this->load->view('airportTransfer',$home_template);
     }
+    
 
 }
 ?>
