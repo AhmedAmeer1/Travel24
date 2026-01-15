@@ -23,7 +23,7 @@
 .airport-transfer-vehicle-types {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr); /* 4 columns in one row */
-	gap: 20px;
+	gap: 2px;
 }
 
 .airport-transfer-vehicle-types > div {
@@ -44,9 +44,10 @@
 }
 
 .airports-transfer-section h3 {
-	font-size: 24px;
+	font-size: 21px;
 	font-weight: 600;
 	color: #000000;
+	margin-bottom: 10px;
 }
 
 .airports-transfer-section p {
@@ -55,26 +56,26 @@
 	color: #000000;
 }
 .airport-transfer-vehicle-types h2 {
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 600;
 	color: #000000;
 	margin-bottom: 30px;
 }
 
-
 .airport-transfer-vehicle-types h4 {
-	font-size: 22px;
+	font-size: 19px;
 	font-weight: 600;
 	color: #000000;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .airport-transfer-vehicle-types img {
-	width: 75%;
+	width: 70%;
+	border-radius: 10px;
 }
 
 .airport-transfer-vehicle-types ul li {
-	font-size: 17px;
+	font-size: 19px;
 	margin-bottom: 10px;
 	color: #111;
 	line-height: 1.7;
@@ -85,6 +86,14 @@
 	font-size: 17px;
 	color: #000000;
 }
+.airport-transfer-vehicle-types a {
+	font-weight: 600;
+	font-size: 17px;
+	color: #000000;
+}
+.airport-transfer-vehicle-types a:hover {
+	color: #000000;
+}
 
 @media (max-width: 992px) {
 	.airport-transfer-vehicle-types {
@@ -92,17 +101,15 @@
 	}
 
 	.airport-transfer-vehicle-types img {
-	width: 100%;
-}
-.airport-transfer-vehicle-types h2 {
-	font-size: 20px;
-	margin-bottom: 10px;
-	
-}
-.airport-transfer-vehicle-types h4 {
-	font-size: 17px;
-	
-}
+		width: 100%;
+	}
+	.airport-transfer-vehicle-types h2 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.airport-transfer-vehicle-types h4 {
+		font-size: 17px;
+	}
 
 	.airport-transfer-vehicle-types p {
 		padding: 0px 20px 0px 0px;
