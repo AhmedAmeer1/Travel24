@@ -282,7 +282,7 @@
                                 <div class="col-md-12">
                                     <button class="promotion-btn paycash-btn promo-code mt-4"
                                         onclick="apply_promo_code()">Apply Promocode</button>
-                                    <span class="promo-text">Enter <span class="code">LUTH25</span> to get 10 %
+                                    <span class="promo-text">Enter <span class="code">LUTH26</span> to get 5 %
                                         off.</span>
                                 </div>
                             </div>
