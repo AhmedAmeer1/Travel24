@@ -231,7 +231,7 @@ gtag('config', 'G-XK1KGHX0F7');
                 <div class="mt-md-5">
                     <h2>Reliable Airport Transfers, Right on Time
                     </h2>
-                    <img src="assets/images/travel24/airports-transfer.jpg" alt="Reliable Airport Transfers"
+                    <img src="assets/images/travel24/airport-transfer.jpg" alt="Reliable Airport Transfers"
                         class="airport-transfer-img">
                 </div>
 
