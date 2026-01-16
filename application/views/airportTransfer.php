@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="<?php echo $result->meta_keyword; ?>" />
-<meta name="description"
-    content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
-<meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
-<meta name="yandex-verification" content="5c20865ffae8f446" />
-<?php $this->load->view('assets/js/metaPixel'); ?>
-<title>Airports Transfer</title>
-<meta property="og:title" content=" Travel24 | Reliable UK Airport Transfers & Local Taxi Services ">
-<meta property="og:description"
-    content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
-<meta property="og:image" content=" https://travel24taxi.com/assets/images/travel24/about_us.svg ">
-<meta property="og:url" content=" https://travel24taxi.com">
-<meta property="og:type" content="website">
-<link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
-<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
-<link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
-<link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
-<link rel="canonical" href="https://travel24taxi.com/" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
-<?php $this->load->view('assets/js/seo/home'); ?>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
+<head>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="<?php echo $result->meta_keyword; ?>" />
+    <meta name="description"
+        content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
+    <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
+    <meta name="yandex-verification" content="5c20865ffae8f446" />
+    <?php $this->load->view('assets/js/metaPixel'); ?>
+    <title>Airports Transfer</title>
+    <meta property="og:title" content=" Travel24 | Reliable UK Airport Transfers & Local Taxi Services ">
+    <meta property="og:description"
+        content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
+    <meta property="og:image" content=" https://travel24taxi.com/assets/images/travel24/about_us.svg ">
+    <meta property="og:url" content=" https://travel24taxi.com">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
+    <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
+    <link rel="canonical" href="https://travel24taxi.com/" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
+    <?php $this->load->view('assets/js/seo/home'); ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'G-XK1KGHX0F7');
-</script>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-XK1KGHX0F7');
+    </script>
 
-
-
-<link href="<?php echo base_url('assets/css/custom.css?v=20')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/index.css?v=21')?>" rel="stylesheet" />
-
-<link href="<?php echo base_url('assets/css/airports-transfer.css?v=1')?>" rel="stylesheet" />
-
-<style>
-
-</style>
+    <link href="<?php echo base_url('assets/css/custom.css?v=20')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/index.css?v=21')?>" rel="stylesheet" />
+    <link href="<?php echo base_url('assets/css/airports-transfer.css?v=1')?>" rel="stylesheet" />
+</head>
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
@@ -110,12 +106,10 @@ gtag('config', 'G-XK1KGHX0F7');
                     <div class="col-md-6 banner-details">
                         <!-- Banner Features Section -->
                         <?php $this->load->view('common_components/Home/banner_features'); ?>
-
                     </div>
                 </div>
             </div>
         </section>
-
         <section class="airports-transfer-section ">
             <h2 class=" pt-2 text-left">Airports Transfer</h2>
             <p>Choose Travel24 for smooth airport transfers. Enjoy reliable service, experienced and courteous
@@ -124,20 +118,13 @@ gtag('config', 'G-XK1KGHX0F7');
                 travelling for business or leisure, Travel24 gets you there safely, on time, and hassle-free. Book
                 now and travel with confidence.
             </p>
-
             <h3 class=" pt-5">Find the right fit for your trip with reliable airport transfers across all UK airports.
             </h3>
-
             <p>Select from our variety of vehicles, each offering travel options for a maximum capacity of 8
                 passengers with adequate luggage space, luxury vehicles and mobility vehicles with wheel chair
                 accessibility.
             </p>
-
-
-
-
             <div class="airport-transfer-vehicle-types">
-
                 <div>
                     <h4>Saloon Car (X)</h4>
                     <p>Select from our variety of vehicles, each offering
@@ -147,7 +134,6 @@ gtag('config', 'G-XK1KGHX0F7');
                         accessibility.
                     </p>
                 </div>
-
                 <div>
                     <h4>Estate Car (Comfort)</h4>
                     <p>Our estate cars are the ideal choice for 4 passengers
@@ -156,7 +142,6 @@ gtag('config', 'G-XK1KGHX0F7');
                         experience.
                     </p>
                 </div>
-
                 <div>
                     <h4>People Carrier (XL)</h4>
                     <p>Our People Carrier (XL) is the perfect solution for
@@ -166,7 +151,6 @@ gtag('config', 'G-XK1KGHX0F7');
                         everyone.
                     </p>
                 </div>
-
                 <div>
                     <h4>Executive Car</h4>
                     <p>Our Executive Car provides a premium travel
@@ -177,12 +161,6 @@ gtag('config', 'G-XK1KGHX0F7');
                         convenience.
                     </p>
                 </div>
-
-
-
-
-
-
                 <div>
                     <h4>8 Seater Minibus (Van)</h4>
                     <p>The 8 Seater Minibus (Van) is our most spacious
@@ -211,11 +189,6 @@ gtag('config', 'G-XK1KGHX0F7');
                         hassle-free transport.
                     </p>
                 </div>
-
-
-
-
-
                 <div>
                     <h4>16 Seater Minibus
                     </h4>
@@ -226,17 +199,13 @@ gtag('config', 'G-XK1KGHX0F7');
                         transfers, group travel, and events.
                     </p>
                 </div>
-
-
                 <div class="mt-md-5">
                     <h2>Reliable Airport Transfers, Right on Time
                     </h2>
-                    <img src="assets/images/travel24/airport-transfer.jpg" alt="Reliable Airport Transfers"
+                    <img src="assets/images/travel24/airport-transfer.jpg"
+                        alt="A solo traveler with a backpack looking at a plane on the tarmac, conceptualizing airport transfer and international travel"
                         class="airport-transfer-img">
                 </div>
-
-
-
                 <div class="mt-md-5">
                     <h2>Our Reliable Airport Transfer Service
                     </h2>
@@ -254,42 +223,10 @@ gtag('config', 'G-XK1KGHX0F7');
                     </ul>
                     </p>
                 </div>
-
-
             </div>
-
-
-
-
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <section class="carlist-wrapper">
-
-
-
             <div class="home_container no-gutter-responsive pb-5 ">
-
-
                 <h2 class=" pt-2">OUR FLEET</h2>
                 <div class="row mt-2 no-gutter-responsive">
                     <?php foreach ($fleet_data as $fleet): ?>
@@ -311,22 +248,13 @@ gtag('config', 'G-XK1KGHX0F7');
                                         <span><?= $fleet['noOfSuitcases']; ?> Suitcases</span>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                     <?php endforeach; ?>
-
                 </div>
             </div>
         </section>
-
-
-
-
-
-
     </main>
     <?php $this->load->view('common_components/footer'); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -342,15 +270,5 @@ gtag('config', 'G-XK1KGHX0F7');
 </script>
 <script src="<?php echo base_url('assets/js/homepage.js?v=8'); ?>">
 </script>
-
-<script>
-
-
-
-
-
-</script>
-
-
 
 </html>
