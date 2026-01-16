@@ -47,7 +47,7 @@ class BookYourVanAndMan extends CI_Controller {
             $this->email->from($name, $email);
 
             $this->email->to($to);
-            $this->email->subject('Your Travel24 BookYourVanAndMan Form  has been received');
+            $this->email->subject('Your Travel24 Man and Van Service Form  has been received');
                      $this->email->message( $message);
             $this->email->send();
                 
