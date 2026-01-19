@@ -76,7 +76,7 @@
 
                     <li><a href="<?php echo base_url()?>contactUs">Weddings / Parties</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Vehicle Rent</a></li>
-                    <li><a href="<?php echo base_url()?>contactUs">Accident Claims</a></li>
+                    <li><a href="<?php echo base_url()?>accidentClaim">Accident Claims</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Business Account</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">School Services</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Coach Transfer</a></li>

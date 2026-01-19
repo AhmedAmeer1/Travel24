@@ -61,7 +61,7 @@
                     <div class="name_div">
                         <p>Email</p>
                         <input name="email" id="email" type="email" placeholder="Your Email*"
-                            class=" input_fields p-3  w-100" required>
+                            class=" input_fields p-3  w-100  ml-md-2" required>
                     </div>
                 </div>
                 <div class="d-flex  flex-column justify-content-between">
