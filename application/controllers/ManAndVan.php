@@ -1,5 +1,5 @@
 <?php
-class BookYourVanAndMan extends CI_Controller {
+class ManAndVan extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->library('form_validation');
@@ -7,7 +7,7 @@ class BookYourVanAndMan extends CI_Controller {
     }
 
     public function index() {
-        $this->load->view('bookYourVanAndMan');
+        $this->load->view('manAndVan');
     }
 
 
@@ -22,7 +22,7 @@ class BookYourVanAndMan extends CI_Controller {
 
 
         if ($this->form_validation->run() === FALSE) {
-            $this->load->view('bookYourVanAndMan');
+            $this->load->view('manAndVan');
         } else {
             $name = $this->input->post('name');
             $email = $this->input->post('email');
@@ -58,10 +58,10 @@ class BookYourVanAndMan extends CI_Controller {
             $this->load->model('Contact_model');
             if ($this->Contact_model->save_contact($name, $email, $message, $contactnumber)) {
                 $this->session->set_flashdata('success_message', 'Your message has been sent successfully.',$username);
-                redirect(base_url('bookYourVanAndMan'));
+                redirect(base_url('manAndVan'));
             } else {
                 $this->session->set_flashdata('success_message', 'Your message has been sent successfully.');
-                redirect(base_url('bookYourVanAndMan'));
+                redirect(base_url('manAndVan'));
             }
 
         }

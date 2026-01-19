@@ -137,9 +137,7 @@ textarea {
 	text-decoration: underline;
 }
 @media only screen and (max-width: 1366px) {
-	.van-man-section {
-		width: 70%;
-	}
+	
 	.contact-detail-container {
 		padding: 10px 10px 20px 10px;
 		/* background-color: red; */

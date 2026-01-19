@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/contactUs" />
-    <link rel="stylesheet" href="<?= base_url('assets/css/bookYourVanAndMan.css?v=9') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/manAndVan.css?v=9') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>

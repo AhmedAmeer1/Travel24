@@ -64,7 +64,7 @@
                     <li><a href="<?php echo base_url()?>bookNow">Executive Chauffeur</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">Minicab Services</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">University Student Transfer</a></li>
-                    <li><a href="<?php echo base_url()?>bookYourVanAndMan">Man and Van Services</a></li>
+                    <li><a href="<?php echo base_url()?>manAndVan">Man and Van Services</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Parcel Services</a></li>
                 </ul>
             </div>
