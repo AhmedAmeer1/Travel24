@@ -80,7 +80,7 @@
                     <li><a href="<?php echo base_url()?>contactUs">Business Account</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">School Services</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Coach Transfer</a></li>
-                    <li><a href="<?php echo base_url()?>contactUs">Day Hire</a></li>
+                    <li><a href="<?php echo base_url()?>dayHire">Day Hire</a></li>
                 </ul>
             </div>
 
