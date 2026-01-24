@@ -22,8 +22,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/contactUs" />
-    <link rel="stylesheet" href="<?= base_url('assets/css/manAndVan.css?v=10') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/services.css?v=18') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/contact-info.css?v=11') ?>">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
 
@@ -38,22 +39,19 @@
     </script>
 </head>
 
+<style>
+
+</style>
+
 <body>
     <?php $this->load->view('common_components/header'); ?>
-
-
-
-
     <section id="content">
-        <div class="van-man-container  van-man-section ">
+        <div class="services-container  services-section ">
             <div class="row">
-
                 <!-- LEFT SIDE : CONTACT FORM -->
                 <div class="col-md-6">
                     <div class=" ">
-
-
-                        <form action="<?= base_url('manAndVan/send_email'); ?>" method="post">
+                        <form action="<?= base_url('parcelServices/send_email'); ?>" method="post">
                             <?php
                         if ($this->session->flashdata('success_message')) {
                             echo '<div class="success">' . $this->session->flashdata('success_message') . '</div>';
@@ -62,115 +60,152 @@
                         }
                         ?>
                             <div class="heading">
-                                <h1>Book Your Man and Van</h1>
+                                <h1>Book Your Parcel Services</h1>
                                 <p>Request your quote now.</p>
                             </div>
-                            <div class="d-flex flex-column flex-md-row gap-4">
-
-
-
-                                <div class="name_div w-100">
-
-                                    <input name="name" type="text" placeholder="Name"
-                                        class="input_fields p-3 w-100" required>
-                                </div>
-
-                                <div class=" name_div w-100 ml-md-2">
-                                    <input name="contactnumber" type="text" placeholder="Phone Number"
-                                        class="input_fields p-3 w-100" required>
-
-                                </div>
-                            </div>
-
-                            <div class="mt-3">
-
-                                <input name="email" type="email" placeholder="Email"
-                                    class="input_fields p-3 w-100" required>
-
-
-                            </div>
-
-                            <div class="mt-3">
-
-                                <textarea name="message" placeholder="Your Enquiry"
-                                    class="input_fields p-3 w-100"></textarea>
-                            </div>
-
+                            <?php $this->load->view('common_components/Services/contactInfoInputFields'); ?>
                             <button class="btnsubmit mt-3">Submit</button>
                         </form>
                     </div>
                 </div>
-
                 <!-- RIGHT SIDE : CONTACT DETAILS -->
-                <div class="col-md-6">
-                    <div class="contact-detail-container d-flex flex-column">
-                        <h3>For More Information</h3>
-                        <div class="d-flex align-items-start mb-4">
-                            <img src="<?= base_url('assets/images/travel24/email.svg') ?>" class="contact_icon">
-                            <div class="ms-3">
-                                <h5>Email</h5>
-                                <p>info@travel24taxi.com</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-start mb-4">
-                            <img src="<?= base_url('assets/images/travel24/phone.svg') ?>" class="contact_icon">
-                            <div class="ms-3">
-                                <h5>Phone</h5>
-                                <p>01293 775422</p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="d-flex align-items-start">
-                            <img src="<?= base_url('assets/images/travel24/phone.svg') ?>" class="contact_icon">
-                            <div class="ms-3">
-                                <h5>WhatsApp</h5>
-                                <p>01293 775422</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+                <?php $this->load->view('common_components/Services/contactInfo'); ?>
             </div>
         </div>
     </section>
 
 
     <section>
-        <div class=" van-man-container van-man-content">
-            <h1>Man and Van Services</h1>
-            <h3>We provide a professional and reliable Man & Van service, including courier service,
-                parcel delivery, removals, and house, flat, and office clearances, all fully insured for your
-                peace of mind.</h3>
-            <p>Whether you’re moving a single item or a full property, we aim to make the entire process as
-                smooth, efficient, and cost-effective as possible. With Travel24, you can receive clear, upfront
-                Man & Van pricing and a professional driver who manages your move from start to finish. No job
-                is too big or too small—we transport items safely and with care.</p>
-            <p>We also offer packing materials to protect your belongings, along with the necessary tools to
-                dismantle and reassemble furniture when required, ensuring items can be moved through
-                narrow spaces safely. Whatever your moving needs, you can trust Travel24 to deliver a highquality
-                service at competitive prices, every time</p>
+        <div class=" services-container services-content">
+            <h1>Parcel Services in the UK
+            </h1>
+            <h3>Reliable Parcel Services Across the UK
+            </h3>
 
 
-            <div class="row mt-5 g-5">
-                <div class="col-md-6">
-                    <img src="assets/images/travel24/Man-and-Van-1.jpg" alt="Man-and-Van-1"
-                        class="airport-transfer-img">
+            <p>Travel24 provides fast, secure, and professional parcel services across the UK, offering sameday and
+                on-demand delivery solutions for businesses and individuals. Whether you need to
+                send important documents, retail parcels, or urgent items, our experienced drivers ensure your
+                delivery reaches its destination safely and on time.</p>
+            <p>We focus on reliability, flexibility, and local expertise, making Travel24 a trusted choice for UK
+                parcel deliveries.
+            </p>
+
+
+
+            <div>
+                <h2>Same-Day Parcel Delivery You Can Rely On</h2>
+
+                <p>When time matters, our same-day parcel service ensures your items are collected and delivered
+                    directly to the destination without unnecessary delays. From local deliveries to longer UK
+                    routes, we provide a dependable service designed around your schedule.</p>
+
+
+
+
+                <div class="mt-5">
+                    <h2>Why choose our same-day parcel service?
+                    </h2>
+                    <ul class=" services-list">
+                        <li>Direct point-to-point delivery</li>
+                        <li>No shared loads</li>
+                        <li>Professional, vetted drivers</li>
+                        <li>Flexible collection times </li>
+                        <li>Competitive UK pricing</li>
+                    </ul>
                 </div>
-                <div class="col-md-6">
-                    <img src="assets/images/travel24/Man-and-Van-2.jpg" alt="Man-and-Van-2"
-                        class="airport-transfer-img">
+                <div class="mt-5">
+                    <h2>Business & Personal Parcel Services
+                    </h2>
+                    <p>Our parcel services are ideal for a wide range of needs, including:
+                    </p>
+                    <ul class=" services-list">
+                        <li>Business documents and contracts</li>
+                        <li>Retail and e-commerce deliveries</li>
+                        <li>Urgent spare parts</li>
+                        <li>Personal parcels and important items</li>
+                        <li>Office-to-office deliveries</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+            <div class="row gx-0 mt-md-5 ">
+                <div class="col-md-6 " style="padding-left:0px;">
+                    <h3>Nationwide UK Coverage
+                    </h3>
+                    <p>Travel24 operates across major cities, towns, and
+                        surrounding areas throughout the UK. From local
+                        parcel deliveries to long-distance same-day
+                        services, our network allows us to support
+                        customers wherever they need to send parcels</p>
+                </div>
+
+                <div class="col-md-6 " style="padding-left:0px;">
+                    <h3>Professional Drivers & Secure Handling</h3>
+                    <p>All parcel deliveries are handled by trained and
+                        experienced drivers who understand the
+                        importance of care, confidentiality, and
+                        punctuality. Your parcel is transported securely
+                        from collection to drop-off, with clear
+                        communication throughout the journey.
+                    </p>
                 </div>
             </div>
 
-        </div>
 
+            <div class="mt-md-5">
+                <h3>Our Vehicles</h3>
+                <p>Our parcel services are supported by a range of well-maintained vehicles suitable for different
+                    parcel
+                    sizes and delivery requirements. This allows us to handle everything from small packages to larger
+                    consignments efficiently and safely.</p>
+
+            </div>
+
+            <div class="row gx-0 mt-md-5 ">
+                <div class="col-md-6 " style="padding-left:0px;">
+                    <h3>Nationwide UK Coverage</h3>
+                    <p>Booking a parcel delivery with Travel24 is quick
+                        and straightforward. We offer:</p>
+                    <ul class=" services-list">
+                        <li>Easy online or phone booking</li>
+                        <li>Clear, upfront pricing</li>
+                        <li>No hidden charges</li>
+                        <li>Flexible scheduling</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 " style="padding-left:0px;">
+                    <h3>Why Choose Travel24 Parcel Services?</h3>
+                    <ul class=" services-list">
+                        <li>Trusted UK parcel service provider</li>
+                        <li>Same-day and scheduled deliveries</li>
+                        <li>Professional, reliable drivers</li>
+                        <li>Nationwide coverage</li>
+                        <li>Business and personal solutions</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="mt-5">
+                <h3>Book Your Parcel Service Today</h3>
+                <p>Looking for a reliable UK parcel service you can depend on? Travel24 is here to help. Book your
+                    parcel
+                    delivery today and experience a professional service designed around speed, safety, and convenience.
+                </p>
+            </div>
+
+
+
+
+
+     
     </section>
 
-    <?php $this->load->view('common_components/contactusFooter'); ?>
+    <?php $this->load->view('common_components/footer'); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url('assets/js/jquery.3.0.min.js')?>"></script>

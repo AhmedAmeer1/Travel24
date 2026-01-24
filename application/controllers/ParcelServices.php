@@ -34,8 +34,6 @@ class ParcelServices extends CI_Controller {
     set_cookie('username',$name,86400); //86400 seconds is one day for this cookie
 	$username = get_cookie('username');
 
-//----------------------------------------email sending start ----------------------------------------
-
             $this->load->library('email');
             $config['protocol'] = 'sendmail'; // mail, sendmail, or smtp    The mail sending protocol.
     
@@ -50,10 +48,6 @@ class ParcelServices extends CI_Controller {
             $this->email->subject('Your Travel24 Parcel Claim Services Form  has been received');
                      $this->email->message( $message);
             $this->email->send();
-                
-//------------------------------------------email sending end -------------------------------------------------------------
-         
-
 
             $this->load->model('Contact_model');
             if ($this->Contact_model->save_contact($name, $email, $message, $contactnumber)) {
