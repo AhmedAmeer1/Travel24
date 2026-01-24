@@ -61,7 +61,7 @@
                 <ul class="side-menu list-unstyled">
                     <li><a href="<?php echo base_url()?>airportTransfer">Airports Transfer</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">Cruise Ports Transfer</a></li>
-                    <li><a href="<?php echo base_url()?>bookNow">Executive Chauffeur</a></li>
+                    <li><a href="<?php echo base_url()?>executiveChauffeur">Executive Chauffeur</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">Minicab Services</a></li>
                     <li><a href="<?php echo base_url()?>bookNow">University Student Transfer</a></li>
                     <li><a href="<?php echo base_url()?>manAndVan">Man and Van Services</a></li>

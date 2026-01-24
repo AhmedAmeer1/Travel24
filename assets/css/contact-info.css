@@ -1,0 +1,51 @@
+/* ===== Contact Info (Reusable Component) ===== */
+
+.contact-infomation {
+	padding: 78px 175px 100px 175px;
+	color: #fff;
+}
+
+.contact-infomation h3 {
+	margin-bottom: 30px;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.contact-infomation h5 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.contact-infomation p {
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: -10px;
+}
+
+.contact-icon {
+	width: 57px;
+	padding-right: 10px;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1366px) {
+	.contact-infomation {
+		padding: 10px 10px 20px 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.contact-infomation {
+		padding: 10px 9px 20px 13px;
+	}
+
+	.contact-infomation h3 {
+		margin-top: 30px;
+	}
+
+	.contact-infomation h5 {
+		font-size: 19px;
+	}
+}
