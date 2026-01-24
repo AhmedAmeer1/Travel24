@@ -46,7 +46,7 @@
                 <!-- LEFT SIDE : CONTACT FORM -->
                 <div class="col-md-6">
                     <div class=" ">
-                        <form action="<?= base_url('manAndVan/send_email'); ?>" method="post">
+                        <form action="<?= base_url('executiveChauffeur/send_email'); ?>" method="post">
                             <?php
                         if ($this->session->flashdata('success_message')) {
                             echo '<div class="success">' . $this->session->flashdata('success_message') . '</div>';
