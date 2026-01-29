@@ -1,11 +1,11 @@
 <?php
-class MinicabServices extends CI_Controller {
+class UniversityStudentTransfer extends CI_Controller {
     public function __construct() {
         parent::__construct();
     }
 
     public function index() {
-        $this->load->view('minicabServices');
+        $this->load->view('universityStudentTransfer');
     }
 
 }

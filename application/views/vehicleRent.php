@@ -198,8 +198,10 @@
             <div class="mt-5">
                 <h2>Pick your perfect Area</h2>
                 <p>
-                    Choose the ideal area for your needs from any borough council in England. Simply give us a call,
-                    and we will arrange a vehicle according to your council's licence requirements.
+                    Choose the ideal area for your needs from any borough council in England. Simply give us a call, and
+                    we will arrange a vehicle according to your council's licence requirements. Whether you need a
+                    short-term or long-term rental, we have you covered. We also offer courtesy vehicles in case of
+                    accidents or breakdowns.
                 </p>
             </div>
 
@@ -207,7 +209,10 @@
                 <h2>Travel24 – Your Trusted UK Vehicle Rent Partner</h2>
                 <p>
                     With extensive experience in UK private hire and transport services, Travel24 is trusted for
-                    reliable vehicle rental, professional drivers and flexible booking options.
+                    reliable vehicle rental, professional drivers and flexible booking options. Our focus on comfort,
+                    punctuality and customer satisfaction makes us the preferred choice for vehicle rent services
+                    across the UK.
+
                 </p>
             </div>
 

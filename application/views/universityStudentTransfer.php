@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
-    <title>Minicab Services</title>
+    <title>University Student Transfer</title>
     <meta property="og:title" content="Contact Travel 24 Taxi - 24/7 Airport Transfer Support">
     <meta property="og:description"
         content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">
@@ -37,6 +38,7 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
+
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
@@ -106,37 +108,57 @@
         </section>
         <section>
             <div class="services-container services-content">
-                <h1>Minicab Services
+                <h1>University Student Transfer
                 </h1>
-                <h3>Reliable Minicab Services Across the UK
+                <h3>Reliable University Student Transfer Services Across the UK
+
                 </h3>
                 <p>
-                    Travel24 offers professional and affordable minicab services across the UK, providing safe,
-                    comfortable, and punctual travel for everyday journeys and long-distance trips. Whether you
-                    need a local ride, an airport transfer, or a pre-booked minicab, our experienced drivers are here
-                    to get you where you need to be.
+                    Travel24 provides safe, affordable and reliable university student transfer services across the
+                    UK. Whether you’re travelling to or from university accommodation, student halls, private
+                    housing, airports or train stations, our professional drivers ensure a smooth and stress-free
+                    journey.
                 </p>
                 <p>
-                    We focus on convenience, reliability, and value, making Travel24 a trusted choice for UK minicab
-                    bookings
+                    We understand student travel needs — punctual pickups, fair pricing and dependable service —
+                    making Travel24 a trusted choice for students and parents alike.
                 </p>
                 <div class="mt-5">
-                    <h2>Local Minicab Services</h2>
-                    <p>Our local minicab services are ideal for short journeys, daily travel, and planned trips. With
-                        flexible booking options and knowledgeable drivers, we ensure smooth and stress-free travel in
-                        your area.</p>
-                </div>
-                <div class="mt-5">
-                    <h4>Perfect for :</h4>
+                    <h2>Student Transfers for Every Journey</h2>
+                    <p>Our university student transfer service is ideal for:</p>
                     <ul class="services-list">
-                        <li>Local commuting</li>
-                        <li>Shopping and errands</li>
-                        <li>School and college travel</li>
-                        <li>Medical appointments</li>
-                        <li>Social and family journeys
+                        <li>Airport transfers for students arriving in or departing from the UK</li>
+                        <li>University move-in and move-out days</li>
+                        <li>Term-time travel between home and campus</li>
+                        <li>Transfers to student halls or private accommodation</li>
+                        <li>Early morning or late-night journeys with safe, private transport
                         </li>
                     </ul>
                 </div>
+
+
+                <div class="mt-5">
+                    <h2>Universities We Serve Across the UK</h2>
+                    <p>Travel24 provides student transfer services to and from leading universities across the UK,
+                        including:</p>
+                        
+                    <div class="mt-5">
+                        <h4>London Universities</h4>
+                        <ul class="services-list">
+                            <li>Airport transfers for students arriving in or departing from the UK</li>
+                            <li>University move-in and move-out days</li>
+                            <li>Term-time travel between home and campus</li>
+                            <li>Transfers to student halls or private accommodation</li>
+                            <li>Early morning or late-night journeys with safe, private transport
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
                 <div class="mt-5">
                     <h2>Airport Minicab Transfers</h2>
                     <p>
@@ -234,9 +256,9 @@
     <script src="https://use.fontawesome.com/1e36072efd.js"></script>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
 </body>
-  <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd6AQCrQBjsP5I9KMXGVUVWhJJeQet3C4&sensor=false&libraries=places">
-    </script>
+<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd6AQCrQBjsP5I9KMXGVUVWhJJeQet3C4&sensor=false&libraries=places">
+</script>
 <script src="<?php echo base_url('assets/js/homepage.js?v=6'); ?>">
 </script>
 

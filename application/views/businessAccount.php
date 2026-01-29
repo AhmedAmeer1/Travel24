@@ -120,22 +120,27 @@
                 <div>
                     <h3><i class="fa-solid fa-check"></i> Flexible Corporate Billing</h3>
                     <p>
-                        Choose from easy payment options including account billing or online card payments with
-                        consolidated invoices.
+                        Choose from easy payment options including account billing or online card payments. Get
+                        consolidated invoices tailored to your business needs with clear itemisation for every trip.
                     </p>
                 </div>
 
                 <div>
                     <h3><i class="fa-solid fa-check"></i> Transparent Pricing, No Surprises</h3>
                     <p>
-                        Enjoy upfront pricing with no hidden fees — clear, fair rates for every journey.
+                        Enjoy upfront pricing with no hidden fees — you see exactly what you pay for every journey.
+                        Clear, fair rates help streamline corporate travel budgets and forecasting.
+
                     </p>
                 </div>
 
                 <div>
                     <h3><i class="fa-solid fa-check"></i> Fast Online Booking & Management</h3>
                     <p>
-                        Schedule rides quickly from airport transfers to chauffeur-led travel on desktop or mobile.
+                        Access Travel24’s simple online booking platform to schedule rides quickly — from airport
+                        transfers to chauffeur-led city travel — on desktop or mobile. Save time and manage multiple
+                        bookings with ease.
+
                     </p>
                 </div>
             </div>
@@ -145,32 +150,40 @@
                 <p>Our Business Account is ideal for:</p>
 
                 <ul class="services-list">
-                    <li><b>Executive Travel & VIP Transfers</b> — Comfortable transport for executives.</li>
-                    <li><b>Airport & Intercity Transfers</b> — Timely pickups with flight monitoring.</li>
-                    <li><b>Team Travel Coordination</b> — Easy management of staff bookings.</li>
-                    <li><b>Events & Conferences</b> — Reliable group transport solutions.</li>
+                    <li><b>Executive Travel & VIP Transfers</b> — Dependable, comfortable transport for C-suite
+                        executives.
+                    </li>
+                    <li><b>Airport & Intercity Transfers</b> — Timely pickups and drop-offs with flight monitoring.
+                    </li>
+                    <li><b>Team Travel Coordination</b> — Easy management of multiple bookings for staff.
+                    </li>
+                    <li><b>Events & Conferences</b> — Reliable group transport plans with top-tier vehicles.</li>
                 </ul>
 
                 <p class="mt-5">
-                    Travel24’s modern fleet and professional drivers ensure safe, comfortable, and punctual journeys.
+                    Travel24’s extensive fleet of modern cars and professional drivers ensures each journey is safe,
+                    comfortable, and punctual — helping your business travel more efficiently every time.
                 </p>
             </div>
 
             <div class="mt-5">
-                <h2>How It Works</h2>
+                <h2>How to Get Started</h2>
 
                 <ul class="services-list">
-                    <li><b>Apply Online –</b> Complete your Business Account application.</li>
+                    <li><b>Apply Online –</b> Complete your Business Account application quickly on our website</li>
                     <li><b>Account Approval –</b> Our team reviews and activates your account.</li>
-                    <li><b>Start Booking –</b> Enjoy priority service and custom invoicing.</li>
+                    <li><b>Start Booking –</b>Once approved, enjoy fast bookings, priority service, and custom
+                        invoicing.
+                    </li>
                 </ul>
             </div>
 
             <div class="mt-5">
                 <h2>Grow with Travel24</h2>
                 <p>
-                    Partner with Travel24 for efficient, stress-free corporate transport while you focus on growing
-                    your business.
+                    Joining the Travel24 Business Account means more than access to premium transportation — it
+                    means partnership, efficiency, and peace of mind for all your corporate travel arrangements. Let
+                    us handle the logistics while you focus on what matters most — running your business.
                 </p>
             </div>
 

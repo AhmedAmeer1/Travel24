@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
-    <title>Minicab Services</title>
+    <title>Cruise Port Transfers</title>
     <meta property="og:title" content="Contact Travel 24 Taxi - 24/7 Airport Transfer Support">
     <meta property="og:description"
         content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">
@@ -37,6 +38,7 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
+
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
@@ -106,122 +108,144 @@
         </section>
         <section>
             <div class="services-container services-content">
-                <h1>Minicab Services
-                </h1>
-                <h3>Reliable Minicab Services Across the UK
-                </h3>
+                <h1>Cruise Port Transfers</h1>
+                <h3>Comfortable & On-Time Cruise Port Transfers Across the UK</h3>
                 <p>
-                    Travel24 offers professional and affordable minicab services across the UK, providing safe,
-                    comfortable, and punctual travel for everyday journeys and long-distance trips. Whether you
-                    need a local ride, an airport transfer, or a pre-booked minicab, our experienced drivers are here
-                    to get you where you need to be.
+                    Travel24 provides reliable cruise port transfer services across the UK, offering safe, comfortable
+                    and punctual journeys to and from all major UK cruise terminals. Whether you’re travelling to
+                    Southampton, Dover, Tilbury, Liverpool or any other UK cruise port, our professional drivers
+                    ensure a smooth, stress-free transfer from your door to the terminal.
+
                 </p>
                 <p>
-                    We focus on convenience, reliability, and value, making Travel24 a trusted choice for UK minicab
-                    bookings
+                    With Travel24, you can relax knowing your cruise transfer is fully planned, professionally
+                    managed and tailored to your travel needs.
+
                 </p>
+
                 <div class="mt-5">
-                    <h2>Local Minicab Services</h2>
-                    <p>Our local minicab services are ideal for short journeys, daily travel, and planned trips. With
-                        flexible booking options and knowledgeable drivers, we ensure smooth and stress-free travel in
-                        your area.</p>
-                </div>
-                <div class="mt-5">
-                    <h4>Perfect for :</h4>
+                    <h2>UK Cruise Ports We Serve</h2>
+                    <p>
+                        We offer private cruise transfers to and from all major UK cruise terminals, including:
+                    </p>
                     <ul class="services-list">
-                        <li>Local commuting</li>
-                        <li>Shopping and errands</li>
-                        <li>School and college travel</li>
-                        <li>Medical appointments</li>
-                        <li>Social and family journeys
+                        <li>Southampton Cruise Port
+                        </li>
+                        <li>Dover Cruise Terminal
+                        </li>
+                        <li>Tilbury Cruise Port
+                        </li>
+                        <li>Port of Liverpool</li>
+                        <li>Port of Harwich
+                        </li>
+                        <li>Newcastle & Portsmouth Cruise Ports
                         </li>
                     </ul>
-                </div>
-                <div class="mt-5">
-                    <h2>Airport Minicab Transfers</h2>
                     <p>
-                        Travel24 provides dependable airport minicab transfers to and from all major UK airports.
-                        Whether you’re travelling for business or leisure, our pre-booked minicabs ensure timely pickups
-                        and comfortable transfers. Enjoy stress-free airport transfers with active flight monitoring and
-                        automatic pick-up time adjustments for delays or early arrivals.
+                        Our nationwide coverage means seamless transfers from London, airports, hotels, and home
+                        addresses directly to your cruise terminal.
+
                     </p>
+
+                </div>
+
+                <div class="mt-5">
+                    <h2>Why Choose Travel24 for Cruise Transfers</h2>
                     <div class="mt-5">
-                        <h4>Airport transfer benefits:</h4>
-                        <ul class="services-list">
-                            <li>Pre-booked for peace of mind</li>
-                            <li>Meet & greet options available</li>
-                            <li>Flight-friendly pickup times</li>
-                            <li>Fixed and competitive pricing</li>
-                        </ul>
+                        <h4>Professional & Reliable Service</h4>
+                        <p>
+                            Our experienced drivers are trained to provide punctual, courteous and professional service,
+                            ensuring you arrive at the cruise port with plenty of time to spare.
+                        </p>
                     </div>
-                </div>
-                <div class="mt-5">
-                    <h2>Minicabs for Business & Corporate Travel</h2>
-                    <p>
-                        Our corporate minicab services are designed for professionals who value punctuality and
-                        comfort. From client pickups to staff transport, Travel24 delivers reliable solutions for
-                        business
-                        travel needs
-                    </p>
                     <div class="mt-5">
-                        <ul class="services-list">
-                            <li>Executive and business travel</li>
-                            <li>Office-to-office transfers</li>
-                            <li>Client and guest transport</li>
-                            <li>Regular corporate bookings</li>
-                        </ul>
+                        <h4>Spacious Vehicles for Luggage</h4>
+                        <p>
+                            Cruise travel means extra luggage. Our vehicles offer generous boot space for suitcases,
+                            cruise
+                            bags and travel essentials — ideal for couples, families and groups.
+
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Door-to-Door Convenience</h4>
+                        <p>
+                            Enjoy a direct, private transfer with no waiting, no shared rides and no unnecessary stops.
+                            We
+                            collect you from your chosen location and drop you right at the cruise terminal
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Fixed Pricing – No Hidden Charges</h4>
+                        <p>
+                            Our cruise port transfers come with clear, upfront pricing, helping you plan your travel
+                            budget
+                            with confidence.
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Ideal for Individuals & Groups</h4>
+                        <p>
+                            Whether you’re travelling solo, as a couple or in a group, Travel24 provides suitable
+                            vehicle
+                            options to match your journey.
+                        </p>
                     </div>
                 </div>
-                <div class="mt-5">
-                    <h2>Our Vehicles</h2>
-                    <p>
-                        Travel24 operates a fleet of clean, modern, and well-maintained vehicles suitable for different
-                        travel needs. Whether you’re travelling alone or with a group, our vehicles offer comfort,
-                        safety,
-                        and ample luggage space.
 
-                    </p>
-                </div>
 
                 <div class="mt-5">
-                    <h2>Professional & Licensed Drivers</h2>
+                    <h2>Cruise Transfers from Airports & Hotels</h2>
                     <p>
-                        All Travel24 minicab journeys are completed by trained, experienced, and licensed drivers. Our
-                        drivers prioritise customer safety, punctuality, and courteous service on every trip.
+                        Travel24 specialises in cruise port transfers from UK airports, including:
 
                     </p>
+                    <ul class="services-list">
+                        <li>Heathrow Airport
+
+                        </li>
+                        <li>Gatwick Airport
+
+                        </li>
+                        <li>Stansted Airport
+                        </li>
+                        <li>Luton Airport</li>
+                        <li>London City Airport
+                        </li>
+
+                    </ul>
+                    <p>
+                        We also provide cruise transfers from hotels, private residences and city centres, making your
+                        journey to the port simple and stress-free.
+
+                    </p>
+
                 </div>
-                <div class="row gx-0 mt-md-5 ">
-                    <div class="col-md-6 " style="padding-left:0px;">
-                        <h3>Easy Minicab Booking</h3>
-                        <p>Booking a minicab with Travel24 is quick and simple:</p>
-                        <ul class=" services-list">
-                            <li>Online booking available
-                            </li>
-                            <li>Phone bookings accepted</li>
-                            <li>Advance and same-day bookings
-                            </li>
-                            <li>Clear pricing with no hidden fees</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 " style="padding-left:0px;">
-                        <h3>Why Choose Travel24 Minicab Services?</h3>
-                        <ul class=" services-list">
-                            <li>Trusted UK minicab provider</li>
-                            <li>Local and nationwide coverage</li>
-                            <li>Airport and long-distance transfers</li>
-                            <li>Professional, reliable drivers</li>
-                            <li>Competitive and transparent pricing</li>
-                        </ul>
-                    </div>
+
+
+
+                <div class="mt-5">
+                    <h2>Return Transfers After Your Cruise</h2>
+                    <p>
+                        Coming back from a cruise? Travel24 offers return cruise port transfers, ensuring a smooth
+                        journey home or onward to the airport or hotel. Our drivers will be ready to collect you from
+                        the
+                        terminal and assist with luggage for a comfortable return journey.
+                    </p>
+
                 </div>
                 <div class="mt-5">
-                    <h2>Book Your Minicab Today</h2>
+                    <h2>Travel24 – Your Trusted UK Cruise Transfer Partner</h2>
                     <p>
-                        Looking for a dependable UK minicab service? Travel24 is ready to help. Book your minicab today
-                        for comfortable, reliable, and affordable travel across the UK.
+                        With years of experience in UK private hire and transfer services, Travel24 is trusted by
+                        travellers
+                        who value reliability, comfort and professionalism. Our cruise port transfer service is designed
+                        to remove travel stress and ensure your holiday starts and ends perfectly.
+
                     </p>
+
                 </div>
+
             </div>
         </section>
     </main>
@@ -234,9 +258,9 @@
     <script src="https://use.fontawesome.com/1e36072efd.js"></script>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
 </body>
-  <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd6AQCrQBjsP5I9KMXGVUVWhJJeQet3C4&sensor=false&libraries=places">
-    </script>
+<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd6AQCrQBjsP5I9KMXGVUVWhJJeQet3C4&sensor=false&libraries=places">
+</script>
 <script src="<?php echo base_url('assets/js/homepage.js?v=6'); ?>">
 </script>
 

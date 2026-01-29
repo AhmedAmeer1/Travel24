@@ -30,7 +30,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png') ?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png') ?>">
 
-    <link rel="stylesheet" href="<?= base_url('assets/css/services.css?v=12') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/services.css?v=17') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/contact-info.css?v=10') ?>">
 
     <!-- Google tag (gtag.js) -->
@@ -68,7 +68,7 @@
                         ?>
 
                         <div class="heading">
-                            <h1>Book Your Business Account</h1>
+                            <h1>Book Your Weddings / Parties</h1>
                             <p>Request your quote now.</p>
                         </div>
 
@@ -84,96 +84,120 @@
             </div>
         </div>
     </section>
-
     <section>
         <div class="services-container services-content">
-
-            <h1>Business Account</h1>
-            <h3>Corporate Travel Made Easy</h3>
-
+            <h1>Weddings & Parties Transport
+            </h1>
+            <h3>Elegant & Reliable Transport for Weddings and Special Events</h3>
             <p>
-                At Travel24, we understand that efficient ground transport is essential for busy professionals,
-                corporate teams, and frequent travellers. That’s why our Travel24 Business Account is designed
-                to streamline your booking process, reduce admin time, and give your organisation priority
-                access to reliable airport transfers, chauffeur services, and daily transportation solutions.
-                Whether you’re arranging executive travel, airport pickups, or local transfers for your team,
-                a Travel24 Business Account gives you trusted service, preferred rates, and dedicated support —
-                all in one place.
+                Make your special day truly unforgettable with Travel24 Weddings & Parties transport services.
+                We provide professional, reliable and stylish transport solutions for weddings, private parties
+                and special events across the UK. From intimate celebrations to large-scale events, Travel24
+                ensures every journey is smooth, punctual and stress-free.
             </p>
-
+            <p>
+                Whether you need transport for the bride and groom, wedding guests, or party groups, our
+                experienced drivers and modern vehicles deliver comfort, elegance and peace of mind.
+            </p>
             <div class="mt-5">
-                <h2>Why Choose a Travel24 Business Account?</h2>
-
-                <p>
-                    Unlock a suite of corporate travel benefits built for productivity, convenience, and
-                    cost-effectiveness:
-                </p>
-
-                <div>
-                    <h3><i class="fa-solid fa-check"></i> Priority Booking & Dedicated Support</h3>
+                <h2>Wedding Transport Services</h2>
+                <div class="">
+                    <h3>Wedding Car & Guest Transfers</h3>
                     <p>
-                        Business clients benefit from priority handling and personalised service from our travel
-                        experts — even during peak times.
+                        Travel24 offers reliable wedding transport for couples, families and guests. From ceremony to
+                        reception, we coordinate every transfer carefully to ensure everyone arrives on time and in
+                        comfort.
+
                     </p>
                 </div>
-
-                <div>
-                    <h3><i class="fa-solid fa-check"></i> Flexible Corporate Billing</h3>
+                <div class="mt-5">
+                    <h3>Bridal Party & Group Travel</h3>
                     <p>
-                        Choose from easy payment options including account billing or online card payments with
-                        consolidated invoices.
+                        We provide spacious vehicles for bridesmaids, groomsmen and family members, keeping your
+                        wedding party together and on schedule.
                     </p>
                 </div>
-
-                <div>
-                    <h3><i class="fa-solid fa-check"></i> Transparent Pricing, No Surprises</h3>
+                <div class="mt-5">
+                    <h3>Venue-to-Venue Transfers</h3>
                     <p>
-                        Enjoy upfront pricing with no hidden fees — clear, fair rates for every journey.
-                    </p>
-                </div>
-
-                <div>
-                    <h3><i class="fa-solid fa-check"></i> Fast Online Booking & Management</h3>
-                    <p>
-                        Schedule rides quickly from airport transfers to chauffeur-led travel on desktop or mobile.
+                        Moving between hotels, ceremony venues and reception locations is effortless with our
+                        door-todoor wedding transfer service.
                     </p>
                 </div>
             </div>
-
             <div class="mt-5">
-                <h2>Perfect for Every Corporate Transport Need</h2>
-                <p>Our Business Account is ideal for:</p>
-
+                <h2>Party & Event Transport Services</h2>
+                <p>Our transport services are perfect for:</p>
                 <ul class="services-list">
-                    <li><b>Executive Travel & VIP Transfers</b> — Comfortable transport for executives.</li>
-                    <li><b>Airport & Intercity Transfers</b> — Timely pickups with flight monitoring.</li>
-                    <li><b>Team Travel Coordination</b> — Easy management of staff bookings.</li>
-                    <li><b>Events & Conferences</b> — Reliable group transport solutions.</li>
+                    <li>Birthday parties</li>
+                    <li>Engagement celebrations</li>
+                    <li>Anniversary events</li>
+                    <li>Corporate parties</li>
+                    <li>Private functions and celebrations</li>
                 </ul>
-
                 <p class="mt-5">
-                    Travel24’s modern fleet and professional drivers ensure safe, comfortable, and punctual journeys.
+                    Enjoy safe and comfortable transport for your guests without worrying about parking, directions
+                    or late-night travel.
                 </p>
             </div>
-
             <div class="mt-5">
-                <h2>How It Works</h2>
-
-                <ul class="services-list">
-                    <li><b>Apply Online –</b> Complete your Business Account application.</li>
-                    <li><b>Account Approval –</b> Our team reviews and activates your account.</li>
-                    <li><b>Start Booking –</b> Enjoy priority service and custom invoicing.</li>
-                </ul>
+                <h2>Why Choose Travel24 for Weddings & Parties
+                </h2>
+                <div class="">
+                    <h3>Professional & Courteous Drivers</h3>
+                    <p>
+                        Our drivers are smartly presented, experienced and committed to providing first-class service
+                        for every event.
+                    </p>
+                </div>
+                <div class="mt-5">
+                    <h3>Stylish & Comfortable Vehicles</h3>
+                    <p>
+                        Travel in modern, well-maintained vehicles designed to offer comfort, elegance and ample space
+                        for passengers.
+                    </p>
+                </div>
+                <div class="mt-5">
+                    <h3>Flexible & Customised Transport
+                    </h3>
+                    <p>
+                        We tailor wedding and party transport to your schedule, venues and guest numbers — ensuring
+                        seamless coordination.
+                    </p>
+                </div>
+                <div class="mt-5">
+                    <h3>Fixed Pricing & Transparent Quotes</h3>
+                    <p>
+                        Clear, upfront pricing with no hidden costs helps you plan your event transport with confidence.
+                    </p>
+                </div>
+                <div class="mt-5">
+                    <h3>UK-Wide Coverage</h3>
+                    <p>
+                        We provide wedding and party transport services across London and the UK, including cities,
+                        towns and rural venues.
+                    </p>
+                </div>
             </div>
-
             <div class="mt-5">
-                <h2>Grow with Travel24</h2>
+                <h2>Perfect for Guests, Groups & Special Occasions</h2>
                 <p>
-                    Partner with Travel24 for efficient, stress-free corporate transport while you focus on growing
-                    your business.
+                    Whether it’s a small family gathering or a large wedding celebration, Travel24 delivers
+                    dependable event transport for individuals and groups alike
+                </p>
+                <p>
+                    We also offer airport transfers for wedding guests, making Travel24 the ideal choice for
+                    destination weddings and international attendees.
                 </p>
             </div>
-
+            <div class="mt-5">
+                <h2>Travel24 – Your Trusted Event Transport Partner</h2>
+                <p>
+                    With years of experience in UK private hire and event transfers, Travel24 is trusted for wedding
+                    transport, party transfers and special occasion travel. We take pride in delivering punctual,
+                    elegant and stress-free journeys for life’s most important moments.
+                </p>
+            </div>
         </div>
     </section>
 
