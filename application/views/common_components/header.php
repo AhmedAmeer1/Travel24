@@ -6,8 +6,39 @@
     border-radius: 5px;
     font-weight: bold;
 }
+
+
+/* ===== Sticky Header (Desktop) ===== */
+.limits-header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+}
+
+/* ===== Sticky Header (Mobile) ===== */
+.res-side-menu {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+}
+
+/* Prevent content hiding under header */
+body {
+    padding-top: 120px; /* adjust if header height changes */
+}
+
+/* Mobile padding fix */
+@media (max-width: 767px) {
+    body {
+        padding-top: 90px;
+    }
+}
+
+
 </style>
-<link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/custom.css?v=2')?>" rel="stylesheet" />
 <link href="<?php echo base_url('assets/css/header.css?v=2')?>" rel="stylesheet" />
 <header class="limits-header-wrapper  d-md-block d-none ">
     <nav class="navbar header_container  navbar-expand-md">
@@ -65,7 +96,7 @@
         </button>
     </div>
 </header>
-<div class="menu-side-wrapper d-md-none d-block">
+<div class="menu-side-wrapper  d-md-none d-block">
     <ul>
         <li>
             <a href="<?php echo base_url()?>">Home</a>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php $this->load->view('common_components/Home/head'); ?>
-<link href="<?php echo base_url('assets/css/custom.css?v=19')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/custom.css?v=4')?>" rel="stylesheet" />
 <link href="<?php echo base_url('assets/css/index.css?v=18')?>" rel="stylesheet" />
 
 <body>
