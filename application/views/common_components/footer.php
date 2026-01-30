@@ -48,7 +48,7 @@
                     <li><a href="<?php echo base_url()?>">Home</a></li>
                     <li><a href="<?php echo base_url()?>drivers">Drivers</a></li>
                     <li><a href="<?php echo base_url()?>aboutus">About Us</a></li>
-                    <li><a href="<?php echo base_url()?>popularDestinations">Destinations</a></li>
+                    <!-- <li><a href="<?php echo base_url()?>popularDestinations">Destinations</a></li> -->
                     <li><a href="<?php echo base_url()?>faq">FAQ</a></li>
                     <li><a href="<?php echo base_url()?>terms">Terms & Conditions</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">Contact</a></li>
@@ -60,10 +60,10 @@
                 <h5 class="footer-heading mb-3">Our Services</h5>
                 <ul class="side-menu list-unstyled">
                     <li><a href="<?php echo base_url()?>airportTransfer">Airports Transfer</a></li>
-                    <li><a href="<?php echo base_url()?>bookNow">Cruise Port Transfers</a></li>
+                    <li><a href="<?php echo base_url()?>cruisePortTransfers">Cruise Port Transfers</a></li>
                     <li><a href="<?php echo base_url()?>executiveChauffeur">Executive Chauffeur</a></li>
-                    <li><a href="<?php echo base_url()?>bookNow">Minicab Services</a></li>
-                    <li><a href="<?php echo base_url()?>bookNow">University Student Transfer</a></li>
+                    <li><a href="<?php echo base_url()?>minicabServices">Minicab Services</a></li>
+                    <li><a href="<?php echo base_url()?>universityStudentTransfer">University Student Transfer</a></li>
                     <li><a href="<?php echo base_url()?>manAndVan">Man and Van Services</a></li>
                     <li><a href="<?php echo base_url()?>parcelServices">Parcel Services</a></li>
                 </ul>
@@ -74,12 +74,12 @@
                 <!-- <h5 class="footer-heading mb-3">Our Services</h5> -->
                 <ul class="side-menu list-unstyled mt-4">
 
-                    <li><a href="<?php echo base_url()?>contactUs">Weddings / Parties</a></li>
-                    <li><a href="<?php echo base_url()?>contactUs">Vehicle Rent</a></li>
+                    <li><a href="<?php echo base_url()?>weddingsParties">Weddings / Parties</a></li>
+                    <li><a href="<?php echo base_url()?>vehicleRent">Vehicle Rent</a></li>
                     <li><a href="<?php echo base_url()?>accidentClaim">Accident Claims</a></li>
-                    <li><a href="<?php echo base_url()?>contactUs">Business Account</a></li>
+                    <li><a href="<?php echo base_url()?>businessAccount">Business Account</a></li>
                     <li><a href="<?php echo base_url()?>contactUs">School Services</a></li>
-                    <li><a href="<?php echo base_url()?>contactUs">Coach Transfer</a></li>
+                    <li><a href="<?php echo base_url()?>coachTransfer">Coach Transfer</a></li>
                     <li><a href="<?php echo base_url()?>dayHire">Day Hire</a></li>
                 </ul>
             </div>

@@ -1,7 +1,9 @@
  <div class="list-details-box">
      <div class="d-flex justify-content-between flag-div">
          <h1 class="text-uppercase">Your journey is our mission </h1>
-         <img src="assets/images/travel24/england.svg" class="img-fluid " alt="flag of the United Kingdom">
+         <a href="<?php echo base_url()?>popularDestinations">
+             <img src="assets/images/travel24/england.svg" class="img-fluid " alt="flag of the United Kingdom">
+         </a>
      </div>
      <p>
          When you choose us for your travel needs, we're committed to delivering a seamless
