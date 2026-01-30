@@ -111,7 +111,6 @@
                 <h1>University Student Transfer
                 </h1>
                 <h3>Reliable University Student Transfer Services Across the UK
-
                 </h3>
                 <p>
                     Travel24 provides safe, affordable and reliable university student transfer services across the
@@ -135,113 +134,166 @@
                         </li>
                     </ul>
                 </div>
-
-
                 <div class="mt-5">
                     <h2>Universities We Serve Across the UK</h2>
                     <p>Travel24 provides student transfer services to and from leading universities across the UK,
-                        including:</p>
-                        
-                    <div class="mt-5">
-                        <h4>London Universities</h4>
-                        <ul class="services-list">
-                            <li>Airport transfers for students arriving in or departing from the UK</li>
-                            <li>University move-in and move-out days</li>
-                            <li>Term-time travel between home and campus</li>
-                            <li>Transfers to student halls or private accommodation</li>
-                            <li>Early morning or late-night journeys with safe, private transport
-                            </li>
-                        </ul>
+                        including:
+                    </p>
+                    <h4>London Universities</h4>
+                    <div class="row gx-0  ">
+                        <div class="col-md-6 " style="padding-left:0px;">
+                            <ul class=" services-list">
+                                <li>University College London (UCL) </li>
+                                <li>King’s College London</li>
+                                <li>Imperial College London</li>
+                                <li>London School of Economics (LSE)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 " style="padding-left:0px;">
+                            <ul class=" services-list">
+                                <li>Queen Mary University of London</li>
+                                <li>University of Westminster</li>
+                                <li>University of Greenwich</li>
+                            </ul>
+                        </div>
                     </div>
-
-
-                </div>
-
-
-
-                <div class="mt-5">
-                    <h2>Airport Minicab Transfers</h2>
-                    <p>
-                        Travel24 provides dependable airport minicab transfers to and from all major UK airports.
-                        Whether you’re travelling for business or leisure, our pre-booked minicabs ensure timely pickups
-                        and comfortable transfers. Enjoy stress-free airport transfers with active flight monitoring and
-                        automatic pick-up time adjustments for delays or early arrivals.
-                    </p>
                     <div class="mt-5">
-                        <h4>Airport transfer benefits:</h4>
-                        <ul class="services-list">
-                            <li>Pre-booked for peace of mind</li>
-                            <li>Meet & greet options available</li>
-                            <li>Flight-friendly pickup times</li>
-                            <li>Fixed and competitive pricing</li>
-                        </ul>
+                        <h4>England</h4>
+                        <div class="row gx-0  ">
+                            <div class="col-md-6 " style="padding-left:0px;">
+                                <ul class=" services-list">
+                                    <li>University of Oxford</li>
+                                    <li>University of Cambridg</li>
+                                    <li>University of Manchester</li>
+                                    <li>University of Birmingham</li>
+                                    <li>University of Leeds</li>
+                                    <li>University of Nottingham</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 " style="padding-left:0px;">
+                                <ul class=" services-list">
+                                    <li>University of Bristol</li>
+                                    <li>University of Sheffield</li>
+                                    <li>University of Leicester</li>
+                                    <li>Coventry University</li>
+                                    <li>University of Warwick</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-5">
-                    <h2>Minicabs for Business & Corporate Travel</h2>
-                    <p>
-                        Our corporate minicab services are designed for professionals who value punctuality and
-                        comfort. From client pickups to staff transport, Travel24 delivers reliable solutions for
-                        business
-                        travel needs
-                    </p>
                     <div class="mt-5">
-                        <ul class="services-list">
-                            <li>Executive and business travel</li>
-                            <li>Office-to-office transfers</li>
-                            <li>Client and guest transport</li>
-                            <li>Regular corporate bookings</li>
-                        </ul>
+                        <div class="row gx-0  ">
+                            <div class="col-md-6 " style="padding-left:0px;">
+                                <h4>Scotland</h4>
+                                <ul class=" services-list">
+                                    <li>University of Edinburgh
+                                    </li>
+                                    <li>University of Glasgow</li>
+                                    <li>University of St Andrews
+                                    </li>
+                                    <li>Heriot-Watt University</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 " style="padding-left:0px;">
+                                <h4>Wales</h4>
+                                <ul class=" services-list">
+                                    <li>Cardiff University</li>
+                                    <li>Swansea University</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-5">
-                    <h2>Our Vehicles</h2>
-                    <p>
-                        Travel24 operates a fleet of clean, modern, and well-maintained vehicles suitable for different
-                        travel needs. Whether you’re travelling alone or with a group, our vehicles offer comfort,
-                        safety,
-                        and ample luggage space.
-
-                    </p>
-                </div>
-
-                <div class="mt-5">
-                    <h2>Professional & Licensed Drivers</h2>
-                    <p>
-                        All Travel24 minicab journeys are completed by trained, experienced, and licensed drivers. Our
-                        drivers prioritise customer safety, punctuality, and courteous service on every trip.
-
-                    </p>
-                </div>
-                <div class="row gx-0 mt-md-5 ">
-                    <div class="col-md-6 " style="padding-left:0px;">
-                        <h3>Easy Minicab Booking</h3>
-                        <p>Booking a minicab with Travel24 is quick and simple:</p>
+                    <div class="mt-5">
+                        <h4>Northern Ireland</h4>
                         <ul class=" services-list">
-                            <li>Online booking available
-                            </li>
-                            <li>Phone bookings accepted</li>
-                            <li>Advance and same-day bookings
-                            </li>
-                            <li>Clear pricing with no hidden fees</li>
+                            <li>Queen’s University Belfast</li>
+                            <li>Ulster University</li>
                         </ul>
-                    </div>
-                    <div class="col-md-6 " style="padding-left:0px;">
-                        <h3>Why Choose Travel24 Minicab Services?</h3>
-                        <ul class=" services-list">
-                            <li>Trusted UK minicab provider</li>
-                            <li>Local and nationwide coverage</li>
-                            <li>Airport and long-distance transfers</li>
-                            <li>Professional, reliable drivers</li>
-                            <li>Competitive and transparent pricing</li>
-                        </ul>
+                        <p class="mt-5">We also provide student transfers to many other universities and colleges across
+                            the UK. If
+                            your
+                            university is not listed, Travel24 can still support your journey.</p>
                     </div>
                 </div>
                 <div class="mt-5">
-                    <h2>Book Your Minicab Today</h2>
+                    <h2>Why Choose Travel24 for Student Transfers
+                    </h2>
+                    <div>
+                        <h4>Safe & Professional Drivers</h4>
+                        <p>
+                            All Travel24 drivers are fully licensed, vetted and trained to deliver safe and respectful
+                            service
+                            on every journey.
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Affordable & Transparent Pricing</h4>
+                        <p>
+                            Student-friendly pricing with fixed fares and no hidden charges, helping you manage your
+                            budget with confidence.
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Door-to-Door Convenience</h4>
+                        <p>
+                            Private, direct transfers with no sharing and no waiting — ideal for students travelling
+                            with
+                            luggage.
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Spacious Vehicles for Luggage</h4>
+                        <p>
+                            Our vehicles accommodate suitcases, backpacks and study essentials, perfect for airport and
+                            move-in transfers.
+                        </p>
+                    </div>
+                    <div class="mt-5">
+                        <h4>UK-Wide Coverage</h4>
+                        <p>
+                            From major cities to university towns, Travel24 operates nationwide across the UK.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h2>Student Airport Transfers</h2>
+                    <p>We offer student airport transfers from all major UK airports, including:</p>
+                    <div class="row gx-0  ">
+                        <div class="col-md-6 " style="padding-left:0px;">
+                            <ul class=" services-list">
+                                <li>Heathrow Airport</li>
+                                <li>Gatwick Airport</li>
+                                <li>Stansted Airport</li>
+                                <li>Luton Airport</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 " style="padding-left:0px;">
+                            <ul class=" services-list">
+                                <li>London City Airport</li>
+                                <li>Manchester Airport</li>
+                                <li>Birmingham Airport</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Ideal for both international and domestic students, ensuring smooth arrivals and departures.</p>
+                </div>
+                <div class="mt-5">
+                    <h2>A Hassle-Free Airport Welcome for International Students</h2>
                     <p>
-                        Looking for a dependable UK minicab service? Travel24 is ready to help. Book your minicab today
-                        for comfortable, reliable, and affordable travel across the UK.
+                        For international students visiting the UK for the first time, we offer a smooth and stress-free
+                        airport transfer to your hotel or accommodation. Our team actively monitors your flight,
+                        whether it arrives early or is delayed, ensuring your driver is there right on time. You’ll be
+                        welcomed with a professional meet-and-greet service at the airport, making your arrival easy
+                        and comfortable. Enjoy complimentary onboard Wi-Fi so you can stay connected with your
+                        family and let them know you’ve arrived safely
+                    </p>
+                </div>
+                <div class="mt-5">
+                    <h2>Perfect for International & Domestic Students</h2>
+                    <p>
+                        Whether you’re an international student arriving in the UK for the first time or a UK student
+                        travelling between home and university, Travel24 provides dependable transport you can trust.
+                        Parents can book with confidence knowing students are travelling safely.
                     </p>
                 </div>
             </div>
