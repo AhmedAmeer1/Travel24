@@ -78,7 +78,7 @@
                     <li><a href="<?php echo base_url()?>vehicleRent">Vehicle Rent</a></li>
                     <li><a href="<?php echo base_url()?>accidentClaim">Accident Claims</a></li>
                     <li><a href="<?php echo base_url()?>businessAccount">Business Account</a></li>
-                    <li><a href="<?php echo base_url()?>contactUs">School Services</a></li>
+                    <li><a href="<?php echo base_url()?>schoolServices">School Services</a></li>
                     <li><a href="<?php echo base_url()?>coachTransfer">Coach Transfer</a></li>
                     <li><a href="<?php echo base_url()?>dayHire">Day Hire</a></li>
                 </ul>
