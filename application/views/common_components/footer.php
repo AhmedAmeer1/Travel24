@@ -1,6 +1,6 @@
 <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
 <link href="<?php echo base_url('assets/css/custom.css')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/footer.css?v=11')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/footer.css?v=8')?>" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <footer class="limits-footer-wrapper">

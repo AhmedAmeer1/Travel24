@@ -24,6 +24,8 @@
     <link rel="canonical" href="https://travel24taxi.com/contactUs" />
 
     <link rel="stylesheet" href="<?= base_url('assets/css/services.css?v=2') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/contact-info.css?v=10') ?>">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
@@ -35,7 +37,15 @@
     gtag('js', new Date());
     gtag('config', 'G-XK1KGHX0F7');
     </script>
+
 </head>
+<style>
+@media (max-width: 768px) {
+    .logo-grid>div {
+        margin-bottom: 30px;
+    }
+}
+</style>
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
@@ -193,7 +203,7 @@
                 <h2 class="mt-5">We are working with many councils at the moment.
                 </h2>
 
-                <div class="row mt-5 g-5">
+                <div class="row mt-5 g-5 logo-grid">
 
 
                     <div class="col-md-3 d-flex justify-content-center align-items-center">
