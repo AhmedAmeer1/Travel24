@@ -167,7 +167,7 @@
 
             <div class="row gx-0 mt-md-5 ">
                 <div class="col-md-6 " style="padding-left:0px;">
-                    <h3>Nationwide UK Coverage</h3>
+                    <h3>Simple Booking & Transparent Pricing</h3>
                     <p>Booking a parcel delivery with Travel24 is quick
                         and straightforward. We offer:</p>
                     <ul class=" services-list">
