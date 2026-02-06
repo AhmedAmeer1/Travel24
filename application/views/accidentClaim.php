@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Get in touch with Travel24 Taxi – contact us via online form, call 02039 822 911 or email info@travel24taxi.com. Fast quotes & 24/7 support." />
+        content="Get affordable accident claim support with Travel24. Expert guidance, fast processing, and reliable help to claim compensation with ease and peace of mind." />
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
-    <title>Accident Claim</title>
+    <link rel="canonical" href="https://travel24taxi.com/accidentClaim" />
     <meta property="og:title" content="Contact Travel 24 Taxi - 24/7 Airport Transfer Support">
     <meta property="og:description"
         content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">
@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
-    <link rel="canonical" href="https://travel24taxi.com/contactUs" />
+    <link rel="canonical" href="https://travel24taxi.com/accidentClaim" />
     <link rel="stylesheet" href="<?= base_url('assets/css/accidentClaim.css?v=2') ?>">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>

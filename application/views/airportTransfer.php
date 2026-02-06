@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="<?php echo $result->meta_keyword; ?>" />
     <meta name="description"
-        content="Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours." />
+        content="Book reliable airport transfers with Travel24Taxi — fast, affordable taxi rides to and from all airports. Comfortable vehicles, professional drivers, and 24/7 service." />
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
-    <title>Airports Transfer</title>
+    <title> Affordable Airports Transfer Service</title>
     <meta property="og:title" content=" Travel24 | Reliable UK Airport Transfers & Local Taxi Services ">
     <meta property="og:description"
         content=" Book reliable taxi services with Travel24Taxi. Affordable, fast, and safe rides 24/7. Your trusted partner for airport transfers, city rides, and tours. ">
@@ -22,11 +22,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
-    <link rel="canonical" href="https://travel24taxi.com/" />
+    <link rel="canonical" href="https://travel24taxi.com/airportTransfer " />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="<?php echo base_url('assets/css/bootstrap.min1.css')?>" rel="stylesheet" />
-    <?php $this->load->view('assets/js/seo/home'); ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
@@ -38,7 +37,6 @@
     gtag('js', new Date());
     gtag('config', 'G-XK1KGHX0F7');
     </script>
-
     <link href="<?php echo base_url('assets/css/custom.css?v=20')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=21')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/airports-transfer.css?v=1')?>" rel="stylesheet" />

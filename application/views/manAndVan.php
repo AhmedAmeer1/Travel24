@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
-    <link rel="canonical" href="https://travel24taxi.com/contactUs" />
+    <link rel="canonical" href="https://travel24taxi.com/manAndVan" />
     <link rel="stylesheet" href="<?= base_url('assets/css/manAndVan.css?v=10') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
     <!-- Google tag (gtag.js) -->

@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Get in touch with Travel24 Taxi – contact us via online form, call 02039 822 911 or email info@travel24taxi.com. Fast quotes & 24/7 support." />
+        content="Book affordable minicab services with Travel24Taxi. Fast, reliable rides with professional drivers, easy online booking, and great prices for all your journeys." />
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
-    <title>Minicab Services</title>
+    <title> Minicab Services | Affordable & Reliable Rides</title>
     <meta property="og:title" content="Contact Travel 24 Taxi - 24/7 Airport Transfer Support">
     <meta property="og:description"
         content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
     <meta property="og:url" content="https://travel24taxi.com/contactUs">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://travel24taxi.com/contactUs" />
+    <link rel="canonical" href="https://travel24taxi.com/minicabServices" />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico') ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png') ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png') ?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png') ?>">
-
     <link rel="stylesheet" href="<?= base_url('assets/css/services.css?v=17') ?>">
     <link href="<?php echo base_url('assets/css/custom.css?v=20')?>" rel="stylesheet" />
     <link href="<?php echo base_url('assets/css/index.css?v=21')?>" rel="stylesheet" />
@@ -29,7 +29,6 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -37,6 +36,7 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
+
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <main class="home">
@@ -234,9 +234,9 @@
     <script src="https://use.fontawesome.com/1e36072efd.js"></script>
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
 </body>
-  <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd6AQCrQBjsP5I9KMXGVUVWhJJeQet3C4&sensor=false&libraries=places">
-    </script>
+<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd6AQCrQBjsP5I9KMXGVUVWhJJeQet3C4&sensor=false&libraries=places">
+</script>
 <script src="<?php echo base_url('assets/js/homepage.js?v=6'); ?>">
 </script>
 

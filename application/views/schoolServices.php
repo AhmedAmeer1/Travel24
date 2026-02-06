@@ -5,12 +5,12 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="Get in touch with Travel24 Taxi – contact us via online form, call 02039 822 911 or email info@travel24taxi.com. Fast quotes & 24/7 support." />
+     <meta name="description"
+        content="Book affordable school taxi services with Travel24. Safe, reliable rides for students with professional drivers, easy online booking, and great low prices." />
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
-    <title>School Services</title>
+    <title> Affordable School Taxi Services – Safe & Reliable</title>
     <meta property="og:title" content="Contact Travel 24 Taxi - 24/7 Airport Transfer Support">
     <meta property="og:description"
         content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">
@@ -21,11 +21,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
-    <link rel="canonical" href="https://travel24taxi.com/contactUs" />
-
+    <link rel="canonical" href="https://travel24taxi.com/schoolServices" />
     <link rel="stylesheet" href="<?= base_url('assets/css/services.css?v=2') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/contact-info.css?v=10') ?>">
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
@@ -122,21 +120,14 @@
                         groups and long-term contracts.
                     </p>
                 </div>
-
-
                 <div class="mt-5">
-
-
                     <h2>Our School Transport Services
-
-
                     </h2>
                     <div>
                         <h4> <i class="fa-solid fa-check"></i> Daily School Runs
                         </h4>
                         <p>Reliable transport for daily pickup and drop-off, designed to fit around school schedules and
                             parental needs
-
                         </p>
                     </div>
                     <div>
@@ -148,7 +139,6 @@
                         </h4>
                         <p>Secure transport for school sports days, field trips, competitions and other educational
                             outings.
-
                         </p>
                     </div>
                     <div>
@@ -157,28 +147,18 @@
                         <p>Supportive, attentive service for pupils with additional needs — just let us know your
                             requirements. </p>
                     </div>
-
-
                 </div>
-
-
-
                 <div class="mt-5">
                     <h3>
                         Why UK Schools & Parents Trust Travel24
-
                     </h3>
                     <p>
                         Choosing Travel24 means choosing a partner that values your child’s safety and your family’s
                         convenience. Our UK-wide transport experience — from urban school runs to regional group
                         transfers — makes us the go-to option for parents and educational institutions who want
                         professional, stress-free school travel.
-
                     </p>
-
                 </div>
-
-
                 <div class="row mt-5 g-5">
                     <div class="col-md-6">
                         <h2>SEN Transport Services</h2>
@@ -202,31 +182,23 @@
 
                 <h2 class="mt-5">We are working with many councils at the moment.
                 </h2>
-
                 <div class="row mt-5 g-5 logo-grid">
-
-
                     <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <img src="assets/images/travel24/services/LondonBoroughOfHillingdon.png"
                             alt="London Borough Of Hillingdon" class="airport-transfer-img">
                     </div>
-
                     <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <img src="assets/images/travel24/services/NHS-RGB.webp" alt="NHS Logo" class="NHS-RGB">
                     </div>
-
                     <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <img src="assets/images/travel24/services/RoyalBoroughoOfWindsorMaidenhead.jpeg"
                             alt="Royal Borough Windsor Maidenhead" class="airport-transfer-img">
                     </div>
-
                     <div class="col-md-3 d-flex justify-content-center align-items-center">
                         <img src="assets/images/travel24/services/Slough_Borough_Council.svg"
                             alt="Slough Borough Council" class="airport-transfer-img">
                     </div>
                 </div>
-
-
             </div>
     </section>
     <?php $this->load->view('common_components/contactusFooter'); ?>

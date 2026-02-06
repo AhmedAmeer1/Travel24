@@ -5,34 +5,25 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="description"
-        content="Get in touch with Travel24 Taxi – contact us via online form, call 02039 822 911 or email info@travel24taxi.com. Fast quotes & 24/7 support." />
-
+        content="Book affordable wedding and party taxi services with Travel24. Stylish, reliable rides with professional drivers, great rates, and easy online booking for all events." />
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
-
     <?php $this->load->view('assets/js/metaPixel'); ?>
-
-    <title>Weddings Parties</title>
-
+    <title> Wedding & Party Taxi Services – Travel24 UK</title>
     <meta property="og:title" content="Contact Travel 24 Taxi - 24/7 Airport Transfer Support">
     <meta property="og:description"
         content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg">
     <meta property="og:url" content="https://travel24taxi.com/contactUs">
     <meta property="og:type" content="website">
-
-    <link rel="canonical" href="https://travel24taxi.com/contactUs" />
-
+    <link rel="canonical" href="https://travel24taxi.com/weddingsParties" />
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico') ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png') ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png') ?>">
     <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png') ?>">
-
     <link rel="stylesheet" href="<?= base_url('assets/css/services.css?v=17') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/contact-info.css?v=10') ?>">
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <script>
@@ -48,17 +39,13 @@
 </head>
 
 <body>
-
     <?php $this->load->view('common_components/header'); ?>
-
     <section id="content">
         <div class="services-container services-section">
             <div class="row">
-
                 <!-- LEFT SIDE : CONTACT FORM -->
                 <div class="col-md-6">
                     <form action="<?= base_url('weddingsParties/send_email'); ?>" method="post">
-
                         <?php
                         if ($this->session->flashdata('success_message')) {
                             echo '<div class="success">' . $this->session->flashdata('success_message') . '</div>';
@@ -66,21 +53,16 @@
                             echo '<div class="error">' . $this->session->flashdata('error_message') . '</div>';
                         }
                         ?>
-
                         <div class="heading">
                             <h1>Book Your Weddings / Parties</h1>
                             <p>Request your quote now.</p>
                         </div>
-
                         <?php $this->load->view('common_components/Services/contactInfoInputFields'); ?>
-
                         <button class="btnsubmit mt-3">Submit</button>
                     </form>
                 </div>
-
                 <!-- RIGHT SIDE : CONTACT DETAILS -->
                 <?php $this->load->view('common_components/Services/contactInfo'); ?>
-
             </div>
         </div>
     </section>
