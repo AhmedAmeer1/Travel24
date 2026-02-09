@@ -89,6 +89,6 @@
     <!-- ===== Footer Bottom ===== -->
     <div class="text-center py-3  border-top">
         <span class="footer-p2">Travel 24 Taxi is the Trading Name of NoLimit Airport Cars Ltd</span><br /><br />
-        <span class="footer-p2">© Travel24 2017 - 2025</span>
+        <span class="footer-p2">© Travel24 2017 - 2026</span>
     </div>
 </footer>

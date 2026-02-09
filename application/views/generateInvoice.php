@@ -119,7 +119,7 @@
 
       <div class="form-group">
         <label>Date & Time</label>
-        <input type="text" id="dateTimeInput" placeholder="e.g. 2025-04-28 03:30 PM" required>
+        <input type="text" id="dateTimeInput" placeholder="e.g. 2026-04-28 03:30 PM" required>
       </div>
 
       <div class="form-group">
