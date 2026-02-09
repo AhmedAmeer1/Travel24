@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Get in touch with Travel24 Taxi – contact us via online form, call 02039 822 911 or email info@travel24taxi.com. Fast quotes & 24/7 support." />
+    <meta name="description"
+        content="Get in touch with Travel24 Taxi – contact us via online form, call 02039 822 911 or email info@travel24taxi.com. Fast quotes & 24/7 support." />
     <meta name="facebook-domain-verification" content="srylsftuqhor6ur1ywdlntruuzo54y" />
     <meta name="yandex-verification" content="5c20865ffae8f446" />
     <?php $this->load->view('assets/js/metaPixel'); ?>
     <title>Contact us</title>
     <meta property="og:title" content="Contact Travel 24 Taxi - 24/7 Airport Transfer Support">
-    <meta property="og:description" content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">
+    <meta property="og:description"
+        content="Need assistance or want to book a taxi? Contact Travel 24 Taxi anytime. We’re here 24/7 to help with your airport transfer needs.">
     <meta property="og:image" content="https://travel24taxi.com/assets/images/travel24/about_us.svg ">
     <meta property="og:url" content="https://travel24taxi.com/contactUs">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="<?php echo base_url('/favicon.ico')?>">
-    <link rel="icon" type="image/png" sizes="16x16"  href="<?php echo base_url('/favicon-16x16.png')?> " >
-    <link rel="icon" type="image/png" sizes="32x32"  href="<?php echo base_url('/favicon-32x32.png')?>">
-    <link rel="icon" type="image/png" sizes="48x48"  href="<?php echo base_url('/favicon-48x48.png')?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url('/favicon-16x16.png')?> ">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url('/favicon-32x32.png')?>">
+    <link rel="icon" type="image/png" sizes="48x48" href="<?php echo base_url('/favicon-48x48.png')?>">
     <link rel="canonical" href="https://travel24taxi.com/contactUs" />
-    <link rel="stylesheet" href="<?= base_url('assets/css/contactUs.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/contactUs.css?v=4') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/aboutus.css') ?>">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK1KGHX0F7"></script>
     <?php $this->load->view('assets/js/seo/contactUs'); ?>
     <script>
     window.dataLayer = window.dataLayer || [];
+
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -33,16 +37,32 @@
     gtag('config', 'G-XK1KGHX0F7');
     </script>
 </head>
+
 <body>
     <?php $this->load->view('common_components/header'); ?>
     <section id="content">
         <div class="container-fluid banner-section">
-            <img src="<?php echo base_url('assets/images/travel24/contact_us.svg')?>" alt="about_us_banner" class="banner-image">
+            <img src="<?php echo base_url('assets/images/travel24/contact_us.svg')?>" alt="about_us_banner"
+                class="banner-image">
         </div>
         <div class="contact_form">
             <div class="heading">
-                <h1>Get in touch</h1>
-                <p>We’d love to hear from you. Please fill out this form.</p>
+
+                <div class="heading">
+                    <h1>Get in touch</h1>
+
+                    <p class="highlight-text">
+                        Its free to join, 24/7 assistance, flexibility,
+                        Weekly pay, everyday airport transfers, save miles with return
+                    </p>
+
+                    <p>We are hiring drivers to join the Travel24 taxi team for school runs! Whether you are looking to
+                        do school runs or full-time taxi work, we have opportunities available for both</p>
+                    <p>We’d love to hear from you. Please fill out this form.</p>
+                    <p>Join our reliable, friendly team with regular local work and great support.</p>
+                </div>
+
+
             </div>
             <form action="<?= base_url('contactUs/send_email'); ?>" method="post">
                 <?php
@@ -81,14 +101,16 @@
         </div>
         <div class=" contact-detail-container d-flex flex-column flex-md-row justify-content-between">
             <div class="d-flex  p-xl-5">
-                <img src="<?php echo base_url('assets/images/travel24/email.svg')?>" alt="email icon" class="contact_icon">
+                <img src="<?php echo base_url('assets/images/travel24/email.svg')?>" alt="email icon"
+                    class="contact_icon">
                 <div>
                     <h1>Email</h1>
                     <p>info@travel24taxi.com</p>
                 </div>
             </div>
             <div class="d-flex mt-5 mt-md-0 p-xl-5">
-                <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="location icon" class="contact_icon">
+                <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="location icon"
+                    class="contact_icon">
                 <div>
                     <h1>TRAVEL24 </h1>
                     <p> Regus Maidenhead, Concorde Park.
@@ -99,14 +121,16 @@
                 </div>
             </div>
             <div class="d-flex mt-5 mt-md-0 p-xl-5">
-                <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="location icon" class="contact_icon">
+                <img src="<?php echo base_url('assets/images/travel24/location.svg')?>" alt="location icon"
+                    class="contact_icon">
                 <div>
                     <h1>Nolimit Airport Cars Ltd</h1>
                     <p> Registered England and Wales.Registration No: 11212437.</p>
                 </div>
             </div>
             <div class="d-flex mt-5 mt-md-0 p-xl-5">
-                <img src="<?php echo base_url('assets/images/travel24/phone.svg')?>" alt="call icon" class="contact_icon">
+                <img src="<?php echo base_url('assets/images/travel24/phone.svg')?>" alt="call icon"
+                    class="contact_icon">
                 <div>
                     <h1>Phone</h1>
                     <p>01293&nbsp;775422 </p>
@@ -125,4 +149,5 @@
 
     <script src="<?php echo base_url('assets/js/custom.js')?>"></script>
 </body>
+
 </html>

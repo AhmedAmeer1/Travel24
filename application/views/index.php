@@ -2,7 +2,7 @@
 <html lang="en">
 <?php $this->load->view('common_components/Home/head'); ?>
 <link href="<?php echo base_url('assets/css/custom.css?v=4')?>" rel="stylesheet" />
-<link href="<?php echo base_url('assets/css/index.css?v=18')?>" rel="stylesheet" />
+<link href="<?php echo base_url('assets/css/index.css?v=19')?>" rel="stylesheet" />
 
 <body>
     <?php $this->load->view('common_components/header'); ?>
@@ -47,8 +47,8 @@
                                         <div class="form-group position-relative">
                                             <div class="d-flex justify-content-between">
                                                 <label>&nbsp;</label>
-                                               <button type="button" style="float:right" class="multi-root"><i
-                                                     class="fa fa-plus-circle"></i> Multi Route</button>
+                                                <button type="button" style="float:right" class="multi-root"><i
+                                                        class="fa fa-plus-circle"></i> Multi Route</button>
                                             </div>
                                             <input type="text" class="form-control autocompleteDoc destination"
                                                 name="destination" required id="dropPoint" placeholder="Destination">
@@ -87,6 +87,7 @@
                                 <h3><?= $fleet['title']; ?></h3>
                                 <img src="<?php echo base_url('assets/images/travel24/fleet/' . $fleet['vehicle_image'] . '?v=19'); ?>"
                                     class="fleet-img mt-2" alt="car">
+                                <p><?= $fleet['description']; ?></p>
                                 <div class="fleet-details">
                                     <div class="detail-item">
                                         <img src="<?php echo base_url('assets/images/travel24/passangers.svg')?>"

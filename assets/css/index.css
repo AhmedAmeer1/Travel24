@@ -513,7 +513,7 @@
 	border-top-right-radius: 16px;
 	border-bottom-left-radius: 16px;
 	border-bottom-right-radius: 16px;
-	padding: 20px 15px 10px 15px;
+	padding: 20px 8px 10px 8px;
 }
 
 /* .fleet-img {
@@ -541,6 +541,13 @@
 	font-weight: 500;
 	margin-top: 3px;
 }
+.image_card p {
+	color: #004c78;
+	font-size: 12px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
 .image_card .passangers {
 	height: 20px;
 	background-color: #e6e6ef;
