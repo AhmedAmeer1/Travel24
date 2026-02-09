@@ -60,12 +60,12 @@
                 <h5 class="footer-heading mb-3">Our Services</h5>
                 <ul class="side-menu list-unstyled">
                     <li><a href="<?php echo base_url()?>airportTransfer">Airports Transfer</a></li>
-                    <li><a href="<?php echo base_url()?>cruisePortTransfers">Cruise Port Transfers</a></li>
-                    <li><a href="<?php echo base_url()?>executiveChauffeur">Executive Chauffeur</a></li>
                     <li><a href="<?php echo base_url()?>minicabServices">Minicab Services</a></li>
+                    <li><a href="<?php echo base_url()?>executiveChauffeur">Executive Chauffeur</a></li>
+                    <li><a href="<?php echo base_url()?>dayHire">Day Hire</a></li>
+                    <li><a href="<?php echo base_url()?>weddingsParties">Weddings / Parties</a></li>
                     <li><a href="<?php echo base_url()?>universityStudentTransfer">University Student Transfer</a></li>
-                    <li><a href="<?php echo base_url()?>manAndVan">Man and Van Services</a></li>
-                    <li><a href="<?php echo base_url()?>parcelServices">Parcel Services</a></li>
+                    <li><a href="<?php echo base_url()?>cruisePortTransfers">Cruise Port Transfers</a></li>
                 </ul>
             </div>
 
@@ -73,13 +73,13 @@
             <div class="col-md-3 text-center text-md-left">
                 <!-- <h5 class="footer-heading mb-3">Our Services</h5> -->
                 <ul class="side-menu list-unstyled mt-4">
-                    <li><a href="<?php echo base_url()?>weddingsParties">Weddings / Parties</a></li>
-                    <li><a href="<?php echo base_url()?>vehicleRent">Vehicle Rent</a></li>
-                    <li><a href="<?php echo base_url()?>accidentClaim">Accident Claims</a></li>
-                    <li><a href="<?php echo base_url()?>businessAccount">Business Account</a></li>
                     <li><a href="<?php echo base_url()?>schoolServices">School Services</a></li>
+                    <li><a href="<?php echo base_url()?>parcelServices">Parcel Services</a></li>
+                    <li><a href="<?php echo base_url()?>businessAccount">Business Account</a></li>
+                    <li><a href="<?php echo base_url()?>manAndVan">Man and Van Services</a></li>
+                    <li><a href="<?php echo base_url()?>accidentClaim">Accident Claims</a></li>
+                    <li><a href="<?php echo base_url()?>vehicleRent">Vehicle Rent</a></li>
                     <li><a href="<?php echo base_url()?>coachTransfer">Coach Transfer</a></li>
-                    <li><a href="<?php echo base_url()?>dayHire">Day Hire</a></li>
                 </ul>
             </div>
 
