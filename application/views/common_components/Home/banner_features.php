@@ -14,7 +14,7 @@
             <span class="check-square-icon mr-2">
                 <i class="fa fa-check"></i>
             </span>
-            <span>10% Off Every Journey - Use Code : <span class="code">LUTH25</span></span>
+            <span>5% Off Every Journey - Use Code : <span class="code">LUTH26</span></span>
         </li>
         <li class="d-flex align-items-center mb-2">
             <span class="check-square-icon mr-2">

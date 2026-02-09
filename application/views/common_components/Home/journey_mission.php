@@ -1,6 +1,6 @@
  <div class="list-details-box">
      <div class="d-flex justify-content-between flag-div">
-         <h1 class="text-uppercase">Your journey is our mission </h1>
+         <h1 class="text-uppercase">Nationwide services </h1>
          <a href="<?php echo base_url()?>popularDestinations">
              <img src="assets/images/travel24/england.svg" class="img-fluid " alt="flag of the United Kingdom">
          </a>
